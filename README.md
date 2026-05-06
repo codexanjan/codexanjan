@@ -52,39 +52,43 @@ Interests:
 
 <div align="center">
 
-<a href="https://twitter.com/yourusername">
+<a href="https://twitter.com/anjanshetty">
 <img src="https://img.shields.io/badge/Twitter-000000?style=for-the-badge&logo=x&logoColor=white" />
 </a>
 
-<a href="https://discord.gg/yourinvitecode">
+<a href="https://discord.com/users/codexanjan">
 <img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" />
 </a>
 
-<a href="https://snapchat.com/add/yourusername">
+<a href="https://snapchat.com/add/anjxnnshetty">
 <img src="https://img.shields.io/badge/Snapchat-FFFC00?style=for-the-badge&logo=snapchat&logoColor=black" />
+</a>
+
+<a href="https://reddit.com/u/anjxnshetty">
+<img src="https://img.shields.io/badge/Reddit-FF4500?style=for-the-badge&logo=reddit&logoColor=white" />
 </a>
 
 <a href="https://leetcode.com/yourusername">
 <img src="https://img.shields.io/badge/LeetCode-FFA116?style=for-the-badge&logo=leetcode&logoColor=white" />
 </a>
 
-<a href="https://www.hackerrank.com/yourusername">
+<a href="https://www.hackerrank.com/anjan%20shetty">
 <img src="https://img.shields.io/badge/HackerRank-2EC866?style=for-the-badge&logo=hackerrank&logoColor=white" />
 </a>
 
-<a href="https://stackoverflow.com/users/youruserid">
+<a href="https://stackoverflow.com/users/anjan-shetty">
 <img src="https://img.shields.io/badge/StackOverflow-F58025?style=for-the-badge&logo=stackoverflow&logoColor=white" />
 </a>
 
-<a href="https://tryhackme.com/p/yourusername">
+<a href="https://tryhackme.com/p/anjan%20shetty">
 <img src="https://img.shields.io/badge/TryHackMe-212C42?style=for-the-badge&logo=tryhackme&logoColor=white" />
 </a>
 
-<a href="https://dev.to/yourusername">
+<a href="https://dev.to/anjan%20shetty">
 <img src="https://img.shields.io/badge/DEV.to-0A0A0A?style=for-the-badge&logo=devdotto&logoColor=white" />
 </a>
 
-<a href="https://gitlab.com/yourusername">
+<a href="https://gitlab.com/anjan%20shetty">
 <img src="https://img.shields.io/badge/GitLab-FC6D26?style=for-the-badge&logo=gitlab&logoColor=white" />
 </a>
 
@@ -96,10 +100,49 @@ Interests:
 
 <div align="center">
 
-<img src="https://skillicons.dev/icons?i=html,css,js,ts,react&perline=5" height="60" />
+<img src="https://skillicons.dev/icons?i=html,css,js,ts,react,nextjs,nodejs,express,python,java,cpp&perline=11" height="60" />
 
 <br><br>
 
+<img src="https://skillicons.dev/icons?i=php,mysql,mongodb,firebase,docker,aws,git,github,vscode,figma,postman&perline=11" height="60" />
+
+</div>
+
+---
+
+# 🔥 GitHub Streak
+
+<div align="center">
+
+<img src="https://streak-stats.demolab.com?user=codexanjan&theme=tokyonight&hide_border=true&background=0D1117" />
+
+</div>
+
+---
+
+<div align="center">
+
+<img src="https://raw.githubusercontent.com/czl9707/gh-space-shooter/main/example.gif" />
+
+</div>
+
+---
+
+# ☕ Support Me
+
+<div align="center">
+
+<a href="https://www.buymeacoffee.com/yourusername">
+  <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" width="220" />
+</a>
+
+</div>
+
+---
+
+<div align="center">
+  <img src="https://user-images.githubusercontent.com/74038190/212284158-e840e285-664b-44d7-b79b-e264b5e54825.gif" width="100%" />
+</div>
 <img src="https://skillicons.dev/icons?i=nextjs,nodejs,express,python,java&perline=5" height="60" />
 
 <br><br>
