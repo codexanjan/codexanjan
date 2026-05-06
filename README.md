@@ -1,6 +1,6 @@
 <h1 align="center">
   Hey 
-  <img src="https://raw.githubusercontent.com/sindresorhus/sindresorhus/refs/heads/main/cat-typing.gif" height="30px" width="30px">
+  <img src="https://raw.githubusercontent.com/sindresorhus/sindresorhus/refs/heads/main/cat-typing.gif" height="32px" width="32px">
   I'm ANJAN SHETTY
 </h1>
 
@@ -14,13 +14,13 @@
 
 <div align="center">
 
-<img src="https://readme-typing-svg.herokuapp.com?font=Orbitron&size=30&pause=1000&color=00F7FF&center=true&vCenter=true&width=850&lines=FULL+STACK+DEVELOPER;AI+%7C+ML+ENTHUSIAST;OPEN+SOURCE+CONTRIBUTOR;BUILD.+CREATE.+INNOVATE.;WELCOME+TO+MY+PROFILE" />
+<img src="https://readme-typing-svg.herokuapp.com?font=Orbitron&size=30&pause=1000&color=00F7FF&center=true&vCenter=true&width=900&lines=FULL+STACK+DEVELOPER;AI+%7C+ML+ENTHUSIAST;OPEN+SOURCE+CONTRIBUTOR;BUILD.+CREATE.+INNOVATE.;WELCOME+TO+MY+PROFILE" />
 
 </div>
 
 ---
 
-# 🧠 About Me
+# <img src="https://media.giphy.com/media/l0HlNaQ6gWfllcjDO/giphy.gif" width="35"> About Me
 
 <div align="center">
 
@@ -48,7 +48,7 @@ Interests:
 
 ---
 
-# 🌐 Connect With Me
+# <img src="https://media.giphy.com/media/LMcB8XospGZO8UQq87/giphy.gif" width="35"> Connect With Me
 
 <div align="center">
 
@@ -96,8 +96,57 @@ Interests:
 
 ---
 
-# ⚒️ Tech Stack
+# <img src="https://media.giphy.com/media/f3iwJFOVOwuy7K6FFw/giphy.gif" width="35"> Tech Stack
 
+<div align="center">
+
+<img src="https://skillicons.dev/icons?i=html,css,js,ts,react,nextjs,nodejs,express,python,java,cpp&perline=11" height="60" />
+
+<br><br>
+
+<img src="https://skillicons.dev/icons?i=php,mysql,mongodb,firebase,docker,aws,azure,gcp,flutter,spring&perline=11" height="60" />
+
+<br><br>
+
+<img src="https://skillicons.dev/icons?i=git,figma,postman&perline=11" height="60" />
+
+</div>
+
+---
+
+# <img src="https://media.giphy.com/media/3o7aD2saalBwwftBIY/giphy.gif" width="35"> GitHub Streak
+
+<div align="center">
+
+<img src="https://streak-stats.demolab.com?user=codexanjan&theme=tokyonight&hide_border=true&background=0D1117" />
+
+</div>
+
+---
+
+<div align="center">
+
+<img src="https://raw.githubusercontent.com/czl9707/gh-space-shooter/main/example.gif" />
+
+</div>
+
+---
+
+# <img src="https://media.giphy.com/media/ZVik7pBtu9dNS/giphy.gif" width="35"> Support Me
+
+<div align="center">
+
+<a href="https://www.buymeacoffee.com/anjanshetty">
+  <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" width="220" />
+</a>
+
+</div>
+
+---
+
+<div align="center">
+  <img src="https://user-images.githubusercontent.com/74038190/212284158-e840e285-664b-44d7-b79b-e264b5e54825.gif" width="100%" />
+</div>
 <div align="center">
 
 <img src="https://skillicons.dev/icons?i=html,css,js,ts,react,nextjs,nodejs,express,python,java,cpp&perline=11" height="60" />
