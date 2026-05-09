@@ -52,7 +52,7 @@ Interests:
 
 <div align="center">
 
-<a href="https://twitter.com/anjanshetty">
+<a href="https://twitter.com/anjxnshetty">
 <img src="https://img.shields.io/badge/Twitter-000000?style=for-the-badge&logo=x&logoColor=white" />
 </a>
 
@@ -72,11 +72,11 @@ Interests:
 <img src="https://img.shields.io/badge/LeetCode-FFA116?style=for-the-badge&logo=leetcode&logoColor=white" />
 </a>
 
-<a href="https://www.hackerrank.com/anjan shetty">
+<a href="https://www.hackerrank.com/anjanshetty">
 <img src="https://img.shields.io/badge/HackerRank-2EC866?style=for-the-badge&logo=hackerrank&logoColor=white" />
 </a>
 
-<a href="https://stackoverflow.com/users/anjan shetty">
+<a href="https://stackoverflow.com/users/anjanshetty">
 <img src="https://img.shields.io/badge/StackOverflow-F58025?style=for-the-badge&logo=stackoverflow&logoColor=white" />
 </a>
 
@@ -136,7 +136,7 @@ Interests:
 
 <div align="center">
 
-<a href="https://www.buymeacoffee.com/anjanshetty">
+<a href="https://buymeacoffee.com/anjxnshetty">
   <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" width="220" />
 </a>
 
