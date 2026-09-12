@@ -1,0 +1,367 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 500" width="100%" height="100%">
+  <defs>
+    <!-- Gradients -->
+    <linearGradient id="panel-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#07080F"/>
+      <stop offset="50%" stop-color="#0A0D1A"/>
+      <stop offset="100%" stop-color="#05060B"/>
+    </linearGradient>
+
+    <linearGradient id="card-inner-bg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0D1120"/>
+      <stop offset="100%" stop-color="#070912"/>
+    </linearGradient>
+
+    <linearGradient id="shield-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00E5FF"/>
+      <stop offset="100%" stop-color="#0077FF"/>
+    </linearGradient>
+
+    <linearGradient id="red-glow-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FF1B2D"/>
+      <stop offset="100%" stop-color="#FF5252"/>
+    </linearGradient>
+
+    <linearGradient id="gold-glow-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FFB300"/>
+      <stop offset="100%" stop-color="#FFE082"/>
+    </linearGradient>
+
+    <!-- Filters -->
+    <filter id="neon-glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="flame-glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <style>
+      .mono-text { font-family: 'Fira Code', 'Consolas', monospace; }
+      .sans-text { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+
+      @keyframes telemetry-pulse {
+        0%, 100% { opacity: 0.9; transform: scale(1); }
+        50% { opacity: 1; transform: scale(1.03); filter: drop-shadow(0 0 8px #FF1B2D); }
+      }
+      @keyframes spin-ring {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+      @keyframes flame-pulse {
+        0%, 100% { transform: scale(1); opacity: 0.85; filter: drop-shadow(0 0 4px #FFB300); }
+        50% { transform: scale(1.15); opacity: 1; filter: drop-shadow(0 0 12px #FF1B2D) drop-shadow(0 0 16px #FFB300); }
+      }
+      @keyframes beacon-flicker {
+        0%, 100% { opacity: 0.3; }
+        50% { opacity: 0.9; }
+      }
+      @keyframes scan-horizontal {
+        0% { transform: translateX(-10px); opacity: 0; }
+        50% { opacity: 0.5; }
+        100% { transform: translateX(990px); opacity: 0; }
+      }
+
+      .pulse-item { transform-origin: center; animation: telemetry-pulse 3s ease-in-out infinite; }
+      .spin-circle { transform-origin: center; animation: spin-ring 24s linear infinite; }
+      .flame-anim { transform-origin: center; animation: flame-pulse 2s ease-in-out infinite; }
+      .scan-line { animation: scan-horizontal 6s linear infinite; }
+    </style>
+  </defs>
+
+  <!-- Base Canvas -->
+  <rect width="980" height="500" fill="url(#panel-bg)" rx="14" stroke="#1E293B" stroke-width="1.5"/>
+
+  <!-- Multiverse Ambient Lighting -->
+  <circle cx="200" cy="160" r="140" fill="#FF1B2D" opacity="0.06" filter="blur(60px)"/>
+  <circle cx="780" cy="160" r="140" fill="#00E5FF" opacity="0.06" filter="blur(60px)"/>
+  <circle cx="200" cy="380" r="140" fill="#00E5FF" opacity="0.06" filter="blur(60px)"/>
+  <circle cx="780" cy="380" r="140" fill="#FF1B2D" opacity="0.06" filter="blur(60px)"/>
+
+  <!-- Technical Corner Accents -->
+  <path d="M 12 36 L 12 12 L 36 12" fill="none" stroke="#FF1B2D" stroke-width="2.5"/>
+  <path d="M 968 36 L 968 12 L 944 12" fill="none" stroke="#00E5FF" stroke-width="2.5"/>
+  <path d="M 12 464 L 12 488 L 36 488" fill="none" stroke="#FF1B2D" stroke-width="2.5"/>
+  <path d="M 968 464 L 968 488 L 944 488" fill="none" stroke="#00E5FF" stroke-width="2.5"/>
+
+  <!-- ======================================================== -->
+  <!-- TOP CENTER PILL: SPIDER-NET CODE ENGINE: OPERATIONAL    -->
+  <!-- ======================================================== -->
+  <g transform="translate(490, 36)" text-anchor="middle">
+    <!-- Cyber Shield Icon -->
+    <path d="M -155 -11 L -143 -17 L -131 -11 L -131 0 C -131 8 -143 14 -143 14 C -143 14 -155 8 -155 0 Z" fill="#0D1B2A" stroke="url(#shield-grad)" stroke-width="1.5"/>
+    <circle cx="-143" cy="-1" r="3" fill="#00E5FF"/>
+
+    <text x="0" y="2" dominant-baseline="central" fill="#FFD700" font-size="14" font-weight="900" class="mono-font" letter-spacing="3">
+      SPIDER-NET CODE ENGINE: OPERATIONAL
+    </text>
+    <line x1="-220" y1="18" x2="220" y2="18" stroke="#334155" stroke-opacity="0.4" stroke-width="1"/>
+  </g>
+
+  <!-- ======================================================== -->
+  <!-- CARD 1: SPIDER-NET METRICS (Top Left)                   -->
+  <!-- ======================================================== -->
+  <g transform="translate(30, 70)">
+    <rect width="445" height="195" rx="8" fill="url(#card-inner-bg)" stroke="#FFB300" stroke-opacity="0.45" stroke-width="1.2"/>
+    <path d="M 0 16 L 0 0 L 16 0" fill="none" stroke="#FFB300" stroke-width="2"/>
+    <path d="M 445 179 L 445 195 L 429 195" fill="none" stroke="#FFB300" stroke-width="2"/>
+
+    <!-- Header -->
+    <circle cx="20" cy="22" r="4" fill="#00E5FF"/>
+    <text x="32" y="26" fill="#FFD700" font-size="11" font-weight="900" class="mono-font" letter-spacing="1.5">
+      SPIDER-NET METRICS
+    </text>
+    <path d="M 415 18 L 425 22 L 415 26" fill="none" stroke="#FFD700" stroke-width="1.5"/>
+
+    <!-- Metrics List -->
+    <g transform="translate(20, 52)" font-size="10.5" class="mono-font">
+      <!-- Stars -->
+      <polygon points="6,2 8,7 13,7 9,10 11,15 6,12 2,15 3,10 0,7 5,7" fill="#FFB300"/>
+      <text x="22" y="10" fill="#94A3B8">Total Stars Earned:</text>
+      <text x="180" y="10" fill="#FFFFFF" font-weight="800" text-anchor="end">73</text>
+
+      <!-- Commits -->
+      <circle cx="6" cy="30" r="5" fill="none" stroke="#00E5FF" stroke-width="1.2"/>
+      <line x1="6" y1="30" x2="6" y2="27" stroke="#00E5FF" stroke-width="1.2"/>
+      <line x1="6" y1="30" x2="9" y2="30" stroke="#00E5FF" stroke-width="1.2"/>
+      <text x="22" y="34" fill="#94A3B8">Total Commits (2026):</text>
+      <text x="180" y="34" fill="#FFFFFF" font-weight="800" text-anchor="end">82</text>
+
+      <!-- PRs -->
+      <circle cx="4" cy="54" r="2.5" fill="#FF1B2D"/>
+      <circle cx="8" cy="48" r="2.5" fill="#00E5FF"/>
+      <path d="M 4 56 L 4 60 C 4 62 8 62 8 50" fill="none" stroke="#94A3B8" stroke-width="1"/>
+      <text x="22" y="56" fill="#94A3B8">Total PRs:</text>
+      <text x="180" y="56" fill="#FFFFFF" font-weight="800" text-anchor="end">1</text>
+
+      <!-- Issues -->
+      <circle cx="6" cy="78" r="5" fill="none" stroke="#FF1B2D" stroke-width="1.2"/>
+      <circle cx="6" cy="78" r="2" fill="#FF1B2D"/>
+      <text x="22" y="80" fill="#94A3B8">Total Issues:</text>
+      <text x="180" y="80" fill="#FFFFFF" font-weight="800" text-anchor="end">0</text>
+
+      <!-- Contributed To -->
+      <rect x="2" y="98" width="8" height="8" rx="1.5" fill="none" stroke="#FFD700" stroke-width="1.2"/>
+      <text x="22" y="104" fill="#94A3B8">Contributed to (yr):</text>
+      <text x="180" y="104" fill="#FFFFFF" font-weight="800" text-anchor="end">27</text>
+    </g>
+
+    <!-- Circular Rank Gauge (Right Side of Card 1) -->
+    <g transform="translate(340, 115)">
+      <!-- Outer Track -->
+      <circle cx="0" cy="0" r="42" fill="none" stroke="#1E293B" stroke-width="7"/>
+      <!-- Glowing Score Arc -->
+      <circle cx="0" cy="0" r="42" fill="none" stroke="#FFD700" stroke-width="7" stroke-dasharray="210 60" stroke-linecap="round" filter="url(#neon-glow)"/>
+      <circle cx="0" cy="0" r="32" fill="#05060B" stroke="#334155" stroke-width="1"/>
+      <!-- Rank Text -->
+      <text x="0" y="-3" dominant-baseline="central" text-anchor="middle" fill="#FFFFFF" font-size="22" font-weight="900" class="mono-font">A+</text>
+      <text x="0" y="15" dominant-baseline="central" text-anchor="middle" fill="#FFD700" font-size="8.5" font-weight="800" class="mono-font" letter-spacing="1">RANK</text>
+    </g>
+  </g>
+
+  <!-- ======================================================== -->
+  <!-- CARD 2: STREAK PROTOCOL // CADENCE (Top Right)          -->
+  <!-- ======================================================== -->
+  <g transform="translate(505, 70)">
+    <rect width="445" height="195" rx="8" fill="url(#card-inner-bg)" stroke="#FFB300" stroke-opacity="0.45" stroke-width="1.2"/>
+    <path d="M 0 16 L 0 0 L 16 0" fill="none" stroke="#FFB300" stroke-width="2"/>
+    <path d="M 445 179 L 445 195 L 429 195" fill="none" stroke="#FFB300" stroke-width="2"/>
+
+    <!-- Decorative Top Right Wing -->
+    <path d="M 405 18 L 415 22 L 405 26" fill="none" stroke="#FFD700" stroke-width="1.5"/>
+
+    <!-- 1. Left Stat: Total Contributions -->
+    <g transform="translate(70, 105)" text-anchor="middle">
+      <text x="0" y="-12" fill="#FFFFFF" font-size="34" font-weight="900" class="mono-font">88</text>
+      <text x="0" y="18" fill="#94A3B8" font-size="9.5" font-weight="700" class="sans-text">Total Contributions</text>
+      <text x="0" y="34" fill="#64748B" font-size="8.5" font-weight="600" class="mono-text">Apr 20 - Present</text>
+    </g>
+
+    <!-- 2. Center Stat: Current Streak with Flame Beacon -->
+    <g transform="translate(222, 105)" text-anchor="middle">
+      <!-- Flame Beacon -->
+      <g transform="translate(0, -48)" class="flame-anim">
+        <path d="M 0 -10 C 6 -3 8 4 0 14 C -8 4 -6 -3 0 -10 Z" fill="#FFD700" filter="url(#flame-glow)"/>
+        <path d="M 0 -4 C 3 0 4 4 0 9 C -4 4 -3 0 0 -4 Z" fill="#FF1B2D"/>
+      </g>
+
+      <!-- Glowing Streak Circle -->
+      <circle cx="0" cy="0" r="32" fill="#080A14" stroke="#FFD700" stroke-width="3" filter="url(#neon-glow)"/>
+      <circle cx="0" cy="0" r="26" fill="#04050A" stroke="#FF1B2D" stroke-width="1"/>
+      <text x="0" y="1" dominant-baseline="central" fill="#FFFFFF" font-size="24" font-weight="900" class="mono-font">3</text>
+
+      <text x="0" y="44" fill="#FFD700" font-size="10.5" font-weight="900" class="mono-font" letter-spacing="1">Current Streak</text>
+      <text x="0" y="58" fill="#64748B" font-size="8.5" font-weight="600" class="mono-text">Sep 4 - Sep 6</text>
+    </g>
+
+    <!-- 3. Right Stat: Longest Streak -->
+    <g transform="translate(370, 105)" text-anchor="middle">
+      <text x="0" y="-12" fill="#FFFFFF" font-size="34" font-weight="900" class="mono-font">4</text>
+      <text x="0" y="18" fill="#94A3B8" font-size="9.5" font-weight="700" class="sans-text">Longest Streak</text>
+      <text x="0" y="34" fill="#64748B" font-size="8.5" font-weight="600" class="mono-text">Jun 6 - Jun 9</text>
+    </g>
+  </g>
+
+  <!-- ======================================================== -->
+  <!-- CARD 3: TOP LANGUAGES (BY REPO) (Bottom Left)           -->
+  <!-- ======================================================== -->
+  <g transform="translate(30, 280)">
+    <rect width="445" height="195" rx="8" fill="url(#card-inner-bg)" stroke="#FFB300" stroke-opacity="0.45" stroke-width="1.2"/>
+    <path d="M 0 16 L 0 0 L 16 0" fill="none" stroke="#FFB300" stroke-width="2"/>
+    <path d="M 445 179 L 445 195 L 429 195" fill="none" stroke="#FFB300" stroke-width="2"/>
+
+    <!-- Header -->
+    <circle cx="20" cy="22" r="4" fill="#FFD700"/>
+    <text x="32" y="26" fill="#FFD700" font-size="11" font-weight="900" class="mono-font" letter-spacing="1.5">
+      TOP LANGUAGES (BY REPO)
+    </text>
+    <path d="M 415 18 L 425 22 L 415 26" fill="none" stroke="#FFD700" stroke-width="1.5"/>
+
+    <!-- Horizontal Language Progress Bars -->
+    <g transform="translate(20, 52)" font-size="10" class="mono-font">
+      <!-- JavaScript 38% -->
+      <rect x="0" y="0" width="8" height="8" rx="2" fill="#F7DF1E"/>
+      <text x="16" y="8" fill="#FFFFFF">JavaScript</text>
+      <rect x="90" y="1" width="70" height="6" rx="3" fill="#1E293B"/>
+      <rect x="90" y="1" width="46" height="6" rx="3" fill="#F7DF1E"/>
+      <text x="185" y="8" fill="#94A3B8" text-anchor="end">38%</text>
+
+      <!-- Dart 26% -->
+      <rect x="0" y="22" width="8" height="8" rx="2" fill="#00E5FF"/>
+      <text x="16" y="30" fill="#FFFFFF">Dart</text>
+      <rect x="90" y="23" width="70" height="6" rx="3" fill="#1E293B"/>
+      <rect x="90" y="23" width="34" height="6" rx="3" fill="#00E5FF"/>
+      <text x="185" y="30" fill="#94A3B8" text-anchor="end">26%</text>
+
+      <!-- HTML 16% -->
+      <rect x="0" y="44" width="8" height="8" rx="2" fill="#FF5722"/>
+      <text x="16" y="52" fill="#FFFFFF">HTML</text>
+      <rect x="90" y="45" width="70" height="6" rx="3" fill="#1E293B"/>
+      <rect x="90" y="45" width="22" height="6" rx="3" fill="#FF5722"/>
+      <text x="185" y="52" fill="#94A3B8" text-anchor="end">16%</text>
+
+      <!-- Kotlin 12% -->
+      <rect x="0" y="66" width="8" height="8" rx="2" fill="#8B5CF6"/>
+      <text x="16" y="74" fill="#FFFFFF">Kotlin</text>
+      <rect x="90" y="67" width="70" height="6" rx="3" fill="#1E293B"/>
+      <rect x="90" y="67" width="16" height="6" rx="3" fill="#8B5CF6"/>
+      <text x="185" y="74" fill="#94A3B8" text-anchor="end">12%</text>
+
+      <!-- Python 8% -->
+      <rect x="0" y="88" width="8" height="8" rx="2" fill="#3776AB"/>
+      <text x="16" y="96" fill="#FFFFFF">Python</text>
+      <rect x="90" y="89" width="70" height="6" rx="3" fill="#1E293B"/>
+      <rect x="90" y="89" width="10" height="6" rx="3" fill="#3776AB"/>
+      <text x="185" y="96" fill="#94A3B8" text-anchor="end">8%</text>
+    </g>
+
+    <!-- Donut Chart with Center Spider Emblem -->
+    <g transform="translate(340, 110)">
+      <!-- Donut Segments (circumference ~ 226) -->
+      <circle cx="0" cy="0" r="36" fill="none" stroke="#1E293B" stroke-width="12"/>
+      <!-- JS: 38% -> 86 -->
+      <circle cx="0" cy="0" r="36" fill="none" stroke="#F7DF1E" stroke-width="12" stroke-dasharray="86 140" stroke-dashoffset="0"/>
+      <!-- Dart: 26% -> 58 -->
+      <circle cx="0" cy="0" r="36" fill="none" stroke="#00E5FF" stroke-width="12" stroke-dasharray="58 168" stroke-dashoffset="-86"/>
+      <!-- HTML: 16% -> 36 -->
+      <circle cx="0" cy="0" r="36" fill="none" stroke="#FF5722" stroke-width="12" stroke-dasharray="36 190" stroke-dashoffset="-144"/>
+      <!-- Kotlin: 12% -> 27 -->
+      <circle cx="0" cy="0" r="36" fill="none" stroke="#8B5CF6" stroke-width="12" stroke-dasharray="27 199" stroke-dashoffset="-180"/>
+      <!-- Python: 8% -> 19 -->
+      <circle cx="0" cy="0" r="36" fill="none" stroke="#3776AB" stroke-width="12" stroke-dasharray="19 207" stroke-dashoffset="-207"/>
+
+      <!-- Inner Core & Spider Icon -->
+      <circle cx="0" cy="0" r="28" fill="#060810"/>
+      <polygon points="0,-10 6,-3 0,5 -6,-3" fill="#FF1B2D"/>
+      <polygon points="0,3 4,9 0,13 -4,9" fill="#00E5FF"/>
+      <path d="M -3 -5 L -8 -8 M 3 -5 L 8 -8 M -4 0 L -9 0 M 4 0 L 9 0 M -3 5 L -8 8 M 3 5 L 8 8" stroke="#FFFFFF" stroke-width="1" fill="none"/>
+    </g>
+  </g>
+
+  <!-- ======================================================== -->
+  <!-- CARD 4: TOP LANGUAGES (BY COMMIT) (Bottom Right)        -->
+  <!-- ======================================================== -->
+  <g transform="translate(505, 280)">
+    <rect width="445" height="195" rx="8" fill="url(#card-inner-bg)" stroke="#FFB300" stroke-opacity="0.45" stroke-width="1.2"/>
+    <path d="M 0 16 L 0 0 L 16 0" fill="none" stroke="#FFB300" stroke-width="2"/>
+    <path d="M 445 179 L 445 195 L 429 195" fill="none" stroke="#FFB300" stroke-width="2"/>
+
+    <!-- Header -->
+    <circle cx="20" cy="22" r="4" fill="#00E5FF"/>
+    <text x="32" y="26" fill="#FFD700" font-size="11" font-weight="900" class="mono-font" letter-spacing="1.5">
+      TOP LANGUAGES (BY COMMIT)
+    </text>
+    <path d="M 415 18 L 425 22 L 415 26" fill="none" stroke="#FFD700" stroke-width="1.5"/>
+
+    <!-- Horizontal Language Progress Bars -->
+    <g transform="translate(20, 52)" font-size="10" class="mono-font">
+      <!-- Python 44% -->
+      <rect x="0" y="0" width="8" height="8" rx="2" fill="#00E5FF"/>
+      <text x="16" y="8" fill="#FFFFFF">Python</text>
+      <rect x="90" y="1" width="70" height="6" rx="3" fill="#1E293B"/>
+      <rect x="90" y="1" width="52" height="6" rx="3" fill="#00E5FF"/>
+      <text x="185" y="8" fill="#94A3B8" text-anchor="end">44%</text>
+
+      <!-- TypeScript 22% -->
+      <rect x="0" y="22" width="8" height="8" rx="2" fill="#FFD700"/>
+      <text x="16" y="30" fill="#FFFFFF">TypeScript</text>
+      <rect x="90" y="23" width="70" height="6" rx="3" fill="#1E293B"/>
+      <rect x="90" y="23" width="30" height="6" rx="3" fill="#FFD700"/>
+      <text x="185" y="30" fill="#94A3B8" text-anchor="end">22%</text>
+
+      <!-- Dart 15% -->
+      <rect x="0" y="44" width="8" height="8" rx="2" fill="#21D4FD"/>
+      <text x="16" y="52" fill="#FFFFFF">Dart</text>
+      <rect x="90" y="45" width="70" height="6" rx="3" fill="#1E293B"/>
+      <rect x="90" y="45" width="20" height="6" rx="3" fill="#21D4FD"/>
+      <text x="185" y="52" fill="#94A3B8" text-anchor="end">15%</text>
+
+      <!-- JavaScript 11% -->
+      <rect x="0" y="66" width="8" height="8" rx="2" fill="#FF7043"/>
+      <text x="16" y="74" fill="#FFFFFF">JavaScript</text>
+      <rect x="90" y="67" width="70" height="6" rx="3" fill="#1E293B"/>
+      <rect x="90" y="67" width="14" height="6" rx="3" fill="#FF7043"/>
+      <text x="185" y="74" fill="#94A3B8" text-anchor="end">11%</text>
+
+      <!-- HTML 8% -->
+      <rect x="0" y="88" width="8" height="8" rx="2" fill="#FF1B2D"/>
+      <text x="16" y="96" fill="#FFFFFF">HTML</text>
+      <rect x="90" y="89" width="70" height="6" rx="3" fill="#1E293B"/>
+      <rect x="90" y="89" width="10" height="6" rx="3" fill="#FF1B2D"/>
+      <text x="185" y="96" fill="#94A3B8" text-anchor="end">8%</text>
+    </g>
+
+    <!-- Donut Chart with Center Spider Emblem -->
+    <g transform="translate(340, 110)">
+      <!-- Donut Segments (circumference ~ 226) -->
+      <circle cx="0" cy="0" r="36" fill="none" stroke="#1E293B" stroke-width="12"/>
+      <!-- Python: 44% -> 100 -->
+      <circle cx="0" cy="0" r="36" fill="none" stroke="#00E5FF" stroke-width="12" stroke-dasharray="100 126" stroke-dashoffset="0"/>
+      <!-- TS: 22% -> 50 -->
+      <circle cx="0" cy="0" r="36" fill="none" stroke="#FFD700" stroke-width="12" stroke-dasharray="50 176" stroke-dashoffset="-100"/>
+      <!-- Dart: 15% -> 34 -->
+      <circle cx="0" cy="0" r="36" fill="none" stroke="#21D4FD" stroke-width="12" stroke-dasharray="34 192" stroke-dashoffset="-150"/>
+      <!-- JS: 11% -> 25 -->
+      <circle cx="0" cy="0" r="36" fill="none" stroke="#FF7043" stroke-width="12" stroke-dasharray="25 201" stroke-dashoffset="-184"/>
+      <!-- HTML: 8% -> 17 -->
+      <circle cx="0" cy="0" r="36" fill="none" stroke="#FF1B2D" stroke-width="12" stroke-dasharray="17 209" stroke-dashoffset="-209"/>
+
+      <!-- Inner Core & Spider Icon -->
+      <circle cx="0" cy="0" r="28" fill="#060810"/>
+      <polygon points="0,-10 6,-3 0,5 -6,-3" fill="#00E5FF"/>
+      <polygon points="0,3 4,9 0,13 -4,9" fill="#FF1B2D"/>
+      <path d="M -3 -5 L -8 -8 M 3 -5 L 8 -8 M -4 0 L -9 0 M 4 0 L 9 0 M -3 5 L -8 8 M 3 5 L 8 8" stroke="#FFFFFF" stroke-width="1" fill="none"/>
+    </g>
+  </g>
+
+  <!-- Horizontal Laser Scanline -->
+  <line x1="0" y1="0" x2="0" y2="500" stroke="#00E5FF" stroke-width="1.5" opacity="0.3" class="scan-line"/>
+</svg>

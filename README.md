@@ -41,41 +41,56 @@
 <br/>
 
 <!-- ========================================================================= -->
-<!-- 02 // ABOUT ME                                                            -->
+<!-- 02 // ABOUT ME // OPERATIVE DOSSIER                                       -->
 <!-- ========================================================================= -->
 
-## <img src="assets/section-pointer.svg" width="32" height="14" alt="Pointer" /> ABOUT ME
+## <img src="assets/section-pointer.svg" width="32" height="14" alt="Pointer" /> ABOUT ME // OPERATIVE DOSSIER
 
-I am **Anjan Shetty**, a developer focused on building intelligent, practical, and visually distinctive digital products.
-
-I enjoy combining technology, design, and rapid experimentation to turn ideas into working systems.
+> "Somewhere between an idea and a working product, there is a lot of debugging."
 
 <br/>
 
-### <img src="assets/section-pointer.svg" width="24" height="10" alt="Pointer" /> CORE INTERESTS
+<table width="100%">
+  <tr>
+    <td width="46%" align="center" valign="top">
+      <img src="assets/spider-lanyard.svg" width="100%" alt="Spider-Verse Developer Lanyard ID Badge" />
+    </td>
+    <td width="54%" valign="top">
 
-- <img src="assets/section-pointer.svg" width="20" height="9" alt="Pointer" /> **Full Stack Development** — Performant end-to-end architectures and scalable web applications
-- <img src="assets/section-pointer.svg" width="20" height="9" alt="Pointer" /> **Artificial Intelligence** — Agentic workflows, LLM tool pipelines, and neural networks
-- <img src="assets/section-pointer.svg" width="20" height="9" alt="Pointer" /> **Modern UI/UX** — Immersive, tactile, and cinematic interactive interfaces
-- <img src="assets/section-pointer.svg" width="20" height="9" alt="Pointer" /> **Hackathon Development** — Rapid prototyping and podium-tier execution under pressure
-- <img src="assets/section-pointer.svg" width="20" height="9" alt="Pointer" /> **Creative Engineering** — WebGL, shaders, canvas physics, and animated SVG graphics
-- <img src="assets/section-pointer.svg" width="20" height="9" alt="Pointer" /> **Product Development** — Resilient APIs, distributed systems, and credential security
+```yaml
+Spider-Verse Security Clearance:
+  Operative: Anjan Shetty
+  Codename: codexanjan
+  Clearance: Level 10 // Spider-Sense Alpha
+  Dimension: Earth-Codex-01
+  Division: Core Systems & Web Architecture
 
-<br/>
+Role:
+  - Engineering Student
+  - Full Stack Developer
+  - AI/ML Solutions Architect
+
+Currently Weaving:
+  - MERN Stack Architecture
+  - Agentic AI & LLM Pipelines
+  - Cloud Infrastructure & DevOps
+
+Interests & Focus:
+  - Scalable Web Applications
+  - Open Source Engineering
+  - High-Fidelity UI/UX Systems
+  - Applied AI/ML Research
+
+Operative Creed:
+  "With great compute comes great responsibility."
+```
+
+    </td>
+  </tr>
+</table>
 
 <div align="center">
-
-<!-- SPIDER-VERSE DEVELOPER LANYARD ID BADGE -->
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/spider-lanyard.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="assets/spider-lanyard.svg" />
-  <img src="assets/spider-lanyard.svg" width="460" alt="Spider-Verse Developer Lanyard ID Badge" />
-</picture>
-
-<br/><br/>
-
-<img src="assets/web-divider.svg" width="100%" alt="Web Divider" />
-
+  <img src="assets/web-divider.svg" width="100%" alt="Web Divider" />
 </div>
 
 <br/>
@@ -143,10 +158,10 @@ I enjoy combining technology, design, and rapid experimentation to turn ideas in
 <br/>
 
 <!-- ========================================================================= -->
-<!-- 04 // SPIDER-VERSE MISSIONS                                                 -->
+<!-- 04 // PROJECT DATABASE // SPIDER-VERSE ARCHIVES                           -->
 <!-- ========================================================================= -->
 
-## <img src="assets/section-pointer.svg" width="32" height="14" alt="Pointer" /> SPIDER-VERSE MISSIONS
+## <img src="assets/section-pointer.svg" width="32" height="14" alt="Pointer" /> PROJECT DATABASE // SPIDER-VERSE ARCHIVES
 
 <div align="center">
   <img src="assets/project-frame.svg" width="100%" alt="Spider-Verse Missions Header" />
@@ -156,62 +171,63 @@ I enjoy combining technology, design, and rapid experimentation to turn ideas in
 
 <table width="100%">
   <tr>
-    <td width="33%" valign="top">
-      <h3><img src="assets/spider-mini.svg" width="18" height="18" alt="Spider" /> WEATHERGPT</h3>
-      <p><code>STATUS: ACTIVE</code></p>
-      <p><b>AI-powered weather risk intelligence platform.</b></p>
+    <td width="50%" valign="top">
+      <h4><img src="assets/spider-mini.svg" width="16" height="16" alt="Spider" /> <a href="https://github.com/codexanjan/urlforge">URLForge</a> // Link Forge &amp; Analytics Engine</h4>
+      <p>High-performance URL shortener and link redirection architecture engineered for rapid dispatch, telemetry analytics, and clean RESTful design.</p>
+      <ul>
+        <li><b>Focus:</b> Fast URL resolution, link analytics &amp; clean API architecture</li>
+        <li><b>Stack:</b> <code>TypeScript</code> • <code>Node.js</code> • <code>Express</code> • <code>RESTful API</code></li>
+        <li><b>Repository:</b> <a href="https://github.com/codexanjan/urlforge">codexanjan/urlforge</a></li>
+      </ul>
+    </td>
+    <td width="50%" valign="top">
+      <h4><img src="assets/spider-mini.svg" width="16" height="16" alt="Spider" /> <a href="https://github.com/codexanjan/periodictable">PeriodicPortal</a> // 3D Interactive Chemistry Hub</h4>
+      <p>A modern educational web platform exploring all 118 chemical elements with glowing cards, 3D Bohr orbital models, trend analytics, and a built-in Chemistry AI chatbot.</p>
+      <ul>
+        <li><b>Focus:</b> 3D orbital visualization, chemical data &amp; conversational AI</li>
+        <li><b>Stack:</b> <code>TypeScript</code> • <code>React</code> • <code>Three.js</code> • <code>AI Integration</code></li>
+        <li><b>Repository:</b> <a href="https://github.com/codexanjan/periodictable">codexanjan/periodictable</a></li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <h4><img src="assets/spider-mini.svg" width="16" height="16" alt="Spider" /> <a href="https://github.com/codexanjan">Markdown Studio</a> // Live Browser Editor</h4>
+      <p>Sleek browser-based Markdown studio offering real-time live preview, intelligent syntax highlighting, multi-format export tools, and productivity templates.</p>
+      <ul>
+        <li><b>Focus:</b> Real-time parser rendering, AST manipulation &amp; responsive UX</li>
+        <li><b>Stack:</b> <code>TypeScript</code> • <code>React</code> • <code>Markdown Engine</code></li>
+        <li><b>Repository:</b> <a href="https://github.com/codexanjan">codexanjan/markdown-studio</a></li>
+      </ul>
+    </td>
+    <td width="50%" valign="top">
+      <h4><img src="assets/spider-mini.svg" width="16" height="16" alt="Spider" /> <a href="https://github.com/codexanjan">Smart Calendar</a> // Productivity &amp; Schedule Hub</h4>
+      <p>Customizable personal scheduling platform built for calendar optimization, event management, and fluid user experience.</p>
+      <ul>
+        <li><b>Focus:</b> State orchestration, responsive calendar view &amp; UX architecture</li>
+        <li><b>Stack:</b> <code>TypeScript</code> • <code>React</code> • <code>Tailwind CSS</code> • <code>Vite</code></li>
+        <li><b>Repository:</b> <a href="https://github.com/codexanjan">codexanjan/smart-calendar</a></li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <h4><img src="assets/spider-mini.svg" width="16" height="16" alt="Spider" /> <a href="https://github.com/codexanjan/atmosphere">WeatherGPT</a> // AI Risk Intelligence</h4>
       <p>Synthesizes meteorological sensor feeds with predictive machine learning to forecast hazardous weather phenomena and automate emergency advisories.</p>
       <ul>
-        <li>AI weather explanations</li>
-        <li>Risk intelligence</li>
-        <li>What-if simulations</li>
-        <li>Personalized emergency alerts</li>
-        <li>Disaster preparedness</li>
-        <li>Smart recommendations</li>
+        <li><b>Focus:</b> Atmospheric ML prediction, emergency alerts &amp; simulations</li>
+        <li><b>Stack:</b> <code>Python</code> • <code>React</code> • <code>FastAPI</code> • <code>ML</code></li>
+        <li><b>Repository:</b> <a href="https://github.com/codexanjan/atmosphere">codexanjan/atmosphere</a></li>
       </ul>
-      <p><b>Tech:</b> <code>Python</code> | <code>React</code> | <code>FastAPI</code> | <code>ML</code></p>
-      <p>
-        <a href="https://github.com/codexanjan/atmosphere"><b>[ REPOSITORY ]</b></a> | 
-        <a href="https://github.com/codexanjan/atmosphere"><b>[ LIVE DEMO ]</b></a>
-      </p>
     </td>
-    <td width="33%" valign="top">
-      <h3><img src="assets/spider-mini.svg" width="18" height="18" alt="Spider" /> AJ RUNNER</h3>
-      <p><code>STATUS: ACTIVE</code></p>
-      <p><b>Original endless-runner game featuring AJ.</b></p>
+    <td width="50%" valign="top">
+      <h4><img src="assets/spider-mini.svg" width="16" height="16" alt="Spider" /> <a href="https://github.com/codexanjan/AJ-RUNNER">AJ Runner</a> // Endless WebGL Canvas Engine</h4>
       <p>A high-velocity arcade runner built on HTML5 Canvas and WebGL, featuring responsive physics simulations, procedural obstacle generation, and dynamic mechanics.</p>
       <ul>
-        <li>Responsive controls</li>
-        <li>Obstacles</li>
-        <li>Collectibles</li>
-        <li>Score system</li>
-        <li>Smooth movement</li>
-        <li>Responsive UI</li>
+        <li><b>Focus:</b> Procedural rendering, game loop physics &amp; responsive controls</li>
+        <li><b>Stack:</b> <code>JavaScript</code> • <code>HTML5 Canvas</code> • <code>WebGL</code> • <code>CSS3</code></li>
+        <li><b>Repository:</b> <a href="https://github.com/codexanjan/AJ-RUNNER">codexanjan/AJ-RUNNER</a></li>
       </ul>
-      <p><b>Tech:</b> <code>JavaScript</code> | <code>HTML5 Canvas</code> | <code>WebGL</code> | <code>CSS3</code></p>
-      <p>
-        <a href="https://github.com/codexanjan/AJ-RUNNER"><b>[ REPOSITORY ]</b></a> | 
-        <a href="https://github.com/codexanjan/AJ-RUNNER"><b>[ LIVE DEMO ]</b></a>
-      </p>
-    </td>
-    <td width="33%" valign="top">
-      <h3><img src="assets/spider-mini.svg" width="18" height="18" alt="Spider" /> NEXUSVAULT</h3>
-      <p><code>STATUS: ACTIVE</code></p>
-      <p><b>Security and credential storage platform.</b></p>
-      <p>A robust TypeScript and encrypted credential management vault engineered for zero-compromise credential security, rapid access tokens, and modular extensibility.</p>
-      <ul>
-        <li>Encrypted credential vaults</li>
-        <li>Token management</li>
-        <li>Zero-knowledge design</li>
-        <li>Rapid retrieval engine</li>
-        <li>Security auditing</li>
-        <li>Cyber HUD interface</li>
-      </ul>
-      <p><b>Tech:</b> <code>TypeScript</code> | <code>Node.js</code> | <code>Cryptography</code> | <code>Security</code></p>
-      <p>
-        <a href="https://github.com/codexanjan/nexusvault"><b>[ REPOSITORY ]</b></a> | 
-        <a href="https://github.com/codexanjan/nexusvault"><b>[ LIVE DEMO ]</b></a>
-      </p>
     </td>
   </tr>
 </table>
@@ -341,39 +357,18 @@ I enjoy combining technology, design, and rapid experimentation to turn ideas in
 <br/>
 
 <!-- ========================================================================= -->
-<!-- 07 // SPIDER-VERSE COMMAND CENTER                                           -->
+<!-- 07 // SPIDER TELEMETRY // MAINFRAME METRICS                               -->
 <!-- ========================================================================= -->
 
-## <img src="assets/section-pointer.svg" width="32" height="14" alt="Pointer" /> SPIDER-VERSE COMMAND CENTER
+## <img src="assets/section-pointer.svg" width="32" height="14" alt="Pointer" /> SPIDER TELEMETRY // MAINFRAME METRICS
+
+<p>Telemetry and code activity monitored through GitHub's analytical services:</p>
 
 <div align="center">
 
-<img src="assets/command-center.svg" width="100%" alt="Spider-Verse Command Center HUD" />
+<img src="assets/spider-telemetry.svg" width="100%" alt="Spider Telemetry // Mainframe Metrics" />
 
 <br/><br/>
-
-<!-- TOP LANGUAGES USED HUD CARD (ANIMATED) -->
-<img src="assets/top-languages.svg" width="100%" alt="Spider-Verse Arsenal // Top Languages" />
-
-<br/><br/>
-
-<!-- TOP CONTRIBUTIONS BY COMMIT HUD CARD (ANIMATED) -->
-<img src="assets/top-contributions.svg" width="100%" alt="Spider Web Dispatch // Top Contributions" />
-
-<br/><br/>
-
-<!-- GITHUB STREAK STATS -->
-<p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=codexanjan&amp;theme=dark&amp;background=050509&amp;border=FF1B2D&amp;stroke=00A8FF&amp;ring=FF1B2D&amp;fire=21D4FD&amp;currStreakNum=F5F7FA&amp;sideNums=F5F7FA&amp;currStreakLabel=21D4FD&amp;sideLabels=8B93A7" width="100%" alt="Streak Stats" />
-</p>
-
-<br/>
-
-<!-- GITHUB STATS & COMPACT TOP LANGUAGES -->
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=codexanjan&amp;show_icons=true&amp;include_all_commits=true&amp;count_private=true&amp;hide_border=true&amp;bg_color=050509&amp;title_color=FF1B2D&amp;icon_color=00A8FF&amp;text_color=FFFFFF" width="49%" alt="GitHub Stats" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=codexanjan&amp;layout=compact&amp;langs_count=8&amp;hide_border=true&amp;bg_color=050509&amp;title_color=FF1B2D&amp;text_color=FFFFFF" width="49%" alt="Top Languages" />
-</p>
 
 <img src="assets/web-divider.svg" width="100%" alt="Web Divider" />
 
@@ -382,14 +377,34 @@ I enjoy combining technology, design, and rapid experimentation to turn ideas in
 <br/>
 
 <!-- ========================================================================= -->
-<!-- 08 // WEB ACTIVITY                                                        -->
+<!-- 08 // COMMIT RADAR // CODE CADENCE                                        -->
 <!-- ========================================================================= -->
 
-## <img src="assets/section-pointer.svg" width="32" height="14" alt="Pointer" /> WEB ACTIVITY
-
-<!-- ADD_SPIDERMAN_ASSET_HERE: assets/spiderman-web.gif -->
+## <img src="assets/section-pointer.svg" width="32" height="14" alt="Pointer" /> COMMIT RADAR // CODE CADENCE
 
 <div align="center">
+
+<img src="assets/commit-radar.svg" width="100%" alt="Commit Radar // Code Cadence" />
+
+<br/><br/>
+
+<img src="assets/web-divider.svg" width="100%" alt="Web Divider" />
+
+</div>
+
+<br/>
+
+<!-- ========================================================================= -->
+<!-- 09 // CONTRIBUTION PATROL // SPIDER CADENCE                               -->
+<!-- ========================================================================= -->
+
+## <img src="assets/section-pointer.svg" width="32" height="14" alt="Pointer" /> CONTRIBUTION PATROL // SPIDER CADENCE
+
+<div align="center">
+
+<img src="assets/spider-grid.svg" width="100%" alt="Spider Grid // Contribution Patrol" />
+
+<br/><br/>
 
 <!-- CONTRIBUTION GRID SNAKE -->
 <picture>
@@ -407,7 +422,42 @@ I enjoy combining technology, design, and rapid experimentation to turn ideas in
 <br/>
 
 <!-- ========================================================================= -->
-<!-- 09 // SPIDER-SENSE SIGNAL                                                 -->
+<!-- 10 // 2026 MISSION DIRECTIVES // ROADMAP                                  -->
+<!-- ========================================================================= -->
+
+## <img src="assets/section-pointer.svg" width="32" height="14" alt="Pointer" /> 2026 MISSION DIRECTIVES // ROADMAP
+
+<table width="100%">
+  <tr>
+    <td width="50%" valign="top">
+      <h4><img src="assets/spider-mini.svg" width="16" height="16" alt="Spider" /> DIRECTIVE 01 // AGENTIC AI ARCHITECTURE</h4>
+      <p>Engineering autonomous multi-agent tool pipelines, function-calling frameworks, and vector retrieval engines for next-generation intelligence workflows.</p>
+    </td>
+    <td width="50%" valign="top">
+      <h4><img src="assets/spider-mini.svg" width="16" height="16" alt="Spider" /> DIRECTIVE 02 // DISTRIBUTED HIGH-SCALE BACKENDS</h4>
+      <p>Constructing fault-tolerant microservices, resilient data stores, asynchronous queuing pipelines, and zero-downtime deployment topologies.</p>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <h4><img src="assets/spider-mini.svg" width="16" height="16" alt="Spider" /> DIRECTIVE 03 // 3D &amp; SPATIAL UI SYSTEMS</h4>
+      <p>Pushing web graphics boundaries using Three.js, WebGL shaders, and Canvas physics to deliver tactile, cinematic developer experiences.</p>
+    </td>
+    <td width="50%" valign="top">
+      <h4><img src="assets/spider-mini.svg" width="16" height="16" alt="Spider" /> DIRECTIVE 04 // OPEN-SOURCE MULTIVERSE LIBRARIES</h4>
+      <p>Publishing modular developer tooling, high-contrast HUD components, and performance-optimized utility libraries for the global open-source community.</p>
+    </td>
+  </tr>
+</table>
+
+<div align="center">
+  <img src="assets/web-divider.svg" width="100%" alt="Web Divider" />
+</div>
+
+<br/>
+
+<!-- ========================================================================= -->
+<!-- 11 // SPIDER-SENSE SIGNAL                                                 -->
 <!-- ========================================================================= -->
 
 ## <img src="assets/section-pointer.svg" width="32" height="14" alt="Pointer" /> SPIDER-SENSE SIGNAL
@@ -425,7 +475,7 @@ I enjoy combining technology, design, and rapid experimentation to turn ideas in
 <br/>
 
 <!-- ========================================================================= -->
-<!-- 10 // CONNECT                                                             -->
+<!-- 12 // CONNECT                                                             -->
 <!-- ========================================================================= -->
 
 ## <img src="assets/section-pointer.svg" width="32" height="14" alt="Pointer" /> CONNECT
@@ -469,7 +519,7 @@ I enjoy combining technology, design, and rapid experimentation to turn ideas in
 <br/>
 
 <!-- ========================================================================= -->
-<!-- 11 // FOOTER                                                              -->
+<!-- 13 // FOOTER                                                              -->
 <!-- ========================================================================= -->
 
 <div align="center">

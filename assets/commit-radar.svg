@@ -1,0 +1,293 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 320" width="100%" height="100%">
+  <defs>
+    <!-- Gradients -->
+    <linearGradient id="chart-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#05060B"/>
+      <stop offset="50%" stop-color="#090B14"/>
+      <stop offset="100%" stop-color="#040508"/>
+    </linearGradient>
+
+    <linearGradient id="area-glow-fill" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFD700" stop-opacity="0.35"/>
+      <stop offset="30%" stop-color="#FF1B2D" stop-opacity="0.2"/>
+      <stop offset="70%" stop-color="#00E5FF" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#05060B" stop-opacity="0"/>
+    </linearGradient>
+
+    <linearGradient id="line-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00E5FF"/>
+      <stop offset="30%" stop-color="#FFD700"/>
+      <stop offset="65%" stop-color="#FF1B2D"/>
+      <stop offset="85%" stop-color="#FFD700"/>
+      <stop offset="100%" stop-color="#00E5FF"/>
+    </linearGradient>
+
+    <!-- Filters -->
+    <filter id="radar-glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="3.5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="node-glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="2.5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <style>
+      .mono-text { font-family: 'Fira Code', 'Consolas', monospace; }
+      .sans-text { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+
+      @keyframes radar-pulse {
+        0%, 100% { transform: scale(1); opacity: 0.85; }
+        50% { transform: scale(1.4); opacity: 0.2; }
+      }
+      @keyframes line-glow-pulse {
+        0%, 100% { filter: drop-shadow(0 0 4px #FFD700); }
+        50% { filter: drop-shadow(0 0 10px #FF1B2D) drop-shadow(0 0 14px #00E5FF); }
+      }
+      @keyframes sweep-radar {
+        0% { transform: translateX(0); opacity: 0; }
+        50% { opacity: 0.5; }
+        100% { transform: translateX(820px); opacity: 0; }
+      }
+
+      .beacon-ring { transform-origin: 660px 105px; animation: radar-pulse 2s ease-out infinite; }
+      .glowing-curve { animation: line-glow-pulse 3.5s ease-in-out infinite; }
+      .radar-sweep-bar { animation: sweep-radar 5s linear infinite; }
+    </style>
+  </defs>
+
+  <!-- Canvas Chassis -->
+  <rect width="900" height="320" fill="url(#chart-bg)" rx="12" stroke="#1E293B" stroke-width="1.2"/>
+
+  <!-- Ambient Lighting -->
+  <circle cx="660" cy="110" r="140" fill="#FF1B2D" opacity="0.08" filter="blur(50px)"/>
+  <circle cx="200" cy="200" r="120" fill="#00E5FF" opacity="0.06" filter="blur(50px)"/>
+
+  <!-- Corner Brackets -->
+  <path d="M 16 34 L 16 16 L 34 16" fill="none" stroke="#FF1B2D" stroke-width="2"/>
+  <path d="M 884 34 L 884 16 L 866 16" fill="none" stroke="#00E5FF" stroke-width="2"/>
+  <path d="M 16 286 L 16 304 L 34 304" fill="none" stroke="#FF1B2D" stroke-width="2"/>
+  <path d="M 884 286 L 884 304 L 866 304" fill="none" stroke="#00E5FF" stroke-width="2"/>
+
+  <!-- Top Title -->
+  <text x="450" y="32" text-anchor="middle" fill="#FFD700" font-size="13.5" font-weight="900" class="mono-text" letter-spacing="1.5">
+    Anjan Shetty's Contribution Graph
+  </text>
+  <text x="450" y="46" text-anchor="middle" fill="#8B93A7" font-size="8.5" font-weight="700" class="mono-text" letter-spacing="2">
+    COMMIT RADAR // SPIDER CADENCE
+  </text>
+
+  <!-- ======================================================== -->
+  <!-- GRID & AXES                                             -->
+  <!-- Plot Area: X: 110 to 860 (width 750), Y: 60 to 260 (height 200) -->
+  <!-- Y levels: 30 (60), 25 (93.3), 20 (126.6), 15 (160), 10 (193.3), 5 (226.6), 0 (260) -->
+  <!-- ======================================================== -->
+  <g stroke="#1E293B" stroke-dasharray="2 3" stroke-width="0.8">
+    <line x1="110" y1="60" x2="860" y2="60"/>
+    <line x1="110" y1="93.3" x2="860" y2="93.3"/>
+    <line x1="110" y1="126.6" x2="860" y2="126.6"/>
+    <line x1="110" y1="160" x2="860" y2="160"/>
+    <line x1="110" y1="193.3" x2="860" y2="193.3"/>
+    <line x1="110" y1="226.6" x2="860" y2="226.6"/>
+  </g>
+  <!-- Base X Axis Line (Solid) -->
+  <line x1="110" y1="260" x2="860" y2="260" stroke="#334155" stroke-width="1.2"/>
+  <line x1="110" y1="60" x2="110" y2="260" stroke="#334155" stroke-width="1.2"/>
+
+  <!-- Y-Axis Labels -->
+  <g fill="#94A3B8" font-size="9" font-weight="700" class="mono-text" text-anchor="end">
+    <text x="100" y="63">30</text>
+    <text x="100" y="96">25</text>
+    <text x="100" y="130">20</text>
+    <text x="100" y="163">15</text>
+    <text x="100" y="196">10</text>
+    <text x="100" y="230">5</text>
+    <text x="100" y="263">0</text>
+  </g>
+
+  <!-- Y-Axis Title (Rotated) -->
+  <text x="-160" y="72" transform="rotate(-90)" fill="#FFD700" font-size="9" font-weight="800" class="mono-text" text-anchor="middle" letter-spacing="1">
+    Contributions
+  </text>
+
+  <!-- ======================================================== -->
+  <!-- X-Axis Labels (30 Days: 13..31, 1..12)                   -->
+  <!-- Step = 750 / 29 = 25.86px                               -->
+  <!-- ======================================================== -->
+  <g fill="#94A3B8" font-size="8.5" font-weight="700" class="mono-text" text-anchor="middle">
+    <!-- Day 13..31 -->
+    <text x="110" y="278">13</text>
+    <text x="135.8" y="278">14</text>
+    <text x="161.7" y="278">15</text>
+    <text x="187.5" y="278">16</text>
+    <text x="213.4" y="278">17</text>
+    <text x="239.3" y="278">18</text>
+    <text x="265.1" y="278">19</text>
+    <text x="291.0" y="278">20</text>
+    <text x="316.8" y="278">21</text>
+    <text x="342.7" y="278">22</text>
+    <text x="368.6" y="278">23</text>
+    <text x="394.4" y="278">24</text>
+    <text x="420.3" y="278">25</text>
+    <text x="446.2" y="278">26</text>
+    <text x="472.0" y="278">27</text>
+    <text x="497.9" y="278">28</text>
+    <text x="523.7" y="278">29</text>
+    <text x="549.6" y="278">30</text>
+    <text x="575.5" y="278">31</text>
+    <!-- Day 1..12 -->
+    <text x="601.3" y="278">1</text>
+    <text x="627.2" y="278">2</text>
+    <text x="653.1" y="278">3</text>
+    <text x="678.9" y="278">4</text>
+    <text x="704.8" y="278">5</text>
+    <text x="730.6" y="278">6</text>
+    <text x="756.5" y="278">7</text>
+    <text x="782.4" y="278">8</text>
+    <text x="808.2" y="278">9</text>
+    <text x="834.1" y="278">10</text>
+    <text x="860" y="278">11</text>
+  </g>
+
+  <!-- X-Axis Title -->
+  <text x="485" y="300" text-anchor="middle" fill="#FFD700" font-size="9" font-weight="800" class="mono-text" letter-spacing="1">
+    Days
+  </text>
+
+  <!-- ======================================================== -->
+  <!-- AREA & LINE CURVE                                       -->
+  <!-- Points mapped:                                          -->
+  <!-- 13: (110, 260)                                          -->
+  <!-- 14: (135.8, 260)                                        -->
+  <!-- 15: (161.7, 260)                                        -->
+  <!-- 16: (187.5, 260)                                        -->
+  <!-- 17: (213.4, 260)                                        -->
+  <!-- 18: (239.3, 260)                                        -->
+  <!-- 19: (265.1, 260)                                        -->
+  <!-- 20: (291.0, 260)                                        -->
+  <!-- 21: (316.8, 260)                                        -->
+  <!-- 22: (342.7, 260)                                        -->
+  <!-- 23 (9): (368.6, 200)                                    -->
+  <!-- 24 (4): (394.4, 233.3)                                  -->
+  <!-- 25 (0): (420.3, 260)                                    -->
+  <!-- 26 (6): (446.2, 220)                                    -->
+  <!-- 27 (8): (472.0, 206.6)                                  -->
+  <!-- 28 (0): (497.9, 260)                                    -->
+  <!-- 29 (7): (523.7, 213.3)                                  -->
+  <!-- 30 (0): (549.6, 260)                                    -->
+  <!-- 31 (0): (575.5, 260)                                    -->
+  <!-- 1 (0):  (601.3, 260)                                    -->
+  <!-- 2 (0):  (627.2, 260)                                    -->
+  <!-- 3 (0):  (653.1, 260)                                    -->
+  <!-- 4 (4):  (678.9, 233.3)                                  -->
+  <!-- 5 (21): (704.8, 120)                                    -->
+  <!-- 6 (26): (730.6, 86.6) [PEAK] -->
+  <!-- 7 (13): (756.5, 173.3)                                  -->
+  <!-- 8 (7):  (782.4, 213.3)                                  -->
+  <!-- 9 (0):  (808.2, 260)                                    -->
+  <!-- 10 (4): (834.1, 233.3)                                  -->
+  <!-- 11 (1): (860.0, 253.3)                                  -->
+  <!-- ======================================================== -->
+
+  <!-- Shaded Glow Area Under Wave -->
+  <path d="M 110 260 
+           L 342.7 260 
+           Q 355.6 200, 368.6 200 
+           Q 381.5 220, 394.4 233.3 
+           Q 407.3 255, 420.3 260 
+           Q 433.2 225, 446.2 220 
+           Q 459.1 210, 472.0 206.6 
+           Q 484.9 240, 497.9 260 
+           Q 510.8 220, 523.7 213.3 
+           Q 536.6 245, 549.6 260 
+           L 653.1 260 
+           Q 666.0 245, 678.9 233.3 
+           Q 691.8 160, 704.8 120 
+           Q 717.7 90, 730.6 86.6 
+           Q 743.5 130, 756.5 173.3 
+           Q 769.4 195, 782.4 213.3 
+           Q 795.3 250, 808.2 260 
+           Q 821.1 240, 834.1 233.3 
+           Q 847.0 248, 860.0 253.3 
+           L 860 260 Z" 
+        fill="url(#area-glow-fill)"/>
+
+  <!-- Main Glowing Spline Wave Curve -->
+  <path d="M 110 260 
+           L 342.7 260 
+           Q 355.6 200, 368.6 200 
+           Q 381.5 220, 394.4 233.3 
+           Q 407.3 255, 420.3 260 
+           Q 433.2 225, 446.2 220 
+           Q 459.1 210, 472.0 206.6 
+           Q 484.9 240, 497.9 260 
+           Q 510.8 220, 523.7 213.3 
+           Q 536.6 245, 549.6 260 
+           L 653.1 260 
+           Q 666.0 245, 678.9 233.3 
+           Q 691.8 160, 704.8 120 
+           Q 717.7 90, 730.6 86.6 
+           Q 743.5 130, 756.5 173.3 
+           Q 769.4 195, 782.4 213.3 
+           Q 795.3 250, 808.2 260 
+           Q 821.1 240, 834.1 233.3 
+           Q 847.0 248, 860.0 253.3" 
+        fill="none" stroke="url(#line-grad)" stroke-width="3" stroke-linecap="round" class="glowing-curve"/>
+
+  <!-- Peak Beacon Ring Animation at Day 6 -->
+  <g class="beacon-ring">
+    <circle cx="730.6" cy="86.6" r="16" fill="none" stroke="#FF1B2D" stroke-width="2"/>
+    <circle cx="730.6" cy="86.6" r="24" fill="none" stroke="#00E5FF" stroke-width="1.2"/>
+  </g>
+
+  <!-- Data Nodes (White circles with glowing borders) -->
+  <g fill="#FFFFFF" stroke="#FFD700" stroke-width="1.5" filter="url(#node-glow)">
+    <circle cx="110" cy="260" r="3"/>
+    <circle cx="135.8" cy="260" r="3"/>
+    <circle cx="161.7" cy="260" r="3"/>
+    <circle cx="187.5" cy="260" r="3"/>
+    <circle cx="213.4" cy="260" r="3"/>
+    <circle cx="239.3" cy="260" r="3"/>
+    <circle cx="265.1" cy="260" r="3"/>
+    <circle cx="291.0" cy="260" r="3"/>
+    <circle cx="316.8" cy="260" r="3"/>
+    <circle cx="342.7" cy="260" r="3"/>
+    <circle cx="368.6" cy="200" r="3.5"/>
+    <circle cx="394.4" cy="233.3" r="3"/>
+    <circle cx="420.3" cy="260" r="3"/>
+    <circle cx="446.2" cy="220" r="3.5"/>
+    <circle cx="472.0" cy="206.6" r="3.5"/>
+    <circle cx="497.9" cy="260" r="3"/>
+    <circle cx="523.7" cy="213.3" r="3.5"/>
+    <circle cx="549.6" cy="260" r="3"/>
+    <circle cx="575.5" cy="260" r="3"/>
+    <circle cx="601.3" cy="260" r="3"/>
+    <circle cx="627.2" cy="260" r="3"/>
+    <circle cx="653.1" cy="260" r="3"/>
+    <circle cx="678.9" cy="233.3" r="3"/>
+    <circle cx="704.8" cy="120" r="4" stroke="#00E5FF"/>
+    <!-- Peak Node (Larger) -->
+    <circle cx="730.6" cy="86.6" r="5" fill="#FFFFFF" stroke="#FF1B2D" stroke-width="2.5"/>
+    <circle cx="756.5" cy="173.3" r="4" stroke="#00E5FF"/>
+    <circle cx="782.4" cy="213.3" r="3.5"/>
+    <circle cx="808.2" cy="260" r="3"/>
+    <circle cx="834.1" cy="233.3" r="3"/>
+    <circle cx="860.0" cy="253.3" r="3"/>
+  </g>
+
+  <!-- Peak Annotation Tag -->
+  <g transform="translate(730.6, 68)">
+    <rect x="-24" y="-14" width="48" height="18" rx="4" fill="#090B14" stroke="#FF1B2D" stroke-width="1"/>
+    <text x="0" y="-2" text-anchor="middle" fill="#FFFFFF" font-size="9" font-weight="900" class="mono-text">26</text>
+  </g>
+
+  <!-- Radar Vertical Sweep Scanner -->
+  <line x1="110" y1="60" x2="110" y2="260" stroke="#00E5FF" stroke-width="1.5" opacity="0.4" class="radar-sweep-bar"/>
+</svg>
