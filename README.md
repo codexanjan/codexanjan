@@ -46,43 +46,33 @@
 
 ## <img src="assets/section-pointer.svg" width="32" height="14" alt="Pointer" /> ABOUT ME
 
-I am Anjan Shetty, a developer focused on building intelligent, practical, and visually distinctive digital products.
+I am **Anjan Shetty**, a developer focused on building intelligent, practical, and visually distinctive digital products.
 
 I enjoy combining technology, design, and rapid experimentation to turn ideas into working systems.
 
-**Core interests:**
-- <img src="assets/section-pointer.svg" width="24" height="10" alt="Pointer" /> Full Stack Development
-- <img src="assets/section-pointer.svg" width="24" height="10" alt="Pointer" /> Artificial Intelligence
-- <img src="assets/section-pointer.svg" width="24" height="10" alt="Pointer" /> Modern UI/UX
-- <img src="assets/section-pointer.svg" width="24" height="10" alt="Pointer" /> Hackathon Development
-- <img src="assets/section-pointer.svg" width="24" height="10" alt="Pointer" /> Creative Engineering
-- <img src="assets/section-pointer.svg" width="24" height="10" alt="Pointer" /> Product Development
+<br/>
 
-<!-- ADD_SPIDERMAN_ASSET_HERE: assets/spiderman-action.gif -->
+### <img src="assets/section-pointer.svg" width="24" height="10" alt="Pointer" /> CORE INTERESTS
+
+- <img src="assets/section-pointer.svg" width="20" height="9" alt="Pointer" /> **Full Stack Development** — Performant end-to-end architectures and scalable web applications
+- <img src="assets/section-pointer.svg" width="20" height="9" alt="Pointer" /> **Artificial Intelligence** — Agentic workflows, LLM tool pipelines, and neural networks
+- <img src="assets/section-pointer.svg" width="20" height="9" alt="Pointer" /> **Modern UI/UX** — Immersive, tactile, and cinematic interactive interfaces
+- <img src="assets/section-pointer.svg" width="20" height="9" alt="Pointer" /> **Hackathon Development** — Rapid prototyping and podium-tier execution under pressure
+- <img src="assets/section-pointer.svg" width="20" height="9" alt="Pointer" /> **Creative Engineering** — WebGL, shaders, canvas physics, and animated SVG graphics
+- <img src="assets/section-pointer.svg" width="20" height="9" alt="Pointer" /> **Product Development** — Resilient APIs, distributed systems, and credential security
 
 <br/>
 
 <div align="center">
 
-<!-- DEVELOPER TERMINAL CARD WITH SPIDER FRAME -->
+<!-- SPIDER-VERSE DEVELOPER LANYARD ID BADGE -->
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/spider-frame.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="assets/spider-frame.svg" />
-  <img src="assets/spider-frame.svg" width="100%" alt="Spider Frame" />
+  <source media="(prefers-color-scheme: dark)" srcset="assets/spider-lanyard.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="assets/spider-lanyard.svg" />
+  <img src="assets/spider-lanyard.svg" width="460" alt="Spider-Verse Developer Lanyard ID Badge" />
 </picture>
 
-```yaml
-name: Anjan Shetty
-github: codexanjan
-role: Full Stack Developer
-focus:
-  - Artificial Intelligence
-  - Web Development
-  - Product Building
-  - Hackathons
-approach: Build. Test. Improve.
-status: Creating
-```
+<br/><br/>
 
 <img src="assets/web-divider.svg" width="100%" alt="Web Divider" />
 
@@ -91,94 +81,55 @@ status: Creating
 <br/>
 
 <!-- ========================================================================= -->
-<!-- 03 // SPIDER NETWORK                                                      -->
+<!-- 03 // SPIDER ARSENAL                                                      -->
 <!-- ========================================================================= -->
 
-## <img src="assets/section-pointer.svg" width="32" height="14" alt="Pointer" /> SPIDER NETWORK
+## <img src="assets/section-pointer.svg" width="32" height="14" alt="Pointer" /> SPIDER ARSENAL // TECH SUIT &amp; CAPABILITIES
 
 <div align="center">
 
-<img src="assets/profile-grid.svg" width="100%" alt="Spider Network Topology" />
+<a href="https://github.com/codexanjan">
+  <img src="assets/spider-logo.svg" width="120" height="120" alt="Spider Arsenal Emblem" />
+</a>
 
-</div>
+<br/><br/>
 
-<table width="100%">
-  <tr>
-    <td width="50%" valign="top">
-      <h3><img src="assets/spider-mini.svg" width="20" height="20" alt="Spider" /> CARD 01 // BUILD</h3>
-      <p><b>Turn ambitious ideas into functional prototypes.</b></p>
-      <p>Decomposing complex requirements into clean architectural primitives, robust APIs, and resilient data flows that execute under demanding production conditions.</p>
-    </td>
-    <td width="50%" valign="top">
-      <h3><img src="assets/spider-mini.svg" width="20" height="20" alt="Spider" /> CARD 02 // DESIGN</h3>
-      <p><b>Make functionality and presentation work together.</b></p>
-      <p>Designing interfaces that feel tactile, responsive, and intuitive. Visual polish is not an afterthought; it is how software respects human attention.</p>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%" valign="top">
-      <h3><img src="assets/spider-mini.svg" width="20" height="20" alt="Spider" /> CARD 03 // INTELLIGENCE</h3>
-      <p><b>Use AI where it genuinely improves a product.</b></p>
-      <p>Integrating LLM pipelines, autonomous tool calling, and vector retrieval into practical workflows that deliver measurable leverage rather than superficial novelty.</p>
-    </td>
-    <td width="50%" valign="top">
-      <h3><img src="assets/spider-mini.svg" width="20" height="20" alt="Spider" /> CARD 04 // ITERATE</h3>
-      <p><b>Build, test, improve, repeat.</b></p>
-      <p>Rapid feedback loops, ruthless refactoring, and disciplined continuous integration to ensure every deploy is measurably superior to the previous release.</p>
-    </td>
-  </tr>
-</table>
-
-<div align="center">
-  <img src="assets/web-divider.svg" width="100%" alt="Web Divider" />
-</div>
-
-<br/>
-
-<!-- ========================================================================= -->
-<!-- 04 // TECH ARSENAL                                                        -->
-<!-- ========================================================================= -->
-
-## <img src="assets/section-pointer.svg" width="32" height="14" alt="Pointer" /> TECH ARSENAL
-
-<div align="center">
-
-#### LANGUAGES
+#### <img src="assets/section-pointer.svg" width="20" height="9" alt="Pointer" /> // WEB WEAVING [CORE LANGUAGES]
 <a href="https://skillicons.dev">
   <img src="https://skillicons.dev/icons?i=py,js,ts,java,c,cpp,cs,go&theme=dark" alt="Languages" />
 </a>
 
 <br/><br/>
 
-#### FRONTEND
+#### <img src="assets/section-pointer.svg" width="20" height="9" alt="Pointer" /> // HUD INTERFACES [FRONTEND &amp; UI SYSTEMS]
 <a href="https://skillicons.dev">
   <img src="https://skillicons.dev/icons?i=html,css,react,nextjs,tailwind&theme=dark" alt="Frontend" />
 </a>
 
 <br/><br/>
 
-#### BACKEND
+#### <img src="assets/section-pointer.svg" width="20" height="9" alt="Pointer" /> // SPIDER-NET BACKBONE [BACKEND &amp; RUNTIMES]
 <a href="https://skillicons.dev">
   <img src="https://skillicons.dev/icons?i=nodejs,express,firebase,supabase&theme=dark" alt="Backend" />
 </a>
 
 <br/><br/>
 
-#### DATABASES
+#### <img src="assets/section-pointer.svg" width="20" height="9" alt="Pointer" /> // CANON ARCHIVES [DATABASES &amp; STORAGE]
 <a href="https://skillicons.dev">
   <img src="https://skillicons.dev/icons?i=mongodb,mysql,postgres&theme=dark" alt="Databases" />
 </a>
 
 <br/><br/>
 
-#### ARTIFICIAL INTELLIGENCE
+#### <img src="assets/section-pointer.svg" width="20" height="9" alt="Pointer" /> // SPIDER-SENSE COGNITION [ARTIFICIAL INTELLIGENCE]
 <a href="https://skillicons.dev">
   <img src="https://skillicons.dev/icons?i=py,tensorflow,scikitlearn&theme=dark" alt="AI / Machine Learning" />
 </a>
 
 <br/><br/>
 
-#### TOOLS &amp; WORKSPACE
+#### <img src="assets/section-pointer.svg" width="20" height="9" alt="Pointer" /> // SPIDER-OPS TOOLKIT [TOOLS &amp; WORKSPACE]
 <a href="https://skillicons.dev">
   <img src="https://skillicons.dev/icons?i=git,github,vscode,figma,postman,vercel&theme=dark" alt="Tools" />
 </a>
@@ -192,7 +143,7 @@ status: Creating
 <br/>
 
 <!-- ========================================================================= -->
-<!-- 05 // SPIDER-VERSE MISSIONS                                                 -->
+<!-- 04 // SPIDER-VERSE MISSIONS                                                 -->
 <!-- ========================================================================= -->
 
 ## <img src="assets/section-pointer.svg" width="32" height="14" alt="Pointer" /> SPIDER-VERSE MISSIONS
@@ -272,7 +223,7 @@ status: Creating
 <br/>
 
 <!-- ========================================================================= -->
-<!-- 06 // SPIDER-VERSE ACHIEVEMENTS                                             -->
+<!-- 05 // SPIDER-VERSE ACHIEVEMENTS                                             -->
 <!-- ========================================================================= -->
 
 ## <img src="assets/section-pointer.svg" width="32" height="14" alt="Pointer" /> SPIDER-VERSE ACHIEVEMENTS
@@ -325,7 +276,7 @@ status: Creating
 <br/>
 
 <!-- ========================================================================= -->
-<!-- 07 // SPIDER-VERSE CREDENTIAL VAULT                                           -->
+<!-- 06 // SPIDER-VERSE CREDENTIAL VAULT                                         -->
 <!-- ========================================================================= -->
 
 ## <img src="assets/section-pointer.svg" width="32" height="14" alt="Pointer" /> SPIDER-VERSE CREDENTIAL VAULT
@@ -390,7 +341,7 @@ status: Creating
 <br/>
 
 <!-- ========================================================================= -->
-<!-- 08 // SPIDER-VERSE COMMAND CENTER                                                  -->
+<!-- 07 // SPIDER-VERSE COMMAND CENTER                                           -->
 <!-- ========================================================================= -->
 
 ## <img src="assets/section-pointer.svg" width="32" height="14" alt="Pointer" /> SPIDER-VERSE COMMAND CENTER
@@ -431,7 +382,7 @@ status: Creating
 <br/>
 
 <!-- ========================================================================= -->
-<!-- 09 // WEB ACTIVITY                                                        -->
+<!-- 08 // WEB ACTIVITY                                                        -->
 <!-- ========================================================================= -->
 
 ## <img src="assets/section-pointer.svg" width="32" height="14" alt="Pointer" /> WEB ACTIVITY
@@ -456,7 +407,7 @@ status: Creating
 <br/>
 
 <!-- ========================================================================= -->
-<!-- 10 // SPIDER-SENSE SIGNAL                                                  -->
+<!-- 09 // SPIDER-SENSE SIGNAL                                                 -->
 <!-- ========================================================================= -->
 
 ## <img src="assets/section-pointer.svg" width="32" height="14" alt="Pointer" /> SPIDER-SENSE SIGNAL
@@ -474,7 +425,7 @@ status: Creating
 <br/>
 
 <!-- ========================================================================= -->
-<!-- 11 // CONNECT                                                             -->
+<!-- 10 // CONNECT                                                             -->
 <!-- ========================================================================= -->
 
 ## <img src="assets/section-pointer.svg" width="32" height="14" alt="Pointer" /> CONNECT
@@ -518,7 +469,7 @@ status: Creating
 <br/>
 
 <!-- ========================================================================= -->
-<!-- 12 // FOOTER                                                              -->
+<!-- 11 // FOOTER                                                              -->
 <!-- ========================================================================= -->
 
 <div align="center">

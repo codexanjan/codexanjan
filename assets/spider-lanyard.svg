@@ -1,0 +1,435 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 780" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradients -->
+    <linearGradient id="card-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#050508"/>
+      <stop offset="40%" stop-color="#090912"/>
+      <stop offset="70%" stop-color="#040509"/>
+      <stop offset="100%" stop-color="#020205"/>
+    </linearGradient>
+
+    <!-- Strap Fabric Gradient -->
+    <linearGradient id="strap-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FF1B2D"/>
+      <stop offset="8%" stop-color="#140204"/>
+      <stop offset="25%" stop-color="#0A0A0F"/>
+      <stop offset="50%" stop-color="#020204"/>
+      <stop offset="75%" stop-color="#0A0A0F"/>
+      <stop offset="92%" stop-color="#002233"/>
+      <stop offset="100%" stop-color="#00E5FF"/>
+    </linearGradient>
+
+    <!-- Metallic Clasp Gradient -->
+    <linearGradient id="metal-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#CBD5E1"/>
+      <stop offset="30%" stop-color="#64748B"/>
+      <stop offset="50%" stop-color="#FFFFFF"/>
+      <stop offset="70%" stop-color="#334155"/>
+      <stop offset="100%" stop-color="#94A3B8"/>
+    </linearGradient>
+
+    <!-- Holographic Barcode Gradient -->
+    <linearGradient id="holo-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FF1B2D"/>
+      <stop offset="25%" stop-color="#8B5CF6"/>
+      <stop offset="50%" stop-color="#00E5FF"/>
+      <stop offset="75%" stop-color="#21D4FD"/>
+      <stop offset="100%" stop-color="#FF1B2D"/>
+    </linearGradient>
+
+    <!-- Spider Leg Gradient -->
+    <linearGradient id="ly-leg-blue" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#21D4FD"/>
+      <stop offset="50%" stop-color="#00A8FF"/>
+      <stop offset="100%" stop-color="#0055ff"/>
+    </linearGradient>
+
+    <!-- Filters -->
+    <filter id="card-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="soft-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Patterns -->
+    <pattern id="strap-weave" width="8" height="8" patternUnits="userSpaceOnUse">
+      <path d="M 0 4 L 4 0 L 8 4 L 4 8 Z" fill="none" stroke="#FF1B2D" stroke-opacity="0.18" stroke-width="0.75"/>
+    </pattern>
+
+    <pattern id="card-matrix" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M 24 0 L 0 0 0 24" fill="none" stroke="#8B93A7" stroke-opacity="0.04" stroke-width="1"/>
+      <circle cx="12" cy="12" r="0.8" fill="#00E5FF" fill-opacity="0.12"/>
+    </pattern>
+
+    <!-- Animations -->
+    <style>
+      @keyframes badge-gentle-sway {
+        0%, 100% { transform: rotate(0deg); }
+        25% { transform: rotate(0.8deg) translateY(-2px); }
+        75% { transform: rotate(-0.8deg) translateY(1px); }
+      }
+      @keyframes laser-perimeter-run {
+        0% { stroke-dashoffset: 1200; }
+        100% { stroke-dashoffset: -1200; }
+      }
+      @keyframes card-scanline {
+        0% { transform: translateY(180px); opacity: 0; }
+        30% { opacity: 0.6; }
+        70% { opacity: 0.6; }
+        100% { transform: translateY(730px); opacity: 0; }
+      }
+      @keyframes reticle-turn {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+      @keyframes beacon-ping {
+        0%, 100% { opacity: 0.4; transform: scale(1); }
+        50% { opacity: 1; transform: scale(1.3); filter: drop-shadow(0 0 6px #00E5FF); }
+      }
+      @keyframes barcode-scan {
+        0%, 100% { transform: translateX(0); opacity: 0.3; }
+        50% { transform: translateX(240px); opacity: 1; }
+      }
+      @keyframes holo-shimmer {
+        0%, 100% { opacity: 0.2; }
+        50% { opacity: 0.55; }
+      }
+
+      .ly-sway { transform-origin: 300px 0px; animation: badge-gentle-sway 6s ease-in-out infinite; }
+      .ly-laser { stroke-dasharray: 140 400; animation: laser-perimeter-run 8s linear infinite; }
+      .ly-scan { animation: card-scanline 6.5s linear infinite; }
+      .ly-spin { transform-origin: 300px 360px; animation: reticle-turn 24s linear infinite; }
+      .ly-ping { transform-origin: center; animation: beacon-ping 2.2s ease-in-out infinite; }
+      .ly-bar-laser { animation: barcode-scan 3.2s ease-in-out infinite; }
+      .ly-holo { animation: holo-shimmer 4s ease-in-out infinite; }
+
+      .ly-title { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; font-weight: 900; }
+      .ly-sub { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; font-weight: 800; }
+      .ly-mono { font-family: 'SF Pro Display', -apple-system, 'Fira Code', 'Courier New', monospace; font-weight: 800; }
+    </style>
+  </defs>
+
+  <!-- ========================================================================= -->
+  <!-- 01 // LANYARD STRAP (SUSPENDED FROM TOP)                                  -->
+  <!-- ========================================================================= -->
+  <!-- Left Hanging Strap Rib -->
+  <polygon points="260,0 286,0 286,130 260,130" fill="url(#strap-grad)"/>
+  <polygon points="260,0 286,0 286,130 260,130" fill="url(#strap-weave)"/>
+
+  <!-- Right Hanging Strap Rib -->
+  <polygon points="314,0 340,0 340,130 314,130" fill="url(#strap-grad)"/>
+  <polygon points="314,0 340,0 340,130 314,130" fill="url(#strap-weave)"/>
+
+  <!-- Strap Cyber Stitching & Neon Web Edges -->
+  <line x1="261" y1="0" x2="261" y2="130" stroke="#FF1B2D" stroke-width="2"/>
+  <line x1="285" y1="0" x2="285" y2="130" stroke="#00E5FF" stroke-width="1.2" stroke-dasharray="6 4"/>
+  <line x1="315" y1="0" x2="315" y2="130" stroke="#FF1B2D" stroke-width="1.2" stroke-dasharray="6 4"/>
+  <line x1="339" y1="0" x2="339" y2="130" stroke="#00E5FF" stroke-width="2"/>
+
+  <!-- Strap Typography -->
+  <g transform="translate(273, 65) rotate(90)" text-anchor="middle">
+    <text x="0" y="3.5" fill="#FFFFFF" font-size="9" class="ly-mono" letter-spacing="3">SPIDER-VERSE</text>
+  </g>
+  <g transform="translate(327, 65) rotate(90)" text-anchor="middle">
+    <text x="0" y="3.5" fill="#00E5FF" font-size="9" class="ly-mono" letter-spacing="3">EARTH-CODEX-01</text>
+  </g>
+
+  <!-- Lanyard Buckle / Safety Breakaway Mount -->
+  <rect x="252" y="112" width="96" height="20" rx="4" fill="#09090F" stroke="#334155" stroke-width="1.5"/>
+  <line x1="300" y1="112" x2="300" y2="132" stroke="#FF1B2D" stroke-width="2"/>
+  <circle cx="276" cy="122" r="3" fill="#FF1B2D"/>
+  <circle cx="324" cy="122" r="3" fill="#00E5FF"/>
+
+  <!-- ========================================================================= -->
+  <!-- 02 // METALLIC SWIVEL CLASP & SPRING CARABINER                            -->
+  <!-- ========================================================================= -->
+  <!-- Upper Swivel Ring -->
+  <ellipse cx="300" cy="138" rx="16" ry="7" fill="none" stroke="url(#metal-grad)" stroke-width="4"/>
+
+  <!-- Swivel Barrel Connection -->
+  <rect x="294" y="142" width="12" height="14" rx="2" fill="url(#metal-grad)"/>
+  <line x1="294" y1="148" x2="306" y2="148" stroke="#1E293B" stroke-width="1.5"/>
+
+  <!-- Metal Carabiner Hook Body -->
+  <path d="M 292 156 C 284 165 284 185 292 195 C 298 202 302 202 308 195 C 316 185 316 165 308 156 Z" fill="none" stroke="url(#metal-grad)" stroke-width="4.5"/>
+  <!-- Carabiner Spring Arm -->
+  <line x1="304" y1="162" x2="294" y2="186" stroke="#94A3B8" stroke-width="2.5"/>
+
+  <!-- ========================================================================= -->
+  <!-- 03 // SWAYING BADGE CARD CONTAINER (PHYSICS RIG)                          -->
+  <!-- ========================================================================= -->
+  <g class="ly-sway">
+
+    <!-- Badge Clip Punch Hole Mount -->
+    <rect x="272" y="190" width="56" height="14" rx="7" fill="#040508" stroke="url(#metal-grad)" stroke-width="2"/>
+    <rect x="282" y="193" width="36" height="8" rx="4" fill="#000000"/>
+
+    <!-- Dark Base Glassmorphic Casing -->
+    <rect x="75" y="196" width="450" height="560" rx="18" fill="url(#card-bg)" stroke="#8B93A7" stroke-opacity="0.25" stroke-width="1.4"/>
+    <rect x="75" y="196" width="450" height="560" rx="18" fill="url(#card-matrix)"/>
+
+    <!-- Cut-Corner Angular HUD Outer Frame Base -->
+    <path d="M 100 204 L 500 204 L 518 222 L 518 730 L 500 748 L 100 748 L 82 730 L 82 222 Z" fill="none" stroke="#FF1B2D" stroke-opacity="0.4" stroke-width="2"/>
+
+    <!-- Animated Running Laser Border -->
+    <path d="M 100 204 L 500 204 L 518 222 L 518 730 L 500 748 L 100 748 L 82 730 L 82 222 Z" fill="none" stroke="#00E5FF" stroke-width="2.5" class="ly-laser" filter="url(#card-glow)"/>
+
+    <!-- Corner Brackets -->
+    <path d="M 78 230 L 78 200 L 108 200" fill="none" stroke="#00A8FF" stroke-width="2.5"/>
+    <path d="M 522 230 L 522 200 L 492 200" fill="none" stroke="#FF1B2D" stroke-width="2.5"/>
+    <path d="M 78 724 L 78 754 L 108 754" fill="none" stroke="#FF1B2D" stroke-width="2.5"/>
+    <path d="M 522 724 L 522 754 L 492 754" fill="none" stroke="#00A8FF" stroke-width="2.5"/>
+
+    <!-- Corner Spider Webs -->
+    <g stroke="#FF1B2D" stroke-width="1" stroke-opacity="0.3" fill="none" class="ly-holo">
+      <line x1="82" y1="222" x2="140" y2="250"/>
+      <line x1="82" y1="222" x2="110" y2="280"/>
+      <path d="M 98 232 Q 112 245 96 256"/>
+    </g>
+    <g stroke="#00E5FF" stroke-width="1" stroke-opacity="0.3" fill="none" class="ly-holo">
+      <line x1="518" y1="730" x2="460" y2="702"/>
+      <line x1="518" y1="730" x2="490" y2="672"/>
+      <path d="M 502 720 Q 488 707 504 696"/>
+    </g>
+
+    <!-- Animated Scanline Sweep Across Card -->
+    <line x1="86" y1="0" x2="514" y2="0" stroke="url(#holo-grad)" stroke-width="1.8" class="ly-scan" opacity="0.6"/>
+
+    <!-- ================================================================= -->
+    <!-- CARD SECTION 1: HEADER & MULTIVERSE PASS STATUS                   -->
+    <!-- ================================================================= -->
+    <g transform="translate(100, 222)">
+      <!-- Multiverse Clearance Pill -->
+      <rect x="0" y="0" width="220" height="26" rx="4" fill="#09090F" stroke="#FF1B2D" stroke-width="1.4"/>
+      <circle cx="14" cy="13" r="4.5" fill="#FF1B2D" class="ly-ping" filter="url(#card-glow)"/>
+      <text x="28" y="18" fill="#FFFFFF" font-size="11.5" class="ly-sub" letter-spacing="1.5">CANON PASS // LEVEL 99</text>
+
+      <!-- Multiverse Node ID -->
+      <rect x="236" y="0" width="164" height="26" rx="4" fill="#09090F" stroke="#00E5FF" stroke-width="1.4"/>
+      <circle cx="250" cy="13" r="4.5" fill="#00E5FF" class="ly-ping" filter="url(#card-glow)"/>
+      <text x="264" y="18" fill="#00E5FF" font-size="11.5" class="ly-mono" letter-spacing="1">NODE: EARTH-01</text>
+    </g>
+
+    <text x="300" y="270" text-anchor="middle" fill="#8B93A7" font-size="10.5" class="ly-mono" letter-spacing="2.5">
+      MULTIVERSE DEVELOPER ACCESS BADGE
+    </text>
+
+    <!-- ================================================================= -->
+    <!-- CARD SECTION 2: EMBEDDED CYBER SPIDER EMBLEM (PHOTO AREA)          -->
+    <!-- ================================================================= -->
+    <g transform="translate(300, 360)">
+      <!-- Viewport Outer Shield -->
+      <polygon points="0,-72 70,-40 70,40 0,72 -70,40 -70,-40" fill="#07070C" stroke="#1E293B" stroke-width="2"/>
+      <polygon points="0,-64 62,-34 62,34 0,64 -62,34 -62,-34" fill="#020205" stroke="#FF1B2D" stroke-opacity="0.5" stroke-width="1.5"/>
+
+      <!-- Ambient Glow Behind Spider -->
+      <circle cx="0" cy="0" r="46" fill="#FF1B2D" fill-opacity="0.18" filter="url(#card-glow)"/>
+      <circle cx="0" cy="0" r="32" fill="#00E5FF" fill-opacity="0.14" filter="url(#card-glow)"/>
+
+      <!-- Rotating Reticle Rings -->
+      <g class="ly-spin">
+        <circle cx="0" cy="0" r="58" fill="none" stroke="#00E5FF" stroke-width="1.2" stroke-dasharray="14 16 6 16" opacity="0.6"/>
+        <circle cx="0" cy="0" r="48" fill="none" stroke="#FF1B2D" stroke-width="1" stroke-dasharray="24 14"/>
+        <circle cx="0" cy="-58" r="3" fill="#00E5FF"/>
+        <circle cx="0" cy="58" r="3" fill="#FF1B2D"/>
+      </g>
+
+      <!-- ============================================== -->
+      <!-- OFFICIAL DEVELOPER SPIDER EMBLEM               -->
+      <!-- ============================================== -->
+      <g transform="scale(0.72) translate(-120, -120)">
+        <!-- 8 Electric Blue Legs -->
+        <!-- Leg 1 -->
+        <path d="M 104 100 L 76 72 L 44 80 L 32 64" fill="none" stroke="url(#ly-leg-blue)" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" filter="url(#soft-glow)"/>
+        <circle cx="32" cy="64" r="2.2" fill="#21D4FD"/>
+        <!-- Leg 2 -->
+        <path d="M 100 114 L 64 96 L 36 112 L 20 102" fill="none" stroke="url(#ly-leg-blue)" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" filter="url(#soft-glow)"/>
+        <circle cx="20" cy="102" r="2.2" fill="#21D4FD"/>
+        <!-- Leg 3 -->
+        <path d="M 100 130 L 62 144 L 38 134 L 24 148" fill="none" stroke="url(#ly-leg-blue)" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" filter="url(#soft-glow)"/>
+        <circle cx="24" cy="148" r="2.2" fill="#21D4FD"/>
+        <!-- Leg 4 -->
+        <path d="M 106 142 L 72 168 L 52 162 L 40 184" fill="none" stroke="url(#ly-leg-blue)" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" filter="url(#soft-glow)"/>
+        <circle cx="40" cy="184" r="2.2" fill="#21D4FD"/>
+        <!-- Leg 5 -->
+        <path d="M 136 100 L 164 72 L 196 80 L 208 64" fill="none" stroke="url(#ly-leg-blue)" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" filter="url(#soft-glow)"/>
+        <circle cx="208" cy="64" r="2.2" fill="#21D4FD"/>
+        <!-- Leg 6 -->
+        <path d="M 140 114 L 176 96 L 204 112 L 220 102" fill="none" stroke="url(#ly-leg-blue)" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" filter="url(#soft-glow)"/>
+        <circle cx="220" cy="102" r="2.2" fill="#21D4FD"/>
+        <!-- Leg 7 -->
+        <path d="M 140 130 L 178 144 L 202 134 L 216 148" fill="none" stroke="url(#ly-leg-blue)" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" filter="url(#soft-glow)"/>
+        <circle cx="216" cy="148" r="2.2" fill="#21D4FD"/>
+        <!-- Leg 8 -->
+        <path d="M 134 142 L 168 168 L 188 162 L 200 184" fill="none" stroke="url(#ly-leg-blue)" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" filter="url(#soft-glow)"/>
+        <circle cx="200" cy="184" r="2.2" fill="#21D4FD"/>
+
+        <!-- Spider Head -->
+        <polygon points="120,70 136,88 120,98 104,88" fill="#050509" stroke="#FF1B2D" stroke-width="2" filter="url(#card-glow)"/>
+        <circle cx="114" cy="85" r="2.8" fill="#21D4FD"/>
+        <circle cx="126" cy="85" r="2.8" fill="#21D4FD"/>
+        <polygon points="120,74 126,82 120,86 114,82" fill="#FF1B2D"/>
+
+        <!-- Spider Abdomen -->
+        <polygon points="120,102 144,116 140,154 120,172 100,154 96,116" fill="#09090F" stroke="#FF1B2D" stroke-width="2" filter="url(#card-glow)"/>
+        <polygon points="120,106 138,118 135,148 120,164 105,148 102,118" fill="#050509" stroke="#00A8FF" stroke-width="1"/>
+
+        <!-- Abdomen Embed: </> AND AS -->
+        <text x="120" y="132" text-anchor="middle" fill="#FFFFFF" font-size="14" font-weight="900" class="ly-mono">&lt;/&gt;</text>
+        <text x="120" y="152" text-anchor="middle" fill="#00E5FF" font-size="10" font-weight="900" class="ly-mono" letter-spacing="3">AS</text>
+
+        <line x1="120" y1="102" x2="120" y2="120" stroke="#FF1B2D" stroke-width="1.5"/>
+        <line x1="120" y1="156" x2="120" y2="170" stroke="#FF1B2D" stroke-width="1.5"/>
+      </g>
+    </g>
+
+    <!-- ================================================================= -->
+    <!-- CARD SECTION 3: DEVELOPER CREDENTIAL IDENTIFICATION               -->
+    <!-- ================================================================= -->
+    <g transform="translate(300, 458)" text-anchor="middle">
+      <!-- Master Name (Solid White with Dual Neon Glow) -->
+      <text x="0" y="0" fill="#FFFFFF" font-size="30" class="ly-title" letter-spacing="4" style="filter: drop-shadow(0 0 12px rgba(255, 27, 45, 0.8)) drop-shadow(0 0 20px rgba(0, 229, 255, 0.6));">
+        ANJAN SHETTY
+      </text>
+
+      <!-- Codename & Verified Badge -->
+      <g transform="translate(0, 24)">
+        <rect x="-110" y="-12" width="220" height="22" rx="11" fill="#09090F" stroke="#00E5FF" stroke-width="1.2"/>
+        <text x="0" y="3" fill="#00E5FF" font-size="12" class="ly-mono" letter-spacing="2">
+          @codexanjan // VERIFIED
+        </text>
+      </g>
+
+      <!-- Primary Role -->
+      <text x="0" y="60" fill="#FF1744" font-size="14.5" class="ly-title" letter-spacing="2.5">
+        FULL STACK DEVELOPER // SPIDER ARCHITECT
+      </text>
+    </g>
+
+    <!-- ================================================================= -->
+    <!-- CARD SECTION 4: HUD TELEMETRY METRICS GRID (2 COLUMNS)            -->
+    <!-- ================================================================= -->
+    <g transform="translate(100, 542)">
+      <!-- Row 1: Clearance & Origin -->
+      <g transform="translate(0, 0)">
+        <rect x="0" y="0" width="190" height="42" rx="4" fill="#09090F" stroke="#8B93A7" stroke-opacity="0.3" stroke-width="1"/>
+        <line x1="0" y1="0" x2="3" y2="42" stroke="#FF1B2D" stroke-width="3"/>
+        <text x="14" y="16" fill="#8B93A7" font-size="9" class="ly-mono" letter-spacing="1">CLEARANCE</text>
+        <text x="14" y="32" fill="#FFFFFF" font-size="12" class="ly-sub" letter-spacing="1">LEVEL 01 // CANON</text>
+      </g>
+
+      <g transform="translate(210, 0)">
+        <rect x="0" y="0" width="190" height="42" rx="4" fill="#09090F" stroke="#8B93A7" stroke-opacity="0.3" stroke-width="1"/>
+        <line x1="0" y1="0" x2="3" y2="42" stroke="#00E5FF" stroke-width="3"/>
+        <text x="14" y="16" fill="#8B93A7" font-size="9" class="ly-mono" letter-spacing="1">ORIGIN SECTOR</text>
+        <text x="14" y="32" fill="#00E5FF" font-size="12" class="ly-sub" letter-spacing="1">EARTH-CODEX-01</text>
+      </g>
+
+      <!-- Row 2: Specialization & Protocol -->
+      <g transform="translate(0, 50)">
+        <rect x="0" y="0" width="190" height="42" rx="4" fill="#09090F" stroke="#8B93A7" stroke-opacity="0.3" stroke-width="1"/>
+        <line x1="0" y1="0" x2="3" y2="42" stroke="#00E5FF" stroke-width="3"/>
+        <text x="14" y="16" fill="#8B93A7" font-size="9" class="ly-mono" letter-spacing="1">ARSENAL FOCUS</text>
+        <text x="14" y="32" fill="#FFFFFF" font-size="12" class="ly-sub" letter-spacing="1">AI AGENTS + WEBGL</text>
+      </g>
+
+      <g transform="translate(210, 50)">
+        <rect x="0" y="0" width="190" height="42" rx="4" fill="#09090F" stroke="#8B93A7" stroke-opacity="0.3" stroke-width="1"/>
+        <line x1="0" y1="0" x2="3" y2="42" stroke="#FF1B2D" stroke-width="3"/>
+        <text x="14" y="16" fill="#8B93A7" font-size="9" class="ly-mono" letter-spacing="1">CORE PROTOCOL</text>
+        <text x="14" y="32" fill="#FF1744" font-size="12" class="ly-sub" letter-spacing="1">BUILD / TEST / SHIP</text>
+      </g>
+    </g>
+
+    <!-- ================================================================= -->
+    <!-- CARD SECTION 5: SECURITY BARCODE & NFC SMART CHIP                 -->
+    <!-- ================================================================= -->
+    <g transform="translate(100, 650)">
+      <!-- NFC Cyber Chip -->
+      <g transform="translate(0, 8)">
+        <rect x="0" y="0" width="46" height="36" rx="4" fill="#09090F" stroke="#F59E0B" stroke-width="1.2"/>
+        <!-- Chip Circuitry -->
+        <rect x="10" y="8" width="26" height="20" rx="2" fill="none" stroke="#F59E0B" stroke-width="1"/>
+        <line x1="0" y1="18" x2="10" y2="18" stroke="#F59E0B" stroke-width="1"/>
+        <line x1="36" y1="18" x2="46" y2="18" stroke="#F59E0B" stroke-width="1"/>
+        <line x1="23" y1="0" x2="23" y2="8" stroke="#F59E0B" stroke-width="1"/>
+        <line x1="23" y1="28" x2="23" y2="36" stroke="#F59E0B" stroke-width="1"/>
+      </g>
+
+      <!-- Barcode Data Block -->
+      <g transform="translate(62, 8)">
+        <!-- Barcode Lines -->
+        <rect x="0" y="0" width="2" height="36" fill="#FFFFFF"/>
+        <rect x="5" y="0" width="4" height="36" fill="#FFFFFF"/>
+        <rect x="12" y="0" width="1" height="36" fill="#FFFFFF"/>
+        <rect x="16" y="0" width="3" height="36" fill="#FFFFFF"/>
+        <rect x="22" y="0" width="5" height="36" fill="#FFFFFF"/>
+        <rect x="30" y="0" width="2" height="36" fill="#FFFFFF"/>
+        <rect x="35" y="0" width="4" height="36" fill="#FFFFFF"/>
+        <rect x="42" y="0" width="1" height="36" fill="#FFFFFF"/>
+        <rect x="46" y="0" width="3" height="36" fill="#FFFFFF"/>
+        <rect x="52" y="0" width="6" height="36" fill="#FFFFFF"/>
+        <rect x="61" y="0" width="2" height="36" fill="#FFFFFF"/>
+        <rect x="66" y="0" width="4" height="36" fill="#FFFFFF"/>
+        <rect x="73" y="0" width="1" height="36" fill="#FFFFFF"/>
+        <rect x="77" y="0" width="5" height="36" fill="#FFFFFF"/>
+        <rect x="85" y="0" width="2" height="36" fill="#FFFFFF"/>
+        <rect x="90" y="0" width="3" height="36" fill="#FFFFFF"/>
+        <rect x="96" y="0" width="6" height="36" fill="#FFFFFF"/>
+        <rect x="105" y="0" width="2" height="36" fill="#FFFFFF"/>
+        <rect x="110" y="0" width="4" height="36" fill="#FFFFFF"/>
+        <rect x="117" y="0" width="1" height="36" fill="#FFFFFF"/>
+        <rect x="121" y="0" width="5" height="36" fill="#FFFFFF"/>
+        <rect x="129" y="0" width="3" height="36" fill="#FFFFFF"/>
+        <rect x="135" y="0" width="2" height="36" fill="#FFFFFF"/>
+        <rect x="140" y="0" width="5" height="36" fill="#FFFFFF"/>
+        <rect x="148" y="0" width="2" height="36" fill="#FFFFFF"/>
+        <rect x="153" y="0" width="4" height="36" fill="#FFFFFF"/>
+        <rect x="160" y="0" width="1" height="36" fill="#FFFFFF"/>
+        <rect x="164" y="0" width="5" height="36" fill="#FFFFFF"/>
+        <rect x="172" y="0" width="2" height="36" fill="#FFFFFF"/>
+        <rect x="177" y="0" width="4" height="36" fill="#FFFFFF"/>
+        <rect x="184" y="0" width="2" height="36" fill="#FFFFFF"/>
+        <rect x="189" y="0" width="5" height="36" fill="#FFFFFF"/>
+        <rect x="197" y="0" width="1" height="36" fill="#FFFFFF"/>
+        <rect x="201" y="0" width="4" height="36" fill="#FFFFFF"/>
+        <rect x="208" y="0" width="2" height="36" fill="#FFFFFF"/>
+        <rect x="213" y="0" width="5" height="36" fill="#FFFFFF"/>
+        <rect x="221" y="0" width="3" height="36" fill="#FFFFFF"/>
+        <rect x="227" y="0" width="2" height="36" fill="#FFFFFF"/>
+        <rect x="232" y="0" width="4" height="36" fill="#FFFFFF"/>
+        <rect x="238" y="0" width="2" height="36" fill="#FFFFFF"/>
+
+        <!-- Running Laser Line on Barcode -->
+        <line x1="0" y1="18" x2="16" y2="18" stroke="#FF1B2D" stroke-width="3" class="ly-bar-laser" filter="url(#card-glow)"/>
+
+        <!-- Barcode Text String -->
+        <text x="120" y="47" text-anchor="middle" fill="#8B93A7" font-size="9" class="ly-mono" letter-spacing="2">
+          CODEX-979-2026-EARTH-01
+        </text>
+      </g>
+
+      <!-- Spider Security Hologram Stamp -->
+      <g transform="translate(356, 26)">
+        <circle cx="0" cy="0" r="18" fill="#09090F" stroke="url(#holo-grad)" stroke-width="1.4" class="ly-holo"/>
+        <polygon points="0,-8 5,-2 0,4 -5,-2" fill="#FF1B2D"/>
+        <polygon points="0,2 4,8 0,11 -4,8" fill="#00E5FF"/>
+      </g>
+    </g>
+
+    <!-- Bottom Motto Canon Line -->
+    <text x="300" y="736" text-anchor="middle" fill="#00E5FF" font-size="11" class="ly-mono" letter-spacing="1.5">
+      WITH GREAT POWER COMES GREAT CODE
+    </text>
+  </g>
+</svg>
