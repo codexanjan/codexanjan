@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 320" width="100%" height="100%">
+  <defs>
+    <linearGradient id="cw-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff1744"/>
+      <stop offset="50%" stop-color="#8b5cf6"/>
+      <stop offset="100%" stop-color="#00e5ff"/>
+    </linearGradient>
+
+    <filter id="node-glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <style>
+      @keyframes pulse-node {
+        0%, 100% { transform: scale(1); filter: drop-shadow(0 0 4px #00e5ff); }
+        50% { transform: scale(1.08); filter: drop-shadow(0 0 10px #ff1744); }
+      }
+      @keyframes data-stream {
+        0% { stroke-dashoffset: 60; }
+        100% { stroke-dashoffset: 0; }
+      }
+      .node-anim { animation: pulse-node 3s ease-in-out infinite; }
+      .stream-line { stroke-dasharray: 6 8; animation: data-stream 2s linear infinite; }
+      .cw-text { font-family: 'Fira Code', monospace; font-size: 11px; font-weight: 700; }
+    </style>
+  </defs>
+
+  <!-- Dark Canvas Base -->
+  <rect width="800" height="320" fill="#07070a" rx="12" stroke="#1e293b" stroke-width="1.5"/>
+
+  <!-- Geometric Web Grid Lines -->
+  <!-- Outer Web Rings -->
+  <polygon points="400,30 680,90 740,230 400,290 60,230 120,90" fill="none" stroke="#1e293b" stroke-width="1"/>
+  <polygon points="400,70 600,110 640,210 400,250 160,210 200,110" fill="none" stroke="#ff1744" stroke-opacity="0.25" stroke-width="1.2"/>
+
+  <!-- Radial Web Strands to Center -->
+  <line x1="400" y1="160" x2="400" y2="30" stroke="url(#cw-grad)" stroke-width="1.5" class="stream-line"/>
+  <line x1="400" y1="160" x2="680" y2="90" stroke="url(#cw-grad)" stroke-width="1.5" class="stream-line"/>
+  <line x1="400" y1="160" x2="740" y2="230" stroke="url(#cw-grad)" stroke-width="1.5" class="stream-line"/>
+  <line x1="400" y1="160" x2="400" y2="290" stroke="url(#cw-grad)" stroke-width="1.5" class="stream-line"/>
+  <line x1="400" y1="160" x2="60" y2="230" stroke="url(#cw-grad)" stroke-width="1.5" class="stream-line"/>
+  <line x1="400" y1="160" x2="120" y2="90" stroke="url(#cw-grad)" stroke-width="1.5" class="stream-line"/>
+
+  <!-- ============================================== -->
+  <!-- CENTER NEXUS NODE: ANJAN SHETTY // DEVELOPER   -->
+  <!-- ============================================== -->
+  <g transform="translate(400, 160)">
+    <circle cx="0" cy="0" r="38" fill="#0b0e1a" stroke="url(#cw-grad)" stroke-width="2.5" filter="url(#node-glow)"/>
+    <circle cx="0" cy="0" r="32" fill="#040508" stroke="#334155" stroke-width="1"/>
+    <!-- Center Spider Icon -->
+    <polygon points="0,-12 5,-4 0,4 -5,-4" fill="#ff1744"/>
+    <polygon points="0,2 4,8 0,12 -4,8" fill="#00e5ff"/>
+    <path d="M -3 -6 L -10 -10 M 3 -6 L 10 -10 M -4 0 L -12 0 M 4 0 L 12 0 M -3 6 L -10 10 M 3 6 L 10 10" stroke="#f5f7fa" stroke-width="1.2" fill="none"/>
+    <text x="0" y="24" text-anchor="middle" fill="#00e5ff" font-size="8" font-family="'Fira Code', monospace" font-weight="900" letter-spacing="1">CORE_HUB</text>
+  </g>
+
+  <!-- NODE 1: FRONTEND & 3D UI (Top) -->
+  <g transform="translate(400, 30)" class="node-anim">
+    <rect x="-80" y="-18" width="160" height="36" rx="18" fill="#0b0e1a" stroke="#00e5ff" stroke-width="1.5" filter="url(#node-glow)"/>
+    <circle cx="-56" cy="0" r="6" fill="#00e5ff"/>
+    <text x="6" y="4" text-anchor="middle" fill="#ffffff" class="cw-text">FRONTEND &amp; 3D</text>
+  </g>
+
+  <!-- NODE 2: AI & LLM PIPELINES (Top Right) -->
+  <g transform="translate(680, 90)" class="node-anim">
+    <rect x="-80" y="-18" width="160" height="36" rx="18" fill="#0b0e1a" stroke="#ff1744" stroke-width="1.5" filter="url(#node-glow)"/>
+    <circle cx="-56" cy="0" r="6" fill="#ff1744"/>
+    <text x="6" y="4" text-anchor="middle" fill="#ffffff" class="cw-text">AI &amp; AGENTIC LLM</text>
+  </g>
+
+  <!-- NODE 3: CLOUD & DEVOPS (Bottom Right) -->
+  <g transform="translate(700, 230)" class="node-anim">
+    <rect x="-80" y="-18" width="160" height="36" rx="18" fill="#0b0e1a" stroke="#8b5cf6" stroke-width="1.5" filter="url(#node-glow)"/>
+    <circle cx="-56" cy="0" r="6" fill="#8b5cf6"/>
+    <text x="6" y="4" text-anchor="middle" fill="#ffffff" class="cw-text">CLOUD &amp; DEVOPS</text>
+  </g>
+
+  <!-- NODE 4: SYSTEM DESIGN (Bottom Center) -->
+  <g transform="translate(400, 290)" class="node-anim">
+    <rect x="-80" y="-18" width="160" height="36" rx="18" fill="#0b0e1a" stroke="#00e5ff" stroke-width="1.5" filter="url(#node-glow)"/>
+    <circle cx="-56" cy="0" r="6" fill="#00e5ff"/>
+    <text x="6" y="4" text-anchor="middle" fill="#ffffff" class="cw-text">SYSTEM DESIGN</text>
+  </g>
+
+  <!-- NODE 5: DATA LAYERS & DB (Bottom Left) -->
+  <g transform="translate(100, 230)" class="node-anim">
+    <rect x="-80" y="-18" width="160" height="36" rx="18" fill="#0b0e1a" stroke="#ff1744" stroke-width="1.5" filter="url(#node-glow)"/>
+    <circle cx="-56" cy="0" r="6" fill="#ff1744"/>
+    <text x="6" y="4" text-anchor="middle" fill="#ffffff" class="cw-text">STORAGE &amp; SQL/NoSQL</text>
+  </g>
+
+  <!-- NODE 6: BACKEND & REST APIS (Top Left) -->
+  <g transform="translate(120, 90)" class="node-anim">
+    <rect x="-80" y="-18" width="160" height="36" rx="18" fill="#0b0e1a" stroke="#8b5cf6" stroke-width="1.5" filter="url(#node-glow)"/>
+    <circle cx="-56" cy="0" r="6" fill="#8b5cf6"/>
+    <text x="6" y="4" text-anchor="middle" fill="#ffffff" class="cw-text">BACKEND &amp; APIS</text>
+  </g>
+</svg>

@@ -1,8 +1,18 @@
 <!-- ========================================================================= -->
-<!-- 🕷️ SPIDER-VERSE DEVELOPER COMMAND CENTER                                -->
-<!-- DEVELOPER PROFILE README: ANJAN SHETTY (@codexanjan)                     -->
-<!-- THEME: SPIDER-VERSE × CYBERPUNK HUD × DEVELOPER TERMINAL                -->
+<!-- 🕷️ ANJAN SHETTY // ORIGINAL SPIDER-VERSE DEVELOPER COMMAND CENTER       -->
+<!-- DEVELOPER PORTFOLIO: ANJAN SHETTY (@codexanjan)                          -->
+<!-- THEME: CYBERNETIC SPIDER × FUTURISTIC HUD × TERMINAL SYSTEMS             -->
 <!-- ========================================================================= -->
+
+<!--
+       /\   /\
+      //\\_//\\
+      \_     _/
+       / * * \
+       \_\O/_/
+    <!-- 🕷 You found the hidden web -->
+    <!-- Great developers inspect the source 😎 -->
+-->
 
 <!--
 ╔═══════════════════════════════════════════════════════════════════════════╗
@@ -16,299 +26,278 @@
 ║  • PORTFOLIO_URL    : https://YOUR_PORTFOLIO_URL                          ║
 ║  • EMAIL            : anjanshetty.co@gmail.com                            ║
 ║  • WEATHERGPT_REPO  : https://github.com/codexanjan/WeatherGPT            ║
-║  • PAYGUARD_REPO    : https://github.com/codexanjan/PayGuard              ║
 ║  • AJ_RUNNER_REPO   : https://github.com/codexanjan/AJ-Runner             ║
+║  • MOVIEREC_REPO    : https://github.com/codexanjan/Movie-Recommendation  ║
+║  • PAYGUARD_REPO    : https://github.com/codexanjan/PayGuard              ║
 ╚═══════════════════════════════════════════════════════════════════════════╝
 -->
 
 <!-- ========================================================================= -->
-<!-- 01 // HERO & HEADER COMMAND CENTER                                        -->
+<!-- 01 // ANIMATED HERO HEADER & ORIGINAL SPIDER LOGO                         -->
 <!-- ========================================================================= -->
 
 <div align="center">
 
-<!-- HERO BANNER (CUSTOM SPIDER-VERSE SVG) -->
+<!-- ANIMATED WIDESCREEN HERO HEADER -->
 <a href="https://github.com/codexanjan">
-  <img src="assets/spider-header.svg" width="100%" alt="Spider-Verse Developer Command Center - Anjan Shetty" />
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/spider-header.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="assets/spider-header.svg" />
+    <img src="assets/spider-header.svg" width="100%" alt="Anjan Shetty - Cyber Spider Hero Header" />
+  </picture>
 </a>
 
 <br/><br/>
 
-<!-- DYNAMIC TYPING BANNER -->
+<!-- ORIGINAL CYBERNETIC SPIDER EMBLEM (</> + AS MONOGRAM + 8 SEGMENTED LEGS) -->
 <a href="https://github.com/codexanjan">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=22&pause=1200&color=00E5FF&center=true&vCenter=true&random=false&width=700&lines=Hey%2C+I'm+Anjan+%F0%9F%91%8B;Full+Stack+Developer;AI+%2F+ML+Explorer;Hackathon+Builder;Turning+Ideas+Into+Products;Building+One+Web+at+a+Time+%F0%9F%95%B8%EF%B8%8F;With+great+code+comes+great+responsibility." alt="Spider-Verse Typing SVG" />
+  <img src="assets/spider-logo.svg" width="180" height="180" alt="Anjan Shetty Original Cyber Spider Logo" />
 </a>
 
 <br/>
 
-<!-- CINEMATIC TITLE & SUBTITLE -->
-# 🕷️ ANJAN | THE FRIENDLY NEIGHBORHOOD DEVELOPER
+<!-- CINEMATIC DEVELOPER TITLE -->
+# ANJAN SHETTY
 
-> ### *"With great code comes great responsibility."*
-
-<p align="center">
-  <b>Developer</b> • <b>Builder</b> • <b>AI Explorer</b> • <b>Problem Solver</b> • <b>Hackathon Enthusiast</b>
-</p>
+### `FULL STACK DEVELOPER` • `AI BUILDER` • `HACKATHON CREATOR`
 
 <br/>
 
-<!-- SHIELDS.IO BADGES -->
-<p align="center">
-  <img src="https://img.shields.io/badge/IDENTITY-ANJAN%20SHETTY-ff1744?style=for-the-badge&logo=target&logoColor=white&labelColor=050508" alt="Identity" />
-  <img src="https://img.shields.io/badge/ALIAS-CODEXANJAN-00a8ff?style=for-the-badge&logo=github&logoColor=white&labelColor=050508" alt="Alias" />
-  <img src="https://img.shields.io/badge/CLASS-FULL%20STACK%20%2F%20AI-8b5cf6?style=for-the-badge&logo=react&logoColor=white&labelColor=050508" alt="Class" />
-  <img src="https://img.shields.io/badge/LOCATION-INDIA-00e5ff?style=for-the-badge&logo=googlemaps&logoColor=white&labelColor=050508" alt="Location" />
-  <img src="https://img.shields.io/badge/STATUS-ACTIVE%20BUILDING-22c55e?style=for-the-badge&logo=githubactions&logoColor=white&labelColor=050508" alt="Status" />
-</p>
+<!-- DYNAMIC TYPING ANIMATION -->
+<a href="https://github.com/codexanjan">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=20&pause=1200&color=00E5FF&center=true&vCenter=true&random=false&width=680&lines=Building+ideas+into+reality.;Creating+intelligent+digital+experiences.;Turning+caffeine+into+code.;Building+projects+that+stand+out.;Exploring+AI%2C+Web+%26+Future+Tech.;Code.+Create.+Innovate." alt="Cinematic Typing Animation" />
+</a>
 
-<!-- SPIDER-SENSE HUD STATUS BOX -->
-```text
-╭──────────────────────────────────────────────────────────────╮
-│ 🕷️ SPIDER-SENSE // DEVELOPER COMMAND CENTER                  │
-├──────────────────────────────────────────────────────────────┤
-│ SYSTEM        ONLINE // SPIDER-OS v2.6 [EARTH-CODEX-01]      │
-│ DEVELOPER     ANJAN SHETTY                                   │
-│ ALIAS         CODEXANJAN                                     │
-│ BASE          INDIA [12.9716° N, 77.5946° E]                 │
-│ MODE          AUTONOMOUS BUILDING                            │
-│ RADAR         SPIDER-SENSE ACTIVE // ZERO CRITICAL FAULTS    │
-│ DIRECTIVE     TURN AMBITIOUS IDEAS → PRODUCTION SOFTWARE     │
-╰──────────────────────────────────────────────────────────────╯
-```
+<br/>
+
+<!-- DEVELOPER BADGES -->
+<p align="center">
+  <img src="https://img.shields.io/badge/DEVELOPER-ANJAN%20SHETTY-ff1744?style=for-the-badge&logo=codeforces&logoColor=white&labelColor=050508" alt="Developer" />
+  <img src="https://img.shields.io/badge/IDENTITY-CYBER%20SPIDER-00a8ff?style=for-the-badge&logo=visualstudiocode&logoColor=white&labelColor=050508" alt="Identity" />
+  <img src="https://img.shields.io/badge/MISSION-BUILD%20THE%20FUTURE-8b5cf6?style=for-the-badge&logo=target&logoColor=white&labelColor=050508" alt="Mission" />
+  <img src="https://img.shields.io/badge/STATUS-SHIPPING%20CODE-00e5ff?style=for-the-badge&logo=githubactions&logoColor=white&labelColor=050508" alt="Status" />
+</p>
 
 </div>
 
 <p align="center">
-  <img src="assets/spider-divider.svg" width="100%" alt="Spider-Verse Divider" />
+  <img src="assets/web-divider.svg" width="100%" alt="Animated Web Divider" />
 </p>
 
 <!-- ========================================================================= -->
-<!-- 02 // PROFILE INTRODUCTION: WHO'S BEHIND THE MASK?                        -->
+<!-- 02 // PROFILE INTRODUCTION & SUPERHERO TERMINAL CARD                      -->
 <!-- ========================================================================= -->
 
 # 🕸️ WHO'S BEHIND THE MASK?
 
-I'm **Anjan Shetty** — an engineering student, full-stack builder, and AI explorer operating from India. I spend my days designing, architecting, and deploying software that bridges raw computational power with fluid user interfaces.
+Hey, I'm **Anjan Shetty** 👋 — a software engineer, full-stack architect, and AI explorer driven by a single core philosophy: **turn ambitious ideas into living, resilient digital products.**
 
-Whether I'm writing distributed microservices with **Node.js, Express, and TypeScript**, constructing reactive web platforms with **React, Next.js, and Three.js**, or experimenting with **AI/ML pipelines, LLMs, and agentic workflows**, my mission is always the same: **turn conceptual ideas into tangible, high-impact products.**
+I operate at the intersection of scalable backend engineering, high-fidelity interactive user interfaces, and applied artificial intelligence. Whether I'm decomposing complex architectural challenges into clean REST/gRPC endpoints, designing fluid 3D experiences with Three.js, or orchestrating multi-agent LLM reasoning pipelines, I approach software engineering as modern superpower architecture.
 
-I thrive in the fast-paced, high-stakes environment of hackathons and rapid prototyping. To me, code is not just syntax — it is modern superpower architecture. When you build with intention, empathy, and technical rigor, you can solve real-world problems and leave every system faster, cleaner, and stronger than you found it.
-
-> *"Anyone can write code. The real superpower is understanding the human on the other side of the screen and solving the right problem."*
+Hackathons and rapid prototyping are where I sharpen my edge: finding the core bottleneck under pressure, choosing battle-tested patterns, and shipping functional prototypes that leave a lasting impression.
 
 <br/>
-
-<!-- TERMINAL CODE BLOCK -->
-```javascript
-const anjan = {
-  role: "Developer",
-  identity: "Anjan Shetty",
-  alias: "codexanjan",
-  interests: [
-    "Full Stack Development",
-    "Artificial Intelligence",
-    "Machine Learning",
-    "UI/UX Design",
-    "Hackathons & Rapid Prototyping",
-    "Scalable System Architecture"
-  ],
-  currentlyBuilding: "Things that solve real-world problems",
-  superpower: "Turning ideas into working prototypes under pressure",
-  motto: "With great code comes great responsibility.",
-  spiderSense: true
-};
-```
-
-<br/>
-
-<!-- ========================================================================= -->
-<!-- 03 // DEVELOPER IDENTITY CARD                                             -->
-<!-- ========================================================================= -->
-
-# 🕷️ DEVELOPER IDENTITY
 
 <div align="center">
 
-| SIGNAL TELEMETRY | STATUS & MEASUREMENT |
-|:---|:---|
-| 👤 **Name** | **Anjan Shetty** |
-| 🕸️ **Alias** | Friendly Neighborhood Developer (`codexanjan`) |
-| ⚡ **Role** | Full Stack / AI Developer |
-| 🎯 **Current Mission** | Build impactful products that scale |
-| 🛰️ **Base Station** | India (`EARTH-CODEX-01`) |
-| 🔄 **Operational Mode** | Always Learning, Always Shipping |
-| 📡 **Status** | `Coding... [Signal Active]` |
-| ⚡ **Power Level** | `█████████░` **90%** |
-| ☕ **Coffee Level** | `████████░░` **80%** |
-| 🔍 **Debugging Skill** | `██████████` **100%** |
-| 🌙 **Sleep Level** | `██░░░░░░░░` **20%** |
+<!-- SUPERHERO TERMINAL CARD -->
+```yaml
+name: Anjan Shetty
+alias: Friendly Neighborhood Developer
+role: Full Stack Developer & AI Builder
+mission: Build technology people remember
+current_focus:
+  - Artificial Intelligence & LLM Pipelines
+  - High-Throughput Full Stack Systems
+  - Hackathons & Rapid Prototyping
+  - Creative UI/UX & WebGL Interactions
+status: Always Building // Signal Active
+superpower: Turning ideas into production prototypes under crunch time
+```
 
 </div>
 
 <p align="center">
-  <img src="assets/spider-divider.svg" width="100%" alt="Spider-Verse Divider" />
+  <img src="assets/neon-divider.svg" width="100%" alt="Neon Divider" />
+</p>
+
+<!-- ========================================================================= -->
+<!-- 03 // DEVELOPER IDENTITY CARDS                                            -->
+<!-- ========================================================================= -->
+
+# 🕷️ DEVELOPER IDENTITY
+
+<table width="100%">
+  <tr>
+    <td width="50%" valign="top">
+      <h3>⚡ CARD 01 // FULL STACK BUILDER</h3>
+      <p>I build complete, end-to-end applications from responsive, tactile frontend experiences to reliable, distributed backend architectures and persistent data stores.</p>
+    </td>
+    <td width="50%" valign="top">
+      <h3>🤖 CARD 02 // AI EXPLORER</h3>
+      <p>Exploring the frontier of intelligent software: wiring LLM tool calling, autonomous agent reasoning loops, vector retrieval (RAG), and applied machine learning models into real workflows.</p>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <h3>🎨 CARD 03 // UI/UX CREATOR</h3>
+      <p>Building interfaces that are as thrilling to interact with as they are functional. Design is never an afterthought — it's how technology respects the human user.</p>
+    </td>
+    <td width="50%" valign="top">
+      <h3>🏆 CARD 04 // HACKATHON BUILDER</h3>
+      <p>Thriving under ticking clocks: rapidly converting wild concepts into validated, working prototypes with clean code, solid APIs, and compelling pitch narratives.</p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2" valign="top">
+      <h3>🧠 CARD 05 // PROBLEM SOLVER</h3>
+      <p>Breaking intricate technical challenges into simple, maintainable, and scalable primitives. Every bug has an origin story, and clean architecture is an invisible superpower.</p>
+    </td>
+  </tr>
+</table>
+
+<p align="center">
+  <img src="assets/web-divider.svg" width="100%" alt="Web Divider" />
 </p>
 
 <!-- ========================================================================= -->
 <!-- 04 // TECH ARSENAL                                                        -->
 <!-- ========================================================================= -->
 
-# ⚡ TECH ARSENAL
+## ⚡ TECH ARSENAL
 
 ### *Superpower equipment caught in my technical web.*
 
 <div align="center">
 
-#### 🔤 LANGUAGES
+#### 🔤 PROGRAMMING LANGUAGES
 <a href="https://skillicons.dev">
-  <img src="https://skillicons.dev/icons?i=python,js,ts,java,c,cpp,html,css&theme=dark" alt="Programming Languages" />
+  <img src="https://skillicons.dev/icons?i=python,js,ts,java,c,cpp,cs,go&theme=dark" alt="Languages" />
 </a>
 
 <br/>
 
 #### 🎨 FRONTEND FRAMEWORKS & DESIGN
 <a href="https://skillicons.dev">
-  <img src="https://skillicons.dev/icons?i=react,nextjs,tailwind,bootstrap,redux,threejs,sass&theme=dark" alt="Frontend Frameworks" />
+  <img src="https://skillicons.dev/icons?i=html,css,react,nextjs,tailwind,threejs,redux,sass&theme=dark" alt="Frontend" />
 </a>
 
 <br/>
 
 #### ⚙️ BACKEND & API ENGINES
 <a href="https://skillicons.dev">
-  <img src="https://skillicons.dev/icons?i=nodejs,express,fastapi,flask&theme=dark" alt="Backend Technologies" />
+  <img src="https://skillicons.dev/icons?i=nodejs,express,fastapi,flask,firebase,supabase&theme=dark" alt="Backend" />
 </a>
 
 <br/>
 
-#### 💾 DATABASE & CLOUD STORAGE
+#### 💾 DATABASES & STORAGE
 <a href="https://skillicons.dev">
-  <img src="https://skillicons.dev/icons?i=mongodb,postgres,mysql,supabase,firebase&theme=dark" alt="Databases" />
+  <img src="https://skillicons.dev/icons?i=mongodb,postgres,mysql,firebase&theme=dark" alt="Databases" />
 </a>
 
 <br/>
 
-#### 🤖 AI, MACHINE LEARNING & DATA SCIENCE
+#### 🤖 AI, MACHINE LEARNING & LLM PIPELINES
 <a href="https://skillicons.dev">
-  <img src="https://skillicons.dev/icons?i=tensorflow,pytorch,scikitlearn,python&theme=dark" alt="AI & ML Frameworks" />
+  <img src="https://skillicons.dev/icons?i=python,tensorflow,pytorch,scikitlearn&theme=dark" alt="AI / ML" />
 </a>
 
 <br/>
 
-#### ☁️ CLOUD, DEVOPS & INFRASTRUCTURE
+#### 🛠️ DEVOPS, CLOUD & WORKSPACE TOOLS
 <a href="https://skillicons.dev">
-  <img src="https://skillicons.dev/icons?i=git,github,docker,vercel,githubactions&theme=dark" alt="Cloud & DevOps" />
-</a>
-
-<br/>
-
-#### 🛠️ DEVELOPER TOOLS & WORKSPACE
-<a href="https://skillicons.dev">
-  <img src="https://skillicons.dev/icons?i=vscode,postman,figma,linux&theme=dark" alt="Developer Tools" />
+  <img src="https://skillicons.dev/icons?i=git,github,docker,vercel,netlify,vscode,postman,figma&theme=dark" alt="Tools" />
 </a>
 
 </div>
 
 <p align="center">
-  <img src="assets/spider-divider.svg" width="100%" alt="Spider-Verse Divider" />
+  <img src="assets/neon-divider.svg" width="100%" alt="Neon Divider" />
 </p>
 
 <!-- ========================================================================= -->
-<!-- 05 // SPIDER-SENSE SYSTEM STATUS                                          -->
+<!-- 05 // CURRENTLY BUILDING                                                  -->
 <!-- ========================================================================= -->
 
-# 🕷️ SPIDER-SENSE STATUS
+## 🚀 CURRENTLY BUILDING
 
-```text
-╔══════════════════════════════════════════════════════════════════════════╗
-║ SUBSYSTEM                TELEMETRY SCAN                       CAPACITY   ║
-╠══════════════════════════════════════════════════════════════════════════╣
-║ FRONTEND DEVELOPMENT     █████████░                           90%        ║
-║ BACKEND DEVELOPMENT      ████████░░                           80%        ║
-║ AI / MACHINE LEARNING    ████████░░                           80%        ║
-║ UI / UX & 3D INTERACTION ████████░░                           80%        ║
-║ PROBLEM SOLVING          █████████░                           90%        ║
-║ DEBUGGING PROTOCOL       ██████████                           100%       ║
-║ COFFEE DEPENDENCY        ██████████                           OVERFLOW   ║
-╚══════════════════════════════════════════════════════════════════════════╝
-```
+<table width="100%">
+  <tr>
+    <td width="33%" valign="top">
+      <h3 align="left">🌦️ WeatherGPT</h3>
+      <p><b>AI-Powered Weather Risk Platform</b></p>
+      <p>Synthesizes multi-source meteorological sensor data with machine learning to predict hazardous risks, run what-if simulations, and generate real-time emergency advisories.</p>
+      <ul>
+        <li>Weather risk insights</li>
+        <li>AI explanations &amp; diagnostics</li>
+        <li>What-if weather simulations</li>
+        <li>Location-based emergency alerts</li>
+      </ul>
+      <p><b>Stack:</b> <code>React</code> • <code>Python</code> • <code>FastAPI</code> • <code>ML</code></p>
+    </td>
+    <td width="33%" valign="top">
+      <h3 align="left">🏃 AJ Runner</h3>
+      <p><b>Modern Web Arcade Runner Game</b></p>
+      <p>A high-velocity arcade runner built on HTML5 Canvas and WebGL, featuring physics simulations, responsive keyboard controls, obstacles, and combo multipliers.</p>
+      <ul>
+        <li>Responsive 60 FPS gameplay</li>
+        <li>Keyboard controls &amp; dash mechanics</li>
+        <li>Dynamic scoring &amp; missions</li>
+        <li>Customizable avatars &amp; trails</li>
+      </ul>
+      <p><b>Stack:</b> <code>JavaScript</code> • <code>Canvas</code> • <code>WebGL</code> • <code>CSS3</code></p>
+    </td>
+    <td width="33%" valign="top">
+      <h3 align="left">🎬 Movie Recommender</h3>
+      <p><b>Intelligent Cinematic Discovery</b></p>
+      <p>A smart discovery engine calculating vector cosine similarities across movie metadata to deliver personalized, mood-based, and explainable movie recommendations.</p>
+      <ul>
+        <li>Personalized recommendations</li>
+        <li>Mood-based filtering</li>
+        <li>Similarity vector engine</li>
+        <li>Cinematic dark UI/UX</li>
+      </ul>
+      <p><b>Stack:</b> <code>Python</code> • <code>Scikit-learn</code> • <code>React</code> • <code>REST</code></p>
+    </td>
+  </tr>
+</table>
 
 <br/>
 
 <!-- ========================================================================= -->
-<!-- 06 // CURRENT MISSIONS                                                    -->
+<!-- 06 // FEATURED MISSIONS                                                   -->
 <!-- ========================================================================= -->
 
-# 🎯 CURRENT MISSIONS
-
-```text
-MISSION_01  █████████░  Building intelligent, resilient full-stack web applications
-MISSION_02  ████████░░  Exploring AI-powered products & LLM orchestration
-MISSION_03  ███████░░░  Leveling up backend architecture & distributed caching
-MISSION_04  ████████░░  Deepening applied machine learning & neural network models
-MISSION_05  █████████░  Competing in hackathons & turning prototypes into realities
-```
-
-### 🛰️ MISSION BOARD RADAR
-- [x] **Enter the developer multiverse:** Establish terminal node and core tooling
-- [x] **Build full-stack projects:** Ship end-to-end applications with modern stacks
-- [x] **Survive production bugs:** Neutralize critical errors during live fire drills
-- [ ] **Master advanced AI systems:** Orchestrate multi-agent autonomous reasoning loops
-- [ ] **Build something used by thousands:** Deploy high-throughput scalable software
-- [ ] **Save the city with clean code:** Architect resilient open-source developer tooling
-
-<p align="center">
-  <img src="assets/spider-divider.svg" width="100%" alt="Spider-Verse Divider" />
-</p>
-
-<!-- ========================================================================= -->
-<!-- 07 // FEATURED PROJECTS: SPIDER-VERSE PROJECTS                            -->
-<!-- ========================================================================= -->
-
-# 🕸️ SPIDER-VERSE PROJECTS
-
-> *"Every repository is another dimension in the developer multiverse."*
+## 🕸️ FEATURED MISSIONS
 
 <table width="100%">
   <tr>
     <td width="50%" valign="top">
       <h3 align="left">🌦️ <a href="https://github.com/codexanjan/WeatherGPT">WeatherGPT</a></h3>
-      <p><b>AI-Powered Weather Risk Intelligence Platform</b></p>
-      <p>An intelligent meteorological decision-support system synthesizing multi-source atmospheric data with machine learning to predict risks, run simulations, and provide automated emergency advisories.</p>
-      <ul>
-        <li><b>AI Weather Insights:</b> Context-aware predictive forecasts.</li>
-        <li><b>Risk Prediction:</b> Early detection of severe storm hazards.</li>
-        <li><b>What-If Simulations:</b> Dynamic contingency modeling.</li>
-        <li><b>Emergency Alerts:</b> Real-time location-based broadcasts.</li>
-        <li><b>Explainable AI:</b> Transparent diagnostic reasoning factors.</li>
-      </ul>
-      <p><b>Tech:</b> <code>Python</code> • <code>React</code> • <code>Machine Learning</code> • <code>FastAPI</code></p>
+      <p><code>MISSION_01</code> // <img src="https://img.shields.io/badge/STATUS-🟢%20LIVE-22c55e?style=flat-square" alt="Status Live" /></p>
+      <p>AI-driven atmospheric risk forecasting engine with interactive diagnostic simulations and transparent decision factors.</p>
+      <p><b>Tech:</b> <code>Python</code> • <code>React</code> • <code>FastAPI</code> • <code>Scikit-learn</code></p>
       <p align="center">
         <a href="https://github.com/codexanjan/WeatherGPT">
-          <img src="https://img.shields.io/badge/VIEW%20PROJECT-ff1744?style=for-the-badge&logo=github&logoColor=white" alt="View WeatherGPT" />
+          <img src="https://img.shields.io/badge/GitHub-Repository-ff1744?style=for-the-badge&logo=github&logoColor=white" alt="Repo" />
         </a>
         <a href="https://github.com/codexanjan/WeatherGPT">
-          <img src="https://img.shields.io/badge/LIVE%20DEMO-00e5ff?style=for-the-badge&logo=vercel&logoColor=black" alt="Live Demo" />
+          <img src="https://img.shields.io/badge/Live%20Demo-Launch-00e5ff?style=for-the-badge&logo=vercel&logoColor=black" alt="Demo" />
         </a>
       </p>
     </td>
     <td width="50%" valign="top">
       <h3 align="left">🛡️ <a href="https://github.com/codexanjan/PayGuard">PayGuard</a></h3>
-      <p><b>UPI Fraud Detection & Prevention System</b></p>
-      <p>A real-time financial security shield inspecting UPI transaction flows through anomaly detection algorithms, instant risk scoring, and administrative mitigation telemetry.</p>
-      <ul>
-        <li><b>Transaction Risk Scoring:</b> Sub-second risk classification.</li>
-        <li><b>Fraud Prediction:</b> Supervised ML pattern categorization.</li>
-        <li><b>Explainable AI:</b> Highlights anomalous transaction triggers.</li>
-        <li><b>Fraud Analytics Dashboard:</b> Interactive live monitoring UI.</li>
-        <li><b>Anomaly Detection:</b> Flags uncharacteristic user behaviors.</li>
-      </ul>
+      <p><code>MISSION_02</code> // <img src="https://img.shields.io/badge/STATUS-🟢%20LIVE-22c55e?style=flat-square" alt="Status Live" /></p>
+      <p>Real-time UPI payment fraud shield detecting transaction anomalies with sub-second ML scoring and admin telemetry.</p>
       <p><b>Tech:</b> <code>Python</code> • <code>Machine Learning</code> • <code>React</code> • <code>FastAPI</code></p>
       <p align="center">
         <a href="https://github.com/codexanjan/PayGuard">
-          <img src="https://img.shields.io/badge/VIEW%20PROJECT-00a8ff?style=for-the-badge&logo=github&logoColor=white" alt="View PayGuard" />
+          <img src="https://img.shields.io/badge/GitHub-Repository-00a8ff?style=for-the-badge&logo=github&logoColor=white" alt="Repo" />
         </a>
         <a href="https://github.com/codexanjan/PayGuard">
-          <img src="https://img.shields.io/badge/LIVE%20DEMO-8b5cf6?style=for-the-badge&logo=fastapi&logoColor=white" alt="Live Demo" />
+          <img src="https://img.shields.io/badge/Live%20Demo-Launch-8b5cf6?style=for-the-badge&logo=fastapi&logoColor=white" alt="Demo" />
         </a>
       </p>
     </td>
@@ -316,42 +305,29 @@ MISSION_05  █████████░  Competing in hackathons & turning pr
   <tr>
     <td width="50%" valign="top">
       <h3 align="left">🏃 <a href="https://github.com/codexanjan/AJ-Runner">AJ Runner</a></h3>
-      <p><b>Modern Endless Web Runner Game</b></p>
-      <p>A high-velocity, arcade-inspired browser runner built from scratch on HTML5 Canvas and WebGL, featuring physics simulations, responsive keyboard inputs, and progressive difficulty loops.</p>
-      <ul>
-        <li><b>Responsive Gameplay:</b> Optimized 60 FPS rendering pipeline.</li>
-        <li><b>Keyboard Controls:</b> Precise jump, slide, and dash mechanics.</li>
-        <li><b>Dynamic Scoring:</b> Multipliers, combos, and high-score saves.</li>
-        <li><b>Character Customization:</b> Unlockable avatars and trails.</li>
-        <li><b>Animated UI:</b> Neon cyberpunk HUD styling.</li>
-      </ul>
+      <p><code>MISSION_03</code> // <img src="https://img.shields.io/badge/STATUS-🟡%20IN%20DEV-eab308?style=flat-square" alt="In Development" /></p>
+      <p>Fast-paced browser platform runner with procedural obstacle generation, collectible power-ups, and animated cyberpunk HUD.</p>
       <p><b>Tech:</b> <code>JavaScript</code> • <code>HTML5 Canvas</code> • <code>WebGL</code> • <code>CSS3</code></p>
       <p align="center">
         <a href="https://github.com/codexanjan/AJ-Runner">
-          <img src="https://img.shields.io/badge/VIEW%20PROJECT-8b5cf6?style=for-the-badge&logo=github&logoColor=white" alt="View AJ Runner" />
+          <img src="https://img.shields.io/badge/GitHub-Repository-8b5cf6?style=for-the-badge&logo=github&logoColor=white" alt="Repo" />
         </a>
         <a href="https://github.com/codexanjan/AJ-Runner">
-          <img src="https://img.shields.io/badge/PLAY%20GAME-00e5ff?style=for-the-badge&logo=googleplay&logoColor=black" alt="Play Game" />
+          <img src="https://img.shields.io/badge/Play%20Game-Launch-00e5ff?style=for-the-badge&logo=googleplay&logoColor=black" alt="Play" />
         </a>
       </p>
     </td>
     <td width="50%" valign="top">
       <h3 align="left">⚛️ <a href="https://github.com/codexanjan/periodictable">PeriodicPortal</a></h3>
-      <p><b>Interactive 3D Chemistry Universe</b></p>
-      <p>Modern educational science suite mapping all 118 chemical elements through interactive cards, visual data, 3D electron orbital models, and conversational AI tutoring.</p>
-      <ul>
-        <li><b>3D Orbital Visualization:</b> Interactive WebGL element models.</li>
-        <li><b>Element Telemetry:</b> Deep thermodynamic & chemical stats.</li>
-        <li><b>AI Chemistry Tutor:</b> Natural-language QA for learners.</li>
-        <li><b>Responsive UX:</b> Fluid transitions across desktop & mobile.</li>
-      </ul>
+      <p><code>MISSION_04</code> // <img src="https://img.shields.io/badge/STATUS-🟢%20LIVE-22c55e?style=flat-square" alt="Status Live" /></p>
+      <p>Interactive 3D chemical element visualizer with animated electron orbital clouds and natural language conversational AI guidance.</p>
       <p><b>Tech:</b> <code>TypeScript</code> • <code>React</code> • <code>Three.js</code> • <code>AI APIs</code></p>
       <p align="center">
         <a href="https://github.com/codexanjan/periodictable">
-          <img src="https://img.shields.io/badge/VIEW%20PROJECT-ff1744?style=for-the-badge&logo=github&logoColor=white" alt="View PeriodicPortal" />
+          <img src="https://img.shields.io/badge/GitHub-Repository-ff1744?style=for-the-badge&logo=github&logoColor=white" alt="Repo" />
         </a>
         <a href="https://github.com/codexanjan/periodictable">
-          <img src="https://img.shields.io/badge/ENTER%20PORTAL-00a8ff?style=for-the-badge&logo=three.js&logoColor=white" alt="Enter Portal" />
+          <img src="https://img.shields.io/badge/Enter%20Portal-Launch-00a8ff?style=for-the-badge&logo=three.js&logoColor=white" alt="Portal" />
         </a>
       </p>
     </td>
@@ -359,101 +335,134 @@ MISSION_05  █████████░  Competing in hackathons & turning pr
 </table>
 
 <p align="center">
-  <img src="assets/spider-divider.svg" width="100%" alt="Spider-Verse Divider" />
+  <img src="assets/web-divider.svg" width="100%" alt="Web Divider" />
 </p>
 
 <!-- ========================================================================= -->
-<!-- 08 // HACKATHON BATTLEGROUND                                              -->
+<!-- 07 // ACHIEVEMENTS UNLOCKED & CUSTOM BADGES                               -->
 <!-- ========================================================================= -->
 
-# ⚔️ HACKATHON BATTLEGROUND
+# 🏆 ACHIEVEMENTS UNLOCKED
 
 <div align="center">
 
-> ### *"I love transforming ambitious ideas into working prototypes under pressure."*
+<a href="https://github.com/codexanjan">
+  <img src="assets/achievement-badge.svg" width="150" height="150" alt="Achievement Badge" />
+</a>
 
 </div>
 
-When the timer starts ticking, engineering discipline is the ultimate superpower:
+<br/>
 
-- ⚡ **Rapid Prototyping:** Deconstruct large problems into minimal viable primitives in minutes.
-- 🤝 **Team Collaboration:** Clear git branching, modular API contracts, and high-velocity coordination.
-- 🧩 **First-Principles Architecture:** Select battle-tested stacks that prevent bottlenecking during crunch hours.
-- 🤖 **AI Integration:** Seamlessly wire intelligent LLMs and predictive ML models directly into user interfaces.
-- 🎨 **Polished Pitch & UX:** Software should look and feel exceptional from the very first interaction.
-- 🚀 **Zero-Downtime Deployment:** Ship working live URLs to production before the final submission gong sounds.
+<table width="100%">
+  <tr>
+    <td width="33%" valign="top">
+      <h3>🏆 HACKATHON FINALIST</h3>
+      <p><b>Rapid Innovation Sprint</b></p>
+      <p>Engineered and deployed an end-to-end intelligent software prototype within a strict competitive sprint, recognized for technical depth and UI execution.</p>
+      <p><code>ACHIEVEMENT_ID: HK-FIN-01</code></p>
+    </td>
+    <td width="33%" valign="top">
+      <h3>🥇 PROJECT MILESTONE</h3>
+      <p><b>Production Full-Stack Architecture</b></p>
+      <p>Architected and launched full-stack applications with integrated automated tests, continuous deployment pipelines, and sub-second response times.</p>
+      <p><code>ACHIEVEMENT_ID: PRJ-MLS-02</code></p>
+    </td>
+    <td width="33%" valign="top">
+      <h3>🔥 BUILD STREAK</h3>
+      <p><b>Consistent Code Craft</b></p>
+      <p>Maintained consistent daily problem-solving, open-source commits, and feature releases across web engineering and machine learning domains.</p>
+      <p><code>ACHIEVEMENT_ID: STRK-99-03</code></p>
+    </td>
+  </tr>
+</table>
 
 <br/>
 
+### 🎖️ SUPERHERO DEVELOPER BADGES
+<p align="center">
+  <img src="https://img.shields.io/badge/🏆-HACKATHON%20BUILDER-ff1744?style=for-the-badge&labelColor=050508" alt="Hackathon Builder" />
+  <img src="https://img.shields.io/badge/⚡-FULL%20STACK%20DEV-00a8ff?style=for-the-badge&labelColor=050508" alt="Full Stack Dev" />
+  <img src="https://img.shields.io/badge/🤖-AI%20EXPLORER-8b5cf6?style=for-the-badge&labelColor=050508" alt="AI Explorer" />
+  <img src="https://img.shields.io/badge/🔥-CONSISTENT%20CODER-ff1744?style=for-the-badge&labelColor=050508" alt="Consistent Coder" />
+  <img src="https://img.shields.io/badge/🧠-PROBLEM%20SOLVER-00e5ff?style=for-the-badge&labelColor=050508" alt="Problem Solver" />
+</p>
+
+<p align="center">
+  <img src="assets/neon-divider.svg" width="100%" alt="Neon Divider" />
+</p>
+
 <!-- ========================================================================= -->
-<!-- 09 // GITHUB ANALYTICS & SPIDER-SENSE TELEMETRY                           -->
+<!-- 08 // CERTIFICATION VAULT                                                 -->
 <!-- ========================================================================= -->
 
-# 📡 SPIDER-SENSE ANALYTICS
+# 📜 CERTIFICATION VAULT
+
+<table width="100%">
+  <tr>
+    <td width="50%" valign="top">
+      <h3>🐍 Python Programming &amp; Data Structures</h3>
+      <p><b>Issuer:</b> <code>CERTIFICATE_ISSUER</code></p>
+      <p><b>Issued:</b> <code>DATE_ISSUED</code> • <b>Credential ID:</b> <code>CREDENTIAL_ID_01</code></p>
+      <p><b>Skills:</b> Python • Algorithms • Object-Oriented Design • Data Structures</p>
+      <p><a href="CERTIFICATE_URL_01"><b>[ 🔗 View Verified Credential ]</b></a></p>
+    </td>
+    <td width="50%" valign="top">
+      <h3>🌐 Full Stack Web Development Architecture</h3>
+      <p><b>Issuer:</b> <code>CERTIFICATE_ISSUER</code></p>
+      <p><b>Issued:</b> <code>DATE_ISSUED</code> • <b>Credential ID:</b> <code>CREDENTIAL_ID_02</code></p>
+      <p><b>Skills:</b> React • Node.js • Express • REST APIs • MongoDB</p>
+      <p><a href="CERTIFICATE_URL_02"><b>[ 🔗 View Verified Credential ]</b></a></p>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <h3>🤖 Applied Machine Learning &amp; AI Systems</h3>
+      <p><b>Issuer:</b> <code>CERTIFICATE_ISSUER</code></p>
+      <p><b>Issued:</b> <code>DATE_ISSUED</code> • <b>Credential ID:</b> <code>CREDENTIAL_ID_03</code></p>
+      <p><b>Skills:</b> Supervised Learning • Neural Networks • Scikit-learn • Model Evaluation</p>
+      <p><a href="CERTIFICATE_URL_03"><b>[ 🔗 View Verified Credential ]</b></a></p>
+    </td>
+    <td width="50%" valign="top">
+      <h3>☁️ Cloud Infrastructure &amp; Containerization</h3>
+      <p><b>Issuer:</b> <code>CERTIFICATE_ISSUER</code></p>
+      <p><b>Issued:</b> <code>DATE_ISSUED</code> • <b>Credential ID:</b> <code>CREDENTIAL_ID_04</code></p>
+      <p><b>Skills:</b> Docker • Git/GitHub Workflows • CI/CD Automation • Cloud Deployment</p>
+      <p><a href="CERTIFICATE_URL_04"><b>[ 🔗 View Verified Credential ]</b></a></p>
+    </td>
+  </tr>
+</table>
+
+<p align="center">
+  <img src="assets/web-divider.svg" width="100%" alt="Web Divider" />
+</p>
+
+<!-- ========================================================================= -->
+<!-- 09 // DEVELOPER ANALYTICS & TROPHY ROOM                                   -->
+<!-- ========================================================================= -->
+
+# 📊 DEVELOPER ANALYTICS
 
 <div align="center">
 
-<!-- STATS & TOP LANGUAGES (DUAL CARDS) -->
+<!-- GITHUB STATS & TOP LANGUAGES -->
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=codexanjan&show_icons=true&hide_border=true&bg_color=050508&title_color=ff1744&icon_color=00e5ff&text_color=f5f7fa&rank_icon=github" width="49%" alt="Anjan's GitHub Stats" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=codexanjan&layout=compact&hide_border=true&bg_color=050508&title_color=ff1744&text_color=f5f7fa" width="49%" alt="Top Languages" />
+  <img src="https://github-readme-stats.vercel.app/api?username=codexanjan&show_icons=true&hide_border=true&bg_color=07070a&title_color=ff1744&icon_color=00e5ff&text_color=f5f7fa&rank_icon=github" width="49%" alt="Anjan's GitHub Stats" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=codexanjan&layout=compact&hide_border=true&bg_color=07070a&title_color=ff1744&text_color=f5f7fa" width="49%" alt="Top Languages" />
 </p>
 
 <br/>
 
 <!-- STREAK TRACKER -->
 <p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=codexanjan&theme=dark&background=050508&border=ff1744&stroke=00a8ff&ring=ff1744&fire=00e5ff&currStreakNum=ffffff&sideNums=ffffff&currStreakLabel=00e5ff&sideLabels=f5f7fa" width="100%" alt="GitHub Streak Tracker" />
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=codexanjan&theme=dark&background=07070a&border=ff1744&stroke=00a8ff&ring=ff1744&fire=00e5ff&currStreakNum=ffffff&sideNums=ffffff&currStreakLabel=00e5ff&sideLabels=f5f7fa" width="100%" alt="GitHub Streak Tracker" />
 </p>
 
 </div>
 
 <br/>
 
-<!-- ========================================================================= -->
-<!-- 10 // ACTIVITY GRAPH: MULTIVERSE ACTIVITY                                 -->
-<!-- ========================================================================= -->
-
-# 📈 MULTIVERSE ACTIVITY
-
-<div align="center">
-
-<p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=codexanjan&bg_color=050508&color=00e5ff&line=ff1744&point=00a8ff&area=true&hide_border=true" width="100%" alt="Multiverse Activity Graph" />
-</p>
-
-> *"Every commit leaves a cosmic signal across the multiverse."*
-
-</div>
-
-<br/>
-
-<!-- ========================================================================= -->
-<!-- 11 // CONTRIBUTION SNAKE: WEB CRAWLER ACTIVITY                            -->
-<!-- ========================================================================= -->
-
-# 🐍 WEB CRAWLER ACTIVITY
-
-> ### *"Even my contributions know how to crawl the web."*
-
-<div align="center">
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/codexanjan/codexanjan/output/github-contribution-grid-snake-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/codexanjan/codexanjan/output/github-contribution-grid-snake.svg" />
-  <img alt="GitHub Contribution Grid Snake" src="https://raw.githubusercontent.com/codexanjan/codexanjan/output/github-contribution-grid-snake-dark.svg" width="100%" />
-</picture>
-
-</div>
-
-<p align="center">
-  <img src="assets/spider-divider.svg" width="100%" alt="Spider-Verse Divider" />
-</p>
-
-<!-- ========================================================================= -->
-<!-- 12 // TROPHY ROOM                                                         -->
-<!-- ========================================================================= -->
-
+<!-- TROPHY ROOM -->
 # 🏆 TROPHY ROOM
 
 <div align="center">
@@ -466,33 +475,108 @@ When the timer starts ticking, engineering discipline is the ultimate superpower
 
 <br/>
 
+<!-- CONTRIBUTION NETWORK (SNAKE) -->
+# 🐍 CONTRIBUTION NETWORK
+
+> ### *"Even my contributions know how to crawl the web."*
+
+<div align="center">
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/codexanjan/codexanjan/output/github-contribution-grid-snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/codexanjan/codexanjan/output/github-contribution-grid-snake.svg" />
+  <img alt="Contribution Grid Snake" src="https://raw.githubusercontent.com/codexanjan/codexanjan/output/github-contribution-grid-snake-dark.svg" width="100%" />
+</picture>
+
+</div>
+
+<br/>
+
+<!-- CODING WEB / TOPOLOGY -->
+## 🕸️ MY CODING WEB
+
+<div align="center">
+
+<img src="assets/coding-web.svg" width="100%" alt="Coding Web Network Topology" />
+
+<br/><br/>
+
+<!-- ACTIVITY GRAPH -->
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=codexanjan&bg_color=07070a&color=00e5ff&line=ff1744&point=00a8ff&area=true&hide_border=true" width="100%" alt="Activity Graph" />
+
+</div>
+
+<p align="center">
+  <img src="assets/neon-divider.svg" width="100%" alt="Neon Divider" />
+</p>
+
 <!-- ========================================================================= -->
-<!-- 13 // DAILY PATROL & EASTER EGGS                                          -->
+<!-- 10 // HACKATHON JOURNEY & LEARNING ARC                                    -->
 <!-- ========================================================================= -->
 
-# 💻 DAILY PATROL
+# 🚀 HACKATHON JOURNEY
 
 ```text
-08:00  ──► INITIATE SYSTEM DIAGNOSTIC & COFFEE SCAN
-            └─► IDENTIFY HIGHEST LEVERAGE PROBLEM
-            └─► DESIGN CLEAN FIRST-PRINCIPLES ARCHITECTURE
-            └─► CODE • COMPILE • VERIFY
-            └─► ⚠️ SPIDER-SENSE DETECTED A BUG!
-            └─► ISOLATE TO ROOT CAUSE & SQUASH
-            └─► RUN TESTS [ ALL SUITES PASS ]
-            └─► GIT COMMIT -M "SAVED THE MULTIVERSE"
-            └─► SHIP CLEAN SOFTWARE TO PRODUCTION 🚀
+  [ IDEA ]  ──►  Decompose real customer pain points into modular primitives
+     │
+     ▼
+[ RESEARCH ] ──►  Benchmark technical feasibility & select battle-tested stacks
+     │
+     ▼
+[ PROTOTYPE ]──►  Wire frontend interfaces to mock APIs in under 2 hours
+     │
+     ▼
+  [ BUILD ]  ──►  Implement reliable state management, server controllers & DB
+     │
+     ▼
+  [ DEBUG ]  ──►  Isolate race conditions, test edge cases & optimize queries
+     │
+     ▼
+  [ PITCH ]  ──►  Structure a razor-sharp demo highlighting user impact
+     │
+     ▼
+  [ SHIP ]   ──►  Deploy live production URLs before the final gong 🚀
 ```
 
 <br/>
 
+# 🧠 CURRENT LEARNING ARC
+
+```text
+AI AGENTS & LLM PIPELINES   █████████░  [ 90% // TOOL USE • RAG • MULTI-AGENT ]
+FULL STACK ARCHITECTURE     ████████░░  [ 80% // NEXT.JS • FASTAPI • MICROSERVICES ]
+HIGH-FIDELITY UI/UX & 3D    ███████░░░  [ 75% // THREE.JS • TAILWIND • SHADERS ]
+MACHINE LEARNING FOUNDATIONS██████░░░░  [ 65% // PYTORCH • MODEL FINE-TUNING ]
+DISTRIBUTED SYSTEM DESIGN   ███████░░░  [ 70% // CACHING • LOAD BALANCING ]
+```
+
+<p align="center">
+  <img src="assets/web-divider.svg" width="100%" alt="Web Divider" />
+</p>
+
 <!-- ========================================================================= -->
-<!-- 14 // WORDS FROM THE MULTIVERSE                                           -->
+<!-- 11 // WHAT MAKES ME DIFFERENT: MY DEVELOPER DNA                           -->
 <!-- ========================================================================= -->
 
-# 💬 WORDS FROM THE MULTIVERSE
+# 🕷️ MY DEVELOPER DNA
 
-> 🕷️ *"With great code comes great responsibility."*  
+- ⚡ **I combine technical development with creative presentation:** Code that functions perfectly should feel intuitive, dynamic, and delightful to touch.
+- 🧠 **I convert ambitious ideas into practical prototypes:** Theory without working execution is incomplete; I prioritize tangible, testable software.
+- 🎨 **I focus heavily on UI/UX:** Frontend design is never an afterthought — it's the primary medium through which users experience your architecture.
+- 🤖 **I explore applied AI pragmatically:** I focus on how LLMs and ML can augment real workflows rather than chasing buzzwords.
+- 🏆 **I thrive in hackathon environments:** High-pressure sprints breed clarity of thought, rapid prioritization, and team synergy.
+- 🚀 **I build software people actually interact with:** From educational 3D platforms to fraud prevention shields, real-world utility comes first.
+- 🕸️ **I continuously experiment:** Software engineering is an infinite web of discovery, and I'm always swinging toward the next horizon.
+
+<br/>
+
+<!-- ========================================================================= -->
+<!-- 12 // SIGNAL FROM THE MULTIVERSE & EASTER EGGS                            -->
+<!-- ========================================================================= -->
+
+## 💭 SIGNAL FROM THE MULTIVERSE
+
+> 🕷️ *"With powerful code comes the responsibility to build something meaningful."*  
 > ⚡ *"Anyone can write code. The real superpower is solving the right problem."*  
 > 🌐 *"Web developer. Literally."*  
 > 🎯 *"Production is my final boss."*
@@ -500,82 +584,44 @@ When the timer starts ticking, engineering discipline is the ultimate superpower
 <br/>
 
 <!-- ========================================================================= -->
-<!-- 15 // CLASSIFIED DEVELOPER FILES (EXPANDABLE)                            -->
+<!-- 13 // CONNECT TO THE WEB                                                  -->
 <!-- ========================================================================= -->
 
-<details>
-<summary><b>🕷️ CLASSIFIED // DEVELOPER DOSSIER [CLICK TO DECRYPT]</b></summary>
+# 🌐 CONNECT TO THE WEB
 
-<br/>
-
-### 🔍 FAVORITE DEBUGGING TECHNIQUE
-1. **Reproduce:** Isolate the glitch in a sterile testing environment.
-2. **Bisect:** Trace data contracts between frontend state and backend controllers.
-3. **Understand:** Deduce the logical gap before writing a single character of fix.
-4. **Fix & Test:** Apply structural correction and write automated regression guards.
-5. **Act Casual:** *"404: Villain Not Found — it was trivial all along."*
-
-### 🎯 CURRENT LEARNING GOALS
-- **Autonomous Agent Workflows:** Multi-step tool use, reasoning traces, and evaluator-optimizer loops.
-- **Distributed Caching:** Optimizing multi-region cache invalidation and low-latency storage.
-- **Real-Time 3D Rendering:** Pushing WebGL and Three.js physics in browser viewports.
-
-### 🧠 DEVELOPER PHILOSOPHY
-- Understand deeply before typing.
-- Strive for ruthless clarity in API design.
-- Treat developer experience (DX) as a first-class feature.
-- Ship early, measure telemetry, and refine relentlessly.
-
-### ⚡ FUN MULTIVERSE FACTS
-- **Status:** Debugging the multiverse one exception at a time.
-- **Dietary Fuel:** Coffee, clean APIs, and synthwave beats.
-- **Favorite Command:** `git push origin main --force-with-lease`
-
-</details>
-
-<p align="center">
-  <img src="assets/spider-divider.svg" width="100%" alt="Spider-Verse Divider" />
-</p>
-
-<!-- ========================================================================= -->
-<!-- 16 // CONNECT WITH ME: SIGNAL THE SPIDER                                  -->
-<!-- ========================================================================= -->
-
-# 📡 SIGNAL THE SPIDER
-
-Need a full-stack builder, AI collaborator, hackathon teammate, or just want to talk software architecture? Send a signal across the digital web:
+Got an ambitious idea, open-source project, or technical opportunity? Send a signal across the digital web:
 
 <p align="center">
   <a href="https://github.com/codexanjan">
-    <img src="https://img.shields.io/badge/GitHub-codexanjan-050508?style=for-the-badge&logo=github&logoColor=white&labelColor=050508" alt="GitHub Profile" />
+    <img src="https://img.shields.io/badge/GitHub-codexanjan-07070a?style=for-the-badge&logo=github&logoColor=white&labelColor=07070a" alt="GitHub" />
   </a>
   &nbsp;
   <a href="https://linkedin.com/in/YOUR_LINKEDIN_URL">
-    <img src="https://img.shields.io/badge/LinkedIn-Connect-0077b5?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=050508" alt="LinkedIn Profile" />
+    <img src="https://img.shields.io/badge/LinkedIn-Connect-0077b5?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=07070a" alt="LinkedIn" />
   </a>
   &nbsp;
   <a href="https://x.com/anjxnshetty">
-    <img src="https://img.shields.io/badge/X-@anjxnshetty-050508?style=for-the-badge&logo=x&logoColor=white&labelColor=050508" alt="X / Twitter" />
+    <img src="https://img.shields.io/badge/X-@anjxnshetty-07070a?style=for-the-badge&logo=x&logoColor=white&labelColor=07070a" alt="X / Twitter" />
   </a>
   &nbsp;
   <a href="mailto:anjanshetty.co@gmail.com">
-    <img src="https://img.shields.io/badge/Email-anjanshetty.co@gmail.com-ff1744?style=for-the-badge&logo=gmail&logoColor=white&labelColor=050508" alt="Send Email" />
+    <img src="https://img.shields.io/badge/Email-anjanshetty.co@gmail.com-ff1744?style=for-the-badge&logo=gmail&logoColor=white&labelColor=07070a" alt="Email" />
   </a>
   &nbsp;
   <a href="https://YOUR_PORTFOLIO_URL">
-    <img src="https://img.shields.io/badge/Portfolio-Visit%20Site-00e5ff?style=for-the-badge&logo=safari&logoColor=white&labelColor=050508" alt="Portfolio Website" />
+    <img src="https://img.shields.io/badge/Portfolio-Visit%20Site-00e5ff?style=for-the-badge&logo=safari&logoColor=white&labelColor=07070a" alt="Portfolio" />
   </a>
 </p>
 
 <br/>
 
-<!-- VISITOR COUNTER -->
+<!-- PROFILE SIGNALS / VISITOR COUNTER -->
 <div align="center">
 
-### 🕸️ PEOPLE WHO ENTERED THE WEB
+### 👁️ PROFILE SIGNALS
 
 <a href="https://github.com/codexanjan">
-  <img src="https://komarev.com/ghpvc/?username=codexanjan&style=for-the-badge&color=ff1744&label=MULTIVERSE+VISITORS" alt="Profile Views Counter" />
+  <img src="https://komarev.com/ghpvc/?username=codexanjan&style=for-the-badge&color=ff1744&label=MULTIVERSE+SIGNALS" alt="Profile Visitors" />
 </a>
 
 </div>
@@ -583,7 +629,7 @@ Need a full-stack builder, AI collaborator, hackathon teammate, or just want to 
 <br/>
 
 <!-- ========================================================================= -->
-<!-- 17 // CINEMATIC FOOTER // EXIT COMMAND CENTER                             -->
+<!-- 14 // CINEMATIC FOOTER                                                    -->
 <!-- ========================================================================= -->
 
 <div align="center">
@@ -591,22 +637,22 @@ Need a full-stack builder, AI collaborator, hackathon teammate, or just want to 
 ```text
 ╔══════════════════════════════════════════════════════════════════════════╗
 ║                                                                          ║
-║                  🕷️  CODEXANJAN // SIGNAL TRANSMISSION                  ║
+║              WITH POWERFUL CODE COMES THE RESPONSIBILITY                 ║
+║                    TO BUILD SOMETHING MEANINGFUL.                        ║
 ║                                                                          ║
-║              WITH GREAT CODE COMES GREAT RESPONSIBILITY                  ║
-║                                                                          ║
-║                      BUILD • LEARN • SHIP • REPEAT                       ║
+║                     ANJAN SHETTY // EARTH-CODEX-01                       ║
 ║                                                                          ║
 ╚══════════════════════════════════════════════════════════════════════════╝
 ```
 
-<img src="assets/spider-footer.svg" width="100%" alt="The Web Is Still Being Built - Footer Graphic" />
+<img src="assets/spider-footer.svg" width="100%" alt="Footer Web Graphic" />
 
-### 🕷️ WITH GREAT CODE COMES GREAT RESPONSIBILITY
+### Built with ❤️ + ☕ + Code by **Anjan Shetty**
 
-> *Thanks for visiting my corner of the developer multiverse.*  
-> ⭐ **Star a repository before you swing away!**
+<p align="center">
+  <img src="assets/web-divider.svg" width="100%" alt="Web Divider" />
+</p>
 
-`EARTH-CODEX-01 // CONNECTION TERMINATED // UNTIL NEXT TIME`
+`SIGNAL TRANSMISSION COMPLETE // UNTIL THE NEXT COMMIT`
 
 </div>

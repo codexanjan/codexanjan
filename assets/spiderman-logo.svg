@@ -1,0 +1,166 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="180" height="180">
+  <defs>
+    <!-- Radial & Linear Gradients -->
+    <radialGradient id="logo-glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ff1744" stop-opacity="0.4"/>
+      <stop offset="60%" stop-color="#8b5cf6" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+
+    <linearGradient id="mask-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff1744"/>
+      <stop offset="50%" stop-color="#d50000"/>
+      <stop offset="100%" stop-color="#880e4f"/>
+    </linearGradient>
+
+    <linearGradient id="lens-glow" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="70%" stop-color="#e0f7fa"/>
+      <stop offset="100%" stop-color="#00e5ff"/>
+    </linearGradient>
+
+    <linearGradient id="ring-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff1744"/>
+      <stop offset="50%" stop-color="#8b5cf6"/>
+      <stop offset="100%" stop-color="#00e5ff"/>
+    </linearGradient>
+
+    <!-- Glowing Filters -->
+    <filter id="neon-flame" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="4" result="blur1"/>
+      <feGaussianBlur stdDeviation="9" result="blur2"/>
+      <feMerge>
+        <feMergeNode in="blur2"/>
+        <feMergeNode in="blur1"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="eye-laser" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Keyframe Motion Graphics Styles -->
+    <style>
+      @keyframes spin-clockwise {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+      @keyframes spin-counter {
+        0% { transform: rotate(360deg); }
+        100% { transform: rotate(0deg); }
+      }
+      @keyframes pulse-mask {
+        0%, 100% { transform: scale(1); filter: drop-shadow(0 0 8px #ff1744); }
+        50% { transform: scale(1.03); filter: drop-shadow(0 0 18px #ff1744) drop-shadow(0 0 25px #00e5ff); }
+      }
+      @keyframes eye-squint {
+        0%, 100% { transform: scaleY(1); }
+        45% { transform: scaleY(1); }
+        50% { transform: scaleY(0.72) scaleX(1.05); }
+        55% { transform: scaleY(1.05); }
+        60% { transform: scaleY(1); }
+      }
+      @keyframes spider-sense-ping {
+        0% { r: 65px; opacity: 0.8; stroke: #ff1744; }
+        50% { r: 95px; opacity: 0.3; stroke: #00e5ff; }
+        100% { r: 112px; opacity: 0; stroke: #ff1744; }
+      }
+      @keyframes glitch-fx {
+        0%, 100% { transform: translate(0, 0); }
+        92% { transform: translate(0, 0); }
+        94% { transform: translate(-2px, 1px); }
+        96% { transform: translate(2px, -1px); }
+        98% { transform: translate(0, 0); }
+      }
+
+      .spin-ring { transform-origin: 120px 120px; animation: spin-clockwise 14s linear infinite; }
+      .spin-ring-rev { transform-origin: 120px 120px; animation: spin-counter 20s linear infinite; }
+      .pulse-hero { transform-origin: 120px 120px; animation: pulse-mask 3.5s ease-in-out infinite; }
+      .eye-motion { transform-origin: 120px 115px; animation: eye-squint 5s ease-in-out infinite; }
+      .radar-wave { animation: spider-sense-ping 2.5s ease-out infinite; }
+      .glitch-wrap { animation: glitch-fx 4s infinite; }
+    </style>
+  </defs>
+
+  <!-- Dark Base Background -->
+  <circle cx="120" cy="120" r="115" fill="#06080e"/>
+  <circle cx="120" cy="120" r="110" fill="url(#logo-glow)"/>
+
+  <!-- Radar Spider-Sense Ping Ring -->
+  <circle cx="120" cy="120" r="70" fill="none" stroke-width="2" class="radar-wave"/>
+
+  <!-- Rotating Outer Cyber HUD Web Rings -->
+  <g class="spin-ring">
+    <circle cx="120" cy="120" r="102" stroke="url(#ring-gradient)" stroke-width="1.8" stroke-dasharray="12 16 28 8" fill="none" filter="url(#neon-flame)"/>
+    <circle cx="120" cy="120" r="88" stroke="#00e5ff" stroke-width="1" stroke-dasharray="4 14" stroke-opacity="0.5" fill="none"/>
+    <!-- Cardinal Crosshairs -->
+    <line x1="120" y1="12" x2="120" y2="24" stroke="#ff1744" stroke-width="2"/>
+    <line x1="120" y1="216" x2="120" y2="228" stroke="#ff1744" stroke-width="2"/>
+    <line x1="12" y1="120" x2="24" y2="120" stroke="#00e5ff" stroke-width="2"/>
+    <line x1="216" y1="120" x2="228" y2="120" stroke="#00e5ff" stroke-width="2"/>
+  </g>
+
+  <!-- Reverse Rotating Geometric Hex Web -->
+  <g class="spin-ring-rev">
+    <polygon points="120,28 198,74 198,166 120,212 42,166 42,74" fill="none" stroke="#8b5cf6" stroke-width="1" stroke-dasharray="8 6" stroke-opacity="0.4"/>
+  </g>
+
+  <!-- ======================================================= -->
+  <!-- CENTER ANIMATED SPIDER-MAN MASK HERO                     -->
+  <!-- ======================================================= -->
+  <g class="pulse-hero glitch-wrap">
+    <!-- Mask Shadow Silhouette -->
+    <path d="M 120 54 C 158 54 182 82 176 126 C 170 166 144 186 120 192 C 96 186 70 166 64 126 C 58 82 82 54 120 54 Z"
+          fill="#05060a" stroke="#1e293b" stroke-width="3"/>
+
+    <!-- Mask Crimson Body -->
+    <path d="M 120 56 C 155 56 178 83 172 124 C 167 162 142 182 120 188 C 98 182 73 162 68 124 C 62 83 85 56 120 56 Z"
+          fill="url(#mask-gradient)" stroke="#ff1744" stroke-width="1.8"/>
+
+    <!-- Webbing Lines Across Mask -->
+    <!-- Vertical Web Spine -->
+    <path d="M 120 56 L 120 188" stroke="#120205" stroke-width="1.6"/>
+    <!-- Left Radiating Webs -->
+    <path d="M 120 120 L 70 102 M 120 120 L 76 142 M 120 120 L 94 172 M 120 120 L 80 72" stroke="#120205" stroke-width="1.3"/>
+    <!-- Right Radiating Webs -->
+    <path d="M 120 120 L 170 102 M 120 120 L 164 142 M 120 120 L 146 172 M 120 120 L 160 72" stroke="#120205" stroke-width="1.3"/>
+    <!-- Concentric Web Strands -->
+    <path d="M 102 78 Q 120 86 138 78" fill="none" stroke="#120205" stroke-width="1.3"/>
+    <path d="M 90 102 Q 120 114 150 102" fill="none" stroke="#120205" stroke-width="1.3"/>
+    <path d="M 92 146 Q 120 160 148 146" fill="none" stroke="#120205" stroke-width="1.3"/>
+    <path d="M 104 168 Q 120 176 136 168" fill="none" stroke="#120205" stroke-width="1.3"/>
+
+    <!-- ======================================================= -->
+    <!-- ANIMATED SQUINTING SPIDER EYES                           -->
+    <!-- ======================================================= -->
+    <g class="eye-motion">
+      <!-- Left Eye (Black Bezel + Glowing White/Cyan Lens) -->
+      <polygon points="112,106 82,100 76,122 98,128 110,122" fill="#000000" stroke="#00e5ff" stroke-width="2"/>
+      <polygon points="108,108 86,103 81,120 98,125 107,120" fill="url(#lens-glow)" filter="url(#eye-laser)"/>
+
+      <!-- Right Eye (Black Bezel + Glowing White/Cyan Lens) -->
+      <polygon points="128,106 158,100 164,122 142,128 130,122" fill="#000000" stroke="#00e5ff" stroke-width="2"/>
+      <polygon points="132,108 154,103 159,120 142,125 133,120" fill="url(#lens-glow)" filter="url(#eye-laser)"/>
+    </g>
+
+    <!-- Forehead Spider Emblem Glyph -->
+    <g transform="translate(120, 78) scale(0.65)">
+      <polygon points="0,-8 5,-2 0,6 -5,-2" fill="#00e5ff"/>
+      <polygon points="0,4 4,10 0,14 -4,10" fill="#ffffff"/>
+      <path d="M -3 -4 L -12 -12 M 3 -4 L 12 -12" stroke="#00e5ff" stroke-width="1.5"/>
+      <path d="M -4 0 L -14 0 M 4 0 L 14 0" stroke="#00e5ff" stroke-width="1.5"/>
+      <path d="M -3 4 L -12 12 M 3 4 L 12 12" stroke="#00e5ff" stroke-width="1.5"/>
+    </g>
+  </g>
+
+  <!-- Micro Orbiting Energy Particle -->
+  <g class="spin-ring">
+    <circle cx="120" cy="18" r="3.5" fill="#00e5ff" filter="url(#eye-laser)"/>
+    <circle cx="120" cy="222" r="3" fill="#ff1744" filter="url(#neon-flame)"/>
+  </g>
+</svg>

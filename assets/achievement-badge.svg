@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 260" width="160" height="160">
+  <defs>
+    <linearGradient id="badge-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff1744"/>
+      <stop offset="50%" stop-color="#8b5cf6"/>
+      <stop offset="100%" stop-color="#00e5ff"/>
+    </linearGradient>
+
+    <radialGradient id="badge-glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ff1744" stop-opacity="0.3"/>
+      <stop offset="70%" stop-color="#00e5ff" stop-opacity="0.1"/>
+      <stop offset="100%" stop-color="#050508" stop-opacity="0"/>
+    </radialGradient>
+
+    <filter id="badge-flare" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <style>
+      @keyframes badge-pulse {
+        0%, 100% { transform: scale(1); filter: drop-shadow(0 0 4px #ff1744); }
+        50% { transform: scale(1.02); filter: drop-shadow(0 0 12px #00e5ff); }
+      }
+      .badge-anim { animation: badge-pulse 4s ease-in-out infinite; transform-origin: 130px 130px; }
+      .b-text { font-family: 'Fira Code', monospace; font-weight: 800; }
+    </style>
+  </defs>
+
+  <!-- Ambient Glow -->
+  <circle cx="130" cy="130" r="120" fill="url(#badge-glow)"/>
+
+  <!-- Outer Hexagonal Cyber Frame -->
+  <g class="badge-anim">
+    <!-- Double Hexagon -->
+    <polygon points="130,15 225,70 225,190 130,245 35,190 35,70" fill="#07070a" stroke="#222b3d" stroke-width="3"/>
+    <polygon points="130,22 218,74 218,186 130,238 42,186 42,74" fill="#0a0c14" stroke="url(#badge-grad)" stroke-width="1.8" filter="url(#badge-flare)"/>
+
+    <!-- Inner Shield Ribs -->
+    <polygon points="130,34 206,78 206,182 130,226 54,182 54,78" fill="#040508" stroke="#161e2e" stroke-width="1"/>
+
+    <!-- Top Corner Tech Dots -->
+    <circle cx="130" cy="22" r="3" fill="#ff1744"/>
+    <circle cx="218" cy="74" r="3" fill="#8b5cf6"/>
+    <circle cx="42" cy="74" r="3" fill="#ff1744"/>
+
+    <!-- Central Cyber Spider Emblem -->
+    <g transform="translate(130, 110) scale(0.85)">
+      <!-- Spider Head & Body -->
+      <polygon points="0,-24 8,-12 0,0 -8,-12" fill="#ff1744"/>
+      <path d="M 0 2 C 16 2 24 16 20 40 C 16 60 0 68 0 68 C 0 68 -16 60 -20 40 C -24 16 -16 2 0 2 Z" fill="#0d111d" stroke="url(#badge-grad)" stroke-width="1.6"/>
+      <!-- Glowing Eyes -->
+      <polygon points="-4,-14 -10,-12 -8,-18" fill="#00e5ff"/>
+      <polygon points="4,-14 10,-12 8,-18" fill="#00e5ff"/>
+      <!-- Spider Legs -->
+      <path d="M -6 -10 L -22 -20 L -30 -16 M 6 -10 L 22 -20 L 30 -16" stroke="#ff1744" stroke-width="1.6" fill="none"/>
+      <path d="M -8 10 L -26 4 L -34 10 M 8 10 L 26 4 L 34 10" stroke="#ff1744" stroke-width="1.6" fill="none"/>
+      <path d="M -8 24 L -28 26 L -34 38 M 8 24 L 28 26 L 34 38" stroke="#00e5ff" stroke-width="1.6" fill="none"/>
+      <path d="M -6 40 L -24 50 L -28 62 M 6 40 L 24 50 L 28 62" stroke="#00e5ff" stroke-width="1.6" fill="none"/>
+    </g>
+
+    <!-- Star Laurels -->
+    <g fill="#ffd700">
+      <polygon points="130,48 132,54 138,54 133,58 135,64 130,60 125,64 127,58 122,54 128,54" transform="scale(0.8) translate(32, 10)"/>
+      <polygon points="130,48 132,54 138,54 133,58 135,64 130,60 125,64 127,58 122,54 128,54" transform="scale(0.8) translate(15, 12)"/>
+      <polygon points="130,48 132,54 138,54 133,58 135,64 130,60 125,64 127,58 122,54 128,54" transform="scale(0.8) translate(49, 12)"/>
+    </g>
+
+    <!-- Badge Title Ribbon -->
+    <rect x="52" y="174" width="156" height="22" rx="4" fill="#07070a" stroke="#ff1744" stroke-width="1"/>
+    <text x="130" y="189" text-anchor="middle" fill="#ffffff" font-size="9.5" class="b-text" letter-spacing="1.5">
+      HACKATHON BUILDER
+    </text>
+
+    <!-- Level Status Tag -->
+    <text x="130" y="212" text-anchor="middle" fill="#00e5ff" font-size="8.5" class="b-text" letter-spacing="2">
+      LEVEL // 99 [MASTER]
+    </text>
+  </g>
+</svg>

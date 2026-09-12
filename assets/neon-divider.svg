@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 36" width="100%" height="100%">
+  <defs>
+    <linearGradient id="neon-beam-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ff1744" stop-opacity="0"/>
+      <stop offset="25%" stop-color="#ff1744"/>
+      <stop offset="50%" stop-color="#8b5cf6"/>
+      <stop offset="75%" stop-color="#00e5ff"/>
+      <stop offset="100%" stop-color="#00a8ff" stop-opacity="0"/>
+    </linearGradient>
+
+    <filter id="neon-glow-filter" x="-20%" y="-50%" width="140%" height="200%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <style>
+      @keyframes shimmer-move {
+        0% { transform: translateX(-100px); opacity: 0; }
+        50% { opacity: 1; }
+        100% { transform: translateX(1100px); opacity: 0; }
+      }
+      .shimmer { animation: shimmer-move 4s linear infinite; }
+      .hud-mono { font-family: 'Fira Code', monospace; font-size: 8.5px; font-weight: 700; letter-spacing: 2px; }
+    </style>
+  </defs>
+
+  <!-- Background Base Line -->
+  <line x1="50" y1="18" x2="950" y2="18" stroke="#111520" stroke-width="1.2"/>
+
+  <!-- Glowing Neon Line -->
+  <line x1="120" y1="18" x2="420" y2="18" stroke="url(#neon-beam-grad)" stroke-width="2" filter="url(#neon-glow-filter)"/>
+  <line x1="580" y1="18" x2="880" y2="18" stroke="url(#neon-beam-grad)" stroke-width="2" filter="url(#neon-glow-filter)"/>
+
+  <!-- Micro Circuit Taps -->
+  <circle cx="160" cy="18" r="3" fill="#ff1744"/>
+  <circle cx="280" cy="18" r="2" fill="#ff1744" opacity="0.6"/>
+  <circle cx="720" cy="18" r="2" fill="#00e5ff" opacity="0.6"/>
+  <circle cx="840" cy="18" r="3" fill="#00e5ff"/>
+
+  <!-- Center HUD Telemetry Capsule -->
+  <g transform="translate(500, 18)" text-anchor="middle">
+    <rect x="-75" y="-11" width="150" height="22" rx="11" fill="#07070a" stroke="#8b5cf6" stroke-width="1.2"/>
+    <text x="0" y="3.5" fill="#f5f7fa" class="hud-mono">
+      <tspan fill="#ff1744">AS</tspan>
+      <tspan fill="#475569"> // </tspan>
+      <tspan fill="#00e5ff">NODE_01</tspan>
+    </text>
+  </g>
+
+  <!-- Moving Laser Shimmer Energy Dot -->
+  <circle cx="0" cy="18" r="3" fill="#ffffff" class="shimmer" filter="url(#neon-glow-filter)"/>
+</svg>
