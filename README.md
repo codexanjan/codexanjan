@@ -192,13 +192,13 @@ status: Creating
 <br/>
 
 <!-- ========================================================================= -->
-<!-- 05 // FEATURED MISSIONS                                                   -->
+<!-- 05 // SPIDER-VERSE MISSIONS                                                 -->
 <!-- ========================================================================= -->
 
-## <img src="assets/section-pointer.svg" width="32" height="14" alt="Pointer" /> FEATURED MISSIONS
+## <img src="assets/section-pointer.svg" width="32" height="14" alt="Pointer" /> SPIDER-VERSE MISSIONS
 
 <div align="center">
-  <img src="assets/project-frame.svg" width="100%" alt="Project Frame Header" />
+  <img src="assets/project-frame.svg" width="100%" alt="Spider-Verse Missions Header" />
 </div>
 
 <br/>
@@ -272,13 +272,13 @@ status: Creating
 <br/>
 
 <!-- ========================================================================= -->
-<!-- 06 // ACHIEVEMENT NETWORK                                                 -->
+<!-- 06 // SPIDER-VERSE ACHIEVEMENTS                                             -->
 <!-- ========================================================================= -->
 
-## <img src="assets/section-pointer.svg" width="32" height="14" alt="Pointer" /> ACHIEVEMENT NETWORK
+## <img src="assets/section-pointer.svg" width="32" height="14" alt="Pointer" /> SPIDER-VERSE ACHIEVEMENTS
 
 <div align="center">
-  <img src="assets/achievement-frame.svg" width="100%" alt="Achievement Frame Header" />
+  <img src="assets/achievement-frame.svg" width="100%" alt="Spider-Verse Achievements Header" />
 </div>
 
 <br/>
@@ -325,13 +325,13 @@ status: Creating
 <br/>
 
 <!-- ========================================================================= -->
-<!-- 07 // CERTIFICATION ARCHIVE                                               -->
+<!-- 07 // SPIDER-VERSE CREDENTIAL VAULT                                           -->
 <!-- ========================================================================= -->
 
-## <img src="assets/section-pointer.svg" width="32" height="14" alt="Pointer" /> CERTIFICATION ARCHIVE
+## <img src="assets/section-pointer.svg" width="32" height="14" alt="Pointer" /> SPIDER-VERSE CREDENTIAL VAULT
 
 <div align="center">
-  <img src="assets/certificate-frame.svg" width="100%" alt="Certificate Frame Header" />
+  <img src="assets/certificate-frame.svg" width="100%" alt="Spider-Verse Credential Vault Header" />
 </div>
 
 <br/>
@@ -390,24 +390,24 @@ status: Creating
 <br/>
 
 <!-- ========================================================================= -->
-<!-- 08 // COMMAND CENTER                                                      -->
+<!-- 08 // SPIDER-VERSE COMMAND CENTER                                                  -->
 <!-- ========================================================================= -->
 
-## <img src="assets/section-pointer.svg" width="32" height="14" alt="Pointer" /> COMMAND CENTER
+## <img src="assets/section-pointer.svg" width="32" height="14" alt="Pointer" /> SPIDER-VERSE COMMAND CENTER
 
 <div align="center">
 
-<img src="assets/command-center.svg" width="100%" alt="Command Center HUD" />
+<img src="assets/command-center.svg" width="100%" alt="Spider-Verse Command Center HUD" />
 
 <br/><br/>
 
 <!-- TOP LANGUAGES USED HUD CARD (ANIMATED) -->
-<img src="assets/top-languages.svg" width="100%" alt="Top Languages Used" />
+<img src="assets/top-languages.svg" width="100%" alt="Spider-Verse Arsenal // Top Languages" />
 
 <br/><br/>
 
 <!-- TOP CONTRIBUTIONS BY COMMIT HUD CARD (ANIMATED) -->
-<img src="assets/top-contributions.svg" width="100%" alt="Top Contributions by Commit" />
+<img src="assets/top-contributions.svg" width="100%" alt="Spider Web Dispatch // Top Contributions" />
 
 <br/><br/>
 
@@ -456,14 +456,14 @@ status: Creating
 <br/>
 
 <!-- ========================================================================= -->
-<!-- 10 // CURRENT SIGNAL                                                      -->
+<!-- 10 // SPIDER-SENSE SIGNAL                                                  -->
 <!-- ========================================================================= -->
 
-## <img src="assets/section-pointer.svg" width="32" height="14" alt="Pointer" /> CURRENT SIGNAL
+## <img src="assets/section-pointer.svg" width="32" height="14" alt="Pointer" /> SPIDER-SENSE SIGNAL
 
 <div align="center">
 
-<img src="assets/current-signal.svg" width="100%" alt="Current Signal HUD" />
+<img src="assets/current-signal.svg" width="100%" alt="Spider-Sense Signal HUD" />
 
 <br/><br/>
 

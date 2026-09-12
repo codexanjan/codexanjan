@@ -77,8 +77,8 @@
     <path d="M -20 -24 L 0 0 L 20 24" fill="none" stroke="#FF1B2D" stroke-width="1.8"/>
     <path d="M 20 -24 L 0 0 L -20 24" fill="none" stroke="#FF1B2D" stroke-width="1.8"/>
     <circle cx="0" cy="0" r="5" fill="#FF1B2D" class="pg-node"/>
-    <rect x="-65" y="32" width="130" height="20" rx="3" fill="#09090F" stroke="#FF1B2D" stroke-width="1"/>
-    <text x="0" y="46" text-anchor="middle" fill="#FFFFFF" font-size="12" class="pg-mono" letter-spacing="1.5">CORE // HERO</text>
+    <rect x="-75" y="32" width="150" height="22" rx="3" fill="#09090F" stroke="#FF1B2D" stroke-width="1"/>
+    <text x="0" y="47" text-anchor="middle" fill="#FFFFFF" font-size="11.5" class="pg-mono" letter-spacing="1.5">EARTH-CODEX-01</text>
   </g>
 
   <!-- Node Group 2 (Spider Network) -->
@@ -86,16 +86,16 @@
     <path d="M -20 -24 L 0 0 L 20 24" fill="none" stroke="#FF1B2D" stroke-width="1.8"/>
     <path d="M 20 -24 L 0 0 L -20 24" fill="none" stroke="#FF1B2D" stroke-width="1.8"/>
     <circle cx="0" cy="0" r="5" fill="#FF1B2D" class="pg-node"/>
-    <rect x="-65" y="32" width="130" height="20" rx="3" fill="#09090F" stroke="#FF1B2D" stroke-width="1"/>
-    <text x="0" y="46" text-anchor="middle" fill="#FFFFFF" font-size="12" class="pg-mono" letter-spacing="1.5">NETWORK</text>
+    <rect x="-70" y="32" width="140" height="22" rx="3" fill="#09090F" stroke="#FF1B2D" stroke-width="1"/>
+    <text x="0" y="47" text-anchor="middle" fill="#FFFFFF" font-size="11.5" class="pg-mono" letter-spacing="1.5">SPIDER-NET</text>
   </g>
 
   <!-- Central Nexus (Tech Arsenal / Missions) -->
   <g transform="translate(600, 50)">
     <polygon points="0,-18 14,-14 18,0 14,14 0,18 -14,14 -18,0 -14,-14" fill="#09090F" stroke="#FFFFFF" stroke-width="2" filter="url(#pg-glow)"/>
     <circle cx="0" cy="0" r="5" fill="#00E5FF" class="pg-node"/>
-    <rect x="-85" y="30" width="170" height="24" rx="4" fill="#09090F" stroke="#00E5FF" stroke-width="1.4"/>
-    <text x="0" y="46" text-anchor="middle" fill="#00E5FF" font-size="13" class="pg-title" letter-spacing="2">NEXUS // CODEX</text>
+    <rect x="-105" y="30" width="210" height="25" rx="4" fill="#09090F" stroke="#00E5FF" stroke-width="1.4"/>
+    <text x="0" y="47" text-anchor="middle" fill="#00E5FF" font-size="12.5" class="pg-title" letter-spacing="2">SPIDER-VERSE // NEXUS</text>
   </g>
 
   <!-- Node Group 4 (Achievements & Credentials) -->
@@ -103,8 +103,8 @@
     <path d="M -20 -24 L 0 0 L 20 24" fill="none" stroke="#00A8FF" stroke-width="1.8"/>
     <path d="M 20 -24 L 0 0 L -20 24" fill="none" stroke="#00A8FF" stroke-width="1.8"/>
     <circle cx="0" cy="0" r="5" fill="#00A8FF" class="pg-node"/>
-    <rect x="-65" y="32" width="130" height="20" rx="3" fill="#09090F" stroke="#00A8FF" stroke-width="1"/>
-    <text x="0" y="46" text-anchor="middle" fill="#FFFFFF" font-size="12" class="pg-mono" letter-spacing="1.5">ARCHIVES</text>
+    <rect x="-75" y="32" width="150" height="22" rx="3" fill="#09090F" stroke="#00A8FF" stroke-width="1"/>
+    <text x="0" y="47" text-anchor="middle" fill="#FFFFFF" font-size="11.5" class="pg-mono" letter-spacing="1.5">CANON ARCHIVES</text>
   </g>
 
   <!-- Node Group 5 (Command Center & Signals) -->
@@ -112,8 +112,8 @@
     <path d="M -20 -24 L 0 0 L 20 24" fill="none" stroke="#21D4FD" stroke-width="1.8"/>
     <path d="M 20 -24 L 0 0 L -20 24" fill="none" stroke="#21D4FD" stroke-width="1.8"/>
     <circle cx="0" cy="0" r="5" fill="#21D4FD" class="pg-node"/>
-    <rect x="-65" y="32" width="130" height="20" rx="3" fill="#09090F" stroke="#21D4FD" stroke-width="1"/>
-    <text x="0" y="46" text-anchor="middle" fill="#FFFFFF" font-size="12" class="pg-mono" letter-spacing="1.5">TELEMETRY</text>
+    <rect x="-75" y="32" width="150" height="22" rx="3" fill="#09090F" stroke="#21D4FD" stroke-width="1"/>
+    <text x="0" y="47" text-anchor="middle" fill="#FFFFFF" font-size="11.5" class="pg-mono" letter-spacing="1.5">RADAR TELEMETRY</text>
   </g>
 
   <!-- Terminal Endpoints -->

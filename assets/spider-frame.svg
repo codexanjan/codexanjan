@@ -49,12 +49,13 @@
     <line x1="790" y1="210" x2="740" y2="230"/><line x1="790" y1="180" x2="770" y2="230"/>
   </g>
   
-  <!-- High Contrast Top Badge -->
-  <rect x="250" y="2" width="300" height="24" rx="4" fill="#09090F" stroke="#FF1B2D" stroke-width="1.5"/>
-  <text x="400" y="18" text-anchor="middle" fill="#FFFFFF" font-size="13" class="f-text" letter-spacing="2">SPIDER // DEVELOPER SPECIFICATION</text>
+  <!-- High Contrast Top Badge (Spider-Verse Themed) -->
+  <rect x="180" y="2" width="440" height="26" rx="4" fill="#09090F" stroke="#FF1B2D" stroke-width="1.5"/>
+  <circle cx="198" cy="15" r="3.5" fill="#FF1B2D" class="sf-led"/>
+  <text x="408" y="19" text-anchor="middle" fill="#FFFFFF" font-size="13" class="f-text" letter-spacing="2">SPIDER-VERSE TERMINAL // DEVELOPER SPECIFICATION</text>
   
-  <!-- High Contrast Bottom Badge -->
-  <rect x="250" y="214" width="300" height="24" rx="4" fill="#09090F" stroke="#00A8FF" stroke-width="1.5"/>
-  <circle cx="270" cy="226" r="3.5" fill="#21D4FD" class="sf-led"/>
-  <text x="406" y="230" text-anchor="middle" fill="#00E5FF" font-size="13" class="f-text" letter-spacing="1.5">STATUS: ACTIVE // MISSION: CREATING</text>
+  <!-- High Contrast Bottom Badge (Spider-Verse Canon) -->
+  <rect x="180" y="212" width="440" height="26" rx="4" fill="#09090F" stroke="#00A8FF" stroke-width="1.5"/>
+  <circle cx="198" cy="225" r="3.5" fill="#21D4FD" class="sf-led"/>
+  <text x="408" y="229" text-anchor="middle" fill="#00E5FF" font-size="12" class="f-text" letter-spacing="1.5">SPIDER PROTOCOL: ACTIVE // WITH GREAT POWER COMES GREAT CODE</text>
 </svg>

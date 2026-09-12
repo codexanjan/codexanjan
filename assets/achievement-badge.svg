@@ -78,14 +78,14 @@
     </g>
 
     <!-- Badge Title Ribbon -->
-    <rect x="52" y="174" width="156" height="22" rx="4" fill="#07070a" stroke="#ff1744" stroke-width="1"/>
+    <rect x="48" y="174" width="164" height="22" rx="4" fill="#07070a" stroke="#ff1744" stroke-width="1"/>
     <text x="130" y="189" text-anchor="middle" fill="#ffffff" font-size="9.5" class="b-text" letter-spacing="1.5">
-      HACKATHON BUILDER
+      CANON CHAMPION
     </text>
 
     <!-- Level Status Tag -->
     <text x="130" y="212" text-anchor="middle" fill="#00e5ff" font-size="8.5" class="b-text" letter-spacing="2">
-      LEVEL // 99 [MASTER]
+      CANON EVENT // NODE-01
     </text>
   </g>
 </svg>

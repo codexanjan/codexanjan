@@ -60,14 +60,14 @@
     <polygon points="0,-12 5,-4 0,4 -5,-4" fill="#ff1744"/>
     <polygon points="0,2 4,8 0,12 -4,8" fill="#00e5ff"/>
     <path d="M -3 -6 L -10 -10 M 3 -6 L 10 -10 M -4 0 L -12 0 M 4 0 L 12 0 M -3 6 L -10 10 M 3 6 L 10 10" stroke="#f5f7fa" stroke-width="1.2" fill="none"/>
-    <text x="0" y="24" text-anchor="middle" fill="#00e5ff" font-size="8" font-family="'Fira Code', monospace" font-weight="900" letter-spacing="1">CORE_HUB</text>
+    <text x="0" y="24" text-anchor="middle" fill="#00e5ff" font-size="8" font-family="'Fira Code', monospace" font-weight="900" letter-spacing="1">SPIDER_HUB</text>
   </g>
 
   <!-- NODE 1: FRONTEND & 3D UI (Top) -->
   <g transform="translate(400, 30)" class="node-anim">
     <rect x="-80" y="-18" width="160" height="36" rx="18" fill="#0b0e1a" stroke="#00e5ff" stroke-width="1.5" filter="url(#node-glow)"/>
     <circle cx="-56" cy="0" r="6" fill="#00e5ff"/>
-    <text x="6" y="4" text-anchor="middle" fill="#ffffff" class="cw-text">FRONTEND &amp; 3D</text>
+    <text x="6" y="4" text-anchor="middle" fill="#ffffff" class="cw-text">SPIDER UI &amp; 3D</text>
   </g>
 
   <!-- NODE 2: AI & LLM PIPELINES (Top Right) -->

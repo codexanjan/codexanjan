@@ -77,24 +77,24 @@
 
   <!-- Main Developer Footer Typography (Brilliant White & High Contrast) -->
   <g transform="translate(700, 125)" text-anchor="middle">
-    <!-- Red & Blue Edge Shadows for Developer Name -->
-    <text x="-2" y="2" fill="#FF1B2D" font-size="46" class="fw-title" letter-spacing="8" opacity="0.8">ANJAN SHETTY</text>
-    <text x="2" y="-2" fill="#00A8FF" font-size="46" class="fw-title" letter-spacing="8" opacity="0.8">ANJAN SHETTY</text>
-    <text x="0" y="0" fill="#FFFFFF" font-size="46" class="fw-title" letter-spacing="8">ANJAN SHETTY</text>
+    <!-- Single Crisp Master Name -->
+    <text x="0" y="0" fill="#FFFFFF" font-size="46" class="fw-title" letter-spacing="8" style="filter: drop-shadow(0 0 12px rgba(255, 27, 45, 0.7)) drop-shadow(0 0 24px rgba(0, 229, 255, 0.5));">
+      ANJAN SHETTY
+    </text>
 
     <!-- Username & Multiverse Tag -->
     <text x="0" y="36" fill="#FFFFFF" font-size="18" class="fw-sub" letter-spacing="3">
-      <tspan fill="#FF1744">@codexanjan</tspan><tspan fill="#8B93A7"> // </tspan><tspan fill="#00E5FF">EARTH-CODEX-01</tspan>
+      <tspan fill="#FF1744">@codexanjan</tspan><tspan fill="#8B93A7"> // </tspan><tspan fill="#00E5FF">NODE: EARTH-CODEX-01</tspan>
     </text>
 
-    <!-- Motto -->
-    <text x="0" y="70" fill="#FFFFFF" font-size="20" class="fw-title" letter-spacing="6">
-      BUILD / CREATE / EVOLVE
+    <!-- Canonical Spider-Man Motto -->
+    <text x="0" y="70" fill="#00E5FF" font-size="19" class="fw-title" letter-spacing="4" style="filter: drop-shadow(0 0 8px rgba(0, 229, 255, 0.6));">
+      WITH GREAT POWER COMES GREAT CODE
     </text>
 
     <!-- Small Supporting Text -->
-    <text x="0" y="96" fill="#E2E8F0" font-size="15" font-weight="700" class="fw-sub" letter-spacing="2">
-      Built through curiosity, code, and constant iteration.
+    <text x="0" y="98" fill="#E2E8F0" font-size="14.5" font-weight="700" class="fw-sub" letter-spacing="2">
+      BUILD / CREATE / EVOLVE // THE WEB NEVER SLEEPS
     </text>
   </g>
 

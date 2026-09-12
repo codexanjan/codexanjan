@@ -78,6 +78,18 @@
   <!-- Animated Scanline Sweep -->
   <line x1="16" y1="0" x2="984" y2="0" stroke="url(#contrib-laser-grad)" stroke-width="1.5" class="tc-scan"/>
 
+  <!-- Background Spider Web Geometry -->
+  <g stroke="#FF1B2D" stroke-width="1" stroke-opacity="0.25" fill="none">
+    <line x1="8" y1="8" x2="130" y2="70"/>
+    <line x1="8" y1="8" x2="70" y2="130"/>
+    <path d="M 40 25 Q 60 50 25 70"/>
+  </g>
+  <g stroke="#00E5FF" stroke-width="1" stroke-opacity="0.25" fill="none">
+    <line x1="992" y1="352" x2="870" y2="290"/>
+    <line x1="992" y1="352" x2="930" y2="230"/>
+    <path d="M 960 330 Q 940 300 975 280"/>
+  </g>
+
   <!-- Corner Brackets -->
   <path d="M 6 45 L 6 6 L 45 6" fill="none" stroke="#00E5FF" stroke-width="2.5"/>
   <path d="M 994 45 L 994 6 L 955 6" fill="none" stroke="#FF1B2D" stroke-width="2.5"/>
@@ -91,23 +103,23 @@
     <!-- Top Left Title Badge -->
     <rect x="0" y="0" width="300" height="28" rx="4" fill="#09090F" stroke="#00E5FF" stroke-width="1.5"/>
     <circle cx="14" cy="14" r="4.5" fill="#00E5FF" class="tc-led"/>
-    <text x="32" y="19" fill="#00E5FF" font-size="13" class="tc-sub" letter-spacing="1.5">COMMIT TELEMETRY // PIPELINE</text>
+    <text x="32" y="19" fill="#00E5FF" font-size="13" class="tc-sub" letter-spacing="1.5">SPIDER-NET // DISPATCH STREAM</text>
   </g>
 
   <g transform="translate(710, 24)">
     <!-- Top Right Status Node -->
     <rect x="0" y="0" width="260" height="28" rx="4" fill="#09090F" stroke="#FF1B2D" stroke-width="1.5"/>
     <circle cx="16" cy="14" r="4.5" fill="#FF1B2D" class="tc-led"/>
-    <text x="32" y="19" fill="#FFFFFF" font-size="13" class="tc-sub" letter-spacing="1">GIT ACTIVITY: HIGH VELOCITY</text>
+    <text x="32" y="19" fill="#FFFFFF" font-size="13" class="tc-sub" letter-spacing="1">SPIDER VELOCITY: HIGH</text>
   </g>
 
-  <!-- Title Center -->
+  <!-- Title Center (Spider-Verse Themed & Crisp Solid White) -->
   <g transform="translate(500, 78)" text-anchor="middle">
-    <text x="-2" y="2" fill="#FF1B2D" font-size="30" class="tc-title" letter-spacing="4" opacity="0.8">TOP CONTRIBUTIONS BY COMMIT</text>
-    <text x="2" y="-2" fill="#00E5FF" font-size="30" class="tc-title" letter-spacing="4" opacity="0.8">TOP CONTRIBUTIONS BY COMMIT</text>
-    <text x="0" y="0" fill="#FFFFFF" font-size="30" class="tc-title" letter-spacing="4">TOP CONTRIBUTIONS BY COMMIT</text>
-    <text x="0" y="24" fill="#00E5FF" font-size="13.5" class="tc-sub" letter-spacing="2">
-      ACTIVE CODE DISPATCH // PRODUCTION MISSIONS &amp; CORE REPOSITORIES
+    <text x="0" y="0" fill="#FFFFFF" font-size="28" class="tc-title" letter-spacing="4" style="filter: drop-shadow(0 0 12px rgba(255, 27, 45, 0.7)) drop-shadow(0 0 20px rgba(0, 229, 255, 0.5));">
+      SPIDER WEB DISPATCH // TOP CONTRIBUTIONS
+    </text>
+    <text x="0" y="26" fill="#00E5FF" font-size="13.5" class="tc-sub" letter-spacing="2.5">
+      ACTIVE COMMIT VELOCITY // CANON REPOSITORIES &amp; OPERATIONS
     </text>
   </g>
 
@@ -124,9 +136,9 @@
       <text x="34" y="24" fill="#FFFFFF" font-size="15" class="tc-title" letter-spacing="1">
         codexanjan/AJ-RUNNER
       </text>
-      <text x="340" y="24" fill="#00E5FF" font-size="12" class="tc-mono">[ High Commit Volume ]</text>
+      <text x="340" y="24" fill="#00E5FF" font-size="12" class="tc-mono">[ High Commit Velocity ]</text>
       <text x="34" y="44" fill="#CBD5E1" font-size="12" class="tc-sub">
-        High Velocity Arcade Game // JavaScript, HTML5 Canvas, WebGL Engine
+        High Velocity Arcade Game // Spider Physics &amp; WebGL Engine
       </text>
     </g>
 
@@ -140,7 +152,7 @@
       </text>
       <text x="340" y="24" fill="#21D4FD" font-size="12" class="tc-mono">[ 15 Stars // Multi-Release ]</text>
       <text x="34" y="44" fill="#CBD5E1" font-size="12" class="tc-sub">
-        Security Credential Vault // TypeScript, Encrypted Architecture
+        Security Credential Vault // Encrypted Spider Architecture
       </text>
     </g>
 
@@ -154,7 +166,7 @@
       </text>
       <text x="340" y="24" fill="#FF1744" font-size="12" class="tc-mono">[ 16 Stars // Automation ]</text>
       <text x="34" y="44" fill="#CBD5E1" font-size="12" class="tc-sub">
-        Dynamic Spider-Verse Telemetry Engine // Python Automation &amp; Actions
+        Dynamic Spider-Verse Telemetry Engine // Automation Actions
       </text>
     </g>
   </g>
@@ -169,13 +181,13 @@
     <!-- Top Card Header -->
     <rect x="0" y="0" width="375" height="32" rx="6" fill="#050509" stroke="#FF1B2D" stroke-opacity="0.4" stroke-width="1"/>
     <circle cx="16" cy="16" r="4" fill="#FF1B2D" class="tc-led"/>
-    <text x="32" y="21" fill="#FFFFFF" font-size="12.5" class="tc-sub" letter-spacing="1.5">
-      COMMIT PULSE // REAL-TIME DISPATCH
+    <text x="32" y="21" fill="#FFFFFF" font-size="12" class="tc-sub" letter-spacing="1.5">
+      SPIDER-SENSE PULSE // REAL-TIME DISPATCH
     </text>
 
     <!-- Animated Telemetry Wave Stream -->
     <g transform="translate(20, 50)">
-      <text x="0" y="14" fill="#00E5FF" font-size="11" class="tc-mono" letter-spacing="1">DISPATCH VELOCITY WAVE</text>
+      <text x="0" y="14" fill="#00E5FF" font-size="11" class="tc-mono" letter-spacing="1">CANON COMMIT STREAM</text>
       <!-- Background Guide Lines -->
       <line x1="0" y1="36" x2="335" y2="36" stroke="#8B93A7" stroke-opacity="0.15" stroke-width="1"/>
       <line x1="0" y1="52" x2="335" y2="52" stroke="#8B93A7" stroke-opacity="0.15" stroke-width="1"/>
@@ -188,15 +200,15 @@
     <!-- Telemetry Stats List -->
     <g transform="translate(20, 130)">
       <!-- Line 1: Commit Frequency -->
-      <text x="0" y="14" fill="#8B93A7" font-size="11" class="tc-sub">DEPLOYMENT FREQUENCY:</text>
+      <text x="0" y="14" fill="#8B93A7" font-size="11" class="tc-sub">CANON VELOCITY:</text>
       <text x="175" y="14" fill="#FFFFFF" font-size="11" class="tc-mono">DAILY SPRINT // ACTIVE</text>
 
       <!-- Line 2: Pipeline State -->
-      <text x="0" y="34" fill="#8B93A7" font-size="11" class="tc-sub">PIPELINE VERIFICATION:</text>
+      <text x="0" y="34" fill="#8B93A7" font-size="11" class="tc-sub">SPIDER-NET STATUS:</text>
       <text x="175" y="34" fill="#00E5FF" font-size="11" class="tc-mono">100% PASSING // GREEN</text>
 
       <!-- Line 3: Branch Strategy -->
-      <text x="0" y="54" fill="#8B93A7" font-size="11" class="tc-sub">REMOTE TARGET:</text>
+      <text x="0" y="54" fill="#8B93A7" font-size="11" class="tc-sub">MULTIVERSE TARGET:</text>
       <text x="175" y="54" fill="#FF1744" font-size="11" class="tc-mono">origin/main [OPTIMAL]</text>
     </g>
   </g>

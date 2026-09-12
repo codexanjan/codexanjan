@@ -107,21 +107,15 @@
 
   <!-- Top Multiverse Node Status Tag -->
   <g transform="translate(600, 205)" text-anchor="middle">
-    <rect x="-160" y="-16" width="320" height="26" fill="#09090F" rx="13" stroke="#00E5FF" stroke-width="1.2"/>
+    <rect x="-180" y="-16" width="360" height="26" fill="#09090F" rx="13" stroke="#00E5FF" stroke-width="1.2"/>
     <text x="0" y="2" fill="#00E5FF" font-size="12" class="sh-sub" letter-spacing="2.5">
-      THE CODEX SPIDER-VERSE // PROTOCOL
+      THE CODEX SPIDER-VERSE // COMMAND CENTER
     </text>
   </g>
 
-  <!-- Main Developer Name (Large Bold White with Red/Blue Shadows) -->
+  <!-- Main Developer Name (Single Razor-Sharp Layer with Dual Neon Glow) -->
   <g transform="translate(600, 260)" text-anchor="middle">
-    <text x="-2" y="2" fill="#FF1B2D" font-size="56" class="sh-title" letter-spacing="8" opacity="0.85">
-      ANJAN SHETTY
-    </text>
-    <text x="2" y="-2" fill="#00A8FF" font-size="56" class="sh-title" letter-spacing="8" opacity="0.85">
-      ANJAN SHETTY
-    </text>
-    <text x="0" y="0" fill="#FFFFFF" font-size="56" class="sh-title" letter-spacing="8">
+    <text x="0" y="0" fill="#FFFFFF" font-size="56" class="sh-title" letter-spacing="8" style="filter: drop-shadow(0 0 16px rgba(255, 27, 45, 0.8)) drop-shadow(0 0 28px rgba(0, 229, 255, 0.6));">
       ANJAN SHETTY
     </text>
   </g>
@@ -131,21 +125,21 @@
     <text x="0" y="0" fill="#FFFFFF" font-size="16" class="sh-sub" letter-spacing="3">
       <tspan fill="#FF1744">CODEXANJAN</tspan>
       <tspan fill="#8B93A7"> // </tspan>
-      <tspan fill="#FFFFFF">FRIENDLY NEIGHBORHOOD DEVELOPER</tspan>
+      <tspan fill="#FFFFFF">FRIENDLY NEIGHBORHOOD ARCHITECT</tspan>
     </text>
   </g>
 
   <!-- Tech Focus Capsules Bar -->
   <g transform="translate(600, 332)" text-anchor="middle">
     <text x="0" y="0" fill="#00E5FF" font-size="14" class="sh-sub" letter-spacing="2">
-      FULL STACK <tspan fill="#FFFFFF">•</tspan> AI / ML <tspan fill="#FF1744">•</tspan> AGENTIC AI <tspan fill="#FFFFFF">•</tspan> DEV TOOLS <tspan fill="#00E5FF">•</tspan> SYSTEM DESIGN
+      FULL STACK <tspan fill="#FFFFFF">•</tspan> AI / ML <tspan fill="#FF1744">•</tspan> AGENTIC SYSTEMS <tspan fill="#FFFFFF">•</tspan> DEV TOOLS <tspan fill="#00E5FF">•</tspan> SPIDER PIPELINES
     </text>
   </g>
 
   <!-- Bottom Core Philosophy Banner -->
   <g transform="translate(600, 362)" text-anchor="middle">
     <text x="0" y="0" fill="#FFFFFF" font-size="13" class="sh-sub" letter-spacing="3">
-      [ BUILD // LEARN // SHIP // REPEAT ]
+      [ WITH GREAT POWER COMES GREAT CODE ]
     </text>
   </g>
 

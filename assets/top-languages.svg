@@ -94,6 +94,18 @@
   <!-- Animated Scanline Sweep -->
   <line x1="16" y1="0" x2="984" y2="0" stroke="url(#laser-scan-lang)" stroke-width="1.5" class="l-scan"/>
 
+  <!-- Background Spider Web Geometry -->
+  <g stroke="#00E5FF" stroke-width="1" stroke-opacity="0.25" fill="none">
+    <line x1="8" y1="8" x2="130" y2="70"/>
+    <line x1="8" y1="8" x2="70" y2="130"/>
+    <path d="M 40 25 Q 60 50 25 70"/>
+  </g>
+  <g stroke="#FF1B2D" stroke-width="1" stroke-opacity="0.25" fill="none">
+    <line x1="992" y1="352" x2="870" y2="290"/>
+    <line x1="992" y1="352" x2="930" y2="230"/>
+    <path d="M 960 330 Q 940 300 975 280"/>
+  </g>
+
   <!-- Corner Brackets -->
   <path d="M 6 45 L 6 6 L 45 6" fill="none" stroke="#FF1B2D" stroke-width="2.5"/>
   <path d="M 994 45 L 994 6 L 955 6" fill="none" stroke="#00E5FF" stroke-width="2.5"/>
@@ -107,23 +119,23 @@
     <!-- Top Left Title Badge -->
     <rect x="0" y="0" width="280" height="28" rx="4" fill="#09090F" stroke="#FF1B2D" stroke-width="1.5"/>
     <circle cx="14" cy="14" r="4.5" fill="#FF1B2D" class="l-pulse"/>
-    <text x="32" y="19" fill="#FFFFFF" font-size="13" class="lh-sub" letter-spacing="1.5">TECH ARSENAL // TELEMETRY</text>
+    <text x="32" y="19" fill="#FFFFFF" font-size="13" class="lh-sub" letter-spacing="1.5">SPIDER-NET // TECH ARSENAL</text>
   </g>
 
   <g transform="translate(710, 24)">
     <!-- Top Right Status Node -->
     <rect x="0" y="0" width="260" height="28" rx="4" fill="#09090F" stroke="#00E5FF" stroke-width="1.5"/>
     <circle cx="16" cy="14" r="4.5" fill="#00E5FF" class="l-pulse"/>
-    <text x="32" y="19" fill="#00E5FF" font-size="13" class="lh-sub" letter-spacing="1">16 REPOSITORIES ANALYZED</text>
+    <text x="32" y="19" fill="#00E5FF" font-size="13" class="lh-sub" letter-spacing="1">16 REPOSITORIES IN THE WEB</text>
   </g>
 
-  <!-- Title Center -->
+  <!-- Title Center (Spider-Verse Themed & Crisp Solid White) -->
   <g transform="translate(500, 78)" text-anchor="middle">
-    <text x="-2" y="2" fill="#FF1B2D" font-size="30" class="lh-title" letter-spacing="4" opacity="0.8">TOP LANGUAGES USED</text>
-    <text x="2" y="-2" fill="#00A8FF" font-size="30" class="lh-title" letter-spacing="4" opacity="0.8">TOP LANGUAGES USED</text>
-    <text x="0" y="0" fill="#FFFFFF" font-size="30" class="lh-title" letter-spacing="4">TOP LANGUAGES USED</text>
-    <text x="0" y="24" fill="#00E5FF" font-size="13.5" class="lh-sub" letter-spacing="2">
-      PRODUCTION SYSTEMS // FULL STACK CODE DISTRIBUTION
+    <text x="0" y="0" fill="#FFFFFF" font-size="28" class="lh-title" letter-spacing="4" style="filter: drop-shadow(0 0 12px rgba(255, 27, 45, 0.7)) drop-shadow(0 0 20px rgba(0, 229, 255, 0.5));">
+      SPIDER-VERSE ARSENAL // TOP LANGUAGES
+    </text>
+    <text x="0" y="26" fill="#00E5FF" font-size="13" class="lh-sub" letter-spacing="2.5">
+      MULTIVERSE CODE DISTRIBUTION // REPOSITORY TELEMETRY
     </text>
   </g>
 
@@ -141,8 +153,8 @@
     <circle cx="0" cy="0" r="36" fill="#050509" stroke="#00A8FF" stroke-width="2"/>
     <text x="0" y="6" text-anchor="middle" fill="#FFFFFF" font-size="18" class="lh-title" letter-spacing="1">&lt;/&gt;</text>
     <!-- Sub-label -->
-    <rect x="-45" y="74" width="90" height="20" rx="3" fill="#09090F" stroke="#00E5FF" stroke-width="1"/>
-    <text x="0" y="88" text-anchor="middle" fill="#00E5FF" font-size="10.5" class="lh-sub" letter-spacing="1">RADAR: LOCK</text>
+    <rect x="-55" y="74" width="110" height="20" rx="3" fill="#09090F" stroke="#00E5FF" stroke-width="1"/>
+    <text x="0" y="88" text-anchor="middle" fill="#00E5FF" font-size="10" class="lh-sub" letter-spacing="1">SPIDER-RADAR: LOCKED</text>
   </g>
 
   <!-- ================================================================= -->
@@ -166,7 +178,7 @@
       <circle cx="6" cy="14" r="5" fill="#00E5FF"/>
       <text x="22" y="19" fill="#FFFFFF" font-size="15" class="lh-title" letter-spacing="1">TypeScript</text>
       <text x="135" y="19" fill="#00E5FF" font-size="14" class="lh-mono" letter-spacing="1">56.3%</text>
-      <text x="205" y="19" fill="#8B93A7" font-size="12" class="lh-sub">[ 9 Active Repositories ]</text>
+      <text x="205" y="19" fill="#8B93A7" font-size="12" class="lh-sub">[ 9 Repositories in the Web ]</text>
       <!-- Progress Bar Track -->
       <rect x="0" y="28" width="750" height="10" rx="5" fill="#09090F" stroke="#00E5FF" stroke-opacity="0.3" stroke-width="1"/>
       <rect x="1" y="29" width="422" height="8" rx="4" fill="url(#ts-grad)"/>
@@ -179,7 +191,7 @@
       <circle cx="6" cy="14" r="5" fill="#FFD600"/>
       <text x="22" y="19" fill="#FFFFFF" font-size="15" class="lh-title" letter-spacing="1">JavaScript</text>
       <text x="135" y="19" fill="#FFD600" font-size="14" class="lh-mono" letter-spacing="1">31.2%</text>
-      <text x="205" y="19" fill="#8B93A7" font-size="12" class="lh-sub">[ 5 Repositories // AJ-RUNNER &amp; WebGL ]</text>
+      <text x="205" y="19" fill="#8B93A7" font-size="12" class="lh-sub">[ 5 Repositories // AJ-RUNNER Engine ]</text>
       <!-- Progress Bar Track -->
       <rect x="0" y="28" width="750" height="10" rx="5" fill="#09090F" stroke="#FFD600" stroke-opacity="0.3" stroke-width="1"/>
       <rect x="1" y="29" width="234" height="8" rx="4" fill="url(#js-grad)"/>
@@ -192,7 +204,7 @@
       <circle cx="6" cy="14" r="5" fill="#FF1744"/>
       <text x="22" y="19" fill="#FFFFFF" font-size="15" class="lh-title" letter-spacing="1">Python</text>
       <text x="135" y="19" fill="#FF1744" font-size="14" class="lh-mono" letter-spacing="1">12.5%</text>
-      <text x="205" y="19" fill="#8B93A7" font-size="12" class="lh-sub">[ AI Systems &amp; Automation Pipelines ]</text>
+      <text x="205" y="19" fill="#8B93A7" font-size="12" class="lh-sub">[ AI Systems &amp; Spider Automation ]</text>
       <!-- Progress Bar Track -->
       <rect x="0" y="28" width="750" height="10" rx="5" fill="#09090F" stroke="#FF1744" stroke-opacity="0.3" stroke-width="1"/>
       <rect x="1" y="29" width="94" height="8" rx="4" fill="url(#py-grad)"/>

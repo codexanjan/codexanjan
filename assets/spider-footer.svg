@@ -92,14 +92,8 @@
 
   <!-- Main Footer Statement (High-Contrast Solid White with Neon Shadows) -->
   <g transform="translate(600, 114)" text-anchor="middle">
-    <text x="-1.5" y="1.5" fill="#ff1744" font-size="20" font-weight="900" class="f-hud" opacity="0.8">
-      THE WEB IS STILL BEING BUILT.
-    </text>
-    <text x="1.5" y="-1.5" fill="#00e5ff" font-size="20" font-weight="900" class="f-hud" opacity="0.8">
-      THE WEB IS STILL BEING BUILT.
-    </text>
-    <text x="0" y="0" fill="#FFFFFF" font-size="20" font-weight="900" class="f-hud">
-      THE WEB IS STILL BEING BUILT.
+    <text x="0" y="0" fill="#FFFFFF" font-size="20" font-weight="900" class="f-hud" style="filter: drop-shadow(0 0 10px rgba(0, 229, 255, 0.7)) drop-shadow(0 0 16px rgba(255, 23, 68, 0.5));">
+      THE SPIDER-VERSE IS STILL BEING BUILT.
     </text>
   </g>
 
@@ -108,16 +102,16 @@
     <text x="0" y="0" fill="#FFFFFF" font-size="13" font-weight="700" class="f-code" letter-spacing="2">
       <tspan fill="#ff1744">CODEXANJAN</tspan>
       <tspan fill="#8B93A7"> // </tspan>
-      <tspan fill="#FFFFFF">SIGNAL TRANSMISSION COMPLETE</tspan>
+      <tspan fill="#FFFFFF">CANON TRANSMISSION SYNCHRONIZED</tspan>
       <tspan fill="#8B93A7"> // </tspan>
-      <tspan fill="#00e5ff">EARTH-CODEX-01</tspan>
+      <tspan fill="#00e5ff">NODE: EARTH-CODEX-01</tspan>
     </text>
   </g>
 
   <!-- Micro Footer Coordinates -->
   <g transform="translate(600, 168)" text-anchor="middle">
     <text x="0" y="0" fill="#CBD5E1" font-size="12" font-weight="700" class="f-code" letter-spacing="2">
-      [ WITH GREAT CODE COMES GREAT RESPONSIBILITY ]
+      [ WITH GREAT POWER COMES GREAT CODE ]
     </text>
   </g>
 

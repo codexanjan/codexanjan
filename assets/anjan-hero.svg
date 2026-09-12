@@ -137,23 +137,15 @@
   <!-- ================================================================= -->
   <g transform="translate(700, 110)" text-anchor="middle">
     <!-- Top HUD Status Track -->
-    <rect x="-220" y="-16" width="440" height="28" rx="14" fill="#09090F" stroke="#00E5FF" stroke-width="1.5"/>
-    <circle cx="-195" cy="-2" r="4.5" fill="#FF1B2D" class="pulse-core"/>
+    <rect x="-230" y="-16" width="460" height="28" rx="14" fill="#09090F" stroke="#00E5FF" stroke-width="1.5"/>
+    <circle cx="-205" cy="-2" r="4.5" fill="#FF1B2D" class="pulse-core"/>
     <text x="0" y="2" fill="#00E5FF" font-size="13" font-weight="900" class="sub-font" letter-spacing="3">
-      SYSTEM ONLINE // SPIDER-VERSE PROTOCOL
+      SYSTEM ONLINE // SPIDER-VERSE COMMAND PROTOCOL
     </text>
 
-    <!-- Large High-Contrast Developer Name -->
+    <!-- Large High-Contrast Developer Name (Single Razor-Sharp Layer with Dual Neon Glow) -->
     <g transform="translate(0, 76)" class="hero-glow-anim">
-      <!-- Sharp Red and Blue Edge Glow Shadows -->
-      <text x="-3" y="3" fill="#FF1B2D" font-size="64" font-weight="900" class="hero-font" letter-spacing="8" opacity="0.85">
-        ANJAN SHETTY
-      </text>
-      <text x="3" y="-3" fill="#00A8FF" font-size="64" font-weight="900" class="hero-font" letter-spacing="8" opacity="0.85">
-        ANJAN SHETTY
-      </text>
-      <!-- Brilliant Solid White Foreground for Maximum Clarity -->
-      <text x="0" y="0" fill="#FFFFFF" font-size="64" font-weight="900" class="hero-font" letter-spacing="8">
+      <text x="0" y="0" fill="#FFFFFF" font-size="64" font-weight="900" class="hero-font" letter-spacing="8" style="filter: drop-shadow(0 0 16px rgba(255, 27, 45, 0.8)) drop-shadow(0 0 28px rgba(0, 229, 255, 0.6));">
         ANJAN SHETTY
       </text>
     </g>
@@ -161,14 +153,14 @@
     <!-- Primary Role (Crisp High-Visibility Neon Red) -->
     <g transform="translate(0, 126)">
       <text x="0" y="0" fill="#FF1744" font-size="26" font-weight="900" class="hero-font" letter-spacing="5">
-        FULL STACK DEVELOPER
+        FULL STACK DEVELOPER // SPIDER ARCHITECT
       </text>
     </g>
 
     <!-- Secondary Identity Line (High-Contrast White & Cyan) -->
     <g transform="translate(0, 162)">
       <text x="0" y="0" fill="#FFFFFF" font-size="16" font-weight="800" class="sub-font" letter-spacing="2">
-        AI BUILDER <tspan fill="#00E5FF">/</tspan> PRODUCT CREATOR <tspan fill="#FF1744">/</tspan> HACKATHON DEVELOPER
+        AI INTELLIGENCE <tspan fill="#00E5FF">/</tspan> DISTRIBUTED SYSTEMS <tspan fill="#FF1744">/</tspan> HACKATHON MISSIONS
       </text>
     </g>
 
