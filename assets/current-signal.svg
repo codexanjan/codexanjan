@@ -1,11 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 220" width="100%" height="100%">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 240" width="100%" height="100%">
   <defs>
-    <linearGradient id="sig-beam" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#FF1B2D"/>
-      <stop offset="50%" stop-color="#00A8FF"/>
-      <stop offset="100%" stop-color="#21D4FD"/>
-    </linearGradient>
-
     <filter id="sig-glow" x="-20%" y="-20%" width="140%" height="140%">
       <feGaussianBlur stdDeviation="3" result="blur"/>
       <feMerge>
@@ -15,87 +9,89 @@
     </filter>
 
     <style>
-      .cs-mono { font-family: 'SF Pro Display', -apple-system, 'Segoe UI', Roboto, 'Fira Code', monospace; }
+      .cs-title { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; font-weight: 900; }
+      .cs-label { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; font-weight: 800; }
+      .cs-val { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; font-weight: 900; }
       @keyframes radar-pulse {
-        0% { r: 4px; opacity: 1; }
-        50% { r: 12px; opacity: 0.4; stroke: #21D4FD; }
-        100% { r: 18px; opacity: 0; stroke: #FF1B2D; }
+        0% { r: 5px; opacity: 1; }
+        50% { r: 14px; opacity: 0.4; stroke: #21D4FD; }
+        100% { r: 22px; opacity: 0; stroke: #FF1B2D; }
       }
-      .sig-wave { fill: none; stroke-width: 1.5; animation: radar-pulse 2.5s ease-out infinite; }
+      .sig-wave { fill: none; stroke-width: 2; animation: radar-pulse 2.5s ease-out infinite; }
     </style>
   </defs>
 
   <!-- Dark Base HUD Chassis -->
-  <rect x="8" y="8" width="884" height="204" rx="6" fill="#050509" stroke="#8B93A7" stroke-opacity="0.15" stroke-width="1"/>
+  <rect x="8" y="8" width="884" height="224" rx="8" fill="#050509" stroke="#8B93A7" stroke-opacity="0.2" stroke-width="1.2"/>
 
   <!-- Cut-Corner Angular Frame -->
-  <path d="M 30 10 L 870 10 L 890 30 L 890 190 L 870 210 L 30 210 L 10 190 L 10 30 Z" fill="none" stroke="#FF1B2D" stroke-width="1.8"/>
+  <path d="M 30 10 L 870 10 L 890 30 L 890 210 L 870 230 L 30 230 L 10 210 L 10 30 Z" fill="none" stroke="#FF1B2D" stroke-width="2"/>
 
   <!-- Corner Brackets -->
-  <path d="M 4 35 L 4 6 L 35 6" fill="none" stroke="#00A8FF" stroke-width="2"/>
-  <path d="M 896 35 L 896 6 L 865 6" fill="none" stroke="#00A8FF" stroke-width="2"/>
-  <path d="M 4 185 L 4 214 L 35 214" fill="none" stroke="#00A8FF" stroke-width="2"/>
-  <path d="M 896 185 L 896 214 L 865 214" fill="none" stroke="#00A8FF" stroke-width="2"/>
+  <path d="M 4 35 L 4 6 L 35 6" fill="none" stroke="#00A8FF" stroke-width="2.5"/>
+  <path d="M 896 35 L 896 6 L 865 6" fill="none" stroke="#00A8FF" stroke-width="2.5"/>
+  <path d="M 4 205 L 4 234 L 35 234" fill="none" stroke="#00A8FF" stroke-width="2.5"/>
+  <path d="M 896 205 L 896 234 L 865 234" fill="none" stroke="#00A8FF" stroke-width="2.5"/>
 
   <!-- Header Bar -->
-  <path d="M 10 30 L 30 10 L 320 10 L 335 26 L 10 26 Z" fill="#09090F" stroke="#FF1B2D" stroke-width="1"/>
-  <text x="24" y="21" fill="#FF1B2D" font-size="10" font-weight="900" class="cs-mono" letter-spacing="2">
+  <path d="M 10 34 L 30 10 L 420 10 L 440 34 L 10 34 Z" fill="#09090F" stroke="#FF1B2D" stroke-width="1.5"/>
+  <text x="24" y="26" fill="#FFFFFF" font-size="15" class="cs-title" letter-spacing="2">
     CURRENT SIGNAL // ACTIVE HUD MONITOR
   </text>
 
   <!-- Top Right Radar Ping Beacon -->
-  <g transform="translate(840, 24)">
-    <circle cx="0" cy="0" r="4" fill="#21D4FD" filter="url(#sig-glow)"/>
-    <circle cx="0" cy="0" r="8" class="sig-wave"/>
-    <circle cx="0" cy="0" r="14" class="sig-wave"/>
-    <text x="-16" y="4" text-anchor="end" fill="#21D4FD" font-size="8.5" font-weight="700" class="cs-mono" letter-spacing="1">RADAR: LOCK</text>
+  <g transform="translate(830, 24)">
+    <circle cx="0" cy="0" r="5" fill="#21D4FD" filter="url(#sig-glow)"/>
+    <circle cx="0" cy="0" r="10" class="sig-wave"/>
+    <circle cx="0" cy="0" r="18" class="sig-wave"/>
+    <text x="-24" y="5" text-anchor="end" fill="#00E5FF" font-size="13" class="cs-label" letter-spacing="1.5">RADAR: LOCK</text>
   </g>
 
-  <!-- 4 HUD SIGNAL TILES (2x2 GRID) -->
+  <!-- 4 HIGH-VISIBILITY HUD SIGNAL TILES (2x2 GRID) -->
   <!-- Tile 1: CURRENTLY BUILDING -->
   <g transform="translate(30, 48)">
-    <rect x="0" y="0" width="400" height="66" rx="4" fill="#09090F" stroke="#FF1B2D" stroke-opacity="0.3" stroke-width="1"/>
-    <line x1="0" y1="0" x2="4" y2="66" stroke="#FF1B2D" stroke-width="3"/>
-    <text x="16" y="24" fill="#FF1B2D" font-size="9.5" font-weight="900" class="cs-mono" letter-spacing="2">
+    <rect x="0" y="0" width="400" height="74" rx="6" fill="#09090F" stroke="#FF1B2D" stroke-width="1.5"/>
+    <line x1="0" y1="0" x2="4" y2="74" stroke="#FF1B2D" stroke-width="4"/>
+    <text x="18" y="26" fill="#FF1744" font-size="14" class="cs-label" letter-spacing="1.5">
       // CURRENTLY BUILDING
     </text>
-    <text x="16" y="48" fill="#F5F7FA" font-size="13" font-weight="700" class="cs-mono" letter-spacing="1">
+    <text x="18" y="56" fill="#FFFFFF" font-size="20" class="cs-val" letter-spacing="1">
       CURRENT_PROJECT
     </text>
   </g>
 
   <!-- Tile 2: CURRENTLY LEARNING -->
   <g transform="translate(470, 48)">
-    <rect x="0" y="0" width="400" height="66" rx="4" fill="#09090F" stroke="#00A8FF" stroke-opacity="0.3" stroke-width="1"/>
-    <line x1="0" y1="0" x2="4" y2="66" stroke="#00A8FF" stroke-width="3"/>
-    <text x="16" y="24" fill="#00A8FF" font-size="9.5" font-weight="900" class="cs-mono" letter-spacing="2">
+    <rect x="0" y="0" width="400" height="74" rx="6" fill="#09090F" stroke="#00A8FF" stroke-width="1.5"/>
+    <line x1="0" y1="0" x2="4" y2="74" stroke="#00A8FF" stroke-width="4"/>
+    <text x="18" y="26" fill="#00E5FF" font-size="14" class="cs-label" letter-spacing="1.5">
       // CURRENTLY LEARNING
     </text>
-    <text x="16" y="48" fill="#F5F7FA" font-size="13" font-weight="700" class="cs-mono" letter-spacing="1">
+    <text x="18" y="56" fill="#FFFFFF" font-size="20" class="cs-val" letter-spacing="1">
       CURRENT_TECH
     </text>
   </g>
 
   <!-- Tile 3: CURRENTLY EXPLORING -->
-  <g transform="translate(30, 126)">
-    <rect x="0" y="0" width="400" height="66" rx="4" fill="#09090F" stroke="#21D4FD" stroke-opacity="0.3" stroke-width="1"/>
-    <line x1="0" y1="0" x2="4" y2="66" stroke="#21D4FD" stroke-width="3"/>
-    <text x="16" y="24" fill="#21D4FD" font-size="9.5" font-weight="900" class="cs-mono" letter-spacing="2">
+  <g transform="translate(30, 138)">
+    <rect x="0" y="0" width="400" height="74" rx="6" fill="#09090F" stroke="#00E5FF" stroke-width="1.5"/>
+    <line x1="0" y1="0" x2="4" y2="74" stroke="#21D4FD" stroke-width="4"/>
+    <text x="18" y="26" fill="#00E5FF" font-size="14" class="cs-label" letter-spacing="1.5">
       // CURRENTLY EXPLORING
     </text>
-    <text x="16" y="48" fill="#F5F7FA" font-size="13" font-weight="700" class="cs-mono" letter-spacing="1">
+    <text x="18" y="56" fill="#FFFFFF" font-size="20" class="cs-val" letter-spacing="1">
       CURRENT_TOPIC
     </text>
   </g>
 
   <!-- Tile 4: NEXT TARGET -->
-  <g transform="translate(470, 126)">
-    <rect x="0" y="0" width="400" height="66" rx="4" fill="#09090F" stroke="#FF1B2D" stroke-opacity="0.3" stroke-width="1"/>
-    <line x1="0" y1="0" x2="4" y2="66" stroke="#FF1B2D" stroke-width="3"/>
-    <text x="16" y="24" fill="#FF1B2D" font-size="9.5" font-weight="900" class="cs-mono" letter-spacing="2">
+  <g transform="translate(470, 138)">
+    <rect x="0" y="0" width="400" height="74" rx="6" fill="#09090F" stroke="#FF1B2D" stroke-width="1.5"/>
+    <line x1="0" y1="0" x2="4" y2="74" stroke="#FF1B2D" stroke-width="4"/>
+    <text x="18" y="26" fill="#FF1744" font-size="14" class="cs-label" letter-spacing="1.5">
       // NEXT TARGET
     </text>
-    <text x="16" y="48" fill="#F5F7FA" font-size="13" font-weight="700" class="cs-mono" letter-spacing="1">
+    <text x="18" y="56" fill="#FFFFFF" font-size="20" class="cs-val" letter-spacing="1">
       NEXT_GOAL
     </text>
   </g>

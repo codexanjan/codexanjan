@@ -1,11 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 240" width="100%" height="100%">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 160" width="100%" height="100%">
   <defs>
-    <linearGradient id="proj-beam" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#FF1B2D"/>
-      <stop offset="50%" stop-color="#00A8FF"/>
-      <stop offset="100%" stop-color="#21D4FD"/>
-    </linearGradient>
-
     <filter id="pf-glow" x="-20%" y="-20%" width="140%" height="140%">
       <feGaussianBlur stdDeviation="3" result="blur"/>
       <feMerge>
@@ -15,7 +9,8 @@
     </filter>
 
     <style>
-      .pf-mono { font-family: 'SF Pro Display', -apple-system, 'Segoe UI', Roboto, 'Fira Code', monospace; }
+      .pf-title { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; font-weight: 900; }
+      .pf-sub { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; font-weight: 800; }
       @keyframes pframe-pulse {
         0%, 100% { opacity: 0.8; }
         50% { opacity: 1; filter: drop-shadow(0 0 6px #FF1B2D); }
@@ -25,41 +20,45 @@
   </defs>
 
   <!-- Dark Base Chassis -->
-  <rect x="10" y="10" width="780" height="220" rx="6" fill="#050509" stroke="#8B93A7" stroke-opacity="0.15" stroke-width="1"/>
+  <rect x="8" y="8" width="984" height="144" rx="8" fill="#050509" stroke="#8B93A7" stroke-opacity="0.2" stroke-width="1.2"/>
 
   <!-- Cut-Corner Angular Mission Frame -->
-  <path d="M 35 12 L 765 12 L 788 35 L 788 205 L 765 228 L 35 228 L 12 205 L 12 35 Z" fill="none" stroke="#FF1B2D" stroke-width="1.8" class="pf-pulse"/>
+  <path d="M 30 10 L 970 10 L 990 30 L 990 130 L 970 150 L 30 150 L 10 130 L 10 30 Z" fill="none" stroke="#FF1B2D" stroke-width="2" class="pf-pulse"/>
 
-  <!-- Top Left Mission Header Rail -->
-  <path d="M 12 35 L 35 12 L 240 12 L 255 28 L 12 28 Z" fill="#09090F" stroke="#FF1B2D" stroke-width="1"/>
-  <text x="30" y="23" fill="#FF1B2D" font-size="10" font-weight="900" class="pf-mono" letter-spacing="2">MISSION FILE // CLASSIFIED</text>
+  <!-- Top Left Mission Header Pill -->
+  <g transform="translate(30, 16)">
+    <rect x="0" y="0" width="260" height="28" rx="4" fill="#09090F" stroke="#FF1B2D" stroke-width="1.5"/>
+    <circle cx="14" cy="14" r="4" fill="#FF1B2D"/>
+    <text x="30" y="19" fill="#FFFFFF" font-size="13" class="pf-sub" letter-spacing="1.5">MISSION FILE // CLASSIFIED</text>
+  </g>
 
   <!-- Top Right Status Node -->
-  <g transform="translate(640, 14)">
-    <rect x="0" y="0" width="120" height="20" rx="2" fill="#09090F" stroke="#00A8FF" stroke-width="1"/>
-    <circle cx="14" cy="10" r="3.5" fill="#21D4FD" filter="url(#pf-glow)"/>
-    <text x="26" y="14" fill="#21D4FD" font-size="9" font-weight="700" class="pf-mono" letter-spacing="1">STATUS: DEPLOYED</text>
+  <g transform="translate(730, 16)">
+    <rect x="0" y="0" width="240" height="28" rx="4" fill="#09090F" stroke="#00E5FF" stroke-width="1.5"/>
+    <circle cx="16" cy="14" r="4" fill="#21D4FD" filter="url(#pf-glow)"/>
+    <text x="32" y="19" fill="#00E5FF" font-size="13" class="pf-sub" letter-spacing="1">STATUS: DEPLOYED &amp; ACTIVE</text>
   </g>
 
   <!-- Corner Brackets -->
-  <path d="M 6 50 L 6 6 L 50 6" fill="none" stroke="#00A8FF" stroke-width="2"/>
-  <path d="M 794 50 L 794 6 L 750 6" fill="none" stroke="#00A8FF" stroke-width="2"/>
-  <path d="M 6 190 L 6 234 L 50 234" fill="none" stroke="#00A8FF" stroke-width="2"/>
-  <path d="M 794 190 L 794 234 L 750 234" fill="none" stroke="#00A8FF" stroke-width="2"/>
+  <path d="M 6 45 L 6 6 L 45 6" fill="none" stroke="#00A8FF" stroke-width="2.5"/>
+  <path d="M 994 45 L 994 6 L 955 6" fill="none" stroke="#00A8FF" stroke-width="2.5"/>
+  <path d="M 6 115 L 6 154 L 45 154" fill="none" stroke="#00A8FF" stroke-width="2.5"/>
+  <path d="M 994 115 L 994 154 L 955 154" fill="none" stroke="#00A8FF" stroke-width="2.5"/>
 
-  <!-- Corner Web Strands -->
-  <g stroke="#00A8FF" stroke-opacity="0.25" stroke-width="1" fill="none">
-    <line x1="12" y1="205" x2="60" y2="228"/>
-    <line x1="12" y1="175" x2="35" y2="228"/>
-    <line x1="788" y1="205" x2="740" y2="228"/>
-    <line x1="788" y1="175" x2="765" y2="228"/>
+  <!-- Center Prominent Typography -->
+  <g transform="translate(500, 82)" text-anchor="middle">
+    <!-- Red and Blue Drop Shadows -->
+    <text x="-2" y="2" fill="#FF1B2D" font-size="36" class="pf-title" letter-spacing="5" opacity="0.8">FEATURED MISSIONS</text>
+    <text x="2" y="-2" fill="#00A8FF" font-size="36" class="pf-title" letter-spacing="5" opacity="0.8">FEATURED MISSIONS</text>
+    <!-- Solid Brilliant White -->
+    <text x="0" y="0" fill="#FFFFFF" font-size="36" class="pf-title" letter-spacing="5">FEATURED MISSIONS</text>
+
+    <text x="0" y="32" fill="#00E5FF" font-size="15" class="pf-sub" letter-spacing="2.5">
+      CORE ARCHITECTURES // INTELLIGENT SYSTEMS &amp; PRODUCTS
+    </text>
   </g>
 
-  <!-- Bottom Accent Divider Track -->
-  <line x1="30" y1="185" x2="770" y2="185" stroke="#8B93A7" stroke-opacity="0.15" stroke-width="1"/>
-  <line x1="30" y1="185" x2="220" y2="185" stroke="url(#proj-beam)" stroke-width="1.8"/>
-
-  <!-- Telemetry Coordinates -->
-  <text x="765" y="215" text-anchor="end" fill="#8B93A7" font-size="8.5" class="pf-mono" letter-spacing="1.5">COORDINATES // 0xSPIDER-NET-ALPHA</text>
-  <text x="35" y="215" fill="#8B93A7" font-size="8.5" class="pf-mono" letter-spacing="1">ACCESS PROTOCOL: READ_WRITE</text>
+  <!-- Bottom Track Beam -->
+  <line x1="30" y1="136" x2="970" y2="136" stroke="#8B93A7" stroke-opacity="0.2" stroke-width="1"/>
+  <line x1="160" y1="136" x2="840" y2="136" stroke="#FF1B2D" stroke-width="2"/>
 </svg>

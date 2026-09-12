@@ -1,12 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 130" width="100%" height="100%">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 160" width="100%" height="100%">
   <defs>
-    <linearGradient id="cc-beam" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#FF1B2D"/>
-      <stop offset="40%" stop-color="#F5F7FA"/>
-      <stop offset="70%" stop-color="#00A8FF"/>
-      <stop offset="100%" stop-color="#21D4FD"/>
-    </linearGradient>
-
     <filter id="cc-glow" x="-20%" y="-20%" width="140%" height="140%">
       <feGaussianBlur stdDeviation="3" result="blur"/>
       <feMerge>
@@ -16,14 +9,15 @@
     </filter>
 
     <style>
-      .cc-mono { font-family: 'SF Pro Display', -apple-system, 'Segoe UI', Roboto, 'Fira Code', monospace; }
+      .cc-title { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; font-weight: 900; }
+      .cc-sub { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; font-weight: 800; }
       @keyframes cc-sweep {
         0% { stroke-dashoffset: 400; }
         100% { stroke-dashoffset: -400; }
       }
       @keyframes cc-blink {
-        0%, 100% { opacity: 0.3; }
-        50% { opacity: 1; }
+        0%, 100% { opacity: 0.4; }
+        50% { opacity: 1; filter: drop-shadow(0 0 4px #21D4FD); }
       }
       .cc-laser { stroke-dasharray: 80 200; animation: cc-sweep 4s linear infinite; }
       .cc-pulse { animation: cc-blink 2s ease-in-out infinite; }
@@ -31,57 +25,65 @@
   </defs>
 
   <!-- Dark Base HUD Plate -->
-  <rect x="10" y="10" width="1180" height="110" rx="6" fill="#050509" stroke="#8B93A7" stroke-opacity="0.15" stroke-width="1"/>
+  <rect x="10" y="10" width="1180" height="140" rx="8" fill="#050509" stroke="#8B93A7" stroke-opacity="0.2" stroke-width="1.2"/>
 
   <!-- Cut Corner Angular Outer Frame -->
-  <path d="M 35 12 L 1165 12 L 1188 35 L 1188 95 L 1165 118 L 35 118 L 12 95 L 12 35 Z" fill="none" stroke="#00A8FF" stroke-width="1.6"/>
+  <path d="M 35 12 L 1165 12 L 1188 35 L 1188 125 L 1165 148 L 35 148 L 12 125 L 12 35 Z" fill="none" stroke="#00A8FF" stroke-width="2"/>
 
-  <!-- Top Red Glowing Track -->
-  <line x1="80" y1="12" x2="400" y2="12" stroke="#FF1B2D" stroke-width="2" filter="url(#cc-glow)"/>
-  <line x1="800" y1="12" x2="1120" y2="12" stroke="#21D4FD" stroke-width="2" filter="url(#cc-glow)"/>
+  <!-- Top Red & Blue Glowing Tracks -->
+  <line x1="80" y1="12" x2="400" y2="12" stroke="#FF1B2D" stroke-width="3" filter="url(#cc-glow)"/>
+  <line x1="800" y1="12" x2="1120" y2="12" stroke="#21D4FD" stroke-width="3" filter="url(#cc-glow)"/>
 
   <!-- Corner Brackets -->
-  <path d="M 6 45 L 6 6 L 45 6" fill="none" stroke="#FF1B2D" stroke-width="2"/>
-  <path d="M 1194 45 L 1194 6 L 1155 6" fill="none" stroke="#21D4FD" stroke-width="2"/>
-  <path d="M 6 85 L 6 124 L 45 124" fill="none" stroke="#FF1B2D" stroke-width="2"/>
-  <path d="M 1194 85 L 1194 124 L 1155 124" fill="none" stroke="#21D4FD" stroke-width="2"/>
+  <path d="M 6 45 L 6 6 L 45 6" fill="none" stroke="#FF1B2D" stroke-width="2.5"/>
+  <path d="M 1194 45 L 1194 6 L 1155 6" fill="none" stroke="#21D4FD" stroke-width="2.5"/>
+  <path d="M 6 115 L 6 154 L 45 154" fill="none" stroke="#FF1B2D" stroke-width="2.5"/>
+  <path d="M 1194 115 L 1194 154 L 1155 154" fill="none" stroke="#21D4FD" stroke-width="2.5"/>
 
-  <!-- Left Telemetry Node -->
-  <g transform="translate(45, 42)">
-    <rect x="0" y="0" width="180" height="24" rx="2" fill="#09090F" stroke="#FF1B2D" stroke-opacity="0.5" stroke-width="1"/>
-    <circle cx="12" cy="12" r="3.5" fill="#FF1B2D" class="cc-pulse"/>
-    <text x="26" y="16" fill="#F5F7FA" font-size="10" font-weight="700" class="cc-mono" letter-spacing="1.5">USER // CODEXANJAN</text>
-    <text x="0" y="38" fill="#8B93A7" font-size="9" class="cc-mono">NODE // EARTH-CODEX-01</text>
-    <text x="0" y="52" fill="#00A8FF" font-size="9" class="cc-mono">TELEMETRY: SPIDER-NET</text>
+  <!-- Left Telemetry Node (High Visibility) -->
+  <g transform="translate(45, 38)">
+    <rect x="0" y="0" width="220" height="32" rx="4" fill="#09090F" stroke="#FF1B2D" stroke-width="1.5"/>
+    <circle cx="16" cy="16" r="4.5" fill="#FF1B2D" class="cc-pulse"/>
+    <text x="32" y="21" fill="#FFFFFF" font-size="14" class="cc-sub" letter-spacing="1.5">USER // CODEXANJAN</text>
+    
+    <text x="6" y="52" fill="#FF1744" font-size="13" class="cc-sub" letter-spacing="1">NODE: EARTH-CODEX-01</text>
+    <text x="6" y="72" fill="#00E5FF" font-size="13" class="cc-sub" letter-spacing="1">TELEMETRY: SPIDER-NET</text>
   </g>
 
-  <!-- Center Main HUD Heading -->
+  <!-- Center Main HUD Heading (Extra Large & Ultra Visible) -->
   <g transform="translate(600, 52)" text-anchor="middle">
     <!-- Top Status Badge -->
-    <rect x="-110" y="-24" width="220" height="18" rx="2" fill="#09090F" stroke="#8B93A7" stroke-opacity="0.3" stroke-width="1"/>
-    <text x="0" y="-12" fill="#21D4FD" font-size="9" font-weight="700" class="cc-mono" letter-spacing="2.5">
+    <rect x="-160" y="-24" width="320" height="24" rx="12" fill="#09090F" stroke="#00E5FF" stroke-width="1.2"/>
+    <text x="0" y="-8" fill="#00E5FF" font-size="12" class="cc-sub" letter-spacing="2.5">
       DEVELOPER COMMAND CENTER
     </text>
 
-    <!-- Main Title -->
-    <text x="0" y="22" fill="url(#cc-beam)" font-size="28" font-weight="900" class="cc-mono" letter-spacing="6">
+    <!-- Main Title (Brilliant White with Neon Shadows) -->
+    <text x="-2" y="38" fill="#FF1B2D" font-size="44" class="cc-title" letter-spacing="6" opacity="0.8">
+      COMMAND CENTER
+    </text>
+    <text x="2" y="34" fill="#00A8FF" font-size="44" class="cc-title" letter-spacing="6" opacity="0.8">
+      COMMAND CENTER
+    </text>
+    <text x="0" y="36" fill="#FFFFFF" font-size="44" class="cc-title" letter-spacing="6">
       COMMAND CENTER
     </text>
 
-    <text x="0" y="44" fill="#8B93A7" font-size="10" font-weight="600" class="cc-mono" letter-spacing="3">
+    <text x="0" y="66" fill="#00E5FF" font-size="15" class="cc-sub" letter-spacing="3">
       GITHUB TELEMETRY // REAL-TIME METRICS
     </text>
   </g>
 
-  <!-- Right Telemetry Node -->
-  <g transform="translate(975, 42)">
-    <rect x="0" y="0" width="180" height="24" rx="2" fill="#09090F" stroke="#00A8FF" stroke-opacity="0.5" stroke-width="1"/>
-    <circle cx="12" cy="12" r="3.5" fill="#21D4FD" class="cc-pulse"/>
-    <text x="26" y="16" fill="#21D4FD" font-size="10" font-weight="700" class="cc-mono" letter-spacing="1.5">STREAM // ACTIVE</text>
-    <text x="0" y="38" fill="#8B93A7" font-size="9" class="cc-mono">LATENCY // 12ms [OPTIMAL]</text>
-    <text x="0" y="52" fill="#FF1B2D" font-size="9" class="cc-mono">PROTOCOL: GIT_DISPATCH</text>
+  <!-- Right Telemetry Node (High Visibility) -->
+  <g transform="translate(935, 38)">
+    <rect x="0" y="0" width="220" height="32" rx="4" fill="#09090F" stroke="#00E5FF" stroke-width="1.5"/>
+    <circle cx="16" cy="16" r="4.5" fill="#21D4FD" class="cc-pulse"/>
+    <text x="32" y="21" fill="#00E5FF" font-size="14" class="cc-sub" letter-spacing="1.5">STREAM // ACTIVE</text>
+    
+    <text x="6" y="52" fill="#FFFFFF" font-size="13" class="cc-sub" letter-spacing="1">LATENCY: 12ms [OPTIMAL]</text>
+    <text x="6" y="72" fill="#FF1744" font-size="13" class="cc-sub" letter-spacing="1">PROTOCOL: GIT_DISPATCH</text>
   </g>
 
   <!-- Bottom Track Beam -->
-  <line x1="35" y1="118" x2="1165" y2="118" stroke="#00A8FF" stroke-width="2" class="cc-laser"/>
+  <line x1="35" y1="148" x2="1165" y2="148" stroke="#00A8FF" stroke-width="2.5" class="cc-laser"/>
 </svg>
