@@ -89,7 +89,7 @@ I enjoy combining technology, design, and rapid experimentation to turn ideas in
 <div align="center">
 
 <a href="https://github.com/codexanjan">
-  <img src="assets/spider-logo.svg" width="120" height="120" alt="Spider Arsenal Emblem" />
+  <img src="assets/coding-web.svg" width="100%" alt="Spider Coding Web // Tech Arsenal" />
 </a>
 
 <br/><br/>

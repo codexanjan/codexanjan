@@ -124,12 +124,15 @@
       <polygon points="0,-22 4,-18 0,-14 -4,-18" fill="#00E5FF"/>
     </g>
 
-    <!-- High Contrast Visible Telemetry Badges Around Left Core -->
-    <rect x="-80" y="74" width="160" height="22" rx="3" fill="#09090F" stroke="#FF1B2D" stroke-width="1"/>
-    <text x="0" y="89" text-anchor="middle" fill="#FFFFFF" font-size="11" font-weight="800" class="sub-font" letter-spacing="1.5">NODE // EARTH-CODEX-01</text>
-    
-    <rect x="-80" y="102" width="160" height="20" rx="3" fill="#050509" stroke="#00E5FF" stroke-width="1"/>
-    <text x="0" y="116" text-anchor="middle" fill="#00E5FF" font-size="10.5" font-weight="800" class="sub-font" letter-spacing="1">SYSTEM: SPIDER-NET</text>
+    <!-- Sleek HUD Telemetry Brackets (No awkward boxes) -->
+    <g transform="translate(-10, 0)">
+      <path d="M -90 74 L -96 74 L -96 122 L -90 122" fill="none" stroke="#FF1B2D" stroke-width="1.5"/>
+      <circle cx="-86" cy="85" r="3" fill="#FF1B2D" class="pulse-core"/>
+      <text x="-76" y="89" fill="#FFFFFF" font-size="11.5" font-weight="900" class="sub-font" letter-spacing="1.5">NODE // EARTH-CODEX-01</text>
+      
+      <circle cx="-86" cy="111" r="3" fill="#00E5FF"/>
+      <text x="-76" y="115" fill="#00E5FF" font-size="11" font-weight="800" class="sub-font" letter-spacing="1.5">SYSTEM // SPIDER-NET</text>
+    </g>
   </g>
 
   <!-- ================================================================= -->
@@ -137,9 +140,9 @@
   <!-- ================================================================= -->
   <g transform="translate(700, 110)" text-anchor="middle">
     <!-- Top HUD Status Track -->
-    <rect x="-230" y="-16" width="460" height="28" rx="14" fill="#09090F" stroke="#00E5FF" stroke-width="1.5"/>
-    <circle cx="-205" cy="-2" r="4.5" fill="#FF1B2D" class="pulse-core"/>
-    <text x="0" y="2" fill="#00E5FF" font-size="13" font-weight="900" class="sub-font" letter-spacing="3">
+    <rect x="-250" y="-16" width="500" height="30" rx="15" fill="#09090F" stroke="#00E5FF" stroke-width="1.5"/>
+    <circle cx="-225" cy="-1" r="4.5" fill="#FF1B2D" class="pulse-core"/>
+    <text x="6" y="-1" dominant-baseline="central" fill="#00E5FF" font-size="12.5" font-weight="900" class="sub-font" letter-spacing="2.5">
       SYSTEM ONLINE // SPIDER-VERSE COMMAND PROTOCOL
     </text>
 
@@ -164,11 +167,11 @@
       </text>
     </g>
 
-    <!-- GitHub Handle Tag (Prominent Pill) -->
+    <!-- GitHub Handle Tag (Perfect Centered Cyber Pill) -->
     <g transform="translate(0, 206)">
-      <rect x="-160" y="-18" width="320" height="32" rx="6" fill="#09090F" stroke="#00E5FF" stroke-width="1.8"/>
-      <circle cx="-135" cy="-2" r="4" fill="#00E5FF"/>
-      <text x="10" y="4" fill="#FFFFFF" font-size="15" font-weight="900" class="sub-font" letter-spacing="2">
+      <rect x="-150" y="-16" width="300" height="32" rx="16" fill="#09090F" stroke="#00E5FF" stroke-width="1.8"/>
+      <circle cx="-110" cy="0" r="4" fill="#00E5FF" class="pulse-core"/>
+      <text x="8" y="0" dominant-baseline="central" text-anchor="middle" fill="#FFFFFF" font-size="14.5" font-weight="900" class="sub-font" letter-spacing="2">
         github.com/codexanjan
       </text>
     </g>
@@ -218,12 +221,15 @@
       &lt;/&gt;
     </text>
 
-    <!-- High-Contrast Visible Telemetry Labels -->
-    <rect x="-70" y="74" width="140" height="22" rx="3" fill="#09090F" stroke="#00A8FF" stroke-width="1"/>
-    <text x="0" y="89" text-anchor="middle" fill="#FFFFFF" font-size="11" font-weight="800" class="sub-font" letter-spacing="1">CIRCUIT // 0xCODEX</text>
+    <!-- Sleek HUD Telemetry Brackets (No awkward boxes) -->
+    <g transform="translate(10, 0)">
+      <path d="M 90 74 L 96 74 L 96 122 L 90 122" fill="none" stroke="#00A8FF" stroke-width="1.5"/>
+      <circle cx="86" cy="85" r="3" fill="#00A8FF"/>
+      <text x="76" y="89" text-anchor="end" fill="#FFFFFF" font-size="11.5" font-weight="900" class="sub-font" letter-spacing="1.5">CIRCUIT // 0xCODEX</text>
 
-    <rect x="-70" y="102" width="140" height="20" rx="3" fill="#050509" stroke="#FF1B2D" stroke-width="1"/>
-    <text x="0" y="116" text-anchor="middle" fill="#FF1744" font-size="10.5" font-weight="800" class="sub-font" letter-spacing="1">RADAR // ACTIVE</text>
+      <circle cx="86" cy="111" r="3" fill="#FF1744" class="pulse-core"/>
+      <text x="76" y="115" text-anchor="end" fill="#FF1744" font-size="11" font-weight="800" class="sub-font" letter-spacing="1.5">RADAR // ACTIVE</text>
+    </g>
   </g>
 
   <!-- Ambient Floating Tech Particles -->
