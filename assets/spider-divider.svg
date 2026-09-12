@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 32" width="100%" height="100%">
+  <defs>
+    <linearGradient id="divider-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ff1744" stop-opacity="0"/>
+      <stop offset="15%" stop-color="#ff1744" stop-opacity="0.8"/>
+      <stop offset="45%" stop-color="#8b5cf6" stop-opacity="0.9"/>
+      <stop offset="50%" stop-color="#ffffff"/>
+      <stop offset="55%" stop-color="#8b5cf6" stop-opacity="0.9"/>
+      <stop offset="85%" stop-color="#00e5ff" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#00a8ff" stop-opacity="0"/>
+    </linearGradient>
+
+    <filter id="div-glow" x="-20%" y="-50%" width="140%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <style>
+      @keyframes pulse-div {
+        0%, 100% { opacity: 0.8; }
+        50% { opacity: 1; filter: drop-shadow(0 0 4px #00e5ff); }
+      }
+      .div-pulse { animation: pulse-div 4s ease-in-out infinite; }
+    </style>
+  </defs>
+
+  <!-- Background Dim Base -->
+  <line x1="100" y1="16" x2="900" y2="16" stroke="#1e293b" stroke-width="1"/>
+
+  <!-- Main Neon Split Beam -->
+  <line x1="80" y1="16" x2="440" y2="16" stroke="url(#divider-grad)" stroke-width="1.8" filter="url(#div-glow)"/>
+  <line x1="560" y1="16" x2="920" y2="16" stroke="url(#divider-grad)" stroke-width="1.8" filter="url(#div-glow)"/>
+
+  <!-- Subtle Web Nodes (Left) -->
+  <path d="M 120 16 L 140 8 M 160 16 L 180 24 M 200 16 L 220 8" stroke="#ff1744" stroke-opacity="0.4" stroke-width="1"/>
+  <circle cx="140" cy="8" r="1.5" fill="#ff1744" opacity="0.7"/>
+  <circle cx="180" cy="24" r="1.5" fill="#ff1744" opacity="0.7"/>
+  <circle cx="220" cy="8" r="1.5" fill="#ff1744" opacity="0.7"/>
+
+  <!-- Subtle Web Nodes (Right) -->
+  <path d="M 880 16 L 860 8 M 840 16 L 820 24 M 800 16 L 780 8" stroke="#00e5ff" stroke-opacity="0.4" stroke-width="1"/>
+  <circle cx="860" cy="8" r="1.5" fill="#00e5ff" opacity="0.7"/>
+  <circle cx="820" cy="24" r="1.5" fill="#00e5ff" opacity="0.7"/>
+  <circle cx="780" cy="8" r="1.5" fill="#00e5ff" opacity="0.7"/>
+
+  <!-- Center HUD Diamond & Spider Emblem -->
+  <g transform="translate(500, 16)" class="div-pulse">
+    <!-- Outer Diamond -->
+    <polygon points="0,-14 26,0 0,14 -26,0" fill="#080b14" stroke="#8b5cf6" stroke-width="1.5"/>
+    <polygon points="0,-10 18,0 0,10 -18,0" fill="#050508" stroke="#334155" stroke-width="1"/>
+    
+    <!-- Central Spider Glyph -->
+    <polygon points="0,-6 4,-1 0,5 -4,-1" fill="#ff1744"/>
+    <polygon points="0,3 3,7 0,10 -3,7" fill="#00e5ff"/>
+    <!-- Micro Spider Legs -->
+    <path d="M -3 -2 L -9 -6 M 3 -2 L 9 -6" stroke="#ff1744" stroke-width="1" fill="none"/>
+    <path d="M -4 2 L -10 3 M 4 2 L 10 3" stroke="#f5f7fa" stroke-width="1" fill="none"/>
+    <path d="M -3 6 L -9 9 M 3 6 L 9 9" stroke="#00e5ff" stroke-width="1" fill="none"/>
+  </g>
+
+  <!-- Flanking Center Brackets -->
+  <path d="M 460 10 L 452 16 L 460 22" fill="none" stroke="#ff1744" stroke-width="1.5"/>
+  <path d="M 540 10 L 548 16 L 540 22" fill="none" stroke="#00e5ff" stroke-width="1.5"/>
+</svg>

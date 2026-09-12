@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 200" width="100%" height="100%">
+  <defs>
+    <linearGradient id="footer-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#050508"/>
+      <stop offset="50%" stop-color="#080b14"/>
+      <stop offset="100%" stop-color="#050508"/>
+    </linearGradient>
+
+    <linearGradient id="footer-red-blue" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ff1744"/>
+      <stop offset="50%" stop-color="#8b5cf6"/>
+      <stop offset="100%" stop-color="#00e5ff"/>
+    </linearGradient>
+
+    <filter id="f-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <style>
+      @keyframes footer-float {
+        0%, 100% { transform: translateY(0); }
+        50% { transform: translateY(-4px); }
+      }
+      @keyframes particle-twinkle {
+        0%, 100% { opacity: 0.3; }
+        50% { opacity: 0.9; }
+      }
+      .spider-float { animation: footer-float 4s ease-in-out infinite; }
+      .p-twinkle { animation: particle-twinkle 3s ease-in-out infinite; }
+      .f-code { font-family: 'Fira Code', 'Courier New', monospace; }
+      .f-hud { font-family: 'SF Pro Display', -apple-system, 'Segoe UI', Roboto, sans-serif; letter-spacing: 4px; }
+    </style>
+  </defs>
+
+  <!-- Dark Background -->
+  <rect width="1200" height="200" fill="url(#footer-bg)"/>
+
+  <!-- Top Accent Rail -->
+  <line x1="40" y1="12" x2="1160" y2="12" stroke="#1e293b" stroke-width="1"/>
+  <line x1="200" y1="12" x2="400" y2="12" stroke="#ff1744" stroke-width="2" opacity="0.8" filter="url(#f-glow)"/>
+  <line x1="800" y1="12" x2="1000" y2="12" stroke="#00e5ff" stroke-width="2" opacity="0.8" filter="url(#f-glow)"/>
+
+  <!-- Corner Webs (Left Corner) -->
+  <g stroke="#ff1744" stroke-opacity="0.2" stroke-width="1.2" fill="none">
+    <line x1="0" y1="200" x2="180" y2="70"/>
+    <line x1="0" y1="200" x2="240" y2="120"/>
+    <line x1="0" y1="200" x2="100" y2="20"/>
+    <path d="M 40 180 Q 70 140 120 160"/>
+    <path d="M 80 160 Q 130 90 200 130"/>
+  </g>
+
+  <!-- Corner Webs (Right Corner) -->
+  <g stroke="#00e5ff" stroke-opacity="0.2" stroke-width="1.2" fill="none">
+    <line x1="1200" y1="200" x2="1020" y2="70"/>
+    <line x1="1200" y1="200" x2="960" y2="120"/>
+    <line x1="1200" y1="200" x2="1100" y2="20"/>
+    <path d="M 1160 180 Q 1130 140 1080 160"/>
+    <path d="M 1120 160 Q 1070 90 1000 130"/>
+  </g>
+
+  <!-- Floating Code Particles -->
+  <g class="p-twinkle">
+    <circle cx="280" cy="50" r="1.5" fill="#ff1744"/>
+    <circle cx="340" cy="140" r="1" fill="#8b5cf6"/>
+    <circle cx="860" cy="60" r="1.5" fill="#00e5ff"/>
+    <circle cx="920" cy="130" r="1" fill="#00a8ff"/>
+    <circle cx="450" cy="160" r="1" fill="#ffffff" opacity="0.5"/>
+    <circle cx="750" cy="45" r="1" fill="#ffffff" opacity="0.5"/>
+  </g>
+
+  <!-- Center Floating Spider Glyph Badge -->
+  <g transform="translate(600, 52)" class="spider-float">
+    <circle cx="0" cy="0" r="28" fill="#0c0e17" stroke="#334155" stroke-width="1.5"/>
+    <circle cx="0" cy="0" r="24" stroke="url(#footer-red-blue)" stroke-width="1.2" fill="none"/>
+    
+    <!-- Abstract Spider Body -->
+    <polygon points="0,-12 6,-4 0,6 -6,-4" fill="#ff1744"/>
+    <polygon points="0,4 5,12 0,16 -5,12" fill="#00e5ff"/>
+    <!-- Spider Legs -->
+    <path d="M -4 -6 L -14 -14 L -20 -10 M 4 -6 L 14 -14 L 20 -10" stroke="#ff1744" stroke-width="1.4" fill="none"/>
+    <path d="M -5 -1 L -18 -3 L -22 3 M 5 -1 L 18 -3 L 22 3" stroke="#f5f7fa" stroke-width="1.4" fill="none"/>
+    <path d="M -4 6 L -16 11 L -20 18 M 4 6 L 16 11 L 20 18" stroke="#00e5ff" stroke-width="1.4" fill="none"/>
+  </g>
+
+  <!-- Main Footer Statement -->
+  <g transform="translate(600, 114)" text-anchor="middle">
+    <text x="0" y="0" fill="url(#footer-red-blue)" font-size="20" font-weight="900" class="f-hud">
+      THE WEB IS STILL BEING BUILT.
+    </text>
+  </g>
+
+  <!-- Secondary Footer Status -->
+  <g transform="translate(600, 142)" text-anchor="middle">
+    <text x="0" y="0" fill="#94a3b8" font-size="12" font-weight="600" class="f-code" letter-spacing="2">
+      <tspan fill="#ff1744">CODEXANJAN</tspan>
+      <tspan fill="#475569"> // </tspan>
+      <tspan fill="#f5f7fa">SIGNAL TRANSMISSION COMPLETE</tspan>
+      <tspan fill="#475569"> // </tspan>
+      <tspan fill="#00e5ff">EARTH-CODEX-01</tspan>
+    </text>
+  </g>
+
+  <!-- Micro Footer Coordinates -->
+  <g transform="translate(600, 168)" text-anchor="middle">
+    <text x="0" y="0" fill="#475569" font-size="10" font-weight="600" class="f-code" letter-spacing="2">
+      [ WITH GREAT CODE COMES GREAT RESPONSIBILITY ]
+    </text>
+  </g>
+
+  <!-- Bottom Line Track -->
+  <line x1="200" y1="188" x2="1000" y2="188" stroke="#1e293b" stroke-width="1"/>
+</svg>
