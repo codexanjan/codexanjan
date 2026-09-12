@@ -1,21 +1,35 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 42 16" width="36" height="14">
   <defs>
-    <filter id="ptr-glow" x="-20%" y="-20%" width="140%" height="140%">
+    <filter id="ptr-glow" x="-30%" y="-30%" width="160%" height="160%">
       <feGaussianBlur stdDeviation="1.5" result="blur"/>
       <feMerge>
         <feMergeNode in="blur"/>
         <feMergeNode in="SourceGraphic"/>
       </feMerge>
     </filter>
+    <style>
+      @keyframes tip-pulse {
+        0%, 100% { transform: scale(1); opacity: 0.8; }
+        50% { transform: scale(1.35); opacity: 1; filter: drop-shadow(0 0 4px #00E5FF); }
+      }
+      @keyframes arm-flow {
+        0% { stroke-dashoffset: 40; }
+        100% { stroke-dashoffset: 0; }
+      }
+      .ptr-tip { transform-origin: 39.5px 8px; animation: tip-pulse 1.8s ease-in-out infinite; }
+      .ptr-beam { stroke-dasharray: 8 12; animation: arm-flow 1.5s linear infinite; }
+    </style>
   </defs>
   <!-- Cyber Spider-Leg Pointer Path -->
   <!-- Base Anchor Node -->
   <rect x="1" y="6.5" width="3" height="3" fill="#FF1B2D"/>
   <!-- Primary Angular Arm (Red) -->
   <path d="M 4 8 L 16 8 L 24 3 L 34 8" fill="none" stroke="#FF1B2D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" filter="url(#ptr-glow)"/>
+  <!-- Animated Energy Beam along arm -->
+  <path d="M 4 8 L 16 8 L 24 3 L 34 8" fill="none" stroke="#FFFFFF" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" class="ptr-beam" opacity="0.85"/>
   <!-- Secondary Extension & Blue Needle Tip -->
   <path d="M 34 8 L 38 8" fill="none" stroke="#00A8FF" stroke-width="2" stroke-linecap="round"/>
-  <circle cx="39.5" cy="8" r="2" fill="#21D4FD" filter="url(#ptr-glow)"/>
+  <circle cx="39.5" cy="8" r="2" fill="#00E5FF" class="ptr-tip" filter="url(#ptr-glow)"/>
   <!-- Micro Joint Circuit Tick -->
-  <line x1="24" y1="3" x2="24" y2="1" stroke="#21D4FD" stroke-width="1.2"/>
+  <line x1="24" y1="3" x2="24" y2="1" stroke="#00E5FF" stroke-width="1.2"/>
 </svg>

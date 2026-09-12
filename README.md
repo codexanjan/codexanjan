@@ -220,13 +220,13 @@ status: Creating
       </ul>
       <p><b>Tech:</b> <code>Python</code> | <code>React</code> | <code>FastAPI</code> | <code>ML</code></p>
       <p>
-        <a href="WEATHERGPT_REPOSITORY_URL"><b>[ REPOSITORY ]</b></a> | 
-        <a href="WEATHERGPT_REPOSITORY_URL"><b>[ LIVE DEMO ]</b></a>
+        <a href="https://github.com/codexanjan/atmosphere"><b>[ REPOSITORY ]</b></a> | 
+        <a href="https://github.com/codexanjan/atmosphere"><b>[ LIVE DEMO ]</b></a>
       </p>
     </td>
     <td width="33%" valign="top">
       <h3><img src="assets/spider-mini.svg" width="18" height="18" alt="Spider" /> AJ RUNNER</h3>
-      <p><code>STATUS: BUILDING</code></p>
+      <p><code>STATUS: ACTIVE</code></p>
       <p><b>Original endless-runner game featuring AJ.</b></p>
       <p>A high-velocity arcade runner built on HTML5 Canvas and WebGL, featuring responsive physics simulations, procedural obstacle generation, and dynamic mechanics.</p>
       <ul>
@@ -239,27 +239,27 @@ status: Creating
       </ul>
       <p><b>Tech:</b> <code>JavaScript</code> | <code>HTML5 Canvas</code> | <code>WebGL</code> | <code>CSS3</code></p>
       <p>
-        <a href="AJ_RUNNER_REPOSITORY_URL"><b>[ REPOSITORY ]</b></a> | 
-        <a href="AJ_RUNNER_REPOSITORY_URL"><b>[ LIVE DEMO ]</b></a>
+        <a href="https://github.com/codexanjan/AJ-RUNNER"><b>[ REPOSITORY ]</b></a> | 
+        <a href="https://github.com/codexanjan/AJ-RUNNER"><b>[ LIVE DEMO ]</b></a>
       </p>
     </td>
     <td width="33%" valign="top">
-      <h3><img src="assets/spider-mini.svg" width="18" height="18" alt="Spider" /> MOVIE RECOMMENDATION SYSTEM</h3>
+      <h3><img src="assets/spider-mini.svg" width="18" height="18" alt="Spider" /> NEXUSVAULT</h3>
       <p><code>STATUS: ACTIVE</code></p>
-      <p><b>Intelligent movie-discovery platform.</b></p>
-      <p>A content-based and collaborative filtering engine computing cosine vector distances across titles, genres, and metadata to surface contextual movie discoveries.</p>
+      <p><b>Security and credential storage platform.</b></p>
+      <p>A robust TypeScript and encrypted credential management vault engineered for zero-compromise credential security, rapid access tokens, and modular extensibility.</p>
       <ul>
-        <li>Personalized recommendations</li>
-        <li>Mood-based discovery</li>
-        <li>Genre preferences</li>
-        <li>Similarity engine</li>
-        <li>Recommendation explanations</li>
-        <li>Cinematic UI</li>
+        <li>Encrypted credential vaults</li>
+        <li>Token management</li>
+        <li>Zero-knowledge design</li>
+        <li>Rapid retrieval engine</li>
+        <li>Security auditing</li>
+        <li>Cyber HUD interface</li>
       </ul>
-      <p><b>Tech:</b> <code>Python</code> | <code>Scikit-learn</code> | <code>React</code> | <code>REST APIs</code></p>
+      <p><b>Tech:</b> <code>TypeScript</code> | <code>Node.js</code> | <code>Cryptography</code> | <code>Security</code></p>
       <p>
-        <a href="MOVIE_RECOMMENDER_REPOSITORY_URL"><b>[ REPOSITORY ]</b></a> | 
-        <a href="MOVIE_RECOMMENDER_REPOSITORY_URL"><b>[ LIVE DEMO ]</b></a>
+        <a href="https://github.com/codexanjan/nexusvault"><b>[ REPOSITORY ]</b></a> | 
+        <a href="https://github.com/codexanjan/nexusvault"><b>[ LIVE DEMO ]</b></a>
       </p>
     </td>
   </tr>
@@ -401,17 +401,27 @@ status: Creating
 
 <br/><br/>
 
-<!-- GITHUB STATS & TOP LANGUAGES -->
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=codexanjan&amp;show_icons=true&amp;hide_border=true&amp;bg_color=050509&amp;title_color=FF1B2D&amp;icon_color=00A8FF&amp;text_color=F5F7FA" width="49%" alt="GitHub Stats" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=codexanjan&amp;layout=compact&amp;hide_border=true&amp;bg_color=050509&amp;title_color=FF1B2D&amp;text_color=F5F7FA" width="49%" alt="Top Languages" />
-</p>
+<!-- TOP LANGUAGES USED HUD CARD (ANIMATED) -->
+<img src="assets/top-languages.svg" width="100%" alt="Top Languages Used" />
 
-<br/>
+<br/><br/>
+
+<!-- TOP CONTRIBUTIONS BY COMMIT HUD CARD (ANIMATED) -->
+<img src="assets/top-contributions.svg" width="100%" alt="Top Contributions by Commit" />
+
+<br/><br/>
 
 <!-- GITHUB STREAK STATS -->
 <p align="center">
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=codexanjan&amp;theme=dark&amp;background=050509&amp;border=FF1B2D&amp;stroke=00A8FF&amp;ring=FF1B2D&amp;fire=21D4FD&amp;currStreakNum=F5F7FA&amp;sideNums=F5F7FA&amp;currStreakLabel=21D4FD&amp;sideLabels=8B93A7" width="100%" alt="Streak Stats" />
+</p>
+
+<br/>
+
+<!-- GITHUB STATS & COMPACT TOP LANGUAGES -->
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=codexanjan&amp;show_icons=true&amp;include_all_commits=true&amp;count_private=true&amp;hide_border=true&amp;bg_color=050509&amp;title_color=FF1B2D&amp;icon_color=00A8FF&amp;text_color=FFFFFF" width="49%" alt="GitHub Stats" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=codexanjan&amp;layout=compact&amp;langs_count=8&amp;hide_border=true&amp;bg_color=050509&amp;title_color=FF1B2D&amp;text_color=FFFFFF" width="49%" alt="Top Languages" />
 </p>
 
 <img src="assets/web-divider.svg" width="100%" alt="Web Divider" />
@@ -436,11 +446,6 @@ status: Creating
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/codexanjan/codexanjan/output/github-contribution-grid-snake.svg" />
   <img alt="Contribution Snake" src="https://raw.githubusercontent.com/codexanjan/codexanjan/output/github-contribution-grid-snake-dark.svg" width="100%" />
 </picture>
-
-<br/><br/>
-
-<!-- ACTIVITY GRAPH -->
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=codexanjan&amp;bg_color=050509&amp;color=21D4FD&amp;line=FF1B2D&amp;point=00A8FF&amp;area=true&amp;hide_border=true" width="100%" alt="Activity Graph" />
 
 <br/><br/>
 

@@ -118,11 +118,11 @@
     <polygon points="120,102 144,116 140,154 120,172 100,154 96,116" fill="#09090F" stroke="#FF1B2D" stroke-width="2" filter="url(#core-glow)"/>
     <polygon points="120,106 138,118 135,148 120,164 105,148 102,118" fill="#050509" stroke="#00A8FF" stroke-width="1"/>
 
-    <!-- ABDOMEN EMBED: </> AND AS MONOGRAM -->
-    <text x="120" y="132" text-anchor="middle" fill="#F5F7FA" font-size="13" font-weight="900" class="mono-text" letter-spacing="1">
+    <!-- ABDOMEN EMBED: </> AND AS MONOGRAM (High Contrast Solid White and Electric Cyan) -->
+    <text x="120" y="132" text-anchor="middle" fill="#FFFFFF" font-size="14" font-weight="900" class="mono-text" letter-spacing="1">
       &lt;/&gt;
     </text>
-    <text x="120" y="152" text-anchor="middle" fill="#21D4FD" font-size="9" font-weight="900" class="mono-text" letter-spacing="3">
+    <text x="120" y="152" text-anchor="middle" fill="#00E5FF" font-size="10" font-weight="900" class="mono-text" letter-spacing="3">
       AS
     </text>
 

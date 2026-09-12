@@ -8,34 +8,63 @@
       </feMerge>
     </filter>
 
+    <linearGradient id="pf-scan-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FF1B2D" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#00E5FF" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#FF1B2D" stop-opacity="0"/>
+    </linearGradient>
+
     <style>
       .pf-title { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; font-weight: 900; }
       .pf-sub { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; font-weight: 800; }
       @keyframes pframe-pulse {
         0%, 100% { opacity: 0.8; }
-        50% { opacity: 1; filter: drop-shadow(0 0 6px #FF1B2D); }
+        50% { opacity: 1; filter: drop-shadow(0 0 8px #FF1B2D); }
       }
-      .pf-pulse { animation: pframe-pulse 4s ease-in-out infinite; }
+      @keyframes laser-cycle {
+        0% { stroke-dashoffset: 800; }
+        100% { stroke-dashoffset: -800; }
+      }
+      @keyframes beacon-ping {
+        0%, 100% { opacity: 0.4; transform: scale(1); }
+        50% { opacity: 1; transform: scale(1.3); filter: drop-shadow(0 0 6px #00E5FF); }
+      }
+      @keyframes scan-horiz {
+        0% { transform: translateY(12px); opacity: 0; }
+        30% { opacity: 0.7; }
+        70% { opacity: 0.7; }
+        100% { transform: translateY(148px); opacity: 0; }
+      }
+      .pf-pulse { animation: pframe-pulse 3.5s ease-in-out infinite; }
+      .pf-laser { stroke-dasharray: 120 400; animation: laser-cycle 6s linear infinite; }
+      .pf-beacon { transform-origin: 16px 14px; animation: beacon-ping 2s ease-in-out infinite; }
+      .pf-scan { animation: scan-horiz 5s linear infinite; }
     </style>
   </defs>
 
   <!-- Dark Base Chassis -->
   <rect x="8" y="8" width="984" height="144" rx="8" fill="#050509" stroke="#8B93A7" stroke-opacity="0.2" stroke-width="1.2"/>
 
-  <!-- Cut-Corner Angular Mission Frame -->
-  <path d="M 30 10 L 970 10 L 990 30 L 990 130 L 970 150 L 30 150 L 10 130 L 10 30 Z" fill="none" stroke="#FF1B2D" stroke-width="2" class="pf-pulse"/>
+  <!-- Cut-Corner Angular Mission Frame Base -->
+  <path d="M 30 10 L 970 10 L 990 30 L 990 130 L 970 150 L 30 150 L 10 130 L 10 30 Z" fill="none" stroke="#FF1B2D" stroke-opacity="0.5" stroke-width="2"/>
+  
+  <!-- Animated Running Laser Beam on Frame -->
+  <path d="M 30 10 L 970 10 L 990 30 L 990 130 L 970 150 L 30 150 L 10 130 L 10 30 Z" fill="none" stroke="#00E5FF" stroke-width="2.5" class="pf-laser" filter="url(#pf-glow)"/>
+
+  <!-- Animated Scanline Sweep -->
+  <line x1="20" y1="0" x2="980" y2="0" stroke="url(#pf-scan-grad)" stroke-width="1.5" class="pf-scan"/>
 
   <!-- Top Left Mission Header Pill -->
   <g transform="translate(30, 16)">
     <rect x="0" y="0" width="260" height="28" rx="4" fill="#09090F" stroke="#FF1B2D" stroke-width="1.5"/>
-    <circle cx="14" cy="14" r="4" fill="#FF1B2D"/>
+    <circle cx="14" cy="14" r="4" fill="#FF1B2D" class="pf-pulse"/>
     <text x="30" y="19" fill="#FFFFFF" font-size="13" class="pf-sub" letter-spacing="1.5">MISSION FILE // CLASSIFIED</text>
   </g>
 
   <!-- Top Right Status Node -->
   <g transform="translate(730, 16)">
     <rect x="0" y="0" width="240" height="28" rx="4" fill="#09090F" stroke="#00E5FF" stroke-width="1.5"/>
-    <circle cx="16" cy="14" r="4" fill="#21D4FD" filter="url(#pf-glow)"/>
+    <circle cx="16" cy="14" r="4.5" fill="#00E5FF" class="pf-beacon" filter="url(#pf-glow)"/>
     <text x="32" y="19" fill="#00E5FF" font-size="13" class="pf-sub" letter-spacing="1">STATUS: DEPLOYED &amp; ACTIVE</text>
   </g>
 
@@ -60,5 +89,5 @@
 
   <!-- Bottom Track Beam -->
   <line x1="30" y1="136" x2="970" y2="136" stroke="#8B93A7" stroke-opacity="0.2" stroke-width="1"/>
-  <line x1="160" y1="136" x2="840" y2="136" stroke="#FF1B2D" stroke-width="2"/>
+  <line x1="160" y1="136" x2="840" y2="136" stroke="#FF1B2D" stroke-width="2" class="pf-laser"/>
 </svg>

@@ -21,9 +21,14 @@
     <style>
       @keyframes pulse-div {
         0%, 100% { opacity: 0.8; }
-        50% { opacity: 1; filter: drop-shadow(0 0 4px #00e5ff); }
+        50% { opacity: 1; filter: drop-shadow(0 0 6px #00e5ff); }
       }
-      .div-pulse { animation: pulse-div 4s ease-in-out infinite; }
+      @keyframes travel-div-laser {
+        0% { stroke-dashoffset: 200; }
+        100% { stroke-dashoffset: -200; }
+      }
+      .div-pulse { animation: pulse-div 3.5s ease-in-out infinite; }
+      .div-laser { stroke-dasharray: 60 140; animation: travel-div-laser 3.5s linear infinite; }
     </style>
   </defs>
 
@@ -32,7 +37,10 @@
 
   <!-- Main Neon Split Beam -->
   <line x1="80" y1="16" x2="440" y2="16" stroke="url(#divider-grad)" stroke-width="1.8" filter="url(#div-glow)"/>
+  <line x1="80" y1="16" x2="440" y2="16" stroke="#ff1744" stroke-width="2" class="div-laser"/>
+  
   <line x1="560" y1="16" x2="920" y2="16" stroke="url(#divider-grad)" stroke-width="1.8" filter="url(#div-glow)"/>
+  <line x1="560" y1="16" x2="920" y2="16" stroke="#00e5ff" stroke-width="2" class="div-laser"/>
 
   <!-- Subtle Web Nodes (Left) -->
   <path d="M 120 16 L 140 8 M 160 16 L 180 24 M 200 16 L 220 8" stroke="#ff1744" stroke-opacity="0.4" stroke-width="1"/>

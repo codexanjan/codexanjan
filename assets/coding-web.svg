@@ -23,8 +23,13 @@
         0% { stroke-dashoffset: 60; }
         100% { stroke-dashoffset: 0; }
       }
+      @keyframes cw-spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
       .node-anim { animation: pulse-node 3s ease-in-out infinite; }
       .stream-line { stroke-dasharray: 6 8; animation: data-stream 2s linear infinite; }
+      .cw-rot { transform-origin: 400px 160px; animation: cw-spin 20s linear infinite; }
       .cw-text { font-family: 'Fira Code', monospace; font-size: 11px; font-weight: 700; }
     </style>
   </defs>
@@ -35,7 +40,7 @@
   <!-- Geometric Web Grid Lines -->
   <!-- Outer Web Rings -->
   <polygon points="400,30 680,90 740,230 400,290 60,230 120,90" fill="none" stroke="#1e293b" stroke-width="1"/>
-  <polygon points="400,70 600,110 640,210 400,250 160,210 200,110" fill="none" stroke="#ff1744" stroke-opacity="0.25" stroke-width="1.2"/>
+  <polygon points="400,70 600,110 640,210 400,250 160,210 200,110" fill="none" stroke="#ff1744" stroke-opacity="0.35" stroke-width="1.2" class="cw-rot"/>
 
   <!-- Radial Web Strands to Center -->
   <line x1="400" y1="160" x2="400" y2="30" stroke="url(#cw-grad)" stroke-width="1.5" class="stream-line"/>

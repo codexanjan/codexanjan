@@ -3,21 +3,41 @@
     <linearGradient id="frame-grad-red" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#FF1B2D"/><stop offset="50%" stop-color="#C8102E"/><stop offset="100%" stop-color="#FF1B2D"/>
     </linearGradient>
+    <linearGradient id="sf-scan-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FF1B2D" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#00E5FF" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#FF1B2D" stop-opacity="0"/>
+    </linearGradient>
     <filter id="sf-glow" x="-20%" y="-20%" width="140%" height="140%">
       <feGaussianBlur stdDeviation="3" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
     </filter>
     <style>
       @keyframes border-pulse { 0%, 100% { opacity: 0.8; } 50% { opacity: 1; filter: drop-shadow(0 0 8px #FF1B2D); } }
+      @keyframes sf-laser-run { 0% { stroke-dashoffset: 600; } 100% { stroke-dashoffset: -600; } }
+      @keyframes sf-led-blink { 0%, 100% { opacity: 0.5; transform: scale(1); } 50% { opacity: 1; transform: scale(1.3); filter: drop-shadow(0 0 6px #21D4FD); } }
+      @keyframes sf-scanline { 0% { transform: translateY(10px); opacity: 0; } 50% { opacity: 0.6; } 100% { transform: translateY(220px); opacity: 0; } }
       .f-pulse { animation: border-pulse 4s ease-in-out infinite; }
+      .sf-laser { stroke-dasharray: 100 300; animation: sf-laser-run 5s linear infinite; }
+      .sf-led { transform-origin: center; animation: sf-led-blink 2s ease-in-out infinite; }
+      .sf-scan { animation: sf-scanline 4.5s linear infinite; }
       .f-text { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; font-weight: 800; }
     </style>
   </defs>
   <rect x="6" y="6" width="788" height="228" rx="8" fill="#050509" stroke="#8B93A7" stroke-opacity="0.2" stroke-width="1.2"/>
+  
+  <!-- Base Cut Corner Frame -->
   <path d="M 30 10 L 770 10 L 790 30 L 790 210 L 770 230 L 30 230 L 10 210 L 10 30 Z" fill="none" stroke="url(#frame-grad-red)" stroke-width="2" class="f-pulse"/>
-  <circle cx="10" cy="30" r="4" fill="#21D4FD" filter="url(#sf-glow)"/>
-  <circle cx="790" cy="30" r="4" fill="#21D4FD" filter="url(#sf-glow)"/>
-  <circle cx="10" cy="210" r="4" fill="#21D4FD" filter="url(#sf-glow)"/>
-  <circle cx="790" cy="210" r="4" fill="#21D4FD" filter="url(#sf-glow)"/>
+  
+  <!-- Animated Running Laser Beam -->
+  <path d="M 30 10 L 770 10 L 790 30 L 790 210 L 770 230 L 30 230 L 10 210 L 10 30 Z" fill="none" stroke="#00E5FF" stroke-width="2.5" class="sf-laser" filter="url(#sf-glow)"/>
+
+  <!-- Animated Scanline -->
+  <line x1="15" y1="0" x2="785" y2="0" stroke="url(#sf-scan-grad)" stroke-width="1.5" class="sf-scan"/>
+
+  <circle cx="10" cy="30" r="4" fill="#21D4FD" class="sf-led" filter="url(#sf-glow)"/>
+  <circle cx="790" cy="30" r="4" fill="#21D4FD" class="sf-led" filter="url(#sf-glow)"/>
+  <circle cx="10" cy="210" r="4" fill="#21D4FD" class="sf-led" filter="url(#sf-glow)"/>
+  <circle cx="790" cy="210" r="4" fill="#21D4FD" class="sf-led" filter="url(#sf-glow)"/>
   <path d="M 4 45 L 4 6 L 45 6" fill="none" stroke="#00A8FF" stroke-width="2.5"/>
   <path d="M 796 45 L 796 6 L 755 6" fill="none" stroke="#00A8FF" stroke-width="2.5"/>
   <path d="M 4 195 L 4 234 L 45 234" fill="none" stroke="#00A8FF" stroke-width="2.5"/>
@@ -35,6 +55,6 @@
   
   <!-- High Contrast Bottom Badge -->
   <rect x="250" y="214" width="300" height="24" rx="4" fill="#09090F" stroke="#00A8FF" stroke-width="1.5"/>
-  <circle cx="270" cy="226" r="3.5" fill="#21D4FD"/>
+  <circle cx="270" cy="226" r="3.5" fill="#21D4FD" class="sf-led"/>
   <text x="406" y="230" text-anchor="middle" fill="#00E5FF" font-size="13" class="f-text" letter-spacing="1.5">STATUS: ACTIVE // MISSION: CREATING</text>
 </svg>

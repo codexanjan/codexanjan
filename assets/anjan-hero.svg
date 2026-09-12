@@ -52,6 +52,11 @@
       @keyframes scan-beam { 0% { transform: translateY(-50px); opacity: 0; } 30% { opacity: 0.8; } 70% { opacity: 0.8; } 100% { transform: translateY(460px); opacity: 0; } }
       @keyframes web-draw { 0% { stroke-dashoffset: 600; } 50% { stroke-dashoffset: 0; } 100% { stroke-dashoffset: -600; } }
       @keyframes particle-drift { 0%, 100% { transform: translateY(0) translateX(0); opacity: 0.3; } 50% { transform: translateY(-8px) translateX(6px); opacity: 0.9; } }
+      @keyframes text-glow-pulse {
+        0%, 100% { filter: drop-shadow(0 0 6px rgba(255, 27, 45, 0.6)) drop-shadow(0 0 10px rgba(0, 229, 255, 0.4)); }
+        50% { filter: drop-shadow(0 0 16px rgba(255, 27, 45, 0.9)) drop-shadow(0 0 24px rgba(0, 229, 255, 0.7)); }
+      }
+      .hero-glow-anim { animation: text-glow-pulse 4s ease-in-out infinite; }
       .spin-hud-1 { transform-origin: 1220px 220px; animation: spin-cw 20s linear infinite; }
       .spin-hud-2 { transform-origin: 1220px 220px; animation: spin-ccw 28s linear infinite; }
       .left-spin-hud { transform-origin: 180px 220px; animation: spin-cw 32s linear infinite; }
@@ -139,7 +144,7 @@
     </text>
 
     <!-- Large High-Contrast Developer Name -->
-    <g transform="translate(0, 76)">
+    <g transform="translate(0, 76)" class="hero-glow-anim">
       <!-- Sharp Red and Blue Edge Glow Shadows -->
       <text x="-3" y="3" fill="#FF1B2D" font-size="64" font-weight="900" class="hero-font" letter-spacing="8" opacity="0.85">
         ANJAN SHETTY

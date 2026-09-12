@@ -29,6 +29,10 @@
         0%, 100% { opacity: 0.3; }
         50% { opacity: 0.9; }
       }
+      @keyframes travel-light {
+        0% { stroke-dashoffset: 280; }
+        100% { stroke-dashoffset: -280; }
+      }
       .spider-float { animation: footer-float 4s ease-in-out infinite; }
       .p-twinkle { animation: particle-twinkle 3s ease-in-out infinite; }
       .f-code { font-family: 'Fira Code', 'Courier New', monospace; }
@@ -86,31 +90,38 @@
     <path d="M -4 6 L -16 11 L -20 18 M 4 6 L 16 11 L 20 18" stroke="#00e5ff" stroke-width="1.4" fill="none"/>
   </g>
 
-  <!-- Main Footer Statement -->
+  <!-- Main Footer Statement (High-Contrast Solid White with Neon Shadows) -->
   <g transform="translate(600, 114)" text-anchor="middle">
-    <text x="0" y="0" fill="url(#footer-red-blue)" font-size="20" font-weight="900" class="f-hud">
+    <text x="-1.5" y="1.5" fill="#ff1744" font-size="20" font-weight="900" class="f-hud" opacity="0.8">
+      THE WEB IS STILL BEING BUILT.
+    </text>
+    <text x="1.5" y="-1.5" fill="#00e5ff" font-size="20" font-weight="900" class="f-hud" opacity="0.8">
+      THE WEB IS STILL BEING BUILT.
+    </text>
+    <text x="0" y="0" fill="#FFFFFF" font-size="20" font-weight="900" class="f-hud">
       THE WEB IS STILL BEING BUILT.
     </text>
   </g>
 
   <!-- Secondary Footer Status -->
   <g transform="translate(600, 142)" text-anchor="middle">
-    <text x="0" y="0" fill="#94a3b8" font-size="12" font-weight="600" class="f-code" letter-spacing="2">
+    <text x="0" y="0" fill="#FFFFFF" font-size="13" font-weight="700" class="f-code" letter-spacing="2">
       <tspan fill="#ff1744">CODEXANJAN</tspan>
-      <tspan fill="#475569"> // </tspan>
-      <tspan fill="#f5f7fa">SIGNAL TRANSMISSION COMPLETE</tspan>
-      <tspan fill="#475569"> // </tspan>
+      <tspan fill="#8B93A7"> // </tspan>
+      <tspan fill="#FFFFFF">SIGNAL TRANSMISSION COMPLETE</tspan>
+      <tspan fill="#8B93A7"> // </tspan>
       <tspan fill="#00e5ff">EARTH-CODEX-01</tspan>
     </text>
   </g>
 
   <!-- Micro Footer Coordinates -->
   <g transform="translate(600, 168)" text-anchor="middle">
-    <text x="0" y="0" fill="#475569" font-size="10" font-weight="600" class="f-code" letter-spacing="2">
+    <text x="0" y="0" fill="#CBD5E1" font-size="12" font-weight="700" class="f-code" letter-spacing="2">
       [ WITH GREAT CODE COMES GREAT RESPONSIBILITY ]
     </text>
   </g>
 
-  <!-- Bottom Line Track -->
+  <!-- Bottom Line Track Base & Animated Laser -->
   <line x1="200" y1="188" x2="1000" y2="188" stroke="#1e293b" stroke-width="1"/>
+  <line x1="200" y1="188" x2="1000" y2="188" stroke="#00e5ff" stroke-width="2" stroke-dasharray="80 200" style="animation: travel-light 4s linear infinite;"/>
 </svg>

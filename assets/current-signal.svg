@@ -8,6 +8,12 @@
       </feMerge>
     </filter>
 
+    <linearGradient id="sig-scan-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FF1B2D" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#00E5FF" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#FF1B2D" stop-opacity="0"/>
+    </linearGradient>
+
     <style>
       .cs-title { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; font-weight: 900; }
       .cs-label { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; font-weight: 800; }
@@ -15,17 +21,39 @@
       @keyframes radar-pulse {
         0% { r: 5px; opacity: 1; }
         50% { r: 14px; opacity: 0.4; stroke: #21D4FD; }
-        100% { r: 22px; opacity: 0; stroke: #FF1B2D; }
+        100% { r: 24px; opacity: 0; stroke: #FF1B2D; }
+      }
+      @keyframes cs-border-laser {
+        0% { stroke-dashoffset: 700; }
+        100% { stroke-dashoffset: -700; }
+      }
+      @keyframes cs-bar-glow {
+        0%, 100% { opacity: 0.6; }
+        50% { opacity: 1; filter: drop-shadow(0 0 6px #00E5FF); }
+      }
+      @keyframes cs-scanline {
+        0% { transform: translateY(10px); opacity: 0; }
+        50% { opacity: 0.6; }
+        100% { transform: translateY(220px); opacity: 0; }
       }
       .sig-wave { fill: none; stroke-width: 2; animation: radar-pulse 2.5s ease-out infinite; }
+      .cs-laser { stroke-dasharray: 120 360; animation: cs-border-laser 6s linear infinite; }
+      .cs-glow-bar { animation: cs-bar-glow 2.2s ease-in-out infinite; }
+      .cs-scan { animation: cs-scanline 4.8s linear infinite; }
     </style>
   </defs>
 
   <!-- Dark Base HUD Chassis -->
   <rect x="8" y="8" width="884" height="224" rx="8" fill="#050509" stroke="#8B93A7" stroke-opacity="0.2" stroke-width="1.2"/>
 
-  <!-- Cut-Corner Angular Frame -->
-  <path d="M 30 10 L 870 10 L 890 30 L 890 210 L 870 230 L 30 230 L 10 210 L 10 30 Z" fill="none" stroke="#FF1B2D" stroke-width="2"/>
+  <!-- Cut-Corner Angular Frame Base -->
+  <path d="M 30 10 L 870 10 L 890 30 L 890 210 L 870 230 L 30 230 L 10 210 L 10 30 Z" fill="none" stroke="#FF1B2D" stroke-opacity="0.4" stroke-width="2"/>
+
+  <!-- Animated Running Laser Beam on Outer Frame -->
+  <path d="M 30 10 L 870 10 L 890 30 L 890 210 L 870 230 L 30 230 L 10 210 L 10 30 Z" fill="none" stroke="#00E5FF" stroke-width="2.5" class="cs-laser" filter="url(#sig-glow)"/>
+
+  <!-- Animated Scanline Sweep -->
+  <line x1="15" y1="0" x2="885" y2="0" stroke="url(#sig-scan-grad)" stroke-width="1.5" class="cs-scan"/>
 
   <!-- Corner Brackets -->
   <path d="M 4 35 L 4 6 L 35 6" fill="none" stroke="#00A8FF" stroke-width="2.5"/>
@@ -51,7 +79,8 @@
   <!-- Tile 1: CURRENTLY BUILDING -->
   <g transform="translate(30, 48)">
     <rect x="0" y="0" width="400" height="74" rx="6" fill="#09090F" stroke="#FF1B2D" stroke-width="1.5"/>
-    <line x1="0" y1="0" x2="4" y2="74" stroke="#FF1B2D" stroke-width="4"/>
+    <line x1="0" y1="0" x2="4" y2="74" stroke="#FF1B2D" stroke-width="4" class="cs-glow-bar"/>
+    <circle cx="380" cy="22" r="3.5" fill="#FF1B2D" class="cs-glow-bar"/>
     <text x="18" y="26" fill="#FF1744" font-size="14" class="cs-label" letter-spacing="1.5">
       // CURRENTLY BUILDING
     </text>
@@ -63,7 +92,8 @@
   <!-- Tile 2: CURRENTLY LEARNING -->
   <g transform="translate(470, 48)">
     <rect x="0" y="0" width="400" height="74" rx="6" fill="#09090F" stroke="#00A8FF" stroke-width="1.5"/>
-    <line x1="0" y1="0" x2="4" y2="74" stroke="#00A8FF" stroke-width="4"/>
+    <line x1="0" y1="0" x2="4" y2="74" stroke="#00A8FF" stroke-width="4" class="cs-glow-bar"/>
+    <circle cx="380" cy="22" r="3.5" fill="#00E5FF" class="cs-glow-bar"/>
     <text x="18" y="26" fill="#00E5FF" font-size="14" class="cs-label" letter-spacing="1.5">
       // CURRENTLY LEARNING
     </text>
@@ -74,8 +104,9 @@
 
   <!-- Tile 3: CURRENTLY EXPLORING -->
   <g transform="translate(30, 138)">
-    <rect x="0" y="0" width="400" height="74" rx="6" fill="#09090F" stroke="#00E5FF" stroke-width="1.5"/>
-    <line x1="0" y1="0" x2="4" y2="74" stroke="#21D4FD" stroke-width="4"/>
+    <rect x="0" y="0" width="400" height="74" rx="6" fill="#09090F" stroke="#00A8FF" stroke-width="1.5"/>
+    <line x1="0" y1="0" x2="4" y2="74" stroke="#21D4FD" stroke-width="4" class="cs-glow-bar"/>
+    <circle cx="380" cy="22" r="3.5" fill="#21D4FD" class="cs-glow-bar"/>
     <text x="18" y="26" fill="#00E5FF" font-size="14" class="cs-label" letter-spacing="1.5">
       // CURRENTLY EXPLORING
     </text>
@@ -87,7 +118,8 @@
   <!-- Tile 4: NEXT TARGET -->
   <g transform="translate(470, 138)">
     <rect x="0" y="0" width="400" height="74" rx="6" fill="#09090F" stroke="#FF1B2D" stroke-width="1.5"/>
-    <line x1="0" y1="0" x2="4" y2="74" stroke="#FF1B2D" stroke-width="4"/>
+    <line x1="0" y1="0" x2="4" y2="74" stroke="#FF1B2D" stroke-width="4" class="cs-glow-bar"/>
+    <circle cx="380" cy="22" r="3.5" fill="#FF1744" class="cs-glow-bar"/>
     <text x="18" y="26" fill="#FF1744" font-size="14" class="cs-label" letter-spacing="1.5">
       // NEXT TARGET
     </text>

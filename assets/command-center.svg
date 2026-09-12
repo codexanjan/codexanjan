@@ -8,6 +8,12 @@
       </feMerge>
     </filter>
 
+    <linearGradient id="cc-scan-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FF1B2D" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#00E5FF" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#FF1B2D" stop-opacity="0"/>
+    </linearGradient>
+
     <style>
       .cc-title { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; font-weight: 900; }
       .cc-sub { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; font-weight: 800; }
@@ -15,20 +21,42 @@
         0% { stroke-dashoffset: 400; }
         100% { stroke-dashoffset: -400; }
       }
+      @keyframes cc-laser-orbit {
+        0% { stroke-dashoffset: 1000; }
+        100% { stroke-dashoffset: -1000; }
+      }
       @keyframes cc-blink {
         0%, 100% { opacity: 0.4; }
-        50% { opacity: 1; filter: drop-shadow(0 0 4px #21D4FD); }
+        50% { opacity: 1; filter: drop-shadow(0 0 6px #21D4FD); }
+      }
+      @keyframes cc-spin-reticle {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+      @keyframes cc-scanline {
+        0% { transform: translateY(12px); opacity: 0; }
+        50% { opacity: 0.7; }
+        100% { transform: translateY(148px); opacity: 0; }
       }
       .cc-laser { stroke-dasharray: 80 200; animation: cc-sweep 4s linear infinite; }
+      .cc-frame-laser { stroke-dasharray: 140 400; animation: cc-laser-orbit 7s linear infinite; }
       .cc-pulse { animation: cc-blink 2s ease-in-out infinite; }
+      .cc-spin { transform-origin: 16px 16px; animation: cc-spin-reticle 10s linear infinite; }
+      .cc-scan { animation: cc-scanline 5s linear infinite; }
     </style>
   </defs>
 
   <!-- Dark Base HUD Plate -->
   <rect x="10" y="10" width="1180" height="140" rx="8" fill="#050509" stroke="#8B93A7" stroke-opacity="0.2" stroke-width="1.2"/>
 
-  <!-- Cut Corner Angular Outer Frame -->
-  <path d="M 35 12 L 1165 12 L 1188 35 L 1188 125 L 1165 148 L 35 148 L 12 125 L 12 35 Z" fill="none" stroke="#00A8FF" stroke-width="2"/>
+  <!-- Cut Corner Angular Outer Frame Base -->
+  <path d="M 35 12 L 1165 12 L 1188 35 L 1188 125 L 1165 148 L 35 148 L 12 125 L 12 35 Z" fill="none" stroke="#00A8FF" stroke-opacity="0.4" stroke-width="2"/>
+
+  <!-- Animated Running Laser Frame -->
+  <path d="M 35 12 L 1165 12 L 1188 35 L 1188 125 L 1165 148 L 35 148 L 12 125 L 12 35 Z" fill="none" stroke="#FF1B2D" stroke-width="2.5" class="cc-frame-laser" filter="url(#cc-glow)"/>
+
+  <!-- Animated Scanline Sweep -->
+  <line x1="20" y1="0" x2="1180" y2="0" stroke="url(#cc-scan-grad)" stroke-width="1.5" class="cc-scan"/>
 
   <!-- Top Red & Blue Glowing Tracks -->
   <line x1="80" y1="12" x2="400" y2="12" stroke="#FF1B2D" stroke-width="3" filter="url(#cc-glow)"/>
