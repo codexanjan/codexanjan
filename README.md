@@ -32,10 +32,6 @@
 
 <!-- ADD_SPIDERMAN_ASSET_HERE: assets/spiderman-heading.gif or assets/spiderman-logo.png -->
 
-<br/><br/>
-
-<img src="assets/web-divider.svg" width="100%" alt="Web Divider" />
-
 </div>
 
 <br/>
@@ -44,7 +40,7 @@
 <!-- 02 // ABOUT ME // OPERATIVE DOSSIER                                       -->
 <!-- ========================================================================= -->
 
-## <img src="assets/section-pointer.svg" width="32" height="14" alt="Pointer" /> ABOUT ME // OPERATIVE DOSSIER
+## <img src="assets/spider-logo.svg" width="28" height="28" alt="Spider Logo" /> ABOUT ME // OPERATIVE DOSSIER
 
 > "Somewhere between an idea and a working product, there is a lot of debugging."
 
@@ -89,17 +85,13 @@ Operative Creed:
   </tr>
 </table>
 
-<div align="center">
-  <img src="assets/web-divider.svg" width="100%" alt="Web Divider" />
-</div>
-
 <br/>
 
 <!-- ========================================================================= -->
 <!-- 03 // SPIDER ARSENAL                                                      -->
 <!-- ========================================================================= -->
 
-## <img src="assets/section-pointer.svg" width="32" height="14" alt="Pointer" /> SPIDER ARSENAL // TECH SUIT &amp; CAPABILITIES
+## <img src="assets/spider-logo.svg" width="28" height="28" alt="Spider Logo" /> SPIDER ARSENAL // TECH SUIT &amp; CAPABILITIES
 
 <div align="center">
 
@@ -109,49 +101,45 @@ Operative Creed:
 
 <br/><br/>
 
-#### <img src="assets/section-pointer.svg" width="20" height="9" alt="Pointer" /> // WEB WEAVING [CORE LANGUAGES]
+#### <img src="assets/spider-logo.svg" width="18" height="18" alt="Spider Logo" /> // WEB WEAVING [CORE LANGUAGES]
 <a href="https://skillicons.dev">
   <img src="https://skillicons.dev/icons?i=py,js,ts,java,c,cpp,cs,go&theme=dark" alt="Languages" />
 </a>
 
 <br/><br/>
 
-#### <img src="assets/section-pointer.svg" width="20" height="9" alt="Pointer" /> // HUD INTERFACES [FRONTEND &amp; UI SYSTEMS]
+#### <img src="assets/spider-logo.svg" width="18" height="18" alt="Spider Logo" /> // HUD INTERFACES [FRONTEND &amp; UI SYSTEMS]
 <a href="https://skillicons.dev">
   <img src="https://skillicons.dev/icons?i=html,css,react,nextjs,tailwind&theme=dark" alt="Frontend" />
 </a>
 
 <br/><br/>
 
-#### <img src="assets/section-pointer.svg" width="20" height="9" alt="Pointer" /> // SPIDER-NET BACKBONE [BACKEND &amp; RUNTIMES]
+#### <img src="assets/spider-logo.svg" width="18" height="18" alt="Spider Logo" /> // SPIDER-NET BACKBONE [BACKEND &amp; RUNTIMES]
 <a href="https://skillicons.dev">
   <img src="https://skillicons.dev/icons?i=nodejs,express,firebase,supabase&theme=dark" alt="Backend" />
 </a>
 
 <br/><br/>
 
-#### <img src="assets/section-pointer.svg" width="20" height="9" alt="Pointer" /> // CANON ARCHIVES [DATABASES &amp; STORAGE]
+#### <img src="assets/spider-logo.svg" width="18" height="18" alt="Spider Logo" /> // CANON ARCHIVES [DATABASES &amp; STORAGE]
 <a href="https://skillicons.dev">
   <img src="https://skillicons.dev/icons?i=mongodb,mysql,postgres&theme=dark" alt="Databases" />
 </a>
 
 <br/><br/>
 
-#### <img src="assets/section-pointer.svg" width="20" height="9" alt="Pointer" /> // SPIDER-SENSE COGNITION [ARTIFICIAL INTELLIGENCE]
+#### <img src="assets/spider-logo.svg" width="18" height="18" alt="Spider Logo" /> // SPIDER-SENSE COGNITION [ARTIFICIAL INTELLIGENCE]
 <a href="https://skillicons.dev">
   <img src="https://skillicons.dev/icons?i=py,tensorflow,scikitlearn&theme=dark" alt="AI / Machine Learning" />
 </a>
 
 <br/><br/>
 
-#### <img src="assets/section-pointer.svg" width="20" height="9" alt="Pointer" /> // SPIDER-OPS TOOLKIT [TOOLS &amp; WORKSPACE]
+#### <img src="assets/spider-logo.svg" width="18" height="18" alt="Spider Logo" /> // SPIDER-OPS TOOLKIT [TOOLS &amp; WORKSPACE]
 <a href="https://skillicons.dev">
   <img src="https://skillicons.dev/icons?i=git,github,vscode,figma,postman,vercel&theme=dark" alt="Tools" />
 </a>
-
-<br/><br/>
-
-<img src="assets/web-divider.svg" width="100%" alt="Web Divider" />
 
 </div>
 
@@ -161,7 +149,7 @@ Operative Creed:
 <!-- 04 // PROJECT DATABASE // SPIDER-VERSE ARCHIVES                           -->
 <!-- ========================================================================= -->
 
-## <img src="assets/section-pointer.svg" width="32" height="14" alt="Pointer" /> PROJECT DATABASE // SPIDER-VERSE ARCHIVES
+## <img src="assets/spider-logo.svg" width="28" height="28" alt="Spider Logo" /> PROJECT DATABASE // SPIDER-VERSE ARCHIVES
 
 <div align="center">
   <img src="assets/project-frame.svg" width="100%" alt="Spider-Verse Missions Header" />
@@ -232,17 +220,13 @@ Operative Creed:
   </tr>
 </table>
 
-<div align="center">
-  <img src="assets/web-divider.svg" width="100%" alt="Web Divider" />
-</div>
-
 <br/>
 
 <!-- ========================================================================= -->
 <!-- 05 // SPIDER-VERSE ACHIEVEMENTS                                             -->
 <!-- ========================================================================= -->
 
-## <img src="assets/section-pointer.svg" width="32" height="14" alt="Pointer" /> SPIDER-VERSE ACHIEVEMENTS
+## <img src="assets/spider-logo.svg" width="28" height="28" alt="Spider Logo" /> SPIDER-VERSE ACHIEVEMENTS
 
 <div align="center">
   <img src="assets/achievement-frame.svg" width="100%" alt="Spider-Verse Achievements Header" />
@@ -285,17 +269,13 @@ Operative Creed:
   </tr>
 </table>
 
-<div align="center">
-  <img src="assets/web-divider.svg" width="100%" alt="Web Divider" />
-</div>
-
 <br/>
 
 <!-- ========================================================================= -->
 <!-- 06 // SPIDER-VERSE CREDENTIAL VAULT                                         -->
 <!-- ========================================================================= -->
 
-## <img src="assets/section-pointer.svg" width="32" height="14" alt="Pointer" /> SPIDER-VERSE CREDENTIAL VAULT
+## <img src="assets/spider-logo.svg" width="28" height="28" alt="Spider Logo" /> SPIDER-VERSE CREDENTIAL VAULT
 
 <div align="center">
   <img src="assets/certificate-frame.svg" width="100%" alt="Spider-Verse Credential Vault Header" />
@@ -350,27 +330,19 @@ Operative Creed:
   </tr>
 </table>
 
-<div align="center">
-  <img src="assets/web-divider.svg" width="100%" alt="Web Divider" />
-</div>
-
 <br/>
 
 <!-- ========================================================================= -->
 <!-- 07 // SPIDER TELEMETRY // MAINFRAME METRICS                               -->
 <!-- ========================================================================= -->
 
-## <img src="assets/section-pointer.svg" width="32" height="14" alt="Pointer" /> SPIDER TELEMETRY // MAINFRAME METRICS
+## <img src="assets/spider-logo.svg" width="28" height="28" alt="Spider Logo" /> SPIDER TELEMETRY // MAINFRAME METRICS
 
 <p>Telemetry and code activity monitored through GitHub's analytical services:</p>
 
 <div align="center">
 
 <img src="assets/spider-telemetry.svg" width="100%" alt="Spider Telemetry // Mainframe Metrics" />
-
-<br/><br/>
-
-<img src="assets/web-divider.svg" width="100%" alt="Web Divider" />
 
 </div>
 
@@ -380,15 +352,11 @@ Operative Creed:
 <!-- 08 // COMMIT RADAR // CODE CADENCE                                        -->
 <!-- ========================================================================= -->
 
-## <img src="assets/section-pointer.svg" width="32" height="14" alt="Pointer" /> COMMIT RADAR // CODE CADENCE
+## <img src="assets/spider-logo.svg" width="28" height="28" alt="Spider Logo" /> COMMIT RADAR // CODE CADENCE
 
 <div align="center">
 
 <img src="assets/commit-radar.svg" width="100%" alt="Commit Radar // Code Cadence" />
-
-<br/><br/>
-
-<img src="assets/web-divider.svg" width="100%" alt="Web Divider" />
 
 </div>
 
@@ -398,7 +366,7 @@ Operative Creed:
 <!-- 09 // CONTRIBUTION PATROL // SPIDER CADENCE                               -->
 <!-- ========================================================================= -->
 
-## <img src="assets/section-pointer.svg" width="32" height="14" alt="Pointer" /> CONTRIBUTION PATROL // SPIDER CADENCE
+## <img src="assets/spider-logo.svg" width="28" height="28" alt="Spider Logo" /> CONTRIBUTION PATROL // SPIDER CADENCE
 
 <div align="center">
 
@@ -413,10 +381,6 @@ Operative Creed:
   <img alt="Contribution Snake" src="https://raw.githubusercontent.com/codexanjan/codexanjan/output/github-contribution-grid-snake-dark.svg" width="100%" />
 </picture>
 
-<br/><br/>
-
-<img src="assets/web-divider.svg" width="100%" alt="Web Divider" />
-
 </div>
 
 <br/>
@@ -425,7 +389,7 @@ Operative Creed:
 <!-- 10 // 2026 MISSION DIRECTIVES // ROADMAP                                  -->
 <!-- ========================================================================= -->
 
-## <img src="assets/section-pointer.svg" width="32" height="14" alt="Pointer" /> 2026 MISSION DIRECTIVES // ROADMAP
+## <img src="assets/spider-logo.svg" width="28" height="28" alt="Spider Logo" /> 2026 MISSION DIRECTIVES // ROADMAP
 
 <table width="100%">
   <tr>
@@ -450,35 +414,13 @@ Operative Creed:
   </tr>
 </table>
 
-<div align="center">
-  <img src="assets/web-divider.svg" width="100%" alt="Web Divider" />
-</div>
-
 <br/>
 
 <!-- ========================================================================= -->
-<!-- 11 // SPIDER-SENSE SIGNAL                                                 -->
+<!-- 11 // CONNECT                                                             -->
 <!-- ========================================================================= -->
 
-## <img src="assets/section-pointer.svg" width="32" height="14" alt="Pointer" /> SPIDER-SENSE SIGNAL
-
-<div align="center">
-
-<img src="assets/current-signal.svg" width="100%" alt="Spider-Sense Signal HUD" />
-
-<br/><br/>
-
-<img src="assets/web-divider.svg" width="100%" alt="Web Divider" />
-
-</div>
-
-<br/>
-
-<!-- ========================================================================= -->
-<!-- 12 // CONNECT                                                             -->
-<!-- ========================================================================= -->
-
-## <img src="assets/section-pointer.svg" width="32" height="14" alt="Pointer" /> CONNECT
+## <img src="assets/spider-logo.svg" width="28" height="28" alt="Spider Logo" /> CONNECT
 
 <div align="center">
 
@@ -510,16 +452,12 @@ Operative Creed:
   </a>
 </p>
 
-<br/>
-
-<img src="assets/web-divider.svg" width="100%" alt="Web Divider" />
-
 </div>
 
 <br/>
 
 <!-- ========================================================================= -->
-<!-- 13 // FOOTER                                                              -->
+<!-- 12 // FOOTER                                                              -->
 <!-- ========================================================================= -->
 
 <div align="center">
