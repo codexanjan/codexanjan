@@ -1,0 +1,276 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 430" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradients -->
+    <linearGradient id="hero-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#020204"/>
+      <stop offset="45%" stop-color="#050509"/>
+      <stop offset="70%" stop-color="#09090F"/>
+      <stop offset="100%" stop-color="#020204"/>
+    </linearGradient>
+
+    <linearGradient id="text-glow-sweep" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FF1B2D"/>
+      <stop offset="30%" stop-color="#F5F7FA"/>
+      <stop offset="60%" stop-color="#00A8FF"/>
+      <stop offset="100%" stop-color="#21D4FD"/>
+    </linearGradient>
+
+    <linearGradient id="red-laser-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FF1B2D" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#FF1B2D" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#FF1B2D" stop-opacity="0"/>
+    </linearGradient>
+
+    <linearGradient id="blue-laser-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00A8FF" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#21D4FD" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#00A8FF" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- Glowing Filters -->
+    <filter id="neon-glow-red" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="5" result="blur1"/>
+      <feGaussianBlur stdDeviation="12" result="blur2"/>
+      <feMerge>
+        <feMergeNode in="blur2"/>
+        <feMergeNode in="blur1"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="neon-glow-blue" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="5" result="blur1"/>
+      <feGaussianBlur stdDeviation="12" result="blur2"/>
+      <feMerge>
+        <feMergeNode in="blur2"/>
+        <feMergeNode in="blur1"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Technical Grid Pattern -->
+    <pattern id="hud-grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#8B93A7" stroke-opacity="0.04" stroke-width="1"/>
+    </pattern>
+
+    <pattern id="dot-matrix" width="20" height="20" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1" fill="#00A8FF" fill-opacity="0.08"/>
+    </pattern>
+
+    <!-- Styles and Animations -->
+    <style>
+      @keyframes spin-cw {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+      @keyframes spin-ccw {
+        0% { transform: rotate(360deg); }
+        100% { transform: rotate(0deg); }
+      }
+      @keyframes red-pulse {
+        0%, 100% { opacity: 0.7; filter: drop-shadow(0 0 4px #E62429); }
+        50% { opacity: 1; filter: drop-shadow(0 0 16px #FF1B2D); }
+      }
+      @keyframes scan-beam {
+        0% { transform: translateY(-50px); opacity: 0; }
+        30% { opacity: 0.8; }
+        70% { opacity: 0.8; }
+        100% { transform: translateY(450px); opacity: 0; }
+      }
+      @keyframes web-draw {
+        0% { stroke-dashoffset: 600; }
+        50% { stroke-dashoffset: 0; }
+        100% { stroke-dashoffset: -600; }
+      }
+      @keyframes particle-drift {
+        0%, 100% { transform: translateY(0) translateX(0); opacity: 0.3; }
+        50% { transform: translateY(-8px) translateX(6px); opacity: 0.9; }
+      }
+      .spin-hud-1 { transform-origin: 1220px 215px; animation: spin-cw 20s linear infinite; }
+      .spin-hud-2 { transform-origin: 1220px 215px; animation: spin-ccw 28s linear infinite; }
+      .left-spin-hud { transform-origin: 180px 215px; animation: spin-cw 32s linear infinite; }
+      .pulse-core { animation: red-pulse 3s ease-in-out infinite; }
+      .scan-line { animation: scan-beam 7s linear infinite; }
+      .web-strand { stroke-dasharray: 120 40; animation: web-draw 16s linear infinite; }
+      .particle-fly { animation: particle-drift 4s ease-in-out infinite; }
+      .mono-code { font-family: 'SF Pro Display', -apple-system, 'Segoe UI', Roboto, 'Fira Code', monospace; }
+    </style>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="1400" height="430" fill="url(#hero-bg)"/>
+  <rect width="1400" height="430" fill="url(#hud-grid)"/>
+  <rect width="1400" height="430" fill="url(#dot-matrix)"/>
+
+  <!-- Ambient Multiverse Rim Lighting -->
+  <circle cx="120" cy="215" r="320" fill="#E62429" opacity="0.12" filter="blur(60px)"/>
+  <circle cx="1280" cy="215" r="320" fill="#00A8FF" opacity="0.12" filter="blur(60px)"/>
+  <circle cx="700" cy="215" r="260" fill="#C8102E" opacity="0.06" filter="blur(80px)"/>
+
+  <!-- Outer Technical HUD Borders -->
+  <rect x="25" y="20" width="1350" height="390" fill="none" stroke="#8B93A7" stroke-opacity="0.12" stroke-width="1"/>
+  <line x1="140" y1="20" x2="380" y2="20" stroke="#FF1B2D" stroke-width="2" filter="url(#neon-glow-red)"/>
+  <line x1="1020" y1="20" x2="1260" y2="20" stroke="#00A8FF" stroke-width="2" filter="url(#neon-glow-blue)"/>
+  <line x1="140" y1="410" x2="380" y2="410" stroke="#FF1B2D" stroke-width="2" filter="url(#neon-glow-red)"/>
+  <line x1="1020" y1="410" x2="1260" y2="410" stroke="#00A8FF" stroke-width="2" filter="url(#neon-glow-blue)"/>
+
+  <!-- Corner Brackets -->
+  <path d="M 20 50 L 20 15 L 55 15" fill="none" stroke="#FF1B2D" stroke-width="2.5"/>
+  <path d="M 1380 50 L 1380 15 L 1345 15" fill="none" stroke="#00A8FF" stroke-width="2.5"/>
+  <path d="M 20 380 L 20 415 L 55 415" fill="none" stroke="#FF1B2D" stroke-width="2.5"/>
+  <path d="M 1380 380 L 1380 415 L 1345 415" fill="none" stroke="#00A8FF" stroke-width="2.5"/>
+
+  <!-- ================================================================= -->
+  <!-- LEFT SIDE: SPIDER EMBLEM ZONE & SUPPORTING WEB GRAPHICS            -->
+  <!-- ================================================================= -->
+  <g transform="translate(180, 215)">
+    <!-- Concentric Web Geometry -->
+    <g fill="none" stroke="#E62429" stroke-opacity="0.22" stroke-width="1.2" class="web-strand">
+      <polygon points="0,-140 100,-70 100,70 0,140 -100,70 -100,-70"/>
+      <polygon points="0,-100 70,-50 70,50 0,100 -70,50 -70,-50"/>
+      <polygon points="0,-60 42,-30 42,30 0,60 -42,30 -42,-30"/>
+    </g>
+
+    <!-- Radial Web Strands -->
+    <line x1="0" y1="-150" x2="0" y2="150" stroke="#FF1B2D" stroke-opacity="0.3" stroke-width="1.2"/>
+    <line x1="-130" y1="-75" x2="130" y2="75" stroke="#FF1B2D" stroke-opacity="0.3" stroke-width="1.2"/>
+    <line x1="-130" y1="75" x2="130" y2="-75" stroke="#FF1B2D" stroke-opacity="0.3" stroke-width="1.2"/>
+
+    <!-- Left Rotating HUD Frame -->
+    <g class="left-spin-hud">
+      <circle cx="0" cy="0" r="120" fill="none" stroke="#00A8FF" stroke-opacity="0.35" stroke-width="1.2" stroke-dasharray="8 14"/>
+      <circle cx="0" cy="0" r="80" fill="none" stroke="#FF1B2D" stroke-opacity="0.4" stroke-width="1.5" stroke-dasharray="24 16 8 16"/>
+    </g>
+
+    <!-- Central Cyber Spider-Mask Silhouette (Original Developer Crest) -->
+    <g class="pulse-core">
+      <!-- Outer Hex Shield -->
+      <polygon points="0,-48 38,-20 38,24 0,52 -38,24 -38,-20" fill="#050509" stroke="#FF1B2D" stroke-width="2"/>
+      <!-- Mask Shell -->
+      <path d="M 0 -36 C 24 -36 32 -10 28 16 C 24 38 12 46 0 50 C -12 46 -24 38 -28 16 C -32 -10 -24 -36 0 -36 Z" fill="#09090F" stroke="#C8102E" stroke-width="1.6"/>
+      <!-- Glowing Eyes (Left & Right) -->
+      <polygon points="-5,2 -22,-4 -25,10 -12,14 -6,10" fill="#F5F7FA" filter="url(#neon-glow-blue)"/>
+      <polygon points="5,2 22,-4 25,10 12,14 6,10" fill="#F5F7FA" filter="url(#neon-glow-blue)"/>
+      <!-- Center Tech Division Line -->
+      <line x1="0" y1="-36" x2="0" y2="48" stroke="#E62429" stroke-width="1.2"/>
+      <!-- Mini Spider Symbol on Forehead -->
+      <polygon points="0,-22 4,-18 0,-14 -4,-18" fill="#00A8FF"/>
+    </g>
+
+    <!-- Telemetry Badges Around Left Core -->
+    <text x="0" y="86" text-anchor="middle" fill="#8B93A7" font-size="9" class="mono-code" letter-spacing="2">NODE // EARTH-CODEX</text>
+    <text x="0" y="100" text-anchor="middle" fill="#00A8FF" font-size="8" class="mono-code" letter-spacing="1">SYSTEM: SPIDER-NET ACTIVE</text>
+  </g>
+
+  <!-- ================================================================= -->
+  <!-- CENTER: MAIN TYPOGRAPHY AND DEVELOPER BRANDING                     -->
+  <!-- ================================================================= -->
+  <g transform="translate(700, 115)" text-anchor="middle">
+    <!-- Top HUD Status Track -->
+    <rect x="-180" y="-14" width="360" height="22" rx="11" fill="#050509" stroke="#8B93A7" stroke-opacity="0.3" stroke-width="1"/>
+    <circle cx="-160" cy="-3" r="3.5" fill="#FF1B2D" class="pulse-core"/>
+    <text x="0" y="0" fill="#21D4FD" font-size="10.5" font-weight="700" class="mono-code" letter-spacing="3">
+      SYSTEM ONLINE // SPIDER-VERSE PROTOCOL
+    </text>
+
+    <!-- Large Developer Name -->
+    <g transform="translate(0, 72)">
+      <!-- Shadow Glow Layers -->
+      <text x="-2" y="0" fill="#E62429" font-size="52" font-weight="900" class="mono-code" letter-spacing="10" opacity="0.65">
+        ANJAN SHETTY
+      </text>
+      <text x="2" y="0" fill="#00A8FF" font-size="52" font-weight="900" class="mono-code" letter-spacing="10" opacity="0.65">
+        ANJAN SHETTY
+      </text>
+      <!-- Crisp Foreground -->
+      <text x="0" y="0" fill="url(#text-glow-sweep)" font-size="52" font-weight="900" class="mono-code" letter-spacing="10">
+        ANJAN SHETTY
+      </text>
+    </g>
+
+    <!-- Primary Role -->
+    <g transform="translate(0, 120)">
+      <text x="0" y="0" fill="#FF1B2D" font-size="18" font-weight="800" class="mono-code" letter-spacing="6">
+        FULL STACK DEVELOPER
+      </text>
+    </g>
+
+    <!-- Secondary Identity Line -->
+    <g transform="translate(0, 152)">
+      <text x="0" y="0" fill="#F5F7FA" font-size="12" font-weight="600" class="mono-code" letter-spacing="2.5">
+        AI BUILDER <tspan fill="#00A8FF">/</tspan> PRODUCT CREATOR <tspan fill="#FF1B2D">/</tspan> HACKATHON DEVELOPER
+      </text>
+    </g>
+
+    <!-- GitHub Handle Tag -->
+    <g transform="translate(0, 194)">
+      <rect x="-140" y="-16" width="280" height="26" rx="4" fill="#09090F" stroke="#00A8FF" stroke-opacity="0.5" stroke-width="1.2"/>
+      <text x="0" y="1" fill="#21D4FD" font-size="11" font-weight="700" class="mono-code" letter-spacing="2">
+        github.com/codexanjan
+      </text>
+    </g>
+
+    <!-- Underline Cyber Beam -->
+    <line x1="-220" y1="225" x2="220" y2="225" stroke="#8B93A7" stroke-opacity="0.2" stroke-width="1"/>
+    <line x1="-120" y1="225" x2="120" y2="225" stroke="#FF1B2D" stroke-width="1.8" filter="url(#neon-glow-red)"/>
+  </g>
+
+  <!-- ================================================================= -->
+  <!-- RIGHT SIDE: ANIMATED WEB GEOMETRY, HUD RINGS & CODE BRACKETS      -->
+  <!-- ================================================================= -->
+  <g transform="translate(1220, 215)">
+    <!-- Concentric Web Strands -->
+    <g fill="none" stroke="#00A8FF" stroke-opacity="0.22" stroke-width="1.2" class="web-strand">
+      <polygon points="0,-140 100,-70 100,70 0,140 -100,70 -100,-70"/>
+      <polygon points="0,-100 70,-50 70,50 0,100 -70,50 -70,-50"/>
+      <polygon points="0,-60 42,-30 42,30 0,60 -42,30 -42,-30"/>
+    </g>
+
+    <!-- Radial Web Axes -->
+    <line x1="0" y1="-150" x2="0" y2="150" stroke="#00A8FF" stroke-opacity="0.3" stroke-width="1.2"/>
+    <line x1="-130" y1="-75" x2="130" y2="75" stroke="#00A8FF" stroke-opacity="0.3" stroke-width="1.2"/>
+    <line x1="-130" y1="75" x2="130" y2="-75" stroke="#00A8FF" stroke-opacity="0.3" stroke-width="1.2"/>
+
+    <!-- Outer Rotating HUD Rings -->
+    <g class="spin-hud-1">
+      <circle cx="0" cy="0" r="125" fill="none" stroke="#21D4FD" stroke-width="1.4" stroke-dasharray="32 14 6 14" filter="url(#neon-glow-blue)"/>
+      <circle cx="0" cy="0" r="105" fill="none" stroke="#8B93A7" stroke-opacity="0.25" stroke-width="1" stroke-dasharray="4 8"/>
+      <!-- Circuit Nodes -->
+      <circle cx="0" cy="-125" r="4" fill="#00A8FF"/>
+      <circle cx="125" cy="0" r="4" fill="#FF1B2D"/>
+      <circle cx="0" cy="125" r="4" fill="#00A8FF"/>
+      <circle cx="-125" cy="0" r="4" fill="#FF1B2D"/>
+    </g>
+
+    <!-- Inner Reverse Rotating HUD Ring -->
+    <g class="spin-hud-2">
+      <circle cx="0" cy="0" r="85" fill="none" stroke="#FF1B2D" stroke-width="1.5" stroke-dasharray="16 20 40 10"/>
+      <polygon points="0,-85 6,-77 -6,-77" fill="#FF1B2D"/>
+      <polygon points="0,85 6,77 -6,77" fill="#FF1B2D"/>
+    </g>
+
+    <!-- Center Code Brackets Node -->
+    <circle cx="0" cy="0" r="44" fill="#050509" stroke="#00A8FF" stroke-width="1.8"/>
+    <circle cx="0" cy="0" r="38" fill="#09090F" stroke="#FF1B2D" stroke-width="1"/>
+    <text x="0" y="7" text-anchor="middle" fill="#F5F7FA" font-size="18" font-weight="900" class="mono-code" letter-spacing="2">
+      &lt;/&gt;
+    </text>
+
+    <!-- Telemetry Orbit Labels -->
+    <text x="0" y="90" text-anchor="middle" fill="#8B93A7" font-size="8.5" class="mono-code" letter-spacing="1">CIRCUIT // 0xCODEX</text>
+    <text x="0" y="104" text-anchor="middle" fill="#FF1B2D" font-size="8" class="mono-code" letter-spacing="1">RADAR // ACTIVE</text>
+  </g>
+
+  <!-- Ambient Floating Tech Particles -->
+  <g class="particle-fly">
+    <circle cx="480" cy="80" r="1.5" fill="#FF1B2D" opacity="0.6"/>
+    <circle cx="560" cy="340" r="1.5" fill="#00A8FF" opacity="0.6"/>
+    <circle cx="920" cy="70" r="1.5" fill="#21D4FD" opacity="0.6"/>
+    <circle cx="980" cy="350" r="1.5" fill="#FF1B2D" opacity="0.6"/>
+    <circle cx="360" cy="200" r="1" fill="#F5F7FA" opacity="0.4"/>
+    <circle cx="1060" cy="210" r="1" fill="#F5F7FA" opacity="0.4"/>
+  </g>
+
+  <!-- Animated Scanline Sweep -->
+  <line x1="50" y1="0" x2="1350" y2="0" stroke="url(#blue-laser-grad)" stroke-width="1.5" class="scan-line"/>
+</svg>

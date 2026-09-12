@@ -1,32 +1,28 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" width="220" height="220">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="100%" height="100%">
   <defs>
-    <!-- Deep Glow & Colors -->
-    <linearGradient id="cyber-spider-grad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#ff1744"/>
-      <stop offset="50%" stop-color="#8b5cf6"/>
-      <stop offset="100%" stop-color="#00e5ff"/>
-    </linearGradient>
-
-    <linearGradient id="leg-grad-left" x1="100%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#ff1744"/>
-      <stop offset="100%" stop-color="#ff0055"/>
-    </linearGradient>
-
-    <linearGradient id="leg-grad-right" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#00e5ff"/>
-      <stop offset="100%" stop-color="#0077ff"/>
-    </linearGradient>
-
-    <radialGradient id="aura-glow" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#ff1744" stop-opacity="0.35"/>
-      <stop offset="60%" stop-color="#00e5ff" stop-opacity="0.12"/>
-      <stop offset="100%" stop-color="#030303" stop-opacity="0"/>
+    <!-- Gradients -->
+    <radialGradient id="spider-glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FF1B2D" stop-opacity="0.35"/>
+      <stop offset="60%" stop-color="#C8102E" stop-opacity="0.1"/>
+      <stop offset="100%" stop-color="#020204" stop-opacity="0"/>
     </radialGradient>
 
+    <linearGradient id="body-red" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF1B2D"/>
+      <stop offset="60%" stop-color="#E62429"/>
+      <stop offset="100%" stop-color="#880e4f"/>
+    </linearGradient>
+
+    <linearGradient id="leg-blue" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#21D4FD"/>
+      <stop offset="50%" stop-color="#00A8FF"/>
+      <stop offset="100%" stop-color="#0055ff"/>
+    </linearGradient>
+
     <!-- Filters -->
-    <filter id="neon-glow" x="-30%" y="-30%" width="160%" height="160%">
+    <filter id="core-glow" x="-30%" y="-30%" width="160%" height="160%">
       <feGaussianBlur stdDeviation="4" result="blur1"/>
-      <feGaussianBlur stdDeviation="8" result="blur2"/>
+      <feGaussianBlur stdDeviation="10" result="blur2"/>
       <feMerge>
         <feMergeNode in="blur2"/>
         <feMergeNode in="blur1"/>
@@ -34,131 +30,104 @@
       </feMerge>
     </filter>
 
+    <filter id="blue-edge-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
     <style>
-      @keyframes pulse-core {
-        0%, 100% { transform: scale(1); filter: drop-shadow(0 0 6px #ff1744); }
-        50% { transform: scale(1.03); filter: drop-shadow(0 0 14px #ff1744) drop-shadow(0 0 20px #00e5ff); }
+      @keyframes logo-pulse {
+        0%, 100% { transform: scale(1); filter: drop-shadow(0 0 6px #FF1B2D); }
+        50% { transform: scale(1.02); filter: drop-shadow(0 0 16px #FF1B2D) drop-shadow(0 0 22px #00A8FF); }
       }
       @keyframes orbit-ring {
         0% { transform: rotate(0deg); }
         100% { transform: rotate(360deg); }
       }
-      @keyframes orbit-ring-rev {
-        0% { transform: rotate(360deg); }
-        100% { transform: rotate(0deg); }
-      }
-      @keyframes eye-glow-pulse {
-        0%, 100% { opacity: 0.9; }
-        50% { opacity: 1; filter: drop-shadow(0 0 8px #00e5ff); }
-      }
-      @keyframes circuit-blink {
-        0%, 100% { opacity: 0.4; }
-        50% { opacity: 0.9; }
-      }
-      .pulse-spider { transform-origin: 150px 150px; animation: pulse-core 3.5s ease-in-out infinite; }
-      .ring-cw { transform-origin: 150px 150px; animation: orbit-ring 16s linear infinite; }
-      .ring-ccw { transform-origin: 150px 150px; animation: orbit-ring-rev 22s linear infinite; }
-      .eye-pulse { animation: eye-glow-pulse 2s ease-in-out infinite; }
-      .circuit-pulse { animation: circuit-blink 3s ease-in-out infinite; }
-      .code-font { font-family: 'Fira Code', monospace; font-weight: 900; }
+      .spider-pulse { transform-origin: 120px 120px; animation: logo-pulse 3.5s ease-in-out infinite; }
+      .ring-rotate { transform-origin: 120px 120px; animation: orbit-ring 24s linear infinite; }
+      .mono-text { font-family: 'SF Pro Display', -apple-system, 'Segoe UI', Roboto, 'Fira Code', monospace; }
     </style>
   </defs>
 
-  <!-- Ambient Dark Background & Aura -->
-  <circle cx="150" cy="150" r="145" fill="#07070a"/>
-  <circle cx="150" cy="150" r="140" fill="url(#aura-glow)"/>
+  <!-- Ambient Glow -->
+  <circle cx="120" cy="120" r="110" fill="url(#spider-glow)"/>
 
-  <!-- Outer Orbiting Geometric HUD Rings -->
-  <g class="ring-cw">
-    <circle cx="150" cy="150" r="132" stroke="url(#cyber-spider-grad)" stroke-width="1.6" stroke-dasharray="16 12 32 8" fill="none" opacity="0.8" filter="url(#neon-glow)"/>
-    <circle cx="150" cy="18" r="4" fill="#00e5ff" filter="url(#neon-glow)"/>
-    <circle cx="150" cy="282" r="4" fill="#ff1744" filter="url(#neon-glow)"/>
+  <!-- Rotating Outer Web Reticle -->
+  <g class="ring-rotate">
+    <circle cx="120" cy="120" r="102" fill="none" stroke="#00A8FF" stroke-opacity="0.25" stroke-width="1.2" stroke-dasharray="12 18 36 12"/>
+    <circle cx="120" cy="120" r="90" fill="none" stroke="#FF1B2D" stroke-opacity="0.2" stroke-width="1" stroke-dasharray="6 12"/>
+    <polygon points="120,18 124,26 116,26" fill="#00A8FF"/>
+    <polygon points="120,222 124,214 116,214" fill="#00A8FF"/>
+    <polygon points="18,120 26,124 26,116" fill="#FF1B2D"/>
+    <polygon points="222,120 214,124 214,116" fill="#FF1B2D"/>
   </g>
 
-  <g class="ring-ccw">
-    <polygon points="150,30 254,90 254,210 150,270 46,210 46,90" stroke="#8b5cf6" stroke-width="1" stroke-dasharray="6 8" fill="none" opacity="0.35"/>
-    <line x1="150" y1="20" x2="150" y2="34" stroke="#ff1744" stroke-width="2"/>
-    <line x1="150" y1="266" x2="150" y2="280" stroke="#00e5ff" stroke-width="2"/>
-  </g>
-
-  <!-- Web Radiating Circuit Strands -->
-  <g stroke="#ffffff" stroke-opacity="0.12" stroke-width="1" class="circuit-pulse">
-    <line x1="150" y1="150" x2="40" y2="40"/>
-    <line x1="150" y1="150" x2="260" y2="40"/>
-    <line x1="150" y1="150" x2="40" y2="260"/>
-    <line x1="150" y1="150" x2="260" y2="260"/>
-    <line x1="150" y1="150" x2="20" y2="150"/>
-    <line x1="150" y1="150" x2="280" y2="150"/>
-  </g>
+  <!-- Inner HUD Hexagon Web -->
+  <polygon points="120,44 186,82 186,158 120,196 54,158 54,82" fill="none" stroke="#8B93A7" stroke-opacity="0.15" stroke-width="1"/>
 
   <!-- ======================================================= -->
-  <!-- CYBERNETIC 8-LEGGED DEVELOPER SPIDER EMBLEM              -->
+  <!-- MAIN DEVELOPER SPIDER EMBLEM                            -->
   <!-- ======================================================= -->
-  <g class="pulse-spider">
-    <!-- LEFT 4 CYBERNETIC LEGS (Crimson Neon) -->
-    <!-- Leg L1 (Upper Forward) -->
-    <polyline points="130,120 80,75 50,85 30,65" fill="none" stroke="url(#leg-grad-left)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" filter="url(#neon-glow)"/>
-    <circle cx="80" cy="75" r="2.5" fill="#ffffff"/>
-    <circle cx="50" cy="85" r="2.5" fill="#ffffff"/>
+  <g class="spider-pulse">
+    <!-- EIGHT FUTURISTIC LEGS (Code Brackets & Circuit Traces) -->
+    <!-- Top Left Leg 1 -->
+    <path d="M 104 100 L 76 72 L 44 80 L 32 64" fill="none" stroke="url(#leg-blue)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" filter="url(#blue-edge-glow)"/>
+    <circle cx="32" cy="64" r="2" fill="#21D4FD"/>
 
-    <!-- Leg L2 (Upper Lateral) -->
-    <polyline points="125,135 70,115 40,130 22,125" fill="none" stroke="url(#leg-grad-left)" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" filter="url(#neon-glow)"/>
-    <circle cx="70" cy="115" r="2.5" fill="#ffffff"/>
+    <!-- Upper Left Leg 2 -->
+    <path d="M 100 114 L 64 96 L 36 112 L 20 102" fill="none" stroke="url(#leg-blue)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" filter="url(#blue-edge-glow)"/>
+    <circle cx="20" cy="102" r="2" fill="#21D4FD"/>
 
-    <!-- Leg L3 (Lower Lateral) -->
-    <polyline points="126,155 75,170 48,195 32,205" fill="none" stroke="url(#leg-grad-left)" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" filter="url(#neon-glow)"/>
-    <circle cx="75" cy="170" r="2.5" fill="#ffffff"/>
+    <!-- Lower Left Leg 3 -->
+    <path d="M 100 130 L 62 144 L 38 134 L 24 148" fill="none" stroke="url(#leg-blue)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" filter="url(#blue-edge-glow)"/>
+    <circle cx="24" cy="148" r="2" fill="#21D4FD"/>
 
-    <!-- Leg L4 (Lower Rear) -->
-    <polyline points="132,175 88,215 62,240 50,260" fill="none" stroke="url(#leg-grad-left)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" filter="url(#neon-glow)"/>
-    <circle cx="88" cy="215" r="2.5" fill="#ffffff"/>
+    <!-- Bottom Left Leg 4 -->
+    <path d="M 106 142 L 72 168 L 52 162 L 40 184" fill="none" stroke="url(#leg-blue)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" filter="url(#blue-edge-glow)"/>
+    <circle cx="40" cy="184" r="2" fill="#21D4FD"/>
 
-    <!-- RIGHT 4 CYBERNETIC LEGS (Electric Blue Neon) -->
-    <!-- Leg R1 (Upper Forward) -->
-    <polyline points="170,120 220,75 250,85 270,65" fill="none" stroke="url(#leg-grad-right)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" filter="url(#neon-glow)"/>
-    <circle cx="220" cy="75" r="2.5" fill="#ffffff"/>
-    <circle cx="250" cy="85" r="2.5" fill="#ffffff"/>
+    <!-- Top Right Leg 5 -->
+    <path d="M 136 100 L 164 72 L 196 80 L 208 64" fill="none" stroke="url(#leg-blue)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" filter="url(#blue-edge-glow)"/>
+    <circle cx="208" cy="64" r="2" fill="#21D4FD"/>
 
-    <!-- Leg R2 (Upper Lateral) -->
-    <polyline points="175,135 230,115 260,130 278,125" fill="none" stroke="url(#leg-grad-right)" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" filter="url(#neon-glow)"/>
-    <circle cx="230" cy="115" r="2.5" fill="#ffffff"/>
+    <!-- Upper Right Leg 6 -->
+    <path d="M 140 114 L 176 96 L 204 112 L 220 102" fill="none" stroke="url(#leg-blue)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" filter="url(#blue-edge-glow)"/>
+    <circle cx="220" cy="102" r="2" fill="#21D4FD"/>
 
-    <!-- Leg R3 (Lower Lateral) -->
-    <polyline points="174,155 225,170 252,195 268,205" fill="none" stroke="url(#leg-grad-right)" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" filter="url(#neon-glow)"/>
-    <circle cx="225" cy="170" r="2.5" fill="#ffffff"/>
+    <!-- Lower Right Leg 7 -->
+    <path d="M 140 130 L 178 144 L 202 134 L 216 148" fill="none" stroke="url(#leg-blue)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" filter="url(#blue-edge-glow)"/>
+    <circle cx="216" cy="148" r="2" fill="#21D4FD"/>
 
-    <!-- Leg R4 (Lower Rear) -->
-    <polyline points="168,175 212,215 238,240 250,260" fill="none" stroke="url(#leg-grad-right)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" filter="url(#neon-glow)"/>
-    <circle cx="212" cy="215" r="2.5" fill="#ffffff"/>
+    <!-- Bottom Right Leg 8 -->
+    <path d="M 134 142 L 168 168 L 188 162 L 200 184" fill="none" stroke="url(#leg-blue)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" filter="url(#blue-edge-glow)"/>
+    <circle cx="200" cy="184" r="2" fill="#21D4FD"/>
 
-    <!-- SPIDER HEAD / CEPHALOTHORAX (Developer Code Tag < >) -->
-    <path d="M 150 78 L 175 105 L 150 125 L 125 105 Z" fill="#0d0d14" stroke="#ff1744" stroke-width="2.2" filter="url(#neon-glow)"/>
+    <!-- SPIDER HEAD / CEPHALOTHORAX (Diamond Tech Shield) -->
+    <polygon points="120,70 136,88 120,98 104,88" fill="#050509" stroke="#FF1B2D" stroke-width="2" filter="url(#core-glow)"/>
+    <!-- Glowing Eye Nodes -->
+    <circle cx="114" cy="85" r="2.5" fill="#21D4FD"/>
+    <circle cx="126" cy="85" r="2.5" fill="#21D4FD"/>
+    <!-- Head Bracket Monogram -->
+    <polygon points="120,74 126,82 120,86 114,82" fill="#FF1B2D"/>
 
-    <!-- Dual Glowing Spider Eyes -->
-    <g class="eye-pulse">
-      <polygon points="144,98 135,93 138,104" fill="#00e5ff" filter="url(#neon-glow)"/>
-      <polygon points="156,98 165,93 162,104" fill="#00e5ff" filter="url(#neon-glow)"/>
-      <circle cx="140" cy="107" r="1.5" fill="#ffffff"/>
-      <circle cx="160" cy="107" r="1.5" fill="#ffffff"/>
-    </g>
+    <!-- SPIDER ABDOMEN (Hexagonal Cyber Core) -->
+    <polygon points="120,102 144,116 140,154 120,172 100,154 96,116" fill="#09090F" stroke="#FF1B2D" stroke-width="2" filter="url(#core-glow)"/>
+    <polygon points="120,106 138,118 135,148 120,164 105,148 102,118" fill="#050509" stroke="#00A8FF" stroke-width="1"/>
 
-    <!-- SPIDER ABDOMEN (Developer Bracket Shell { AS } ) -->
-    <!-- Outer Shield Body -->
-    <path d="M 150 126 C 178 126 192 152 186 195 C 180 230 162 250 150 256 C 138 250 120 230 114 195 C 108 152 122 126 150 126 Z"
-          fill="#0a0b12" stroke="url(#cyber-spider-grad)" stroke-width="2.5" filter="url(#neon-glow)"/>
-
-    <!-- Inner Core Cutout: </> Brackets -->
-    <path d="M 134 165 L 124 175 L 134 185" fill="none" stroke="#ff1744" stroke-width="2.2" stroke-linecap="round"/>
-    <path d="M 166 165 L 176 175 L 166 185" fill="none" stroke="#00e5ff" stroke-width="2.2" stroke-linecap="round"/>
-    <line x1="154" y1="162" x2="146" y2="188" stroke="#8b5cf6" stroke-width="2" stroke-linecap="round"/>
-
-    <!-- AS Monogram Glyph (Anjan Shetty Developer Initials) -->
-    <text x="150" y="214" text-anchor="middle" fill="#ffffff" font-size="16" font-weight="900" class="code-font" letter-spacing="2">
+    <!-- ABDOMEN EMBED: </> AND AS MONOGRAM -->
+    <text x="120" y="132" text-anchor="middle" fill="#F5F7FA" font-size="13" font-weight="900" class="mono-text" letter-spacing="1">
+      &lt;/&gt;
+    </text>
+    <text x="120" y="152" text-anchor="middle" fill="#21D4FD" font-size="9" font-weight="900" class="mono-text" letter-spacing="3">
       AS
     </text>
 
-    <!-- Abdomen Micro Circuit Traces -->
-    <line x1="150" y1="220" x2="150" y2="246" stroke="#00e5ff" stroke-width="1.5" stroke-dasharray="3 3"/>
-    <circle cx="150" cy="248" r="2" fill="#00e5ff"/>
+    <!-- Center Abdomen Energy Spines -->
+    <line x1="120" y1="102" x2="120" y2="120" stroke="#FF1B2D" stroke-width="1.5"/>
+    <line x1="120" y1="156" x2="120" y2="170" stroke="#FF1B2D" stroke-width="1.5"/>
   </g>
 </svg>

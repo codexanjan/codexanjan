@@ -1,77 +1,79 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 45" width="100%" height="100%">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 36" width="100%" height="100%">
   <defs>
-    <linearGradient id="web-beam" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#ff1744" stop-opacity="0"/>
-      <stop offset="20%" stop-color="#ff1744" stop-opacity="0.9"/>
-      <stop offset="50%" stop-color="#ffffff"/>
-      <stop offset="80%" stop-color="#00e5ff" stop-opacity="0.9"/>
-      <stop offset="100%" stop-color="#00e5ff" stop-opacity="0"/>
+    <linearGradient id="strand-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FF1B2D" stop-opacity="0"/>
+      <stop offset="15%" stop-color="#FF1B2D" stop-opacity="0.8"/>
+      <stop offset="48%" stop-color="#21D4FD" stop-opacity="0.9"/>
+      <stop offset="50%" stop-color="#F5F7FA"/>
+      <stop offset="52%" stop-color="#21D4FD" stop-opacity="0.9"/>
+      <stop offset="85%" stop-color="#00A8FF" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#00A8FF" stop-opacity="0"/>
     </linearGradient>
 
-    <filter id="web-glow" x="-20%" y="-40%" width="140%" height="180%">
-      <feGaussianBlur stdDeviation="3" result="blur"/>
+    <filter id="center-node-glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="3" result="blur1"/>
+      <feGaussianBlur stdDeviation="6" result="blur2"/>
       <feMerge>
-        <feMergeNode in="blur"/>
+        <feMergeNode in="blur2"/>
+        <feMergeNode in="blur1"/>
         <feMergeNode in="SourceGraphic"/>
       </feMerge>
     </filter>
 
     <style>
-      @keyframes crawl-motion {
-        0%, 100% { transform: translateY(0px) scale(1); }
-        50% { transform: translateY(-3px) scale(1.05); filter: drop-shadow(0 0 6px #ff1744) drop-shadow(0 0 10px #00e5ff); }
+      @keyframes travel-light {
+        0% { stroke-dashoffset: 240; }
+        100% { stroke-dashoffset: -240; }
       }
-      @keyframes web-strand-pulse {
-        0%, 100% { opacity: 0.3; }
-        50% { opacity: 0.8; }
+      @keyframes core-pulse {
+        0%, 100% { transform: scale(1); filter: drop-shadow(0 0 4px #FF1B2D); }
+        50% { transform: scale(1.1); filter: drop-shadow(0 0 10px #21D4FD); }
       }
-      .spider-crawl { animation: crawl-motion 3s ease-in-out infinite; transform-origin: 500px 22px; }
-      .strand-pulse { animation: web-strand-pulse 4s ease-in-out infinite; }
+      .laser-travel { stroke-dasharray: 60 180; animation: travel-light 4s linear infinite; }
+      .pulse-node { transform-origin: 600px 18px; animation: core-pulse 3s ease-in-out infinite; }
     </style>
   </defs>
 
-  <!-- Dark Base Guide -->
-  <line x1="80" y1="22" x2="920" y2="22" stroke="#161b26" stroke-width="1"/>
+  <!-- Base Web Track (Dim Baseline) -->
+  <line x1="80" y1="18" x2="1120" y2="18" stroke="#8B93A7" stroke-opacity="0.12" stroke-width="1"/>
 
-  <!-- Glowing Web Strand Line -->
-  <line x1="60" y1="22" x2="430" y2="22" stroke="url(#web-beam)" stroke-width="2" filter="url(#web-glow)"/>
-  <line x1="570" y1="22" x2="940" y2="22" stroke="url(#web-beam)" stroke-width="2" filter="url(#web-glow)"/>
+  <!-- Left Main Web Strand -->
+  <line x1="120" y1="18" x2="540" y2="18" stroke="url(#strand-grad)" stroke-width="1.8"/>
+  <line x1="120" y1="18" x2="540" y2="18" stroke="#FF1B2D" stroke-width="2" class="laser-travel" opacity="0.9"/>
 
-  <!-- Intricate Left Web Strands -->
-  <g stroke="#ff1744" stroke-opacity="0.35" stroke-width="1" class="strand-pulse">
-    <path d="M 120 22 L 140 10 M 160 22 L 180 34 M 200 22 L 220 10 M 240 22 L 260 34 M 280 22 L 300 10"/>
-    <path d="M 140 10 Q 170 14 200 10 Q 230 14 260 10" fill="none"/>
-    <circle cx="140" cy="10" r="2" fill="#ff1744"/>
-    <circle cx="220" cy="10" r="2" fill="#ff1744"/>
-    <circle cx="300" cy="10" r="2" fill="#ff1744"/>
+  <!-- Right Main Web Strand -->
+  <line x1="660" y1="18" x2="1080" y2="18" stroke="url(#strand-grad)" stroke-width="1.8"/>
+  <line x1="660" y1="18" x2="1080" y2="18" stroke="#00A8FF" stroke-width="2" class="laser-travel" opacity="0.9"/>
+
+  <!-- Subtle Radiating Corner Web Geometry (Left Flank) -->
+  <path d="M 520 18 L 540 10 M 500 18 L 525 26 M 470 18 L 490 10" stroke="#FF1B2D" stroke-opacity="0.35" stroke-width="1"/>
+  <circle cx="540" cy="10" r="1.5" fill="#FF1B2D"/>
+  <circle cx="525" cy="26" r="1.5" fill="#FF1B2D"/>
+  <circle cx="490" cy="10" r="1.5" fill="#FF1B2D"/>
+
+  <!-- Subtle Radiating Corner Web Geometry (Right Flank) -->
+  <path d="M 680 18 L 660 10 M 700 18 L 675 26 M 730 18 L 710 10" stroke="#00A8FF" stroke-opacity="0.35" stroke-width="1"/>
+  <circle cx="660" cy="10" r="1.5" fill="#00A8FF"/>
+  <circle cx="675" cy="26" r="1.5" fill="#00A8FF"/>
+  <circle cx="710" cy="10" r="1.5" fill="#00A8FF"/>
+
+  <!-- Center Web / Spider Nexus Node -->
+  <g class="pulse-node">
+    <!-- Outer Diamond Reticle -->
+    <polygon points="600,4 624,18 600,32 576,18" fill="#050509" stroke="#00A8FF" stroke-width="1.5" filter="url(#center-node-glow)"/>
+    <polygon points="600,8 616,18 600,28 584,18" fill="#09090F" stroke="#FF1B2D" stroke-width="1"/>
+
+    <!-- Central Spider Core Glyph -->
+    <polygon points="600,12 604,16 600,20 596,16" fill="#FF1B2D"/>
+    <polygon points="600,19 603,23 600,25 597,23" fill="#21D4FD"/>
+
+    <!-- Micro Spider Bracket Legs -->
+    <path d="M 596 15 L 590 12 M 604 15 L 610 12" stroke="#FF1B2D" stroke-width="1.2" fill="none"/>
+    <path d="M 595 18 L 588 18 M 605 18 L 612 18" stroke="#F5F7FA" stroke-width="1.2" fill="none"/>
+    <path d="M 596 21 L 590 24 M 604 21 L 610 24" stroke="#00A8FF" stroke-width="1.2" fill="none"/>
   </g>
 
-  <!-- Intricate Right Web Strands -->
-  <g stroke="#00e5ff" stroke-opacity="0.35" stroke-width="1" class="strand-pulse">
-    <path d="M 880 22 L 860 10 M 840 22 L 820 34 M 800 22 L 780 10 M 760 22 L 740 34 M 720 22 L 700 10"/>
-    <path d="M 860 10 Q 830 14 800 10 Q 770 14 740 10" fill="none"/>
-    <circle cx="860" cy="10" r="2" fill="#00e5ff"/>
-    <circle cx="780" cy="10" r="2" fill="#00e5ff"/>
-    <circle cx="700" cy="10" r="2" fill="#00e5ff"/>
-  </g>
-
-  <!-- Center Moving Cyber Spider Icon -->
-  <g class="spider-crawl" transform="translate(0, 0)">
-    <!-- Hexagonal Cyber Node Base -->
-    <polygon points="500,6 524,22 500,38 476,22" fill="#080b14" stroke="#8b5cf6" stroke-width="1.6"/>
-    <circle cx="500" cy="22" r="10" fill="#040508" stroke="#334155" stroke-width="1"/>
-
-    <!-- Mini Cyber Spider Body -->
-    <polygon points="500,14 505,19 500,26 495,19" fill="#ff1744"/>
-    <polygon points="500,24 504,29 500,32 496,29" fill="#00e5ff"/>
-    
-    <!-- Mini Segmented Legs -->
-    <path d="M 496 17 L 488 12 M 504 17 L 512 12" stroke="#ff1744" stroke-width="1.2" fill="none"/>
-    <path d="M 495 22 L 485 22 M 505 22 L 515 22" stroke="#ffffff" stroke-width="1.2" fill="none"/>
-    <path d="M 496 27 L 488 32 M 504 27 L 512 32" stroke="#00e5ff" stroke-width="1.2" fill="none"/>
-  </g>
-
-  <!-- Flanking Neon Brackets -->
-  <path d="M 456 16 L 446 22 L 456 28" fill="none" stroke="#ff1744" stroke-width="1.8"/>
-  <path d="M 544 16 L 554 22 L 544 28" fill="none" stroke="#00e5ff" stroke-width="1.8"/>
+  <!-- Wing Brackets -->
+  <path d="M 562 12 L 554 18 L 562 24" fill="none" stroke="#FF1B2D" stroke-width="1.5"/>
+  <path d="M 638 12 L 646 18 L 638 24" fill="none" stroke="#00A8FF" stroke-width="1.5"/>
 </svg>
