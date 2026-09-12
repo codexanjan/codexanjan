@@ -1,112 +1,194 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 230" width="100%" height="100%">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 380" width="100%" height="100%">
   <defs>
-    <!-- Background Gradient -->
-    <linearGradient id="grid-card-bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#06070D"/>
-      <stop offset="50%" stop-color="#090C16"/>
-      <stop offset="100%" stop-color="#05060A"/>
+    <!-- Background Gradients -->
+    <linearGradient id="sg-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#020204"/>
+      <stop offset="40%" stop-color="#06070E"/>
+      <stop offset="70%" stop-color="#090914"/>
+      <stop offset="100%" stop-color="#030407"/>
     </linearGradient>
 
-    <linearGradient id="laser-sweep-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+    <linearGradient id="sg-laser-scan" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#00E5FF" stop-opacity="0"/>
-      <stop offset="50%" stop-color="#00E5FF" stop-opacity="0.3"/>
+      <stop offset="50%" stop-color="#FF1B2D" stop-opacity="0.8"/>
       <stop offset="100%" stop-color="#00E5FF" stop-opacity="0"/>
     </linearGradient>
 
+    <linearGradient id="sg-radar-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00E5FF" stop-opacity="0"/>
+      <stop offset="60%" stop-color="#00E5FF" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#00E5FF" stop-opacity="0"/>
+    </linearGradient>
+
+    <linearGradient id="gold-cell-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFB300"/>
+      <stop offset="100%" stop-color="#FFD700"/>
+    </linearGradient>
+
     <!-- Filters -->
-    <filter id="gold-glow" x="-30%" y="-30%" width="160%" height="160%">
-      <feGaussianBlur stdDeviation="3" result="blur"/>
+    <filter id="sg-glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="3.5" result="blur"/>
       <feMerge>
         <feMergeNode in="blur"/>
         <feMergeNode in="SourceGraphic"/>
       </feMerge>
     </filter>
 
-    <filter id="spider-beacon" x="-40%" y="-40%" width="180%" height="180%">
-      <feGaussianBlur stdDeviation="4" result="blur"/>
+    <filter id="spider-beacon-glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
       <feMerge>
         <feMergeNode in="blur"/>
         <feMergeNode in="SourceGraphic"/>
       </feMerge>
     </filter>
 
+    <!-- Keyframe Animations -->
     <style>
-      .mono-text { font-family: 'Fira Code', 'Consolas', monospace; }
+      .sg-title {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+        font-weight: 900;
+        fill: #FFFFFF;
+        filter: drop-shadow(0 0 12px rgba(33, 212, 253, 0.7)) drop-shadow(0 0 22px rgba(255, 27, 45, 0.6));
+      }
+      .sg-sub {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+        font-weight: 800;
+      }
+      .sg-mono {
+        font-family: 'Fira Code', 'Consolas', 'Courier New', monospace;
+        font-weight: 800;
+      }
 
-      @keyframes cell-shimmer-1 {
+      @keyframes laser-cycle-sg {
+        0% { stroke-dashoffset: 1200; }
+        100% { stroke-dashoffset: -1200; }
+      }
+      @keyframes scan-horiz-sg {
+        0% { transform: translateY(12px); opacity: 0; }
+        50% { opacity: 0.7; }
+        100% { transform: translateY(368px); opacity: 0; }
+      }
+      @keyframes beacon-ping-sg {
+        0%, 100% { opacity: 0.35; transform: scale(1); }
+        50% { opacity: 1; transform: scale(1.35); filter: drop-shadow(0 0 6px #00E5FF); }
+      }
+      @keyframes web-shimmer-sg {
+        0%, 100% { opacity: 0.22; }
+        50% { opacity: 0.6; }
+      }
+      @keyframes radar-sweep-matrix {
+        0% { transform: translateX(0); opacity: 0; }
+        20% { opacity: 0.85; }
+        80% { opacity: 0.85; }
+        100% { transform: translateX(815px); opacity: 0; }
+      }
+      @keyframes cell-pulse-1 {
         0%, 100% { opacity: 0.75; fill: #FFB300; }
         50% { opacity: 1; fill: #FFD700; filter: drop-shadow(0 0 6px #FFD700); }
       }
-      @keyframes cell-shimmer-2 {
+      @keyframes cell-pulse-2 {
         0%, 100% { opacity: 0.8; fill: #FFD700; }
         50% { opacity: 1; fill: #FF1B2D; filter: drop-shadow(0 0 8px #FF1B2D); }
       }
-      @keyframes cell-shimmer-3 {
+      @keyframes cell-pulse-3 {
         0%, 100% { opacity: 0.7; fill: #FFD700; }
         50% { opacity: 1; fill: #00E5FF; filter: drop-shadow(0 0 6px #00E5FF); }
       }
-      @keyframes spider-crest-pulse {
+      @keyframes spider-crest-float {
         0%, 100% { transform: scale(1); filter: drop-shadow(0 0 6px #FFD700); }
-        50% { transform: scale(1.12); filter: drop-shadow(0 0 16px #FF1B2D) drop-shadow(0 0 22px #FFD700); }
-      }
-      @keyframes radar-sweep-grid {
-        0% { transform: translateX(0); opacity: 0; }
-        25% { opacity: 0.75; }
-        75% { opacity: 0.75; }
-        100% { transform: translateX(810px); opacity: 0; }
-      }
-      @keyframes beacon-blink {
-        0%, 100% { opacity: 0.3; }
-        50% { opacity: 1; filter: drop-shadow(0 0 6px #00E5FF); }
+        50% { transform: scale(1.15); filter: drop-shadow(0 0 16px #FF1B2D) drop-shadow(0 0 24px #FFD700); }
       }
 
-      .pulse-1 { animation: cell-shimmer-1 3s ease-in-out infinite; }
-      .pulse-2 { animation: cell-shimmer-2 2.4s ease-in-out infinite; }
-      .pulse-3 { animation: cell-shimmer-3 3.6s ease-in-out infinite; }
-      .spider-crest { transform-origin: 18px 12px; animation: spider-crest-pulse 2.8s ease-in-out infinite; }
-      .sweep-laser { animation: radar-sweep-grid 4.5s linear infinite; }
-      .status-dot { animation: beacon-blink 1.8s ease-in-out infinite; }
+      .sg-laser { stroke-dasharray: 140 400; animation: laser-cycle-sg 7s linear infinite; }
+      .sg-scan { animation: scan-horiz-sg 5.5s linear infinite; }
+      .sg-beacon { transform-origin: center; animation: beacon-ping-sg 2s ease-in-out infinite; }
+      .sg-web { animation: web-shimmer-sg 3.2s ease-in-out infinite; }
+      .sg-radar { animation: radar-sweep-matrix 4.8s linear infinite; }
+      .pulse-1 { animation: cell-pulse-1 3s ease-in-out infinite; }
+      .pulse-2 { animation: cell-pulse-2 2.4s ease-in-out infinite; }
+      .pulse-3 { animation: cell-pulse-3 3.6s ease-in-out infinite; }
+      .spider-crest-anim { transform-origin: 18px 12px; animation: spider-crest-float 2.8s ease-in-out infinite; }
     </style>
   </defs>
 
-  <!-- Outer Rounded Frame -->
-  <rect x="15" y="15" width="870" height="200" rx="14" fill="url(#grid-card-bg)" stroke="#FFD700" stroke-opacity="0.35" stroke-width="1.2"/>
-  <rect x="18" y="18" width="864" height="194" rx="11" fill="none" stroke="#1E293B" stroke-width="1"/>
+  <!-- Dark Base Chassis -->
+  <rect x="8" y="8" width="984" height="364" rx="10" fill="url(#sg-bg)" stroke="#8B93A7" stroke-opacity="0.2" stroke-width="1.2"/>
 
-  <!-- Corner Brackets -->
-  <path d="M 28 35 L 28 25 L 38 25" fill="none" stroke="#FF1B2D" stroke-width="2"/>
-  <path d="M 872 35 L 872 25 L 862 25" fill="none" stroke="#00E5FF" stroke-width="2"/>
-  <path d="M 28 195 L 28 205 L 38 205" fill="none" stroke="#FF1B2D" stroke-width="2"/>
-  <path d="M 872 195 L 872 205 L 862 205" fill="none" stroke="#00E5FF" stroke-width="2"/>
+  <!-- Background Spider Web Geometry (Left & Right Flanks) -->
+  <g stroke="#21D4FD" stroke-width="1.2" fill="none" class="sg-web">
+    <line x1="8" y1="8" x2="160" y2="90"/>
+    <line x1="8" y1="8" x2="90" y2="180"/>
+    <path d="M 45 28 Q 80 55 28 90"/>
+    <path d="M 90 55 Q 145 100 55 145"/>
+    <path d="M 135 85 Q 210 145 85 205"/>
+  </g>
+  <g stroke="#FF1B2D" stroke-width="1.2" fill="none" class="sg-web">
+    <line x1="992" y1="8" x2="840" y2="90"/>
+    <line x1="992" y1="8" x2="910" y2="180"/>
+    <path d="M 955 28 Q 920 55 972 90"/>
+    <path d="M 910 55 Q 855 100 945 145"/>
+    <path d="M 865 85 Q 790 145 915 205"/>
+  </g>
 
-  <!-- ======================================================== -->
-  <!-- HEADER ROW                                               -->
-  <!-- ======================================================== -->
-  <g transform="translate(45, 42)">
-    <!-- Spider Mask Icon -->
-    <polygon points="0,-7 5,-2 0,4 -5,-2" fill="#FF1B2D"/>
-    <polygon points="0,2 3,6 0,9 -3,6" fill="#FFD700"/>
+  <!-- Outer Angular Shield Frame Base -->
+  <path d="M 32 10 L 968 10 L 990 32 L 990 348 L 968 370 L 32 370 L 10 348 L 10 32 Z" fill="none" stroke="#21D4FD" stroke-opacity="0.35" stroke-width="2"/>
 
-    <text x="14" y="3" dominant-baseline="central" fill="#FFD700" font-size="11" font-weight="900" class="mono-text" letter-spacing="1.5">
-      SPIDER GRID // ACTIVE PATROL CADENCE
+  <!-- Animated Running Laser Beam on Shield Border -->
+  <path d="M 32 10 L 968 10 L 990 32 L 990 348 L 968 370 L 32 370 L 10 348 L 10 32 Z" fill="none" stroke="#00E5FF" stroke-width="2.5" class="sg-laser" filter="url(#sg-glow)"/>
+
+  <!-- Animated Scanline Sweep Across Card -->
+  <line x1="20" y1="0" x2="980" y2="0" stroke="url(#sg-laser-scan)" stroke-width="1.5" class="sg-scan"/>
+
+  <!-- ========================================================================= -->
+  <!-- TOP ROW: HIGH-TECH CORNER BADGES & CENTER TITLE                           -->
+  <!-- ========================================================================= -->
+  <!-- Top Left Badge -->
+  <g transform="translate(30, 18)">
+    <rect x="0" y="0" width="270" height="28" rx="4" fill="#09090F" stroke="#21D4FD" stroke-width="1.5"/>
+    <circle cx="16" cy="14" r="4.5" fill="#21D4FD" class="sg-beacon" filter="url(#sg-glow)"/>
+    <text x="32" y="19" fill="#FFFFFF" font-size="12" class="sg-sub" letter-spacing="1.5">SPIDER-GRID // PATROL CADENCE</text>
+  </g>
+
+  <!-- Top Right Badge -->
+  <g transform="translate(700, 18)">
+    <rect x="0" y="0" width="270" height="28" rx="4" fill="#09090F" stroke="#FF1B2D" stroke-width="1.5"/>
+    <circle cx="16" cy="14" r="4.5" fill="#FF1B2D" class="sg-beacon" filter="url(#sg-glow)"/>
+    <text x="32" y="19" fill="#FF1744" font-size="12" class="sg-sub" letter-spacing="1.5">STATUS // ACTIVE SURVEILLANCE</text>
+  </g>
+
+  <!-- Main Center Header -->
+  <g transform="translate(500, 68)" text-anchor="middle">
+    <!-- Mini Spider Mask Icon -->
+    <g transform="translate(-165, -12)">
+      <polygon points="0,-8 6,-2 0,5 -6,-2" fill="#FF1B2D"/>
+      <polygon points="0,3 4,7 0,11 -4,7" fill="#FFD700"/>
+    </g>
+    <g transform="translate(165, -12)">
+      <polygon points="0,-8 6,-2 0,5 -6,-2" fill="#FF1B2D"/>
+      <polygon points="0,3 4,7 0,11 -4,7" fill="#FFD700"/>
+    </g>
+    <text x="0" y="0" font-size="19" class="sg-title" letter-spacing="3.5">
+      SPIDER-VERSE PATROL // CODE MATRIX
+    </text>
+    <text x="0" y="20" fill="#8B93A7" font-size="11" class="sg-mono" letter-spacing="2">
+      EARTH-CODEX-01 // MULTIVERSE REPOSITORY TELEMETRY
     </text>
   </g>
 
-  <g transform="translate(850, 42)" text-anchor="end">
-    <circle cx="-135" cy="0" r="3" fill="#00E5FF" class="status-dot"/>
-    <text x="0" y="3" dominant-baseline="central" fill="#8B93A7" font-size="9.5" font-weight="800" class="mono-text" letter-spacing="1">
-      STATUS: SURVEILLANCE
-    </text>
-  </g>
+  <!-- ========================================================================= -->
+  <!-- CONTRIBUTION HEATMAP MATRIX CONTAINER                                     -->
+  <!-- ========================================================================= -->
+  <!-- Inner Matrix Backdrop Screen -->
+  <rect x="80" y="105" width="840" height="205" rx="8" fill="#06070E" stroke="#1E293B" stroke-width="1.2"/>
 
-  <!-- ======================================================== -->
-  <!-- CONTRIBUTION HEATMAP GRID (38 columns x 7 rows)         -->
-  <!-- Cell: 16x16, gap: 5 -> pitch: 21                        -->
-  <!-- X start: 50, Y start: 62                                -->
-  <!-- Total width: 38 * 21 = 798, Total height: 7 * 21 = 147   -->
-  <!-- ======================================================== -->
-  <g transform="translate(50, 62)">
+  <!-- Matrix Corner Target Accents -->
+  <path d="M 80 120 L 80 105 L 95 105" fill="none" stroke="#FF1B2D" stroke-width="2"/>
+  <path d="M 920 120 L 920 105 L 905 105" fill="none" stroke="#00E5FF" stroke-width="2"/>
+  <path d="M 80 295 L 80 310 L 95 310" fill="none" stroke="#00E5FF" stroke-width="2"/>
+  <path d="M 920 295 L 920 310 L 905 310" fill="none" stroke="#FF1B2D" stroke-width="2"/>
 
+  <!-- Grid Origin: 38 columns x 7 rows. Pitch: 21px, Cell: 16x16, Radius: 3px -->
+  <g transform="translate(100, 120)">
     <!-- Inactive Base Matrix (All Cells generated with base dark slate) -->
     <!-- Pattern of active cells matching the density in Image 3 -->
 
@@ -411,15 +493,24 @@
       <rect x="756" y="0" width="16" height="16" rx="3" fill="#FFD700" class="pulse-1"/>
       <rect x="777" y="0" width="16" height="16" rx="3" fill="#0E1220"/>
     </g>
-
   </g>
 
-  <!-- Laser Sweep Scanner -->
-    <!-- Dynamic Laser Surveillance Scanner -->
-  <g class="sweep-laser">
-    <rect x="30" y="20" width="30" height="190" fill="url(#laser-sweep-grad)"/>
-    <line x1="45" y1="20" x2="45" y2="210" stroke="#00E5FF" stroke-width="2" opacity="0.75" filter="url(#gold-glow)"/>
-    <circle cx="45" cy="20" r="3" fill="#00E5FF"/>
-    <circle cx="45" cy="210" r="3" fill="#00E5FF"/>
+  <!-- Dynamic Radar Laser Surveillance Scanner -->
+  <g class="sg-radar" transform="translate(90, 105)">
+    <rect x="0" y="0" width="30" height="205" fill="url(#sg-radar-grad)"/>
+    <line x1="15" y1="0" x2="15" y2="205" stroke="#00E5FF" stroke-width="2" opacity="0.8" filter="url(#sg-glow)"/>
+    <circle cx="15" cy="0" r="3" fill="#00E5FF"/>
+    <circle cx="15" cy="205" r="3" fill="#00E5FF"/>
+  </g>
+
+  <!-- ========================================================================= -->
+  <!-- BOTTOM TELEMETRY STATUS BAR                                               -->
+  <!-- ========================================================================= -->
+  <g transform="translate(500, 342)" text-anchor="middle">
+    <rect x="-380" y="-14" width="760" height="26" rx="6" fill="#090B16" stroke="#334155" stroke-opacity="0.4" stroke-width="1"/>
+    <circle cx="-355" cy="-1" r="3.5" fill="#00E5FF" class="sg-beacon"/>
+    <text x="0" y="0" dominant-baseline="central" fill="#FFFFFF" font-size="11" class="sg-mono" letter-spacing="1.8">
+      <tspan fill="#00E5FF">88+ COMMITS</tspan> // <tspan fill="#FFD700">CURRENT STREAK: 3 DAYS</tspan> // <tspan fill="#FF1744">LONGEST: 4 DAYS</tspan> // <tspan fill="#8B93A7">RANK: A+ VERIFIED</tspan>
+    </text>
   </g>
 </svg>

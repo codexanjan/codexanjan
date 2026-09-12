@@ -1,0 +1,344 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 440" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradients -->
+    <linearGradient id="tp-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#020205"/>
+      <stop offset="50%" stop-color="#070914"/>
+      <stop offset="100%" stop-color="#040508"/>
+    </linearGradient>
+
+    <linearGradient id="card-panel-bg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0A0D1B"/>
+      <stop offset="100%" stop-color="#06070E"/>
+    </linearGradient>
+
+    <linearGradient id="laser-scan-tp" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FF1B2D" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#00E5FF" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#FF1B2D" stop-opacity="0"/>
+    </linearGradient>
+
+    <linearGradient id="tp-gold-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FFB300"/>
+      <stop offset="100%" stop-color="#FFD700"/>
+    </linearGradient>
+
+    <linearGradient id="tp-cyan-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00A8FF"/>
+      <stop offset="100%" stop-color="#00E5FF"/>
+    </linearGradient>
+
+    <linearGradient id="tp-red-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FF1744"/>
+      <stop offset="100%" stop-color="#FF5252"/>
+    </linearGradient>
+
+    <linearGradient id="tp-purple-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#7C4DFF"/>
+      <stop offset="100%" stop-color="#B388FF"/>
+    </linearGradient>
+
+    <!-- Neon Glow Filter -->
+    <filter id="tp-glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="3.5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="tp-gauge-glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <style>
+      .tp-title {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+        font-weight: 900;
+        fill: #FFFFFF;
+        filter: drop-shadow(0 0 10px rgba(0, 229, 255, 0.7)) drop-shadow(0 0 20px rgba(255, 27, 45, 0.5));
+      }
+      .tp-sub {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+        font-weight: 800;
+      }
+      .tp-mono {
+        font-family: 'Fira Code', 'Consolas', 'Courier New', monospace;
+        font-weight: 800;
+      }
+
+      @keyframes laser-run-tp {
+        0% { stroke-dashoffset: 1200; }
+        100% { stroke-dashoffset: -1200; }
+      }
+      @keyframes scan-vert-tp {
+        0% { transform: translateY(12px); opacity: 0; }
+        50% { opacity: 0.65; }
+        100% { transform: translateY(428px); opacity: 0; }
+      }
+      @keyframes beacon-ping-tp {
+        0%, 100% { opacity: 0.4; transform: scale(1); }
+        50% { opacity: 1; transform: scale(1.3); filter: drop-shadow(0 0 6px #FFD700); }
+      }
+      @keyframes web-faint-tp {
+        0%, 100% { opacity: 0.2; }
+        50% { opacity: 0.5; }
+      }
+      @keyframes xp-ring-spin {
+        0% { stroke-dashoffset: 80; }
+        50% { stroke-dashoffset: 65; }
+        100% { stroke-dashoffset: 80; }
+      }
+
+      .tp-laser { stroke-dasharray: 140 400; animation: laser-run-tp 7s linear infinite; }
+      .tp-scan { animation: scan-vert-tp 5.8s linear infinite; }
+      .tp-beacon { transform-origin: center; animation: beacon-ping-tp 2.2s ease-in-out infinite; }
+      .tp-web { animation: web-faint-tp 3.5s ease-in-out infinite; }
+      .tp-ring { animation: xp-ring-spin 3s ease-in-out infinite; }
+    </style>
+  </defs>
+
+  <!-- Dark Base Chassis -->
+  <rect x="8" y="8" width="984" height="424" rx="12" fill="url(#tp-bg)" stroke="#8B93A7" stroke-opacity="0.2" stroke-width="1.2"/>
+
+  <!-- Left & Right Web Corner Geometry -->
+  <g stroke="#21D4FD" stroke-width="1.2" fill="none" class="tp-web">
+    <line x1="8" y1="8" x2="160" y2="90"/>
+    <line x1="8" y1="8" x2="90" y2="180"/>
+    <path d="M 45 28 Q 80 55 28 90"/>
+    <path d="M 90 55 Q 145 100 55 145"/>
+  </g>
+  <g stroke="#FF1B2D" stroke-width="1.2" fill="none" class="tp-web">
+    <line x1="992" y1="8" x2="840" y2="90"/>
+    <line x1="992" y1="8" x2="910" y2="180"/>
+    <path d="M 955 28 Q 920 55 972 90"/>
+    <path d="M 910 55 Q 855 100 945 145"/>
+  </g>
+
+  <!-- Outer Cut-Corner Shield Border Base -->
+  <path d="M 32 10 L 968 10 L 990 32 L 990 408 L 968 430 L 32 430 L 10 408 L 10 32 Z" fill="none" stroke="#21D4FD" stroke-opacity="0.3" stroke-width="2"/>
+
+  <!-- Animated Running Laser Beam on Border -->
+  <path d="M 32 10 L 968 10 L 990 32 L 990 408 L 968 430 L 32 430 L 10 408 L 10 32 Z" fill="none" stroke="#00E5FF" stroke-width="2.5" class="tp-laser" filter="url(#tp-glow)"/>
+
+  <!-- Animated Scanline Sweep -->
+  <line x1="16" y1="0" x2="984" y2="0" stroke="url(#laser-scan-tp)" stroke-width="1.5" class="tp-scan"/>
+
+  <!-- ========================================================================= -->
+  <!-- HEADER BAR: TACTICAL PROFILE // DEVELOPER LEVEL                           -->
+  <!-- ========================================================================= -->
+  <!-- Top Left Pill -->
+  <g transform="translate(30, 20)">
+    <rect x="0" y="0" width="300" height="28" rx="4" fill="#09090F" stroke="#21D4FD" stroke-width="1.4"/>
+    <circle cx="16" cy="14" r="4.5" fill="#21D4FD" class="tp-beacon" filter="url(#tp-glow)"/>
+    <text x="32" y="19" fill="#FFFFFF" font-size="12" class="tp-sub" letter-spacing="1.5">TACTICAL PROFILE // TELEMETRY</text>
+  </g>
+
+  <!-- Top Right Pill -->
+  <g transform="translate(680, 20)">
+    <rect x="0" y="0" width="290" height="28" rx="4" fill="#09090F" stroke="#FF1B2D" stroke-width="1.4"/>
+    <circle cx="16" cy="14" r="4.5" fill="#FF1B2D" class="tp-beacon" filter="url(#tp-glow)"/>
+    <text x="32" y="19" fill="#FF1744" font-size="12" class="tp-sub" letter-spacing="1.5">ALGORITHMIC LEVEL // VERIFIED</text>
+  </g>
+
+  <!-- Center Master Title -->
+  <g transform="translate(500, 68)" text-anchor="middle">
+    <!-- Spider Mask Silhouette -->
+    <polygon points="-160,-12 -154,-6 -160,0 -166,-6" fill="#FF1B2D"/>
+    <polygon points="160,-12 166,-6 160,0 154,-6" fill="#FF1B2D"/>
+    <text x="0" y="0" font-size="18.5" class="tp-title" letter-spacing="3.5">
+      TACTICAL PROFILE // DEVELOPER LEVEL 24
+    </text>
+    <text x="0" y="20" fill="#8B93A7" font-size="10.5" class="tp-mono" letter-spacing="1.8">
+      OPERATIVE PROGRESSION // ALGORITHMIC TELEMETRY // PROBLEM-SOLVING READINESS
+    </text>
+  </g>
+
+  <!-- ========================================================================= -->
+  <!-- LEFT CARD: DEVELOPER LEVEL 24 // CODING DNA CAPABILITIES                  -->
+  <!-- ========================================================================= -->
+  <g transform="translate(30, 105)">
+    <!-- Chassis -->
+    <rect x="0" y="0" width="455" height="295" rx="10" fill="url(#card-panel-bg)" stroke="#FFD700" stroke-opacity="0.35" stroke-width="1.4"/>
+
+    <!-- Corner Accents -->
+    <path d="M 0 25 L 0 0 L 25 0" fill="none" stroke="#FFD700" stroke-width="2.5"/>
+    <path d="M 455 25 L 455 0 L 430 0" fill="none" stroke="#FFD700" stroke-width="2.5"/>
+    <path d="M 0 270 L 0 295 L 25 295" fill="none" stroke="#FFD700" stroke-width="2.5"/>
+    <path d="M 455 270 L 455 295 L 430 295" fill="none" stroke="#FFD700" stroke-width="2.5"/>
+
+    <!-- Header Label -->
+    <circle cx="20" cy="22" r="4.5" fill="#FFD700"/>
+    <text x="32" y="26" fill="#FFD700" font-size="12" font-weight="900" class="tp-mono" letter-spacing="1.5">DEVELOPER LEVEL 24</text>
+    <path d="M 420 18 L 435 22 L 420 26 Z" fill="#FFD700" opacity="0.8"/>
+
+    <!-- Subtitle -->
+    <text x="20" y="52" fill="#FFD700" font-size="9.5" font-weight="800" class="tp-mono" letter-spacing="1.2">CODING DNA // CAPABILITIES</text>
+
+    <!-- Skill Bar 1: Algorithms & DSA (90%) -->
+    <g transform="translate(20, 68)">
+      <text x="0" y="0" fill="#FFFFFF" font-size="10" class="tp-mono">Algorithms &amp; DSA</text>
+      <text x="210" y="0" text-anchor="end" fill="#FFD700" font-size="10" class="tp-mono">90%</text>
+      <rect x="0" y="6" width="210" height="7" rx="3.5" fill="#1E293B" opacity="0.4"/>
+      <rect x="0" y="6" width="189" height="7" rx="3.5" fill="url(#tp-gold-grad)"/>
+    </g>
+
+    <!-- Skill Bar 2: Applied AI & ML Architecture (80%) -->
+    <g transform="translate(20, 104)">
+      <text x="0" y="0" fill="#FFFFFF" font-size="10" class="tp-mono">Applied AI &amp; ML Architecture</text>
+      <text x="210" y="0" text-anchor="end" fill="#00E5FF" font-size="10" class="tp-mono">80%</text>
+      <rect x="0" y="6" width="210" height="7" rx="3.5" fill="#1E293B" opacity="0.4"/>
+      <rect x="0" y="6" width="168" height="7" rx="3.5" fill="url(#tp-cyan-grad)"/>
+    </g>
+
+    <!-- Skill Bar 3: Full-Stack Web Engineering (85%) -->
+    <g transform="translate(20, 140)">
+      <text x="0" y="0" fill="#FFFFFF" font-size="10" class="tp-mono">Full-Stack Web Engineering</text>
+      <text x="210" y="0" text-anchor="end" fill="#FFB300" font-size="10" class="tp-mono">85%</text>
+      <rect x="0" y="6" width="210" height="7" rx="3.5" fill="#1E293B" opacity="0.4"/>
+      <rect x="0" y="6" width="178" height="7" rx="3.5" fill="url(#tp-gold-grad)"/>
+    </g>
+
+    <!-- Skill Bar 4: SQL & High-Scale Data (90%) -->
+    <g transform="translate(20, 176)">
+      <text x="0" y="0" fill="#FFFFFF" font-size="10" class="tp-mono">SQL &amp; High-Scale Data</text>
+      <text x="210" y="0" text-anchor="end" fill="#B388FF" font-size="10" class="tp-mono">90%</text>
+      <rect x="0" y="6" width="210" height="7" rx="3.5" fill="#1E293B" opacity="0.4"/>
+      <rect x="0" y="6" width="189" height="7" rx="3.5" fill="url(#tp-purple-grad)"/>
+    </g>
+
+    <!-- Skill Bar 5: Algorithmic Problem Solving (88%) -->
+    <g transform="translate(20, 212)">
+      <text x="0" y="0" fill="#FFFFFF" font-size="10" class="tp-mono">Algorithmic Problem Solving</text>
+      <text x="210" y="0" text-anchor="end" fill="#FF5252" font-size="10" class="tp-mono">88%</text>
+      <rect x="0" y="6" width="210" height="7" rx="3.5" fill="#1E293B" opacity="0.4"/>
+      <rect x="0" y="6" width="185" height="7" rx="3.5" fill="url(#tp-red-grad)"/>
+    </g>
+
+    <!-- Right Side: Circular XP Dial & Rank Pill -->
+    <g transform="translate(340, 125)">
+      <!-- Outer Track Circle -->
+      <circle cx="0" cy="0" r="48" fill="#06070F" stroke="#1E293B" stroke-width="7"/>
+      <!-- Progress Circle (78%) -->
+      <circle cx="0" cy="0" r="48" fill="none" stroke="url(#tp-gold-grad)" stroke-width="7" stroke-dasharray="301" stroke-dashoffset="75" stroke-linecap="round" class="tp-ring" filter="url(#tp-gauge-glow)"/>
+      
+      <!-- Inner Text -->
+      <text x="0" y="-2" text-anchor="middle" dominant-baseline="central" fill="#FFFFFF" font-size="28" font-weight="900" class="tp-title">24</text>
+      <text x="0" y="20" text-anchor="middle" fill="#FFD700" font-size="9" font-weight="900" class="tp-mono" letter-spacing="2">LEVEL</text>
+
+      <!-- XP Stats -->
+      <text x="0" y="70" text-anchor="middle" fill="#8B93A7" font-size="9.5" class="tp-mono">12,810 / 15,000 XP</text>
+
+      <!-- Rank Pill -->
+      <g transform="translate(0, 100)">
+        <rect x="-95" y="-13" width="190" height="24" rx="5" fill="#090B16" stroke="#FFD700" stroke-width="1.2"/>
+        <!-- Mini crosshair -->
+        <polygon points="-80,-4 -76,0 -80,4 -84,0" fill="#FFD700"/>
+        <text x="8" y="2" text-anchor="middle" fill="#FFD700" font-size="10" font-weight="900" class="tp-mono" letter-spacing="1">
+          RANK: PROBLEM SOLVER
+        </text>
+      </g>
+
+      <!-- Quest Subtitle -->
+      <text x="0" y="132" text-anchor="middle" fill="#8B93A7" font-size="8.5" class="tp-mono">
+        Quest: Build things people use
+      </text>
+    </g>
+  </g>
+
+  <!-- ========================================================================= -->
+  <!-- RIGHT CARD: ALGORITHMIC DEFENSE // TOTAL PROBLEMS @ANJANSHETTY           -->
+  <!-- ========================================================================= -->
+  <g transform="translate(515, 105)">
+    <!-- Chassis -->
+    <rect x="0" y="0" width="455" height="295" rx="10" fill="url(#card-panel-bg)" stroke="#FFD700" stroke-opacity="0.35" stroke-width="1.4"/>
+
+    <!-- Corner Accents -->
+    <path d="M 0 25 L 0 0 L 25 0" fill="none" stroke="#FFD700" stroke-width="2.5"/>
+    <path d="M 455 25 L 455 0 L 430 0" fill="none" stroke="#FFD700" stroke-width="2.5"/>
+    <path d="M 0 270 L 0 295 L 25 295" fill="none" stroke="#FFD700" stroke-width="2.5"/>
+    <path d="M 455 270 L 455 295 L 430 295" fill="none" stroke="#FFD700" stroke-width="2.5"/>
+
+    <!-- Header Label -->
+    <circle cx="20" cy="22" r="4.5" fill="#00E5FF"/>
+    <text x="32" y="26" fill="#FFD700" font-size="12" font-weight="900" class="tp-mono" letter-spacing="1.5">ALGORITHMIC DEFENSE</text>
+    <path d="M 420 18 L 435 22 L 420 26 Z" fill="#FFD700" opacity="0.8"/>
+
+    <!-- Subtitle -->
+    <text x="20" y="52" fill="#FFD700" font-size="9.5" font-weight="800" class="tp-mono" letter-spacing="1.2">TOTAL PROBLEMS // @ANJANSHETTY</text>
+
+    <!-- Dial Gauge: 18 Total Problems -->
+    <g transform="translate(85, 130)">
+      <circle cx="0" cy="0" r="44" fill="#06070E" stroke="#1E293B" stroke-width="6"/>
+      <circle cx="0" cy="0" r="44" fill="none" stroke="#FFD700" stroke-width="6" stroke-dasharray="276" stroke-dashoffset="190" stroke-linecap="round" filter="url(#tp-gauge-glow)"/>
+      <text x="0" y="-2" text-anchor="middle" dominant-baseline="central" fill="#FFFFFF" font-size="26" font-weight="900" class="tp-title">18</text>
+      <text x="0" y="18" text-anchor="middle" fill="#8B93A7" font-size="8" class="tp-mono" letter-spacing="1">TOTAL PROBLEMS</text>
+    </g>
+
+    <!-- Difficulty Breakdown Bars -->
+    <g transform="translate(160, 85)">
+      <!-- Easy -->
+      <g transform="translate(0, 0)">
+        <text x="0" y="0" fill="#00E5FF" font-size="9.5" class="tp-mono">Easy</text>
+        <text x="120" y="0" text-anchor="end" fill="#8B93A7" font-size="8.5" class="tp-mono">16 / 963</text>
+        <rect x="0" y="6" width="120" height="5" rx="2.5" fill="#1E293B" opacity="0.4"/>
+        <rect x="0" y="6" width="75" height="5" rx="2.5" fill="#00E5FF"/>
+      </g>
+      <!-- Medium -->
+      <g transform="translate(0, 32)">
+        <text x="0" y="0" fill="#FFB300" font-size="9.5" class="tp-mono">Medium</text>
+        <text x="120" y="0" text-anchor="end" fill="#8B93A7" font-size="8.5" class="tp-mono">1 / 2111</text>
+        <rect x="0" y="6" width="120" height="5" rx="2.5" fill="#1E293B" opacity="0.4"/>
+        <rect x="0" y="6" width="20" height="5" rx="2.5" fill="#FFB300"/>
+      </g>
+      <!-- Hard -->
+      <g transform="translate(0, 64)">
+        <text x="0" y="0" fill="#FF1744" font-size="9.5" class="tp-mono">Hard</text>
+        <text x="120" y="0" text-anchor="end" fill="#8B93A7" font-size="8.5" class="tp-mono">1 / 973</text>
+        <rect x="0" y="6" width="120" height="5" rx="2.5" fill="#1E293B" opacity="0.4"/>
+        <rect x="0" y="6" width="16" height="5" rx="2.5" fill="#FF1744"/>
+      </g>
+    </g>
+
+    <!-- Platform Verification Badges -->
+    <g transform="translate(365, 80)" text-anchor="middle">
+      <text x="0" y="0" fill="#FFFFFF" font-size="28" font-weight="900" class="tp-title">18+</text>
+      <text x="0" y="16" fill="#FFD700" font-size="8.5" font-weight="800" class="tp-mono" letter-spacing="1">PROBLEMS SOLVED</text>
+
+      <!-- GeeksforGeeks Pill -->
+      <g transform="translate(0, 38)">
+        <rect x="-65" y="-10" width="130" height="20" rx="4" fill="#090E18" stroke="#00E5FF" stroke-width="1"/>
+        <circle cx="-52" cy="0" r="3" fill="#00E5FF"/>
+        <text x="5" y="3" fill="#FFFFFF" font-size="8" class="tp-mono">GFG: @anjanshetty</text>
+      </g>
+
+      <!-- LeetCode Pill -->
+      <g transform="translate(0, 64)">
+        <rect x="-65" y="-10" width="130" height="20" rx="4" fill="#090E18" stroke="#FFD700" stroke-width="1"/>
+        <circle cx="-52" cy="0" r="3" fill="#FFD700"/>
+        <text x="5" y="3" fill="#FFFFFF" font-size="8" class="tp-mono">LeetCode: 8 Solved</text>
+      </g>
+
+      <!-- CodeWars Pill -->
+      <g transform="translate(0, 90)">
+        <rect x="-65" y="-10" width="130" height="20" rx="4" fill="#090E18" stroke="#FF1744" stroke-width="1"/>
+        <circle cx="-52" cy="0" r="3" fill="#FF1744"/>
+        <text x="5" y="3" fill="#FFFFFF" font-size="8" class="tp-mono">CodeWars: 6 kyu</text>
+      </g>
+    </g>
+
+    <!-- Bottom Mission Terminal Line -->
+    <g transform="translate(227, 266)" text-anchor="middle">
+      <line x1="-200" y1="-12" x2="200" y2="-12" stroke="#334155" stroke-opacity="0.3" stroke-width="1"/>
+      <!-- Lightning bolt polygon -->
+      <polygon points="-190,0 -186,-6 -188,0 -184,6" fill="#FFD700"/>
+      <text x="0" y="3" fill="#FFD700" font-size="8.5" class="tp-mono" letter-spacing="1">
+        MAINFRAME: ACTIVE OPERATIVE COMMITTED TO ALGORITHMIC MASTERY
+      </text>
+    </g>
+  </g>
+</svg>

@@ -13,10 +13,9 @@
 <div align="center">
 
 <!-- ========================================================================= -->
-<!-- 01 // HERO                                                                -->
+<!-- 01 // HERO WIDESCREEN CINEMATIC HEADER                                    -->
 <!-- ========================================================================= -->
 
-<!-- HERO WIDESCREEN CINEMATIC HEADER -->
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/anjan-hero.svg" />
   <source media="(prefers-color-scheme: light)" srcset="assets/anjan-hero.svg" />
@@ -25,12 +24,10 @@
 
 <br/><br/>
 
-<!-- ORIGINAL DEVELOPER SPIDER EMBLEM -->
+<!-- DYNAMIC SPIDER-MAN MOTION TYPING TITLE -->
 <a href="https://github.com/codexanjan">
-  <img src="assets/spider-logo.svg" width="180" height="180" alt="Anjan Shetty Developer Spider Emblem" />
+  <img src="https://readme-typing-svg.demolab.com?font=Orbitron&amp;size=26&amp;pause=1200&amp;color=FF1B2D&amp;center=true&amp;vCenter=true&amp;width=850&amp;lines=FULL+STACK+DEVELOPER;AI+%7C+ML+SOLUTIONS+ARCHITECT;OPEN+SOURCE+CONTRIBUTOR;BUILD.+CREATE.+INNOVATE.;WELCOME+TO+THE+SPIDER-VERSE" alt="Spider-Verse Typing Title" />
 </a>
-
-<!-- ADD_SPIDERMAN_ASSET_HERE: assets/spiderman-heading.gif or assets/spiderman-logo.png -->
 
 </div>
 
@@ -40,18 +37,19 @@
 <!-- 02 // ABOUT ME // OPERATIVE DOSSIER                                       -->
 <!-- ========================================================================= -->
 
-## <img src="assets/spider-logo.svg" width="28" height="28" alt="Spider Logo" /> ABOUT ME // OPERATIVE DOSSIER
+## <img src="assets/spiderman-logo.svg" width="28" height="28" alt="Spider-Man" /> ABOUT ME // OPERATIVE DOSSIER
 
 > "Somewhere between an idea and a working product, there is a lot of debugging."
 
-<br/>
+<div align="center">
 
-<table width="100%">
-  <tr>
-    <td width="46%" align="center" valign="top">
-      <img src="assets/spider-lanyard.svg" width="100%" alt="Spider-Verse Developer Lanyard ID Badge" />
-    </td>
-    <td width="54%" valign="top">
+<a href="https://github.com/codexanjan">
+  <img src="assets/spider-lanyard.svg" width="460" alt="Spider-Verse Developer Lanyard ID Badge" />
+</a>
+
+</div>
+
+<br/>
 
 ```yaml
 Spider-Verse Security Clearance:
@@ -81,17 +79,13 @@ Operative Creed:
   "With great compute comes great responsibility."
 ```
 
-    </td>
-  </tr>
-</table>
-
 <br/>
 
 <!-- ========================================================================= -->
-<!-- 03 // SPIDER ARSENAL                                                      -->
+<!-- 03 // SPIDER ARSENAL // TECH SUIT & CAPABILITIES                          -->
 <!-- ========================================================================= -->
 
-## <img src="assets/spider-logo.svg" width="28" height="28" alt="Spider Logo" /> SPIDER ARSENAL // TECH SUIT &amp; CAPABILITIES
+## <img src="assets/spiderman-logo.svg" width="28" height="28" alt="Spider-Man" /> SPIDER ARSENAL // TECH SUIT &amp; CAPABILITIES
 
 <div align="center">
 
@@ -101,44 +95,48 @@ Operative Creed:
 
 <br/><br/>
 
-#### <img src="assets/spider-logo.svg" width="18" height="18" alt="Spider Logo" /> // WEB WEAVING [CORE LANGUAGES]
+<img src="assets/top-languages.svg" width="100%" alt="Spider-Verse Arsenal // Top Languages" />
+
+<br/><br/>
+
+#### <img src="assets/spiderman-logo.svg" width="18" height="18" alt="Spider-Man" /> // WEB WEAVING [CORE LANGUAGES]
 <a href="https://skillicons.dev">
-  <img src="https://skillicons.dev/icons?i=py,js,ts,java,c,cpp,cs,go&theme=dark" alt="Languages" />
+  <img src="https://skillicons.dev/icons?i=py,js,ts,java,c,cpp,cs,go&amp;theme=dark" alt="Languages" />
 </a>
 
 <br/><br/>
 
-#### <img src="assets/spider-logo.svg" width="18" height="18" alt="Spider Logo" /> // HUD INTERFACES [FRONTEND &amp; UI SYSTEMS]
+#### <img src="assets/spiderman-logo.svg" width="18" height="18" alt="Spider-Man" /> // HUD INTERFACES [FRONTEND &amp; UI SYSTEMS]
 <a href="https://skillicons.dev">
-  <img src="https://skillicons.dev/icons?i=html,css,react,nextjs,tailwind&theme=dark" alt="Frontend" />
+  <img src="https://skillicons.dev/icons?i=html,css,react,nextjs,tailwind&amp;theme=dark" alt="Frontend" />
 </a>
 
 <br/><br/>
 
-#### <img src="assets/spider-logo.svg" width="18" height="18" alt="Spider Logo" /> // SPIDER-NET BACKBONE [BACKEND &amp; RUNTIMES]
+#### <img src="assets/spiderman-logo.svg" width="18" height="18" alt="Spider-Man" /> // SPIDER-NET BACKBONE [BACKEND &amp; RUNTIMES]
 <a href="https://skillicons.dev">
-  <img src="https://skillicons.dev/icons?i=nodejs,express,firebase,supabase&theme=dark" alt="Backend" />
+  <img src="https://skillicons.dev/icons?i=nodejs,express,firebase,supabase&amp;theme=dark" alt="Backend" />
 </a>
 
 <br/><br/>
 
-#### <img src="assets/spider-logo.svg" width="18" height="18" alt="Spider Logo" /> // CANON ARCHIVES [DATABASES &amp; STORAGE]
+#### <img src="assets/spiderman-logo.svg" width="18" height="18" alt="Spider-Man" /> // CANON ARCHIVES [DATABASES &amp; STORAGE]
 <a href="https://skillicons.dev">
-  <img src="https://skillicons.dev/icons?i=mongodb,mysql,postgres&theme=dark" alt="Databases" />
+  <img src="https://skillicons.dev/icons?i=mongodb,mysql,postgres&amp;theme=dark" alt="Databases" />
 </a>
 
 <br/><br/>
 
-#### <img src="assets/spider-logo.svg" width="18" height="18" alt="Spider Logo" /> // SPIDER-SENSE COGNITION [ARTIFICIAL INTELLIGENCE]
+#### <img src="assets/spiderman-logo.svg" width="18" height="18" alt="Spider-Man" /> // SPIDER-SENSE COGNITION [ARTIFICIAL INTELLIGENCE]
 <a href="https://skillicons.dev">
-  <img src="https://skillicons.dev/icons?i=py,tensorflow,scikitlearn&theme=dark" alt="AI / Machine Learning" />
+  <img src="https://skillicons.dev/icons?i=py,tensorflow,scikitlearn&amp;theme=dark" alt="AI / Machine Learning" />
 </a>
 
 <br/><br/>
 
-#### <img src="assets/spider-logo.svg" width="18" height="18" alt="Spider Logo" /> // SPIDER-OPS TOOLKIT [TOOLS &amp; WORKSPACE]
+#### <img src="assets/spiderman-logo.svg" width="18" height="18" alt="Spider-Man" /> // SPIDER-OPS TOOLKIT [TOOLS &amp; WORKSPACE]
 <a href="https://skillicons.dev">
-  <img src="https://skillicons.dev/icons?i=git,github,vscode,figma,postman,vercel&theme=dark" alt="Tools" />
+  <img src="https://skillicons.dev/icons?i=git,github,vscode,figma,postman,vercel&amp;theme=dark" alt="Tools" />
 </a>
 
 </div>
@@ -146,10 +144,38 @@ Operative Creed:
 <br/>
 
 <!-- ========================================================================= -->
-<!-- 04 // PROJECT DATABASE // SPIDER-VERSE ARCHIVES                           -->
+<!-- 04 // TACTICAL PROFILE // DEVELOPER LEVEL                                 -->
 <!-- ========================================================================= -->
 
-## <img src="assets/spider-logo.svg" width="28" height="28" alt="Spider Logo" /> PROJECT DATABASE // SPIDER-VERSE ARCHIVES
+## <img src="assets/spiderman-logo.svg" width="28" height="28" alt="Spider-Man" /> TACTICAL PROFILE // DEVELOPER LEVEL
+
+<div align="center">
+
+<img src="assets/spider-tactical.svg" width="100%" alt="Tactical Profile // Developer Level" />
+
+</div>
+
+<br/>
+
+<!-- ========================================================================= -->
+<!-- 05 // SPIDER TROPHY ROOM // MULTIVERSE ACCOLADES                          -->
+<!-- ========================================================================= -->
+
+## <img src="assets/spiderman-logo.svg" width="28" height="28" alt="Spider-Man" /> SPIDER TROPHY ROOM // MULTIVERSE ACCOLADES
+
+<div align="center">
+
+<img src="assets/spider-trophies.svg" width="100%" alt="Spider Trophy Room // Multiverse Accolades" />
+
+</div>
+
+<br/>
+
+<!-- ========================================================================= -->
+<!-- 06 // PROJECT DATABASE // SPIDER-VERSE ARCHIVES                           -->
+<!-- ========================================================================= -->
+
+## <img src="assets/spiderman-logo.svg" width="28" height="28" alt="Spider-Man" /> PROJECT DATABASE // SPIDER-VERSE ARCHIVES
 
 <div align="center">
   <img src="assets/project-frame.svg" width="100%" alt="Spider-Verse Missions Header" />
@@ -223,59 +249,10 @@ Operative Creed:
 <br/>
 
 <!-- ========================================================================= -->
-<!-- 05 // SPIDER-VERSE ACHIEVEMENTS                                             -->
+<!-- 07 // SPIDER-VERSE CREDENTIAL VAULT // HACKERRANK VERIFIED                -->
 <!-- ========================================================================= -->
 
-## <img src="assets/spider-logo.svg" width="28" height="28" alt="Spider Logo" /> SPIDER-VERSE ACHIEVEMENTS
-
-<div align="center">
-  <img src="assets/achievement-frame.svg" width="100%" alt="Spider-Verse Achievements Header" />
-</div>
-
-<br/>
-
-<table width="100%">
-  <tr>
-    <td width="50%" valign="top">
-      <h3><img src="assets/spider-mini.svg" width="18" height="18" alt="Spider" /> ACHIEVEMENT_TITLE</h3>
-      <p><b>Organization:</b> ORGANIZATION</p>
-      <p><b>Date:</b> DATE</p>
-      <p><b>Result:</b> RESULT</p>
-      <p><a href="ACHIEVEMENT_URL"><b>[ VIEW VERIFIED RECORD ]</b></a></p>
-    </td>
-    <td width="50%" valign="top">
-      <h3><img src="assets/spider-mini.svg" width="18" height="18" alt="Spider" /> ACHIEVEMENT_TITLE</h3>
-      <p><b>Organization:</b> ORGANIZATION</p>
-      <p><b>Date:</b> DATE</p>
-      <p><b>Result:</b> RESULT</p>
-      <p><a href="ACHIEVEMENT_URL"><b>[ VIEW VERIFIED RECORD ]</b></a></p>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%" valign="top">
-      <h3><img src="assets/spider-mini.svg" width="18" height="18" alt="Spider" /> ACHIEVEMENT_TITLE</h3>
-      <p><b>Organization:</b> ORGANIZATION</p>
-      <p><b>Date:</b> DATE</p>
-      <p><b>Result:</b> RESULT</p>
-      <p><a href="ACHIEVEMENT_URL"><b>[ VIEW VERIFIED RECORD ]</b></a></p>
-    </td>
-    <td width="50%" valign="top">
-      <h3><img src="assets/spider-mini.svg" width="18" height="18" alt="Spider" /> ACHIEVEMENT_TITLE</h3>
-      <p><b>Organization:</b> ORGANIZATION</p>
-      <p><b>Date:</b> DATE</p>
-      <p><b>Result:</b> RESULT</p>
-      <p><a href="ACHIEVEMENT_URL"><b>[ VIEW VERIFIED RECORD ]</b></a></p>
-    </td>
-  </tr>
-</table>
-
-<br/>
-
-<!-- ========================================================================= -->
-<!-- 06 // SPIDER-VERSE CREDENTIAL VAULT                                         -->
-<!-- ========================================================================= -->
-
-## <img src="assets/spider-logo.svg" width="28" height="28" alt="Spider Logo" /> SPIDER-VERSE CREDENTIAL VAULT
+## <img src="assets/spiderman-logo.svg" width="28" height="28" alt="Spider-Man" /> SPIDER-VERSE CREDENTIAL VAULT // HACKERRANK VERIFIED
 
 <div align="center">
   <img src="assets/certificate-frame.svg" width="100%" alt="Spider-Verse Credential Vault Header" />
@@ -285,47 +262,99 @@ Operative Creed:
 
 <table width="100%">
   <tr>
-    <td width="33%" valign="top" align="center">
-      <a href="CERTIFICATE_URL">
-        <img src="assets/certificates/certificate-01.png" width="100%" alt="Certificate 01" />
-      </a>
-      <br/><br/>
-      <h4 align="left">CERTIFICATE_NAME</h4>
-      <p align="left">
-        <b>Issuer:</b> ISSUER_NAME<br/>
-        <b>Date:</b> ISSUED_DATE<br/>
-        <b>Credential ID:</b> <code>CREDENTIAL_ID</code><br/>
-        <b>Skills:</b> Technical Mastery<br/>
-        <a href="CERTIFICATE_URL"><b>[ VERIFY CERTIFICATE ]</b></a>
-      </p>
+    <td width="50%" valign="top">
+      <h4><img src="assets/spider-mini.svg" width="16" height="16" alt="Spider" /> Software Engineer</h4>
+      <p><b>Issuer:</b> HackerRank • <b>Type:</b> Role Certification</p>
+      <p><b>Credential ID:</b> <code>31cd0e8e1f1e</code></p>
+      <p><b>Verified Skills:</b> Problem Solving, REST API, SQL Architecture</p>
+      <p><a href="https://www.hackerrank.com/certificates/31cd0e8e1f1e"><b>[ VERIFY CREDENTIAL RECORD ]</b></a></p>
     </td>
-    <td width="33%" valign="top" align="center">
-      <a href="CERTIFICATE_URL">
-        <img src="assets/certificates/certificate-02.png" width="100%" alt="Certificate 02" />
-      </a>
-      <br/><br/>
-      <h4 align="left">CERTIFICATE_NAME</h4>
-      <p align="left">
-        <b>Issuer:</b> ISSUER_NAME<br/>
-        <b>Date:</b> ISSUED_DATE<br/>
-        <b>Credential ID:</b> <code>CREDENTIAL_ID</code><br/>
-        <b>Skills:</b> Technical Mastery<br/>
-        <a href="CERTIFICATE_URL"><b>[ VERIFY CERTIFICATE ]</b></a>
-      </p>
+    <td width="50%" valign="top">
+      <h4><img src="assets/spider-mini.svg" width="16" height="16" alt="Spider" /> Software Engineer Intern</h4>
+      <p><b>Issuer:</b> HackerRank • <b>Type:</b> Role Certification</p>
+      <p><b>Credential ID:</b> <code>b11da9da4539</code></p>
+      <p><b>Verified Skills:</b> Core Software Engineering &amp; Problem Solving</p>
+      <p><a href="https://www.hackerrank.com/certificates/b11da9da4539"><b>[ VERIFY CREDENTIAL RECORD ]</b></a></p>
     </td>
-    <td width="33%" valign="top" align="center">
-      <a href="CERTIFICATE_URL">
-        <img src="assets/certificates/certificate-03.png" width="100%" alt="Certificate 03" />
-      </a>
-      <br/><br/>
-      <h4 align="left">CERTIFICATE_NAME</h4>
-      <p align="left">
-        <b>Issuer:</b> ISSUER_NAME<br/>
-        <b>Date:</b> ISSUED_DATE<br/>
-        <b>Credential ID:</b> <code>CREDENTIAL_ID</code><br/>
-        <b>Skills:</b> Technical Mastery<br/>
-        <a href="CERTIFICATE_URL"><b>[ VERIFY CERTIFICATE ]</b></a>
-      </p>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <h4><img src="assets/spider-mini.svg" width="16" height="16" alt="Spider" /> Problem Solving (Intermediate)</h4>
+      <p><b>Issuer:</b> HackerRank • <b>Type:</b> Skill Verification</p>
+      <p><b>Credential ID:</b> <code>895206b6961b</code></p>
+      <p><b>Verified Skills:</b> Complex Data Structures &amp; Graph Algorithms</p>
+      <p><a href="https://www.hackerrank.com/certificates/895206b6961b"><b>[ VERIFY CREDENTIAL RECORD ]</b></a></p>
+    </td>
+    <td width="50%" valign="top">
+      <h4><img src="assets/spider-mini.svg" width="16" height="16" alt="Spider" /> REST API (Intermediate)</h4>
+      <p><b>Issuer:</b> HackerRank • <b>Type:</b> Skill Verification</p>
+      <p><b>Credential ID:</b> <code>9ae0bb1b82ab</code></p>
+      <p><b>Verified Skills:</b> HTTP Protocols, API Orchestration &amp; Rate Limiting</p>
+      <p><a href="https://www.hackerrank.com/certificates/9ae0bb1b82ab"><b>[ VERIFY CREDENTIAL RECORD ]</b></a></p>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <h4><img src="assets/spider-mini.svg" width="16" height="16" alt="Spider" /> JavaScript (Intermediate)</h4>
+      <p><b>Issuer:</b> HackerRank • <b>Type:</b> Skill Verification</p>
+      <p><b>Credential ID:</b> <code>b61de8917e66</code></p>
+      <p><b>Verified Skills:</b> Event Loop, Concurrency, Design Patterns &amp; Memory</p>
+      <p><a href="https://www.hackerrank.com/certificates/b61de8917e66"><b>[ VERIFY CREDENTIAL RECORD ]</b></a></p>
+    </td>
+    <td width="50%" valign="top">
+      <h4><img src="assets/spider-mini.svg" width="16" height="16" alt="Spider" /> React (Basic)</h4>
+      <p><b>Issuer:</b> HackerRank • <b>Type:</b> Skill Verification</p>
+      <p><b>Credential ID:</b> <code>1b67ca39f417</code></p>
+      <p><b>Verified Skills:</b> JSX, State Orchestration &amp; Component Lifecycle</p>
+      <p><a href="https://www.hackerrank.com/certificates/1b67ca39f417"><b>[ VERIFY CREDENTIAL RECORD ]</b></a></p>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <h4><img src="assets/spider-mini.svg" width="16" height="16" alt="Spider" /> Node.js (Basic)</h4>
+      <p><b>Issuer:</b> HackerRank • <b>Type:</b> Skill Verification</p>
+      <p><b>Credential ID:</b> <code>1c041db19a8b</code></p>
+      <p><b>Verified Skills:</b> Asynchronous I/O, Event Emitters &amp; Stream Buffers</p>
+      <p><a href="https://www.hackerrank.com/certificates/1c041db19a8b"><b>[ VERIFY CREDENTIAL RECORD ]</b></a></p>
+    </td>
+    <td width="50%" valign="top">
+      <h4><img src="assets/spider-mini.svg" width="16" height="16" alt="Spider" /> SQL (Basic)</h4>
+      <p><b>Issuer:</b> HackerRank • <b>Type:</b> Skill Verification</p>
+      <p><b>Credential ID:</b> <code>43477c74733f</code></p>
+      <p><b>Verified Skills:</b> Relational Joins, Aggregations &amp; Query Optimization</p>
+      <p><a href="https://www.hackerrank.com/certificates/43477c74733f"><b>[ VERIFY CREDENTIAL RECORD ]</b></a></p>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <h4><img src="assets/spider-mini.svg" width="16" height="16" alt="Spider" /> Java (Basic)</h4>
+      <p><b>Issuer:</b> HackerRank • <b>Type:</b> Skill Verification</p>
+      <p><b>Credential ID:</b> <code>8a4745b17ffa</code></p>
+      <p><b>Verified Skills:</b> OOP Paradigms, Inheritance &amp; Java Collections</p>
+      <p><a href="https://www.hackerrank.com/certificates/8a4745b17ffa"><b>[ VERIFY CREDENTIAL RECORD ]</b></a></p>
+    </td>
+    <td width="50%" valign="top">
+      <h4><img src="assets/spider-mini.svg" width="16" height="16" alt="Spider" /> Go (Basic)</h4>
+      <p><b>Issuer:</b> HackerRank • <b>Type:</b> Skill Verification</p>
+      <p><b>Credential ID:</b> <code>d6f0d86e4e95</code></p>
+      <p><b>Verified Skills:</b> Goroutines, Channel Synchronization &amp; Interfaces</p>
+      <p><a href="https://www.hackerrank.com/certificates/d6f0d86e4e95"><b>[ VERIFY CREDENTIAL RECORD ]</b></a></p>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <h4><img src="assets/spider-mini.svg" width="16" height="16" alt="Spider" /> CSS (Basic)</h4>
+      <p><b>Issuer:</b> HackerRank • <b>Type:</b> Skill Verification</p>
+      <p><b>Credential ID:</b> <code>71a4e0d7b9b5</code></p>
+      <p><b>Verified Skills:</b> Modern Layouts, Flexbox, Grid &amp; Responsive CSS</p>
+      <p><a href="https://www.hackerrank.com/certificates/71a4e0d7b9b5"><b>[ VERIFY CREDENTIAL RECORD ]</b></a></p>
+    </td>
+    <td width="50%" valign="top">
+      <h4><img src="assets/spider-mini.svg" width="16" height="16" alt="Spider" /> C# (Basic)</h4>
+      <p><b>Issuer:</b> HackerRank • <b>Type:</b> Skill Verification</p>
+      <p><b>Credential ID:</b> <code>c795280a3cee</code></p>
+      <p><b>Verified Skills:</b> .NET Architecture, LINQ Queries &amp; Type Systems</p>
+      <p><a href="https://www.hackerrank.com/certificates/c795280a3cee"><b>[ VERIFY CREDENTIAL RECORD ]</b></a></p>
     </td>
   </tr>
 </table>
@@ -333,12 +362,10 @@ Operative Creed:
 <br/>
 
 <!-- ========================================================================= -->
-<!-- 07 // SPIDER TELEMETRY // MAINFRAME METRICS                               -->
+<!-- 08 // SPIDER TELEMETRY // MAINFRAME METRICS                               -->
 <!-- ========================================================================= -->
 
-## <img src="assets/spider-logo.svg" width="28" height="28" alt="Spider Logo" /> SPIDER TELEMETRY // MAINFRAME METRICS
-
-<p>Telemetry and code activity monitored through GitHub's analytical services:</p>
+## <img src="assets/spiderman-logo.svg" width="28" height="28" alt="Spider-Man" /> SPIDER TELEMETRY // MAINFRAME METRICS
 
 <div align="center">
 
@@ -349,10 +376,10 @@ Operative Creed:
 <br/>
 
 <!-- ========================================================================= -->
-<!-- 08 // COMMIT RADAR // CODE CADENCE                                        -->
+<!-- 09 // COMMIT RADAR // CODE CADENCE                                        -->
 <!-- ========================================================================= -->
 
-## <img src="assets/spider-logo.svg" width="28" height="28" alt="Spider Logo" /> COMMIT RADAR // CODE CADENCE
+## <img src="assets/spiderman-logo.svg" width="28" height="28" alt="Spider-Man" /> COMMIT RADAR // CODE CADENCE
 
 <div align="center">
 
@@ -363,10 +390,10 @@ Operative Creed:
 <br/>
 
 <!-- ========================================================================= -->
-<!-- 09 // CONTRIBUTION PATROL // SPIDER CADENCE                               -->
+<!-- 10 // CONTRIBUTION PATROL // SPIDER CADENCE                               -->
 <!-- ========================================================================= -->
 
-## <img src="assets/spider-logo.svg" width="28" height="28" alt="Spider Logo" /> CONTRIBUTION PATROL // SPIDER CADENCE
+## <img src="assets/spiderman-logo.svg" width="28" height="28" alt="Spider-Man" /> CONTRIBUTION PATROL // SPIDER CADENCE
 
 <div align="center">
 
@@ -386,41 +413,10 @@ Operative Creed:
 <br/>
 
 <!-- ========================================================================= -->
-<!-- 10 // 2026 MISSION DIRECTIVES // ROADMAP                                  -->
+<!-- 11 // CONNECT // SEND A SIGNAL ACROSS THE WEB                             -->
 <!-- ========================================================================= -->
 
-## <img src="assets/spider-logo.svg" width="28" height="28" alt="Spider Logo" /> 2026 MISSION DIRECTIVES // ROADMAP
-
-<table width="100%">
-  <tr>
-    <td width="50%" valign="top">
-      <h4><img src="assets/spider-mini.svg" width="16" height="16" alt="Spider" /> DIRECTIVE 01 // AGENTIC AI ARCHITECTURE</h4>
-      <p>Engineering autonomous multi-agent tool pipelines, function-calling frameworks, and vector retrieval engines for next-generation intelligence workflows.</p>
-    </td>
-    <td width="50%" valign="top">
-      <h4><img src="assets/spider-mini.svg" width="16" height="16" alt="Spider" /> DIRECTIVE 02 // DISTRIBUTED HIGH-SCALE BACKENDS</h4>
-      <p>Constructing fault-tolerant microservices, resilient data stores, asynchronous queuing pipelines, and zero-downtime deployment topologies.</p>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%" valign="top">
-      <h4><img src="assets/spider-mini.svg" width="16" height="16" alt="Spider" /> DIRECTIVE 03 // 3D &amp; SPATIAL UI SYSTEMS</h4>
-      <p>Pushing web graphics boundaries using Three.js, WebGL shaders, and Canvas physics to deliver tactile, cinematic developer experiences.</p>
-    </td>
-    <td width="50%" valign="top">
-      <h4><img src="assets/spider-mini.svg" width="16" height="16" alt="Spider" /> DIRECTIVE 04 // OPEN-SOURCE MULTIVERSE LIBRARIES</h4>
-      <p>Publishing modular developer tooling, high-contrast HUD components, and performance-optimized utility libraries for the global open-source community.</p>
-    </td>
-  </tr>
-</table>
-
-<br/>
-
-<!-- ========================================================================= -->
-<!-- 11 // CONNECT                                                             -->
-<!-- ========================================================================= -->
-
-## <img src="assets/spider-logo.svg" width="28" height="28" alt="Spider Logo" /> CONNECT
+## <img src="assets/spiderman-logo.svg" width="28" height="28" alt="Spider-Man" /> CONNECT // SEND A SIGNAL ACROSS THE WEB
 
 <div align="center">
 
@@ -429,28 +425,33 @@ Operative Creed:
     <img src="https://img.shields.io/badge/GITHUB-codexanjan-FF1B2D?style=for-the-badge&amp;logo=github&amp;logoColor=white&amp;labelColor=050509" alt="GitHub" />
   </a>
   &nbsp;
-  <a href="YOUR_LINKEDIN_URL">
-    <img src="https://img.shields.io/badge/LINKEDIN-CONNECT-00A8FF?style=for-the-badge&amp;logo=linkedin&amp;logoColor=white&amp;labelColor=050509" alt="LinkedIn" />
+  <a href="https://www.hackerrank.com/profile/anjanshetty">
+    <img src="https://img.shields.io/badge/HACKERRANK-anjanshetty-00E5FF?style=for-the-badge&amp;logo=hackerrank&amp;logoColor=white&amp;labelColor=050509" alt="HackerRank" />
   </a>
   &nbsp;
-  <a href="YOUR_PORTFOLIO_URL">
-    <img src="https://img.shields.io/badge/PORTFOLIO-VIEW_SITE-21D4FD?style=for-the-badge&amp;logo=safari&amp;logoColor=black&amp;labelColor=050509" alt="Portfolio" />
+  <a href="https://x.com/anjxnshetty">
+    <img src="https://img.shields.io/badge/X-@anjxnshetty-00A8FF?style=for-the-badge&amp;logo=x&amp;logoColor=white&amp;labelColor=050509" alt="X Twitter" />
   </a>
 </p>
 
 <p align="center">
-  <a href="mailto:YOUR_EMAIL">
-    <img src="https://img.shields.io/badge/EMAIL-YOUR_EMAIL-FF1B2D?style=for-the-badge&amp;logo=gmail&amp;logoColor=white&amp;labelColor=050509" alt="Email" />
+  <a href="mailto:anjanshetty.co@gmail.com">
+    <img src="https://img.shields.io/badge/EMAIL-anjanshetty.co@gmail.com-FF1B2D?style=for-the-badge&amp;logo=gmail&amp;logoColor=white&amp;labelColor=050509" alt="Email" />
   </a>
   &nbsp;
-  <a href="YOUR_LEETCODE_URL">
-    <img src="https://img.shields.io/badge/LEETCODE-PROFILE-00A8FF?style=for-the-badge&amp;logo=leetcode&amp;logoColor=white&amp;labelColor=050509" alt="LeetCode" />
+  <a href="https://leetcode.com">
+    <img src="https://img.shields.io/badge/LEETCODE-PROFILE-FFD700?style=for-the-badge&amp;logo=leetcode&amp;logoColor=white&amp;labelColor=050509" alt="LeetCode" />
   </a>
   &nbsp;
-  <a href="YOUR_HACKERRANK_URL">
-    <img src="https://img.shields.io/badge/HACKERRANK-PROFILE-21D4FD?style=for-the-badge&amp;logo=hackerrank&amp;logoColor=white&amp;labelColor=050509" alt="HackerRank" />
+  <a href="https://github.com/codexanjan">
+    <img src="https://img.shields.io/badge/PORTFOLIO-VIEW_SITE-21D4FD?style=for-the-badge&amp;logo=safari&amp;logoColor=black&amp;labelColor=050509" alt="Portfolio" />
   </a>
 </p>
+
+<br/>
+
+<!-- DYNAMIC SPIDER-MAN ENDING MOTION TEXT -->
+<img src="https://readme-typing-svg.demolab.com?font=Orbitron&amp;size=22&amp;pause=1400&amp;color=00E5FF&amp;center=true&amp;vCenter=true&amp;width=850&amp;lines=WITH+GREAT+CODE+COMES+GREAT+RESPONSIBILITY;DESIGN.+DEVELOP.+DISPATCH.;SIGNAL+TRANSMISSION+COMPLETE" alt="Spider-Verse Ending Motion Text" />
 
 </div>
 
