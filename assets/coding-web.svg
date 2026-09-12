@@ -538,4 +538,16 @@
   <!-- 5. ANIMATED LASER SCANLINE SWEEP                        -->
   <!-- ======================================================= -->
   <line x1="30" y1="0" x2="1270" y2="0" stroke="url(#strand-cyan-red)" stroke-width="2" class="scan-beam"/>
+
+  <!-- Red & Blue Glowing Edge Tracks (Spider-Verse HUD) -->
+  <line x1="104" y1="12" x2="454" y2="12" stroke="#FF1B2D" stroke-width="3" filter="url(#core-glow)"/>
+  <line x1="845" y1="12" x2="1196" y2="12" stroke="#21D4FD" stroke-width="3" filter="url(#core-glow)"/>
+  <line x1="104" y1="808" x2="454" y2="808" stroke="#FF1B2D" stroke-width="3" filter="url(#core-glow)"/>
+  <line x1="845" y1="808" x2="1196" y2="808" stroke="#21D4FD" stroke-width="3" filter="url(#core-glow)"/>
+
+  <!-- Corner Brackets (Red Left, Blue Right) -->
+  <path d="M 6 45 L 6 6 L 45 6" fill="none" stroke="#FF1B2D" stroke-width="2.8"/>
+  <path d="M 1294 45 L 1294 6 L 1255 6" fill="none" stroke="#21D4FD" stroke-width="2.8"/>
+  <path d="M 6 775 L 6 814 L 45 814" fill="none" stroke="#FF1B2D" stroke-width="2.8"/>
+  <path d="M 1294 775 L 1294 814 L 1255 814" fill="none" stroke="#21D4FD" stroke-width="2.8"/>
 </svg>

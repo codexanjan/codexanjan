@@ -100,12 +100,6 @@
     <text x="32" y="19" fill="#FF1744" font-size="13" class="cf-sub" letter-spacing="1.5">SPIDER-NET // VERIFIED</text>
   </g>
 
-  <!-- Corner Brackets -->
-  <path d="M 4 40 L 4 6 L 40 6" fill="none" stroke="#21D4FD" stroke-width="2.5"/>
-  <path d="M 996 40 L 996 6 L 960 6" fill="none" stroke="#FF1B2D" stroke-width="2.5"/>
-  <path d="M 4 120 L 4 154 L 40 154" fill="none" stroke="#21D4FD" stroke-width="2.5"/>
-  <path d="M 996 120 L 996 154 L 960 154" fill="none" stroke="#FF1B2D" stroke-width="2.5"/>
-
   <!-- Center Prominent Typography (Clean Solid White + High-Contrast Cyan Subtitle) -->
   <g transform="translate(500, 84)" text-anchor="middle">
     <!-- Single Crisp Master Title -->
@@ -122,4 +116,16 @@
   <!-- Bottom Track Beam -->
   <line x1="30" y1="136" x2="970" y2="136" stroke="#8B93A7" stroke-opacity="0.2" stroke-width="1"/>
   <line x1="160" y1="136" x2="840" y2="136" stroke="#21D4FD" stroke-width="2" class="cf-laser"/>
+
+  <!-- Red & Blue Glowing Edge Tracks (Spider-Verse HUD) -->
+  <line x1="80" y1="12" x2="350" y2="12" stroke="#FF1B2D" stroke-width="3" filter="url(#cf-glow)"/>
+  <line x1="650" y1="12" x2="920" y2="12" stroke="#21D4FD" stroke-width="3" filter="url(#cf-glow)"/>
+  <line x1="80" y1="148" x2="350" y2="148" stroke="#FF1B2D" stroke-width="3" filter="url(#cf-glow)"/>
+  <line x1="650" y1="148" x2="920" y2="148" stroke="#21D4FD" stroke-width="3" filter="url(#cf-glow)"/>
+
+  <!-- Corner Brackets (Red Left, Blue Right) -->
+  <path d="M 6 45 L 6 6 L 45 6" fill="none" stroke="#FF1B2D" stroke-width="2.8"/>
+  <path d="M 994 45 L 994 6 L 955 6" fill="none" stroke="#21D4FD" stroke-width="2.8"/>
+  <path d="M 6 115 L 6 154 L 45 154" fill="none" stroke="#FF1B2D" stroke-width="2.8"/>
+  <path d="M 994 115 L 994 154 L 955 154" fill="none" stroke="#21D4FD" stroke-width="2.8"/>
 </svg>

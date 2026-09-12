@@ -28,97 +28,6 @@
 <a href="https://github.com/codexanjan">
   <img src="https://readme-typing-svg.demolab.com?font=Orbitron&amp;size=26&amp;pause=1200&amp;color=FF1B2D&amp;center=true&amp;vCenter=true&amp;width=850&amp;lines=FULL+STACK+DEVELOPER;AI+%7C+ML+SOLUTIONS+ARCHITECT;OPEN+SOURCE+CONTRIBUTOR;BUILD.+CREATE.+INNOVATE.;WELCOME+TO+THE+SPIDER-VERSE" alt="Spider-Verse Typing Title" />
 </a>
-
-<br/><br/>
-
-<!-- SPIDER-VERSE TELEMETRY STATUS CHIPS -->
-<p align="center">
-  <img src="https://img.shields.io/badge/IDENTITY-ANJAN_SHETTY-FF1B2D?style=for-the-badge&amp;labelColor=050509" alt="Identity" />
-  &nbsp;
-  <img src="https://img.shields.io/badge/CODENAME-CODEXANJAN-00E5FF?style=for-the-badge&amp;labelColor=050509" alt="Codename" />
-  &nbsp;
-  <img src="https://img.shields.io/badge/STATUS-ONLINE-00E676?style=for-the-badge&amp;labelColor=050509" alt="Status" />
-  &nbsp;
-  <img src="https://img.shields.io/badge/HQ-EARTH--CODEX--01-FFD700?style=for-the-badge&amp;labelColor=050509" alt="HQ" />
-</p>
-
-<p align="center">
-  <a href="https://github.com/codexanjan">
-    <img src="https://komarev.com/ghpvc/?username=codexanjan&amp;label=SPIDER-NET+VISITORS&amp;color=FF1B2D&amp;style=for-the-badge&amp;labelColor=050509" alt="Spider-Net Visitors" />
-  </a>
-</p>
-
-<br/>
-
-<!-- WIRE SVG DIVIDER BELOW TOP BANNER -->
-<img src="assets/web-divider.svg" width="100%" alt="Spider Web Wire" />
-
-<br/><br/>
-
-<!-- SPIDER COMMS // SECURE TRANSMISSION CHANNELS -->
-<h4><img src="assets/spiderman-logo.svg" width="18" height="18" alt="Spider-Man" /> SPIDER-NET COMMS // SECURE CHANNELS</h4>
-<p><i>Connect across developer networks and platforms:</i></p>
-
-<p align="center">
-  <a href="https://github.com/codexanjan">
-    <img src="https://img.shields.io/badge/GITHUB-codexanjan-FF1B2D?style=for-the-badge&amp;logo=github&amp;logoColor=white&amp;labelColor=050509" alt="GitHub" />
-  </a>
-  &nbsp;
-  <a href="https://x.com/anjxnshetty">
-    <img src="https://img.shields.io/badge/X_%2F_TWITTER-@anjxnshetty-00A8FF?style=for-the-badge&amp;logo=x&amp;logoColor=white&amp;labelColor=050509" alt="X / Twitter" />
-  </a>
-  &nbsp;
-  <a href="https://discord.com">
-    <img src="https://img.shields.io/badge/DISCORD-codexanjan-00E5FF?style=for-the-badge&amp;logo=discord&amp;logoColor=white&amp;labelColor=050509" alt="Discord" />
-  </a>
-  &nbsp;
-  <a href="https://gitlab.com/codexanjan">
-    <img src="https://img.shields.io/badge/GITLAB-codexanjan-FC6D26?style=for-the-badge&amp;logo=gitlab&amp;logoColor=white&amp;labelColor=050509" alt="GitLab" />
-  </a>
-</p>
-
-<p align="center">
-  <a href="https://leetcode.com/codexanjan">
-    <img src="https://img.shields.io/badge/LEETCODE-codexanjan-FFD700?style=for-the-badge&amp;logo=leetcode&amp;logoColor=white&amp;labelColor=050509" alt="LeetCode" />
-  </a>
-  &nbsp;
-  <a href="https://www.codewars.com/users/codexanjan">
-    <img src="https://img.shields.io/badge/CODEWARS-codexanjan-FF1744?style=for-the-badge&amp;logo=codewars&amp;logoColor=white&amp;labelColor=050509" alt="Codewars" />
-  </a>
-  &nbsp;
-  <a href="https://auth.geeksforgeeks.org/user/codexanjan">
-    <img src="https://img.shields.io/badge/GEEKSFORGEEKS-codexanjan-00E5FF?style=for-the-badge&amp;logo=geeksforgeeks&amp;logoColor=white&amp;labelColor=050509" alt="GeeksforGeeks" />
-  </a>
-  &nbsp;
-  <a href="https://tryhackme.com/p/codexanjan">
-    <img src="https://img.shields.io/badge/TRYHACKME-codexanjan-FF1B2D?style=for-the-badge&amp;logo=tryhackme&amp;logoColor=white&amp;labelColor=050509" alt="TryHackMe" />
-  </a>
-</p>
-
-<p align="center">
-  <a href="https://dev.to/codexanjan">
-    <img src="https://img.shields.io/badge/DEV.TO-codexanjan-FFFFFF?style=for-the-badge&amp;logo=devdotto&amp;logoColor=black&amp;labelColor=050509" alt="Dev.to" />
-  </a>
-  &nbsp;
-  <a href="https://stackoverflow.com">
-    <img src="https://img.shields.io/badge/STACK_OVERFLOW-codexanjan-FFD700?style=for-the-badge&amp;logo=stackoverflow&amp;logoColor=white&amp;labelColor=050509" alt="Stack Overflow" />
-  </a>
-  &nbsp;
-  <a href="https://reddit.com/user/codexanjan">
-    <img src="https://img.shields.io/badge/REDDIT-codexanjan-FF4500?style=for-the-badge&amp;logo=reddit&amp;logoColor=white&amp;labelColor=050509" alt="Reddit" />
-  </a>
-</p>
-
-<p align="center"><i>If you find value in my open-source work or want to support my technical journey:</i></p>
-<p align="center">
-  <a href="https://www.buymeacoffee.com/codexanjan">
-    <img src="https://img.shields.io/badge/BUY_ME_A_COFFEE-codexanjan-FFDD00?style=for-the-badge&amp;logo=buymeacoffee&amp;logoColor=black&amp;labelColor=050509" alt="Buy Me A Coffee" />
-  </a>
-</p>
-
-<br/>
-<img src="assets/web-divider.svg" width="100%" alt="Spider Web Wire" />
-
 </div>
 
 <br/>
@@ -133,12 +42,16 @@
 
 <table width="100%">
   <tr>
-    <td width="45%" align="center" valign="middle">
+    <td width="42%" align="center" valign="middle">
       <a href="https://github.com/codexanjan">
         <img src="assets/spider-lanyard.svg" width="100%" alt="Spider-Verse Developer Lanyard ID Badge" />
       </a>
     </td>
-    <td width="55%" valign="top">
+    <td width="58%" valign="top">
+
+<table>
+  <tr>
+    <td>
 
 ### <code>OPERATIVE IDENTIFICATION // EARTH-CODEX-01</code>
 
@@ -173,6 +86,10 @@
   <img src="assets/spiderman-logo.svg" width="95" height="95" alt="Spider-Man Animated Logo" />
 </p>
 
+    </td>
+  </tr>
+</table>
+
 </td>
   </tr>
 </table>
@@ -190,10 +107,6 @@
 <a href="https://github.com/codexanjan">
   <img src="assets/coding-web.svg" width="100%" alt="Spider Coding Web // Tech Arsenal" />
 </a>
-
-<br/><br/>
-
-<img src="assets/top-languages.svg" width="100%" alt="Spider-Verse Arsenal // Top Languages" />
 
 <br/><br/>
 

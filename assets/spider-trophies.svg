@@ -242,4 +242,16 @@
       <rect x="-20" y="78" width="40" height="2.5" rx="1" fill="#334155"/>
     </g>
   </g>
+
+  <!-- Red & Blue Glowing Edge Tracks (Spider-Verse HUD) -->
+  <line x1="80" y1="12" x2="350" y2="12" stroke="#FF1B2D" stroke-width="3" filter="url(#tr-glow)"/>
+  <line x1="650" y1="12" x2="920" y2="12" stroke="#21D4FD" stroke-width="3" filter="url(#tr-glow)"/>
+  <line x1="80" y1="228" x2="350" y2="228" stroke="#FF1B2D" stroke-width="3" filter="url(#tr-glow)"/>
+  <line x1="650" y1="228" x2="920" y2="228" stroke="#21D4FD" stroke-width="3" filter="url(#tr-glow)"/>
+
+  <!-- Corner Brackets (Red Left, Blue Right) -->
+  <path d="M 6 45 L 6 6 L 45 6" fill="none" stroke="#FF1B2D" stroke-width="2.8"/>
+  <path d="M 994 45 L 994 6 L 955 6" fill="none" stroke="#21D4FD" stroke-width="2.8"/>
+  <path d="M 6 195 L 6 234 L 45 234" fill="none" stroke="#FF1B2D" stroke-width="2.8"/>
+  <path d="M 994 195 L 994 234 L 955 234" fill="none" stroke="#21D4FD" stroke-width="2.8"/>
 </svg>

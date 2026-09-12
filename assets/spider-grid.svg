@@ -513,4 +513,16 @@
       <tspan fill="#00E5FF">88+ COMMITS</tspan> // <tspan fill="#FFD700">CURRENT STREAK: 3 DAYS</tspan> // <tspan fill="#FF1744">LONGEST: 4 DAYS</tspan> // <tspan fill="#8B93A7">RANK: A+ VERIFIED</tspan>
     </text>
   </g>
+
+  <!-- Red & Blue Glowing Edge Tracks (Spider-Verse HUD) -->
+  <line x1="80" y1="12" x2="350" y2="12" stroke="#FF1B2D" stroke-width="3" filter="url(#sg-glow)"/>
+  <line x1="650" y1="12" x2="920" y2="12" stroke="#21D4FD" stroke-width="3" filter="url(#sg-glow)"/>
+  <line x1="80" y1="368" x2="350" y2="368" stroke="#FF1B2D" stroke-width="3" filter="url(#sg-glow)"/>
+  <line x1="650" y1="368" x2="920" y2="368" stroke="#21D4FD" stroke-width="3" filter="url(#sg-glow)"/>
+
+  <!-- Corner Brackets (Red Left, Blue Right) -->
+  <path d="M 6 45 L 6 6 L 45 6" fill="none" stroke="#FF1B2D" stroke-width="2.8"/>
+  <path d="M 994 45 L 994 6 L 955 6" fill="none" stroke="#21D4FD" stroke-width="2.8"/>
+  <path d="M 6 335 L 6 374 L 45 374" fill="none" stroke="#FF1B2D" stroke-width="2.8"/>
+  <path d="M 994 335 L 994 374 L 955 374" fill="none" stroke="#21D4FD" stroke-width="2.8"/>
 </svg>

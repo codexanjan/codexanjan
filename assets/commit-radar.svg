@@ -349,4 +349,16 @@
   <!-- Radar Vertical Sweep Scanner -->
   <line x1="110" y1="60" x2="110" y2="260" stroke="#00E5FF" stroke-width="1.5" opacity="0.4" class="radar-sweep-bar"/>
   </g>
+
+  <!-- Red & Blue Glowing Edge Tracks (Spider-Verse HUD) -->
+  <line x1="80" y1="12" x2="350" y2="12" stroke="#FF1B2D" stroke-width="3" filter="url(#radar-glow)"/>
+  <line x1="650" y1="12" x2="920" y2="12" stroke="#21D4FD" stroke-width="3" filter="url(#radar-glow)"/>
+  <line x1="80" y1="348" x2="350" y2="348" stroke="#FF1B2D" stroke-width="3" filter="url(#radar-glow)"/>
+  <line x1="650" y1="348" x2="920" y2="348" stroke="#21D4FD" stroke-width="3" filter="url(#radar-glow)"/>
+
+  <!-- Corner Brackets (Red Left, Blue Right) -->
+  <path d="M 6 45 L 6 6 L 45 6" fill="none" stroke="#FF1B2D" stroke-width="2.8"/>
+  <path d="M 994 45 L 994 6 L 955 6" fill="none" stroke="#21D4FD" stroke-width="2.8"/>
+  <path d="M 6 315 L 6 354 L 45 354" fill="none" stroke="#FF1B2D" stroke-width="2.8"/>
+  <path d="M 994 315 L 994 354 L 955 354" fill="none" stroke="#21D4FD" stroke-width="2.8"/>
 </svg>

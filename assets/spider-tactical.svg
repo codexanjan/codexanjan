@@ -341,4 +341,16 @@
       </text>
     </g>
   </g>
+
+  <!-- Red & Blue Glowing Edge Tracks (Spider-Verse HUD) -->
+  <line x1="80" y1="12" x2="350" y2="12" stroke="#FF1B2D" stroke-width="3" filter="url(#tp-glow)"/>
+  <line x1="650" y1="12" x2="920" y2="12" stroke="#21D4FD" stroke-width="3" filter="url(#tp-glow)"/>
+  <line x1="80" y1="428" x2="350" y2="428" stroke="#FF1B2D" stroke-width="3" filter="url(#tp-glow)"/>
+  <line x1="650" y1="428" x2="920" y2="428" stroke="#21D4FD" stroke-width="3" filter="url(#tp-glow)"/>
+
+  <!-- Corner Brackets (Red Left, Blue Right) -->
+  <path d="M 6 45 L 6 6 L 45 6" fill="none" stroke="#FF1B2D" stroke-width="2.8"/>
+  <path d="M 994 45 L 994 6 L 955 6" fill="none" stroke="#21D4FD" stroke-width="2.8"/>
+  <path d="M 6 395 L 6 434 L 45 434" fill="none" stroke="#FF1B2D" stroke-width="2.8"/>
+  <path d="M 994 395 L 994 434 L 955 434" fill="none" stroke="#21D4FD" stroke-width="2.8"/>
 </svg>

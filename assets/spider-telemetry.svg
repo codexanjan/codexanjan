@@ -408,4 +408,16 @@
 
   <!-- Horizontal Laser Scanline -->
   <line x1="0" y1="0" x2="0" y2="580" stroke="#00E5FF" stroke-width="2" opacity="0.35" class="scan-line"/>
+
+  <!-- Red & Blue Glowing Edge Tracks (Spider-Verse HUD) -->
+  <line x1="94" y1="12" x2="413" y2="12" stroke="#FF1B2D" stroke-width="3" filter="url(#neon-glow)"/>
+  <line x1="767" y1="12" x2="1085" y2="12" stroke="#21D4FD" stroke-width="3" filter="url(#neon-glow)"/>
+  <line x1="94" y1="568" x2="413" y2="568" stroke="#FF1B2D" stroke-width="3" filter="url(#neon-glow)"/>
+  <line x1="767" y1="568" x2="1085" y2="568" stroke="#21D4FD" stroke-width="3" filter="url(#neon-glow)"/>
+
+  <!-- Corner Brackets (Red Left, Blue Right) -->
+  <path d="M 6 45 L 6 6 L 45 6" fill="none" stroke="#FF1B2D" stroke-width="2.8"/>
+  <path d="M 1174 45 L 1174 6 L 1135 6" fill="none" stroke="#21D4FD" stroke-width="2.8"/>
+  <path d="M 6 535 L 6 574 L 45 574" fill="none" stroke="#FF1B2D" stroke-width="2.8"/>
+  <path d="M 1174 535 L 1174 574 L 1135 574" fill="none" stroke="#21D4FD" stroke-width="2.8"/>
 </svg>
