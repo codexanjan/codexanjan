@@ -212,7 +212,7 @@
 
 <br/><br/>
 
-<img src="./assets/shadow-contribution-grid.svg" width="100%" alt="Shadow Fight 52-Week Contribution Matrix" />
+<img src="./assets/contribution-grid.svg" width="100%" alt="Shadow Fight 52-Week Contribution Matrix" />
 
 <br/><br/>
 
