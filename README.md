@@ -26,22 +26,6 @@
 <br/><br/>
 
 <!-- ======================================================== -->
-<!-- SYSTEM BOOT & TACTICAL STATUS                            -->
-<!-- ======================================================== -->
-
-<img src="./assets/system-boot.svg" width="100%" alt="Ronin System Initialization &amp; Boot Sequence Telemetry" />
-
-<br/><br/>
-
-<img src="./assets/ronin-status.svg" width="100%" alt="Anjan Shetty Operative Status &amp; Real-time Deployment HUD" />
-
-<br/><br/>
-
-<img src="./assets/ronin-audio-wave.svg" width="100%" alt="Secure Channel Communication Frequency Waveform" />
-
-<br/><br/>
-
-<!-- ======================================================== -->
 <!-- KATANA DIVIDER 01                                        -->
 <!-- ======================================================== -->
 
@@ -57,38 +41,34 @@
 
 <br/><br/>
 
-<img src="./assets/operative-dossier-v2.svg" width="100%" alt="Anjan Shetty Operative Dossier - Core Specializations & Directives" />
+<img src="./assets/operative-dossier-v2.svg" width="100%" alt="Anjan Shetty Operative Dossier - Core Specializations &amp; Directives" />
 
 <br/><br/>
 
-<img src="./assets/developer-rank.svg" width="100%" alt="Engineering Matrix - Full-Stack &amp; AI Capability Topology Radar" />
-
-<br/><br/>
-
-<img src="./assets/system-core.svg" width="100%" alt="System Architecture &amp; Runtime Specs HUD" />
-
-<br/><br/>
-
-<!-- Bushido of Code: Four Disciplinary Pillars -->
-<img src="./assets/katana-discipline.svg" width="100%" alt="Code Bushido - Four Disciplinary Pillars of Software Engineering" />
+<img src="./assets/developer-rank.svg" width="100%" alt="Capability Topology Radar - Bushido of Code &amp; Tactical Engineering Matrix" />
 
 </div>
 
-### Tactical Briefing // About Me
+<br/>
 
-> **DISCIPLINE IN DESIGN. PRECISION IN CODE.**
+### ⚔️ The Way of Code // Samurai Creed & Philosophy
 
-I am **Anjan Shetty**, a developer focused on building scalable full-stack applications, intelligent systems, developer tools, and high-fidelity digital experiences.
+> *"A warrior sharpens the blade in stillness so that every strike in battle is decisive. A developer refines architecture in silence so that every deployment into production is indestructible."*
 
-My approach combines strong engineering fundamentals with continuous experimentation across modern web technologies, distributed backend architecture, AI/ML systems, and developer-focused products.
+I am **Anjan Shetty** (`codexanjan`), an engineering craftsman walking the dual paths of **Full-Stack Software Architecture** and **Applied Artificial Intelligence**. 
 
-I build, test, break, refine, and ship.
+To me, writing code is a discipline of **Bushido**:
+- 🗡️ **Single-Strike Precision**: Zero bloated abstractions. Write modular, highly performant TypeScript and Python engineered for resilient scale.
+- 🛡️ **Defensive Architecture**: Construct fault-tolerant distributed systems, bulletproof CI/CD pipelines, and robust cloud infrastructure that never yield under load.
+- ⚡ **Continuous Mastery**: Relentlessly exploring modern runtimes, agentic LLM orchestration, deep neural networks, and zero-latency reactive user interfaces.
 
 ```txt
-CODENAME        :: CODEXANJAN
-DISCIPLINE      :: FULL-STACK ARCHITECTURE & AI/ML SYSTEMS
-PHILOSOPHY      :: SHARPEN CODE LIKE A KATANA BLADE
-PRIMARY STACK   :: TYPESCRIPT // PYTHON // REACT // NODE.JS // DOCKER
+┌─── SAMURAI CODING DOSSIER ────────────────────────────────────────────────────────┐
+│ OPERATIVE:   Anjan Shetty             CODENAME:   codexanjan                      │
+│ PATH:        Full-Stack Architecture  DISCIPLINE: AI / ML Solutions Engineering   │
+│ WEAPONS:     TypeScript & Python      STATUS:     Armed & Deployed                │
+│ CREED:       Building in the dark. Shipping into the light.                       │
+└───────────────────────────────────────────────────────────────────────────────────┘
 ```
 
 ---

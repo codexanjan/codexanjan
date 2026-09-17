@@ -21,6 +21,30 @@
       <feGaussianBlur stdDeviation="2.5" result="blur" />
       <feComposite in="SourceGraphic" in2="blur" operator="over" />
     </filter>
+
+    <style>
+      @keyframes trophyShimmerCyan {
+        0%, 100% { filter: drop-shadow(0 0 2px #55E6FF); }
+        50% { filter: drop-shadow(0 0 10px #55E6FF); }
+      }
+      @keyframes trophyShimmerRed {
+        0%, 100% { filter: drop-shadow(0 0 2px #FF3038); }
+        50% { filter: drop-shadow(0 0 10px #FF3038); }
+      }
+      @keyframes gradePulse {
+        0%, 100% { opacity: 0.85; transform: scale(0.98); }
+        50% { opacity: 1; transform: scale(1.04); filter: drop-shadow(0 0 8px #FFF); }
+      }
+      .trophy-cyan-glow {
+        animation: trophyShimmerCyan 3.2s ease-in-out infinite;
+      }
+      .trophy-red-glow {
+        animation: trophyShimmerRed 3.5s ease-in-out infinite;
+      }
+      .trophy-grade-text {
+        animation: gradePulse 2.8s ease-in-out infinite;
+      }
+    </style>
   </defs>
 
   <rect width="900" height="160" rx="8" fill="url(#trCardBg)" stroke="#171C25" stroke-width="1.5" />
@@ -31,13 +55,13 @@
     <g transform="translate(35, 0)">
       <text x="0" y="12" font-size="9.5" fill="#6A7280" font-weight="700">Stars</text>
       <!-- Cup Icon -->
-      <g transform="translate(0, 48)">
+      <g transform="translate(0, 48)" class="trophy-cyan-glow">
         <path d="M-14,-22 L14,-22 L10,6 C7,14 -7,14 -10,6 Z" fill="#121620" stroke="url(#trophyCyan)" stroke-width="1.8" filter="url(#trGlow)" />
         <path d="M-14,-16 C-22,-16 -22,-6 -14,-6" fill="none" stroke="url(#trophyCyan)" stroke-width="1.6" />
         <path d="M14,-16 C22,-16 22,-6 14,-6" fill="none" stroke="url(#trophyCyan)" stroke-width="1.6" />
         <rect x="-4" y="14" width="8" height="8" fill="#1C2330" />
         <rect x="-12" y="22" width="24" height="4" rx="1" fill="url(#trophyCyan)" />
-        <text x="0" y="-3" font-family="'Orbitron', sans-serif" font-size="12" font-weight="900" fill="#FFF">A</text>
+        <text x="0" y="-3" font-family="'Orbitron', sans-serif" font-size="12" font-weight="900" fill="#FFF" class="trophy-grade-text">A</text>
       </g>
       <text x="0" y="92" font-size="9" fill="#F4F4F2" font-weight="700">Super Star</text>
       <text x="0" y="106" font-size="8.5" fill="#55E6FF">164 pt</text>
@@ -47,13 +71,13 @@
     <!-- Trophy 2: Commits (Grade A) -->
     <g transform="translate(138, 0)">
       <text x="0" y="12" font-size="9.5" fill="#6A7280" font-weight="700">Commits</text>
-      <g transform="translate(0, 48)">
+      <g transform="translate(0, 48)" class="trophy-cyan-glow">
         <path d="M-14,-22 L14,-22 L10,6 C7,14 -7,14 -10,6 Z" fill="#121620" stroke="url(#trophyCyan)" stroke-width="1.8" filter="url(#trGlow)" />
         <path d="M-14,-16 C-22,-16 -22,-6 -14,-6" fill="none" stroke="url(#trophyCyan)" stroke-width="1.6" />
         <path d="M14,-16 C22,-16 22,-6 14,-6" fill="none" stroke="url(#trophyCyan)" stroke-width="1.6" />
         <rect x="-4" y="14" width="8" height="8" fill="#1C2330" />
         <rect x="-12" y="22" width="24" height="4" rx="1" fill="url(#trophyCyan)" />
-        <text x="0" y="-3" font-family="'Orbitron', sans-serif" font-size="12" font-weight="900" fill="#FFF">A</text>
+        <text x="0" y="-3" font-family="'Orbitron', sans-serif" font-size="12" font-weight="900" fill="#FFF" class="trophy-grade-text">A</text>
       </g>
       <text x="0" y="92" font-size="9" fill="#F4F4F2" font-weight="700">High Committer</text>
       <text x="0" y="106" font-size="8.5" fill="#55E6FF">127 pt</text>
@@ -63,13 +87,13 @@
     <!-- Trophy 3: Followers (Grade B) -->
     <g transform="translate(241, 0)">
       <text x="0" y="12" font-size="9.5" fill="#6A7280" font-weight="700">Followers</text>
-      <g transform="translate(0, 48)">
+      <g transform="translate(0, 48)" class="trophy-red-glow">
         <path d="M-14,-22 L14,-22 L10,6 C7,14 -7,14 -10,6 Z" fill="#121620" stroke="url(#trophyRed)" stroke-width="1.8" filter="url(#trGlow)" />
         <path d="M-14,-16 C-22,-16 -22,-6 -14,-6" fill="none" stroke="url(#trophyRed)" stroke-width="1.6" />
         <path d="M14,-16 C22,-16 22,-6 14,-6" fill="none" stroke="url(#trophyRed)" stroke-width="1.6" />
         <rect x="-4" y="14" width="8" height="8" fill="#1C2330" />
         <rect x="-12" y="22" width="24" height="4" rx="1" fill="url(#trophyRed)" />
-        <text x="0" y="-3" font-family="'Orbitron', sans-serif" font-size="12" font-weight="900" fill="#FFF">B</text>
+        <text x="0" y="-3" font-family="'Orbitron', sans-serif" font-size="12" font-weight="900" fill="#FFF" class="trophy-grade-text">B</text>
       </g>
       <text x="0" y="92" font-size="9" fill="#F4F4F2" font-weight="700">Many Friends</text>
       <text x="0" y="106" font-size="8.5" fill="#FF3038">17 pt</text>
@@ -79,13 +103,13 @@
     <!-- Trophy 4: Repositories (Grade B) -->
     <g transform="translate(344, 0)">
       <text x="0" y="12" font-size="9.5" fill="#6A7280" font-weight="700">Repositories</text>
-      <g transform="translate(0, 48)">
+      <g transform="translate(0, 48)" class="trophy-red-glow">
         <path d="M-14,-22 L14,-22 L10,6 C7,14 -7,14 -10,6 Z" fill="#121620" stroke="url(#trophyRed)" stroke-width="1.8" filter="url(#trGlow)" />
         <path d="M-14,-16 C-22,-16 -22,-6 -14,-6" fill="none" stroke="url(#trophyRed)" stroke-width="1.6" />
         <path d="M14,-16 C22,-16 22,-6 14,-6" fill="none" stroke="url(#trophyRed)" stroke-width="1.6" />
         <rect x="-4" y="14" width="8" height="8" fill="#1C2330" />
         <rect x="-12" y="22" width="24" height="4" rx="1" fill="url(#trophyRed)" />
-        <text x="0" y="-3" font-family="'Orbitron', sans-serif" font-size="12" font-weight="900" fill="#FFF">B</text>
+        <text x="0" y="-3" font-family="'Orbitron', sans-serif" font-size="12" font-weight="900" fill="#FFF" class="trophy-grade-text">B</text>
       </g>
       <text x="0" y="92" font-size="9" fill="#F4F4F2" font-weight="700">Repo Creator</text>
       <text x="0" y="106" font-size="8.5" fill="#FF3038">18 pt</text>

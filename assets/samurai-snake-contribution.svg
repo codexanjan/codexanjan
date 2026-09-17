@@ -29,11 +29,20 @@
         0%, 100% { opacity: 0.4; }
         50% { opacity: 1; }
       }
+      @keyframes matrixScannerSweep {
+        0% { transform: translateX(0px); opacity: 0; }
+        10% { opacity: 0.9; }
+        90% { opacity: 0.9; }
+        100% { transform: translateX(820px); opacity: 0; }
+      }
       .snake-body {
         animation: snakeTravel 12s ease-in-out infinite alternate;
       }
       .tile-pulse {
         animation: snakeTrailFade 2.5s ease-in-out infinite;
+      }
+      .matrix-laser {
+        animation: matrixScannerSweep 6.5s linear infinite;
       }
     </style>
   </defs>
@@ -57,6 +66,10 @@
 
   <!-- 50-Week Contribution Tile Matrix (7 Rows x 46 Columns) -->
   <g transform="translate(42, 68)">
+    <!-- Sweeping Matrix Laser Line -->
+    <g class="matrix-laser">
+      <line x1="0" y1="0" x2="0" y2="125" stroke="#55E6FF" stroke-width="2" filter="url(#snkRedGlow)" opacity="0.8" />
+    </g>
     <!-- Generating representative matrix pattern with samurai red & obsidian levels -->
     <!-- Column loop pattern -->
     <g fill="#141820" rx="2">

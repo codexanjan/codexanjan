@@ -13,14 +13,45 @@
       <feGaussianBlur stdDeviation="3" result="blur" />
       <feComposite in="SourceGraphic" in2="blur" operator="over" />
     </filter>
+
     <style>
       @keyframes flamePulse {
-        0%, 100% { filter: drop-shadow(0 0 4px #FF3038); transform: scale(0.98); }
-        50% { filter: drop-shadow(0 0 12px #FF4B4B); transform: scale(1.02); }
+        0%, 100% { filter: drop-shadow(0 0 4px #FF3038); transform: scale(0.97); }
+        50% { filter: drop-shadow(0 0 14px #FF4B4B); transform: scale(1.03); }
       }
+      @keyframes rankSpin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+      @keyframes ledBlink {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0.3; }
+      }
+      @keyframes donutPulseGold {
+        0%, 100% { filter: drop-shadow(0 0 2px rgba(255,214,0,0.3)); }
+        50% { filter: drop-shadow(0 0 8px rgba(255,214,0,0.8)); }
+      }
+      @keyframes donutPulseCyan {
+        0%, 100% { filter: drop-shadow(0 0 2px rgba(85,230,255,0.3)); }
+        50% { filter: drop-shadow(0 0 8px rgba(85,230,255,0.8)); }
+      }
+
       .flame-ring {
-        transform-origin: 672px 120px;
-        animation: flamePulse 3s ease-in-out infinite;
+        transform-origin: 0px 0px;
+        animation: flamePulse 2.8s ease-in-out infinite;
+      }
+      .rank-ring-spin {
+        transform-origin: 0px 0px;
+        animation: rankSpin 14s linear infinite;
+      }
+      .telemetry-led {
+        animation: ledBlink 1.8s ease-in-out infinite;
+      }
+      .donut-gold {
+        animation: donutPulseGold 3.6s ease-in-out infinite;
+      }
+      .donut-cyan {
+        animation: donutPulseCyan 3.6s ease-in-out infinite;
       }
     </style>
   </defs>
@@ -32,7 +63,7 @@
   <!-- ======================================================== -->
   <g transform="translate(30, 30)">
     <rect width="405" height="180" rx="6" fill="#0A0D12" stroke="#222834" stroke-width="1" />
-    <circle cx="20" cy="22" r="3.5" fill="#42FF9E" />
+    <circle cx="20" cy="22" r="3.5" fill="#42FF9E" class="telemetry-led" />
     <text x="32" y="26" font-family="'Orbitron', sans-serif" font-size="11" font-weight="800" fill="#FF3038" letter-spacing="1">RONIN METRICS</text>
 
     <!-- Stats List -->
@@ -67,7 +98,7 @@
     <!-- Rank Circle Badge B- -->
     <g transform="translate(325, 100)">
       <circle cx="0" cy="0" r="42" fill="#10141D" stroke="#222834" stroke-width="2" />
-      <circle cx="0" cy="0" r="36" fill="none" stroke="#FF3038" stroke-width="4" stroke-dasharray="160 60" stroke-linecap="round" filter="url(#tgRedGlow)" />
+      <circle cx="0" cy="0" r="36" fill="none" stroke="#FF3038" stroke-width="4" stroke-dasharray="160 60" stroke-linecap="round" filter="url(#tgRedGlow)" class="rank-ring-spin" />
       <text x="0" y="8" text-anchor="middle" font-family="'Orbitron', sans-serif" font-size="22" font-weight="900" fill="#FFF">B-</text>
       <text x="0" y="24" text-anchor="middle" font-family="'Courier New', monospace" font-size="8.5" fill="#A8ADB7" letter-spacing="1">RANK</text>
     </g>
@@ -87,13 +118,14 @@
     </g>
 
     <!-- Center Glowing Flame Current Streak -->
-    <g transform="translate(202, 90)" class="flame-ring" text-anchor="middle">
-      <circle cx="0" cy="0" r="42" fill="#121620" stroke="#FF3038" stroke-width="2.5" filter="url(#tgRedGlow)" />
-      <!-- Flame Icon -->
-      <path d="M 0 -24 C -6 -14 -12 -8 -12 2 C -12 9 -6 15 0 15 C 6 15 12 9 12 2 C 12 -8 6 -14 0 -24 Z" fill="#FF5722" opacity="0.4" />
-      <text x="0" y="6" font-family="'Orbitron', sans-serif" font-size="24" font-weight="900" fill="#FFF">3</text>
-      <text x="0" y="26" font-family="'Courier New', monospace" font-size="9" font-weight="800" fill="#FF3038" letter-spacing="1">Current Streak</text>
-      <text x="0" y="40" font-family="'Courier New', monospace" font-size="8" fill="#6A7280">Sep 4 - Sep 6</text>
+    <g transform="translate(202, 90)" text-anchor="middle">
+      <g class="flame-ring">
+        <circle cx="0" cy="0" r="42" fill="#121620" stroke="#FF3038" stroke-width="2.5" filter="url(#tgRedGlow)" />
+        <path d="M 0 -24 C -6 -14 -12 -8 -12 2 C -12 9 -6 15 0 15 C 6 15 12 9 12 2 C 12 -8 6 -14 0 -24 Z" fill="#FF5722" opacity="0.4" />
+        <text x="0" y="6" font-family="'Orbitron', sans-serif" font-size="24" font-weight="900" fill="#FFF">3</text>
+        <text x="0" y="26" font-family="'Courier New', monospace" font-size="9" font-weight="800" fill="#FF3038" letter-spacing="1">Current Streak</text>
+      </g>
+      <text x="0" y="46" font-family="'Courier New', monospace" font-size="8" fill="#6A7280">Sep 4 - Sep 6</text>
     </g>
 
     <!-- Longest Streak -->
@@ -109,7 +141,7 @@
   <!-- ======================================================== -->
   <g transform="translate(30, 230)">
     <rect width="405" height="180" rx="6" fill="#0A0D12" stroke="#222834" stroke-width="1" />
-    <circle cx="20" cy="22" r="3.5" fill="#FFB703" />
+    <circle cx="20" cy="22" r="3.5" fill="#FFB703" class="telemetry-led" />
     <text x="32" y="26" font-family="'Orbitron', sans-serif" font-size="11" font-weight="800" fill="#FF3038" letter-spacing="1">TOP LANGUAGES (BY REPO)</text>
 
     <!-- Lang Bars -->
@@ -157,7 +189,7 @@
     </g>
 
     <!-- Donut Meter Right -->
-    <g transform="translate(325, 100)">
+    <g transform="translate(325, 100)" class="donut-gold">
       <circle cx="0" cy="0" r="42" fill="none" stroke="#FFD600" stroke-width="12" stroke-dasharray="100 164" />
       <circle cx="0" cy="0" r="42" fill="none" stroke="#00B4AB" stroke-width="12" stroke-dasharray="68 196" stroke-dashoffset="-100" />
       <circle cx="0" cy="0" r="42" fill="none" stroke="#E34F26" stroke-width="12" stroke-dasharray="42 222" stroke-dashoffset="-168" />
@@ -173,7 +205,7 @@
   <!-- ======================================================== -->
   <g transform="translate(465, 230)">
     <rect width="405" height="180" rx="6" fill="#0A0D12" stroke="#222834" stroke-width="1" />
-    <circle cx="20" cy="22" r="3.5" fill="#55E6FF" />
+    <circle cx="20" cy="22" r="3.5" fill="#55E6FF" class="telemetry-led" />
     <text x="32" y="26" font-family="'Orbitron', sans-serif" font-size="11" font-weight="800" fill="#55E6FF" letter-spacing="1">TOP LANGUAGES (BY COMMIT)</text>
 
     <!-- Lang Bars -->
@@ -221,7 +253,7 @@
     </g>
 
     <!-- Donut Meter Right -->
-    <g transform="translate(325, 100)">
+    <g transform="translate(325, 100)" class="donut-cyan">
       <circle cx="0" cy="0" r="42" fill="none" stroke="#3572A5" stroke-width="12" stroke-dasharray="116 148" />
       <circle cx="0" cy="0" r="42" fill="none" stroke="#3178C6" stroke-width="12" stroke-dasharray="58 206" stroke-dashoffset="-116" />
       <circle cx="0" cy="0" r="42" fill="none" stroke="#00B4AB" stroke-width="12" stroke-dasharray="40 224" stroke-dashoffset="-174" />
