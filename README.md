@@ -102,31 +102,31 @@ PRIMARY STACK   :: TYPESCRIPT // PYTHON // REACT // NODE.JS // DOCKER
 ### Languages
 
 <p align="left">
-  <img src="./assets/arsenal-languages-v2.svg" alt="Languages: JavaScript, TypeScript, Python, Java, C, C++, Bash" />
+  <img src="./assets/arsenal-languages-v2.svg" height="32" alt="Languages: JavaScript, TypeScript, Python, Java, C, C++, Bash" />
 </p>
 
 ### Frameworks & Libraries
 
 <p align="left">
-  <img src="./assets/arsenal-frameworks-v2.svg" alt="Frameworks & Libraries: React, Next.js, HTML5, CSS3, Tailwind CSS, Vite" />
+  <img src="./assets/arsenal-frameworks-v2.svg" height="32" alt="Frameworks & Libraries: React, Next.js, HTML5, CSS3, Tailwind CSS, Vite" />
 </p>
 
 ### Backend & APIs
 
 <p align="left">
-  <img src="./assets/arsenal-backend-v2.svg" alt="Backend & APIs: Node.js, Express, FastAPI, REST APIs" />
+  <img src="./assets/arsenal-backend-v2.svg" height="32" alt="Backend & APIs: Node.js, Express, FastAPI, REST APIs" />
 </p>
 
 ### Databases, Cloud & DevOps
 
 <p align="left">
-  <img src="./assets/arsenal-databases-v2.svg" alt="Databases, Cloud & DevOps: PostgreSQL, MySQL, MongoDB, Redis, Docker, GitHub Actions" />
+  <img src="./assets/arsenal-databases-v2.svg" height="32" alt="Databases, Cloud & DevOps: PostgreSQL, MySQL, MongoDB, Redis, Docker, GitHub Actions" />
 </p>
 
 ### Tools & Operations
 
 <p align="left">
-  <img src="./assets/arsenal-tools-v2.svg" alt="Tools & Operations: Git, GitHub, Linux, Postman" />
+  <img src="./assets/arsenal-tools-v2.svg" height="32" alt="Tools & Operations: Git, GitHub, Linux, Postman" />
 </p>
 
 <div align="center">
