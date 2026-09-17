@@ -53,6 +53,11 @@
 
 <img src="./assets/system-core.svg" width="100%" alt="System Architecture &amp; Runtime Specs HUD" />
 
+<br/><br/>
+
+<!-- Bushido of Code: Four Disciplinary Pillars -->
+<img src="./assets/katana-discipline.svg" width="100%" alt="Code Bushido - Four Disciplinary Pillars of Software Engineering" />
+
 </div>
 
 ### Tactical Briefing // About Me
@@ -89,6 +94,11 @@ PRIMARY STACK   :: TYPESCRIPT // PYTHON // REACT // NODE.JS // DOCKER
 <!-- ======================================================== -->
 
 <img src="./assets/header-arsenal.svg" width="100%" alt="Section 02 - Developer Arsenal Weapons of Code" />
+
+<br/><br/>
+
+<!-- Twin Blade Showcase: The Daisho Armory HUD -->
+<img src="./assets/katana-armory.svg" width="100%" alt="Ronin Daisho Armory - Twin Katana Blades: Full-Stack Muramasa &amp; AI Masamune" />
 
 <br/><br/>
 

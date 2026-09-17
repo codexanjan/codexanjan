@@ -1,0 +1,229 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 320" width="100%" height="100%" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <!-- Dark Background Gradient -->
+    <linearGradient id="armoryBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#050608" />
+      <stop offset="50%" stop-color="#0A0D12" />
+      <stop offset="100%" stop-color="#050608" />
+    </linearGradient>
+
+    <!-- Blade Steels -->
+    <linearGradient id="katanaRedSteel" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#141820" />
+      <stop offset="20%" stop-color="#2D3440" />
+      <stop offset="70%" stop-color="#A8ADB7" />
+      <stop offset="95%" stop-color="#FFFFFF" />
+      <stop offset="100%" stop-color="#FF3038" />
+    </linearGradient>
+    <linearGradient id="katanaCyanSteel" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#141820" />
+      <stop offset="20%" stop-color="#2D3440" />
+      <stop offset="70%" stop-color="#A8ADB7" />
+      <stop offset="95%" stop-color="#FFFFFF" />
+      <stop offset="100%" stop-color="#55E6FF" />
+    </linearGradient>
+
+    <!-- Energy Plasma Beams -->
+    <linearGradient id="plasmaRed" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FF3038" stop-opacity="0" />
+      <stop offset="30%" stop-color="#FF3038" stop-opacity="0.9" />
+      <stop offset="50%" stop-color="#FFFFFF" stop-opacity="1" />
+      <stop offset="70%" stop-color="#FF4B4B" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#8C111B" stop-opacity="0" />
+    </linearGradient>
+    <linearGradient id="plasmaCyan" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#55E6FF" stop-opacity="0" />
+      <stop offset="30%" stop-color="#55E6FF" stop-opacity="0.9" />
+      <stop offset="50%" stop-color="#FFFFFF" stop-opacity="1" />
+      <stop offset="70%" stop-color="#38B6FF" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#006699" stop-opacity="0" />
+    </linearGradient>
+
+    <!-- Filters -->
+    <filter id="glowRedArmory" x="-20%" y="-40%" width="140%" height="180%">
+      <feGaussianBlur stdDeviation="4" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+    <filter id="glowCyanArmory" x="-20%" y="-40%" width="140%" height="180%">
+      <feGaussianBlur stdDeviation="4" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <style>
+      @keyframes plasmaTravelRed {
+        0% { stroke-dashoffset: 900; opacity: 0; }
+        20% { opacity: 1; }
+        80% { opacity: 1; }
+        100% { stroke-dashoffset: -900; opacity: 0; }
+      }
+      @keyframes plasmaTravelCyan {
+        0% { stroke-dashoffset: 900; opacity: 0; }
+        20% { opacity: 1; }
+        80% { opacity: 1; }
+        100% { stroke-dashoffset: -900; opacity: 0; }
+      }
+      @keyframes bladeGleam {
+        0%, 100% { opacity: 0.3; }
+        50% { opacity: 0.9; }
+      }
+      @keyframes armorySpark {
+        0% { transform: translateY(0); opacity: 1; }
+        100% { transform: translateY(-15px) translateX(10px); opacity: 0; }
+      }
+
+      .beam-red {
+        stroke-dasharray: 200 700;
+        animation: plasmaTravelRed 3s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+      }
+      .beam-cyan {
+        stroke-dasharray: 200 700;
+        animation: plasmaTravelCyan 3.6s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+      }
+      .gleam {
+        animation: bladeGleam 2.5s ease-in-out infinite;
+      }
+      .sparkle {
+        animation: armorySpark 1.8s ease-out infinite;
+      }
+    </style>
+  </defs>
+
+  <!-- Frame Background -->
+  <rect width="900" height="320" rx="12" fill="url(#armoryBg)" stroke="#171B21" stroke-width="1.5" />
+  <rect x="6" y="6" width="888" height="308" rx="10" fill="none" stroke="#222832" stroke-dasharray="8 6" stroke-width="1" />
+
+  <!-- Corner Brackets -->
+  <polygon points="12,12 36,12 12,36" fill="#FF3038" />
+  <path d="M 864 12 L 888 12 L 888 36" fill="none" stroke="#FF3038" stroke-width="2" />
+  <path d="M 12 284 L 12 308 L 36 308" fill="none" stroke="#55E6FF" stroke-width="2" />
+  <polygon points="888,308 864,308 888,284" fill="#55E6FF" />
+
+  <!-- Header Bar -->
+  <g transform="translate(35, 34)" font-family="'Courier New', Consolas, monospace">
+    <rect x="0" y="-14" width="220" height="24" rx="3" fill="#141820" stroke="#FF3038" stroke-width="1" />
+    <text x="12" y="2" font-size="11" font-weight="700" fill="#FF3038" letter-spacing="2">RONIN DAISHO // ARMORY HUD</text>
+    <text x="560" y="2" font-size="10" fill="#787F89" letter-spacing="1">TWIN BLADES // FORGED IN CODE</text>
+    <line x1="0" y1="18" x2="830" y2="18" stroke="#171B21" stroke-width="1" />
+  </g>
+
+  <!-- ======================================================== -->
+  <!-- BLADE I: PRIMARY KATANA — FULL-STACK ARCHITECTURE        -->
+  <!-- ======================================================== -->
+  <g transform="translate(45, 95)">
+    <!-- Info Label Top -->
+    <g font-family="'Courier New', Consolas, monospace" font-size="11">
+      <text x="0" y="0" font-weight="700" fill="#FF3038" letter-spacing="2">BLADE I // MURAMASA-FULLSTACK</text>
+      <text x="320" y="0" fill="#787F89">STEEL: CARBON-NANOTUBE // EDGE: CRIMSON PLASMA</text>
+      <text x="730" y="0" font-weight="700" fill="#FF3038">ARMED</text>
+    </g>
+
+    <!-- Katana Visual (Length: 810px) -->
+    <g transform="translate(0, 20)">
+      <!-- Scabbard Base Bed -->
+      <rect x="0" y="-6" width="810" height="12" rx="3" fill="#0E1218" stroke="#171B21" stroke-width="1" />
+
+      <!-- Tsuka (Hilt, x: 0 to 110) -->
+      <rect x="0" y="-8" width="105" height="16" rx="2" fill="#141822" stroke="#262D38" />
+      <!-- Diamond Wrapping (Ito) -->
+      <polygon points="12,-8 18,0 24,-8 18,8" fill="#FF3038" />
+      <polygon points="28,-8 34,0 40,-8 34,8" fill="#FF3038" />
+      <polygon points="44,-8 50,0 56,-8 50,8" fill="#FF3038" />
+      <polygon points="60,-8 66,0 72,-8 66,8" fill="#FF3038" />
+      <polygon points="76,-8 82,0 88,-8 82,8" fill="#FF3038" />
+      <polygon points="92,-8 98,0 104,-8 98,8" fill="#FF3038" />
+      <!-- Menuki Dragon Gold Pin -->
+      <circle cx="50" cy="0" r="3" fill="#F4C95D" />
+
+      <!-- Tsuba (Guard, x: 105 to 115) -->
+      <rect x="105" y="-16" width="8" height="32" rx="2" fill="#2D3440" stroke="#FF3038" stroke-width="1.5" />
+      <line x1="109" y1="-12" x2="109" y2="12" stroke="#FF3038" stroke-width="1.5" />
+
+      <!-- Habaki Collar (x: 113 to 125) -->
+      <rect x="113" y="-6" width="12" height="12" rx="1" fill="#F4C95D" stroke="#A8ADB7" stroke-width="0.5" />
+
+      <!-- Steel Blade Body (x: 125 to 790) -->
+      <path d="M 125 -5 L 750 -5 Q 780 -3 795 0 L 750 5 L 125 5 Z" fill="url(#katanaRedSteel)" />
+      <!-- Bo-hi Fuller Groove with internal red glow -->
+      <line x1="130" y1="-1" x2="740" y2="-1" stroke="#FF3038" stroke-width="1.5" opacity="0.8" />
+      <!-- Hamon Wavy Temper Line -->
+      <path d="M 125 1 Q 190 -2 250 2 T 370 -1 T 490 2 T 610 -1 T 730 2 L 785 0" fill="none" stroke="#FFFFFF" stroke-width="0.75" class="gleam" />
+
+      <!-- Kissaki (Sharp Katana Tip) -->
+      <polygon points="750,-5 795,0 750,5" fill="#FFFFFF" />
+
+      <!-- High-Voltage Crimson Plasma Surge Beam -->
+      <line x1="120" y1="0" x2="795" y2="0" stroke="url(#plasmaRed)" stroke-width="4" stroke-linecap="round" class="beam-red" filter="url(#glowRedArmory)" />
+      <line x1="120" y1="0" x2="795" y2="0" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" class="beam-red" />
+
+      <!-- Flying Plasma Sparks -->
+      <circle cx="340" cy="-10" r="1.5" fill="#FF3038" class="sparkle" />
+      <circle cx="580" cy="12" r="1.5" fill="#FF4B4B" class="sparkle" style="animation-delay: 0.6s;" />
+      <circle cx="760" cy="-8" r="2" fill="#FFFFFF" class="sparkle" style="animation-delay: 1.2s;" />
+    </g>
+
+    <!-- Telemetry Badges Under Blade I -->
+    <g transform="translate(125, 36)" font-family="'Courier New', Consolas, monospace" font-size="9" fill="#787F89">
+      <text x="0" y="0">DISCIPLINE: FULL-STACK</text>
+      <text x="180" y="0">RUNTIMES: NODE 24 // TS 5 // REACT 19</text>
+      <text x="460" y="0">SPECIALTY: HIGH-THROUGHPUT REST &amp; MICROSERVICES</text>
+    </g>
+  </g>
+
+  <!-- ======================================================== -->
+  <!-- BLADE II: COMPANION WAKIZASHI — AI & MACHINE LEARNING     -->
+  <!-- ======================================================== -->
+  <g transform="translate(45, 205)">
+    <!-- Info Label Top -->
+    <g font-family="'Courier New', Consolas, monospace" font-size="11">
+      <text x="0" y="0" font-weight="700" fill="#55E6FF" letter-spacing="2">BLADE II // MASAMUNE-NEURAL</text>
+      <text x="320" y="0" fill="#787F89">STEEL: TITANIUM-SYNAPSE // EDGE: CYAN COGNITIVE</text>
+      <text x="730" y="0" font-weight="700" fill="#55E6FF">ONLINE</text>
+    </g>
+
+    <!-- Wakizashi Visual (Length: 710px) -->
+    <g transform="translate(0, 20)">
+      <!-- Bed -->
+      <rect x="0" y="-6" width="710" height="12" rx="3" fill="#0E1218" stroke="#171B21" stroke-width="1" />
+
+      <!-- Tsuka (Hilt, x: 0 to 95) -->
+      <rect x="0" y="-7" width="90" height="14" rx="2" fill="#141822" stroke="#262D38" />
+      <polygon points="12,-7 17,0 22,-7 17,7" fill="#55E6FF" />
+      <polygon points="26,-7 31,0 36,-7 31,7" fill="#55E6FF" />
+      <polygon points="40,-7 45,0 50,-7 45,7" fill="#55E6FF" />
+      <polygon points="54,-7 59,0 64,-7 59,7" fill="#55E6FF" />
+      <polygon points="68,-7 73,0 78,-7 73,7" fill="#55E6FF" />
+      <circle cx="45" cy="0" r="2.5" fill="#55E6FF" />
+
+      <!-- Tsuba (Guard) -->
+      <rect x="90" y="-14" width="7" height="28" rx="2" fill="#2D3440" stroke="#55E6FF" stroke-width="1.5" />
+      <line x1="93" y1="-10" x2="93" y2="10" stroke="#55E6FF" stroke-width="1.5" />
+
+      <!-- Habaki Collar -->
+      <rect x="97" y="-5" width="10" height="10" rx="1" fill="#F4C95D" stroke="#A8ADB7" stroke-width="0.5" />
+
+      <!-- Steel Blade Body (x: 107 to 690) -->
+      <path d="M 107 -4 L 650 -4 Q 675 -2 690 0 L 650 4 L 107 4 Z" fill="url(#katanaCyanSteel)" />
+      <line x1="112" y1="-1" x2="640" y2="-1" stroke="#55E6FF" stroke-width="1.2" opacity="0.8" />
+      <path d="M 107 1 Q 160 -1 220 2 T 340 -1 T 460 2 T 580 -1 L 680 0" fill="none" stroke="#FFFFFF" stroke-width="0.75" class="gleam" />
+
+      <!-- Kissaki Tip -->
+      <polygon points="650,-4 690,0 650,4" fill="#FFFFFF" />
+
+      <!-- High-Voltage Cyan Plasma Surge Beam -->
+      <line x1="100" y1="0" x2="690" y2="0" stroke="url(#plasmaCyan)" stroke-width="3.5" stroke-linecap="round" class="beam-cyan" filter="url(#glowCyanArmory)" />
+      <line x1="100" y1="0" x2="690" y2="0" stroke="#FFFFFF" stroke-width="1.2" stroke-linecap="round" class="beam-cyan" />
+
+      <!-- Plasma Sparks -->
+      <circle cx="280" cy="-8" r="1.5" fill="#55E6FF" class="sparkle" />
+      <circle cx="490" cy="10" r="1.5" fill="#55E6FF" class="sparkle" style="animation-delay: 0.5s;" />
+      <circle cx="660" cy="-6" r="2" fill="#FFFFFF" class="sparkle" style="animation-delay: 1.1s;" />
+    </g>
+
+    <!-- Telemetry Badges Under Blade II -->
+    <g transform="translate(107, 36)" font-family="'Courier New', Consolas, monospace" font-size="9" fill="#787F89">
+      <text x="0" y="0">DISCIPLINE: AI / ML</text>
+      <text x="160" y="0">MODELS: AGENTIC AI // LLM RAG // PYTORCH // EMBEDDINGS</text>
+      <text x="520" y="0">SPECIALTY: INTELLIGENT AUTONOMOUS AGENTS</text>
+    </g>
+  </g>
+</svg>

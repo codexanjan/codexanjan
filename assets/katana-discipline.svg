@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 200" width="100%" height="100%" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <linearGradient id="discBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#080A0D" />
+      <stop offset="100%" stop-color="#050608" />
+    </linearGradient>
+    <linearGradient id="discSlash" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FF3038" stop-opacity="0" />
+      <stop offset="30%" stop-color="#FF3038" stop-opacity="0.8" />
+      <stop offset="50%" stop-color="#FFFFFF" stop-opacity="1" />
+      <stop offset="70%" stop-color="#FF4B4B" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#FF3038" stop-opacity="0" />
+    </linearGradient>
+    <filter id="dGlowDisc" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur stdDeviation="2.5" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <rect width="850" height="200" rx="8" fill="url(#discBg)" stroke="#171B21" stroke-width="1.5" />
+  <polygon points="10,10 25,10 10,25" fill="#FF3038" />
+  <polygon points="840,190 825,190 840,175" fill="#FF3038" />
+
+  <!-- Header -->
+  <g transform="translate(30, 32)" font-family="'Courier New', Consolas, monospace">
+    <text x="0" y="0" font-size="12" font-weight="700" fill="#FF3038" letter-spacing="3">CODE BUSHIDO // FOUR DISCIPLINARY PILLARS</text>
+    <text x="590" y="0" font-size="10" fill="#787F89" letter-spacing="1">ETHOS: PRECISION</text>
+    <line x1="0" y1="12" x2="790" y2="12" stroke="#171B21" stroke-width="1" />
+  </g>
+
+  <!-- Piercing Katana Blade Line running through the 4 pillars -->
+  <line x1="20" y1="125" x2="830" y2="125" stroke="#171B21" stroke-width="1.5" />
+  <line x1="40" y1="125" x2="810" y2="125" stroke="url(#discSlash)" stroke-width="2" />
+
+  <!-- 4 Tactical Cards -->
+  <g transform="translate(30, 68)" font-family="'Courier New', Consolas, monospace">
+    <!-- Card 1: Blade Sharpness -->
+    <g transform="translate(0, 0)">
+      <rect x="0" y="0" width="185" height="105" rx="4" fill="#0E1218" stroke="#FF3038" stroke-width="1" />
+      <polygon points="0,0 8,0 0,8" fill="#FF3038" />
+      <text x="12" y="24" font-size="11" font-weight="700" fill="#FF3038">01 // SHARPNESS</text>
+      <text x="12" y="46" font-size="13" font-weight="900" fill="#F4F4F2">CLEAN SYNTAX</text>
+      <text x="12" y="68" font-size="9" fill="#787F89">Zero Tech Debt</text>
+      <text x="12" y="84" font-size="9" fill="#A8ADB7">Razor-sharp AST &amp; Linting</text>
+    </g>
+
+    <!-- Card 2: Single Strike -->
+    <g transform="translate(200, 0)">
+      <rect x="0" y="0" width="185" height="105" rx="4" fill="#0E1218" stroke="#171B21" stroke-width="1" />
+      <polygon points="0,0 8,0 0,8" fill="#FFF" />
+      <text x="12" y="24" font-size="11" font-weight="700" fill="#F4F4F2">02 // PRECISION</text>
+      <text x="12" y="46" font-size="13" font-weight="900" fill="#F4F4F2">SINGLE STRIKE</text>
+      <text x="12" y="68" font-size="9" fill="#787F89">Modular Architecture</text>
+      <text x="12" y="84" font-size="9" fill="#A8ADB7">Targeted Execution</text>
+    </g>
+
+    <!-- Card 3: Armor Resilience -->
+    <g transform="translate(400, 0)">
+      <rect x="0" y="0" width="185" height="105" rx="4" fill="#0E1218" stroke="#55E6FF" stroke-width="1" />
+      <polygon points="0,0 8,0 0,8" fill="#55E6FF" />
+      <text x="12" y="24" font-size="11" font-weight="700" fill="#55E6FF">03 // RESILIENCE</text>
+      <text x="12" y="46" font-size="13" font-weight="900" fill="#F4F4F2">TYPE SAFETY</text>
+      <text x="12" y="68" font-size="9" fill="#787F89">High Availability</text>
+      <text x="12" y="84" font-size="9" fill="#55E6FF">Strict TS &amp; Test Guard</text>
+    </g>
+
+    <!-- Card 4: Warrior Cadence -->
+    <g transform="translate(600, 0)">
+      <rect x="0" y="0" width="190" height="105" rx="4" fill="#0E1218" stroke="#42FF9E" stroke-width="1" />
+      <polygon points="0,0 8,0 0,8" fill="#42FF9E" />
+      <text x="12" y="24" font-size="11" font-weight="700" fill="#42FF9E">04 // CADENCE</text>
+      <text x="12" y="46" font-size="13" font-weight="900" fill="#F4F4F2">SHIP FREQUENTLY</text>
+      <text x="12" y="68" font-size="9" fill="#787F89">Continuous Delivery</text>
+      <text x="12" y="84" font-size="9" fill="#42FF9E">Daily Commit Discipline</text>
+    </g>
+  </g>
+</svg>
