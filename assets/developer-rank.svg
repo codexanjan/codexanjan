@@ -77,6 +77,7 @@
       .active-web-poly {
         transform-origin: 450px 240px;
         animation: polyBreathe 4s ease-in-out infinite;
+      }
       @keyframes cardEdgeLaserRank {
         0% { stroke-dashoffset: 2700; }
         100% { stroke-dashoffset: 0; }
@@ -135,46 +136,46 @@
   <!-- DUAL CROSSED KATANA BLADES (X SYMBOL IN KATANA)          -->
   <!-- ======================================================== -->
   <g transform="translate(450, 240)">
-    <!-- SWORD 1: Top-Left to Bottom-Right (Red Plasma Blade) -->
-    <g transform="rotate(-38)" class="plasma-slash-red">
-      <!-- Full Steel Blade -->
-      <path d="M -160 -1.5 L 255 -1.5 L 268 0 L 255 1.5 L -160 1.5 Z" fill="url(#bladeSteel)" />
+    <!-- SWORD 1: Top-Left to Bottom-Right (Red Plasma Katana) -->
+    <g transform="rotate(32)" class="plasma-slash-red">
+      <!-- Full Steel Blade: runs through (0,0) to +280 -->
+      <path d="M -170 -2.5 L 280 -2.5 L 298 0 L 280 2.5 L -170 2.5 Z" fill="url(#bladeSteel)" />
       <!-- Hamon & Razor Edge -->
-      <line x1="-160" y1="-1.2" x2="255" y2="-1.2" stroke="#FFF" stroke-width="1.2" opacity="0.9" />
-      <line x1="-160" y1="1.2" x2="255" y2="1.2" stroke="#FF3038" stroke-width="2" filter="url(#topRedGlow)" />
-      <!-- Habaki (Collar) -->
-      <rect x="-166" y="-3.5" width="8" height="7" rx="1" fill="#FACC15" stroke="#9A3412" stroke-width="0.8" />
+      <line x1="-170" y1="-2" x2="280" y2="-2" stroke="#FFFFFF" stroke-width="1.2" opacity="0.95" />
+      <line x1="-170" y1="2" x2="280" y2="2" stroke="#FF3038" stroke-width="2.5" filter="url(#topRedGlow)" />
+      <!-- Habaki (Gold Blade Collar) -->
+      <rect x="-178" y="-4" width="9" height="8" rx="1" fill="#FACC15" stroke="#9A3412" stroke-width="0.8" />
       <!-- Tsuba (Samurai Guard) -->
-      <ellipse cx="-168" cy="0" rx="4.5" ry="16" fill="#141820" stroke="#FF3038" stroke-width="2" />
-      <circle cx="-168" cy="0" r="2.5" fill="#FACC15" />
+      <ellipse cx="-180" cy="0" rx="5" ry="18" fill="#141820" stroke="#FF3038" stroke-width="2.2" filter="url(#topRedGlow)" />
+      <circle cx="-180" cy="0" r="3" fill="#FACC15" />
       <!-- Tsuka (Handle with Diamond Wrap) -->
-      <rect x="-255" y="-3.5" width="86" height="7" rx="2" fill="#0C0E14" stroke="#222834" stroke-width="1" />
-      <line x1="-255" y1="0" x2="-169" y2="0" stroke="#FF3038" stroke-width="5" stroke-dasharray="5 7" />
+      <rect x="-275" y="-4" width="95" height="8" rx="2" fill="#0C0E14" stroke="#222834" stroke-width="1.2" />
+      <line x1="-275" y1="0" x2="-180" y2="0" stroke="#FF3038" stroke-width="5" stroke-dasharray="5 7" />
       <!-- Kashira (Gold Pommel Cap) -->
-      <rect x="-262" y="-4.5" width="8" height="9" rx="2" fill="#FACC15" stroke="#9A3412" stroke-width="1" />
+      <rect x="-282" y="-5" width="8" height="10" rx="2" fill="#FACC15" stroke="#9A3412" stroke-width="1" />
       <!-- Kissaki (Sharp Tip Accent) -->
-      <polygon points="255,-2 272,0 255,2" fill="#FFF" filter="url(#topRedGlow)" />
+      <polygon points="280,-2.5 300,0 280,2.5" fill="#FFFFFF" filter="url(#topRedGlow)" />
     </g>
 
-    <!-- SWORD 2: Top-Right to Bottom-Left (Cyan Plasma Blade) -->
-    <g transform="rotate(38)" class="plasma-slash-cyan">
-      <!-- Full Steel Blade (Pointing to Bottom-Left: x from +160 to -268) -->
-      <path d="M 160 -1.5 L -255 -1.5 L -268 0 L -255 1.5 L 160 1.5 Z" fill="url(#bladeSteel)" />
+    <!-- SWORD 2: Bottom-Left to Top-Right (Cyan Plasma Katana) -->
+    <g transform="rotate(-32)" class="plasma-slash-cyan">
+      <!-- Full Steel Blade: runs through (0,0) to +280 -->
+      <path d="M -170 -2.5 L 280 -2.5 L 298 0 L 280 2.5 L -170 2.5 Z" fill="url(#bladeSteel)" />
       <!-- Hamon & Razor Edge -->
-      <line x1="160" y1="-1.2" x2="-255" y2="-1.2" stroke="#FFF" stroke-width="1.2" opacity="0.9" />
-      <line x1="160" y1="1.2" x2="-255" y2="1.2" stroke="#55E6FF" stroke-width="2" filter="url(#cyanGlow)" />
-      <!-- Habaki (Collar) -->
-      <rect x="158" y="-3.5" width="8" height="7" rx="1" fill="#FACC15" stroke="#00B4D8" stroke-width="0.8" />
+      <line x1="-170" y1="-2" x2="280" y2="-2" stroke="#FFFFFF" stroke-width="1.2" opacity="0.95" />
+      <line x1="-170" y1="2" x2="280" y2="2" stroke="#55E6FF" stroke-width="2.5" filter="url(#cyanGlow)" />
+      <!-- Habaki (Gold Blade Collar) -->
+      <rect x="-178" y="-4" width="9" height="8" rx="1" fill="#FACC15" stroke="#00B4D8" stroke-width="0.8" />
       <!-- Tsuba (Samurai Guard) -->
-      <ellipse cx="168" cy="0" rx="4.5" ry="16" fill="#141820" stroke="#55E6FF" stroke-width="2" />
-      <circle cx="168" cy="0" r="2.5" fill="#FACC15" />
+      <ellipse cx="-180" cy="0" rx="5" ry="18" fill="#141820" stroke="#55E6FF" stroke-width="2.2" filter="url(#cyanGlow)" />
+      <circle cx="-180" cy="0" r="3" fill="#FACC15" />
       <!-- Tsuka (Handle with Diamond Wrap) -->
-      <rect x="169" y="-3.5" width="86" height="7" rx="2" fill="#0C0E14" stroke="#222834" stroke-width="1" />
-      <line x1="169" y1="0" x2="255" y2="0" stroke="#55E6FF" stroke-width="5" stroke-dasharray="5 7" />
+      <rect x="-275" y="-4" width="95" height="8" rx="2" fill="#0C0E14" stroke="#222834" stroke-width="1.2" />
+      <line x1="-275" y1="0" x2="-180" y2="0" stroke="#55E6FF" stroke-width="5" stroke-dasharray="5 7" />
       <!-- Kashira (Gold Pommel Cap) -->
-      <rect x="254" y="-4.5" width="8" height="9" rx="2" fill="#FACC15" stroke="#00B4D8" stroke-width="1" />
+      <rect x="-282" y="-5" width="8" height="10" rx="2" fill="#FACC15" stroke="#00B4D8" stroke-width="1" />
       <!-- Kissaki (Sharp Tip Accent) -->
-      <polygon points="-255,-2 -272,0 -255,2" fill="#FFF" filter="url(#cyanGlow)" />
+      <polygon points="280,-2.5 300,0 280,2.5" fill="#FFFFFF" filter="url(#cyanGlow)" />
     </g>
   </g>
 

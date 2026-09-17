@@ -81,11 +81,11 @@
   </defs>
 
   <!-- Background Base -->
-  <rect width="880" height="470" rx="12" fill="url(#dosBgV2)" stroke="#171B21" stroke-width="1.5" />
-  <!-- Full Red Solid Base Border -->
-  <rect width="880" height="470" rx="12" fill="none" stroke="#FF3038" stroke-width="1.2" opacity="0.4" />
-  <!-- Visible Red Traveling Edge Laser (Full perimeter, NO dotted lines) -->
-  <rect width="880" height="470" rx="12" fill="none" stroke="#FF3038" stroke-width="2.5" class="border-edge-laser" opacity="0.95" />
+  <rect width="880" height="470" rx="12" fill="url(#dosBgV2)" />
+  <!-- Full Red Solid Base Border (Continuous solid red, no dotted lines) -->
+  <rect x="1" y="1" width="878" height="468" rx="11" fill="none" stroke="#FF3038" stroke-width="2" opacity="0.85" />
+  <!-- Visible Red Traveling Edge Laser (Full perimeter highlight, no dotted lines) -->
+  <rect x="1" y="1" width="878" height="468" rx="11" fill="none" stroke="#FF5E65" stroke-width="2.5" class="border-edge-laser" opacity="1" />
 
   <!-- Tactical Sweeping Laser Scan Line -->
   <g class="dossier-scanner">
