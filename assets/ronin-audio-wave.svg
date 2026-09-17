@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 100" width="100%" height="100%" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <linearGradient id="waveBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#080A0D" />
+      <stop offset="100%" stop-color="#050608" />
+    </linearGradient>
+    <linearGradient id="barGradRed" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#8C111B" />
+      <stop offset="60%" stop-color="#FF3038" />
+      <stop offset="100%" stop-color="#FF8A8A" />
+    </linearGradient>
+    <filter id="waveGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="2" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <style>
+      @keyframes barDance1 {
+        0%, 100% { height: 8px; y: 46px; }
+        50% { height: 38px; y: 31px; }
+      }
+      @keyframes barDance2 {
+        0%, 100% { height: 32px; y: 34px; }
+        50% { height: 12px; y: 44px; }
+      }
+      @keyframes barDance3 {
+        0%, 100% { height: 18px; y: 41px; }
+        50% { height: 48px; y: 26px; }
+      }
+      @keyframes barDance4 {
+        0%, 100% { height: 42px; y: 29px; }
+        50% { height: 20px; y: 40px; }
+      }
+
+      .wb-1 { animation: barDance1 1.2s ease-in-out infinite; }
+      .wb-2 { animation: barDance2 1.6s ease-in-out infinite; }
+      .wb-3 { animation: barDance3 1.4s ease-in-out infinite; }
+      .wb-4 { animation: barDance4 1.8s ease-in-out infinite; }
+    </style>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="800" height="100" rx="6" fill="url(#waveBg)" stroke="#171B21" stroke-width="1.5" />
+
+  <!-- Side Borders & Chamfer -->
+  <polygon points="0,0 12,0 0,12" fill="#FF3038" />
+  <polygon points="800,100 788,100 800,88" fill="#FF3038" />
+
+  <!-- Left Telemetry Label -->
+  <g transform="translate(30, 42)" font-family="'Courier New', Consolas, monospace">
+    <text x="0" y="0" font-size="11" font-weight="700" fill="#FF3038" letter-spacing="2">SECURE CHANNEL // CODEXANJAN</text>
+    <text x="0" y="20" font-size="9" fill="#787F89" letter-spacing="1">ENCRYPTION: AES-256-GCM // SYNC: 100%</text>
+  </g>
+
+  <!-- Right Signal Strength -->
+  <g transform="translate(620, 42)" font-family="'Courier New', Consolas, monospace">
+    <text x="0" y="0" font-size="11" font-weight="700" fill="#42FF9E" letter-spacing="2">SIGNAL STRENGTH // 100</text>
+    <text x="0" y="20" font-size="9" fill="#787F89" letter-spacing="1">CARRIER: QUANTUM-MESH</text>
+  </g>
+
+  <!-- Center Waveform Animated Bars -->
+  <g transform="translate(320, 0)">
+    <!-- Center baseline line -->
+    <line x1="-15" y1="50" x2="275" y2="50" stroke="#171B21" stroke-width="1" />
+
+    <rect x="0" width="4" rx="2" fill="url(#barGradRed)" class="wb-1" filter="url(#waveGlow)" />
+    <rect x="8" width="4" rx="2" fill="url(#barGradRed)" class="wb-2" filter="url(#waveGlow)" />
+    <rect x="16" width="4" rx="2" fill="url(#barGradRed)" class="wb-3" filter="url(#waveGlow)" />
+    <rect x="24" width="4" rx="2" fill="url(#barGradRed)" class="wb-4" filter="url(#waveGlow)" />
+    <rect x="32" width="4" rx="2" fill="url(#barGradRed)" class="wb-2" filter="url(#waveGlow)" />
+    <rect x="40" width="4" rx="2" fill="url(#barGradRed)" class="wb-1" filter="url(#waveGlow)" />
+    <rect x="48" width="4" rx="2" fill="url(#barGradRed)" class="wb-3" filter="url(#waveGlow)" />
+    <rect x="56" width="4" rx="2" fill="url(#barGradRed)" class="wb-4" filter="url(#waveGlow)" />
+    <rect x="64" width="4" rx="2" fill="url(#barGradRed)" class="wb-2" filter="url(#waveGlow)" />
+    <rect x="72" width="4" rx="2" fill="url(#barGradRed)" class="wb-1" filter="url(#waveGlow)" />
+    <rect x="80" width="4" rx="2" fill="url(#barGradRed)" class="wb-3" filter="url(#waveGlow)" />
+    <rect x="88" width="4" rx="2" fill="url(#barGradRed)" class="wb-4" filter="url(#waveGlow)" />
+    <rect x="96" width="4" rx="2" fill="url(#barGradRed)" class="wb-2" filter="url(#waveGlow)" />
+    <rect x="104" width="4" rx="2" fill="url(#barGradRed)" class="wb-1" filter="url(#waveGlow)" />
+    <rect x="112" width="4" rx="2" fill="url(#barGradRed)" class="wb-3" filter="url(#waveGlow)" />
+    <rect x="120" width="4" rx="2" fill="url(#barGradRed)" class="wb-4" filter="url(#waveGlow)" />
+    <rect x="128" width="4" rx="2" fill="url(#barGradRed)" class="wb-2" filter="url(#waveGlow)" />
+    <rect x="136" width="4" rx="2" fill="url(#barGradRed)" class="wb-1" filter="url(#waveGlow)" />
+    <rect x="144" width="4" rx="2" fill="url(#barGradRed)" class="wb-3" filter="url(#waveGlow)" />
+    <rect x="152" width="4" rx="2" fill="url(#barGradRed)" class="wb-4" filter="url(#waveGlow)" />
+    <rect x="160" width="4" rx="2" fill="url(#barGradRed)" class="wb-2" filter="url(#waveGlow)" />
+    <rect x="168" width="4" rx="2" fill="url(#barGradRed)" class="wb-1" filter="url(#waveGlow)" />
+    <rect x="176" width="4" rx="2" fill="url(#barGradRed)" class="wb-3" filter="url(#waveGlow)" />
+    <rect x="184" width="4" rx="2" fill="url(#barGradRed)" class="wb-4" filter="url(#waveGlow)" />
+    <rect x="192" width="4" rx="2" fill="url(#barGradRed)" class="wb-2" filter="url(#waveGlow)" />
+    <rect x="200" width="4" rx="2" fill="url(#barGradRed)" class="wb-1" filter="url(#waveGlow)" />
+    <rect x="208" width="4" rx="2" fill="url(#barGradRed)" class="wb-3" filter="url(#waveGlow)" />
+    <rect x="216" width="4" rx="2" fill="url(#barGradRed)" class="wb-4" filter="url(#waveGlow)" />
+    <rect x="224" width="4" rx="2" fill="url(#barGradRed)" class="wb-2" filter="url(#waveGlow)" />
+    <rect x="232" width="4" rx="2" fill="url(#barGradRed)" class="wb-1" filter="url(#waveGlow)" />
+    <rect x="240" width="4" rx="2" fill="url(#barGradRed)" class="wb-3" filter="url(#waveGlow)" />
+    <rect x="248" width="4" rx="2" fill="url(#barGradRed)" class="wb-4" filter="url(#waveGlow)" />
+  </g>
+</svg>

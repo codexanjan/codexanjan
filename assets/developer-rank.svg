@@ -1,0 +1,144 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 380" width="100%" height="100%" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <linearGradient id="rankBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#080A0D" />
+      <stop offset="50%" stop-color="#06080A" />
+      <stop offset="100%" stop-color="#101318" />
+    </linearGradient>
+    <linearGradient id="radarSweepGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF3038" stop-opacity="0.4" />
+      <stop offset="100%" stop-color="#FF3038" stop-opacity="0" />
+    </linearGradient>
+    <radialGradient id="rankCenterGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FF3038" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#FF3038" stop-opacity="0" />
+    </radialGradient>
+    <filter id="rGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <style>
+      @keyframes sweepScan {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+      @keyframes nodePulse {
+        0%, 100% { transform: scale(1); filter: drop-shadow(0 0 2px #FF3038); }
+        50% { transform: scale(1.15); filter: drop-shadow(0 0 8px #FF4B4B); }
+      }
+      @keyframes lineTravel {
+        0% { stroke-dashoffset: 200; }
+        100% { stroke-dashoffset: 0; }
+      }
+      .radar-arm {
+        transform-origin: 400px 190px;
+        animation: sweepScan 8s linear infinite;
+      }
+      .node-core {
+        animation: nodePulse 3s ease-in-out infinite;
+      }
+      .poly-active {
+        stroke-dasharray: 400;
+        animation: lineTravel 6s linear infinite;
+      }
+    </style>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="800" height="380" rx="10" fill="url(#rankBg)" stroke="#171B21" stroke-width="1.5" />
+  <polygon points="12,12 32,12 12,32" fill="#FF3038" />
+  <polygon points="788,368 768,368 788,348" fill="#FF3038" />
+
+  <!-- Title & Matrix Telemetry -->
+  <g transform="translate(35, 36)" font-family="'Courier New', Consolas, monospace">
+    <text x="0" y="0" font-size="12" font-weight="700" fill="#FF3038" letter-spacing="3">CAPABILITY TOPOLOGY // RADAR</text>
+    <text x="520" y="0" font-size="10" fill="#787F89" letter-spacing="1">SYSTEM // DISCIPLINED NODES</text>
+    <line x1="0" y1="12" x2="730" y2="12" stroke="#171B21" stroke-width="1" />
+  </g>
+
+  <!-- Radar Graph Center (x: 400, y: 195) -->
+  <g transform="translate(400, 195)">
+    <!-- Ambient Center Glow -->
+    <circle cx="0" cy="0" r="140" fill="url(#rankCenterGlow)" />
+
+    <!-- Concentric Hexagon Grid Rings -->
+    <!-- Outer Hexagon (r=120) -->
+    <polygon points="0,-120 104,-60 104,60 0,120 -104,60 -104,-60" fill="none" stroke="#222832" stroke-width="1.5" />
+    <!-- Mid Hexagon (r=80) -->
+    <polygon points="0,-80 69,-40 69,40 0,80 -69,40 -69,-40" fill="none" stroke="#171B21" stroke-width="1" stroke-dasharray="4 4" />
+    <!-- Inner Hexagon (r=40) -->
+    <polygon points="0,-40 35,-20 35,20 0,40 -35,20 -35,-20" fill="none" stroke="#171B21" stroke-width="1" />
+
+    <!-- Hexagonal Axis Lines radiating from center -->
+    <line x1="0" y1="0" x2="0" y2="-120" stroke="#262D38" stroke-width="1" />
+    <line x1="0" y1="0" x2="104" y2="-60" stroke="#262D38" stroke-width="1" />
+    <line x1="0" y1="0" x2="104" y2="60" stroke="#262D38" stroke-width="1" />
+    <line x1="0" y1="0" x2="0" y2="120" stroke="#262D38" stroke-width="1" />
+    <line x1="0" y1="0" x2="-104" y2="60" stroke="#262D38" stroke-width="1" />
+    <line x1="0" y1="0" x2="-104" y2="-60" stroke="#262D38" stroke-width="1" />
+
+    <!-- Active Capability Web Polygon (High Engineering Discipline across all 6 vertices) -->
+    <polygon points="0,-105 95,-50 90,52 0,102 -95,50 -90,-52" 
+             fill="#FF3038" fill-opacity="0.15" stroke="#FF3038" stroke-width="2" class="poly-active" filter="url(#rGlow)" />
+    
+    <!-- Secondary AI / System Focus Polygon (Cyan Accent) -->
+    <polygon points="0,-80 75,-40 70,40 0,78 -75,40 -70,-40" 
+             fill="none" stroke="#55E6FF" stroke-width="1.2" stroke-dasharray="6 3" opacity="0.6" />
+
+    <!-- Center Radar Sweeper Beam -->
+    <g class="radar-arm">
+      <line x1="0" y1="0" x2="0" y2="-125" stroke="#FF4B4B" stroke-width="2" />
+      <path d="M 0 0 L 0 -125 A 125 125 0 0 1 45 -115 Z" fill="url(#radarSweepGrad)" />
+    </g>
+
+    <!-- Center Core Badge: ENGINEERING MATRIX -->
+    <circle cx="0" cy="0" r="28" fill="#0C0E14" stroke="#FF3038" stroke-width="1.5" />
+    <text x="0" y="-3" text-anchor="middle" font-family="'Courier New', Consolas, monospace" font-size="7" font-weight="700" fill="#A8ADB7" letter-spacing="1">ENGINEERING</text>
+    <text x="0" y="7" text-anchor="middle" font-family="'Courier New', Consolas, monospace" font-size="7" font-weight="700" fill="#FF3038" letter-spacing="1">MATRIX</text>
+
+    <!-- 6 Primary Nodes & Labels -->
+    
+    <!-- Node 1: FRONTEND (Top: 0, -120) -->
+    <g transform="translate(0, -105)">
+      <circle cx="0" cy="0" r="5" fill="#FF3038" class="node-core" />
+      <rect x="-45" y="-32" width="90" height="20" rx="3" fill="#141820" stroke="#FF3038" stroke-width="1" />
+      <text x="0" y="-18" text-anchor="middle" font-family="'Courier New', Consolas, monospace" font-size="10" font-weight="700" fill="#F4F4F2">FRONTEND</text>
+    </g>
+
+    <!-- Node 2: AI / ML (Top Right: 104, -60) -->
+    <g transform="translate(95, -50)">
+      <circle cx="0" cy="0" r="5" fill="#55E6FF" class="node-core" />
+      <rect x="12" y="-10" width="80" height="20" rx="3" fill="#141820" stroke="#55E6FF" stroke-width="1" />
+      <text x="52" y="4" text-anchor="middle" font-family="'Courier New', Consolas, monospace" font-size="10" font-weight="700" fill="#55E6FF">AI / ML</text>
+    </g>
+
+    <!-- Node 3: SYSTEM DESIGN (Bottom Right: 104, 60) -->
+    <g transform="translate(90, 52)">
+      <circle cx="0" cy="0" r="5" fill="#FF3038" class="node-core" />
+      <rect x="12" y="-8" width="110" height="20" rx="3" fill="#141820" stroke="#222832" stroke-width="1" />
+      <text x="67" y="6" text-anchor="middle" font-family="'Courier New', Consolas, monospace" font-size="10" font-weight="700" fill="#A8ADB7">SYSTEM DESIGN</text>
+    </g>
+
+    <!-- Node 4: BACKEND (Bottom: 0, 120) -->
+    <g transform="translate(0, 102)">
+      <circle cx="0" cy="0" r="5" fill="#FF3038" class="node-core" />
+      <rect x="-45" y="12" width="90" height="20" rx="3" fill="#141820" stroke="#FF3038" stroke-width="1" />
+      <text x="0" y="26" text-anchor="middle" font-family="'Courier New', Consolas, monospace" font-size="10" font-weight="700" fill="#F4F4F2">BACKEND</text>
+    </g>
+
+    <!-- Node 5: DATABASES (Bottom Left: -104, 60) -->
+    <g transform="translate(-95, 50)">
+      <circle cx="0" cy="0" r="5" fill="#FF3038" class="node-core" />
+      <rect x="-105" y="-8" width="90" height="20" rx="3" fill="#141820" stroke="#222832" stroke-width="1" />
+      <text x="-60" y="6" text-anchor="middle" font-family="'Courier New', Consolas, monospace" font-size="10" font-weight="700" fill="#A8ADB7">DATABASES</text>
+    </g>
+
+    <!-- Node 6: DEVOPS (Top Left: -104, -60) -->
+    <g transform="translate(-90, -52)">
+      <circle cx="0" cy="0" r="5" fill="#55E6FF" class="node-core" />
+      <rect x="-95" y="-10" width="80" height="20" rx="3" fill="#141820" stroke="#55E6FF" stroke-width="1" />
+      <text x="-55" y="4" text-anchor="middle" font-family="'Courier New', Consolas, monospace" font-size="10" font-weight="700" fill="#55E6FF">DEVOPS</text>
+    </g>
+  </g>
+</svg>

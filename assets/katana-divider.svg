@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 45" width="100%" height="100%" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <linearGradient id="bladeSteel" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#171B21" />
+      <stop offset="15%" stop-color="#2D3440" />
+      <stop offset="60%" stop-color="#A8ADB7" />
+      <stop offset="95%" stop-color="#F4F4F2" />
+      <stop offset="100%" stop-color="#FFFFFF" />
+    </linearGradient>
+    <linearGradient id="plasmaSurge" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FF3038" stop-opacity="0" />
+      <stop offset="30%" stop-color="#FF3038" stop-opacity="0.8" />
+      <stop offset="50%" stop-color="#FFFFFF" stop-opacity="1" />
+      <stop offset="70%" stop-color="#FF4B4B" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#8C111B" stop-opacity="0" />
+    </linearGradient>
+    <filter id="bladeGlow" x="-20%" y="-50%" width="140%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <style>
+      @keyframes plasmaTravel {
+        0% { stroke-dashoffset: 1000; opacity: 0; }
+        15% { opacity: 1; }
+        85% { opacity: 1; }
+        100% { stroke-dashoffset: -1000; opacity: 0; }
+      }
+      @keyframes sparkFloat {
+        0%, 100% { transform: translateY(0); opacity: 0.3; }
+        50% { transform: translateY(-3px); opacity: 0.9; }
+      }
+      .plasma-beam {
+        stroke-dasharray: 180 820;
+        animation: plasmaTravel 3.2s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+      }
+      .spark {
+        animation: sparkFloat 2s ease-in-out infinite;
+      }
+    </style>
+  </defs>
+
+  <!-- Background Base Track -->
+  <rect y="18" width="1000" height="8" rx="4" fill="#080A0D" stroke="#171B21" stroke-width="1" />
+
+  <!-- Katana Assembly: Tsuka (Hilt) -> Tsuba (Guard) -> Habaki -> Blade -> Kissaki (Tip) -->
+  
+  <!-- Tsuka (Hilt, x: 20 to 110) -->
+  <!-- Kashira (Hilt buttcap) -->
+  <path d="M 20 16 L 26 16 L 26 28 L 20 28 Z" fill="#2D3440" stroke="#FF3038" stroke-width="1" />
+  <!-- Tsuka grip with diamond wrapping (Ito) -->
+  <rect x="26" y="17" width="80" height="10" rx="1" fill="#101318" stroke="#171B21" />
+  <!-- Tsuka diamond weave -->
+  <polygon points="34,17 38,22 42,17 38,27" fill="#FF3038" opacity="0.8" />
+  <polygon points="46,17 50,22 54,17 50,27" fill="#FF3038" opacity="0.8" />
+  <polygon points="58,17 62,22 66,17 62,27" fill="#FF3038" opacity="0.8" />
+  <polygon points="70,17 74,22 78,17 74,27" fill="#FF3038" opacity="0.8" />
+  <polygon points="82,17 86,22 90,17 86,27" fill="#FF3038" opacity="0.8" />
+  <polygon points="94,17 98,22 102,17 98,27" fill="#FF3038" opacity="0.8" />
+
+  <!-- Tsuba (Katana Guard, x: 106 to 114) -->
+  <rect x="106" y="12" width="6" height="20" rx="2" fill="#2D3440" stroke="#A8ADB7" stroke-width="1" />
+  <line x1="109" y1="14" x2="109" y2="30" stroke="#FF3038" stroke-width="1.5" />
+
+  <!-- Habaki (Blade Collar, x: 112 to 122) -->
+  <rect x="112" y="18" width="10" height="8" rx="1" fill="#F4C95D" stroke="#A8ADB7" stroke-width="0.5" />
+
+  <!-- Katana Blade Edge & Spine (x: 122 to 970) -->
+  <!-- Blade Steel Spine -->
+  <path d="M 122 18 L 940 18 Q 965 19 975 22 L 940 25 L 122 25 Z" fill="url(#bladeSteel)" />
+  <!-- Hamon (Wavy differential temper line) -->
+  <path d="M 122 22 Q 180 20 220 23 T 320 21 T 420 23 T 520 21 T 620 23 T 720 21 T 820 23 T 920 21 L 965 22" fill="none" stroke="#FFFFFF" stroke-width="0.75" opacity="0.7" />
+
+  <!-- Kissaki (Sharp Tip Accent) -->
+  <polygon points="940,18 975,22 940,25" fill="#FFFFFF" />
+
+  <!-- Traveling Crimson Plasma Energy Surge -->
+  <line x1="110" y1="22" x2="975" y2="22" stroke="url(#plasmaSurge)" stroke-width="4" stroke-linecap="round" class="plasma-beam" filter="url(#bladeGlow)" />
+  <line x1="110" y1="22" x2="975" y2="22" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" class="plasma-beam" />
+
+  <!-- Ambient Plasma Sparks -->
+  <circle cx="280" cy="14" r="1.5" fill="#FF3038" class="spark" />
+  <circle cx="520" cy="30" r="1.5" fill="#55E6FF" class="spark" />
+  <circle cx="740" cy="14" r="2" fill="#FF3038" class="spark" />
+  <circle cx="910" cy="30" r="1.5" fill="#FF4B4B" class="spark" />
+
+  <!-- Small HUD Telemetry Label -->
+  <text x="500" y="38" text-anchor="middle" font-family="'Courier New', Consolas, monospace" font-size="8" font-weight="700" fill="#787F89" letter-spacing="3">KATANA INTERFACE // PLASMA STROKE 0x1</text>
+</svg>

@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 190" width="100%" height="100%" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <linearGradient id="arsBg1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#090C10" />
+      <stop offset="100%" stop-color="#050608" />
+    </linearGradient>
+    <linearGradient id="arsScan" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FF3038" stop-opacity="0" />
+      <stop offset="50%" stop-color="#FF3038" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#FF3038" stop-opacity="0" />
+    </linearGradient>
+    <style>
+      @keyframes arsSweep {
+        0% { transform: translateX(-200px); }
+        100% { transform: translateX(850px); }
+      }
+      .ars-scanner { animation: arsSweep 4s linear infinite; }
+    </style>
+  </defs>
+
+  <rect width="800" height="190" rx="8" fill="url(#arsBg1)" stroke="#171B21" stroke-width="1.5" />
+  <polygon points="8,8 24,8 8,24" fill="#FF3038" />
+  <polygon points="792,182 776,182 792,166" fill="#FF3038" />
+
+  <!-- Moving Laser Scanner -->
+  <g clip-path="url(#arsClip1)">
+    <clipPath id="arsClip1">
+      <rect x="2" y="2" width="796" height="186" rx="6" />
+    </clipPath>
+    <line x1="0" y1="0" x2="0" y2="190" stroke="#FF3038" stroke-width="1.5" opacity="0.6" class="ars-scanner" />
+  </g>
+
+  <!-- Header -->
+  <g transform="translate(30, 32)" font-family="'Courier New', Consolas, monospace">
+    <text x="0" y="0" font-size="12" font-weight="700" fill="#FF3038" letter-spacing="3">WEAPON RACK 01 // CORE LANGUAGES</text>
+    <text x="560" y="0" font-size="10" fill="#787F89" letter-spacing="1">SYNTAX // SHARPENED</text>
+    <line x1="0" y1="12" x2="740" y2="12" stroke="#171B21" stroke-width="1" />
+  </g>
+
+  <!-- Language Weapon Tiles (7 Items: TS, JS, Python, Java, C, C++, Bash) -->
+  <g transform="translate(30, 70)" font-family="'Courier New', Consolas, monospace">
+    <!-- Item 1: TypeScript -->
+    <g transform="translate(0, 0)">
+      <rect x="0" y="0" width="98" height="85" rx="5" fill="#10141C" stroke="#55E6FF" stroke-width="1.2" />
+      <polygon points="0,0 12,0 0,12" fill="#55E6FF" />
+      <text x="49" y="32" text-anchor="middle" font-size="18" font-weight="900" fill="#55E6FF">TS</text>
+      <text x="49" y="55" text-anchor="middle" font-size="10" font-weight="700" fill="#F4F4F2">TYPESCRIPT</text>
+      <text x="49" y="72" text-anchor="middle" font-size="8" fill="#787F89">PRIMARY</text>
+    </g>
+
+    <!-- Item 2: JavaScript -->
+    <g transform="translate(106, 0)">
+      <rect x="0" y="0" width="98" height="85" rx="5" fill="#10141C" stroke="#171B21" stroke-width="1.2" />
+      <polygon points="0,0 12,0 0,12" fill="#F4C95D" />
+      <text x="49" y="32" text-anchor="middle" font-size="18" font-weight="900" fill="#F4C95D">JS</text>
+      <text x="49" y="55" text-anchor="middle" font-size="10" font-weight="700" fill="#F4F4F2">JAVASCRIPT</text>
+      <text x="49" y="72" text-anchor="middle" font-size="8" fill="#787F89">FULL-STACK</text>
+    </g>
+
+    <!-- Item 3: Python -->
+    <g transform="translate(212, 0)">
+      <rect x="0" y="0" width="98" height="85" rx="5" fill="#10141C" stroke="#55E6FF" stroke-width="1.2" />
+      <polygon points="0,0 12,0 0,12" fill="#55E6FF" />
+      <text x="49" y="32" text-anchor="middle" font-size="18" font-weight="900" fill="#55E6FF">PY</text>
+      <text x="49" y="55" text-anchor="middle" font-size="10" font-weight="700" fill="#F4F4F2">PYTHON</text>
+      <text x="49" y="72" text-anchor="middle" font-size="8" fill="#55E6FF">AI // ML</text>
+    </g>
+
+    <!-- Item 4: Java -->
+    <g transform="translate(318, 0)">
+      <rect x="0" y="0" width="98" height="85" rx="5" fill="#10141C" stroke="#171B21" stroke-width="1.2" />
+      <polygon points="0,0 12,0 0,12" fill="#FF3038" />
+      <text x="49" y="32" text-anchor="middle" font-size="18" font-weight="900" fill="#FF3038">JV</text>
+      <text x="49" y="55" text-anchor="middle" font-size="10" font-weight="700" fill="#F4F4F2">JAVA</text>
+      <text x="49" y="72" text-anchor="middle" font-size="8" fill="#787F89">OOP CORE</text>
+    </g>
+
+    <!-- Item 5: C -->
+    <g transform="translate(424, 0)">
+      <rect x="0" y="0" width="98" height="85" rx="5" fill="#10141C" stroke="#171B21" stroke-width="1.2" />
+      <polygon points="0,0 12,0 0,12" fill="#A8ADB7" />
+      <text x="49" y="32" text-anchor="middle" font-size="18" font-weight="900" fill="#A8ADB7">C</text>
+      <text x="49" y="55" text-anchor="middle" font-size="10" font-weight="700" fill="#F4F4F2">C LANG</text>
+      <text x="49" y="72" text-anchor="middle" font-size="8" fill="#787F89">LOW-LEVEL</text>
+    </g>
+
+    <!-- Item 6: C++ -->
+    <g transform="translate(530, 0)">
+      <rect x="0" y="0" width="98" height="85" rx="5" fill="#10141C" stroke="#171B21" stroke-width="1.2" />
+      <polygon points="0,0 12,0 0,12" fill="#A8ADB7" />
+      <text x="49" y="32" text-anchor="middle" font-size="18" font-weight="900" fill="#A8ADB7">C++</text>
+      <text x="49" y="55" text-anchor="middle" font-size="10" font-weight="700" fill="#F4F4F2">C++</text>
+      <text x="49" y="72" text-anchor="middle" font-size="8" fill="#787F89">ALGORITHMS</text>
+    </g>
+
+    <!-- Item 7: Bash -->
+    <g transform="translate(636, 0)">
+      <rect x="0" y="0" width="104" height="85" rx="5" fill="#10141C" stroke="#FF3038" stroke-width="1.2" />
+      <polygon points="0,0 12,0 0,12" fill="#FF3038" />
+      <text x="52" y="32" text-anchor="middle" font-size="18" font-weight="900" fill="#FF3038">SH</text>
+      <text x="52" y="55" text-anchor="middle" font-size="10" font-weight="700" fill="#F4F4F2">BASH / SHELL</text>
+      <text x="52" y="72" text-anchor="middle" font-size="8" fill="#787F89">SCRIPTS</text>
+    </g>
+  </g>
+</svg>

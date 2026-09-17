@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 200" width="100%" height="100%" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <linearGradient id="freqBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#080A0D" />
+      <stop offset="100%" stop-color="#050608" />
+    </linearGradient>
+    <linearGradient id="barRed" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#8C111B" />
+      <stop offset="70%" stop-color="#FF3038" />
+      <stop offset="100%" stop-color="#FF8A8A" />
+    </linearGradient>
+    <linearGradient id="barCyan" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#14424B" />
+      <stop offset="70%" stop-color="#55E6FF" />
+      <stop offset="100%" stop-color="#B8F7FF" />
+    </linearGradient>
+    <filter id="fGlow" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur stdDeviation="2" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <rect width="800" height="200" rx="8" fill="url(#freqBg)" stroke="#171B21" stroke-width="1.5" />
+  <polygon points="10,10 24,10 10,24" fill="#FF3038" />
+  <polygon points="790,190 776,190 790,176" fill="#FF3038" />
+
+  <!-- Top Header -->
+  <g transform="translate(30, 32)" font-family="'Courier New', Consolas, monospace">
+    <text x="0" y="0" font-size="12" font-weight="700" fill="#FF3038" letter-spacing="3">COMMIT VELOCITY // TEMPORAL CADENCE</text>
+    <text x="560" y="0" font-size="10" fill="#787F89" letter-spacing="1">RANGE: 52 WEEKS</text>
+    <line x1="0" y1="12" x2="740" y2="12" stroke="#171B21" stroke-width="1" />
+  </g>
+
+  <!-- Histogram Grid Baseline -->
+  <line x1="45" y1="160" x2="755" y2="160" stroke="#171B21" stroke-width="1.5" />
+  <line x1="45" y1="120" x2="755" y2="120" stroke="#171B21" stroke-width="0.75" stroke-dasharray="4 4" />
+  <line x1="45" y1="80" x2="755" y2="80" stroke="#171B21" stroke-width="0.75" stroke-dasharray="4 4" />
+
+  <!-- Bars Array (Simulating 35 weekly cadence bars with varying activity peaks) -->
+  <g transform="translate(50, 0)">
+    <!-- Week bars (x stepped by 20px) -->
+    <rect x="0" y="135" width="12" height="25" rx="2" fill="url(#barRed)" />
+    <rect x="20" y="120" width="12" height="40" rx="2" fill="url(#barRed)" />
+    <rect x="40" y="105" width="12" height="55" rx="2" fill="url(#barRed)" />
+    <rect x="60" y="90" width="12" height="70" rx="2" fill="url(#barCyan)" filter="url(#fGlow)" />
+    <rect x="80" y="115" width="12" height="45" rx="2" fill="url(#barRed)" />
+    <rect x="100" y="130" width="12" height="30" rx="2" fill="url(#barRed)" />
+    <rect x="120" y="110" width="12" height="50" rx="2" fill="url(#barRed)" />
+    <rect x="140" y="85" width="12" height="75" rx="2" fill="url(#barCyan)" filter="url(#fGlow)" />
+    <rect x="160" y="100" width="12" height="60" rx="2" fill="url(#barRed)" />
+    <rect x="180" y="125" width="12" height="35" rx="2" fill="url(#barRed)" />
+    <rect x="200" y="70" width="12" height="90" rx="2" fill="url(#barRed)" filter="url(#fGlow)" />
+    <rect x="220" y="95" width="12" height="65" rx="2" fill="url(#barRed)" />
+    <rect x="240" y="120" width="12" height="40" rx="2" fill="url(#barRed)" />
+    <rect x="260" y="135" width="12" height="25" rx="2" fill="url(#barRed)" />
+    <rect x="280" y="110" width="12" height="50" rx="2" fill="url(#barRed)" />
+    <rect x="300" y="80" width="12" height="80" rx="2" fill="url(#barCyan)" filter="url(#fGlow)" />
+    <rect x="320" y="105" width="12" height="55" rx="2" fill="url(#barRed)" />
+    <rect x="340" y="130" width="12" height="30" rx="2" fill="url(#barRed)" />
+    <rect x="360" y="115" width="12" height="45" rx="2" fill="url(#barRed)" />
+    <rect x="380" y="75" width="12" height="85" rx="2" fill="url(#barRed)" filter="url(#fGlow)" />
+    <rect x="400" y="100" width="12" height="60" rx="2" fill="url(#barRed)" />
+    <rect x="420" y="125" width="12" height="35" rx="2" fill="url(#barRed)" />
+    <rect x="440" y="110" width="12" height="50" rx="2" fill="url(#barRed)" />
+    <rect x="460" y="85" width="12" height="75" rx="2" fill="url(#barCyan)" filter="url(#fGlow)" />
+    <rect x="480" y="105" width="12" height="55" rx="2" fill="url(#barRed)" />
+    <rect x="500" y="130" width="12" height="30" rx="2" fill="url(#barRed)" />
+    <rect x="520" y="120" width="12" height="40" rx="2" fill="url(#barRed)" />
+    <rect x="540" y="90" width="12" height="70" rx="2" fill="url(#barRed)" />
+    <rect x="560" y="70" width="12" height="90" rx="2" fill="url(#barCyan)" filter="url(#fGlow)" />
+    <rect x="580" y="100" width="12" height="60" rx="2" fill="url(#barRed)" />
+    <rect x="600" y="115" width="12" height="45" rx="2" fill="url(#barRed)" />
+    <rect x="620" y="80" width="12" height="80" rx="2" fill="url(#barRed)" />
+    <rect x="640" y="95" width="12" height="65" rx="2" fill="url(#barRed)" />
+    <rect x="660" y="125" width="12" height="35" rx="2" fill="url(#barRed)" />
+    <rect x="680" y="75" width="12" height="85" rx="2" fill="url(#barCyan)" filter="url(#fGlow)" />
+  </g>
+
+  <!-- Bottom Labels -->
+  <g transform="translate(50, 180)" font-family="'Courier New', Consolas, monospace" font-size="9" fill="#787F89">
+    <text x="0" y="0">Q1</text>
+    <text x="175" y="0">Q2</text>
+    <text x="350" y="0">Q3</text>
+    <text x="525" y="0">Q4</text>
+    <text x="670" y="0">PEAK: 42 COMMITS/WK</text>
+  </g>
+</svg>

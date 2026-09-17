@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 180" width="100%" height="100%" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <linearGradient id="certBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#080A0D" />
+      <stop offset="100%" stop-color="#050608" />
+    </linearGradient>
+    <filter id="certGlow" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur stdDeviation="2.5" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <rect width="800" height="180" rx="8" fill="url(#certBg)" stroke="#171B21" stroke-width="1.5" />
+  <polygon points="12,12 28,12 12,28" fill="#55E6FF" />
+  <polygon points="788,168 772,168 788,152" fill="#55E6FF" />
+
+  <!-- Top Bar -->
+  <g transform="translate(30, 32)" font-family="'Courier New', Consolas, monospace">
+    <text x="0" y="0" font-size="12" font-weight="700" fill="#55E6FF" letter-spacing="3">RECORDS OF MASTERY // VERIFICATION MATRIX</text>
+    <text x="560" y="0" font-size="10" fill="#787F89" letter-spacing="1">STATUS: VERIFIED</text>
+    <line x1="0" y1="12" x2="740" y2="12" stroke="#171B21" stroke-width="1" />
+  </g>
+
+  <!-- 3 Certificate Nodes / Verification Hologram Slots -->
+  <g transform="translate(35, 75)" font-family="'Courier New', Consolas, monospace">
+    <!-- Slot 1 -->
+    <g transform="translate(0, 0)">
+      <rect x="0" y="0" width="225" height="70" rx="4" fill="#0D1117" stroke="#55E6FF" stroke-width="1" />
+      <polygon points="0,0 10,0 0,10" fill="#55E6FF" />
+      <text x="12" y="22" font-size="10" font-weight="700" fill="#55E6FF">SYSTEM ARCHITECTURE</text>
+      <text x="12" y="42" font-size="12" font-weight="700" fill="#F4F4F2">FULL-STACK MASTERY</text>
+      <text x="12" y="58" font-size="9" fill="#787F89">HASH: #CERT-FS-2026 // VERIFIED</text>
+    </g>
+
+    <!-- Slot 2 -->
+    <g transform="translate(250, 0)">
+      <rect x="0" y="0" width="225" height="70" rx="4" fill="#0D1117" stroke="#FF3038" stroke-width="1" />
+      <polygon points="0,0 10,0 0,10" fill="#FF3038" />
+      <text x="12" y="22" font-size="10" font-weight="700" fill="#FF3038">NEURAL NETWORKS &amp; ML</text>
+      <text x="12" y="42" font-size="12" font-weight="700" fill="#F4F4F2">AI-ML SPECIALIZATION</text>
+      <text x="12" y="58" font-size="9" fill="#787F89">HASH: #CERT-AI-889 // VERIFIED</text>
+    </g>
+
+    <!-- Slot 3 -->
+    <g transform="translate(500, 0)">
+      <rect x="0" y="0" width="225" height="70" rx="4" fill="#0D1117" stroke="#222832" stroke-width="1" />
+      <polygon points="0,0 10,0 0,10" fill="#A8ADB7" />
+      <text x="12" y="22" font-size="10" font-weight="700" fill="#A8ADB7">CLOUD &amp; DEVOPS</text>
+      <text x="12" y="42" font-size="12" font-weight="700" fill="#F4F4F2">CONTAINERS &amp; CI/CD</text>
+      <text x="12" y="58" font-size="9" fill="#787F89">HASH: #CERT-OPS-410 // VERIFIED</text>
+    </g>
+  </g>
+</svg>

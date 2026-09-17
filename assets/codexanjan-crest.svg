@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#080A0D" />
+      <stop offset="100%" stop-color="#050608" />
+    </linearGradient>
+    <linearGradient id="bladeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF4B4B" />
+      <stop offset="50%" stop-color="#FF3038" />
+      <stop offset="100%" stop-color="#8C111B" />
+    </linearGradient>
+    <linearGradient id="steelGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F4F4F2" />
+      <stop offset="50%" stop-color="#A8ADB7" />
+      <stop offset="100%" stop-color="#4A505B" />
+    </linearGradient>
+    <linearGradient id="armorGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1A2029" />
+      <stop offset="100%" stop-color="#101318" />
+    </linearGradient>
+    <radialGradient id="redGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FF3038" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#FF3038" stop-opacity="0" />
+    </radialGradient>
+    <radialGradient id="cyanCore" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#55E6FF" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#55E6FF" stop-opacity="0" />
+    </radialGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="400" height="400" rx="16" fill="url(#bgGrad)" />
+  <rect width="396" height="396" x="2" y="2" rx="14" fill="none" stroke="#171B21" stroke-width="1.5" />
+
+  <!-- Ambient Glow Center -->
+  <circle cx="200" cy="200" r="140" fill="url(#redGlow)" />
+
+  <!-- Outer Ring - Samurai Crest Geometric Border -->
+  <circle cx="200" cy="200" r="150" fill="none" stroke="#222832" stroke-width="1.5" stroke-dasharray="8 6" />
+  <circle cx="200" cy="200" r="162" fill="none" stroke="#171B21" stroke-width="1" />
+
+  <!-- Corner Brackets (HUD Precision) -->
+  <path d="M 50 70 L 50 50 L 70 50" fill="none" stroke="#FF3038" stroke-width="2" />
+  <path d="M 330 50 L 350 50 L 350 70" fill="none" stroke="#FF3038" stroke-width="2" />
+  <path d="M 50 330 L 50 350 L 70 350" fill="none" stroke="#FF3038" stroke-width="2" />
+  <path d="M 330 350 L 350 350 L 350 330" fill="none" stroke="#FF3038" stroke-width="2" />
+
+  <!-- Cardinal Coordinates & Marks -->
+  <line x1="200" y1="28" x2="200" y2="40" stroke="#FF3038" stroke-width="2" />
+  <line x1="200" y1="360" x2="200" y2="372" stroke="#FF3038" stroke-width="2" />
+  <line x1="28" y1="200" x2="40" y2="200" stroke="#55E6FF" stroke-width="2" />
+  <line x1="360" y1="200" x2="372" y2="200" stroke="#55E6FF" stroke-width="2" />
+
+  <!-- Octagonal Diamond Crest Frame -->
+  <polygon points="200,64 300,105 336,200 300,295 200,336 100,295 64,200 100,105" 
+           fill="none" stroke="#262D38" stroke-width="2" />
+
+  <!-- Inner Diamond Armor Frame -->
+  <polygon points="200,82 284,118 316,200 284,282 200,318 116,282 84,200 116,118" 
+           fill="url(#armorGrad)" stroke="#A8ADB7" stroke-width="1.5" stroke-opacity="0.4" />
+
+  <!-- Geometric Elements: "A" / "S" / "<>" / Katana Slash / Terminal Circuit -->
+  <!-- Left Code Bracket "<" (Also left flank of Anjan 'A') -->
+  <path d="M 160 120 L 115 195 L 160 270" fill="none" stroke="url(#steelGrad)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M 152 140 L 126 195 L 152 250" fill="none" stroke="#55E6FF" stroke-width="2" stroke-opacity="0.7" />
+
+  <!-- Right Code Bracket ">" (Also right flank of 'A') -->
+  <path d="M 240 120 L 285 195 L 240 270" fill="none" stroke="url(#steelGrad)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M 248 140 L 274 195 L 248 250" fill="none" stroke="#55E6FF" stroke-width="2" stroke-opacity="0.7" />
+
+  <!-- The "A" Apex Chevron (Armor Kabuto Crown) -->
+  <path d="M 150 140 L 200 88 L 250 140" fill="none" stroke="#F4F4F2" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+  <polygon points="200,75 208,95 200,90 192,95" fill="#FF3038" filter="url(#glow)" />
+
+  <!-- The "S" Curve Flow (Stylized Dual Katana Guard / Circuit Arc) -->
+  <!-- Upper arc of S -->
+  <path d="M 230 155 Q 160 145 175 190 Q 185 210 200 210" fill="none" stroke="#A8ADB7" stroke-width="4.5" stroke-linecap="round" />
+  <!-- Lower arc of S -->
+  <path d="M 200 210 Q 215 210 225 230 Q 240 275 170 265" fill="none" stroke="#A8ADB7" stroke-width="4.5" stroke-linecap="round" />
+
+  <!-- Central Katana Slash "/" & Piercing Energy Blade -->
+  <!-- Blade Spine -->
+  <line x1="130" y1="290" x2="270" y2="110" stroke="#080A0D" stroke-width="10" stroke-linecap="round" />
+  <!-- Blade Edge with Crimson Glow -->
+  <line x1="130" y1="290" x2="270" y2="110" stroke="url(#bladeGrad)" stroke-width="5" stroke-linecap="round" filter="url(#glow)" />
+  <!-- Blade Spine Reflection -->
+  <line x1="133" y1="286" x2="267" y2="114" stroke="#F4F4F2" stroke-width="1.5" stroke-linecap="round" />
+
+  <!-- Terminal Cursor & AI Spark Core at Center Intersection -->
+  <circle cx="200" cy="200" r="16" fill="url(#cyanCore)" />
+  <rect x="194" y="192" width="12" height="16" rx="1.5" fill="#55E6FF" filter="url(#glow)" />
+
+  <!-- Circuit Trace Micro-Nodes -->
+  <circle cx="115" cy="195" r="4" fill="#FF3038" />
+  <circle cx="285" cy="195" r="4" fill="#FF3038" />
+  <circle x="200" y="88" r="3" fill="#55E6FF" />
+  <line x1="115" y1="195" x2="84" y2="195" stroke="#FF3038" stroke-width="1.5" />
+  <line x1="285" y1="195" x2="316" y2="195" stroke="#FF3038" stroke-width="1.5" />
+
+  <!-- Typography Beneath Crest -->
+  <text x="200" y="360" text-anchor="middle" font-family="'Courier New', Consolas, monospace" font-size="12" font-weight="700" fill="#A8ADB7" letter-spacing="4">CODEXANJAN</text>
+  <text x="200" y="376" text-anchor="middle" font-family="'Courier New', Consolas, monospace" font-size="8" font-weight="600" fill="#FF3038" letter-spacing="3">DIGITAL RONIN CREST</text>
+</svg>

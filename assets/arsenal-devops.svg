@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 190" width="100%" height="100%" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <linearGradient id="arsBg5" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#090C10" />
+      <stop offset="100%" stop-color="#050608" />
+    </linearGradient>
+    <style>
+      @keyframes arsSweep5 {
+        0% { transform: translateX(-200px); }
+        100% { transform: translateX(850px); }
+      }
+      .ars-scanner5 { animation: arsSweep5 4.3s linear infinite; }
+    </style>
+  </defs>
+
+  <rect width="800" height="190" rx="8" fill="url(#arsBg5)" stroke="#171B21" stroke-width="1.5" />
+  <polygon points="8,8 24,8 8,24" fill="#FF3038" />
+  <polygon points="792,182 776,182 792,166" fill="#FF3038" />
+
+  <g clip-path="url(#arsClip5)">
+    <clipPath id="arsClip5">
+      <rect x="2" y="2" width="796" height="186" rx="6" />
+    </clipPath>
+    <line x1="0" y1="0" x2="0" y2="190" stroke="#55E6FF" stroke-width="1.5" opacity="0.6" class="ars-scanner5" />
+  </g>
+
+  <g transform="translate(30, 32)" font-family="'Courier New', Consolas, monospace">
+    <text x="0" y="0" font-size="12" font-weight="700" fill="#55E6FF" letter-spacing="3">WEAPON RACK 05 // INFRASTRUCTURE &amp; DEVOPS</text>
+    <text x="560" y="0" font-size="10" fill="#787F89" letter-spacing="1">CONTAINERS &amp; CI/CD</text>
+    <line x1="0" y1="12" x2="740" y2="12" stroke="#171B21" stroke-width="1" />
+  </g>
+
+  <!-- 4 DevOps Items: Docker, GitHub Actions, Linux, Git -->
+  <g transform="translate(30, 70)" font-family="'Courier New', Consolas, monospace">
+    <!-- Docker -->
+    <g transform="translate(0, 0)">
+      <rect x="0" y="0" width="175" height="85" rx="5" fill="#10141C" stroke="#55E6FF" stroke-width="1.2" />
+      <polygon points="0,0 12,0 0,12" fill="#55E6FF" />
+      <text x="87" y="32" text-anchor="middle" font-size="17" font-weight="900" fill="#55E6FF">DOCKER</text>
+      <text x="87" y="55" text-anchor="middle" font-size="11" font-weight="700" fill="#F4F4F2">CONTAINERS</text>
+      <text x="87" y="72" text-anchor="middle" font-size="9" fill="#787F89">COMPOSE // ISOLATION</text>
+    </g>
+
+    <!-- GitHub Actions -->
+    <g transform="translate(190, 0)">
+      <rect x="0" y="0" width="175" height="85" rx="5" fill="#10141C" stroke="#171B21" stroke-width="1.2" />
+      <polygon points="0,0 12,0 0,12" fill="#55E6FF" />
+      <text x="87" y="32" text-anchor="middle" font-size="16" font-weight="900" fill="#55E6FF">GH ACTIONS</text>
+      <text x="87" y="55" text-anchor="middle" font-size="11" font-weight="700" fill="#F4F4F2">CI / CD PIPELINES</text>
+      <text x="87" y="72" text-anchor="middle" font-size="9" fill="#787F89">AUTOMATED BUILDS</text>
+    </g>
+
+    <!-- Linux -->
+    <g transform="translate(380, 0)">
+      <rect x="0" y="0" width="175" height="85" rx="5" fill="#10141C" stroke="#FF3038" stroke-width="1.2" />
+      <polygon points="0,0 12,0 0,12" fill="#FF3038" />
+      <text x="87" y="32" text-anchor="middle" font-size="17" font-weight="900" fill="#FF3038">LINUX</text>
+      <text x="87" y="55" text-anchor="middle" font-size="11" font-weight="700" fill="#F4F4F2">ENVIRONMENTS</text>
+      <text x="87" y="72" text-anchor="middle" font-size="9" fill="#787F89">KERNEL &amp; POSIX</text>
+    </g>
+
+    <!-- Git -->
+    <g transform="translate(570, 0)">
+      <rect x="0" y="0" width="170" height="85" rx="5" fill="#10141C" stroke="#171B21" stroke-width="1.2" />
+      <polygon points="0,0 12,0 0,12" fill="#FF4B4B" />
+      <text x="85" y="32" text-anchor="middle" font-size="17" font-weight="900" fill="#FF4B4B">GIT</text>
+      <text x="85" y="55" text-anchor="middle" font-size="11" font-weight="700" fill="#F4F4F2">VERSION CONTROL</text>
+      <text x="85" y="72" text-anchor="middle" font-size="9" fill="#787F89">BRANCH CADENCE</text>
+    </g>
+  </g>
+</svg>

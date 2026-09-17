@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 180" width="100%" height="100%" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <linearGradient id="achBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#080A0D" />
+      <stop offset="100%" stop-color="#050608" />
+    </linearGradient>
+    <filter id="achGlow" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur stdDeviation="2.5" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <rect width="800" height="180" rx="8" fill="url(#achBg)" stroke="#171B21" stroke-width="1.5" />
+  <polygon points="12,12 28,12 12,28" fill="#FF3038" />
+  <polygon points="788,168 772,168 788,152" fill="#FF3038" />
+
+  <!-- Top Bar -->
+  <g transform="translate(30, 32)" font-family="'Courier New', Consolas, monospace">
+    <text x="0" y="0" font-size="12" font-weight="700" fill="#FF3038" letter-spacing="3">BATTLE RECORDS // OPERATIONAL INSIGNIA</text>
+    <text x="540" y="0" font-size="10" fill="#787F89" letter-spacing="1">HONORS // VERIFIED</text>
+    <line x1="0" y1="12" x2="740" y2="12" stroke="#171B21" stroke-width="1" />
+  </g>
+
+  <!-- 3 Achievement Insignias -->
+  <g transform="translate(35, 75)" font-family="'Courier New', Consolas, monospace">
+    <!-- Insignia 1: Hackathons -->
+    <g transform="translate(0, 0)">
+      <rect x="0" y="0" width="225" height="70" rx="4" fill="#0D1117" stroke="#FF3038" stroke-width="1" />
+      <polygon points="0,0 10,0 0,10" fill="#FF3038" />
+      <text x="12" y="22" font-size="10" font-weight="700" fill="#FF3038">TACTICAL HACKATHONS</text>
+      <text x="12" y="42" font-size="12" font-weight="700" fill="#F4F4F2">RAPID PROTOTYPING</text>
+      <text x="12" y="58" font-size="9" fill="#787F89">BUILT &amp; DEPLOYED UNDER 48H</text>
+    </g>
+
+    <!-- Insignia 2: Open Source -->
+    <g transform="translate(250, 0)">
+      <rect x="0" y="0" width="225" height="70" rx="4" fill="#0D1117" stroke="#55E6FF" stroke-width="1" />
+      <polygon points="0,0 10,0 0,10" fill="#55E6FF" />
+      <text x="12" y="22" font-size="10" font-weight="700" fill="#55E6FF">OPEN-SOURCE CRAFT</text>
+      <text x="12" y="42" font-size="12" font-weight="700" fill="#F4F4F2">COMMUNITY IMPACT</text>
+      <text x="12" y="58" font-size="9" fill="#787F89">PUBLIC REPOS &amp; TOOLS</text>
+    </g>
+
+    <!-- Insignia 3: High-Fidelity UX -->
+    <g transform="translate(500, 0)">
+      <rect x="0" y="0" width="225" height="70" rx="4" fill="#0D1117" stroke="#42FF9E" stroke-width="1" />
+      <polygon points="0,0 10,0 0,10" fill="#42FF9E" />
+      <text x="12" y="22" font-size="10" font-weight="700" fill="#42FF9E">SYSTEM ARCHITECTURE</text>
+      <text x="12" y="42" font-size="12" font-weight="700" fill="#F4F4F2">ZERO-LATENCY FOCUS</text>
+      <text x="12" y="58" font-size="9" fill="#787F89">HIGH-PERFORMANCE CODE</text>
+    </g>
+  </g>
+</svg>

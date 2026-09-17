@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 240" width="100%" height="100%" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <linearGradient id="mBg2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0A0D12" />
+      <stop offset="50%" stop-color="#06080B" />
+      <stop offset="100%" stop-color="#10141C" />
+    </linearGradient>
+    <filter id="mGlow2" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <style>
+      @keyframes mScanLine2 {
+        0% { transform: translateY(-10px); }
+        100% { transform: translateY(240px); }
+      }
+      @keyframes orbitSpin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+      @keyframes mPulse2 {
+        0%, 100% { opacity: 0.7; }
+        50% { opacity: 1; filter: drop-shadow(0 0 6px #42FF9E); }
+      }
+      .m-scan2 { animation: mScanLine2 5.5s linear infinite; }
+      .orbit-ring { animation: orbitSpin 10s linear infinite; }
+      .m-pulse2 { animation: mPulse2 2s infinite; }
+    </style>
+  </defs>
+
+  <rect width="800" height="240" rx="10" fill="url(#mBg2)" stroke="#171B21" stroke-width="1.5" />
+  <rect x="6" y="6" width="788" height="228" rx="8" fill="none" stroke="#222832" stroke-dasharray="8 6" stroke-width="1" />
+
+  <!-- Corner Brackets -->
+  <polygon points="12,12 34,12 12,34" fill="#55E6FF" />
+  <path d="M 766 12 L 788 12 L 788 34" fill="none" stroke="#55E6FF" stroke-width="2" />
+  <path d="M 12 206 L 12 228 L 34 228" fill="none" stroke="#55E6FF" stroke-width="2" />
+  <polygon points="788,228 766,228 788,206" fill="#55E6FF" />
+
+  <line x1="10" y1="0" x2="790" y2="0" stroke="#55E6FF" stroke-width="1" opacity="0.3" class="m-scan2" />
+
+  <!-- Top Metadata Bar -->
+  <g transform="translate(35, 38)" font-family="'Courier New', Consolas, monospace">
+    <rect x="0" y="-12" width="160" height="22" rx="3" fill="#141820" stroke="#55E6FF" stroke-width="1" />
+    <text x="10" y="3" font-size="11" font-weight="700" fill="#55E6FF" letter-spacing="2">MISSION // 02</text>
+    <text x="180" y="3" font-size="10" fill="#787F89" letter-spacing="1">CLASS: INTERACTIVE SCIENCE SYSTEM</text>
+
+    <!-- Status Indicator -->
+    <g transform="translate(620, 3)">
+      <circle cx="0" cy="-4" r="4" fill="#42FF9E" class="m-pulse2" />
+      <text x="12" y="0" font-size="10" font-weight="700" fill="#42FF9E" letter-spacing="1">DEPLOYED // LIVE</text>
+    </g>
+
+    <line x1="0" y1="18" x2="730" y2="18" stroke="#171B21" stroke-width="1" />
+  </g>
+
+  <!-- Mission Details -->
+  <g transform="translate(35, 85)">
+    <text x="0" y="24" font-family="system-ui, -apple-system, sans-serif" font-size="28" font-weight="900" fill="#F4F4F2" letter-spacing="2">PERIODICPORTAL</text>
+    <line x1="0" y1="36" x2="280" y2="36" stroke="#55E6FF" stroke-width="2" />
+
+    <text x="0" y="62" font-family="'Courier New', Consolas, monospace" font-size="13" font-weight="600" fill="#A8ADB7">Interactive 3D chemical element simulator with real-time planetary electron models.</text>
+    <text x="0" y="86" font-family="'Courier New', Consolas, monospace" font-size="11" fill="#787F89">FOCUS: 118 Elements // Three.js 3D Visuals // Chemical Data Engine // AI Assistant</text>
+
+    <g transform="translate(0, 105)" font-family="'Courier New', Consolas, monospace" font-size="11">
+      <rect x="0" y="0" width="115" height="24" rx="3" fill="#141820" stroke="#55E6FF" stroke-width="1" />
+      <text x="12" y="16" fill="#55E6FF">TypeScript</text>
+
+      <rect x="125" y="0" width="85" height="24" rx="3" fill="#141820" stroke="#171B21" stroke-width="1" />
+      <text x="12" y="16" transform="translate(125, 0)" fill="#F4F4F2">React</text>
+
+      <rect x="220" y="0" width="105" height="24" rx="3" fill="#141820" stroke="#F4C95D" stroke-width="1" />
+      <text x="12" y="16" transform="translate(220, 0)" fill="#F4C95D">Three.js</text>
+
+      <rect x="335" y="0" width="115" height="24" rx="3" fill="#141820" stroke="#FF3038" stroke-width="1" />
+      <text x="12" y="16" transform="translate(335, 0)" fill="#FF3038">AI Assist</text>
+    </g>
+  </g>
+
+  <!-- Right Visual: 3D Atomic Electron Orbit Visual -->
+  <g transform="translate(680, 140)">
+    <circle cx="0" cy="0" r="48" fill="#0E1218" stroke="#222832" stroke-width="1.5" />
+    
+    <!-- Rotating Elliptical Atomic Orbits -->
+    <g class="orbit-ring">
+      <ellipse cx="0" cy="0" rx="36" ry="12" fill="none" stroke="#55E6FF" stroke-width="1.2" transform="rotate(30)" />
+      <ellipse cx="0" cy="0" rx="36" ry="12" fill="none" stroke="#FF3038" stroke-width="1.2" transform="rotate(-30)" />
+      <ellipse cx="0" cy="0" rx="36" ry="12" fill="none" stroke="#A8ADB7" stroke-width="1" transform="rotate(90)" />
+      <circle cx="28" cy="14" r="3" fill="#55E6FF" />
+      <circle cx="-28" cy="-14" r="3" fill="#FF3038" />
+    </g>
+
+    <!-- Nucleus Center -->
+    <circle cx="0" cy="0" r="8" fill="#F4C95D" filter="url(#mGlow2)" />
+
+    <text x="0" y="58" text-anchor="middle" font-family="'Courier New', Consolas, monospace" font-size="8" font-weight="700" fill="#787F89" letter-spacing="1">118 NUCLEUS</text>
+  </g>
+</svg>

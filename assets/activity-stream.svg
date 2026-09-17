@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 240" width="100%" height="100%" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <linearGradient id="actBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#080A0D" />
+      <stop offset="100%" stop-color="#050608" />
+    </linearGradient>
+    <style>
+      @keyframes actBlink {
+        0%, 49% { opacity: 1; }
+        50%, 100% { opacity: 0; }
+      }
+      .act-cur { animation: actBlink 1.1s infinite; }
+    </style>
+  </defs>
+
+  <rect width="800" height="240" rx="8" fill="url(#actBg)" stroke="#171B21" stroke-width="1.5" />
+  <polygon points="10,10 24,10 10,24" fill="#FF3038" />
+  <polygon points="790,230 776,230 790,216" fill="#FF3038" />
+
+  <!-- Window Bar -->
+  <g transform="translate(30, 30)">
+    <circle cx="0" cy="0" r="3.5" fill="#FF3038" />
+    <circle cx="12" cy="0" r="3.5" fill="#F4C95D" />
+    <circle cx="24" cy="0" r="3.5" fill="#42FF9E" />
+    <text x="45" y="4" font-family="'Courier New', Consolas, monospace" font-size="12" font-weight="700" fill="#FF3038" letter-spacing="2">ACTIVITY STREAM // AUDIT LOG</text>
+    <text x="600" y="4" font-family="'Courier New', Consolas, monospace" font-size="10" fill="#787F89">EVENT_BUFFER: LIVE</text>
+    <line x1="0" y1="16" x2="740" y2="16" stroke="#171B21" stroke-width="1" />
+  </g>
+
+  <!-- Activity Stream Entries -->
+  <g transform="translate(30, 72)" font-family="'Courier New', Consolas, monospace" font-size="12" letter-spacing="1">
+    <!-- Entry 1 -->
+    <g transform="translate(0, 0)">
+      <rect x="0" y="-12" width="68" height="18" rx="2" fill="#141820" stroke="#FF3038" stroke-width="1" />
+      <text x="8" y="1" font-size="10" font-weight="700" fill="#FF3038">[COMMIT]</text>
+      <text x="80" y="1" fill="#F4F4F2">codexanjan/URLForge</text>
+      <text x="320" y="1" fill="#787F89">&gt; feat: optimize hash collision cache &amp; latency</text>
+      <text x="650" y="1" fill="#55E6FF" font-size="10">2h ago</text>
+    </g>
+
+    <!-- Entry 2 -->
+    <g transform="translate(0, 30)">
+      <rect x="0" y="-12" width="68" height="18" rx="2" fill="#141820" stroke="#42FF9E" stroke-width="1" />
+      <text x="14" y="1" font-size="10" font-weight="700" fill="#42FF9E">[PUSH]</text>
+      <text x="80" y="1" fill="#F4F4F2">codexanjan/PeriodicPortal</text>
+      <text x="320" y="1" fill="#787F89">&gt; chore: upgrade Three.js shaders &amp; orbital paths</text>
+      <text x="650" y="1" fill="#55E6FF" font-size="10">5h ago</text>
+    </g>
+
+    <!-- Entry 3 -->
+    <g transform="translate(0, 60)">
+      <rect x="0" y="-12" width="68" height="18" rx="2" fill="#141820" stroke="#55E6FF" stroke-width="1" />
+      <text x="8" y="1" font-size="10" font-weight="700" fill="#55E6FF">[DEPLOY]</text>
+      <text x="80" y="1" fill="#F4F4F2">codexanjan/MarkdownStudio</text>
+      <text x="320" y="1" fill="#787F89">&gt; ship: AST live synchronizer &amp; PDF engine</text>
+      <text x="650" y="1" fill="#55E6FF" font-size="10">1d ago</text>
+    </g>
+
+    <!-- Entry 4 -->
+    <g transform="translate(0, 90)">
+      <rect x="0" y="-12" width="68" height="18" rx="2" fill="#141820" stroke="#F4C95D" stroke-width="1" />
+      <text x="11" y="1" font-size="10" font-weight="700" fill="#F4C95D">[MERGE]</text>
+      <text x="80" y="1" fill="#F4F4F2">codexanjan/SmartCalendar</text>
+      <text x="320" y="1" fill="#787F89">&gt; pr #14: temporal state sync &amp; multi-day view</text>
+      <text x="650" y="1" fill="#55E6FF" font-size="10">2d ago</text>
+    </g>
+
+    <!-- Terminal Prompt Line -->
+    <g transform="translate(0, 126)">
+      <text x="0" y="0" fill="#FF3038" font-weight="700">&gt; codexanjan@ronin-terminal ~ %</text>
+      <text x="245" y="0" fill="#A8ADB7">git status --untracked-files=no</text>
+      <rect x="525" y="-11" width="8" height="14" fill="#FF3038" class="act-cur" />
+    </g>
+  </g>
+</svg>

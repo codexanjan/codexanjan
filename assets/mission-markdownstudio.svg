@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 240" width="100%" height="100%" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <linearGradient id="mBg3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0A0D12" />
+      <stop offset="50%" stop-color="#06080B" />
+      <stop offset="100%" stop-color="#10141C" />
+    </linearGradient>
+    <filter id="mGlow3" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <style>
+      @keyframes mScanLine3 {
+        0% { transform: translateY(-10px); }
+        100% { transform: translateY(240px); }
+      }
+      @keyframes blinkCode {
+        0%, 49% { opacity: 1; }
+        50%, 100% { opacity: 0; }
+      }
+      @keyframes mPulse3 {
+        0%, 100% { opacity: 0.7; }
+        50% { opacity: 1; filter: drop-shadow(0 0 6px #42FF9E); }
+      }
+      .m-scan3 { animation: mScanLine3 4.8s linear infinite; }
+      .code-cursor { animation: blinkCode 1.1s infinite; }
+      .m-pulse3 { animation: mPulse3 2s infinite; }
+    </style>
+  </defs>
+
+  <rect width="800" height="240" rx="10" fill="url(#mBg3)" stroke="#171B21" stroke-width="1.5" />
+  <rect x="6" y="6" width="788" height="228" rx="8" fill="none" stroke="#222832" stroke-dasharray="8 6" stroke-width="1" />
+
+  <polygon points="12,12 34,12 12,34" fill="#FF3038" />
+  <path d="M 766 12 L 788 12 L 788 34" fill="none" stroke="#FF3038" stroke-width="2" />
+  <path d="M 12 206 L 12 228 L 34 228" fill="none" stroke="#FF3038" stroke-width="2" />
+  <polygon points="788,228 766,228 788,206" fill="#FF3038" />
+
+  <line x1="10" y1="0" x2="790" y2="0" stroke="#FF3038" stroke-width="1" opacity="0.3" class="m-scan3" />
+
+  <g transform="translate(35, 38)" font-family="'Courier New', Consolas, monospace">
+    <rect x="0" y="-12" width="160" height="22" rx="3" fill="#141820" stroke="#FF3038" stroke-width="1" />
+    <text x="10" y="3" font-size="11" font-weight="700" fill="#FF3038" letter-spacing="2">MISSION // 03</text>
+    <text x="180" y="3" font-size="10" fill="#787F89" letter-spacing="1">CLASS: DEVELOPER TOOL</text>
+
+    <g transform="translate(620, 3)">
+      <circle cx="0" cy="-4" r="4" fill="#42FF9E" class="m-pulse3" />
+      <text x="12" y="0" font-size="10" font-weight="700" fill="#42FF9E" letter-spacing="1">DEPLOYED // LIVE</text>
+    </g>
+
+    <line x1="0" y1="18" x2="730" y2="18" stroke="#171B21" stroke-width="1" />
+  </g>
+
+  <!-- Mission Details -->
+  <g transform="translate(35, 85)">
+    <text x="0" y="24" font-family="system-ui, -apple-system, sans-serif" font-size="28" font-weight="900" fill="#F4F4F2" letter-spacing="2">MARKDOWN STUDIO</text>
+    <line x1="0" y1="36" x2="310" y2="36" stroke="#FF3038" stroke-width="2" />
+
+    <text x="0" y="62" font-family="'Courier New', Consolas, monospace" font-size="13" font-weight="600" fill="#A8ADB7">Real-time Markdown editor with live preview, syntax AST rendering, and multi-format export.</text>
+    <text x="0" y="86" font-family="'Courier New', Consolas, monospace" font-size="11" fill="#787F89">FOCUS: AST Parser // Live Two-Way Sync // Custom Theming // Instant Export</text>
+
+    <g transform="translate(0, 105)" font-family="'Courier New', Consolas, monospace" font-size="11">
+      <rect x="0" y="0" width="115" height="24" rx="3" fill="#141820" stroke="#55E6FF" stroke-width="1" />
+      <text x="12" y="16" fill="#55E6FF">TypeScript</text>
+
+      <rect x="125" y="0" width="85" height="24" rx="3" fill="#141820" stroke="#171B21" stroke-width="1" />
+      <text x="12" y="16" transform="translate(125, 0)" fill="#F4F4F2">React</text>
+
+      <rect x="220" y="0" width="105" height="24" rx="3" fill="#141820" stroke="#FF3038" stroke-width="1" />
+      <text x="12" y="16" transform="translate(220, 0)" fill="#FF3038">Markdown</text>
+
+      <rect x="335" y="0" width="105" height="24" rx="3" fill="#141820" stroke="#A8ADB7" stroke-width="1" />
+      <text x="12" y="16" transform="translate(335, 0)" fill="#A8ADB7">AST Parser</text>
+    </g>
+  </g>
+
+  <!-- Right Visual: Mini Terminal / Code Editor Panel -->
+  <g transform="translate(640, 105)">
+    <rect x="0" y="0" width="125" height="85" rx="4" fill="#0C0E14" stroke="#222832" stroke-width="1.2" />
+    <!-- Window Bar -->
+    <rect x="0" y="0" width="125" height="15" rx="4" fill="#141820" />
+    <circle cx="8" cy="8" r="2.5" fill="#FF3038" />
+    <circle cx="16" cy="8" r="2.5" fill="#F4C95D" />
+    <circle cx="24" cy="8" r="2.5" fill="#42FF9E" />
+    <text x="70" y="11" font-family="'Courier New', Consolas, monospace" font-size="7" fill="#787F89">doc.md</text>
+
+    <!-- Code Content Lines -->
+    <g transform="translate(10, 28)" font-family="'Courier New', Consolas, monospace" font-size="8">
+      <text x="0" y="0" fill="#FF3038"># Heading 1</text>
+      <text x="0" y="14" fill="#55E6FF">&gt; Blockquote</text>
+      <text x="0" y="28" fill="#F4F4F2">- List item</text>
+      <text x="0" y="42" fill="#42FF9E">```ts code```</text>
+      <rect x="75" y="34" width="4" height="8" fill="#FF3038" class="code-cursor" />
+    </g>
+  </g>
+</svg>

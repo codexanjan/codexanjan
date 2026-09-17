@@ -1,0 +1,142 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 400" width="100%" height="100%" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <linearGradient id="dosBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#090C10" />
+      <stop offset="50%" stop-color="#06080A" />
+      <stop offset="100%" stop-color="#0E1218" />
+    </linearGradient>
+    <linearGradient id="dosArmor" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#141820" />
+      <stop offset="100%" stop-color="#1A222C" />
+    </linearGradient>
+    <radialGradient id="dosGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FF3038" stop-opacity="0.2" />
+      <stop offset="100%" stop-color="#FF3038" stop-opacity="0" />
+    </radialGradient>
+    <filter id="dGlow" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur stdDeviation="2.5" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <style>
+      @keyframes radarSweep {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+      @keyframes pulseBorder {
+        0%, 100% { stroke-opacity: 0.4; }
+        50% { stroke-opacity: 1; stroke: #FF3038; }
+      }
+      .reticle-spin {
+        transform-origin: 730px 140px;
+        animation: radarSweep 10s linear infinite;
+      }
+      .pulse-line {
+        animation: pulseBorder 3s infinite;
+      }
+    </style>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="850" height="400" rx="12" fill="url(#dosBg)" stroke="#171B21" stroke-width="1.5" />
+  
+  <!-- Outer Chamfer Brackets (Tactical Dossier) -->
+  <polygon points="15,15 45,15 15,45" fill="#FF3038" />
+  <polygon points="835,15 805,15 835,45" fill="#FF3038" />
+  <polygon points="15,385 45,385 15,355" fill="#FF3038" />
+  <polygon points="835,385 805,385 835,355" fill="#FF3038" />
+
+  <rect x="20" y="20" width="810" height="360" rx="8" fill="none" stroke="#222832" stroke-dasharray="6 4" stroke-width="1" class="pulse-line" />
+
+  <!-- Top Security Classification Bar -->
+  <g transform="translate(45, 45)" font-family="'Courier New', Consolas, monospace">
+    <rect x="0" y="-12" width="220" height="22" rx="2" fill="#141820" stroke="#FF3038" stroke-width="1" />
+    <text x="12" y="3" font-size="11" font-weight="700" fill="#FF3038" letter-spacing="2">SECURITY DOSSIER // TOP CLASSIFIED</text>
+    <text x="500" y="3" font-size="10" fill="#787F89" letter-spacing="1">ACCESS RECORD: #00-994-RONIN</text>
+    <line x1="0" y1="18" x2="760" y2="18" stroke="#171B21" stroke-width="1" />
+  </g>
+
+  <!-- Left Column: Dossier Fields -->
+  <g transform="translate(45, 90)" font-family="'Courier New', Consolas, monospace">
+    <!-- Row 1: Identity & Codename -->
+    <g transform="translate(0, 0)">
+      <text x="0" y="0" font-size="10" fill="#787F89" letter-spacing="2">IDENTITY</text>
+      <text x="0" y="20" font-size="16" font-weight="900" fill="#F4F4F2">ANJAN SHETTY</text>
+
+      <text x="240" y="0" font-size="10" fill="#787F89" letter-spacing="2">CODENAME</text>
+      <text x="240" y="20" font-size="16" font-weight="900" fill="#FF3038">CODEXANJAN</text>
+    </g>
+
+    <!-- Row 2: Class & Specialization -->
+    <g transform="translate(0, 50)">
+      <text x="0" y="0" font-size="10" fill="#787F89" letter-spacing="2">CLASS</text>
+      <text x="0" y="18" font-size="13" font-weight="700" fill="#A8ADB7">FULL-STACK DEVELOPER</text>
+
+      <text x="240" y="0" font-size="10" fill="#787F89" letter-spacing="2">SPECIALIZATION</text>
+      <text x="240" y="18" font-size="13" font-weight="700" fill="#55E6FF">AI / ML ENGINEERING</text>
+    </g>
+
+    <!-- Line Divider -->
+    <line x1="0" y1="88" x2="560" y2="88" stroke="#171B21" stroke-width="1" />
+
+    <!-- Focus Areas -->
+    <g transform="translate(0, 110)">
+      <text x="0" y="0" font-size="10" fill="#FF3038" font-weight="700" letter-spacing="2">PRIMARY FOCUS</text>
+      
+      <g transform="translate(0, 18)" font-size="12" fill="#F4F4F2">
+        <rect x="0" y="-12" width="170" height="22" rx="3" fill="#10141C" stroke="#222832" />
+        <text x="10" y="2" fill="#A8ADB7">SCALABLE APPS</text>
+
+        <rect x="180" y="-12" width="180" height="22" rx="3" fill="#10141C" stroke="#222832" />
+        <text x="190" y="2" fill="#55E6FF">INTELLIGENT SYSTEMS</text>
+
+        <rect x="370" y="-12" width="160" height="22" rx="3" fill="#10141C" stroke="#222832" />
+        <text x="380" y="2" fill="#A8ADB7">DEVELOPER TOOLS</text>
+      </g>
+    </g>
+
+    <!-- Current Directives -->
+    <g transform="translate(0, 175)">
+      <text x="0" y="0" font-size="10" fill="#55E6FF" font-weight="700" letter-spacing="2">CURRENT DIRECTIVES</text>
+      <g transform="translate(0, 18)" font-size="11" fill="#787F89">
+        <text x="0" y="0">&gt; MERN STACK ARCHITECTURE // REACT, NODE, EXPRESS, MONGO</text>
+        <text x="0" y="18">&gt; AGENTIC AI &amp; MULTI-AGENT ORCHESTRATION PIPELINES</text>
+        <text x="0" y="36">&gt; LLM FINE-TUNING, RAG &amp; VECTOR SEARCH EMBEDDINGS</text>
+        <text x="0" y="54">&gt; CLOUD DEPLOYMENTS, CONTAINERIZATION &amp; DEVOPS AUTOMATION</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Right Side: Biometric Cyber-Samurai Silhouette & Scanner Frame -->
+  <g transform="translate(730, 200)">
+    <!-- Scanner Glow Background -->
+    <circle cx="0" cy="0" r="70" fill="url(#dosGlow)" />
+    
+    <!-- Rotating Reticle -->
+    <circle cx="0" cy="0" r="65" fill="none" stroke="#222832" stroke-width="1.5" />
+    <circle cx="0" cy="0" r="55" fill="none" stroke="#FF3038" stroke-width="1" stroke-dasharray="8 6" class="reticle-spin" />
+    <circle cx="0" cy="0" r="45" fill="none" stroke="#55E6FF" stroke-width="1" stroke-opacity="0.4" />
+
+    <!-- Samurai Face Mask / Visor Wireframe Icon -->
+    <!-- Helmet Top -->
+    <path d="M 0 -35 L 18 -50 L 10 -30 Z" fill="#FF3038" />
+    <path d="M 0 -35 L -18 -50 L -10 -30 Z" fill="#FF3038" />
+    <polygon points="0,-38 6,-30 0,-32 -6,-30" fill="#FFF" />
+    <!-- Kabuto Dome -->
+    <path d="M -30 -15 C -30 -40 30 -40 30 -15 L 25 -5 L -25 -5 Z" fill="#141820" stroke="#2D3440" stroke-width="1.5" />
+    <!-- Visor Bar -->
+    <line x1="-22" y1="2" x2="22" y2="2" stroke="#FF3038" stroke-width="3" filter="url(#dGlow)" />
+    <!-- Mask -->
+    <path d="M -20 8 L 0 20 L 20 8 L 15 28 L 0 35 L -15 28 Z" fill="#0C0E14" stroke="#262D38" stroke-width="1" />
+    <line x1="-8" y1="22" x2="8" y2="22" stroke="#55E6FF" stroke-width="1.5" />
+
+    <!-- Corner Brackets around Scanner -->
+    <path d="M -75 -75 L -60 -75 M -75 -75 L -75 -60" stroke="#FF3038" stroke-width="1.5" />
+    <path d="M 75 -75 L 60 -75 M 75 -75 L 75 -60" stroke="#FF3038" stroke-width="1.5" />
+    <path d="M -75 75 L -60 75 M -75 75 L -75 60" stroke="#FF3038" stroke-width="1.5" />
+    <path d="M 75 75 L 60 75 M 75 75 L 75 60" stroke="#FF3038" stroke-width="1.5" />
+
+    <!-- Telemetry Label -->
+    <text x="0" y="88" text-anchor="middle" font-family="'Courier New', Consolas, monospace" font-size="9" font-weight="700" fill="#A8ADB7" letter-spacing="2">NEURAL BIOMETRIC // VERIFIED</text>
+  </g>
+</svg>

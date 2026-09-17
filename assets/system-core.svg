@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 180" width="100%" height="100%" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <linearGradient id="coreBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#080A0D" />
+      <stop offset="100%" stop-color="#050608" />
+    </linearGradient>
+    <filter id="coreGlow" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur stdDeviation="2.5" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+    <style>
+      @keyframes coreBlink {
+        0%, 49% { opacity: 1; }
+        50%, 100% { opacity: 0.3; }
+      }
+      .live-dot { animation: coreBlink 1.4s infinite; }
+    </style>
+  </defs>
+
+  <rect width="800" height="180" rx="8" fill="url(#coreBg)" stroke="#171B21" stroke-width="1.5" />
+  <polygon points="10,10 25,10 10,25" fill="#FF3038" />
+  <polygon points="790,170 775,170 790,155" fill="#FF3038" />
+
+  <g transform="translate(30, 30)" font-family="'Courier New', Consolas, monospace">
+    <text x="0" y="0" font-size="12" font-weight="700" fill="#FF3038" letter-spacing="3">SYSTEM ARCHITECTURE // TELEMETRY CORE</text>
+    <circle cx="720" cy="-4" r="4" fill="#42FF9E" class="live-dot" />
+    <text x="732" y="0" font-size="10" fill="#42FF9E" font-weight="700">OPTIMAL</text>
+    <line x1="0" y1="12" x2="740" y2="12" stroke="#171B21" stroke-width="1" />
+  </g>
+
+  <!-- 4 Architecture Stat Modules -->
+  <g transform="translate(40, 75)" font-family="'Courier New', Consolas, monospace">
+    <!-- Module 1 -->
+    <g transform="translate(0, 0)">
+      <rect x="0" y="0" width="160" height="70" rx="4" fill="#0E1218" stroke="#171B21" />
+      <text x="12" y="22" font-size="10" fill="#787F89">RUNNING KERNEL</text>
+      <text x="12" y="44" font-size="14" font-weight="700" fill="#F4F4F2">NODE 24 / PY 3.13</text>
+      <text x="12" y="60" font-size="9" fill="#55E6FF">MODERN RUNTIMES</text>
+    </g>
+
+    <!-- Module 2 -->
+    <g transform="translate(185, 0)">
+      <rect x="0" y="0" width="160" height="70" rx="4" fill="#0E1218" stroke="#171B21" />
+      <text x="12" y="22" font-size="10" fill="#787F89">ARCHITECTURE</text>
+      <text x="12" y="44" font-size="14" font-weight="700" fill="#F4F4F2">MERN + AI-AGENT</text>
+      <text x="12" y="60" font-size="9" fill="#FF3038">HYBRID NEURAL</text>
+    </g>
+
+    <!-- Module 3 -->
+    <g transform="translate(370, 0)">
+      <rect x="0" y="0" width="160" height="70" rx="4" fill="#0E1218" stroke="#171B21" />
+      <text x="12" y="22" font-size="10" fill="#787F89">CODE CADENCE</text>
+      <text x="12" y="44" font-size="14" font-weight="700" fill="#F4F4F2">HIGH VELOCITY</text>
+      <text x="12" y="60" font-size="9" fill="#42FF9E">CONTINUOUS SHIP</text>
+    </g>
+
+    <!-- Module 4 -->
+    <g transform="translate(555, 0)">
+      <rect x="0" y="0" width="165" height="70" rx="4" fill="#0E1218" stroke="#171B21" />
+      <text x="12" y="22" font-size="10" fill="#787F89">DISCIPLINE</text>
+      <text x="12" y="44" font-size="14" font-weight="700" fill="#F4F4F2">DIGITAL RONIN</text>
+      <text x="12" y="60" font-size="9" fill="#A8ADB7">PRECISE EXECUTION</text>
+    </g>
+  </g>
+</svg>

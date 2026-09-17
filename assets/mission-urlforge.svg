@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 240" width="100%" height="100%" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <linearGradient id="mBg1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0A0D12" />
+      <stop offset="50%" stop-color="#06080B" />
+      <stop offset="100%" stop-color="#10141C" />
+    </linearGradient>
+    <linearGradient id="mSlashBeam1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FF3038" stop-opacity="0" />
+      <stop offset="50%" stop-color="#FF3038" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#FF3038" stop-opacity="0" />
+    </linearGradient>
+    <filter id="mGlow1" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <style>
+      @keyframes mScanLine1 {
+        0% { transform: translateY(-10px); }
+        100% { transform: translateY(240px); }
+      }
+      @keyframes mPulse1 {
+        0%, 100% { opacity: 0.7; }
+        50% { opacity: 1; filter: drop-shadow(0 0 6px #42FF9E); }
+      }
+      .m-scan1 { animation: mScanLine1 5s linear infinite; }
+      .m-pulse1 { animation: mPulse1 2s infinite; }
+    </style>
+  </defs>
+
+  <!-- Card Body -->
+  <rect width="800" height="240" rx="10" fill="url(#mBg1)" stroke="#171B21" stroke-width="1.5" />
+  <rect x="6" y="6" width="788" height="228" rx="8" fill="none" stroke="#222832" stroke-dasharray="8 6" stroke-width="1" />
+
+  <!-- Corner Brackets (Katana HUD Framing) -->
+  <polygon points="12,12 34,12 12,34" fill="#FF3038" />
+  <path d="M 766 12 L 788 12 L 788 34" fill="none" stroke="#FF3038" stroke-width="2" />
+  <path d="M 12 206 L 12 228 L 34 228" fill="none" stroke="#FF3038" stroke-width="2" />
+  <polygon points="788,228 766,228 788,206" fill="#FF3038" />
+
+  <!-- Moving Scan Line -->
+  <line x1="10" y1="0" x2="790" y2="0" stroke="#FF3038" stroke-width="1" opacity="0.3" class="m-scan1" />
+
+  <!-- Top Mission Metadata Bar -->
+  <g transform="translate(35, 38)" font-family="'Courier New', Consolas, monospace">
+    <rect x="0" y="-12" width="160" height="22" rx="3" fill="#141820" stroke="#FF3038" stroke-width="1" />
+    <text x="10" y="3" font-size="11" font-weight="700" fill="#FF3038" letter-spacing="2">MISSION // 01</text>
+    <text x="180" y="3" font-size="10" fill="#787F89" letter-spacing="1">CLASS: LINK INFRASTRUCTURE</text>
+
+    <!-- Status Indicator -->
+    <g transform="translate(620, 3)">
+      <circle cx="0" cy="-4" r="4" fill="#42FF9E" class="m-pulse1" />
+      <text x="12" y="0" font-size="10" font-weight="700" fill="#42FF9E" letter-spacing="1">DEPLOYED // LIVE</text>
+    </g>
+
+    <line x1="0" y1="18" x2="730" y2="18" stroke="#171B21" stroke-width="1" />
+  </g>
+
+  <!-- Mission Details (Left) -->
+  <g transform="translate(35, 85)">
+    <!-- Project Title -->
+    <text x="0" y="24" font-family="system-ui, -apple-system, sans-serif" font-size="28" font-weight="900" fill="#F4F4F2" letter-spacing="2">URLFORGE</text>
+    <line x1="0" y1="36" x2="220" y2="36" stroke="#FF3038" stroke-width="2" />
+
+    <!-- 1-line Objective -->
+    <text x="0" y="62" font-family="'Courier New', Consolas, monospace" font-size="13" font-weight="600" fill="#A8ADB7">High-performance URL shortening and analytics platform with low-latency redirection.</text>
+    
+    <!-- Focus Areas -->
+    <text x="0" y="86" font-family="'Courier New', Consolas, monospace" font-size="11" fill="#787F89">FOCUS: Redirection Engine // Real-Time Telemetry // REST APIs // Hash Collisions</text>
+
+    <!-- Tech Stack Chips -->
+    <g transform="translate(0, 105)" font-family="'Courier New', Consolas, monospace" font-size="11">
+      <rect x="0" y="0" width="115" height="24" rx="3" fill="#141820" stroke="#55E6FF" stroke-width="1" />
+      <text x="12" y="16" fill="#55E6FF">TypeScript</text>
+
+      <rect x="125" y="0" width="95" height="24" rx="3" fill="#141820" stroke="#42FF9E" stroke-width="1" />
+      <text x="12" y="16" transform="translate(125, 0)" fill="#42FF9E">Node.js</text>
+
+      <rect x="230" y="0" width="95" height="24" rx="3" fill="#141820" stroke="#171B21" stroke-width="1" />
+      <text x="12" y="16" transform="translate(230, 0)" fill="#F4F4F2">Express</text>
+
+      <rect x="335" y="0" width="105" height="24" rx="3" fill="#141820" stroke="#FF3038" stroke-width="1" />
+      <text x="12" y="16" transform="translate(335, 0)" fill="#FF3038">REST APIs</text>
+    </g>
+  </g>
+
+  <!-- Right Side Visual: Network Routing Topology & Hash Nodes -->
+  <g transform="translate(680, 140)">
+    <!-- Circuit Grid Backdrop -->
+    <circle cx="0" cy="0" r="45" fill="#0E1218" stroke="#222832" stroke-width="1.5" />
+    <circle cx="0" cy="0" r="32" fill="none" stroke="#FF3038" stroke-width="1" stroke-dasharray="4 4" />
+
+    <!-- Interconnected Network Link Nodes -->
+    <line x1="-22" y1="-15" x2="0" y2="18" stroke="#55E6FF" stroke-width="2" />
+    <line x1="22" y1="-15" x2="0" y2="18" stroke="#55E6FF" stroke-width="2" />
+    <line x1="-22" y1="-15" x2="22" y2="-15" stroke="#FF3038" stroke-width="1.5" />
+
+    <circle cx="-22" cy="-15" r="5" fill="#55E6FF" />
+    <circle cx="22" cy="-15" r="5" fill="#55E6FF" />
+    <circle cx="0" cy="18" r="6" fill="#FF3038" filter="url(#mGlow1)" />
+
+    <!-- Katana Cut Line across Node -->
+    <line x1="-35" y1="30" x2="35" y2="-30" stroke="#FFFFFF" stroke-width="1.5" opacity="0.6" />
+
+    <text x="0" y="58" text-anchor="middle" font-family="'Courier New', Consolas, monospace" font-size="8" font-weight="700" fill="#787F89" letter-spacing="1">LINK ROUTER</text>
+  </g>
+</svg>

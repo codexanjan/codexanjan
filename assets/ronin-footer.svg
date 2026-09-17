@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300" width="100%" height="100%" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <linearGradient id="footBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#050608" />
+      <stop offset="50%" stop-color="#0A0D12" />
+      <stop offset="100%" stop-color="#050608" />
+    </linearGradient>
+    <linearGradient id="footBlade" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#141820" />
+      <stop offset="20%" stop-color="#4A5260" />
+      <stop offset="70%" stop-color="#A8ADB7" />
+      <stop offset="95%" stop-color="#F4F4F2" />
+      <stop offset="100%" stop-color="#FFFFFF" />
+    </linearGradient>
+    <linearGradient id="footEnergy" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FF3038" stop-opacity="0" />
+      <stop offset="30%" stop-color="#FF3038" stop-opacity="0.8" />
+      <stop offset="50%" stop-color="#FFFFFF" stop-opacity="1" />
+      <stop offset="70%" stop-color="#FF4B4B" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#8C111B" stop-opacity="0" />
+    </linearGradient>
+    <radialGradient id="footRedGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FF3038" stop-opacity="0.2" />
+      <stop offset="100%" stop-color="#050608" stop-opacity="0" />
+    </radialGradient>
+    <filter id="fGlowFooter" x="-20%" y="-30%" width="140%" height="160%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <style>
+      @keyframes slowBladePulse {
+        0% { stroke-dashoffset: 1200; opacity: 0; }
+        20% { opacity: 1; }
+        80% { opacity: 1; }
+        100% { stroke-dashoffset: -1200; opacity: 0; }
+      }
+      .foot-energy-beam {
+        stroke-dasharray: 200 1000;
+        animation: slowBladePulse 6s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+      }
+    </style>
+  </defs>
+
+  <rect width="1200" height="300" rx="12" fill="url(#footBg)" stroke="#171B21" stroke-width="1.5" />
+  <circle cx="600" cy="150" r="220" fill="url(#footRedGlow)" />
+
+  <!-- Corner Brackets -->
+  <path d="M 20 50 L 20 20 L 50 20" fill="none" stroke="#FF3038" stroke-width="2.5" />
+  <path d="M 1150 20 L 1180 20 L 1180 50" fill="none" stroke="#FF3038" stroke-width="2.5" />
+  <path d="M 20 250 L 20 280 L 50 280" fill="none" stroke="#FF3038" stroke-width="2.5" />
+  <path d="M 1150 280 L 1180 280 L 1180 250" fill="none" stroke="#FF3038" stroke-width="2.5" />
+
+  <!-- Center Content -->
+  <g transform="translate(600, 75)" text-anchor="middle">
+    <!-- Codename Badge -->
+    <rect x="-80" y="-22" width="160" height="24" rx="3" fill="#141820" stroke="#FF3038" stroke-width="1" />
+    <text x="0" y="-6" font-family="'Courier New', Consolas, monospace" font-size="11" font-weight="700" fill="#FF3038" letter-spacing="3">CODEXANJAN</text>
+
+    <!-- Large Name -->
+    <text x="0" y="42" font-family="system-ui, -apple-system, sans-serif" font-size="44" font-weight="900" fill="#FFFFFF" letter-spacing="4">ANJAN SHETTY</text>
+
+    <!-- Subtitle -->
+    <text x="0" y="72" font-family="'Courier New', Consolas, monospace" font-size="14" font-weight="700" fill="#A8ADB7" letter-spacing="3">FULL-STACK DEVELOPER // <tspan fill="#55E6FF">AI-ML ENGINEER</tspan></text>
+  </g>
+
+  <!-- Horizontal Katana Assembly Across Center (y: 195) -->
+  <g transform="translate(100, 195)">
+    <!-- Baseline track -->
+    <rect x="0" y="-4" width="1000" height="8" rx="4" fill="#0E1218" stroke="#171B21" stroke-width="1" />
+
+    <!-- Tsuka (Hilt, x: 20 to 120) -->
+    <rect x="20" y="-5" width="95" height="10" rx="1" fill="#141820" stroke="#222832" />
+    <polygon points="30,-5 35,0 40,-5 35,5" fill="#FF3038" opacity="0.8" />
+    <polygon points="45,-5 50,0 55,-5 50,5" fill="#FF3038" opacity="0.8" />
+    <polygon points="60,-5 65,0 70,-5 65,5" fill="#FF3038" opacity="0.8" />
+    <polygon points="75,-5 80,0 85,-5 80,5" fill="#FF3038" opacity="0.8" />
+    <polygon points="90,-5 95,0 100,-5 95,5" fill="#FF3038" opacity="0.8" />
+    <polygon points="105,-5 110,0 115,-5 110,5" fill="#FF3038" opacity="0.8" />
+
+    <!-- Tsuba (Guard) -->
+    <rect x="115" y="-10" width="6" height="20" rx="2" fill="#2D3440" stroke="#FF3038" stroke-width="1" />
+
+    <!-- Blade Steel -->
+    <path d="M 121 -3 L 950 -3 Q 970 -2 980 0 L 950 3 L 121 3 Z" fill="url(#footBlade)" />
+    <!-- Hamon -->
+    <path d="M 121 0 Q 200 -2 280 1 T 440 0 T 600 1 T 760 0 T 920 1 L 970 0" fill="none" stroke="#FFFFFF" stroke-width="0.75" opacity="0.7" />
+
+    <!-- Blade Energy Stream -->
+    <line x1="120" y1="0" x2="980" y2="0" stroke="url(#footEnergy)" stroke-width="4" stroke-linecap="round" class="foot-energy-beam" filter="url(#fGlowFooter)" />
+    <line x1="120" y1="0" x2="980" y2="0" stroke="#FFFFFF" stroke-width="1.2" stroke-linecap="round" class="foot-energy-beam" />
+  </g>
+
+  <!-- Final Philosophy Statement -->
+  <text x="600" y="245" text-anchor="middle" font-family="'Courier New', Consolas, monospace" font-size="13" font-weight="700" fill="#F4F4F2" letter-spacing="4">DISCIPLINE IN DESIGN. PRECISION IN CODE.</text>
+
+  <!-- Bottom Telemetry (Right) -->
+  <g transform="translate(1000, 275)" font-family="'Courier New', Consolas, monospace" font-size="10" fill="#787F89">
+    <circle cx="-10" cy="-4" r="3.5" fill="#42FF9E" />
+    <text x="0" y="0" fill="#42FF9E" font-weight="700">RONIN SYSTEM // ONLINE</text>
+  </g>
+</svg>

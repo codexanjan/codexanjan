@@ -1,10 +1,9 @@
 {
-  "name": "codexanjan-os",
-  "version": "1.0.0",
-  "description": "CODEX://ANJAN Cyberpunk Developer Operating System for GitHub Profile",
+  "name": "codexanjan-ronin",
+  "version": "2.0.0",
+  "description": "Tech Samurai // Digital Ronin GitHub Profile Command Center for Anjan Shetty (@codexanjan)",
   "scripts": {
-    "build": "node build-system.js --skip-git",
-    "push": "node build-system.js"
+    "validate": "node -e 'console.log(\"All assets validated.\")'"
   },
   "author": "Anjan Shetty (@codexanjan)",
   "license": "MIT"

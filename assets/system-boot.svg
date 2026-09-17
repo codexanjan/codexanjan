@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 240" width="100%" height="100%" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <linearGradient id="bootBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#080A0D" />
+      <stop offset="100%" stop-color="#050608" />
+    </linearGradient>
+    <filter id="bootGlow" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur stdDeviation="2" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <style>
+      @keyframes blink {
+        0%, 49% { opacity: 1; }
+        50%, 100% { opacity: 0; }
+      }
+      @keyframes lineFade1 { 0% { opacity: 0; } 15% { opacity: 1; } 100% { opacity: 1; } }
+      @keyframes lineFade2 { 0% { opacity: 0; } 30% { opacity: 1; } 100% { opacity: 1; } }
+      @keyframes lineFade3 { 0% { opacity: 0; } 45% { opacity: 1; } 100% { opacity: 1; } }
+      @keyframes lineFade4 { 0% { opacity: 0; } 60% { opacity: 1; } 100% { opacity: 1; } }
+      @keyframes lineFade5 { 0% { opacity: 0; } 75% { opacity: 1; } 100% { opacity: 1; } }
+      @keyframes lineFade6 { 0% { opacity: 0; } 90% { opacity: 1; } 100% { opacity: 1; } }
+
+      .boot-cursor { animation: blink 1s infinite; }
+      .boot-l1 { animation: lineFade1 2.5s ease-out forwards; }
+      .boot-l2 { animation: lineFade2 2.5s ease-out forwards; }
+      .boot-l3 { animation: lineFade3 2.5s ease-out forwards; }
+      .boot-l4 { animation: lineFade4 2.5s ease-out forwards; }
+      .boot-l5 { animation: lineFade5 2.5s ease-out forwards; }
+      .boot-l6 { animation: lineFade6 2.5s ease-out forwards; }
+    </style>
+  </defs>
+
+  <!-- Frame Background -->
+  <rect width="800" height="240" rx="8" fill="url(#bootBg)" stroke="#171B21" stroke-width="1.5" />
+  <rect x="6" y="6" width="788" height="228" rx="6" fill="none" stroke="#222832" stroke-dasharray="6 4" stroke-width="1" />
+
+  <!-- Corner Brackets -->
+  <path d="M 12 30 L 12 12 L 30 12" fill="none" stroke="#FF3038" stroke-width="2" />
+  <path d="M 770 12 L 788 12 L 788 30" fill="none" stroke="#FF3038" stroke-width="2" />
+  <path d="M 12 210 L 12 228 L 30 228" fill="none" stroke="#FF3038" stroke-width="2" />
+  <path d="M 770 228 L 788 228 L 788 210" fill="none" stroke="#FF3038" stroke-width="2" />
+
+  <!-- Terminal Header Bar -->
+  <g transform="translate(30, 32)">
+    <circle cx="0" cy="0" r="4" fill="#FF3038" />
+    <circle cx="14" cy="0" r="4" fill="#F4C95D" />
+    <circle cx="28" cy="0" r="4" fill="#42FF9E" />
+    <text x="50" y="4" font-family="'Courier New', Consolas, monospace" font-size="12" font-weight="700" fill="#A8ADB7" letter-spacing="2">RONIN SYSTEM // BOOT SEQUENCE 0x88F</text>
+    <line x1="0" y1="16" x2="740" y2="16" stroke="#171B21" stroke-width="1" />
+  </g>
+
+  <!-- Boot Text Output with Sequential Delays -->
+  <g transform="translate(30, 75)" font-family="'Courier New', Consolas, monospace" font-size="13" letter-spacing="1">
+    <!-- Line 1 -->
+    <g class="boot-l1" transform="translate(0, 0)">
+      <text x="0" y="0" fill="#787F89">[INIT] CORE INITIALIZATION ...........................</text>
+      <text x="560" y="0" fill="#42FF9E" font-weight="700">ONLINE</text>
+    </g>
+
+    <!-- Line 2 -->
+    <g class="boot-l2" transform="translate(0, 24)">
+      <text x="0" y="0" fill="#787F89">[LINK] INTERFACE FRAMEWORK .........................</text>
+      <text x="560" y="0" fill="#42FF9E" font-weight="700">ONLINE</text>
+    </g>
+
+    <!-- Line 3 -->
+    <g class="boot-l3" transform="translate(0, 48)">
+      <text x="0" y="0" fill="#787F89">[ARCH] PROJECT ARCHIVE &amp; ARSENAL ....................</text>
+      <text x="560" y="0" fill="#55E6FF" font-weight="700">SYNCED</text>
+    </g>
+
+    <!-- Line 4 -->
+    <g class="boot-l4" transform="translate(0, 72)">
+      <text x="0" y="0" fill="#787F89">[NEUR] AI / ML INTELLIGENCE MODULE .................</text>
+      <text x="560" y="0" fill="#55E6FF" font-weight="700">READY</text>
+    </g>
+
+    <!-- Line 5 -->
+    <g class="boot-l5" transform="translate(0, 96)">
+      <text x="0" y="0" fill="#787F89">[NODE] GITHUB TELEMETRY LINK .......................</text>
+      <text x="560" y="0" fill="#42FF9E" font-weight="700">CONNECTED</text>
+    </g>
+
+    <!-- Line 6 -->
+    <g class="boot-l6" transform="translate(0, 126)">
+      <text x="0" y="0" fill="#FF3038" font-weight="700">&gt; IDENTITY // CODEXANJAN — STATUS: ARMED &amp; DEPLOYED</text>
+      <rect x="520" y="-12" width="9" height="15" fill="#FF3038" class="boot-cursor" />
+    </g>
+  </g>
+</svg>

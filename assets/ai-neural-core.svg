@@ -1,0 +1,164 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 420" width="100%" height="100%" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <linearGradient id="aiBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#07090C" />
+      <stop offset="50%" stop-color="#0A0E14" />
+      <stop offset="100%" stop-color="#050608" />
+    </linearGradient>
+    <radialGradient id="aiPulse" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#55E6FF" stop-opacity="0.35" />
+      <stop offset="50%" stop-color="#FF3038" stop-opacity="0.15" />
+      <stop offset="100%" stop-color="#050608" stop-opacity="0" />
+    </radialGradient>
+    <filter id="aiGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <style>
+      @keyframes synRotate {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+      @keyframes packetPulse {
+        0% { stroke-dashoffset: 240; }
+        100% { stroke-dashoffset: 0; }
+      }
+      @keyframes nodeBeacon {
+        0%, 100% { opacity: 0.6; filter: drop-shadow(0 0 2px #55E6FF); }
+        50% { opacity: 1; filter: drop-shadow(0 0 8px #55E6FF); }
+      }
+      @keyframes coreBreath {
+        0%, 100% { transform: scale(0.96); }
+        50% { transform: scale(1.04); }
+      }
+      .ring-spin {
+        transform-origin: 425px 210px;
+        animation: synRotate 20s linear infinite;
+      }
+      .packet-flow {
+        stroke-dasharray: 15 65;
+        animation: packetPulse 3s linear infinite;
+      }
+      .neural-node {
+        animation: nodeBeacon 2.5s ease-in-out infinite;
+      }
+      .core-glow {
+        transform-origin: 425px 210px;
+        animation: coreBreath 4s ease-in-out infinite;
+      }
+    </style>
+  </defs>
+
+  <rect width="850" height="420" rx="12" fill="url(#aiBg)" stroke="#171B21" stroke-width="1.5" />
+  <polygon points="12,12 32,12 12,32" fill="#55E6FF" />
+  <polygon points="838,408 818,408 838,388" fill="#55E6FF" />
+
+  <!-- Top Metadata Bar -->
+  <g transform="translate(35, 36)" font-family="'Courier New', Consolas, monospace">
+    <text x="0" y="0" font-size="12" font-weight="700" fill="#55E6FF" letter-spacing="3">NEURAL TOPOLOGY // COGNITIVE LAB</text>
+    <text x="560" y="0" font-size="10" fill="#787F89" letter-spacing="1">SYNAPSES: ACTIVE // AGENTIC</text>
+    <line x1="0" y1="12" x2="780" y2="12" stroke="#171B21" stroke-width="1" />
+  </g>
+
+  <!-- Central Neural Core Group (Center: 425, 210) -->
+  <circle cx="425" cy="210" r="140" fill="url(#aiPulse)" class="core-glow" />
+
+  <!-- Rotating Reticle Rings -->
+  <circle cx="425" cy="210" r="120" fill="none" stroke="#1E2530" stroke-width="1" stroke-dasharray="8 6" class="ring-spin" />
+  <circle cx="425" cy="210" r="75" fill="none" stroke="#55E6FF" stroke-width="1" stroke-opacity="0.4" />
+
+  <!-- Synapse Connecting Lines & Traveling Packets -->
+  <!-- Center to Top (04: AGENTIC AI) -->
+  <line x1="425" y1="165" x2="425" y2="100" stroke="#171B21" stroke-width="2" />
+  <line x1="425" y1="165" x2="425" y2="100" stroke="#55E6FF" stroke-width="2" class="packet-flow" />
+
+  <!-- Center to Top-Right (02: LLMs) -->
+  <line x1="465" y1="175" x2="620" y2="110" stroke="#171B21" stroke-width="2" />
+  <line x1="465" y1="175" x2="620" y2="110" stroke="#55E6FF" stroke-width="2" class="packet-flow" />
+
+  <!-- Center to Right (03: RAG) -->
+  <line x1="475" y1="210" x2="650" y2="210" stroke="#171B21" stroke-width="2" />
+  <line x1="475" y1="210" x2="650" y2="210" stroke="#FF3038" stroke-width="2" class="packet-flow" />
+
+  <!-- Center to Bottom-Right (05: AI INTEGRATION) -->
+  <line x1="465" y1="245" x2="620" y2="310" stroke="#171B21" stroke-width="2" />
+  <line x1="465" y1="245" x2="620" y2="310" stroke="#55E6FF" stroke-width="2" class="packet-flow" />
+
+  <!-- Center to Bottom (06: DATA PIPELINES) -->
+  <line x1="425" y1="255" x2="425" y2="320" stroke="#171B21" stroke-width="2" />
+  <line x1="425" y1="255" x2="425" y2="320" stroke="#FF3038" stroke-width="2" class="packet-flow" />
+
+  <!-- Center to Bottom-Left (07: INTELLIGENT AUTOMATION) -->
+  <line x1="385" y1="245" x2="230" y2="310" stroke="#171B21" stroke-width="2" />
+  <line x1="385" y1="245" x2="230" y2="310" stroke="#55E6FF" stroke-width="2" class="packet-flow" />
+
+  <!-- Center to Top-Left (01: MACHINE LEARNING) -->
+  <line x1="385" y1="175" x2="230" y2="110" stroke="#171B21" stroke-width="2" />
+  <line x1="385" y1="175" x2="230" y2="110" stroke="#FF3038" stroke-width="2" class="packet-flow" />
+
+  <!-- Center Crest Symbol -->
+  <g transform="translate(425, 210)">
+    <circle cx="0" cy="0" r="42" fill="#0C0F14" stroke="#FF3038" stroke-width="2" filter="url(#aiGlow)" />
+    <polygon points="0,-25 22,-10 24,14 0,25 -24,14 -22,-10" fill="#141822" stroke="#55E6FF" stroke-width="1.2" />
+    
+    <!-- Code Bracket & Blade Cut -->
+    <path d="M -10 -10 L -18 0 L -10 10" fill="none" stroke="#FFF" stroke-width="2" />
+    <path d="M 10 -10 L 18 0 L 10 10" fill="none" stroke="#FFF" stroke-width="2" />
+    <line x1="-16" y1="16" x2="16" y2="-16" stroke="#FF3038" stroke-width="2" />
+    <circle cx="0" cy="0" r="4" fill="#55E6FF" />
+
+    <text x="0" y="36" text-anchor="middle" font-family="'Courier New', Consolas, monospace" font-size="7" font-weight="700" fill="#A8ADB7">NEURAL CORE</text>
+  </g>
+
+  <!-- 7 Outer Neural Nodes & Labels -->
+
+  <!-- Node 1: MACHINE LEARNING (Top-Left: 230, 110) -->
+  <g transform="translate(230, 110)">
+    <circle cx="0" cy="0" r="7" fill="#FF3038" class="neural-node" />
+    <rect x="-170" y="-12" width="155" height="24" rx="4" fill="#10141C" stroke="#FF3038" stroke-width="1" />
+    <text x="-15" y="4" text-anchor="end" font-family="'Courier New', Consolas, monospace" font-size="11" font-weight="700" fill="#F4F4F2">MACHINE LEARNING</text>
+  </g>
+
+  <!-- Node 2: AGENTIC AI (Top: 425, 100) -->
+  <g transform="translate(425, 100)">
+    <circle cx="0" cy="0" r="7" fill="#55E6FF" class="neural-node" />
+    <rect x="-70" y="-32" width="140" height="24" rx="4" fill="#10141C" stroke="#55E6FF" stroke-width="1" />
+    <text x="0" y="-16" text-anchor="middle" font-family="'Courier New', Consolas, monospace" font-size="11" font-weight="700" fill="#55E6FF">AGENTIC AI</text>
+  </g>
+
+  <!-- Node 3: LLMs (Top-Right: 620, 110) -->
+  <g transform="translate(620, 110)">
+    <circle cx="0" cy="0" r="7" fill="#55E6FF" class="neural-node" />
+    <rect x="15" y="-12" width="110" height="24" rx="4" fill="#10141C" stroke="#55E6FF" stroke-width="1" />
+    <text x="70" y="4" text-anchor="middle" font-family="'Courier New', Consolas, monospace" font-size="11" font-weight="700" fill="#F4F4F2">LLMs</text>
+  </g>
+
+  <!-- Node 4: RAG (Right: 650, 210) -->
+  <g transform="translate(650, 210)">
+    <circle cx="0" cy="0" r="7" fill="#FF3038" class="neural-node" />
+    <rect x="15" y="-12" width="160" height="24" rx="4" fill="#10141C" stroke="#FF3038" stroke-width="1" />
+    <text x="95" y="4" text-anchor="middle" font-family="'Courier New', Consolas, monospace" font-size="11" font-weight="700" fill="#FF3038">RAG &amp; VECTORS</text>
+  </g>
+
+  <!-- Node 5: AI INTEGRATION (Bottom-Right: 620, 310) -->
+  <g transform="translate(620, 310)">
+    <circle cx="0" cy="0" r="7" fill="#55E6FF" class="neural-node" />
+    <rect x="15" y="-12" width="150" height="24" rx="4" fill="#10141C" stroke="#55E6FF" stroke-width="1" />
+    <text x="90" y="4" text-anchor="middle" font-family="'Courier New', Consolas, monospace" font-size="11" font-weight="700" fill="#F4F4F2">AI INTEGRATION</text>
+  </g>
+
+  <!-- Node 6: DATA PIPELINES (Bottom: 425, 320) -->
+  <g transform="translate(425, 320)">
+    <circle cx="0" cy="0" r="7" fill="#FF3038" class="neural-node" />
+    <rect x="-75" y="10" width="150" height="24" rx="4" fill="#10141C" stroke="#FF3038" stroke-width="1" />
+    <text x="0" y="26" text-anchor="middle" font-family="'Courier New', Consolas, monospace" font-size="11" font-weight="700" fill="#A8ADB7">DATA PIPELINES</text>
+  </g>
+
+  <!-- Node 7: INTELLIGENT AUTOMATION (Bottom-Left: 230, 310) -->
+  <g transform="translate(230, 310)">
+    <circle cx="0" cy="0" r="7" fill="#55E6FF" class="neural-node" />
+    <rect x="-210" y="-12" width="195" height="24" rx="4" fill="#10141C" stroke="#55E6FF" stroke-width="1" />
+    <text x="-15" y="4" text-anchor="end" font-family="'Courier New', Consolas, monospace" font-size="11" font-weight="700" fill="#55E6FF">INTELLIGENT AUTO</text>
+  </g>
+</svg>

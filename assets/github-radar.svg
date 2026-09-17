@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 360" width="100%" height="100%" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <linearGradient id="ghRadarBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#080A0D" />
+      <stop offset="100%" stop-color="#050608" />
+    </linearGradient>
+    <linearGradient id="ghSweepGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#55E6FF" stop-opacity="0.35" />
+      <stop offset="100%" stop-color="#55E6FF" stop-opacity="0" />
+    </linearGradient>
+    <filter id="ghGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <style>
+      @keyframes ghRadarSweep {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+      @keyframes ghPulse {
+        0%, 100% { opacity: 0.6; }
+        50% { opacity: 1; filter: drop-shadow(0 0 8px #FF3038); }
+      }
+      .gh-sweep {
+        transform-origin: 400px 185px;
+        animation: ghRadarSweep 9s linear infinite;
+      }
+      .gh-node {
+        animation: ghPulse 3s infinite;
+      }
+    </style>
+  </defs>
+
+  <rect width="800" height="360" rx="10" fill="url(#ghRadarBg)" stroke="#171B21" stroke-width="1.5" />
+  <polygon points="12,12 30,12 12,30" fill="#FF3038" />
+  <polygon points="788,348 770,348 788,330" fill="#FF3038" />
+
+  <!-- Top Header Bar -->
+  <g transform="translate(35, 36)" font-family="'Courier New', Consolas, monospace">
+    <text x="0" y="0" font-size="12" font-weight="700" fill="#FF3038" letter-spacing="3">GITHUB TELEMETRY // RADAR SPECTRUM</text>
+    <text x="530" y="0" font-size="10" fill="#787F89" letter-spacing="1">METRIC TRACKING // REAL-TIME</text>
+    <line x1="0" y1="12" x2="730" y2="12" stroke="#171B21" stroke-width="1" />
+  </g>
+
+  <!-- Radar Center (400, 185) -->
+  <g transform="translate(400, 185)">
+    <!-- Concentric Pentagons (r=110, r=75, r=40) -->
+    <!-- Pent 1 (Outer) -->
+    <polygon points="0,-110 105,-34 65,89 -65,89 -105,-34" fill="none" stroke="#222832" stroke-width="1.5" />
+    <!-- Pent 2 (Mid) -->
+    <polygon points="0,-75 71,-23 44,61 -44,61 -71,-23" fill="none" stroke="#171B21" stroke-width="1" stroke-dasharray="4 4" />
+    <!-- Pent 3 (Inner) -->
+    <polygon points="0,-40 38,-12 24,32 -24,32 -38,-12" fill="none" stroke="#171B21" stroke-width="1" />
+
+    <!-- 5 Axes -->
+    <line x1="0" y1="0" x2="0" y2="-110" stroke="#262D38" stroke-width="1" />
+    <line x1="0" y1="0" x2="105" y2="-34" stroke="#262D38" stroke-width="1" />
+    <line x1="0" y1="0" x2="65" y2="89" stroke="#262D38" stroke-width="1" />
+    <line x1="0" y1="0" x2="-65" y2="89" stroke="#262D38" stroke-width="1" />
+    <line x1="0" y1="0" x2="-105" y2="-34" stroke="#262D38" stroke-width="1" />
+
+    <!-- Active GitHub Telemetry Web (Repositories, Commits, Contributions, Languages, Project Activity) -->
+    <polygon points="0,-98 96,-31 60,80 -55,75 -92,-30" 
+             fill="#FF3038" fill-opacity="0.2" stroke="#FF3038" stroke-width="2" filter="url(#ghGlow)" />
+
+    <!-- Sweeper Beam -->
+    <g class="gh-sweep">
+      <line x1="0" y1="0" x2="0" y2="-115" stroke="#55E6FF" stroke-width="2" />
+      <path d="M 0 0 L 0 -115 A 115 115 0 0 1 50 -103 Z" fill="url(#ghSweepGrad)" />
+    </g>
+
+    <!-- Center Reticle -->
+    <circle cx="0" cy="0" r="18" fill="#0E1218" stroke="#FF3038" stroke-width="1.5" />
+    <circle cx="0" cy="0" r="4" fill="#55E6FF" />
+
+    <!-- 5 Vertex Nodes & Labels -->
+    <!-- 1: REPOSITORIES (Top: 0, -110) -->
+    <g transform="translate(0, -98)">
+      <circle cx="0" cy="0" r="5" fill="#FF3038" class="gh-node" />
+      <rect x="-65" y="-30" width="130" height="20" rx="3" fill="#141820" stroke="#FF3038" stroke-width="1" />
+      <text x="0" y="-16" text-anchor="middle" font-family="'Courier New', Consolas, monospace" font-size="9" font-weight="700" fill="#F4F4F2">REPOSITORIES</text>
+    </g>
+
+    <!-- 2: COMMITS (Top-Right: 105, -34) -->
+    <g transform="translate(96, -31)">
+      <circle cx="0" cy="0" r="5" fill="#55E6FF" class="gh-node" />
+      <rect x="12" y="-10" width="85" height="20" rx="3" fill="#141820" stroke="#55E6FF" stroke-width="1" />
+      <text x="54" y="4" text-anchor="middle" font-family="'Courier New', Consolas, monospace" font-size="9" font-weight="700" fill="#55E6FF">COMMITS</text>
+    </g>
+
+    <!-- 3: CONTRIBUTIONS (Bottom-Right: 65, 89) -->
+    <g transform="translate(60, 80)">
+      <circle cx="0" cy="0" r="5" fill="#FF3038" class="gh-node" />
+      <rect x="10" y="6" width="120" height="20" rx="3" fill="#141820" stroke="#222832" stroke-width="1" />
+      <text x="70" y="20" text-anchor="middle" font-family="'Courier New', Consolas, monospace" font-size="9" font-weight="700" fill="#A8ADB7">CONTRIBUTIONS</text>
+    </g>
+
+    <!-- 4: LANGUAGES (Bottom-Left: -65, 89) -->
+    <g transform="translate(-55, 75)">
+      <circle cx="0" cy="0" r="5" fill="#FF3038" class="gh-node" />
+      <rect x="-115" y="6" width="105" height="20" rx="3" fill="#141820" stroke="#222832" stroke-width="1" />
+      <text x="-62" y="20" text-anchor="middle" font-family="'Courier New', Consolas, monospace" font-size="9" font-weight="700" fill="#A8ADB7">LANGUAGES</text>
+    </g>
+
+    <!-- 5: PROJECT ACTIVITY (Top-Left: -105, -34) -->
+    <g transform="translate(-92, -30)">
+      <circle cx="0" cy="0" r="5" fill="#55E6FF" class="gh-node" />
+      <rect x="-145" y="-10" width="135" height="20" rx="3" fill="#141820" stroke="#55E6FF" stroke-width="1" />
+      <text x="-77" y="4" text-anchor="middle" font-family="'Courier New', Consolas, monospace" font-size="9" font-weight="700" fill="#55E6FF">PROJECT ACTIVITY</text>
+    </g>
+  </g>
+</svg>

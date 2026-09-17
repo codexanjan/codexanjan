@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 45" width="100%" height="100%" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <linearGradient id="bladeSteelRev" x1="100%" y1="0%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#171B21" />
+      <stop offset="15%" stop-color="#2D3440" />
+      <stop offset="60%" stop-color="#A8ADB7" />
+      <stop offset="95%" stop-color="#F4F4F2" />
+      <stop offset="100%" stop-color="#FFFFFF" />
+    </linearGradient>
+    <linearGradient id="plasmaSurgeRev" x1="100%" y1="0%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#FF3038" stop-opacity="0" />
+      <stop offset="30%" stop-color="#FF3038" stop-opacity="0.8" />
+      <stop offset="50%" stop-color="#FFFFFF" stop-opacity="1" />
+      <stop offset="70%" stop-color="#FF4B4B" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#8C111B" stop-opacity="0" />
+    </linearGradient>
+    <filter id="bladeGlowRev" x="-20%" y="-50%" width="140%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <style>
+      @keyframes plasmaTravelRev {
+        0% { stroke-dashoffset: -1000; opacity: 0; }
+        15% { opacity: 1; }
+        85% { opacity: 1; }
+        100% { stroke-dashoffset: 1000; opacity: 0; }
+      }
+      @keyframes sparkFloatRev {
+        0%, 100% { transform: translateY(0); opacity: 0.3; }
+        50% { transform: translateY(-3px); opacity: 0.9; }
+      }
+      .plasma-beam-rev {
+        stroke-dasharray: 180 820;
+        animation: plasmaTravelRev 3.2s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+      }
+      .spark-rev {
+        animation: sparkFloatRev 2.2s ease-in-out infinite;
+      }
+    </style>
+  </defs>
+
+  <rect y="18" width="1000" height="8" rx="4" fill="#080A0D" stroke="#171B21" stroke-width="1" />
+
+  <!-- Reverse Katana: Kissaki (Tip) on Left (x: 25) -> Habaki -> Tsuba -> Tsuka on Right (x: 980) -->
+  <!-- Blade -->
+  <polygon points="60,18 25,22 60,25" fill="#FFFFFF" />
+  <path d="M 60 18 L 878 18 L 878 25 L 60 25 Z" fill="url(#bladeSteelRev)" />
+  <path d="M 878 22 Q 820 20 780 23 T 680 21 T 580 23 T 480 21 T 380 23 T 280 21 T 180 23 T 80 21 L 35 22" fill="none" stroke="#FFFFFF" stroke-width="0.75" opacity="0.7" />
+
+  <!-- Habaki (Blade Collar, x: 878 to 888) -->
+  <rect x="878" y="18" width="10" height="8" rx="1" fill="#F4C95D" stroke="#A8ADB7" stroke-width="0.5" />
+
+  <!-- Tsuba (Katana Guard, x: 886 to 894) -->
+  <rect x="888" y="12" width="6" height="20" rx="2" fill="#2D3440" stroke="#A8ADB7" stroke-width="1" />
+  <line x1="891" y1="14" x2="891" y2="30" stroke="#FF3038" stroke-width="1.5" />
+
+  <!-- Tsuka (Hilt, x: 894 to 980) -->
+  <rect x="894" y="17" width="80" height="10" rx="1" fill="#101318" stroke="#171B21" />
+  <polygon points="902,17 906,22 910,17 906,27" fill="#FF3038" opacity="0.8" />
+  <polygon points="914,17 918,22 922,17 918,27" fill="#FF3038" opacity="0.8" />
+  <polygon points="926,17 930,22 934,17 930,27" fill="#FF3038" opacity="0.8" />
+  <polygon points="938,17 942,22 946,17 942,27" fill="#FF3038" opacity="0.8" />
+  <polygon points="950,17 954,22 958,17 954,27" fill="#FF3038" opacity="0.8" />
+  <polygon points="962,17 966,22 970,17 966,27" fill="#FF3038" opacity="0.8" />
+  <!-- Kashira (Hilt buttcap) -->
+  <path d="M 974 16 L 980 16 L 980 28 L 974 28 Z" fill="#2D3440" stroke="#FF3038" stroke-width="1" />
+
+  <!-- Traveling Crimson Plasma Energy Surge (Right to Left) -->
+  <line x1="890" y1="22" x2="25" y2="22" stroke="url(#plasmaSurgeRev)" stroke-width="4" stroke-linecap="round" class="plasma-beam-rev" filter="url(#bladeGlowRev)" />
+  <line x1="890" y1="22" x2="25" y2="22" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" class="plasma-beam-rev" />
+
+  <circle cx="720" cy="14" r="1.5" fill="#FF3038" class="spark-rev" />
+  <circle cx="480" cy="30" r="1.5" fill="#55E6FF" class="spark-rev" />
+  <circle cx="260" cy="14" r="2" fill="#FF3038" class="spark-rev" />
+  <circle cx="90" cy="30" r="1.5" fill="#FF4B4B" class="spark-rev" />
+
+  <text x="500" y="38" text-anchor="middle" font-family="'Courier New', Consolas, monospace" font-size="8" font-weight="700" fill="#787F89" letter-spacing="3">KATANA INTERFACE // REVERSE FLOW 0x2</text>
+</svg>

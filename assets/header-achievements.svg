@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 85" width="100%" height="100%" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <linearGradient id="hBg08" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0E1218" />
+      <stop offset="50%" stop-color="#080A0D" />
+      <stop offset="100%" stop-color="#050608" />
+    </linearGradient>
+    <linearGradient id="hSlash08" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#8C111B" />
+      <stop offset="40%" stop-color="#FF3038" />
+      <stop offset="70%" stop-color="#FFF" />
+      <stop offset="100%" stop-color="#FF3038" />
+    </linearGradient>
+    <filter id="hGlow08" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur stdDeviation="2.5" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <style>
+      @keyframes slashMotion08 {
+        0% { stroke-dashoffset: 900; }
+        50% { stroke-dashoffset: 0; }
+        100% { stroke-dashoffset: -900; }
+      }
+      @keyframes pulseCrest08 {
+        0%, 100% { opacity: 0.7; }
+        50% { opacity: 1; filter: drop-shadow(0 0 5px #FF3038); }
+      }
+      .slash-line08 {
+        stroke-dasharray: 250 650;
+        animation: slashMotion08 4s linear infinite;
+      }
+      .crest-pulse08 {
+        animation: pulseCrest08 3.5s ease-in-out infinite;
+      }
+    </style>
+  </defs>
+
+  <rect width="900" height="85" rx="4" fill="url(#hBg08)" />
+  <rect width="900" height="85" rx="4" fill="none" stroke="#171B21" stroke-width="1" />
+
+  <g transform="translate(20, 20)">
+    <rect x="0" y="0" width="70" height="30" rx="3" fill="#141820" stroke="#FF3038" stroke-width="1.2" />
+    <path d="M 0 0 L 8 0 L 0 8 Z" fill="#FF3038" />
+    <text x="35" y="20" text-anchor="middle" font-family="'Courier New', Consolas, monospace" font-size="16" font-weight="900" fill="#FF3038">08</text>
+  </g>
+
+  <g transform="translate(105, 30)">
+    <text x="0" y="0" font-family="'Courier New', Consolas, monospace" font-size="11" font-weight="700" fill="#787F89" letter-spacing="2">HACKATHONS // HONORS // MILESTONES</text>
+    <text x="0" y="24" font-family="system-ui, -apple-system, sans-serif" font-size="22" font-weight="900" fill="#F4F4F2" letter-spacing="3">BATTLE RECORDS</text>
+  </g>
+
+  <g transform="translate(845, 34)" class="crest-pulse08">
+    <circle cx="0" cy="0" r="22" fill="#0C0E14" stroke="#222832" stroke-width="1.5" />
+    <polygon points="0,-12 10,-5 12,6 0,12 -12,6 -10,-5" fill="none" stroke="#FF3038" stroke-width="1.2" />
+    <path d="M -5 -5 L -8 0 L -5 5" fill="none" stroke="#FFF" stroke-width="1.5" />
+    <path d="M 5 -5 L 8 0 L 5 5" fill="none" stroke="#FFF" stroke-width="1.5" />
+    <line x1="-8" y1="8" x2="8" y2="-8" stroke="#FF3038" stroke-width="1.5" />
+    <circle cx="0" cy="0" r="2" fill="#55E6FF" />
+  </g>
+
+  <line x1="20" y1="74" x2="880" y2="74" stroke="#171B21" stroke-width="2" />
+  <line x1="20" y1="74" x2="880" y2="74" stroke="url(#hSlash08)" stroke-width="2.5" stroke-linecap="round" class="slash-line08" filter="url(#hGlow08)" />
+  <polygon points="20,72 26,74 20,76" fill="#FF3038" />
+  <polygon points="880,72 874,74 880,76" fill="#FF3038" />
+</svg>
