@@ -55,7 +55,7 @@
 
   <!-- Top Security Classification Bar -->
   <g transform="translate(45, 42)" font-family="'Courier New', Consolas, monospace">
-    <rect x="0" y="-12" width="235" height="22" rx="2" fill="#12161F" stroke="#FF3038" stroke-width="1" />
+    <rect x="0" y="-12" width="270" height="22" rx="2" fill="#12161F" stroke="#FF3038" stroke-width="1" />
     <text x="10" y="3" font-size="11" font-weight="800" fill="#FF3038" letter-spacing="2">SECURITY DOSSIER // CLASSIFIED</text>
     <text x="540" y="3" font-size="10" fill="#6A7280" letter-spacing="1">RECORD ID: #00-994-RONIN</text>
     <line x1="0" y1="18" x2="790" y2="18" stroke="#1C222E" stroke-width="1.2" />

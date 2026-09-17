@@ -10,45 +10,46 @@
     </linearGradient>
   </defs>
 
-  <g transform="translate(18, 1)" font-family="system-ui, -apple-system, 'SF Mono', 'Courier New', monospace" font-size="11" font-weight="900" letter-spacing="0.8">
+  <g transform="translate(6, 1)" font-family="system-ui, -apple-system, 'SF Mono', 'Courier New', monospace" font-size="11" font-weight="900" letter-spacing="0.8">
     <!-- 01: IDENTITY -->
     <g transform="translate(0, 0)">
-      <rect x="0" y="0" width="75" height="32" rx="3" fill="#0C0E14" stroke="#222834" stroke-width="1" />
-      <text x="37" y="20" text-anchor="middle" fill="#A8ADB7" font-size="10.5">IDENTITY</text>
-      <rect x="78" y="0" width="118" height="32" rx="3" fill="url(#statusPillRed)" />
-      <text x="137" y="20" text-anchor="middle" fill="#050608">ANJAN SHETTY</text>
+      <rect x="0" y="0" width="70" height="32" rx="3" fill="#0C0E14" stroke="#222834" stroke-width="1" />
+      <text x="35" y="20" text-anchor="middle" fill="#A8ADB7" font-size="10">IDENTITY</text>
+      <rect x="73" y="0" width="112" height="32" rx="3" fill="url(#statusPillRed)" />
+      <text x="129" y="20" text-anchor="middle" fill="#050608">ANJAN SHETTY</text>
     </g>
 
     <!-- 02: CODENAME -->
-    <g transform="translate(208, 0)">
-      <rect x="0" y="0" width="80" height="32" rx="3" fill="#0C0E14" stroke="#222834" stroke-width="1" />
-      <text x="40" y="20" text-anchor="middle" fill="#A8ADB7" font-size="10.5">CODENAME</text>
-      <rect x="83" y="0" width="102" height="32" rx="3" fill="url(#statusPillRed)" />
-      <text x="134" y="20" text-anchor="middle" fill="#050608">CODEXANJAN</text>
+    <g transform="translate(197, 0)">
+      <rect x="0" y="0" width="74" height="32" rx="3" fill="#0C0E14" stroke="#222834" stroke-width="1" />
+      <text x="37" y="20" text-anchor="middle" fill="#A8ADB7" font-size="10">CODENAME</text>
+      <rect x="77" y="0" width="98" height="32" rx="3" fill="url(#statusPillRed)" />
+      <text x="126" y="20" text-anchor="middle" fill="#050608">CODEXANJAN</text>
     </g>
 
     <!-- 03: STATUS -->
-    <g transform="translate(405, 0)">
-      <rect x="0" y="0" width="78" height="32" rx="3" fill="#0C0E14" stroke="#222834" stroke-width="1" />
-      <!-- Radar signal icon -->
-      <circle cx="16" cy="16" r="3.5" fill="#10B981" />
-      <text x="48" y="20" text-anchor="middle" fill="#A8ADB7" font-size="10.5">STATUS</text>
-      <rect x="81" y="0" width="80" height="32" rx="3" fill="url(#statusPillGreen)" />
-      <text x="121" y="20" text-anchor="middle" fill="#050608">ONLINE</text>
+    <g transform="translate(384, 0)">
+      <rect x="0" y="0" width="72" height="32" rx="3" fill="#0C0E14" stroke="#222834" stroke-width="1" />
+      <circle cx="14" cy="16" r="3.5" fill="#10B981" />
+      <text x="44" y="20" text-anchor="middle" fill="#A8ADB7" font-size="10">STATUS</text>
+      <rect x="75" y="0" width="76" height="32" rx="3" fill="url(#statusPillGreen)" />
+      <text x="113" y="20" text-anchor="middle" fill="#050608">ONLINE</text>
     </g>
 
     <!-- 04: HQ -->
-    <g transform="translate(578, 0)">
-      <rect x="0" y="0" width="38" height="32" rx="3" fill="#0C0E14" stroke="#222834" stroke-width="1" />
-      <text x="19" y="20" text-anchor="middle" fill="#A8ADB7" font-size="10.5">HQ</text>
-      <rect x="41" y="0" width="95" height="32" rx="3" fill="url(#statusPillRed)" />
-      <text x="88" y="20" text-anchor="middle" fill="#050608">RONIN DOJO</text>
+    <g transform="translate(547, 0)">
+      <rect x="0" y="0" width="36" height="32" rx="3" fill="#0C0E14" stroke="#222834" stroke-width="1" />
+      <text x="18" y="20" text-anchor="middle" fill="#A8ADB7" font-size="10">HQ</text>
+      <rect x="39" y="0" width="94" height="32" rx="3" fill="url(#statusPillRed)" />
+      <text x="86" y="20" text-anchor="middle" fill="#050608">RONIN DOJO</text>
     </g>
 
     <!-- 05: VISITORS -->
-    <g transform="translate(726, 0)">
-      <rect x="0" y="0" width="88" height="32" rx="3" fill="#0C0E14" stroke="#222834" stroke-width="1" />
-      <text x="44" y="20" text-anchor="middle" fill="#FF3038" font-size="10.5">RONIN VISITOR</text>
+    <g transform="translate(692, 0)">
+      <rect x="0" y="0" width="80" height="32" rx="3" fill="#0C0E14" stroke="#222834" stroke-width="1" />
+      <text x="40" y="20" text-anchor="middle" fill="#A8ADB7" font-size="10">VISITORS</text>
+      <rect x="83" y="0" width="60" height="32" rx="3" fill="url(#statusPillRed)" />
+      <text x="113" y="20" text-anchor="middle" fill="#050608">994+</text>
     </g>
   </g>
 </svg>
