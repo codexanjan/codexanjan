@@ -1,0 +1,11 @@
+{
+  "name": "codexanjan-os",
+  "version": "1.0.0",
+  "description": "CODEX://ANJAN Cyberpunk Developer Operating System for GitHub Profile",
+  "scripts": {
+    "build": "node build-system.js --skip-git",
+    "push": "node build-system.js"
+  },
+  "author": "Anjan Shetty (@codexanjan)",
+  "license": "MIT"
+}

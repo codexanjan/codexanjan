@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 160" width="100%" height="160">
+    <rect width="850" height="160" fill="#04070D" rx="4" stroke="rgba(0, 245, 255, 0.25)" stroke-width="1.2"/>
+    <text x="25" y="24" fill="#00F5FF" font-size="10" font-weight="800" letter-spacing="2">NETWORK_TRAFFIC://CONTRIBUTION_STREAM // CYBERPUNK_SNAKE</text>
+    <text x="825" y="24" fill="#39FF88" font-size="9" text-anchor="end" font-weight="700">NODE://CODEXANJAN</text>
+    <line x1="25" y1="34" x2="825" y2="34" stroke="rgba(0, 245, 255, 0.15)" stroke-width="1" />
+    <path d="M 40 70 Q 150 40 260 80 T 480 60 T 700 90 L 780 70" fill="none" stroke="#00F5FF" stroke-width="3" stroke-linecap="round" opacity="0.8"/>
+    <circle cx="780" cy="70" r="5" fill="#39FF88"/>
+  </svg>

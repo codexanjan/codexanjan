@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 230" width="100%" height="230" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <style>
+      @keyframes pulseGlow { 0%, 100% { opacity: 0.8; } 50% { opacity: 0.3; } }
+      @keyframes cursorBlink { 0%, 49% { opacity: 1; } 50%, 100% { opacity: 0; } }
+      @keyframes radarSweep { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+      @keyframes waveScroll { 0% { stroke-dashoffset: 800; } 100% { stroke-dashoffset: 0; } }
+      @keyframes lineFade { 0%, 20% { opacity: 0; } 35%, 100% { opacity: 1; } }
+      text { font-family: ui-monospace, 'SF Mono', 'Cascadia Code', 'Fira Code', 'Courier New', monospace; -webkit-font-smoothing: antialiased; }
+      
+    </style>
+    <filter id="glow-cyan" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+    <filter id="glow-magenta" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+    <pattern id="grid-pattern" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="rgba(0, 245, 255, 0.08)" stroke-width="0.8"/>
+      <circle cx="30" cy="0" r="0.8" fill="#00F5FF" opacity="0.3"/>
+    </pattern>
+    <linearGradient id="cyan-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00F5FF" />
+      <stop offset="100%" stop-color="#3A86FF" />
+    </linearGradient>
+    <linearGradient id="hud-bar" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00F5FF" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#39FF88" stop-opacity="0.9"/>
+    </linearGradient>
+    
+  </defs>
+  <rect width="1200" height="230" fill="#04070D" />
+  <rect width="1200" height="230" fill="url(#grid-pattern)" />
+  
+      <rect width="1200" height="230" fill="#04070D" />
+      <text x="40" y="32" fill="#00F5FF" font-size="11" font-weight="800" letter-spacing="2">DEVELOPER_TELEMETRY // SYSTEM_STATE_MONITOR</text>
+      <text x="1160" y="32" fill="#39FF88" font-size="10" font-weight="700" text-anchor="end">NODE://CODEXANJAN</text>
+      <line x1="40" y1="42" x2="1160" y2="42" stroke="rgba(0, 245, 255, 0.25)" stroke-width="1" />
+      <g transform="translate(40, 65)">
+        <g transform="translate(0, 0)"><rect width="170" height="70" fill="#080D18" stroke="rgba(0, 245, 255, 0.25)" rx="2"/><text x="14" y="24" fill="#7894A6" font-size="9">BUILD MODE</text><text x="14" y="50" fill="#39FF88" font-size="13" font-weight="800">ACTIVE ●</text></g>
+        <g transform="translate(190, 0)"><rect width="170" height="70" fill="#080D18" stroke="rgba(0, 245, 255, 0.25)" rx="2"/><text x="14" y="24" fill="#7894A6" font-size="9">AI RESEARCH</text><text x="14" y="50" fill="#FF2BD6" font-size="13" font-weight="800">RUNNING</text></g>
+        <g transform="translate(380, 0)"><rect width="170" height="70" fill="#080D18" stroke="rgba(0, 245, 255, 0.25)" rx="2"/><text x="14" y="24" fill="#7894A6" font-size="9">CREATIVE ENGINE</text><text x="14" y="50" fill="#00F5FF" font-size="13" font-weight="800">ONLINE</text></g>
+        <g transform="translate(570, 0)"><rect width="170" height="70" fill="#080D18" stroke="rgba(0, 245, 255, 0.25)" rx="2"/><text x="14" y="24" fill="#7894A6" font-size="9">CURIOSITY INDEX</text><text x="14" y="50" fill="#FFC857" font-size="13" font-weight="800">MAXIMUM</text></g>
+        <g transform="translate(760, 0)"><rect width="170" height="70" fill="#080D18" stroke="rgba(0, 245, 255, 0.25)" rx="2"/><text x="14" y="24" fill="#7894A6" font-size="9">DEV PIPELINE</text><text x="14" y="50" fill="#3A86FF" font-size="13" font-weight="800">CONNECTED</text></g>
+        <g transform="translate(950, 0)"><rect width="170" height="70" fill="#080D18" stroke="rgba(0, 245, 255, 0.25)" rx="2"/><text x="14" y="24" fill="#7894A6" font-size="9">UPTIME</text><text x="14" y="50" fill="#39FF88" font-size="16" font-weight="800">∞</text></g>
+      </g>
+      
+    <path d="M 12 24 L 12 12 L 24 12" fill="none" stroke="#00F5FF" stroke-width="1" />
+    <path d="M 1176 12 L 1188 12 L 1188 24" fill="none" stroke="#00F5FF" stroke-width="1" />
+    <path d="M 12 206 L 12 218 L 24 218" fill="none" stroke="#00F5FF" stroke-width="1" />
+    <path d="M 1176 218 L 1188 218 L 1188 206" fill="none" stroke="#00F5FF" stroke-width="1" />
+  
+    
+</svg>

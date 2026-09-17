@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 330" width="100%" height="330" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <style>
+      @keyframes pulseGlow { 0%, 100% { opacity: 0.8; } 50% { opacity: 0.3; } }
+      @keyframes cursorBlink { 0%, 49% { opacity: 1; } 50%, 100% { opacity: 0; } }
+      @keyframes radarSweep { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+      @keyframes waveScroll { 0% { stroke-dashoffset: 800; } 100% { stroke-dashoffset: 0; } }
+      @keyframes lineFade { 0%, 20% { opacity: 0; } 35%, 100% { opacity: 1; } }
+      text { font-family: ui-monospace, 'SF Mono', 'Cascadia Code', 'Fira Code', 'Courier New', monospace; -webkit-font-smoothing: antialiased; }
+      
+      @keyframes cursorFlash { 0%, 49% { opacity: 1; } 50%, 100% { opacity: 0; } }
+      @keyframes progressBar { 0% { width: 0px; } 100% { width: 340px; } }
+    
+    </style>
+    <filter id="glow-cyan" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+    <filter id="glow-magenta" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+    <pattern id="grid-pattern" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="rgba(0, 245, 255, 0.08)" stroke-width="0.8"/>
+      <circle cx="30" cy="0" r="0.8" fill="#00F5FF" opacity="0.3"/>
+    </pattern>
+    <linearGradient id="cyan-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00F5FF" />
+      <stop offset="100%" stop-color="#3A86FF" />
+    </linearGradient>
+    <linearGradient id="hud-bar" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00F5FF" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#39FF88" stop-opacity="0.9"/>
+    </linearGradient>
+    
+  </defs>
+  <rect width="1200" height="330" fill="#04070D" />
+  <rect width="1200" height="330" fill="url(#grid-pattern)" />
+  
+      <rect x="0" y="0" width="1200" height="34" fill="#060A13" stroke="rgba(0, 245, 255, 0.25)" stroke-width="1" />
+      <circle cx="24" cy="17" r="4" fill="#FF5F56" /><circle cx="38" cy="17" r="4" fill="#FFBD2E" /><circle cx="52" cy="17" r="4" fill="#27C93F" />
+      <text x="80" y="21" fill="#7894A6" font-size="11" font-weight="600" letter-spacing="1">CODEX_TERMINAL // BOOT_KERNEL_V6.0</text>
+      <text x="1170" y="21" fill="#00F5FF" font-size="10" text-anchor="end" letter-spacing="1">NODE://CODEXANJAN</text>
+      
+      <g transform="translate(45, 75)" font-size="13" font-weight="500">
+        <text x="0" y="0" fill="#00F5FF" font-weight="700">&gt; CODEX BIOS v6.0 - INITIALIZING SYSTEM ARCHITECTURE...</text>
+        <text x="0" y="26" fill="#7894A6">[0.0012] MEMORY CORE ............................. <tspan fill="#39FF88" font-weight="700">READY [64TB NEURAL ALLOCATED]</tspan></text>
+        <text x="0" y="52" fill="#7894A6">[0.0034] NEURAL PROCESSOR ........................ <tspan fill="#39FF88" font-weight="700">READY [TENSOR FLOW ENGINE V24]</tspan></text>
+        <text x="0" y="78" fill="#7894A6">[0.0058] DEV ENGINE .............................. <tspan fill="#00F5FF" font-weight="700">READY [TYPESCRIPT // FULL-STACK]</tspan></text>
+        <text x="0" y="104" fill="#7894A6">[0.0089] AI MODULE ............................... <tspan fill="#00F5FF" font-weight="700">READY [DEEP ARCHITECTURE ONLINE]</tspan></text>
+        <text x="0" y="130" fill="#7894A6">[0.0120] GITHUB INTERFACE ........................ <tspan fill="#39FF88" font-weight="700">CONNECTED [@CODEXANJAN]</tspan></text>
+        <text x="0" y="156" fill="#7894A6">[0.0155] IDENTITY SYSTEM ......................... <tspan fill="#FFC857" font-weight="700">ENCRYPTED // SEARCHING FOR OPERATOR...</tspan></text>
+        <text x="0" y="184" fill="#00F5FF">&gt;&gt; PRIMARY NODE DETECTED: [ANJAN SHETTY]</text>
+        
+        <g transform="translate(0, 205)">
+          <rect x="0" y="0" width="360" height="12" fill="#020408" stroke="rgba(0, 245, 255, 0.25)" stroke-width="1" />
+          <rect x="2" y="2" width="340" height="8" fill="url(#hud-bar)" style="animation: progressBar 3s ease-in-out forwards;" />
+          <text x="375" y="10" fill="#00F5FF" font-size="11" font-weight="700">100% COMPLETE</text>
+        </g>
+        <g transform="translate(0, 240)">
+          <text x="0" y="0" fill="#39FF88" font-size="14" font-weight="700" letter-spacing="2">&gt; INITIATING IDENTITY REVELATION PROTOCOL...</text>
+          <rect x="420" y="-12" width="10" height="16" fill="#00F5FF" style="animation: cursorFlash 0.8s infinite;" />
+        </g>
+      </g>
+
+      <g transform="translate(900, 70)">
+        <rect x="0" y="0" width="260" height="230" fill="#080D18" stroke="rgba(0, 245, 255, 0.25)" stroke-width="1" />
+        <text x="15" y="22" fill="#00F5FF" font-size="10" font-weight="700" letter-spacing="1">SYSTEM DIAGNOSTICS</text>
+        <line x1="15" y1="30" x2="245" y2="30" stroke="rgba(0, 245, 255, 0.25)" stroke-width="1" />
+        <text x="15" y="52" fill="#7894A6" font-size="9">CPU_LOAD: 8.2%</text>
+        <text x="15" y="74" fill="#7894A6" font-size="9">NEURAL_TEMP: 38.4°C</text>
+        <text x="15" y="96" fill="#7894A6" font-size="9">PACKETS_RX: 98,421</text>
+        <text x="15" y="118" fill="#7894A6" font-size="9">PACKETS_TX: 41,209</text>
+        <text x="15" y="140" fill="#7894A6" font-size="9">SECURITY: SECURE</text>
+        <text x="15" y="162" fill="#7894A6" font-size="9">UPTIME: 99.999%</text>
+        <text x="15" y="184" fill="#39FF88" font-size="9" font-weight="700">STATUS: OPTIMAL</text>
+        
+    <path d="M 4 14 L 4 4 L 14 4" fill="none" stroke="#00F5FF" stroke-width="1" />
+    <path d="M 246 4 L 256 4 L 256 14" fill="none" stroke="#00F5FF" stroke-width="1" />
+    <path d="M 4 216 L 4 226 L 14 226" fill="none" stroke="#00F5FF" stroke-width="1" />
+    <path d="M 246 226 L 256 226 L 256 216" fill="none" stroke="#00F5FF" stroke-width="1" />
+  
+      </g>
+      
+    <path d="M 10 22 L 10 10 L 22 10" fill="none" stroke="#00F5FF" stroke-width="1.2" />
+    <path d="M 1178 10 L 1190 10 L 1190 22" fill="none" stroke="#00F5FF" stroke-width="1.2" />
+    <path d="M 10 308 L 10 320 L 22 320" fill="none" stroke="#00F5FF" stroke-width="1.2" />
+    <path d="M 1178 320 L 1190 320 L 1190 308" fill="none" stroke="#00F5FF" stroke-width="1.2" />
+  
+    
+</svg>

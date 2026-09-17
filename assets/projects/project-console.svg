@@ -1,0 +1,112 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 425" width="100%" height="425" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <style>
+      @keyframes pulseGlow { 0%, 100% { opacity: 0.8; } 50% { opacity: 0.3; } }
+      @keyframes cursorBlink { 0%, 49% { opacity: 1; } 50%, 100% { opacity: 0; } }
+      @keyframes radarSweep { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+      @keyframes waveScroll { 0% { stroke-dashoffset: 800; } 100% { stroke-dashoffset: 0; } }
+      @keyframes lineFade { 0%, 20% { opacity: 0; } 35%, 100% { opacity: 1; } }
+      text { font-family: ui-monospace, 'SF Mono', 'Cascadia Code', 'Fira Code', 'Courier New', monospace; -webkit-font-smoothing: antialiased; }
+      
+    </style>
+    <filter id="glow-cyan" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+    <filter id="glow-magenta" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+    <pattern id="grid-pattern" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="rgba(0, 245, 255, 0.08)" stroke-width="0.8"/>
+      <circle cx="30" cy="0" r="0.8" fill="#00F5FF" opacity="0.3"/>
+    </pattern>
+    <linearGradient id="cyan-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00F5FF" />
+      <stop offset="100%" stop-color="#3A86FF" />
+    </linearGradient>
+    <linearGradient id="hud-bar" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00F5FF" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#39FF88" stop-opacity="0.9"/>
+    </linearGradient>
+    
+  </defs>
+  <rect width="1200" height="425" fill="#04070D" />
+  <rect width="1200" height="425" fill="url(#grid-pattern)" />
+  
+      <rect width="1200" height="425" fill="#04070D" />
+      <text x="40" y="32" fill="#00F5FF" font-size="11" font-weight="800" letter-spacing="2">DEPLOYED_SYSTEMS // PRODUCTION_MATRIX</text>
+      <text x="1160" y="32" fill="#39FF88" font-size="10" font-weight="700" text-anchor="end">4 CORE PROTOCOLS ACTIVE</text>
+      <line x1="40" y1="42" x2="1160" y2="42" stroke="rgba(0, 245, 255, 0.25)" stroke-width="1" />
+
+      <!-- Card 1 -->
+      <g transform="translate(40, 65)">
+        <polygon points="12,0 530,0 540,10 540,150 530,160 0,160 0,12" fill="#080D18" stroke="rgba(0, 245, 255, 0.25)" stroke-width="1.2" />
+        <rect x="0" y="0" width="540" height="28" fill="#020408" /><text x="14" y="18" fill="#00F5FF" font-size="9" font-weight="800">NODE://001</text><text x="526" y="18" fill="#39FF88" font-size="9" font-weight="700" text-anchor="end">DEPLOYED ● LIVE</text>
+        <text x="14" y="52" fill="#EAFBFF" font-size="14" font-weight="900">PERIODICPORTAL (periodictable)</text>
+        <text x="14" y="76" fill="#7894A6" font-size="9.5">Interactive periodic table with 3D Bohr orbitals, chemistry AI &amp; trends</text>
+        <text x="14" y="104" fill="#00F5FF" font-size="9" font-weight="700">STACK: <tspan fill="#EAFBFF">TypeScript • React • Three.js</tspan></text>
+        <line x1="14" y1="120" x2="526" y2="120" stroke="rgba(0, 245, 255, 0.08)" stroke-width="1" /><text x="14" y="142" fill="#7894A6" font-size="8.5">GITHUB://CODEXANJAN</text><text x="526" y="142" fill="#FFC857" font-size="9" font-weight="700" text-anchor="end">13 STARS</text>
+        
+    <path d="M 3 11 L 3 3 L 11 3" fill="none" stroke="#00F5FF" stroke-width="1" />
+    <path d="M 529 3 L 537 3 L 537 11" fill="none" stroke="#00F5FF" stroke-width="1" />
+    <path d="M 3 149 L 3 157 L 11 157" fill="none" stroke="#00F5FF" stroke-width="1" />
+    <path d="M 529 157 L 537 157 L 537 149" fill="none" stroke="#00F5FF" stroke-width="1" />
+  
+      </g>
+
+      <!-- Card 2 -->
+      <g transform="translate(620, 65)">
+        <polygon points="12,0 530,0 540,10 540,150 530,160 0,160 0,12" fill="#080D18" stroke="rgba(0, 245, 255, 0.25)" stroke-width="1.2" />
+        <rect x="0" y="0" width="540" height="28" fill="#020408" /><text x="14" y="18" fill="#00F5FF" font-size="9" font-weight="800">NODE://002</text><text x="526" y="18" fill="#39FF88" font-size="9" font-weight="700" text-anchor="end">DEPLOYED ● VERIFIED</text>
+        <text x="14" y="52" fill="#EAFBFF" font-size="14" font-weight="900">NEXUSVAULT</text>
+        <text x="14" y="76" fill="#7894A6" font-size="9.5">Secure cryptographic asset storage &amp; modular state management system</text>
+        <text x="14" y="104" fill="#00F5FF" font-size="9" font-weight="700">STACK: <tspan fill="#EAFBFF">TypeScript • TailwindCSS • React • Node</tspan></text>
+        <line x1="14" y1="120" x2="526" y2="120" stroke="rgba(0, 245, 255, 0.08)" stroke-width="1" /><text x="14" y="142" fill="#7894A6" font-size="8.5">GITHUB://CODEXANJAN</text><text x="526" y="142" fill="#FFC857" font-size="9" font-weight="700" text-anchor="end">15 STARS</text>
+        
+    <path d="M 3 11 L 3 3 L 11 3" fill="none" stroke="#00F5FF" stroke-width="1" />
+    <path d="M 529 3 L 537 3 L 537 11" fill="none" stroke="#00F5FF" stroke-width="1" />
+    <path d="M 3 149 L 3 157 L 11 157" fill="none" stroke="#00F5FF" stroke-width="1" />
+    <path d="M 529 157 L 537 157 L 537 149" fill="none" stroke="#00F5FF" stroke-width="1" />
+  
+      </g>
+
+      <!-- Card 3 -->
+      <g transform="translate(40, 240)">
+        <polygon points="12,0 530,0 540,10 540,150 530,160 0,160 0,12" fill="#080D18" stroke="rgba(0, 245, 255, 0.25)" stroke-width="1.2" />
+        <rect x="0" y="0" width="540" height="28" fill="#020408" /><text x="14" y="18" fill="#00F5FF" font-size="9" font-weight="800">NODE://003</text><text x="526" y="18" fill="#39FF88" font-size="9" font-weight="700" text-anchor="end">DEPLOYED ● ACTIVE</text>
+        <text x="14" y="52" fill="#EAFBFF" font-size="14" font-weight="900">SMART-CALENDER</text>
+        <text x="14" y="76" fill="#7894A6" font-size="9.5">Productivity and schedule management suite with customizable workflow widgets</text>
+        <text x="14" y="104" fill="#00F5FF" font-size="9" font-weight="700">STACK: <tspan fill="#EAFBFF">TypeScript • React • Web APIs</tspan></text>
+        <line x1="14" y1="120" x2="526" y2="120" stroke="rgba(0, 245, 255, 0.08)" stroke-width="1" /><text x="14" y="142" fill="#7894A6" font-size="8.5">GITHUB://CODEXANJAN</text><text x="526" y="142" fill="#FFC857" font-size="9" font-weight="700" text-anchor="end">13 STARS</text>
+        
+    <path d="M 3 11 L 3 3 L 11 3" fill="none" stroke="#00F5FF" stroke-width="1" />
+    <path d="M 529 3 L 537 3 L 537 11" fill="none" stroke="#00F5FF" stroke-width="1" />
+    <path d="M 3 149 L 3 157 L 11 157" fill="none" stroke="#00F5FF" stroke-width="1" />
+    <path d="M 529 157 L 537 157 L 537 149" fill="none" stroke="#00F5FF" stroke-width="1" />
+  
+      </g>
+
+      <!-- Card 4 -->
+      <g transform="translate(620, 240)">
+        <polygon points="12,0 530,0 540,10 540,150 530,160 0,160 0,12" fill="#080D18" stroke="rgba(0, 245, 255, 0.25)" stroke-width="1.2" />
+        <rect x="0" y="0" width="540" height="28" fill="#020408" /><text x="14" y="18" fill="#00F5FF" font-size="9" font-weight="800">NODE://004</text><text x="526" y="18" fill="#39FF88" font-size="9" font-weight="700" text-anchor="end">DEPLOYED ● STABLE</text>
+        <text x="14" y="52" fill="#EAFBFF" font-size="14" font-weight="900">MARKDOWN STUDIO (markdown-editor)</text>
+        <text x="14" y="76" fill="#7894A6" font-size="9.5">Browser-based Markdown suite with live preview, syntax highlighting &amp; templates</text>
+        <text x="14" y="104" fill="#00F5FF" font-size="9" font-weight="700">STACK: <tspan fill="#EAFBFF">TypeScript • Editor Core • CSS Engine</tspan></text>
+        <line x1="14" y1="120" x2="526" y2="120" stroke="rgba(0, 245, 255, 0.08)" stroke-width="1" /><text x="14" y="142" fill="#7894A6" font-size="8.5">GITHUB://CODEXANJAN</text><text x="526" y="142" fill="#FFC857" font-size="9" font-weight="700" text-anchor="end">8 STARS</text>
+        
+    <path d="M 3 11 L 3 3 L 11 3" fill="none" stroke="#00F5FF" stroke-width="1" />
+    <path d="M 529 3 L 537 3 L 537 11" fill="none" stroke="#00F5FF" stroke-width="1" />
+    <path d="M 3 149 L 3 157 L 11 157" fill="none" stroke="#00F5FF" stroke-width="1" />
+    <path d="M 529 157 L 537 157 L 537 149" fill="none" stroke="#00F5FF" stroke-width="1" />
+  
+      </g>
+      
+    <path d="M 10 24 L 10 10 L 24 10" fill="none" stroke="#00F5FF" stroke-width="1.2" />
+    <path d="M 1176 10 L 1190 10 L 1190 24" fill="none" stroke="#00F5FF" stroke-width="1.2" />
+    <path d="M 10 401 L 10 415 L 24 415" fill="none" stroke="#00F5FF" stroke-width="1.2" />
+    <path d="M 1176 415 L 1190 415 L 1190 401" fill="none" stroke="#00F5FF" stroke-width="1.2" />
+  
+    
+</svg>

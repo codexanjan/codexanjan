@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 420" width="100%" height="420" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <style>
+      @keyframes pulseGlow { 0%, 100% { opacity: 0.8; } 50% { opacity: 0.3; } }
+      @keyframes cursorBlink { 0%, 49% { opacity: 1; } 50%, 100% { opacity: 0; } }
+      @keyframes radarSweep { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+      @keyframes waveScroll { 0% { stroke-dashoffset: 800; } 100% { stroke-dashoffset: 0; } }
+      @keyframes lineFade { 0%, 20% { opacity: 0; } 35%, 100% { opacity: 1; } }
+      text { font-family: ui-monospace, 'SF Mono', 'Cascadia Code', 'Fira Code', 'Courier New', monospace; -webkit-font-smoothing: antialiased; }
+      @keyframes waveMove { 0% { stroke-dashoffset: 0; } 100% { stroke-dashoffset: 200; } }
+    </style>
+    <filter id="glow-cyan" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+    <filter id="glow-magenta" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+    <pattern id="grid-pattern" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="rgba(0, 245, 255, 0.08)" stroke-width="0.8"/>
+      <circle cx="30" cy="0" r="0.8" fill="#00F5FF" opacity="0.3"/>
+    </pattern>
+    <linearGradient id="cyan-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00F5FF" />
+      <stop offset="100%" stop-color="#3A86FF" />
+    </linearGradient>
+    <linearGradient id="hud-bar" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00F5FF" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#39FF88" stop-opacity="0.9"/>
+    </linearGradient>
+    
+  </defs>
+  <rect width="1200" height="420" fill="#04070D" />
+  <rect width="1200" height="420" fill="url(#grid-pattern)" />
+  
+      <rect width="1200" height="420" fill="#04070D" />
+      <g transform="translate(40, 35)">
+        <text x="0" y="0" fill="#00F5FF" font-size="14" font-weight="900" letter-spacing="3">CODEX://ANJAN</text>
+        <text x="180" y="0" fill="#7894A6" font-size="10" letter-spacing="1.5">// SYSTEM_OS_V26.4</text>
+        <circle cx="1060" cy="-4" r="4" fill="#39FF88"><animate attributeName="opacity" values="0.3;1;0.3" dur="1.5s" repeatCount="indefinite"/></circle>
+        <text x="1075" y="0" fill="#39FF88" font-size="11" font-weight="700" letter-spacing="2">SYSTEM ● ONLINE</text>
+      </g>
+      <line x1="40" y1="48" x2="1160" y2="48" stroke="rgba(0, 245, 255, 0.25)" stroke-width="1" />
+      <g transform="translate(600, 190)" text-anchor="middle">
+        <text x="0" y="0" fill="#00F5FF" font-size="68" font-weight="900" letter-spacing="16" filter="url(#glow-cyan)" opacity="0.65">ANJAN SHETTY</text>
+        <text x="0" y="0" fill="#FFFFFF" font-size="68" font-weight="900" letter-spacing="16">ANJAN SHETTY</text>
+        <text x="0" y="48" fill="#00F5FF" font-size="15" font-weight="800" letter-spacing="6">FULL-STACK DEVELOPER <tspan fill="#FF2BD6">//</tspan> AI-ML ENGINEER</text>
+        <g transform="translate(0, 85)">
+          <rect x="-140" y="-18" width="280" height="30" fill="#080D18" stroke="#00F5FF" stroke-width="1" rx="3"/>
+          <text x="0" y="2" fill="#EAFBFF" font-size="12" font-weight="700" letter-spacing="2">CALLSIGN: <tspan fill="#39FF88">@CODEXANJAN</tspan></text>
+        </g>
+      </g>
+      <path d="M 100 320 L 350 320 L 390 300 L 440 340 L 490 310 L 530 330 L 600 320 L 670 320 L 710 340 L 760 300 L 810 330 L 850 320 L 1100 320"
+            fill="none" stroke="#00F5FF" stroke-width="1.5" stroke-dasharray="10 5" style="animation: waveMove 8s linear infinite;" />
+      <g transform="translate(40, 375)">
+        <g transform="translate(0, 0)"><rect x="0" y="0" width="260" height="26" fill="#080D18" stroke="rgba(0, 245, 255, 0.25)" rx="2" /><circle cx="16" cy="13" r="3" fill="#39FF88" /><text x="30" y="17" fill="#EAFBFF" font-size="9" font-weight="600">GITHUB NETWORK: CONNECTED</text></g>
+        <g transform="translate(285, 0)"><rect x="0" y="0" width="260" height="26" fill="#080D18" stroke="rgba(0, 245, 255, 0.25)" rx="2" /><circle cx="16" cy="13" r="3" fill="#00F5FF" /><text x="30" y="17" fill="#EAFBFF" font-size="9" font-weight="600">DEV CORE: ACTIVE</text></g>
+        <g transform="translate(570, 0)"><rect x="0" y="0" width="260" height="26" fill="#080D18" stroke="rgba(0, 245, 255, 0.25)" rx="2" /><circle cx="16" cy="13" r="3" fill="#FF2BD6" /><text x="30" y="17" fill="#EAFBFF" font-size="9" font-weight="600">AI NODE: READY</text></g>
+        <g transform="translate(855, 0)"><rect x="0" y="0" width="265" height="26" fill="#080D18" stroke="rgba(0, 245, 255, 0.25)" rx="2" /><circle cx="16" cy="13" r="3" fill="#39FF88" /><text x="30" y="17" fill="#EAFBFF" font-size="9" font-weight="600">BUILD PIPELINE: STABLE</text></g>
+      </g>
+      
+    <path d="M 12 30 L 12 12 L 30 12" fill="none" stroke="#00F5FF" stroke-width="1.5" />
+    <path d="M 1170 12 L 1188 12 L 1188 30" fill="none" stroke="#00F5FF" stroke-width="1.5" />
+    <path d="M 12 390 L 12 408 L 30 408" fill="none" stroke="#00F5FF" stroke-width="1.5" />
+    <path d="M 1170 408 L 1188 408 L 1188 390" fill="none" stroke="#00F5FF" stroke-width="1.5" />
+  
+    
+</svg>
