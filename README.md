@@ -55,29 +55,7 @@
 
 </div>
 
-<br/>
-
-### ⚔️ The Way of Code // Samurai Creed & Philosophy
-
-> *"A warrior sharpens the blade in stillness so that every strike in battle is decisive. A developer refines architecture in silence so that every deployment into production is indestructible."*
-
-I am **Anjan Shetty** (`codexanjan`), an engineering craftsman walking the dual paths of **Full-Stack Software Architecture** and **Applied Artificial Intelligence**. 
-
-To me, writing code is a discipline of **Bushido**:
-- 🗡️ **Single-Strike Precision**: Zero bloated abstractions. Write modular, highly performant TypeScript and Python engineered for resilient scale.
-- 🛡️ **Defensive Architecture**: Construct fault-tolerant distributed systems, bulletproof CI/CD pipelines, and robust cloud infrastructure that never yield under load.
-- ⚡ **Continuous Mastery**: Relentlessly exploring modern runtimes, agentic LLM orchestration, deep neural networks, and zero-latency reactive user interfaces.
-
-```txt
-┌─── SAMURAI CODING DOSSIER ────────────────────────────────────────────────────────┐
-│ OPERATIVE:   Anjan Shetty             CODENAME:   codexanjan                      │
-│ PATH:        Full-Stack Architecture  DISCIPLINE: AI / ML Solutions Engineering   │
-│ WEAPONS:     TypeScript & Python      STATUS:     Armed & Deployed                │
-│ CREED:       Building in the dark. Shipping into the light.                       │
-└───────────────────────────────────────────────────────────────────────────────────┘
-```
-
----
+<br/><br/>
 
 <div align="center">
 
@@ -234,10 +212,6 @@ To me, writing code is a discipline of **Bushido**:
 <!-- 04 // COMMIT RADAR // CODE CADENCE                       -->
 <!-- ======================================================== -->
 
-<img src="./assets/badge-active-runtimes.svg" alt="Active Ronin Runtimes &amp; Languages" />
-
-<br/><br/>
-
 <img src="./assets/header-commit-radar.svg" width="100%" alt="Section 04 - Commit Radar // Code Cadence" />
 
 <br/><br/>
@@ -367,11 +341,11 @@ To me, writing code is a discipline of **Bushido**:
 
 <p align="center">
   <a href="https://github.com/codexanjan" target="_blank">
-    <img src="https://github-readme-stats.vercel.app/api?username=codexanjan&amp;show_icons=true&amp;theme=radical&amp;hide_border=true&amp;bg_color=0C0E14&amp;title_color=FF3038&amp;icon_color=55E6FF&amp;text_color=F4F4F2" alt="Anjan Shetty GitHub Stats Live" />
+    <img src="./assets/live-github-stats.svg" width="48%" alt="Anjan Shetty GitHub Stats Live" />
   </a>
   &nbsp;&nbsp;
   <a href="https://github.com/codexanjan" target="_blank">
-    <img src="https://github-readme-streak-stats.herokuapp.com/?user=codexanjan&amp;theme=radical&amp;hide_border=true&amp;background=0C0E14&amp;ring=FF3038&amp;fire=FF3038&amp;currStreakLabel=FF3038" alt="Anjan Shetty GitHub Streak Stats Live" />
+    <img src="https://streak-stats.demolab.com?user=codexanjan&amp;theme=radical&amp;hide_border=true&amp;background=0C0E14&amp;ring=FF3038&amp;fire=FF3038&amp;currStreakLabel=FF3038" width="48%" alt="Anjan Shetty GitHub Streak Stats Live" />
   </a>
 </p>
 

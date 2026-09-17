@@ -30,28 +30,75 @@
         0%, 100% { transform: scale(0.98); opacity: 0.7; }
         50% { transform: scale(1.03); opacity: 1; }
       }
+      @keyframes borderEdgeTraceDossier {
+        0% { stroke-dashoffset: 2700; }
+        100% { stroke-dashoffset: 0; }
+      }
+      @keyframes dossierLaserScan {
+        0% { transform: translateY(0px); opacity: 0; }
+        15% { opacity: 0.6; }
+        85% { opacity: 0.6; }
+        100% { transform: translateY(470px); opacity: 0; }
+      }
+      @keyframes reticleSpinReverse {
+        0% { transform: rotate(360deg); }
+        100% { transform: rotate(0deg); }
+      }
+      @keyframes creedGlowPulse {
+        0%, 100% { stroke: #FF3038; filter: drop-shadow(0 0 3px #FF3038); }
+        50% { stroke: #FFF; filter: drop-shadow(0 0 10px #FF3038); }
+      }
+      @keyframes bracketGlow {
+        0%, 100% { opacity: 0.8; filter: drop-shadow(0 0 2px #FF3038); }
+        50% { opacity: 1; filter: drop-shadow(0 0 8px #FF3038); }
+      }
       .spin-avatar-reticle {
         transform-origin: 730px 220px;
         animation: radarSpinSlow 16s linear infinite;
       }
+      .spin-avatar-reticle-rev {
+        transform-origin: 730px 220px;
+        animation: reticleSpinReverse 22s linear infinite;
+      }
       .pulse-avatar-frame {
         transform-origin: 730px 220px;
         animation: pulseAuraAvatar 4s ease-in-out infinite;
+      }
+      .border-edge-laser {
+        stroke-dasharray: 200 2500;
+        animation: borderEdgeTraceDossier 5.5s linear infinite;
+      }
+      .dossier-scanner {
+        animation: dossierLaserScan 6s linear infinite;
+      }
+      .creed-box-pulse {
+        animation: creedGlowPulse 3s ease-in-out infinite;
+      }
+      .bracket-anim {
+        animation: bracketGlow 3.5s ease-in-out infinite;
       }
     </style>
   </defs>
 
   <!-- Background Base -->
   <rect width="880" height="470" rx="12" fill="url(#dosBgV2)" stroke="#171B21" stroke-width="1.5" />
+  <!-- Full Red Solid Base Border -->
+  <rect width="880" height="470" rx="12" fill="none" stroke="#FF3038" stroke-width="1.2" opacity="0.4" />
+  <!-- Visible Red Traveling Edge Laser (Full perimeter, NO dotted lines) -->
+  <rect width="880" height="470" rx="12" fill="none" stroke="#FF3038" stroke-width="2.5" class="border-edge-laser" opacity="0.95" />
 
-  <!-- Tactical Corner Brackets -->
-  <polygon points="15,15 50,15 15,50" fill="#FF3038" />
-  <polygon points="865,15 830,15 865,50" fill="#FF3038" />
-  <polygon points="15,455 50,455 15,420" fill="#FF3038" />
-  <polygon points="865,455 830,455 865,420" fill="#FF3038" />
+  <!-- Tactical Sweeping Laser Scan Line -->
+  <g class="dossier-scanner">
+    <line x1="15" y1="0" x2="865" y2="0" stroke="#FF3038" stroke-width="1.5" filter="url(#dosRedGlow)" />
+  </g>
 
-  <!-- Inner Subtle Dashed Border -->
-  <rect x="22" y="22" width="836" height="426" rx="8" fill="none" stroke="#222832" stroke-dasharray="6 4" stroke-width="1" />
+  <!-- Tactical Corner Brackets (Glowing Samurai Accents) -->
+  <g class="bracket-anim">
+    <polygon points="15,15 50,15 15,50" fill="#FF3038" />
+    <polygon points="865,15 830,15 865,50" fill="#FF3038" />
+    <polygon points="15,455 50,455 15,420" fill="#FF3038" />
+    <polygon points="865,455 830,455 865,420" fill="#FF3038" />
+  </g>
 
   <!-- Top Security Classification Bar -->
   <g transform="translate(45, 42)" font-family="'Courier New', Consolas, monospace">

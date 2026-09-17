@@ -35,32 +35,49 @@
         90% { opacity: 0.9; }
         100% { transform: translateX(820px); opacity: 0; }
       }
+      @keyframes shadowEdgeLaser {
+        0% { stroke-dashoffset: 2280; }
+        100% { stroke-dashoffset: 0; }
+      }
+      @keyframes emberGlow {
+        0%, 100% { opacity: 0.7; filter: drop-shadow(0 0 4px #FF4500); }
+        50% { opacity: 1; filter: drop-shadow(0 0 12px #FF3038); }
+      }
       .snake-body {
-        animation: snakeTravel 12s ease-in-out infinite alternate;
+        animation: snakeTravel 10s ease-in-out infinite alternate;
       }
       .tile-pulse {
         animation: snakeTrailFade 2.5s ease-in-out infinite;
       }
       .matrix-laser {
-        animation: matrixScannerSweep 6.5s linear infinite;
+        animation: matrixScannerSweep 5.5s linear infinite;
+      }
+      .shadow-edge {
+        stroke-dasharray: 180 2100;
+        animation: shadowEdgeLaser 5s linear infinite;
+      }
+      .shadow-ember {
+        animation: emberGlow 3s ease-in-out infinite;
       }
     </style>
   </defs>
 
   <!-- Card Background -->
   <rect width="900" height="240" rx="8" fill="url(#snkBg)" stroke="#1C222E" stroke-width="1.5" />
+  <!-- Shadow Fight Flaming Edge Laser -->
+  <rect width="900" height="240" rx="8" fill="none" stroke="#FF4500" stroke-width="2" class="shadow-edge" opacity="0.9" />
 
-  <!-- Tactical Corner Brackets -->
-  <polygon points="12,12 36,12 12,36" fill="#FF3038" />
-  <polygon points="888,12 864,12 888,36" fill="#FF3038" />
-  <polygon points="12,228 36,228 12,204" fill="#FF3038" />
-  <polygon points="888,228 864,228 888,204" fill="#FF3038" />
+  <!-- Tactical Corner Brackets (Blood Flame Accents) -->
+  <polygon points="12,12 36,12 12,36" fill="#FF4500" />
+  <polygon points="888,12 864,12 888,36" fill="#FF4500" />
+  <polygon points="12,228 36,228 12,204" fill="#FF4500" />
+  <polygon points="888,228 864,228 888,204" fill="#FF4500" />
 
-  <!-- Top Telemetry Header -->
+  <!-- Top Telemetry Header (Shadow Fight Protocol) -->
   <g transform="translate(35, 34)" font-family="'Courier New', Consolas, monospace">
-    <polygon points="0,0 8,0 4,8" fill="#FF3038" />
-    <text x="14" y="6" font-size="11" font-weight="800" fill="#FF3038" letter-spacing="2">RONIN GRID // SHADOW CONTRIBUTION PATROL</text>
-    <text x="630" y="6" font-size="10" font-weight="700" fill="#42FF9E" letter-spacing="1">STATUS: SURVEILLANCE // ACTIVE</text>
+    <polygon points="0,0 8,0 4,8" fill="#FF4500" />
+    <text x="14" y="6" font-size="11" font-weight="900" fill="#FF4500" letter-spacing="2">影の戦い // SHADOW FIGHT PROTOCOL // CONTRIBUTION MATRIX</text>
+    <text x="610" y="6" font-size="10" font-weight="700" fill="#FFB800" letter-spacing="1">STANCE: SHADOW SERPENT // ARMED</text>
     <line x1="0" y1="16" x2="830" y2="16" stroke="#171C25" stroke-width="1" />
   </g>
 
@@ -419,18 +436,24 @@
       </g>
     </g>
 
-    <!-- Animated Samurai Cyber Snake Eating Contribution Nodes -->
+    <!-- Animated Shadow Fight Demon Serpent Striking Across Contribution Nodes -->
     <g class="snake-body">
-      <!-- Snake Tail Segments -->
-      <rect x="54" y="36" width="13" height="13" rx="2.5" fill="#FF3038" opacity="0.4" />
-      <rect x="72" y="36" width="13" height="13" rx="2.5" fill="#FF3038" opacity="0.6" />
-      <rect x="90" y="36" width="13" height="13" rx="2.5" fill="#FF3038" opacity="0.8" />
-      <rect x="90" y="54" width="13" height="13" rx="2.5" fill="#FF474E" />
-      <!-- Snake Head -->
-      <rect x="108" y="54" width="13" height="13" rx="3" fill="#FFFFFF" filter="url(#snkRedGlow)" stroke="#FF3038" stroke-width="1.5" />
-      <!-- Cybernetic Eyes -->
-      <circle cx="118" cy="58" r="1.5" fill="#55E6FF" />
-      <circle cx="118" cy="63" r="1.5" fill="#55E6FF" />
+      <!-- Shadow Ember Trail -->
+      <circle cx="45" cy="42" r="3" fill="#FF4500" opacity="0.4" class="shadow-ember" />
+      <circle cx="62" cy="40" r="2.5" fill="#FFB800" opacity="0.6" class="shadow-ember" />
+      <!-- Shadow Serpent Body Segments (Carbon Scales + Fiery Flame Core) -->
+      <rect x="54" y="36" width="13" height="13" rx="3" fill="#180A0E" stroke="#FF4500" stroke-width="0.8" opacity="0.6" />
+      <rect x="72" y="36" width="13" height="13" rx="3" fill="#3D0B14" stroke="#FF6A00" stroke-width="1" opacity="0.85" />
+      <rect x="90" y="36" width="13" height="13" rx="3" fill="#FF3038" stroke="#FFB800" stroke-width="1.2" />
+      <rect x="90" y="54" width="13" height="13" rx="3" fill="#FF4500" stroke="#FFF" stroke-width="1" />
+      <!-- Shadow Fight Serpent Head (Obsidian Skull + Glowing Ember Flame Crown) -->
+      <rect x="108" y="54" width="14" height="14" rx="3.5" fill="#0C0E14" stroke="#FF4500" stroke-width="1.8" filter="url(#snkRedGlow)" />
+      <polygon points="108,54 115,50 122,54" fill="#FF3038" />
+      <!-- Piercing Fiery Shadow Eyes (Gold & Amber) -->
+      <circle cx="118" cy="58" r="1.8" fill="#FFB800" />
+      <circle cx="118" cy="64" r="1.8" fill="#FF4500" />
+      <circle cx="119" cy="58" r="0.8" fill="#FFF" />
+      <circle cx="119" cy="64" r="0.8" fill="#FFF" />
     </g>
   </g>
 
