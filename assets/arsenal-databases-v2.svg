@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 815 32" fill="none">
+  <defs>
+    <linearGradient id="pillGradRedDb" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FF3038" />
+      <stop offset="100%" stop-color="#FF474E" />
+    </linearGradient>
+  </defs>
+
+  <g font-family="system-ui, -apple-system, 'SF Mono', 'Courier New', monospace" font-size="11" font-weight="900" letter-spacing="0.8">
+    <!-- 01: POSTGRESQL -->
+    <g transform="translate(0, 1)">
+      <rect x="0" y="0" width="30" height="30" rx="3" fill="#0C0E14" stroke="#222834" stroke-width="1" />
+      <!-- PostgreSQL Elephant -->
+      <g transform="translate(7, 6) scale(0.68)">
+        <path d="M12 2C8 2 4 5 4 10C4 13 6 16 8 18L8 23L11 20C12 20 13 20 14 20C18 20 21 16 21 11C21 6 17 2 12 2Z" fill="none" stroke="#4169E1" stroke-width="1.8"/>
+        <circle cx="9" cy="9" r="1" fill="#FFF"/>
+        <path d="M13 8C15 8 16 10 16 12" stroke="#4169E1" stroke-width="1.4" fill="none"/>
+      </g>
+      <rect x="33" y="0" width="108" height="30" rx="3" fill="url(#pillGradRedDb)" />
+      <text x="87" y="19" text-anchor="middle" fill="#050608">POSTGRESQL</text>
+    </g>
+
+    <!-- 02: MYSQL -->
+    <g transform="translate(155, 1)">
+      <rect x="0" y="0" width="30" height="30" rx="3" fill="#0C0E14" stroke="#222834" stroke-width="1" />
+      <!-- MySQL Dolphin -->
+      <g transform="translate(7, 7) scale(0.68)">
+        <path d="M18 4C14 4 10 7 8 11C6 15 4 17 2 18C5 18 8 16 11 13C13 11 16 11 18 13L21 9C19 6 20 4 18 4Z" fill="#00758F"/>
+        <circle cx="16" cy="7" r="1" fill="#F29111"/>
+      </g>
+      <rect x="33" y="0" width="68" height="30" rx="3" fill="url(#pillGradRedDb)" />
+      <text x="67" y="19" text-anchor="middle" fill="#050608">MYSQL</text>
+    </g>
+
+    <!-- 03: MONGODB -->
+    <g transform="translate(270, 1)">
+      <rect x="0" y="0" width="30" height="30" rx="3" fill="#0C0E14" stroke="#222834" stroke-width="1" />
+      <!-- MongoDB Leaf -->
+      <g transform="translate(9, 6) scale(0.66)">
+        <path d="M10 0C10 0 1 7 1 14C1 19 5 22 10 24C15 22 19 19 19 14C19 7 10 0 10 0Z" fill="#47A248"/>
+        <line x1="10" y1="2" x2="10" y2="23" stroke="#FFF" stroke-width="1" opacity="0.6"/>
+      </g>
+      <rect x="33" y="0" width="88" height="30" rx="3" fill="url(#pillGradRedDb)" />
+      <text x="77" y="19" text-anchor="middle" fill="#050608">MONGODB</text>
+    </g>
+
+    <!-- 04: REDIS -->
+    <g transform="translate(405, 1)">
+      <rect x="0" y="0" width="30" height="30" rx="3" fill="#0C0E14" stroke="#222834" stroke-width="1" />
+      <!-- Redis Stacked Diamonds -->
+      <g transform="translate(7, 7) scale(0.68)">
+        <polygon points="12,1 21,6 12,11 3,6" fill="#DC382D"/>
+        <polygon points="12,7 21,12 12,17 3,12" fill="#A82820"/>
+        <polygon points="12,13 21,18 12,23 3,18" fill="#781812"/>
+      </g>
+      <rect x="33" y="0" width="64" height="30" rx="3" fill="url(#pillGradRedDb)" />
+      <text x="65" y="19" text-anchor="middle" fill="#050608">REDIS</text>
+    </g>
+
+    <!-- 05: DOCKER -->
+    <g transform="translate(516, 1)">
+      <rect x="0" y="0" width="30" height="30" rx="3" fill="#0C0E14" stroke="#222834" stroke-width="1" />
+      <!-- Docker Whale -->
+      <g transform="translate(6, 8) scale(0.65)">
+        <rect x="6" y="2" width="3" height="3" fill="#2496ED"/>
+        <rect x="10" y="2" width="3" height="3" fill="#2496ED"/>
+        <rect x="14" y="2" width="3" height="3" fill="#2496ED"/>
+        <rect x="6" y="6" width="3" height="3" fill="#2496ED"/>
+        <rect x="10" y="6" width="3" height="3" fill="#2496ED"/>
+        <rect x="14" y="6" width="3" height="3" fill="#2496ED"/>
+        <path d="M2 11C3 10 5 10 6 10L20 10C24 10 26 13 25 16C23 19 18 20 12 20C6 20 3 17 2 14L2 11Z" fill="#2496ED"/>
+        <circle cx="21" cy="14" r="1" fill="#FFF"/>
+      </g>
+      <rect x="33" y="0" width="76" height="30" rx="3" fill="url(#pillGradRedDb)" />
+      <text x="71" y="19" text-anchor="middle" fill="#050608">DOCKER</text>
+    </g>
+
+    <!-- 06: GITHUB ACTIONS -->
+    <g transform="translate(639, 1)">
+      <rect x="0" y="0" width="30" height="30" rx="3" fill="#0C0E14" stroke="#222834" stroke-width="1" />
+      <!-- GitHub Actions Woven Circles -->
+      <g transform="translate(7, 7) scale(0.68)">
+        <circle cx="8" cy="12" r="5" fill="none" stroke="#2088FF" stroke-width="2"/>
+        <circle cx="16" cy="8" r="4" fill="none" stroke="#2088FF" stroke-width="2"/>
+        <circle cx="16" cy="16" r="4" fill="none" stroke="#2088FF" stroke-width="2"/>
+      </g>
+      <rect x="33" y="0" width="136" height="30" rx="3" fill="url(#pillGradRedDb)" />
+      <text x="101" y="19" text-anchor="middle" fill="#050608">GITHUB ACTIONS</text>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 900" width="100%" height="100%" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <linearGradient id="mBgDarkClean" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#050608" />
+      <stop offset="50%" stop-color="#080A0D" />
+      <stop offset="100%" stop-color="#101318" />
+    </linearGradient>
+    <linearGradient id="mTextGradClean" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="100%" stop-color="#A8ADB7" />
+    </linearGradient>
+    <radialGradient id="mRedGlowClean" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FF3038" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#FF3038" stop-opacity="0" />
+    </radialGradient>
+    <filter id="mGlowClean" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="4" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+    <pattern id="mGridClean" width="30" height="30" patternUnits="userSpaceOnUse">
+      <line x1="0" y1="0" x2="30" y2="0" stroke="#171B21" stroke-width="0.75" />
+      <line x1="0" y1="0" x2="0" y2="30" stroke="#171B21" stroke-width="0.75" />
+    </pattern>
+
+    <style>
+      @keyframes mVisorPulseClean {
+        0%, 100% { opacity: 0.8; filter: drop-shadow(0 0 4px #FF3038); }
+        50% { opacity: 1; filter: drop-shadow(0 0 14px #FF4B4B); }
+      }
+      @keyframes mBladeSurgeClean {
+        0%, 100% { stroke-dashoffset: 400; }
+        50% { stroke-dashoffset: 0; }
+      }
+      .m-visor-clean { animation: mVisorPulseClean 3s ease-in-out infinite; }
+      .m-blade-clean { stroke-dasharray: 200; animation: mBladeSurgeClean 4s ease-in-out infinite; }
+    </style>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="900" height="900" fill="url(#mBgDarkClean)" />
+  <rect width="900" height="900" fill="url(#mGridClean)" opacity="0.5" />
+
+  <!-- Ambient Glow -->
+  <circle cx="450" cy="320" r="300" fill="url(#mRedGlowClean)" />
+
+  <!-- Outer HUD Frame & Corner Accents -->
+  <rect x="20" y="20" width="860" height="860" rx="16" fill="none" stroke="#171B21" stroke-width="2" />
+  <polygon points="20,20 70,20 20,70" fill="#FF3038" />
+  <polygon points="880,20 830,20 880,70" fill="#FF3038" />
+  <polygon points="20,880 70,880 20,830" fill="#FF3038" />
+  <polygon points="880,880 830,880 880,830" fill="#FF3038" />
+
+  <!-- ======================================================== -->
+  <!-- CENTER TOP: SAMURAI HELMET & BLADE SYMBOL                -->
+  <!-- ======================================================== -->
+  <g transform="translate(450, 260)">
+    <!-- Katana Behind Helmet -->
+    <line x1="-260" y1="130" x2="260" y2="-130" stroke="#101318" stroke-width="10" stroke-linecap="round" />
+    <line x1="-260" y1="130" x2="260" y2="-130" stroke="#FF3038" stroke-width="4" stroke-linecap="round" class="m-blade-clean" filter="url(#mGlowClean)" />
+    <line x1="-260" y1="130" x2="260" y2="-130" stroke="#FFF" stroke-width="1.5" stroke-linecap="round" class="m-blade-clean" />
+
+    <!-- Helmet Crown Dome & Horns -->
+    <path d="M 0 -140 L 45 -195 L 22 -130 Z" fill="#FF3038" filter="url(#mGlowClean)" />
+    <path d="M 0 -140 L -45 -195 L -22 -130 Z" fill="#FF3038" filter="url(#mGlowClean)" />
+    <polygon points="0,-150 15,-125 0,-130 -15,-125" fill="#F4F4F2" />
+
+    <path d="M -80 -70 C -80 -145 80 -145 80 -70 L 70 -50 L -70 -50 Z" fill="#14181F" stroke="#2D3440" stroke-width="2.5" />
+    <path d="M -90 -55 L 0 -70 L 90 -55 L 85 -40 L -85 -40 Z" fill="#1C222B" stroke="#FF3038" stroke-width="1.8" />
+
+    <!-- Visor Glow -->
+    <path d="M -65 -30 L 0 -38 L 65 -30 L 55 -15 L -55 -15 Z" fill="#FF3038" filter="url(#mGlowClean)" class="m-visor-clean" />
+    <line x1="-55" y1="-22" x2="55" y2="-22" stroke="#FFF" stroke-width="2.5" />
+
+    <!-- Menpo Mask -->
+    <path d="M -55 -10 L 0 12 L 55 -10 L 45 42 L 0 75 L -45 42 Z" fill="#0C0E12" stroke="#222832" stroke-width="2" />
+    <line x1="-16" y1="32" x2="16" y2="32" stroke="#FF3038" stroke-width="2.5" />
+    <line x1="-12" y1="45" x2="12" y2="45" stroke="#55E6FF" stroke-width="2" />
+
+    <!-- Shoulder Armor Plates -->
+    <path d="M -120 -28 L -90 50 L -65 50 L -90 -28 Z" fill="#171B21" stroke="#FF3038" stroke-width="1.2" />
+    <path d="M 120 -28 L 90 50 L 65 50 L 90 -28 Z" fill="#171B21" stroke="#FF3038" stroke-width="1.2" />
+  </g>
+
+  <!-- ======================================================== -->
+  <!-- CENTER LOWER: NAME (CLEAN & BOLD)                        -->
+  <!-- ======================================================== -->
+  <g transform="translate(450, 600)" text-anchor="middle">
+    <!-- Full Name -->
+    <text x="0" y="45" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="80" font-weight="900" fill="url(#mTextGradClean)" letter-spacing="5">ANJAN SHETTY</text>
+
+    <!-- Glowing Katana Cut Under Name -->
+    <line x1="-320" y1="80" x2="320" y2="80" stroke="#222832" stroke-width="2.5" />
+    <line x1="-200" y1="80" x2="200" y2="80" stroke="#FF3038" stroke-width="4" filter="url(#mGlowClean)" />
+  </g>
+</svg>

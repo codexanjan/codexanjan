@@ -5,8 +5,8 @@
 <!-- ======================================================== -->
 
 <picture>
-  <source media="(max-width: 768px)" srcset="./assets/ronin-hero-mobile.svg">
-  <img src="./assets/ronin-hero.svg" width="100%" alt="Anjan Shetty - Tech Samurai Digital Ronin Developer Command Center Banner" />
+  <source media="(max-width: 768px)" srcset="./assets/ronin-hero-mobile-v2.svg">
+  <img src="./assets/ronin-hero-v2.svg" width="100%" alt="Anjan Shetty - Tech Samurai Digital Ronin Developer Command Center Banner" />
 </picture>
 
 <br/><br/>
@@ -102,31 +102,31 @@ PRIMARY STACK   :: TYPESCRIPT // PYTHON // REACT // NODE.JS // DOCKER
 ### Languages
 
 <p align="left">
-  <img src="./assets/arsenal-languages.svg" alt="Languages: JavaScript, TypeScript, Python, Java, C, C++, Bash" />
+  <img src="./assets/arsenal-languages-v2.svg" alt="Languages: JavaScript, TypeScript, Python, Java, C, C++, Bash" />
 </p>
 
 ### Frameworks & Libraries
 
 <p align="left">
-  <img src="./assets/arsenal-frameworks.svg" alt="Frameworks & Libraries: React, Next.js, HTML5, CSS3, Tailwind CSS, Vite" />
+  <img src="./assets/arsenal-frameworks-v2.svg" alt="Frameworks & Libraries: React, Next.js, HTML5, CSS3, Tailwind CSS, Vite" />
 </p>
 
 ### Backend & APIs
 
 <p align="left">
-  <img src="./assets/arsenal-backend.svg" alt="Backend & APIs: Node.js, Express, FastAPI, REST APIs" />
+  <img src="./assets/arsenal-backend-v2.svg" alt="Backend & APIs: Node.js, Express, FastAPI, REST APIs" />
 </p>
 
 ### Databases, Cloud & DevOps
 
 <p align="left">
-  <img src="./assets/arsenal-databases.svg" alt="Databases, Cloud & DevOps: PostgreSQL, MySQL, MongoDB, Redis, Docker, GitHub Actions" />
+  <img src="./assets/arsenal-databases-v2.svg" alt="Databases, Cloud & DevOps: PostgreSQL, MySQL, MongoDB, Redis, Docker, GitHub Actions" />
 </p>
 
 ### Tools & Operations
 
 <p align="left">
-  <img src="./assets/arsenal-tools.svg" alt="Tools & Operations: Git, GitHub, Linux, Postman" />
+  <img src="./assets/arsenal-tools-v2.svg" alt="Tools & Operations: Git, GitHub, Linux, Postman" />
 </p>
 
 <div align="center">

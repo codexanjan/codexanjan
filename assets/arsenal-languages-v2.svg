@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 810 32" fill="none">
+  <defs>
+    <linearGradient id="pillGradRed" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FF3038" />
+      <stop offset="100%" stop-color="#FF474E" />
+    </linearGradient>
+  </defs>
+
+  <g font-family="system-ui, -apple-system, 'SF Mono', 'Courier New', monospace" font-size="11" font-weight="900" letter-spacing="0.8">
+    <!-- 01: JAVASCRIPT -->
+    <g transform="translate(0, 1)">
+      <rect x="0" y="0" width="30" height="30" rx="3" fill="#0C0E14" stroke="#222834" stroke-width="1" />
+      <text x="15" y="20" text-anchor="middle" fill="#FFD600" font-family="'Courier New', monospace" font-size="12" font-weight="900">JS</text>
+      <rect x="33" y="0" width="96" height="30" rx="3" fill="url(#pillGradRed)" />
+      <text x="81" y="19" text-anchor="middle" fill="#050608">JAVASCRIPT</text>
+    </g>
+
+    <!-- 02: TYPESCRIPT -->
+    <g transform="translate(143, 1)">
+      <rect x="0" y="0" width="30" height="30" rx="3" fill="#0C0E14" stroke="#222834" stroke-width="1" />
+      <text x="15" y="20" text-anchor="middle" fill="#3178C6" font-family="'Courier New', monospace" font-size="12" font-weight="900">TS</text>
+      <rect x="33" y="0" width="96" height="30" rx="3" fill="url(#pillGradRed)" />
+      <text x="81" y="19" text-anchor="middle" fill="#050608">TYPESCRIPT</text>
+    </g>
+
+    <!-- 03: PYTHON -->
+    <g transform="translate(286, 1)">
+      <rect x="0" y="0" width="30" height="30" rx="3" fill="#0C0E14" stroke="#222834" stroke-width="1" />
+      <!-- Python Vector Icon -->
+      <g transform="translate(7, 7) scale(0.66)">
+        <path d="M12 0C5.4 0 5.8 2.8 5.8 2.8L5.8 5.7L12.3 5.7L12.3 6.6L3.3 6.6C3.3 6.6 0 6.2 0 12.8C0 19.4 2.9 19.1 2.9 19.1L4.6 19.1L4.6 16.4C4.6 13.4 7.2 13.4 7.2 13.4L13.7 13.4C13.7 13.4 16.5 13.4 16.5 10.6L16.5 2.8C16.5 2.8 16.9 0 12 0Z" fill="#3776AB"/>
+        <circle cx="8.5" cy="2.8" r="1.1" fill="#FFF"/>
+        <path d="M12 24C18.6 24 18.2 21.2 18.2 21.2L18.2 18.3L11.7 18.3L11.7 17.4L20.7 17.4C20.7 17.4 24 17.8 24 11.2C24 4.6 21.1 4.9 21.1 4.9L19.4 4.9L19.4 7.6C19.4 10.6 16.8 10.6 16.8 10.6L10.3 10.6C10.3 10.6 7.5 10.6 7.5 13.4L7.5 21.2C7.5 21.2 7.1 24 12 24Z" fill="#FFD43B"/>
+        <circle cx="15.5" cy="21.2" r="1.1" fill="#FFF"/>
+      </g>
+      <rect x="33" y="0" width="74" height="30" rx="3" fill="url(#pillGradRed)" />
+      <text x="70" y="19" text-anchor="middle" fill="#050608">PYTHON</text>
+    </g>
+
+    <!-- 04: JAVA -->
+    <g transform="translate(407, 1)">
+      <rect x="0" y="0" width="30" height="30" rx="3" fill="#0C0E14" stroke="#222834" stroke-width="1" />
+      <!-- Java Cup Vector -->
+      <g transform="translate(7, 6) scale(0.68)">
+        <path d="M16 11C16 8 13 8 13 8C13 8 15 6 12 4C9 2 6 5 6 5C6 5 8 3 5 1" fill="none" stroke="#FF5722" stroke-width="2" stroke-linecap="round"/>
+        <path d="M4 14L4 18C4 21 8 22 12 22C16 22 20 21 20 18L20 14Z" fill="#FF5722"/>
+        <path d="M20 15C22 15 24 16 24 18C24 20 22 21 20 21" fill="none" stroke="#FF5722" stroke-width="2"/>
+        <line x1="2" y1="23" x2="22" y2="23" stroke="#FF5722" stroke-width="1.8" stroke-linecap="round"/>
+      </g>
+      <rect x="33" y="0" width="58" height="30" rx="3" fill="url(#pillGradRed)" />
+      <text x="62" y="19" text-anchor="middle" fill="#050608">JAVA</text>
+    </g>
+
+    <!-- 05: C -->
+    <g transform="translate(512, 1)">
+      <rect x="0" y="0" width="30" height="30" rx="3" fill="#0C0E14" stroke="#222834" stroke-width="1" />
+      <text x="15" y="21" text-anchor="middle" fill="#659AD2" font-family="system-ui, sans-serif" font-size="16" font-weight="900">C</text>
+      <rect x="33" y="0" width="44" height="30" rx="3" fill="url(#pillGradRed)" />
+      <text x="55" y="19" text-anchor="middle" fill="#050608">C</text>
+    </g>
+
+    <!-- 06: C++ -->
+    <g transform="translate(603, 1)">
+      <rect x="0" y="0" width="30" height="30" rx="3" fill="#0C0E14" stroke="#222834" stroke-width="1" />
+      <g transform="translate(5, 7)">
+        <text x="5" y="14" fill="#00599C" font-family="system-ui, sans-serif" font-size="13" font-weight="900">C</text>
+        <text x="13" y="12" fill="#55E6FF" font-family="system-ui, sans-serif" font-size="10" font-weight="900">++</text>
+      </g>
+      <rect x="33" y="0" width="54" height="30" rx="3" fill="url(#pillGradRed)" />
+      <text x="60" y="19" text-anchor="middle" fill="#050608">C++</text>
+    </g>
+
+    <!-- 07: BASH -->
+    <g transform="translate(704, 1)">
+      <rect x="0" y="0" width="30" height="30" rx="3" fill="#0C0E14" stroke="#222834" stroke-width="1" />
+      <g transform="translate(7, 9)">
+        <path d="M2 2L7 6L2 10" fill="none" stroke="#4EAA25" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <line x1="8" y1="10" x2="14" y2="10" stroke="#4EAA25" stroke-width="2" stroke-linecap="round"/>
+      </g>
+      <rect x="33" y="0" width="60" height="30" rx="3" fill="url(#pillGradRed)" />
+      <text x="63" y="19" text-anchor="middle" fill="#050608">BASH</text>
+    </g>
+  </g>
+</svg>
