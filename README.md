@@ -12,6 +12,20 @@
 <br/><br/>
 
 <!-- ======================================================== -->
+<!-- SAMURAI TYPING TERMINAL & STATUS BADGES                  -->
+<!-- ======================================================== -->
+
+<a href="https://github.com/codexanjan">
+  <img src="https://readme-typing-svg.demolab.com?font=Orbitron&size=26&pause=1000&color=FF3038&center=true&vCenter=true&width=880&lines=FULL+STACK+DEVELOPER;AI+%7C+ML+SOLUTIONS+ARCHITECT;OPEN+SOURCE+CONTRIBUTOR;BUILD.+CREATE.+INNOVATE.;WELCOME+TO+THE+DIGITAL+RONIN+DOJO" alt="Tech Samurai Dynamic Terminal HUD" />
+</a>
+
+<br/><br/>
+
+<img src="./assets/samurai-status-badges.svg" width="100%" alt="Tactical Identity & Deployment Status Badges" />
+
+<br/><br/>
+
+<!-- ======================================================== -->
 <!-- SYSTEM BOOT & TACTICAL STATUS                            -->
 <!-- ======================================================== -->
 
@@ -43,7 +57,7 @@
 
 <br/><br/>
 
-<img src="./assets/operative-dossier.svg" width="100%" alt="Anjan Shetty Operative Dossier - Core Specializations &amp; Directives" />
+<img src="./assets/operative-dossier-v2.svg" width="100%" alt="Anjan Shetty Operative Dossier - Core Specializations & Directives" />
 
 <br/><br/>
 
@@ -102,31 +116,31 @@ PRIMARY STACK   :: TYPESCRIPT // PYTHON // REACT // NODE.JS // DOCKER
 ### Languages
 
 <p align="left">
-  <img src="./assets/arsenal-languages-v2.svg" height="32" alt="Languages: JavaScript, TypeScript, Python, Java, C, C++, Bash" />
+  <img src="./assets/arsenal-languages-v3.svg" width="100%" alt="Languages: JavaScript, TypeScript, Python, Java, C, C++, Bash" />
 </p>
 
 ### Frameworks & Libraries
 
 <p align="left">
-  <img src="./assets/arsenal-frameworks-v2.svg" height="32" alt="Frameworks & Libraries: React, Next.js, HTML5, CSS3, Tailwind CSS, Vite" />
+  <img src="./assets/arsenal-frameworks-v3.svg" width="100%" alt="Frameworks & Libraries: React, Next.js, HTML5, CSS3, Tailwind CSS, Vite" />
 </p>
 
 ### Backend & APIs
 
 <p align="left">
-  <img src="./assets/arsenal-backend-v2.svg" height="32" alt="Backend & APIs: Node.js, Express, FastAPI, REST APIs" />
+  <img src="./assets/arsenal-backend-v3.svg" width="100%" alt="Backend & APIs: Node.js, Express, FastAPI, REST APIs" />
 </p>
 
 ### Databases, Cloud & DevOps
 
 <p align="left">
-  <img src="./assets/arsenal-databases-v2.svg" height="32" alt="Databases, Cloud & DevOps: PostgreSQL, MySQL, MongoDB, Redis, Docker, GitHub Actions" />
+  <img src="./assets/arsenal-databases-v3.svg" width="100%" alt="Databases, Cloud & DevOps: PostgreSQL, MySQL, MongoDB, Redis, Docker, GitHub Actions" />
 </p>
 
 ### Tools & Operations
 
 <p align="left">
-  <img src="./assets/arsenal-tools-v2.svg" height="32" alt="Tools & Operations: Git, GitHub, Linux, Postman" />
+  <img src="./assets/arsenal-tools-v3.svg" width="100%" alt="Tools & Operations: Git, GitHub, Linux, Postman" />
 </p>
 
 <div align="center">
@@ -382,6 +396,16 @@ PRIMARY STACK   :: TYPESCRIPT // PYTHON // REACT // NODE.JS // DOCKER
     <code>[ SECURE TRANSMISSION // EMAIL ]</code>
   </a>
 </p>
+
+<br/><br/>
+
+<!-- ======================================================== -->
+<!-- FOOTER CREED TYPING TERMINAL                             -->
+<!-- ======================================================== -->
+
+<a href="https://github.com/codexanjan">
+  <img src="https://readme-typing-svg.demolab.com?font=Orbitron&size=24&pause=1000&color=FF3038&center=true&vCenter=true&width=880&lines=BUILDING+IN+THE+DARK.+SHIPPING+INTO+THE+LIGHT.;DISCIPLINE+IN+DESIGN.+PRECISION+IN+CODE.;SHARPEN+THE+BLADE.+SHIP+WITHOUT+FEAR.;CODEXANJAN+%2F%2F+STANDBY" alt="Operative Creed Dynamic Telemetry" />
+</a>
 
 <br/><br/>
 

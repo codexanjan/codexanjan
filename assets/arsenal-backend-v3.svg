@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 32" fill="none">
+  <defs>
+    <linearGradient id="pillGradRedBk3" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FF3038" />
+      <stop offset="100%" stop-color="#FF474E" />
+    </linearGradient>
+  </defs>
+
+  <g font-family="system-ui, -apple-system, 'SF Mono', 'Courier New', monospace" font-size="11" font-weight="900" letter-spacing="0.8">
+    <!-- 01: NODE.JS -->
+    <g transform="translate(0, 1)">
+      <rect x="0" y="0" width="30" height="30" rx="3" fill="#0C0E14" stroke="#222834" stroke-width="1" />
+      <g transform="translate(7, 6) scale(0.66)">
+        <polygon points="12,1 22,6.8 22,18.2 12,24 2,18.2 2,6.8" fill="none" stroke="#5FA04E" stroke-width="2.2"/>
+        <text x="12" y="16" text-anchor="middle" fill="#5FA04E" font-family="'Courier New', monospace" font-size="10" font-weight="900">JS</text>
+      </g>
+      <rect x="33" y="0" width="82" height="30" rx="3" fill="url(#pillGradRedBk3)" />
+      <text x="74" y="19" text-anchor="middle" fill="#050608">NODE.JS</text>
+    </g>
+
+    <!-- 02: EXPRESS -->
+    <g transform="translate(129, 1)">
+      <rect x="0" y="0" width="30" height="30" rx="3" fill="#0C0E14" stroke="#222834" stroke-width="1" />
+      <text x="15" y="20" text-anchor="middle" fill="#FFF" font-family="'Courier New', monospace" font-size="13" font-weight="900">ex</text>
+      <rect x="33" y="0" width="82" height="30" rx="3" fill="url(#pillGradRedBk3)" />
+      <text x="74" y="19" text-anchor="middle" fill="#050608">EXPRESS</text>
+    </g>
+
+    <!-- 03: FASTAPI -->
+    <g transform="translate(258, 1)">
+      <rect x="0" y="0" width="30" height="30" rx="3" fill="#0C0E14" stroke="#222834" stroke-width="1" />
+      <circle cx="15" cy="15" r="9" fill="#059669"/>
+      <polygon points="16,9 11,15 15,15 14,21 19,15 15,15" fill="#FFF"/>
+      <rect x="33" y="0" width="82" height="30" rx="3" fill="url(#pillGradRedBk3)" />
+      <text x="74" y="19" text-anchor="middle" fill="#050608">FASTAPI</text>
+    </g>
+
+    <!-- 04: REST APIS -->
+    <g transform="translate(387, 1)">
+      <rect x="0" y="0" width="30" height="30" rx="3" fill="#0C0E14" stroke="#222834" stroke-width="1" />
+      <g transform="translate(6, 9)">
+        <path d="M4 2L1 6L4 10" stroke="#FF5722" stroke-width="1.8" stroke-linecap="round" fill="none"/>
+        <path d="M14 2L17 6L14 10" stroke="#FF5722" stroke-width="1.8" stroke-linecap="round" fill="none"/>
+        <line x1="7" y1="10" x2="11" y2="2" stroke="#FFD43B" stroke-width="1.6" stroke-linecap="round"/>
+      </g>
+      <rect x="33" y="0" width="96" height="30" rx="3" fill="url(#pillGradRedBk3)" />
+      <text x="81" y="19" text-anchor="middle" fill="#050608">REST APIS</text>
+    </g>
+  </g>
+</svg>

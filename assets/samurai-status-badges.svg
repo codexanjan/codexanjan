@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 34" fill="none">
+  <defs>
+    <linearGradient id="statusPillRed" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FF3038" />
+      <stop offset="100%" stop-color="#FF474E" />
+    </linearGradient>
+    <linearGradient id="statusPillGreen" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#10B981" />
+      <stop offset="100%" stop-color="#34D399" />
+    </linearGradient>
+  </defs>
+
+  <g transform="translate(18, 1)" font-family="system-ui, -apple-system, 'SF Mono', 'Courier New', monospace" font-size="11" font-weight="900" letter-spacing="0.8">
+    <!-- 01: IDENTITY -->
+    <g transform="translate(0, 0)">
+      <rect x="0" y="0" width="75" height="32" rx="3" fill="#0C0E14" stroke="#222834" stroke-width="1" />
+      <text x="37" y="20" text-anchor="middle" fill="#A8ADB7" font-size="10.5">IDENTITY</text>
+      <rect x="78" y="0" width="118" height="32" rx="3" fill="url(#statusPillRed)" />
+      <text x="137" y="20" text-anchor="middle" fill="#050608">ANJAN SHETTY</text>
+    </g>
+
+    <!-- 02: CODENAME -->
+    <g transform="translate(208, 0)">
+      <rect x="0" y="0" width="80" height="32" rx="3" fill="#0C0E14" stroke="#222834" stroke-width="1" />
+      <text x="40" y="20" text-anchor="middle" fill="#A8ADB7" font-size="10.5">CODENAME</text>
+      <rect x="83" y="0" width="102" height="32" rx="3" fill="url(#statusPillRed)" />
+      <text x="134" y="20" text-anchor="middle" fill="#050608">CODEXANJAN</text>
+    </g>
+
+    <!-- 03: STATUS -->
+    <g transform="translate(405, 0)">
+      <rect x="0" y="0" width="78" height="32" rx="3" fill="#0C0E14" stroke="#222834" stroke-width="1" />
+      <!-- Radar signal icon -->
+      <circle cx="16" cy="16" r="3.5" fill="#10B981" />
+      <text x="48" y="20" text-anchor="middle" fill="#A8ADB7" font-size="10.5">STATUS</text>
+      <rect x="81" y="0" width="80" height="32" rx="3" fill="url(#statusPillGreen)" />
+      <text x="121" y="20" text-anchor="middle" fill="#050608">ONLINE</text>
+    </g>
+
+    <!-- 04: HQ -->
+    <g transform="translate(578, 0)">
+      <rect x="0" y="0" width="38" height="32" rx="3" fill="#0C0E14" stroke="#222834" stroke-width="1" />
+      <text x="19" y="20" text-anchor="middle" fill="#A8ADB7" font-size="10.5">HQ</text>
+      <rect x="41" y="0" width="95" height="32" rx="3" fill="url(#statusPillRed)" />
+      <text x="88" y="20" text-anchor="middle" fill="#050608">RONIN DOJO</text>
+    </g>
+
+    <!-- 05: VISITORS -->
+    <g transform="translate(726, 0)">
+      <rect x="0" y="0" width="88" height="32" rx="3" fill="#0C0E14" stroke="#222834" stroke-width="1" />
+      <text x="44" y="20" text-anchor="middle" fill="#FF3038" font-size="10.5">RONIN VISITOR</text>
+    </g>
+  </g>
+</svg>
