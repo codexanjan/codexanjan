@@ -1,363 +1,253 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 500" width="100%" height="100%" preserveAspectRatio="xMidYMid meet">
   <defs>
-    <!-- Color Gradients -->
-    <linearGradient id="bgDark" x1="0%" y1="0%" x2="100%" y2="100%">
+    <!-- Background Gradients -->
+    <linearGradient id="heroDarkBg" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#050608" />
-      <stop offset="40%" stop-color="#080A0D" />
-      <stop offset="70%" stop-color="#101318" />
+      <stop offset="45%" stop-color="#090C12" />
+      <stop offset="75%" stop-color="#10141C" />
       <stop offset="100%" stop-color="#050608" />
     </linearGradient>
-    <linearGradient id="bladeSlash" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#FF3038" stop-opacity="0" />
-      <stop offset="30%" stop-color="#FF3038" stop-opacity="0.8" />
-      <stop offset="50%" stop-color="#FFF" stop-opacity="1" />
-      <stop offset="70%" stop-color="#FF4B4B" stop-opacity="0.8" />
-      <stop offset="100%" stop-color="#8C111B" stop-opacity="0" />
-    </linearGradient>
-    <linearGradient id="textGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+
+    <!-- Text Metallic Silver Gradient -->
+    <linearGradient id="heroNameGrad" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#FFFFFF" />
-      <stop offset="70%" stop-color="#F4F4F2" />
+      <stop offset="60%" stop-color="#F4F4F2" />
       <stop offset="100%" stop-color="#A8ADB7" />
     </linearGradient>
-    <linearGradient id="armorSteel" x1="0%" y1="0%" x2="0%" y2="100%">
+
+    <!-- Armor Steel Gradient -->
+    <linearGradient id="heroArmorSteel" x1="0%" y1="0%" x2="0%" y2="100%">
       <stop offset="0%" stop-color="#2D3440" />
       <stop offset="50%" stop-color="#171B21" />
       <stop offset="100%" stop-color="#0C0E12" />
     </linearGradient>
-    <linearGradient id="visorGlow" x1="0%" y1="0%" x2="100%" y2="0%">
+
+    <!-- Visor Glow Gradient -->
+    <linearGradient id="heroVisor" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#FF3038" />
       <stop offset="50%" stop-color="#FF8A8A" />
       <stop offset="100%" stop-color="#FF3038" />
     </linearGradient>
-    <radialGradient id="centerRedGlow" cx="50%" cy="50%" r="50%">
+
+    <!-- Ambient Glows -->
+    <radialGradient id="heroCenterGlow" cx="50%" cy="50%" r="50%">
       <stop offset="0%" stop-color="#FF3038" stop-opacity="0.25" />
       <stop offset="100%" stop-color="#FF3038" stop-opacity="0" />
     </radialGradient>
-    <radialGradient id="cyanDataGlow" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#55E6FF" stop-opacity="0.3" />
-      <stop offset="100%" stop-color="#55E6FF" stop-opacity="0" />
+    <radialGradient id="heroWarriorGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FF3038" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#FF3038" stop-opacity="0" />
     </radialGradient>
 
     <!-- Filters -->
-    <filter id="glowRed" x="-20%" y="-20%" width="140%" height="140%">
+    <filter id="heroGlowRed" x="-20%" y="-20%" width="140%" height="140%">
       <feGaussianBlur stdDeviation="4" result="blur" />
       <feComposite in="SourceGraphic" in2="blur" operator="over" />
     </filter>
-    <filter id="glowCyan" x="-20%" y="-20%" width="140%" height="140%">
+    <filter id="heroGlowCyan" x="-20%" y="-20%" width="140%" height="140%">
       <feGaussianBlur stdDeviation="3" result="blur" />
       <feComposite in="SourceGraphic" in2="blur" operator="over" />
     </filter>
-    <filter id="heavyGlow" x="-50%" y="-50%" width="200%" height="200%">
-      <feGaussianBlur stdDeviation="8" result="blur" />
+    <filter id="visorHeavyGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
       <feComposite in="SourceGraphic" in2="blur" operator="over" />
     </filter>
 
     <!-- Tactical Grid Pattern -->
-    <pattern id="tacticalGrid" width="40" height="40" patternUnits="userSpaceOnUse">
+    <pattern id="heroGrid" width="40" height="40" patternUnits="userSpaceOnUse">
       <line x1="0" y1="0" x2="40" y2="0" stroke="#171B21" stroke-width="0.75" />
       <line x1="0" y1="0" x2="0" y2="40" stroke="#171B21" stroke-width="0.75" />
       <circle cx="0" cy="0" r="1" fill="#222832" />
     </pattern>
 
-    <!-- Keyframe Animations -->
     <style>
-      @keyframes pulseAura {
+      @keyframes pulseAuraHero {
         0%, 100% { opacity: 0.3; transform: scale(0.96); }
         50% { opacity: 0.7; transform: scale(1.04); }
       }
-
-      @keyframes bladeSlashAnim {
-        0% { transform: translateX(-1600px) skewX(-25deg); opacity: 0; }
+      @keyframes visorPulseHero {
+        0%, 100% { opacity: 0.8; filter: drop-shadow(0 0 4px #FF3038); }
+        50% { opacity: 1; filter: drop-shadow(0 0 14px #FF4B4B); }
+      }
+      @keyframes bladeTravelHero {
+        0% { stroke-dashoffset: 600; opacity: 0; }
         20% { opacity: 1; }
-        60% { opacity: 1; }
-        100% { transform: translateX(1600px) skewX(-25deg); opacity: 0; }
+        80% { opacity: 1; }
+        100% { stroke-dashoffset: -600; opacity: 0; }
       }
-
-      @keyframes visorPulse {
-        0%, 100% { opacity: 0.7; filter: drop-shadow(0 0 3px #FF3038); }
-        50% { opacity: 1; filter: drop-shadow(0 0 12px #FF4B4B); }
+      @keyframes reticleRotate {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
       }
-
-      @keyframes drawArmor {
-        0% { stroke-dashoffset: 800; }
-        100% { stroke-dashoffset: 0; }
-      }
-
-      @keyframes scannerHorizontal {
+      @keyframes scannerSweepX {
         0% { transform: translateY(0); opacity: 0; }
-        15% { opacity: 0.75; }
-        85% { opacity: 0.75; }
+        15% { opacity: 0.5; }
+        85% { opacity: 0.5; }
         100% { transform: translateY(500px); opacity: 0; }
       }
 
-      @keyframes blinkCursor {
-        0%, 49% { opacity: 1; }
-        50%, 100% { opacity: 0; }
-      }
-
-      @keyframes floatParticles {
-        0%, 100% { transform: translateY(0); }
-        50% { transform: translateY(-8px); }
-      }
-
-      @keyframes bladeTravel {
-        0% { stroke-dashoffset: 600; }
-        100% { stroke-dashoffset: -600; }
-      }
-
-      @keyframes textReveal {
-        0% { opacity: 0; transform: translateX(-20px); }
-        100% { opacity: 1; transform: translateX(0); }
-      }
-
-      .pulse-bg {
+      .pulse-bg-hero {
         transform-origin: 800px 250px;
-        animation: pulseAura 7s ease-in-out infinite;
+        animation: pulseAuraHero 6s ease-in-out infinite;
       }
-
-      .visor-light {
-        animation: visorPulse 2.8s ease-in-out infinite;
+      .visor-hero {
+        animation: visorPulseHero 2.5s ease-in-out infinite;
       }
-
-      .slash-beam {
-        animation: bladeSlashAnim 6s cubic-bezier(0.25, 1, 0.5, 1) infinite;
+      .blade-pulse-hero {
+        stroke-dasharray: 120 480;
+        animation: bladeTravelHero 3.2s linear infinite;
       }
-
-      .armor-contour {
-        stroke-dasharray: 800;
-        animation: drawArmor 3.5s ease-out forwards;
+      .spin-ring {
+        transform-origin: 800px 250px;
+        animation: reticleRotate 24s linear infinite;
       }
-
-      .scanner-beam {
-        animation: scannerHorizontal 7s linear infinite;
-      }
-
-      .tele-cursor {
-        animation: blinkCursor 1.1s infinite;
-      }
-
-      .particles {
-        animation: floatParticles 5s ease-in-out infinite;
-      }
-
-      .blade-energy {
-        stroke-dasharray: 100 200;
-        animation: bladeTravel 3.5s linear infinite;
-      }
-
-      .name-reveal {
-        animation: textReveal 1.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+      .scanner-h {
+        animation: scannerSweepX 8s linear infinite;
       }
     </style>
   </defs>
 
   <!-- Background Layer -->
-  <rect width="1600" height="500" fill="url(#bgDark)" />
-  <rect width="1600" height="500" fill="url(#tacticalGrid)" opacity="0.65" />
+  <rect width="1600" height="500" fill="url(#heroDarkBg)" />
+  <rect width="1600" height="500" fill="url(#heroGrid)" opacity="0.6" />
 
-  <!-- Diagonal Katana Geometry & Cut Accents -->
+  <!-- Subtle Diagonal Katana Slices -->
   <path d="M -100 500 L 400 0 L 420 0 L -80 500 Z" fill="#FF3038" opacity="0.04" />
   <path d="M 1200 500 L 1700 0 L 1720 0 L 1220 500 Z" fill="#55E6FF" opacity="0.03" />
 
   <!-- Ambient Light Wells -->
-  <circle cx="800" cy="250" r="320" fill="url(#centerRedGlow)" class="pulse-bg" />
-  <circle cx="1320" cy="240" r="260" fill="url(#centerRedGlow)" opacity="0.5" />
-  <circle cx="280" cy="250" r="260" fill="url(#cyanDataGlow)" opacity="0.3" />
+  <circle cx="800" cy="250" r="320" fill="url(#heroCenterGlow)" class="pulse-bg-hero" />
+  <circle cx="1320" cy="250" r="260" fill="url(#heroWarriorGlow)" />
 
-  <!-- Animated Scanner Bar Across Canvas -->
-  <line x1="0" y1="0" x2="1600" y2="0" stroke="#FF3038" stroke-width="1.2" opacity="0.4" class="scanner-beam" />
+  <!-- Subtle Scanner Line -->
+  <line x1="0" y1="0" x2="1600" y2="0" stroke="#FF3038" stroke-width="1.2" opacity="0.3" class="scanner-h" />
 
-  <!-- Outer Framing & Tech Brackets -->
-  <rect x="15" y="15" width="1570" height="470" rx="10" fill="none" stroke="#171B21" stroke-width="1.5" />
-  <rect x="25" y="25" width="1550" height="450" fill="none" stroke="#222832" stroke-dasharray="8 6" stroke-width="1" />
+  <!-- Outer Framing & Corner Brackets -->
+  <rect x="20" y="20" width="1560" height="460" rx="12" fill="none" stroke="#171B21" stroke-width="1.5" />
+  <rect x="30" y="30" width="1540" height="440" fill="none" stroke="#222832" stroke-dasharray="8 6" stroke-width="1" />
 
-  <!-- Chamfered Corner Brackets -->
-  <path d="M 20 60 L 20 20 L 60 20" fill="none" stroke="#FF3038" stroke-width="3" />
-  <path d="M 1540 20 L 1580 20 L 1580 60" fill="none" stroke="#FF3038" stroke-width="3" />
-  <path d="M 20 440 L 20 480 L 60 480" fill="none" stroke="#FF3038" stroke-width="3" />
-  <path d="M 1540 480 L 1580 480 L 1580 440" fill="none" stroke="#FF3038" stroke-width="3" />
+  <!-- Chamfered Red Corner Brackets -->
+  <polygon points="20,20 65,20 20,65" fill="#FF3038" />
+  <polygon points="1580,20 1535,20 1580,65" fill="#FF3038" />
+  <polygon points="20,480 65,480 20,435" fill="#FF3038" />
+  <polygon points="1580,480 1535,480 1580,435" fill="#FF3038" />
 
-  <!-- HUD Coordinates & System Status Header -->
-  <g font-family="'Courier New', Consolas, monospace" font-size="11" fill="#787F89" letter-spacing="2">
-    <text x="70" y="44">SYS.ID // CX-994</text>
-    <text x="240" y="44">LOC // 12.9716° N, 77.5946° E</text>
-    <text x="680" y="44">TACTICAL HUD // VER 4.2.0</text>
-    <text x="1250" y="44">SECURITY // ENCRYPTED</text>
-    <circle cx="1470" cy="40" r="4" fill="#42FF9E" />
-    <text x="1485" y="44" fill="#42FF9E" font-weight="700">ONLINE</text>
+  <!-- ======================================================== -->
+  <!-- LEFT: NAME & ROLE (CLEAN, BOLD, HERO TYPOGRAPHY)          -->
+  <!-- ======================================================== -->
+  <g transform="translate(90, 140)">
+    <!-- Full Name -->
+    <text x="0" y="85" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="88" font-weight="900" fill="url(#heroNameGrad)" letter-spacing="4">ANJAN</text>
+    <text x="0" y="175" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="88" font-weight="900" fill="url(#heroNameGrad)" letter-spacing="4">SHETTY</text>
+
+    <!-- Glowing Katana Cut Accent Line -->
+    <line x1="0" y1="205" x2="520" y2="205" stroke="#222832" stroke-width="2.5" />
+    <line x1="0" y1="205" x2="320" y2="205" stroke="#FF3038" stroke-width="4" stroke-linecap="round" filter="url(#heroGlowRed)" />
+    <polygon points="320,201 334,205 320,209" fill="#FF3038" />
+
+    <!-- Role Titles (Crisp Sans-Serif) -->
+    <text x="0" y="245" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="24" font-weight="800" fill="#F4F4F2" letter-spacing="4">FULL-STACK DEVELOPER</text>
+    <text x="0" y="280" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="22" font-weight="800" fill="#55E6FF" letter-spacing="4">AI / ML ENGINEER</text>
   </g>
 
   <!-- ======================================================== -->
-  <!-- LEFT COLUMN: TYPOGRAPHY, TITLES, TECHNICAL TELEMETRY     -->
-  <!-- ======================================================== -->
-  <g transform="translate(70, 90)" class="name-reveal">
-    <!-- Sub-tag / Terminal Lead -->
-    <g transform="translate(0, 30)">
-      <rect x="0" y="-16" width="180" height="24" rx="3" fill="#101318" stroke="#FF3038" stroke-width="1" />
-      <circle cx="12" cy="-4" r="3" fill="#FF3038" />
-      <text x="24" y="0" font-family="'Courier New', Consolas, monospace" font-size="11" font-weight="700" fill="#FF3038" letter-spacing="2">DIGITAL RONIN</text>
-    </g>
-
-    <!-- Main Name -->
-    <text x="0" y="110" font-family="system-ui, -apple-system, sans-serif" font-size="72" font-weight="900" fill="url(#textGrad)" letter-spacing="3">ANJAN</text>
-    <text x="0" y="180" font-family="system-ui, -apple-system, sans-serif" font-size="72" font-weight="900" fill="url(#textGrad)" letter-spacing="3">SHETTY</text>
-
-    <!-- Red Katana Cut Under Name -->
-    <line x1="0" y1="202" x2="480" y2="202" stroke="#222832" stroke-width="2" />
-    <line x1="0" y1="202" x2="260" y2="202" stroke="#FF3038" stroke-width="3" filter="url(#glowRed)" />
-    <polygon points="260,200 270,202 260,204" fill="#FF3038" />
-
-    <!-- Role Titles -->
-    <text x="0" y="235" font-family="'Courier New', Consolas, monospace" font-size="19" font-weight="800" fill="#F4F4F2" letter-spacing="3">FULL-STACK DEVELOPER</text>
-    <text x="0" y="260" font-family="'Courier New', Consolas, monospace" font-size="17" font-weight="700" fill="#55E6FF" letter-spacing="3">AI / ML ENGINEER</text>
-
-    <!-- Tactical Telemetry Block -->
-    <g transform="translate(0, 290)" font-family="'Courier New', Consolas, monospace" font-size="12" fill="#787F89" letter-spacing="2">
-      <rect x="0" y="0" width="480" height="74" rx="4" fill="#0A0D12" stroke="#171B21" stroke-width="1" />
-      <path d="M 0 0 L 10 0 L 0 10 Z" fill="#FF3038" />
-      <path d="M 480 74 L 470 74 L 480 64 Z" fill="#FF3038" />
-
-      <text x="18" y="24">CODENAME <tspan fill="#F4F4F2" font-weight="700">CODEXANJAN</tspan></text>
-      <text x="260" y="24">SYSTEM <tspan fill="#42FF9E" font-weight="700">ONLINE</tspan></text>
-
-      <line x1="18" y1="36" x2="462" y2="36" stroke="#171B21" stroke-width="1" />
-
-      <text x="18" y="56">MODE <tspan fill="#FF3038" font-weight="700">BUILD</tspan></text>
-      <text x="150" y="56">PROTOCOL <tspan fill="#A8ADB7">CREATE / SHIP / EVOLVE</tspan></text>
-    </g>
-  </g>
-
-  <!-- ======================================================== -->
-  <!-- CENTER: CENTRAL CODEXANJAN CREST & ROTATING RETICLE     -->
+  <!-- CENTER: ORIGINAL CODEXANJAN CREST EMBLEM                 -->
   <!-- ======================================================== -->
   <g transform="translate(800, 250)">
-    <!-- Outer Tactical Reticle Rings -->
-    <circle cx="0" cy="0" r="160" fill="none" stroke="#1A2029" stroke-width="1.5" stroke-dasharray="16 12" />
-    <circle cx="0" cy="0" r="140" fill="none" stroke="#222832" stroke-width="1" />
-    <circle cx="0" cy="0" r="120" fill="none" stroke="#FF3038" stroke-width="1" stroke-opacity="0.3" stroke-dasharray="4 6" />
+    <!-- Outer Rings & Reticles -->
+    <circle cx="0" cy="0" r="170" fill="none" stroke="#1A2029" stroke-width="1.5" stroke-dasharray="16 12" class="spin-ring" />
+    <circle cx="0" cy="0" r="145" fill="none" stroke="#222832" stroke-width="1" />
+    <circle cx="0" cy="0" r="125" fill="none" stroke="#FF3038" stroke-width="1.5" stroke-opacity="0.4" stroke-dasharray="6 6" />
 
-    <!-- Reticle Corner Crosshairs -->
-    <line x1="0" y1="-170" x2="0" y2="-130" stroke="#FF3038" stroke-width="2" />
-    <line x1="0" y1="130" x2="0" y2="170" stroke="#FF3038" stroke-width="2" />
-    <line x1="-170" y1="0" x2="-130" y2="0" stroke="#55E6FF" stroke-width="2" />
-    <line x1="130" y1="0" x2="170" y2="0" stroke="#55E6FF" stroke-width="2" />
+    <!-- Reticle Crosshairs -->
+    <line x1="0" y1="-180" x2="0" y2="-140" stroke="#FF3038" stroke-width="2" />
+    <line x1="0" y1="140" x2="0" y2="180" stroke="#FF3038" stroke-width="2" />
+    <line x1="-180" y1="0" x2="-140" y2="0" stroke="#55E6FF" stroke-width="2" />
+    <line x1="140" y1="0" x2="180" y2="0" stroke="#55E6FF" stroke-width="2" />
 
-    <!-- Diamond Crest Base Plate -->
-    <polygon points="0,-95 80,-40 95,45 0,95 -95,45 -80,-40" fill="#0C0F14" stroke="#262D38" stroke-width="2" />
-    <polygon points="0,-80 65,-35 80,38 0,80 -80,38 -65,-35" fill="url(#armorSteel)" stroke="#FF3038" stroke-width="1" stroke-opacity="0.6" />
+    <!-- Diamond Base Plate -->
+    <polygon points="0,-100 85,-45 100,50 0,105 -100,50 -85,-45" fill="#0C0F14" stroke="#262D38" stroke-width="2" />
+    <polygon points="0,-85 70,-38 85,42 0,88 -85,42 -70,-38" fill="url(#heroArmorSteel)" stroke="#FF3038" stroke-width="1.5" stroke-opacity="0.7" />
 
-    <!-- Code Brackets "< >" Motif -->
-    <path d="M -35 -40 L -60 0 L -35 40" fill="none" stroke="#F4F4F2" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
-    <path d="M 35 -40 L 60 0 L 35 40" fill="none" stroke="#F4F4F2" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+    <!-- Code Brackets "< >" Geometric Motif -->
+    <path d="M -38 -45 L -65 0 L -38 45" fill="none" stroke="#F4F4F2" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M 38 -45 L 65 0 L 38 45" fill="none" stroke="#F4F4F2" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
 
-    <!-- Chevron Kabuto Crown (Apex 'A') -->
-    <path d="M -30 -25 L 0 -60 L 30 -25" fill="none" stroke="#FF3038" stroke-width="4" stroke-linecap="round" />
-    <polygon points="0,-72 8,-55 0,-60 -8,-55" fill="#FF4B4B" filter="url(#glowRed)" />
+    <!-- Apex Chevron 'A' -->
+    <path d="M -32 -28 L 0 -65 L 32 -28" fill="none" stroke="#FF3038" stroke-width="4.5" stroke-linecap="round" />
+    <polygon points="0,-78 9,-60 0,-65 -9,-60" fill="#FF4B4B" filter="url(#heroGlowRed)" />
 
-    <!-- Diagonal Katana Blade Cut Slash "/" -->
-    <line x1="-65" y1="65" x2="65" y2="-65" stroke="#050608" stroke-width="8" stroke-linecap="round" />
-    <line x1="-65" y1="65" x2="65" y2="-65" stroke="#FF3038" stroke-width="4" stroke-linecap="round" filter="url(#glowRed)" />
-    <line x1="-65" y1="65" x2="65" y2="-65" stroke="#FFF" stroke-width="1.5" stroke-linecap="round" class="blade-energy" />
+    <!-- Diagonal Katana Slash Blade & Crimson Energy Beam -->
+    <line x1="-70" y1="70" x2="70" y2="-70" stroke="#050608" stroke-width="10" stroke-linecap="round" />
+    <line x1="-70" y1="70" x2="70" y2="-70" stroke="#FF3038" stroke-width="5" stroke-linecap="round" filter="url(#heroGlowRed)" />
+    <line x1="-70" y1="70" x2="70" y2="-70" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" class="blade-pulse-hero" />
 
-    <!-- Center AI Node Core -->
-    <circle cx="0" cy="0" r="10" fill="#55E6FF" filter="url(#glowCyan)" />
-    <rect x="-4" y="-4" width="8" height="8" fill="#FFF" class="tele-cursor" />
-
-    <!-- Crest Bottom Label -->
-    <text x="0" y="115" text-anchor="middle" font-family="'Courier New', Consolas, monospace" font-size="10" font-weight="700" fill="#A8ADB7" letter-spacing="3">CODEXANJAN</text>
-    <text x="0" y="130" text-anchor="middle" font-family="'Courier New', Consolas, monospace" font-size="8" font-weight="600" fill="#FF3038" letter-spacing="2">SYSTEM CORE // READY</text>
+    <!-- Central AI Node Core -->
+    <circle cx="0" cy="0" r="12" fill="#55E6FF" filter="url(#heroGlowCyan)" />
+    <rect x="-4" y="-4" width="8" height="8" fill="#FFF" />
   </g>
 
   <!-- ======================================================== -->
-  <!-- RIGHT COLUMN: VECTOR FUTURISTIC SAMURAI ARMOR SILHOUETTE-->
+  <!-- RIGHT: FUTURISTIC SAMURAI ARMOR SILHOUETTE & KATANA      -->
   <!-- ======================================================== -->
-  <g transform="translate(1320, 240)">
-    <!-- Aura behind Armor -->
-    <circle cx="0" cy="0" r="180" fill="url(#centerRedGlow)" opacity="0.6" />
-
-    <!-- Katana Silhouette in Background (Angled Blade) -->
+  <g transform="translate(1320, 250)">
+    <!-- Katana Blade Slanted in Background -->
     <g transform="rotate(-35)">
-      <!-- Scabbard / Blade -->
-      <line x1="-220" y1="0" x2="240" y2="0" stroke="#0A0C10" stroke-width="10" stroke-linecap="round" />
-      <line x1="-200" y1="0" x2="200" y2="0" stroke="#FF3038" stroke-width="3" stroke-linecap="round" filter="url(#glowRed)" />
-      <line x1="-200" y1="0" x2="200" y2="0" stroke="#FFFFFF" stroke-width="1.2" stroke-linecap="round" class="blade-energy" />
-      <!-- Katana Tsuba (Guard) -->
-      <rect x="-10" y="-18" width="6" height="36" rx="2" fill="#A8ADB7" stroke="#050608" />
-      <!-- Tsuka (Hilt with Diamond Wrap) -->
-      <line x1="-90" y1="0" x2="-10" y2="0" stroke="#171B21" stroke-width="8" stroke-linecap="round" />
-      <line x1="-90" y1="0" x2="-10" y2="0" stroke="#FF3038" stroke-width="1.5" stroke-dasharray="5 5" />
+      <!-- Scabbard / Blade Spine -->
+      <line x1="-240" y1="0" x2="260" y2="0" stroke="#0A0C10" stroke-width="12" stroke-linecap="round" />
+      <line x1="-220" y1="0" x2="220" y2="0" stroke="#FF3038" stroke-width="4" stroke-linecap="round" filter="url(#heroGlowRed)" />
+      <line x1="-220" y1="0" x2="220" y2="0" stroke="#FFFFFF" stroke-width="1.8" stroke-linecap="round" class="blade-pulse-hero" />
+      <!-- Tsuba Guard -->
+      <rect x="-10" y="-20" width="8" height="40" rx="2" fill="#A8ADB7" stroke="#050608" />
+      <!-- Tsuka (Hilt) with diamond cord wrapping -->
+      <line x1="-100" y1="0" x2="-10" y2="0" stroke="#171B21" stroke-width="9" stroke-linecap="round" />
+      <line x1="-100" y1="0" x2="-10" y2="0" stroke="#FF3038" stroke-width="2" stroke-dasharray="6 6" />
     </g>
 
-    <!-- Samurai Helmet (Kabuto) & Face Mask (Menpo) Vector Plates -->
-    <!-- Crest Horns / Shikoro / Helmet Apex (Maedate) -->
-    <path d="M 0 -130 L 35 -175 L 20 -125 Z" fill="#FF3038" filter="url(#glowRed)" />
-    <path d="M 0 -130 L -35 -175 L -20 -125 Z" fill="#FF3038" filter="url(#glowRed)" />
-    <polygon points="0,-140 12,-120 0,-125 -12,-120" fill="#F4F4F2" />
+    <!-- Samurai Helmet (Kabuto) -->
+    <!-- Crest Horns (Maedate) -->
+    <path d="M 0 -140 L 40 -190 L 22 -135 Z" fill="#FF3038" filter="url(#heroGlowRed)" />
+    <path d="M 0 -140 L -40 -190 L -22 -135 Z" fill="#FF3038" filter="url(#heroGlowRed)" />
+    <polygon points="0,-150 14,-125 0,-130 -14,-125" fill="#F4F4F2" />
 
     <!-- Helmet Crown Dome (Hachi) -->
-    <path d="M -70 -70 C -70 -135 70 -135 70 -70 L 60 -50 L -60 -50 Z" fill="url(#armorSteel)" stroke="#2D3440" stroke-width="2" class="armor-contour" />
-    <line x1="0" y1="-125" x2="0" y2="-50" stroke="#FF3038" stroke-width="2" opacity="0.6" />
+    <path d="M -80 -75 C -80 -145 80 -145 80 -75 L 70 -55 L -70 -55 Z" fill="url(#heroArmorSteel)" stroke="#2D3440" stroke-width="2.5" />
+    <line x1="0" y1="-135" x2="0" y2="-55" stroke="#FF3038" stroke-width="2" opacity="0.7" />
 
-    <!-- Helmet Brow Plate & Lateral Ridges -->
-    <path d="M -80 -55 L 0 -70 L 80 -55 L 75 -40 L -75 -40 Z" fill="#171B21" stroke="#FF3038" stroke-width="1.5" />
+    <!-- Helmet Brow Plate -->
+    <path d="M -90 -60 L 0 -75 L 90 -60 L 85 -45 L -85 -45 Z" fill="#171B21" stroke="#FF3038" stroke-width="1.8" />
 
-    <!-- Glowing Cybernetic Visor (Ronin Optical Array) -->
-    <path d="M -55 -32 L -15 -38 L 15 -38 L 55 -32 L 45 -18 L -45 -18 Z" fill="url(#visorGlow)" filter="url(#heavyGlow)" class="visor-light" />
-    <line x1="-50" y1="-25" x2="50" y2="-25" stroke="#FFFFFF" stroke-width="2" />
+    <!-- Glowing Cybernetic Visor -->
+    <path d="M -60 -36 L -18 -42 L 18 -42 L 60 -36 L 50 -20 L -50 -20 Z" fill="url(#heroVisor)" filter="url(#visorHeavyGlow)" class="visor-hero" />
+    <line x1="-55" y1="-28" x2="55" y2="-28" stroke="#FFFFFF" stroke-width="2.5" />
 
-    <!-- Face Mask (Menpo Armor Plate) -->
-    <path d="M -45 -15 L 0 5 L 45 -15 L 35 35 L 0 65 L -35 35 Z" fill="#101318" stroke="#222832" stroke-width="2" />
-    <!-- Chin Ventilator / Vocoder Slits -->
-    <line x1="-15" y1="25" x2="15" y2="25" stroke="#FF3038" stroke-width="2" />
-    <line x1="-12" y1="35" x2="12" y2="35" stroke="#FF3038" stroke-width="1.5" />
-    <line x1="-8" y1="45" x2="8" y2="45" stroke="#55E6FF" stroke-width="1.5" />
+    <!-- Face Mask (Menpo) -->
+    <path d="M -50 -18 L 0 5 L 50 -18 L 40 38 L 0 70 L -40 38 Z" fill="#101318" stroke="#222832" stroke-width="2" />
+    <line x1="-16" y1="26" x2="16" y2="26" stroke="#FF3038" stroke-width="2" />
+    <line x1="-12" y1="38" x2="12" y2="38" stroke="#FF3038" stroke-width="1.5" />
+    <line x1="-8" y1="48" x2="8" y2="48" stroke="#55E6FF" stroke-width="1.5" />
 
-    <!-- Neck Guard / Shikoro Plates (Layered Armor) -->
-    <path d="M -90 -40 L -75 25 L -55 45 L -70 20 Z" fill="#171B21" stroke="#262D38" stroke-width="1" />
-    <path d="M 90 -40 L 75 25 L 55 45 L 70 20 Z" fill="#171B21" stroke="#262D38" stroke-width="1" />
+    <!-- Neck Armor Plates (Shikoro) -->
+    <path d="M -100 -45 L -85 25 L -60 48 L -78 20 Z" fill="#171B21" stroke="#262D38" stroke-width="1.2" />
+    <path d="M 100 -45 L 85 25 L 60 48 L 78 20 Z" fill="#171B21" stroke="#262D38" stroke-width="1.2" />
 
     <!-- Shoulder Armor (Sode Plates) -->
-    <g transform="translate(-110, 40)">
-      <rect x="-35" y="0" width="55" height="15" rx="3" fill="#1A2029" stroke="#FF3038" stroke-width="1" />
-      <rect x="-30" y="18" width="55" height="15" rx="3" fill="#14181F" stroke="#222832" stroke-width="1" />
-      <rect x="-25" y="36" width="55" height="15" rx="3" fill="#0E1116" stroke="#222832" stroke-width="1" />
-      <line x1="-35" y1="7" x2="20" y2="7" stroke="#FF3038" stroke-width="0.75" />
+    <g transform="translate(-120, 42)">
+      <rect x="-40" y="0" width="60" height="16" rx="3" fill="#1A2029" stroke="#FF3038" stroke-width="1" />
+      <rect x="-35" y="20" width="60" height="16" rx="3" fill="#14181F" stroke="#222832" stroke-width="1" />
+      <rect x="-30" y="40" width="60" height="16" rx="3" fill="#0E1116" stroke="#222832" stroke-width="1" />
+      <line x1="-40" y1="8" x2="20" y2="8" stroke="#FF3038" stroke-width="0.75" />
     </g>
-    <g transform="translate(110, 40)">
-      <rect x="-20" y="0" width="55" height="15" rx="3" fill="#1A2029" stroke="#FF3038" stroke-width="1" />
-      <rect x="-25" y="18" width="55" height="15" rx="3" fill="#14181F" stroke="#222832" stroke-width="1" />
-      <rect x="-30" y="36" width="55" height="15" rx="3" fill="#0E1116" stroke="#222832" stroke-width="1" />
-      <line x1="-20" y1="7" x2="35" y2="7" stroke="#FF3038" stroke-width="0.75" />
+    <g transform="translate(120, 42)">
+      <rect x="-20" y="0" width="60" height="16" rx="3" fill="#1A2029" stroke="#FF3038" stroke-width="1" />
+      <rect x="-25" y="20" width="60" height="16" rx="3" fill="#14181F" stroke="#222832" stroke-width="1" />
+      <rect x="-30" y="40" width="60" height="16" rx="3" fill="#0E1116" stroke="#222832" stroke-width="1" />
+      <line x1="-20" y1="8" x2="40" y2="8" stroke="#FF3038" stroke-width="0.75" />
     </g>
 
-    <!-- Chest Armor Plate (Do) & Collar Array -->
-    <path d="M -60 65 L 0 85 L 60 65 L 85 130 L -85 130 Z" fill="url(#armorSteel)" stroke="#222832" stroke-width="1.5" />
-    <line x1="0" y1="85" x2="0" y2="130" stroke="#FF3038" stroke-width="2" />
-    <circle cx="0" cy="105" r="4" fill="#55E6FF" filter="url(#glowCyan)" />
-
-    <!-- Circuit Traces Spreading from Armor -->
-    <path d="M -60 120 L -120 120 L -140 145" fill="none" stroke="#FF3038" stroke-width="1.2" opacity="0.6" />
-    <path d="M 60 120 L 120 120 L 140 145" fill="none" stroke="#55E6FF" stroke-width="1.2" opacity="0.6" />
-    <circle cx="-140" cy="145" r="3" fill="#FF3038" />
-    <circle cx="140" cy="145" r="3" fill="#55E6FF" />
-
-    <!-- Telemetry Label on Warrior -->
-    <text x="0" y="160" text-anchor="middle" font-family="'Courier New', Consolas, monospace" font-size="10" font-weight="700" fill="#A8ADB7" letter-spacing="3">WARRIOR SILHOUETTE // UNIT 01</text>
-  </g>
-
-  <!-- Animated Blade Slash Beam (Sweeps across full width periodically) -->
-  <g class="slash-beam">
-    <rect x="-500" y="0" width="800" height="500" fill="url(#bladeSlash)" />
-  </g>
-
-  <!-- Bottom Interactive Status Strip -->
-  <g transform="translate(0, 465)">
-    <rect x="25" y="0" width="1550" height="24" fill="#080A0D" stroke="#171B21" stroke-width="1" />
-    <line x1="25" y1="0" x2="350" y2="0" stroke="#FF3038" stroke-width="2" />
-
-    <text x="45" y="16" font-family="'Courier New', Consolas, monospace" font-size="10" font-weight="700" fill="#FF3038" letter-spacing="2">ENGINEERING SYSTEM // ACTIVE</text>
-    <text x="400" y="16" font-family="'Courier New', Consolas, monospace" font-size="10" fill="#787F89" letter-spacing="1">STACK: TYPESCRIPT // PYTHON // REACT // NODE.JS // DOCKER // AI-AGENTS</text>
-    <text x="1200" y="16" font-family="'Courier New', Consolas, monospace" font-size="10" fill="#55E6FF" letter-spacing="2">LATENCY: 12ms // BUFFER: OPTIMAL</text>
-    <rect x="1540" y="6" width="12" height="12" fill="#FF3038" class="tele-cursor" />
+    <!-- Chest Armor Plate (Do) -->
+    <path d="M -68 70 L 0 92 L 68 70 L 95 140 L -95 140 Z" fill="url(#heroArmorSteel)" stroke="#222832" stroke-width="2" />
+    <line x1="0" y1="92" x2="0" y2="140" stroke="#FF3038" stroke-width="2" />
+    <circle cx="0" cy="112" r="4" fill="#55E6FF" filter="url(#heroGlowCyan)" />
   </g>
 </svg>
