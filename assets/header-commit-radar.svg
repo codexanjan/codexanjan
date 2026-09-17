@@ -17,15 +17,24 @@
         50% { stroke-dashoffset: 0; }
         100% { stroke-dashoffset: -900; }
       }
+      @keyframes borderEdgeTrace {
+        0% { stroke-dashoffset: 2000; }
+        100% { stroke-dashoffset: 0; }
+      }
       .slash-line-radar {
         stroke-dasharray: 250 650;
         animation: slashMotionRadar 4.2s linear infinite;
+      }
+      .border-edge-laser {
+        stroke-dasharray: 180 1820;
+        animation: borderEdgeTrace 4.8s linear infinite;
       }
     </style>
   </defs>
 
   <rect width="900" height="85" rx="4" fill="url(#hBgRadar)" />
   <rect width="900" height="85" rx="4" fill="none" stroke="#171B21" stroke-width="1" />
+  <rect width="900" height="85" rx="4" fill="none" stroke="#FF3038" stroke-width="1.8" class="border-edge-laser" opacity="0.85" />
 
   <g transform="translate(20, 20)">
     <rect x="0" y="0" width="70" height="30" rx="3" fill="#141820" stroke="#FF3038" stroke-width="1.2" />

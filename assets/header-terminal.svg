@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 85" width="100%" height="100%" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <linearGradient id="hBgTerm" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0E1218" />
+      <stop offset="50%" stop-color="#080A0D" />
+      <stop offset="100%" stop-color="#050608" />
+    </linearGradient>
+    <linearGradient id="hSlashTerm" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#8C111B" />
+      <stop offset="40%" stop-color="#FF3038" />
+      <stop offset="70%" stop-color="#FFF" />
+      <stop offset="100%" stop-color="#FF3038" />
+    </linearGradient>
+
+    <style>
+      @keyframes slashMotionTerm {
+        0% { stroke-dashoffset: 900; }
+        50% { stroke-dashoffset: 0; }
+        100% { stroke-dashoffset: -900; }
+      }
+      @keyframes borderEdgeTraceTerm {
+        0% { stroke-dashoffset: 2000; }
+        100% { stroke-dashoffset: 0; }
+      }
+      .slash-line-term {
+        stroke-dasharray: 250 650;
+        animation: slashMotionTerm 4s linear infinite;
+      }
+      .border-edge-laser-term {
+        stroke-dasharray: 180 1820;
+        animation: borderEdgeTraceTerm 4.8s linear infinite;
+      }
+    </style>
+  </defs>
+
+  <rect width="900" height="85" rx="4" fill="url(#hBgTerm)" />
+  <rect width="900" height="85" rx="4" fill="none" stroke="#171B21" stroke-width="1" />
+  <!-- Animated Edge Laser on Border -->
+  <rect width="900" height="85" rx="4" fill="none" stroke="#FF3038" stroke-width="1.8" class="border-edge-laser-term" opacity="0.85" />
+
+  <g transform="translate(20, 20)">
+    <rect x="0" y="0" width="70" height="30" rx="3" fill="#141820" stroke="#FF3038" stroke-width="1.2" />
+    <path d="M 0 0 L 8 0 L 0 8 Z" fill="#FF3038" />
+    <text x="35" y="20" text-anchor="middle" font-family="'Courier New', Consolas, monospace" font-size="14" font-weight="900" fill="#FF3038">CLI</text>
+  </g>
+
+  <g transform="translate(105, 30)">
+    <text x="0" y="0" font-family="'Courier New', Consolas, monospace" font-size="11" font-weight="700" fill="#787F89" letter-spacing="2">MAINFRAME INTERFACE // SYSTEM TRANSMISSION</text>
+    <text x="0" y="24" font-family="system-ui, -apple-system, sans-serif" font-size="22" font-weight="900" fill="#F4F4F2" letter-spacing="3">RONIN TERMINAL // COMMAND SHELL</text>
+  </g>
+
+  <line x1="0" y1="84" x2="900" y2="84" stroke="url(#hSlashTerm)" stroke-width="2" class="slash-line-term" />
+</svg>

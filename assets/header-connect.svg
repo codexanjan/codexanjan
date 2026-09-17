@@ -22,6 +22,10 @@
         50% { stroke-dashoffset: 0; }
         100% { stroke-dashoffset: -900; }
       }
+      @keyframes borderEdgeTrace09 {
+        0% { stroke-dashoffset: 2000; }
+        100% { stroke-dashoffset: 0; }
+      }
       @keyframes pulseCrest09 {
         0%, 100% { opacity: 0.7; }
         50% { opacity: 1; filter: drop-shadow(0 0 5px #FF3038); }
@@ -33,11 +37,17 @@
       .crest-pulse09 {
         animation: pulseCrest09 3s ease-in-out infinite;
       }
+      .border-edge-laser09 {
+        stroke-dasharray: 180 1820;
+        animation: borderEdgeTrace09 4.8s linear infinite;
+      }
     </style>
   </defs>
 
   <rect width="900" height="85" rx="4" fill="url(#hBg09)" />
   <rect width="900" height="85" rx="4" fill="none" stroke="#171B21" stroke-width="1" />
+  <!-- Animated Edge Laser on Border -->
+  <rect width="900" height="85" rx="4" fill="none" stroke="#FF3038" stroke-width="1.8" class="border-edge-laser09" opacity="0.85" />
 
   <g transform="translate(20, 20)">
     <rect x="0" y="0" width="70" height="30" rx="3" fill="#141820" stroke="#FF3038" stroke-width="1.2" />
@@ -47,7 +57,7 @@
 
   <g transform="translate(105, 30)">
     <text x="0" y="0" font-family="'Courier New', Consolas, monospace" font-size="11" font-weight="700" fill="#787F89" letter-spacing="2">COMMUNICATIONS // SECURE TRANSMISSION</text>
-    <text x="0" y="24" font-family="system-ui, -apple-system, sans-serif" font-size="22" font-weight="900" fill="#F4F4F2" letter-spacing="3">OPEN CHANNEL</text>
+    <text x="0" y="24" font-family="system-ui, -apple-system, sans-serif" font-size="22" font-weight="900" fill="#F4F4F2" letter-spacing="3">RONIN COMMS // SECURE CHANNELS</text>
   </g>
 
   <g transform="translate(845, 34)" class="crest-pulse09">
@@ -59,8 +69,6 @@
     <circle cx="0" cy="0" r="2" fill="#55E6FF" />
   </g>
 
-  <line x1="20" y1="74" x2="880" y2="74" stroke="#171B21" stroke-width="2" />
-  <line x1="20" y1="74" x2="880" y2="74" stroke="url(#hSlash09)" stroke-width="2.5" stroke-linecap="round" class="slash-line09" filter="url(#hGlow09)" />
-  <polygon points="20,72 26,74 20,76" fill="#FF3038" />
-  <polygon points="880,72 874,74 880,76" fill="#FF3038" />
+  <!-- Kinetic Katana Slash Line -->
+  <line x1="0" y1="84" x2="900" y2="84" stroke="url(#hSlash09)" stroke-width="2" class="slash-line09" />
 </svg>

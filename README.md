@@ -25,6 +25,12 @@
 
 <br/><br/>
 
+<a href="https://github.com/codexanjan">
+  <img src="https://komarev.com/ghpvc/?username=codexanjan&label=LIVE+VISITORS&color=FF3038&style=flat-square&labelColor=0C0E14" alt="Live Profile Views" />
+</a>
+
+<br/><br/>
+
 <!-- ======================================================== -->
 <!-- KATANA DIVIDER 01                                        -->
 <!-- ======================================================== -->
@@ -141,6 +147,30 @@ To me, writing code is a discipline of **Bushido**:
 
 <img src="./assets/header-project-database.svg" width="100%" alt="Section 03 - Project Database // Ronin Archives" />
 
+<br/><br/>
+
+<a href="https://github.com/codexanjan/URLForge" target="_blank">
+  <img src="./assets/mission-urlforge.svg" width="100%" alt="Mission 01 // URLForge - Link Forge &amp; Analytics Engine" />
+</a>
+
+<br/><br/>
+
+<a href="https://github.com/codexanjan/PeriodicPortal" target="_blank">
+  <img src="./assets/mission-periodicportal.svg" width="100%" alt="Mission 02 // PeriodicPortal - 3D Interactive Chemistry Hub" />
+</a>
+
+<br/><br/>
+
+<a href="https://github.com/codexanjan/MarkdownStudio" target="_blank">
+  <img src="./assets/mission-markdownstudio.svg" width="100%" alt="Mission 03 // MarkdownStudio - Live Browser Editor" />
+</a>
+
+<br/><br/>
+
+<a href="https://github.com/codexanjan/SmartCalendar" target="_blank">
+  <img src="./assets/mission-smartcalendar.svg" width="100%" alt="Mission 04 // SmartCalendar - Productivity &amp; Schedule Hub" />
+</a>
+
 </div>
 
 <br/>
@@ -148,7 +178,7 @@ To me, writing code is a discipline of **Bushido**:
 <table width="100%">
   <tr>
     <td width="50%" valign="top">
-      <h3>🔗 <a href="https://github.com/codexanjan/URLForge" target="_blank">URLForge</a> // Link Forge &amp; Analytics Engine</h3>
+      <h4>🔗 <a href="https://github.com/codexanjan/URLForge" target="_blank">URLForge</a> // Link Forge &amp; Analytics Engine</h4>
       <p>High-performance URL shortener and link redirection architecture engineered for rapid dispatch, telemetry analytics, and clean RESTful design.</p>
       <ul>
         <li><strong>Focus:</strong> Fast URL resolution, link analytics &amp; clean API architecture</li>
@@ -157,7 +187,7 @@ To me, writing code is a discipline of **Bushido**:
       </ul>
     </td>
     <td width="50%" valign="top">
-      <h3>⚛️ <a href="https://github.com/codexanjan/PeriodicPortal" target="_blank">PeriodicPortal</a> // 3D Interactive Chemistry Hub</h3>
+      <h4>⚛️ <a href="https://github.com/codexanjan/PeriodicPortal" target="_blank">PeriodicPortal</a> // 3D Chemistry Hub</h4>
       <p>A modern educational web platform exploring all 118 chemical elements with glowing cards, 3D Bohr orbital models, trend analytics, and a built-in Chemistry AI chatbot.</p>
       <ul>
         <li><strong>Focus:</strong> 3D orbital visualization, chemical data &amp; conversational AI</li>
@@ -168,7 +198,7 @@ To me, writing code is a discipline of **Bushido**:
   </tr>
   <tr>
     <td width="50%" valign="top">
-      <h3>📝 <a href="https://github.com/codexanjan/MarkdownStudio" target="_blank">Markdown Studio</a> // Live Browser Editor</h3>
+      <h4>📝 <a href="https://github.com/codexanjan/MarkdownStudio" target="_blank">Markdown Studio</a> // Live Editor</h4>
       <p>Sleek browser-based Markdown studio offering real-time live preview, intelligent syntax highlighting, multi-format export tools, and productivity templates.</p>
       <ul>
         <li><strong>Focus:</strong> Real-time parser rendering, AST manipulation &amp; responsive UX</li>
@@ -177,7 +207,7 @@ To me, writing code is a discipline of **Bushido**:
       </ul>
     </td>
     <td width="50%" valign="top">
-      <h3>📅 <a href="https://github.com/codexanjan/SmartCalendar" target="_blank">Smart Calendar</a> // Productivity &amp; Schedule Hub</h3>
+      <h4>📅 <a href="https://github.com/codexanjan/SmartCalendar" target="_blank">Smart Calendar</a> // Schedule Hub</h4>
       <p>Customizable personal scheduling platform built for calendar optimization, event management, and fluid user experience.</p>
       <ul>
         <li><strong>Focus:</strong> State orchestration, responsive calendar view &amp; UX architecture</li>
@@ -295,12 +325,6 @@ To me, writing code is a discipline of **Bushido**:
 
 <br/><br/>
 
-<a href="https://github.com/codexanjan" target="_blank">
-  <img src="https://github-profile-trophy.vercel.app/?username=codexanjan&amp;theme=radical&amp;no-frame=true&amp;no-bg=true&amp;margin_w=6&amp;column=8" width="100%" alt="GitHub Profile Trophies Live" />
-</a>
-
-<br/><br/>
-
 <!-- ======================================================== -->
 <!-- KATANA DIVIDER 07                                        -->
 <!-- ======================================================== -->
@@ -325,7 +349,9 @@ To me, writing code is a discipline of **Bushido**:
 
 <br/>
 
-<img src="./assets/streak-telemetry-banner.svg" alt="Total Contributions: 88 | Current Streak: Active" />
+<a href="https://github.com/codexanjan">
+  <img src="https://readme-typing-svg.demolab.com?font=Orbitron&amp;weight=700&amp;size=19&amp;pause=1000&amp;color=FF3038&amp;center=true&amp;vCenter=true&amp;width=750&amp;lines=%E2%9A%A1+RONIN+TELEMETRY+MAINFRAME+%7C+LIVE+METRICS;%F0%9F%94%A5+TOTAL+CONTRIBUTIONS%3A+88+%7C+CURRENT+STREAK%3A+ACTIVE;%E2%9A%94%EF%B8%8F+COMMITS%3A+82+%7C+STARS%3A+73+%E2%AD%90+%7C+GRADE%3A+B-;%F0%9F%97%A1%EF%B8%8F+RONIN+CODE+ENGINE%3A+OPERATIONAL" alt="Ronin Telemetry Mainframe Live Metrics" />
+</a>
 
 <br/><br/>
 
@@ -333,17 +359,19 @@ To me, writing code is a discipline of **Bushido**:
 
 <br/><br/>
 
-<img src="./assets/typescript-flame-pill.svg" alt="TypeScript Flame" />
+<a href="https://github.com/codexanjan">
+  <img src="https://readme-typing-svg.demolab.com?font=Orbitron&amp;size=16&amp;pause=800&amp;color=FACC15&amp;center=true&amp;vCenter=true&amp;width=550&amp;lines=JavaScript+⚡;TypeScript+🔥;Python+🐍;Java+☕;C%2B%2B+🛡️;React+%26+Next.js+⚛️;Node.js+%26+Express+🚀;SQL+%26+MongoDB+🗄️" alt="Tech Stack Orbiting Dynamics" />
+</a>
 
 <br/><br/>
 
 <p align="center">
   <a href="https://github.com/codexanjan" target="_blank">
-    <img src="https://github-readme-stats.vercel.app/api?username=codexanjan&amp;show_icons=true&amp;theme=tokyonight&amp;hide_border=true&amp;bg_color=0C0E14&amp;title_color=FF3038&amp;icon_color=55E6FF&amp;text_color=F4F4F2" alt="Anjan Shetty GitHub Stats Live" />
+    <img src="https://github-readme-stats.vercel.app/api?username=codexanjan&amp;show_icons=true&amp;theme=radical&amp;hide_border=true&amp;bg_color=0C0E14&amp;title_color=FF3038&amp;icon_color=55E6FF&amp;text_color=F4F4F2" alt="Anjan Shetty GitHub Stats Live" />
   </a>
   &nbsp;&nbsp;
   <a href="https://github.com/codexanjan" target="_blank">
-    <img src="https://github-readme-streak-stats.herokuapp.com/?user=codexanjan&amp;theme=tokyonight&amp;hide_border=true&amp;background=0C0E14&amp;ring=FF3038&amp;fire=FF3038&amp;currStreakLabel=FF3038" alt="Anjan Shetty GitHub Streak Stats Live" />
+    <img src="https://github-readme-streak-stats.herokuapp.com/?user=codexanjan&amp;theme=radical&amp;hide_border=true&amp;background=0C0E14&amp;ring=FF3038&amp;fire=FF3038&amp;currStreakLabel=FF3038" alt="Anjan Shetty GitHub Streak Stats Live" />
   </a>
 </p>
 
@@ -358,10 +386,70 @@ To me, writing code is a discipline of **Bushido**:
 <br/><br/>
 
 <!-- ======================================================== -->
-<!-- 09 // OPEN CHANNEL // CONTACT                            -->
+<!-- 09 // RONIN COMMS // SECURE CHANNELS                     -->
 <!-- ======================================================== -->
 
-<img src="./assets/header-connect.svg" width="100%" alt="Section 09 - Open Channel Transmission Link" />
+<img src="./assets/header-connect.svg" width="100%" alt="Section 09 - Ronin Comms Secure Channels" />
+
+</div>
+
+<br/>
+
+<p align="left"><em>Connect across developer networks and platforms:</em></p>
+
+<div align="center">
+
+<br/>
+
+<a href="https://github.com/codexanjan" target="_blank">
+  <img src="https://img.shields.io/badge/GitHub-0b0d10?style=for-the-badge&amp;logo=github&amp;logoColor=facc15&amp;labelColor=0b0d10&amp;color=facc15" alt="GitHub" />
+</a>
+<a href="https://twitter.com/anjxnshetty" target="_blank">
+  <img src="https://img.shields.io/badge/X%20%2F%20Twitter-0b0d10?style=for-the-badge&amp;logo=x&amp;logoColor=facc15&amp;labelColor=0b0d10&amp;color=facc15" alt="X / Twitter" />
+</a>
+<a href="https://discord.com/users/codexanjan" target="_blank">
+  <img src="https://img.shields.io/badge/Discord-0b0d10?style=for-the-badge&amp;logo=discord&amp;logoColor=eab308&amp;labelColor=0b0d10&amp;color=eab308" alt="Discord" />
+</a>
+<a href="https://gitlab.com/codexanjan" target="_blank">
+  <img src="https://img.shields.io/badge/GitLab-0b0d10?style=for-the-badge&amp;logo=gitlab&amp;logoColor=facc15&amp;labelColor=0b0d10&amp;color=facc15" alt="GitLab" />
+</a>
+<a href="https://leetcode.com/u/anjanshetty" target="_blank">
+  <img src="https://img.shields.io/badge/LeetCode-0b0d10?style=for-the-badge&amp;logo=leetcode&amp;logoColor=facc15&amp;labelColor=0b0d10&amp;color=facc15" alt="LeetCode" />
+</a>
+<a href="https://www.codewars.com/users/codexanjan" target="_blank">
+  <img src="https://img.shields.io/badge/CodeWars-0b0d10?style=for-the-badge&amp;logo=codewars&amp;logoColor=ef4444&amp;labelColor=0b0d10&amp;color=ef4444" alt="CodeWars" />
+</a>
+<a href="https://www.geeksforgeeks.org/profile/anjanshetty" target="_blank">
+  <img src="https://img.shields.io/badge/GeeksforGeeks-0b0d10?style=for-the-badge&amp;logo=geeksforgeeks&amp;logoColor=22c55e&amp;labelColor=0b0d10&amp;color=22c55e" alt="GeeksforGeeks" />
+</a>
+<a href="https://tryhackme.com/p/anjanshetty" target="_blank">
+  <img src="https://img.shields.io/badge/TryHackMe-0b0d10?style=for-the-badge&amp;logo=tryhackme&amp;logoColor=eab308&amp;labelColor=0b0d10&amp;color=eab308" alt="TryHackMe" />
+</a>
+<a href="https://dev.to/anjanshetty" target="_blank">
+  <img src="https://img.shields.io/badge/DEV.to-0b0d10?style=for-the-badge&amp;logo=devdotto&amp;logoColor=facc15&amp;labelColor=0b0d10&amp;color=facc15" alt="DEV.to" />
+</a>
+<a href="https://stackoverflow.com/users/anjanshetty" target="_blank">
+  <img src="https://img.shields.io/badge/StackOverflow-0b0d10?style=for-the-badge&amp;logo=stackoverflow&amp;logoColor=eab308&amp;labelColor=0b0d10&amp;color=eab308" alt="StackOverflow" />
+</a>
+<a href="https://reddit.com/u/anjxnshetty" target="_blank">
+  <img src="https://img.shields.io/badge/Reddit-0b0d10?style=for-the-badge&amp;logo=reddit&amp;logoColor=facc15&amp;labelColor=0b0d10&amp;color=facc15" alt="Reddit" />
+</a>
+
+<br/><br/>
+
+<p><em>If you find value in my open-source work or want to support my technical journey:</em></p>
+
+<a href="https://buymeacoffee.com/anjxnshetty" target="_blank">
+  <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" width="200" alt="Buy Me A Coffee" />
+</a>
+
+<br/><br/>
+
+<!-- ======================================================== -->
+<!-- RONIN TERMINAL // COMMAND SHELL                          -->
+<!-- ======================================================== -->
+
+<img src="./assets/header-terminal.svg" width="100%" alt="Ronin Terminal Command Shell Header" />
 
 <br/><br/>
 
@@ -390,7 +478,7 @@ To me, writing code is a discipline of **Bushido**:
 <!-- ======================================================== -->
 
 <a href="https://github.com/codexanjan">
-  <img src="https://readme-typing-svg.demolab.com?font=Orbitron&size=24&pause=1000&color=FF3038&center=true&vCenter=true&width=880&lines=BUILDING+IN+THE+DARK.+SHIPPING+INTO+THE+LIGHT.;DISCIPLINE+IN+DESIGN.+PRECISION+IN+CODE.;SHARPEN+THE+BLADE.+SHIP+WITHOUT+FEAR.;CODEXANJAN+%2F%2F+STANDBY" alt="Operative Creed Dynamic Telemetry" />
+  <img src="https://readme-typing-svg.demolab.com?font=Orbitron&amp;size=24&amp;pause=1000&amp;color=FF3038&amp;center=true&amp;vCenter=true&amp;width=880&amp;lines=BUILDING+IN+THE+DARK.+SHIPPING+INTO+THE+LIGHT.;DISCIPLINE+IN+DESIGN.+PRECISION+IN+CODE.;SHARPEN+THE+BLADE.+SHIP+WITHOUT+FEAR.;CODEXANJAN+%2F%2F+STANDBY" alt="Operative Creed Dynamic Telemetry" />
 </a>
 
 <br/><br/>

@@ -24,14 +24,23 @@
         0%, 100% { opacity: 0.7; }
         50% { opacity: 1; filter: drop-shadow(0 0 6px #42FF9E); }
       }
+      @keyframes cardEdgeLaser {
+        0% { stroke-dashoffset: 2080; }
+        100% { stroke-dashoffset: 0; }
+      }
       .m-scan1 { animation: mScanLine1 5s linear infinite; }
       .m-pulse1 { animation: mPulse1 2s infinite; }
+      .card-edge-laser {
+        stroke-dasharray: 180 1900;
+        animation: cardEdgeLaser 5s linear infinite;
+      }
     </style>
   </defs>
 
   <!-- Card Body -->
   <rect width="800" height="240" rx="10" fill="url(#mBg1)" stroke="#171B21" stroke-width="1.5" />
   <rect x="6" y="6" width="788" height="228" rx="8" fill="none" stroke="#222832" stroke-dasharray="8 6" stroke-width="1" />
+  <rect width="800" height="240" rx="10" fill="none" stroke="#FF3038" stroke-width="2" class="card-edge-laser" opacity="0.85" />
 
   <!-- Corner Brackets (Katana HUD Framing) -->
   <polygon points="12,12 34,12 12,34" fill="#FF3038" />
@@ -46,7 +55,7 @@
   <g transform="translate(35, 38)" font-family="'Courier New', Consolas, monospace">
     <rect x="0" y="-12" width="160" height="22" rx="3" fill="#141820" stroke="#FF3038" stroke-width="1" />
     <text x="10" y="3" font-size="11" font-weight="700" fill="#FF3038" letter-spacing="2">MISSION // 01</text>
-    <text x="180" y="3" font-size="10" fill="#787F89" letter-spacing="1">CLASS: LINK INFRASTRUCTURE</text>
+    <text x="180" y="3" font-size="10" fill="#787F89" letter-spacing="1">CLASS: LINK FORGE &amp; ANALYTICS ENGINE</text>
 
     <!-- Status Indicator -->
     <g transform="translate(620, 3)">
