@@ -156,84 +156,57 @@ PRIMARY STACK   :: TYPESCRIPT // PYTHON // REACT // NODE.JS // DOCKER
 <br/><br/>
 
 <!-- ======================================================== -->
-<!-- 03 // SELECTED MISSIONS                                  -->
+<!-- 03 // PROJECT DATABASE // RONIN ARCHIVES                 -->
 <!-- ======================================================== -->
 
-<img src="./assets/header-missions.svg" width="100%" alt="Section 03 - Selected Missions &amp; Operational Deployments" />
-
-<br/><br/>
-
-<!-- Mission 01: URLForge -->
-<img src="./assets/mission-urlforge.svg" width="100%" alt="Mission 01 - URLForge Link Infrastructure" />
+<img src="./assets/header-project-database.svg" width="100%" alt="Section 03 - Project Database // Ronin Archives" />
 
 </div>
-
-<p align="center">
-  <a href="https://github.com/codexanjan/URLForge" target="_blank">
-    <code>[ MISSION ARCHIVE // URLFORGE REPOSITORY ]</code>
-  </a>
-  &nbsp;&nbsp;•&nbsp;&nbsp;
-  <a href="https://github.com/codexanjan/URLForge" target="_blank">
-    <code>[ LIVE DEPLOYMENT ]</code>
-  </a>
-</p>
 
 <br/>
 
-<div align="center">
-
-<!-- Mission 02: PeriodicPortal -->
-<img src="./assets/mission-periodicportal.svg" width="100%" alt="Mission 02 - PeriodicPortal Interactive 3D Science System" />
-
-</div>
-
-<p align="center">
-  <a href="https://github.com/codexanjan/PeriodicPortal" target="_blank">
-    <code>[ MISSION ARCHIVE // PERIODICPORTAL REPOSITORY ]</code>
-  </a>
-  &nbsp;&nbsp;•&nbsp;&nbsp;
-  <a href="https://github.com/codexanjan/PeriodicPortal" target="_blank">
-    <code>[ LIVE DEPLOYMENT ]</code>
-  </a>
-</p>
-
-<br/>
-
-<div align="center">
-
-<!-- Mission 03: Markdown Studio -->
-<img src="./assets/mission-markdownstudio.svg" width="100%" alt="Mission 03 - Markdown Studio Developer Tool" />
-
-</div>
-
-<p align="center">
-  <a href="https://github.com/codexanjan/MarkdownStudio" target="_blank">
-    <code>[ MISSION ARCHIVE // MARKDOWN STUDIO REPOSITORY ]</code>
-  </a>
-  &nbsp;&nbsp;•&nbsp;&nbsp;
-  <a href="https://github.com/codexanjan/MarkdownStudio" target="_blank">
-    <code>[ LIVE DEPLOYMENT ]</code>
-  </a>
-</p>
-
-<br/>
-
-<div align="center">
-
-<!-- Mission 04: Smart Calendar -->
-<img src="./assets/mission-smartcalendar.svg" width="100%" alt="Mission 04 - Smart Calendar Productivity System" />
-
-</div>
-
-<p align="center">
-  <a href="https://github.com/codexanjan/SmartCalendar" target="_blank">
-    <code>[ MISSION ARCHIVE // SMART CALENDAR REPOSITORY ]</code>
-  </a>
-  &nbsp;&nbsp;•&nbsp;&nbsp;
-  <a href="https://github.com/codexanjan/SmartCalendar" target="_blank">
-    <code>[ LIVE DEPLOYMENT ]</code>
-  </a>
-</p>
+<table width="100%">
+  <tr>
+    <td width="50%" valign="top">
+      <h3>🔗 <a href="https://github.com/codexanjan/URLForge" target="_blank">URLForge</a> // Link Forge &amp; Analytics Engine</h3>
+      <p>High-performance URL shortener and link redirection architecture engineered for rapid dispatch, telemetry analytics, and clean RESTful design.</p>
+      <ul>
+        <li><strong>Focus:</strong> Fast URL resolution, link analytics &amp; clean API architecture</li>
+        <li><strong>Stack:</strong> <code>TypeScript</code> <code>Node.js</code> <code>Express</code> <code>RESTful API</code></li>
+        <li><strong>Repository:</strong> <a href="https://github.com/codexanjan/URLForge" target="_blank"><code>codexanjan/urlforge</code></a></li>
+      </ul>
+    </td>
+    <td width="50%" valign="top">
+      <h3>⚛️ <a href="https://github.com/codexanjan/PeriodicPortal" target="_blank">PeriodicPortal</a> // 3D Interactive Chemistry Hub</h3>
+      <p>A modern educational web platform exploring all 118 chemical elements with glowing cards, 3D Bohr orbital models, trend analytics, and a built-in Chemistry AI chatbot.</p>
+      <ul>
+        <li><strong>Focus:</strong> 3D orbital visualization, chemical data &amp; conversational AI</li>
+        <li><strong>Stack:</strong> <code>TypeScript</code> <code>React</code> <code>Three.js</code> <code>AI Integration</code></li>
+        <li><strong>Repository:</strong> <a href="https://github.com/codexanjan/PeriodicPortal" target="_blank"><code>codexanjan/periodictable</code></a></li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <h3>📝 <a href="https://github.com/codexanjan/MarkdownStudio" target="_blank">Markdown Studio</a> // Live Browser Editor</h3>
+      <p>Sleek browser-based Markdown studio offering real-time live preview, intelligent syntax highlighting, multi-format export tools, and productivity templates.</p>
+      <ul>
+        <li><strong>Focus:</strong> Real-time parser rendering, AST manipulation &amp; responsive UX</li>
+        <li><strong>Stack:</strong> <code>TypeScript</code> <code>React</code> <code>Markdown Engine</code> <code>CSS Modules</code></li>
+        <li><strong>Repository:</strong> <a href="https://github.com/codexanjan/MarkdownStudio" target="_blank"><code>codexanjan/markdown-editor</code></a></li>
+      </ul>
+    </td>
+    <td width="50%" valign="top">
+      <h3>📅 <a href="https://github.com/codexanjan/SmartCalendar" target="_blank">Smart Calendar</a> // Productivity &amp; Schedule Hub</h3>
+      <p>Customizable personal scheduling platform built for calendar optimization, event management, and fluid user experience.</p>
+      <ul>
+        <li><strong>Focus:</strong> State orchestration, responsive calendar view &amp; UX architecture</li>
+        <li><strong>Stack:</strong> <code>TypeScript</code> <code>React</code> <code>Tailwind CSS</code> <code>Vite</code></li>
+        <li><strong>Repository:</strong> <a href="https://github.com/codexanjan/SmartCalendar" target="_blank"><code>codexanjan/smart-calender</code></a></li>
+      </ul>
+    </td>
+  </tr>
+</table>
 
 <br/><br/>
 
@@ -248,14 +221,24 @@ PRIMARY STACK   :: TYPESCRIPT // PYTHON // REACT // NODE.JS // DOCKER
 <br/><br/>
 
 <!-- ======================================================== -->
-<!-- 04 // INTELLIGENCE CORE                                  -->
+<!-- 04 // COMMIT RADAR // CODE CADENCE                       -->
 <!-- ======================================================== -->
 
-<img src="./assets/header-ai-lab.svg" width="100%" alt="Section 04 - Intelligence Core AI Architecture" />
+<img src="./assets/badge-active-runtimes.svg" alt="Active Ronin Runtimes &amp; Languages" />
 
 <br/><br/>
 
-<img src="./assets/ai-neural-core.svg" width="100%" alt="Neural Intelligence Topology - Agentic AI, LLMs, RAG, Machine Learning" />
+<img src="./assets/header-commit-radar.svg" width="100%" alt="Section 04 - Commit Radar // Code Cadence" />
+
+<br/><br/>
+
+<img src="./assets/commit-radar-active.svg" width="100%" alt="Anjan Shetty Contribution Graph - Real-time Commits and Code Cadence" />
+
+<br/><br/>
+
+<a href="https://github.com/codexanjan" target="_blank">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=codexanjan&amp;theme=react-dark&amp;color=FF3038&amp;line=FF3038&amp;point=FFFFFF&amp;area=true&amp;hide_border=true&amp;bg_color=0C0E14" width="100%" alt="Anjan Shetty Live Contribution Graph Fallback" />
+</a>
 
 <br/><br/>
 
@@ -263,31 +246,19 @@ PRIMARY STACK   :: TYPESCRIPT // PYTHON // REACT // NODE.JS // DOCKER
 <!-- KATANA DIVIDER 04                                        -->
 <!-- ======================================================== -->
 
-<img src="./assets/katana-divider-reverse.svg" width="100%" alt="Katana Blade Divider - Reverse Surge" />
+<img src="./assets/katana-divider-reverse.svg" width="100%" alt="Katana Blade Divider" />
 
 <br/><br/>
 
 <!-- ======================================================== -->
-<!-- 05 // SYSTEM TELEMETRY                                   -->
+<!-- 05 // CONTRIBUTION PATROL // RONIN CADENCE               -->
 <!-- ======================================================== -->
 
-<img src="./assets/header-telemetry.svg" width="100%" alt="Section 05 - System Telemetry Real-time Metrics" />
+<img src="./assets/header-contributions.svg" width="100%" alt="Section 05 - Contribution Patrol // Ronin Cadence" />
 
 <br/><br/>
 
-<img src="./assets/github-radar.svg" width="100%" alt="GitHub Radar Spectrum - Repositories, Commits, Contributions, Languages" />
-
-<br/><br/>
-
-<img src="./assets/language-core.svg" width="100%" alt="Language Core Concentric Orbital Dynamics" />
-
-<br/><br/>
-
-<img src="./assets/commit-frequency.svg" width="100%" alt="Commit Velocity &amp; Temporal Histogram Cadence" />
-
-<br/><br/>
-
-<img src="./assets/activity-stream.svg" width="100%" alt="Tactical Event Stream &amp; GitHub Audit Log" />
+<img src="./assets/samurai-snake-contribution.svg" width="100%" alt="Ronin Grid Snake Contribution Matrix" />
 
 <br/><br/>
 
@@ -300,16 +271,29 @@ PRIMARY STACK   :: TYPESCRIPT // PYTHON // REACT // NODE.JS // DOCKER
 <br/><br/>
 
 <!-- ======================================================== -->
-<!-- 06 // CODE TRAIL // CONTRIBUTIONS                        -->
+<!-- 06 // 2026 MISSION DIRECTIVES // ROADMAP                 -->
 <!-- ======================================================== -->
 
-<img src="./assets/header-contributions.svg" width="100%" alt="Section 06 - Code Trail Contribution Matrix" />
+<img src="./assets/header-roadmap.svg" width="100%" alt="Section 06 - 2026 Mission Directives // Roadmap" />
 
-<br/><br/>
+</div>
 
-<img src="./assets/contribution-grid.svg" width="100%" alt="Tactical Armor-Tile 52-Week Contribution Matrix" />
+<br/>
 
-<br/><br/>
+<p><em>Operative milestones scheduled across the 2026 tactical deployment roadmap:</em></p>
+
+- [x] 🚀 **Initialize Ronin Telemetry HUD**: Deploy interactive mainframe profile &amp; real-time analytics.
+- [ ] 🧠 **2,000+ Algorithmic Directives**: Solve 2,000+ DSA problems across LeetCode, CodeWars, and GeeksforGeeks.
+- [ ] 🏆 **5 Elite Hackathons**: Compete and architect high-impact solutions in national &amp; global hackathons.
+- [ ] 🚀 **10 Production-Grade Systems**: Ship 10 resilient, scalable full-stack applications with CI/CD.
+- [ ] 📈 **1,000 Sustained Contributions**: Maintain consistent open-source engineering cadence and commits.
+- [ ] 🤖 **Deploy End-to-End AI SaaS**: Architect and launch a multi-tenant applied AI product solving real problems.
+
+<br/>
+
+<div align="center">
+
+<br/>
 
 <!-- ======================================================== -->
 <!-- KATANA DIVIDER 06                                        -->
@@ -320,54 +304,76 @@ PRIMARY STACK   :: TYPESCRIPT // PYTHON // REACT // NODE.JS // DOCKER
 <br/><br/>
 
 <!-- ======================================================== -->
-<!-- 07 // RECORDS OF MASTERY                                 -->
+<!-- 07 // TROPHY ROOM // SAMURAI ACCOLADES                   -->
 <!-- ======================================================== -->
 
-<img src="./assets/header-certificates.svg" width="100%" alt="Section 07 - Records of Mastery Verified Credentials" />
+<img src="./assets/header-trophy-room.svg" width="100%" alt="Section 07 - Trophy Room // Samurai Accolades" />
 
 <br/><br/>
 
-<img src="./assets/certificate-frame.svg" width="100%" alt="Verified Capabilities &amp; System Architecture Certification Slots" />
-
-</div>
-
-| Protocol | Discipline | Verification Node |
-| :--- | :--- | :--- |
-| `CERT-FS-2026` | Full-Stack Software Engineering | Systems Architecture & High-Scale Applications |
-| `CERT-AI-889` | AI & Machine Learning Specialization | LLM Systems, Neural Networks & Agentic Automation |
-| `CERT-OPS-410` | Cloud Infrastructure & DevOps | Docker Containers, Linux Kernels & CI/CD Pipelines |
+<img src="./assets/samurai-trophy-room.svg" width="100%" alt="Samurai Trophy Accolades - Stars, Commits, Followers, Repos, Issues, PRs, Reviews, Experience" />
 
 <br/><br/>
 
-<div align="center">
-
-<!-- ======================================================== -->
-<!-- 08 // BATTLE RECORDS                                     -->
-<!-- ======================================================== -->
-
-<img src="./assets/header-achievements.svg" width="100%" alt="Section 08 - Battle Records Operational Milestones" />
+<a href="https://github.com/codexanjan" target="_blank">
+  <img src="https://github-profile-trophy.vercel.app/?username=codexanjan&amp;theme=radical&amp;no-frame=true&amp;no-bg=true&amp;margin_w=6&amp;column=8" width="100%" alt="GitHub Profile Trophies Live" />
+</a>
 
 <br/><br/>
-
-<img src="./assets/achievement-frame.svg" width="100%" alt="Tactical Honors, Rapid Prototyping &amp; Hackathon Insignias" />
-
-</div>
-
-| Operational Milestone | Classification | Impact |
-| :--- | :--- | :--- |
-| `BATTLE-01` | Tactical Hackathons | Engineered and deployed complex full-stack solutions within high-pressure 48-hour sprint windows |
-| `BATTLE-02` | Open-Source Engineering | Authored reusable developer tools, AST parsers, and interactive visualization engines |
-| `BATTLE-03` | Systems & UX Craft | Designed zero-latency frontends and resilient event-driven microservices architectures |
-
-<br/><br/>
-
-<div align="center">
 
 <!-- ======================================================== -->
 <!-- KATANA DIVIDER 07                                        -->
 <!-- ======================================================== -->
 
 <img src="./assets/katana-divider.svg" width="100%" alt="Katana Blade Divider" />
+
+<br/><br/>
+
+<!-- ======================================================== -->
+<!-- 08 // RONIN TELEMETRY // MAINFRAME METRICS               -->
+<!-- ======================================================== -->
+
+<img src="./assets/header-telemetry.svg" width="100%" alt="Section 08 - Ronin Telemetry // Mainframe Metrics" />
+
+</div>
+
+<br/>
+
+<p align="left"><em>Telemetry and code activity monitored through GitHub's analytical services:</em></p>
+
+<div align="center">
+
+<br/>
+
+<img src="./assets/streak-telemetry-banner.svg" alt="Total Contributions: 88 | Current Streak: Active" />
+
+<br/><br/>
+
+<img src="./assets/samurai-telemetry-grid.svg" width="100%" alt="Ronin Telemetry Grid - Metrics, Streak, and Top Languages" />
+
+<br/><br/>
+
+<img src="./assets/typescript-flame-pill.svg" alt="TypeScript Flame" />
+
+<br/><br/>
+
+<p align="center">
+  <a href="https://github.com/codexanjan" target="_blank">
+    <img src="https://github-readme-stats.vercel.app/api?username=codexanjan&amp;show_icons=true&amp;theme=tokyonight&amp;hide_border=true&amp;bg_color=0C0E14&amp;title_color=FF3038&amp;icon_color=55E6FF&amp;text_color=F4F4F2" alt="Anjan Shetty GitHub Stats Live" />
+  </a>
+  &nbsp;&nbsp;
+  <a href="https://github.com/codexanjan" target="_blank">
+    <img src="https://github-readme-streak-stats.herokuapp.com/?user=codexanjan&amp;theme=tokyonight&amp;hide_border=true&amp;background=0C0E14&amp;ring=FF3038&amp;fire=FF3038&amp;currStreakLabel=FF3038" alt="Anjan Shetty GitHub Streak Stats Live" />
+  </a>
+</p>
+
+<br/><br/>
+
+<!-- ======================================================== -->
+<!-- KATANA DIVIDER 08                                        -->
+<!-- ======================================================== -->
+
+<img src="./assets/katana-divider-reverse.svg" width="100%" alt="Katana Blade Divider" />
 
 <br/><br/>
 

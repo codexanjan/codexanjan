@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 36" width="240" height="36">
+  <defs>
+    <filter id="tsGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="2" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+  <text x="120" y="24" text-anchor="middle" font-family="'Orbitron', 'Courier New', monospace" font-size="16" font-weight="800" fill="#FFA500" letter-spacing="1.5" filter="url(#tsGlow)">
+    TypeScript 🔥
+  </text>
+</svg>

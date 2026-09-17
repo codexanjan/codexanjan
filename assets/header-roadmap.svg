@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 85" width="100%" height="100%" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <linearGradient id="hBgRoadmap" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0E1218" />
+      <stop offset="50%" stop-color="#080A0D" />
+      <stop offset="100%" stop-color="#050608" />
+    </linearGradient>
+    <linearGradient id="hSlashRoadmap" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#8C111B" />
+      <stop offset="40%" stop-color="#FF3038" />
+      <stop offset="70%" stop-color="#FFF" />
+      <stop offset="100%" stop-color="#FF3038" />
+    </linearGradient>
+    <style>
+      @keyframes slashMotionRoadmap {
+        0% { stroke-dashoffset: 900; }
+        50% { stroke-dashoffset: 0; }
+        100% { stroke-dashoffset: -900; }
+      }
+      .slash-line-roadmap {
+        stroke-dasharray: 250 650;
+        animation: slashMotionRoadmap 4.5s linear infinite;
+      }
+    </style>
+  </defs>
+
+  <rect width="900" height="85" rx="4" fill="url(#hBgRoadmap)" />
+  <rect width="900" height="85" rx="4" fill="none" stroke="#171B21" stroke-width="1" />
+
+  <g transform="translate(20, 20)">
+    <rect x="0" y="0" width="70" height="30" rx="3" fill="#141820" stroke="#FF3038" stroke-width="1.2" />
+    <path d="M 0 0 L 8 0 L 0 8 Z" fill="#FF3038" />
+    <text x="35" y="20" text-anchor="middle" font-family="'Courier New', Consolas, monospace" font-size="16" font-weight="900" fill="#FF3038">06</text>
+  </g>
+
+  <g transform="translate(105, 30)">
+    <text x="0" y="0" font-family="'Courier New', Consolas, monospace" font-size="11" font-weight="700" fill="#787F89" letter-spacing="2">OPERATIVE MILESTONES // TACTICAL DEPLOYMENT</text>
+    <text x="0" y="24" font-family="system-ui, -apple-system, sans-serif" font-size="22" font-weight="900" fill="#F4F4F2" letter-spacing="3">2026 MISSION DIRECTIVES // ROADMAP</text>
+  </g>
+
+  <line x1="0" y1="84" x2="900" y2="84" stroke="url(#hSlashRoadmap)" stroke-width="2" class="slash-line-roadmap" />
+</svg>
