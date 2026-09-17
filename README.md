@@ -212,6 +212,10 @@
 
 <br/><br/>
 
+<img src="./assets/shadow-contribution-grid.svg" width="100%" alt="Shadow Fight 52-Week Contribution Matrix" />
+
+<br/><br/>
+
 <img src="./assets/samurai-snake-contribution.svg" width="100%" alt="Ronin Grid Snake Contribution Matrix" />
 
 <br/><br/>
@@ -303,9 +307,7 @@
 
 <br/><br/>
 
-<a href="https://github.com/codexanjan">
-  <img src="https://readme-typing-svg.demolab.com?font=Orbitron&amp;size=16&amp;pause=800&amp;color=FACC15&amp;center=true&amp;vCenter=true&amp;width=550&amp;lines=JavaScript+⚡;TypeScript+🔥;Python+🐍;Java+☕;C%2B%2B+🛡️;React+%26+Next.js+⚛️;Node.js+%26+Express+🚀;SQL+%26+MongoDB+🗄️" alt="Tech Stack Orbiting Dynamics" />
-</a>
+<img src="./assets/tech-stack-orbit.svg" width="100%" alt="Tech Stack Orbiting Dynamics - Orbital Harmonics Matrix" />
 
 <br/><br/>
 

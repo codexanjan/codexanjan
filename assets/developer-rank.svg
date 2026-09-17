@@ -180,23 +180,49 @@
   </g>
 
   <!-- ======================================================== -->
-  <!-- TOPOLOGY RADAR GRAPH CENTER (450, 240)                   -->
+  <!-- CONNECTING CIRCUIT TRACES (Radar Vertices to Tactical Pods) -->
+  <!-- ======================================================== -->
+  <g>
+    <!-- 01: Top (Vertex 450,115 to Pod 450,86) -->
+    <line x1="450" y1="115" x2="450" y2="86" stroke="#FF3038" stroke-width="1.5" stroke-dasharray="3 3" />
+    <circle cx="450" cy="86" r="3" fill="#FF3038" />
+
+    <!-- 02: Top-Right (Vertex 555,179 to Pod 670,160) -->
+    <polyline points="555,179 610,160 670,160" fill="none" stroke="#55E6FF" stroke-width="1.5" stroke-dasharray="4 3" />
+    <circle cx="670" cy="160" r="3" fill="#55E6FF" />
+
+    <!-- 03: Bottom-Right (Vertex 553,300 to Pod 670,320) -->
+    <polyline points="553,300 610,320 670,320" fill="none" stroke="#A8ADB7" stroke-width="1.5" stroke-dasharray="4 3" />
+    <circle cx="670" cy="320" r="3" fill="#A8ADB7" />
+
+    <!-- 04: Bottom (Vertex 450,363 to Pod 450,394) -->
+    <line x1="450" y1="363" x2="450" y2="394" stroke="#FF3038" stroke-width="1.5" stroke-dasharray="3 3" />
+    <circle cx="450" cy="394" r="3" fill="#FF3038" />
+
+    <!-- 05: Bottom-Left (Vertex 349,298 to Pod 230,320) -->
+    <polyline points="349,298 290,320 230,320" fill="none" stroke="#A8ADB7" stroke-width="1.5" stroke-dasharray="4 3" />
+    <circle cx="230" cy="320" r="3" fill="#A8ADB7" />
+
+    <!-- 06: Top-Left (Vertex 352,183 to Pod 230,160) -->
+    <polyline points="352,183 290,160 230,160" fill="none" stroke="#55E6FF" stroke-width="1.5" stroke-dasharray="4 3" />
+    <circle cx="230" cy="160" r="3" fill="#55E6FF" />
+  </g>
+
+  <!-- ======================================================== -->
+  <!-- TOPOLOGY RADAR GRAPH CENTER (450, 240) - MINIMAL & CRISP -->
   <!-- ======================================================== -->
   <g transform="translate(450, 240)">
-    <!-- Radial Center Glow -->
-    <circle cx="0" cy="0" r="160" fill="url(#topCenterAura)" />
+    <!-- Ambient Center Radiant Glow -->
+    <circle cx="0" cy="0" r="140" fill="url(#topCenterAura)" />
 
-    <!-- Outer Concentric Hexagon (r=130) -->
-    <polygon points="0,-130 112,-65 112,65 0,130 -112,65 -112,-65" fill="#0E121A" fill-opacity="0.3" stroke="#222834" stroke-width="1.5" />
-    <!-- Level 4 Hexagon (r=100) -->
-    <polygon points="0,-100 86,-50 86,50 0,100 -86,50 -86,-50" fill="none" stroke="#1C2330" stroke-width="1" stroke-dasharray="4 4" />
-    <!-- Level 3 Hexagon (r=70) -->
-    <polygon points="0,-70 60,-35 60,35 0,70 -60,35 -60,-35" fill="none" stroke="#171C26" stroke-width="1" />
-    <!-- Level 2 Hexagon (r=40) -->
-    <polygon points="0,-40 34,-20 34,20 0,40 -34,20 -34,-20" fill="none" stroke="#141822" stroke-width="1" />
+    <!-- Minimal Concentric Hexagons -->
+    <!-- Outer Hexagon (r=130, 100% capacity) -->
+    <polygon points="0,-130 112,-65 112,65 0,130 -112,65 -112,-65" fill="#0C0F15" fill-opacity="0.25" stroke="#1D2432" stroke-width="1.2" />
+    <!-- Mid Hexagon (r=65, 50% capacity) -->
+    <polygon points="0,-65 56,-32.5 56,32.5 0,65 -56,32.5 -56,-32.5" fill="none" stroke="#161C27" stroke-width="1" stroke-dasharray="3 4" />
 
     <!-- 6 Hexagonal Radial Axes -->
-    <g stroke="#262E3B" stroke-width="1.2">
+    <g stroke="#1F2736" stroke-width="1.2">
       <line x1="0" y1="0" x2="0" y2="-130" />
       <line x1="0" y1="0" x2="112" y2="-65" />
       <line x1="0" y1="0" x2="112" y2="65" />
@@ -205,7 +231,7 @@
       <line x1="0" y1="0" x2="-112" y2="-65" />
     </g>
 
-    <!-- Animated Laser Traveling Pulses on Axes -->
+    <!-- Traveling Laser Pulses along Axes -->
     <g stroke="#FF3038" stroke-width="2" class="laser-axis">
       <line x1="0" y1="0" x2="0" y2="-130" />
       <line x1="0" y1="0" x2="112" y2="-65" />
@@ -216,49 +242,32 @@
     </g>
 
     <!-- Active High-Discipline Polygon Web (96%, 94%, 92%, 95%, 90%, 88%) -->
-    <!-- Vertices:
-         Top (0): -130 * 0.96 = -125
-         TR (60): (112*0.94, -65*0.94) = (105, -61)
-         BR (120): (112*0.92, 65*0.92) = (103, 60)
-         Bot (180): (0, 130*0.95) = (0, 123)
-         BL (240): (-112*0.90, 65*0.90) = (-101, 58)
-         TL (300): (-112*0.88, -65*0.88) = (-98, -57)
-    -->
     <polygon points="0,-125 105,-61 103,60 0,123 -101,58 -98,-57" 
-             fill="#FF3038" fill-opacity="0.22" stroke="#FF3038" stroke-width="2.5" class="active-web-poly" filter="url(#topRedGlow)" />
+             fill="#FF3038" fill-opacity="0.18" stroke="#FF3038" stroke-width="2.2" class="active-web-poly" filter="url(#topRedGlow)" />
     
-    <!-- Secondary Cyan Precision Guard Wireframe -->
+    <!-- Secondary Precision Wireframe -->
     <polygon points="0,-125 105,-61 103,60 0,123 -101,58 -98,-57" 
-             fill="none" stroke="#FFF" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" opacity="0.85" />
+             fill="none" stroke="#FFFFFF" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" opacity="0.8" />
 
-    <!-- Rotating Cyber-Radar Sweep Beam -->
+    <!-- Minimal Radar Sweep Beam -->
     <g class="radar-sweep-blade">
-      <line x1="0" y1="0" x2="0" y2="-132" stroke="#FF3038" stroke-width="2" filter="url(#topRedGlow)" />
-      <path d="M 0 0 L 0 -132 A 132 132 0 0 1 52 -121 Z" fill="url(#topRadarSweep)" />
+      <line x1="0" y1="0" x2="0" y2="-130" stroke="#FF3038" stroke-width="1.5" opacity="0.8" />
+      <path d="M 0 0 L 0 -130 A 130 130 0 0 1 45 -122 Z" fill="url(#topRadarSweep)" />
     </g>
 
-    <!-- Rotating Samurai Crest Runic Ring -->
-    <g class="mon-ring-rotate">
-      <circle cx="0" cy="0" r="38" fill="none" stroke="#2A3342" stroke-width="1.2" stroke-dasharray="4 6" />
-      <circle cx="0" cy="0" r="30" fill="none" stroke="#FF3038" stroke-width="1" stroke-dasharray="8 12" />
-    </g>
+    <!-- Center Samurai Crest Minimal Mon -->
+    <circle cx="0" cy="0" r="22" fill="#0A0D12" stroke="#FF3038" stroke-width="2" />
+    <polygon points="0,-9 7,-3 8,5 0,10 -8,5 -7,-3" fill="#141822" stroke="#FFF" stroke-width="1.2" />
+    <path d="M -3 -3 L 0 2 L 3 -3" fill="none" stroke="#FF3038" stroke-width="1.5" />
+    <circle cx="0" cy="4" r="1.5" fill="#55E6FF" />
 
-    <!-- Central Samurai Mon Center Shield -->
-    <circle cx="0" cy="0" r="24" fill="#0A0D12" stroke="#FF3038" stroke-width="2" filter="url(#topRedGlow)" />
-    <!-- Samurai Kabuto / Crest Mon Geometric Geometry -->
-    <polygon points="0,-10 8,-3 10,6 0,12 -10,6 -8,-3" fill="#141822" stroke="#FFF" stroke-width="1.2" />
-    <path d="M -4 -4 L 0 2 L 4 -4" fill="none" stroke="#FF3038" stroke-width="1.5" />
-    <circle cx="0" cy="5" r="1.5" fill="#55E6FF" />
-
-    <!-- ======================================================== -->
-    <!-- 6 MASTERY NODES (Pulsing vertex points)                  -->
-    <!-- ======================================================== -->
-    <circle cx="0" cy="-125" r="5" fill="#FFF" stroke="#FF3038" stroke-width="2" class="node-pulse-white" />
-    <circle cx="105" cy="-61" r="5" fill="#FFF" stroke="#FF3038" stroke-width="2" class="node-pulse-white" />
-    <circle cx="103" cy="60" r="5" fill="#FFF" stroke="#FF3038" stroke-width="2" class="node-pulse-white" />
-    <circle cx="0" cy="123" r="5" fill="#FFF" stroke="#FF3038" stroke-width="2" class="node-pulse-white" />
-    <circle cx="-101" cy="58" r="5" fill="#FFF" stroke="#FF3038" stroke-width="2" class="node-pulse-white" />
-    <circle cx="-98" cy="-57" r="5" fill="#FFF" stroke="#FF3038" stroke-width="2" class="node-pulse-white" />
+    <!-- 6 Vertex Mastery Nodes -->
+    <circle cx="0" cy="-125" r="4.5" fill="#FFF" stroke="#FF3038" stroke-width="2" class="node-pulse-white" />
+    <circle cx="105" cy="-61" r="4.5" fill="#FFF" stroke="#FF3038" stroke-width="2" class="node-pulse-white" />
+    <circle cx="103" cy="60" r="4.5" fill="#FFF" stroke="#FF3038" stroke-width="2" class="node-pulse-white" />
+    <circle cx="0" cy="123" r="4.5" fill="#FFF" stroke="#FF3038" stroke-width="2" class="node-pulse-white" />
+    <circle cx="-101" cy="58" r="4.5" fill="#FFF" stroke="#FF3038" stroke-width="2" class="node-pulse-white" />
+    <circle cx="-98" cy="-57" r="4.5" fill="#FFF" stroke="#FF3038" stroke-width="2" class="node-pulse-white" />
   </g>
 
   <!-- ======================================================== -->
