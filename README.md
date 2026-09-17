@@ -95,34 +95,41 @@ PRIMARY STACK   :: TYPESCRIPT // PYTHON // REACT // NODE.JS // DOCKER
 
 <img src="./assets/header-arsenal.svg" width="100%" alt="Section 02 - Developer Arsenal Weapons of Code" />
 
-<br/><br/>
+</div>
 
-<!-- Twin Blade Showcase: The Daisho Armory HUD -->
-<img src="./assets/katana-armory.svg" width="100%" alt="Ronin Daisho Armory - Twin Katana Blades: Full-Stack Muramasa &amp; AI Masamune" />
+<p align="left"><em>A curated inventory of the languages, frameworks, and tools deployed across missions:</em></p>
 
-<br/><br/>
+### Languages
 
-<img src="./assets/arsenal-languages.svg" width="100%" alt="Weapon Rack 01 - Core Languages: TypeScript, JavaScript, Python, Java, C, C++, Bash" />
+<p align="left">
+  <img src="./assets/arsenal-languages.svg" alt="Languages: JavaScript, TypeScript, Python, Java, C, C++, Bash" />
+</p>
 
-<br/><br/>
+### Frameworks & Libraries
 
-<img src="./assets/arsenal-frontend.svg" width="100%" alt="Weapon Rack 02 - Frontend Blades: React, Next.js, HTML5, CSS3, Tailwind CSS, Vite" />
+<p align="left">
+  <img src="./assets/arsenal-frameworks.svg" alt="Frameworks & Libraries: React, Next.js, HTML5, CSS3, Tailwind CSS, Vite" />
+</p>
 
-<br/><br/>
+### Backend & APIs
 
-<img src="./assets/arsenal-backend.svg" width="100%" alt="Weapon Rack 03 - Backend Engines: Node.js, Express, FastAPI, REST APIs" />
+<p align="left">
+  <img src="./assets/arsenal-backend.svg" alt="Backend & APIs: Node.js, Express, FastAPI, REST APIs" />
+</p>
 
-<br/><br/>
+### Databases, Cloud & DevOps
 
-<img src="./assets/arsenal-database.svg" width="100%" alt="Weapon Rack 04 - Data Vaults: PostgreSQL, MySQL, MongoDB, Redis" />
+<p align="left">
+  <img src="./assets/arsenal-databases.svg" alt="Databases, Cloud & DevOps: PostgreSQL, MySQL, MongoDB, Redis, Docker, GitHub Actions" />
+</p>
 
-<br/><br/>
+### Tools & Operations
 
-<img src="./assets/arsenal-devops.svg" width="100%" alt="Weapon Rack 05 - DevOps &amp; Infrastructure: Docker, GitHub Actions, Linux, Git" />
+<p align="left">
+  <img src="./assets/arsenal-tools.svg" alt="Tools & Operations: Git, GitHub, Linux, Postman" />
+</p>
 
-<br/><br/>
-
-<img src="./assets/arsenal-tools.svg" width="100%" alt="Weapon Rack 06 - Workbench &amp; Utilities: GitHub, Postman, VS Code" />
+<div align="center">
 
 <br/><br/>
 

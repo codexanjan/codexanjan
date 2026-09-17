@@ -82,18 +82,14 @@
   </g>
 
   <!-- ======================================================== -->
-  <!-- CENTER LOWER: NAME & ROLE (NO CLUTTER)                   -->
+  <!-- CENTER LOWER: NAME (CLEAN & BOLD)                        -->
   <!-- ======================================================== -->
-  <g transform="translate(450, 560)" text-anchor="middle">
+  <g transform="translate(450, 600)" text-anchor="middle">
     <!-- Full Name -->
-    <text x="0" y="45" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="76" font-weight="900" fill="url(#mTextGradClean)" letter-spacing="4">ANJAN SHETTY</text>
+    <text x="0" y="45" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="80" font-weight="900" fill="url(#mTextGradClean)" letter-spacing="5">ANJAN SHETTY</text>
 
     <!-- Glowing Katana Cut Under Name -->
-    <line x1="-320" y1="75" x2="320" y2="75" stroke="#222832" stroke-width="2.5" />
-    <line x1="-200" y1="75" x2="200" y2="75" stroke="#FF3038" stroke-width="4" filter="url(#mGlowClean)" />
-
-    <!-- Role Titles -->
-    <text x="0" y="130" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="28" font-weight="800" fill="#F4F4F2" letter-spacing="4">FULL-STACK DEVELOPER</text>
-    <text x="0" y="172" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="25" font-weight="800" fill="#55E6FF" letter-spacing="4">AI / ML ENGINEER</text>
+    <line x1="-320" y1="80" x2="320" y2="80" stroke="#222832" stroke-width="2.5" />
+    <line x1="-200" y1="80" x2="200" y2="80" stroke="#FF3038" stroke-width="4" filter="url(#mGlowClean)" />
   </g>
 </svg>
