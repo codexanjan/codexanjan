@@ -125,30 +125,6 @@
 
 <img src="./assets/header-project-database.svg" width="100%" alt="Section 03 - Project Database // Ronin Archives" />
 
-<br/><br/>
-
-<a href="https://github.com/codexanjan/URLForge" target="_blank">
-  <img src="./assets/mission-urlforge.svg" width="100%" alt="Mission 01 // URLForge - Link Forge &amp; Analytics Engine" />
-</a>
-
-<br/><br/>
-
-<a href="https://github.com/codexanjan/PeriodicPortal" target="_blank">
-  <img src="./assets/mission-periodicportal.svg" width="100%" alt="Mission 02 // PeriodicPortal - 3D Interactive Chemistry Hub" />
-</a>
-
-<br/><br/>
-
-<a href="https://github.com/codexanjan/MarkdownStudio" target="_blank">
-  <img src="./assets/mission-markdownstudio.svg" width="100%" alt="Mission 03 // MarkdownStudio - Live Browser Editor" />
-</a>
-
-<br/><br/>
-
-<a href="https://github.com/codexanjan/SmartCalendar" target="_blank">
-  <img src="./assets/mission-smartcalendar.svg" width="100%" alt="Mission 04 // SmartCalendar - Productivity &amp; Schedule Hub" />
-</a>
-
 </div>
 
 <br/>
@@ -217,12 +193,6 @@
 <br/><br/>
 
 <img src="./assets/commit-radar-active.svg" width="100%" alt="Anjan Shetty Contribution Graph - Real-time Commits and Code Cadence" />
-
-<br/><br/>
-
-<a href="https://github.com/codexanjan" target="_blank">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=codexanjan&amp;theme=react-dark&amp;color=FF3038&amp;line=FF3038&amp;point=FFFFFF&amp;area=true&amp;hide_border=true&amp;bg_color=0C0E14" width="100%" alt="Anjan Shetty Live Contribution Graph Fallback" />
-</a>
 
 <br/><br/>
 
@@ -428,22 +398,6 @@
 <br/><br/>
 
 <img src="./assets/terminal-contact.svg" width="100%" alt="Ronin Command Terminal Contact Interface" />
-
-<br/><br/>
-
-<p align="center">
-  <a href="https://github.com/codexanjan" target="_blank">
-    <code>[ GITHUB // @codexanjan ]</code>
-  </a>
-  &nbsp;&nbsp;•&nbsp;&nbsp;
-  <a href="https://www.linkedin.com/in/anjan-shetty-67340026a/" target="_blank">
-    <code>[ LINKEDIN // ANJAN SHETTY ]</code>
-  </a>
-  &nbsp;&nbsp;•&nbsp;&nbsp;
-  <a href="mailto:anjanshetty.co@gmail.com">
-    <code>[ SECURE TRANSMISSION // EMAIL ]</code>
-  </a>
-</p>
 
 <br/><br/>
 
