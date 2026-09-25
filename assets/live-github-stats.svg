@@ -69,7 +69,7 @@
     <g transform="translate(0, 0)">
       <polygon points="6,1 8,5 12,6 9,9 10,13 6,11 2,13 3,9 0,6 4,5" fill="#FACC15" />
       <text x="24" y="11" fill="#C5CAD4">Total Stars Earned:</text>
-      <text x="210" y="11" font-weight="800" fill="#F4F4F2">184</text>
+      <text x="210" y="11" font-weight="800" fill="#F4F4F2">185</text>
     </g>
 
     <!-- Item 2: Commits -->
