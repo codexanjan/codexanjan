@@ -114,7 +114,7 @@
     <polygon points="0,0 8,0 4,8" fill="#FF4500" />
     <text x="14" y="6" font-size="11.5" font-weight="900" fill="#FF4500" letter-spacing="2">影の戦い // SHADOW FIGHT CONTRIBUTION MATRIX</text>
     <circle cx="530" cy="2" r="3.5" fill="#42FF9E" />
-    <text x="542" y="6" font-size="9.5" font-weight="800" fill="#FFD54F" letter-spacing="1.5">173 LETHAL COMMITS // COMBAT CADENCE</text>
+    <text x="542" y="6" font-size="9.5" font-weight="800" fill="#FFD54F" letter-spacing="1.5">185 LETHAL COMMITS // COMBAT CADENCE</text>
     <line x1="0" y1="16" x2="810" y2="16" stroke="#161C26" stroke-width="1.2" />
   </g>
 

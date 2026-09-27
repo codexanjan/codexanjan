@@ -102,12 +102,12 @@
       <g transform="translate(0, 0)">
         <text x="0" y="0" fill="#FFD700">★</text>
         <text x="18" y="0" fill="#A8ADB7">Total Stars Earned:</text>
-        <text x="210" y="0" font-weight="900" fill="#F4F4F2">73</text>
+        <text x="210" y="0" font-weight="900" fill="#FFD700">185</text>
       </g>
       <g transform="translate(0, 24)">
         <text x="0" y="0" fill="#55E6FF">⏱</text>
         <text x="18" y="0" fill="#A8ADB7">Total Commits (2026):</text>
-        <text x="210" y="0" font-weight="900" fill="#F4F4F2">82</text>
+        <text x="210" y="0" font-weight="900" fill="#F4F4F2">185</text>
       </g>
       <g transform="translate(0, 48)">
         <text x="0" y="0" fill="#42FF9E">⑂</text>
@@ -122,15 +122,15 @@
       <g transform="translate(0, 96)">
         <text x="0" y="0" fill="#FFB703">▱</text>
         <text x="18" y="0" fill="#A8ADB7">Contributed to (yr):</text>
-        <text x="210" y="0" font-weight="900" fill="#F4F4F2">27</text>
+        <text x="210" y="0" font-weight="900" fill="#F4F4F2">16</text>
       </g>
     </g>
 
-    <!-- Rank Circle Badge B- (Exact coordinate lock) -->
+    <!-- Rank Circle Badge S+ (Exact coordinate lock) -->
     <g transform="translate(325, 95)">
       <circle cx="0" cy="0" r="42" fill="#10141D" stroke="#222834" stroke-width="2" />
-      <circle cx="0" cy="0" r="36" fill="none" stroke="#FF3038" stroke-width="3.5" stroke-dasharray="160 60" stroke-linecap="round" filter="url(#tgRedGlow)" class="rank-ring-dash" />
-      <text x="0" y="8" text-anchor="middle" font-family="'Orbitron', sans-serif" font-size="22" font-weight="900" fill="#FFF">B-</text>
+      <circle cx="0" cy="0" r="36" fill="none" stroke="#FFD700" stroke-width="3.5" stroke-dasharray="190 30" stroke-linecap="round" filter="url(#tgRedGlow)" class="rank-ring-dash" />
+      <text x="0" y="8" text-anchor="middle" font-family="'Orbitron', sans-serif" font-size="22" font-weight="900" fill="#FFD700">S+</text>
       <text x="0" y="24" text-anchor="middle" font-family="'Courier New', monospace" font-size="8.5" fill="#A8ADB7" letter-spacing="1">RANK</text>
     </g>
   </g>
@@ -147,7 +147,7 @@
 
     <!-- Total Contributions -->
     <g transform="translate(70, 95)" text-anchor="middle">
-      <text x="0" y="0" font-family="'Orbitron', sans-serif" font-size="28" font-weight="900" fill="#F4F4F2">88</text>
+      <text x="0" y="0" font-family="'Orbitron', sans-serif" font-size="28" font-weight="900" fill="#F4F4F2">185</text>
       <text x="0" y="20" font-family="'Courier New', monospace" font-size="10" font-weight="700" fill="#A8ADB7">Total Contributions</text>
       <text x="0" y="36" font-family="'Courier New', monospace" font-size="8.5" fill="#6A7280">Apr 20 - Present</text>
     </g>
@@ -156,16 +156,16 @@
     <g transform="translate(202, 95)" text-anchor="middle">
       <circle cx="0" cy="0" r="42" fill="#121620" stroke="#FF3038" stroke-width="2.5" class="flame-glow-pulse" />
       <path d="M 0 -22 C -6 -12 -12 -6 -12 4 C -12 11 -6 16 0 16 C 6 16 12 11 12 4 C 12 -6 6 -12 0 -22 Z" fill="#FF5722" opacity="0.35" />
-      <text x="0" y="6" font-family="'Orbitron', sans-serif" font-size="24" font-weight="900" fill="#FFF">3</text>
+      <text x="0" y="6" font-family="'Orbitron', sans-serif" font-size="24" font-weight="900" fill="#FFF">🔥</text>
       <text x="0" y="24" font-family="'Courier New', monospace" font-size="8.5" font-weight="800" fill="#FF3038" letter-spacing="1">CURRENT STREAK</text>
-      <text x="0" y="38" font-family="'Courier New', monospace" font-size="8" fill="#6A7280">Sep 4 - Sep 6</text>
+      <text x="0" y="38" font-family="'Courier New', monospace" font-size="8" fill="#42FF9E">ACTIVE</text>
     </g>
 
     <!-- Longest Streak -->
     <g transform="translate(334, 95)" text-anchor="middle">
-      <text x="0" y="0" font-family="'Orbitron', sans-serif" font-size="28" font-weight="900" fill="#F4F4F2">4</text>
+      <text x="0" y="0" font-family="'Orbitron', sans-serif" font-size="28" font-weight="900" fill="#F4F4F2">9</text>
       <text x="0" y="20" font-family="'Courier New', monospace" font-size="10" font-weight="700" fill="#A8ADB7">Longest Streak</text>
-      <text x="0" y="36" font-family="'Courier New', monospace" font-size="8.5" fill="#6A7280">Jun 6 - Jun 9</text>
+      <text x="0" y="36" font-family="'Courier New', monospace" font-size="8.5" fill="#6A7280">Sep 4 - Sep 12</text>
     </g>
   </g>
 
@@ -181,54 +181,46 @@
 
     <!-- Lang Bars -->
     <g transform="translate(20, 52)" font-family="'Courier New', Consolas, monospace" font-size="10.5">
-      <!-- JavaScript 38% -->
+      <!-- TypeScript 55% -->
       <g transform="translate(0, 0)">
+        <rect x="0" y="-8" width="8" height="8" rx="1.5" fill="#3178C6" />
+        <text x="14" y="0" fill="#C5CAD4">TypeScript</text>
+        <rect x="95" y="-7" width="90" height="6" rx="3" fill="#1C222E" />
+        <rect x="95" y="-7" width="50" height="6" rx="3" fill="#3178C6" />
+        <text x="195" y="0" font-weight="700" fill="#3178C6">55%</text>
+      </g>
+      <!-- JavaScript 30% -->
+      <g transform="translate(0, 24)">
         <rect x="0" y="-8" width="8" height="8" rx="1.5" fill="#FFD600" />
         <text x="14" y="0" fill="#C5CAD4">JavaScript</text>
         <rect x="95" y="-7" width="90" height="6" rx="3" fill="#1C222E" />
-        <rect x="95" y="-7" width="34" height="6" rx="3" fill="#FFD600" />
-        <text x="195" y="0" font-weight="700" fill="#FFD600">38%</text>
+        <rect x="95" y="-7" width="27" height="6" rx="3" fill="#FFD600" />
+        <text x="195" y="0" font-weight="700" fill="#FFD600">30%</text>
       </g>
-      <!-- Dart 26% -->
-      <g transform="translate(0, 22)">
-        <rect x="0" y="-8" width="8" height="8" rx="1.5" fill="#00B4AB" />
-        <text x="14" y="0" fill="#C5CAD4">Dart</text>
-        <rect x="95" y="-7" width="90" height="6" rx="3" fill="#1C222E" />
-        <rect x="95" y="-7" width="23" height="6" rx="3" fill="#00B4AB" />
-        <text x="195" y="0" font-weight="700" fill="#00B4AB">26%</text>
-      </g>
-      <!-- HTML 16% -->
-      <g transform="translate(0, 44)">
-        <rect x="0" y="-8" width="8" height="8" rx="1.5" fill="#E34F26" />
-        <text x="14" y="0" fill="#C5CAD4">HTML</text>
-        <rect x="95" y="-7" width="90" height="6" rx="3" fill="#1C222E" />
-        <rect x="95" y="-7" width="14" height="6" rx="3" fill="#E34F26" />
-        <text x="195" y="0" font-weight="700" fill="#E34F26">16%</text>
-      </g>
-      <!-- Kotlin 12% -->
-      <g transform="translate(0, 66)">
-        <rect x="0" y="-8" width="8" height="8" rx="1.5" fill="#7F52FF" />
-        <text x="14" y="0" fill="#C5CAD4">Kotlin</text>
-        <rect x="95" y="-7" width="90" height="6" rx="3" fill="#1C222E" />
-        <rect x="95" y="-7" width="11" height="6" rx="3" fill="#7F52FF" />
-        <text x="195" y="0" font-weight="700" fill="#7F52FF">12%</text>
-      </g>
-      <!-- Python 8% -->
-      <g transform="translate(0, 88)">
-        <rect x="0" y="-8" width="8" height="8" rx="1.5" fill="#3572A5" />
+      <!-- Python 10% -->
+      <g transform="translate(0, 48)">
+        <rect x="0" y="-8" width="8" height="8" rx="1.5" fill="#3776AB" />
         <text x="14" y="0" fill="#C5CAD4">Python</text>
         <rect x="95" y="-7" width="90" height="6" rx="3" fill="#1C222E" />
-        <rect x="95" y="-7" width="8" height="6" rx="3" fill="#3572A5" />
-        <text x="195" y="0" font-weight="700" fill="#3572A5">8%</text>
+        <rect x="95" y="-7" width="9" height="6" rx="3" fill="#3776AB" />
+        <text x="195" y="0" font-weight="700" fill="#3776AB">10%</text>
+      </g>
+      <!-- HTML / CSS 5% -->
+      <g transform="translate(0, 72)">
+        <rect x="0" y="-8" width="8" height="8" rx="1.5" fill="#E34F26" />
+        <text x="14" y="0" fill="#C5CAD4">HTML / CSS</text>
+        <rect x="95" y="-7" width="90" height="6" rx="3" fill="#1C222E" />
+        <rect x="95" y="-7" width="5" height="6" rx="3" fill="#E34F26" />
+        <text x="195" y="0" font-weight="700" fill="#E34F26">5%</text>
       </g>
     </g>
 
     <!-- Donut Meter Right -->
     <g transform="translate(325, 100)" class="donut-gold">
-      <circle cx="0" cy="0" r="42" fill="none" stroke="#FFD600" stroke-width="12" stroke-dasharray="100 164" />
-      <circle cx="0" cy="0" r="42" fill="none" stroke="#00B4AB" stroke-width="12" stroke-dasharray="68 196" stroke-dashoffset="-100" />
-      <circle cx="0" cy="0" r="42" fill="none" stroke="#E34F26" stroke-width="12" stroke-dasharray="42 222" stroke-dashoffset="-168" />
-      <circle cx="0" cy="0" r="42" fill="none" stroke="#7F52FF" stroke-width="12" stroke-dasharray="32 232" stroke-dashoffset="-210" />
+      <circle cx="0" cy="0" r="42" fill="none" stroke="#3178C6" stroke-width="12" stroke-dasharray="145 119" />
+      <circle cx="0" cy="0" r="42" fill="none" stroke="#FFD600" stroke-width="12" stroke-dasharray="79 185" stroke-dashoffset="-145" />
+      <circle cx="0" cy="0" r="42" fill="none" stroke="#3776AB" stroke-width="12" stroke-dasharray="26 238" stroke-dashoffset="-224" />
+      <circle cx="0" cy="0" r="42" fill="none" stroke="#E34F26" stroke-width="12" stroke-dasharray="14 250" stroke-dashoffset="-250" />
       <circle cx="0" cy="0" r="28" fill="#0A0D12" />
       <!-- Samurai Crest Symbol in Middle -->
       <polygon points="0,-10 6,-3 0,6 -6,-3" fill="#FF3038" />
@@ -247,54 +239,46 @@
 
     <!-- Lang Bars -->
     <g transform="translate(20, 52)" font-family="'Courier New', Consolas, monospace" font-size="10.5">
-      <!-- Python 44% -->
+      <!-- TypeScript 52% -->
       <g transform="translate(0, 0)">
-        <rect x="0" y="-8" width="8" height="8" rx="1.5" fill="#3572A5" />
-        <text x="14" y="0" fill="#C5CAD4">Python</text>
-        <rect x="95" y="-7" width="90" height="6" rx="3" fill="#1C222E" />
-        <rect x="95" y="-7" width="40" height="6" rx="3" fill="#3572A5" />
-        <text x="195" y="0" font-weight="700" fill="#3572A5">44%</text>
-      </g>
-      <!-- TypeScript 22% -->
-      <g transform="translate(0, 22)">
         <rect x="0" y="-8" width="8" height="8" rx="1.5" fill="#3178C6" />
         <text x="14" y="0" fill="#C5CAD4">TypeScript</text>
         <rect x="95" y="-7" width="90" height="6" rx="3" fill="#1C222E" />
-        <rect x="95" y="-7" width="20" height="6" rx="3" fill="#3178C6" />
-        <text x="195" y="0" font-weight="700" fill="#3178C6">22%</text>
+        <rect x="95" y="-7" width="47" height="6" rx="3" fill="#3178C6" />
+        <text x="195" y="0" font-weight="700" fill="#3178C6">52%</text>
       </g>
-      <!-- Dart 15% -->
-      <g transform="translate(0, 44)">
-        <rect x="0" y="-8" width="8" height="8" rx="1.5" fill="#00B4AB" />
-        <text x="14" y="0" fill="#C5CAD4">Dart</text>
-        <rect x="95" y="-7" width="90" height="6" rx="3" fill="#1C222E" />
-        <rect x="95" y="-7" width="14" height="6" rx="3" fill="#00B4AB" />
-        <text x="195" y="0" font-weight="700" fill="#00B4AB">15%</text>
-      </g>
-      <!-- JavaScript 11% -->
-      <g transform="translate(0, 66)">
+      <!-- JavaScript 28% -->
+      <g transform="translate(0, 24)">
         <rect x="0" y="-8" width="8" height="8" rx="1.5" fill="#FFD600" />
         <text x="14" y="0" fill="#C5CAD4">JavaScript</text>
         <rect x="95" y="-7" width="90" height="6" rx="3" fill="#1C222E" />
-        <rect x="95" y="-7" width="10" height="6" rx="3" fill="#FFD600" />
-        <text x="195" y="0" font-weight="700" fill="#FFD600">11%</text>
+        <rect x="95" y="-7" width="25" height="6" rx="3" fill="#FFD600" />
+        <text x="195" y="0" font-weight="700" fill="#FFD600">28%</text>
       </g>
-      <!-- HTML 8% -->
-      <g transform="translate(0, 88)">
+      <!-- Python 15% -->
+      <g transform="translate(0, 48)">
+        <rect x="0" y="-8" width="8" height="8" rx="1.5" fill="#3776AB" />
+        <text x="14" y="0" fill="#C5CAD4">Python</text>
+        <rect x="95" y="-7" width="90" height="6" rx="3" fill="#1C222E" />
+        <rect x="95" y="-7" width="14" height="6" rx="3" fill="#3776AB" />
+        <text x="195" y="0" font-weight="700" fill="#3776AB">15%</text>
+      </g>
+      <!-- HTML 5% -->
+      <g transform="translate(0, 72)">
         <rect x="0" y="-8" width="8" height="8" rx="1.5" fill="#E34F26" />
         <text x="14" y="0" fill="#C5CAD4">HTML</text>
         <rect x="95" y="-7" width="90" height="6" rx="3" fill="#1C222E" />
-        <rect x="95" y="-7" width="8" height="6" rx="3" fill="#E34F26" />
-        <text x="195" y="0" font-weight="700" fill="#E34F26">8%</text>
+        <rect x="95" y="-7" width="5" height="6" rx="3" fill="#E34F26" />
+        <text x="195" y="0" font-weight="700" fill="#E34F26">5%</text>
       </g>
     </g>
 
     <!-- Donut Meter Right -->
     <g transform="translate(325, 100)" class="donut-cyan">
-      <circle cx="0" cy="0" r="42" fill="none" stroke="#3572A5" stroke-width="12" stroke-dasharray="116 148" />
-      <circle cx="0" cy="0" r="42" fill="none" stroke="#3178C6" stroke-width="12" stroke-dasharray="58 206" stroke-dashoffset="-116" />
-      <circle cx="0" cy="0" r="42" fill="none" stroke="#00B4AB" stroke-width="12" stroke-dasharray="40 224" stroke-dashoffset="-174" />
-      <circle cx="0" cy="0" r="42" fill="none" stroke="#FFD600" stroke-width="12" stroke-dasharray="30 234" stroke-dashoffset="-214" />
+      <circle cx="0" cy="0" r="42" fill="none" stroke="#3178C6" stroke-width="12" stroke-dasharray="137 127" />
+      <circle cx="0" cy="0" r="42" fill="none" stroke="#FFD600" stroke-width="12" stroke-dasharray="74 190" stroke-dashoffset="-137" />
+      <circle cx="0" cy="0" r="42" fill="none" stroke="#3776AB" stroke-width="12" stroke-dasharray="40 224" stroke-dashoffset="-211" />
+      <circle cx="0" cy="0" r="42" fill="none" stroke="#E34F26" stroke-width="12" stroke-dasharray="13 251" stroke-dashoffset="-251" />
       <circle cx="0" cy="0" r="28" fill="#0A0D12" />
       <polygon points="0,-10 6,-3 0,6 -6,-3" fill="#55E6FF" />
     </g>

@@ -216,10 +216,6 @@
 
 <br/><br/>
 
-<img src="./assets/samurai-snake-contribution.svg" width="100%" alt="Ronin Grid Snake Contribution Matrix" />
-
-<br/><br/>
-
 <!-- ======================================================== -->
 <!-- KATANA DIVIDER 05                                        -->
 <!-- ======================================================== -->
@@ -298,16 +294,12 @@
 <br/>
 
 <a href="https://github.com/codexanjan">
-  <img src="https://readme-typing-svg.demolab.com?font=Orbitron&amp;weight=700&amp;size=19&amp;pause=1000&amp;color=FF3038&amp;center=true&amp;vCenter=true&amp;width=750&amp;lines=%E2%9A%A1+RONIN+TELEMETRY+MAINFRAME+%7C+LIVE+METRICS;%F0%9F%94%A5+TOTAL+CONTRIBUTIONS%3A+88+%7C+CURRENT+STREAK%3A+ACTIVE;%E2%9A%94%EF%B8%8F+COMMITS%3A+82+%7C+STARS%3A+73+%E2%AD%90+%7C+GRADE%3A+B-;%F0%9F%97%A1%EF%B8%8F+RONIN+CODE+ENGINE%3A+OPERATIONAL" alt="Ronin Telemetry Mainframe Live Metrics" />
+  <img src="https://readme-typing-svg.demolab.com?font=Orbitron&amp;weight=700&amp;size=19&amp;pause=1000&amp;color=FF3038&amp;center=true&amp;vCenter=true&amp;width=750&amp;lines=%E2%9A%A1+RONIN+TELEMETRY+MAINFRAME+%7C+LIVE+METRICS;%F0%9F%94%A5+TOTAL+CONTRIBUTIONS%3A+185+%7C+CURRENT+STREAK%3A+ACTIVE;%E2%9A%94%EF%B8%8F+COMMITS%3A+185+%7C+STARS%3A+185+%E2%AD%90+%7C+GRADE%3A+S%2B;%F0%9F%97%A1%EF%B8%8F+RONIN+CODE+ENGINE%3A+OPERATIONAL" alt="Ronin Telemetry Mainframe Live Metrics" />
 </a>
 
 <br/><br/>
 
 <img src="./assets/samurai-telemetry-grid.svg" width="100%" alt="Ronin Telemetry Grid - Metrics, Streak, and Top Languages" />
-
-<br/><br/>
-
-<img src="./assets/tech-stack-orbit.svg" width="100%" alt="Tech Stack Orbiting Dynamics - Orbital Harmonics Matrix" />
 
 <br/><br/>
 

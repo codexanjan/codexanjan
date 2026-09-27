@@ -93,6 +93,26 @@ jobs:
                       fs.writeFileSync(statsPath, c);
                       console.log("Updated " + statsPath);
                     }
+
+                    const telemetryPath = "assets/samurai-telemetry-grid.svg";
+                    if (fs.existsSync(telemetryPath)) {
+                      let c = fs.readFileSync(telemetryPath, "utf8");
+                      c = c.replace(/(Total Stars Earned:<\/text>\s*<text[^>]*>)\d+(<\/text>)/, `$1${stars}$2`);
+                      c = c.replace(/(Total Commits \(2026\):<\/text>\s*<text[^>]*>)\d+(<\/text>)/, `$1${commits}$2`);
+                      c = c.replace(/(Total PRs:<\/text>\s*<text[^>]*>)\d+(<\/text>)/, `$1${prs}$2`);
+                      c = c.replace(/(Total Issues:<\/text>\s*<text[^>]*>)\d+(<\/text>)/, `$1${issues}$2`);
+                      c = c.replace(/(Contributed to \(yr\):<\/text>\s*<text[^>]*>)\d+(<\/text>)/, `$1${contribs}$2`);
+                      fs.writeFileSync(telemetryPath, c);
+                      console.log("Updated " + telemetryPath);
+                    }
+
+                    const contribPath = "assets/contribution-grid.svg";
+                    if (fs.existsSync(contribPath)) {
+                      let c = fs.readFileSync(contribPath, "utf8");
+                      c = c.replace(/\d+( LETHAL COMMITS \/\/ COMBAT CADENCE)/, `${commits}$1`);
+                      fs.writeFileSync(contribPath, c);
+                      console.log("Updated " + contribPath);
+                    }
                   } else {
                     console.log("API response:", data);
                   }
