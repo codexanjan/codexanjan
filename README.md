@@ -27,7 +27,7 @@
 
 <p align="center">
   <a href="https://github.com/codexanjan">
-    <img src="https://img.shields.io/badge/LIVE%20VISITORS-14.8K+-FF3038?style=for-the-badge&amp;logo=target&amp;logoColor=white&amp;labelColor=0C0E14" alt="Live Profile Views" />
+    <img src="https://api.visitorbadge.io/api/visitors?path=codexanjan&amp;label=LIVE%20VISITORS&amp;labelColor=%230c0e14&amp;countColor=%23ff3038&amp;style=flat-square" alt="Live Profile Views" />
   </a>
   &nbsp;&nbsp;
   <a href="https://github.com/codexanjan">
