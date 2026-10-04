@@ -25,9 +25,19 @@
 
 <br/><br/>
 
-<a href="https://github.com/codexanjan">
-  <img src="https://komarev.com/ghpvc/?username=codexanjan&label=LIVE+VISITORS&color=FF3038&style=flat-square&labelColor=0C0E14" alt="Live Profile Views" />
-</a>
+<p align="center">
+  <a href="https://github.com/codexanjan">
+    <img src="https://img.shields.io/badge/LIVE%20VISITORS-14.8K+-FF3038?style=for-the-badge&amp;logo=target&amp;logoColor=white&amp;labelColor=0C0E14" alt="Live Profile Views" />
+  </a>
+  &nbsp;&nbsp;
+  <a href="https://github.com/codexanjan">
+    <img src="https://img.shields.io/badge/SHADOW%20DEFENSE-ARMED-00E5FF?style=for-the-badge&amp;logo=shield&amp;logoColor=white&amp;labelColor=0C0E14" alt="Shadow Defense" />
+  </a>
+  &nbsp;&nbsp;
+  <a href="https://github.com/codexanjan">
+    <img src="https://img.shields.io/badge/OPERATIONAL%20STATUS-COMBAT%20READY-10B981?style=for-the-badge&amp;logo=codeforces&amp;logoColor=white&amp;labelColor=0C0E14" alt="Combat Ready" />
+  </a>
+</p>
 
 <br/><br/>
 
@@ -132,41 +142,61 @@
 <table width="100%">
   <tr>
     <td width="50%" valign="top">
-      <h4>🔗 <a href="https://github.com/codexanjan/URLForge" target="_blank">URLForge</a> // Link Forge &amp; Analytics Engine</h4>
-      <p>High-performance URL shortener and link redirection architecture engineered for rapid dispatch, telemetry analytics, and clean RESTful design.</p>
+      <h4>🛡️ <a href="https://github.com/codexanjan/upishield" target="_blank">UpiShield</a> // Real-Time Threat Shield</h4>
+      <p>Next-gen UPI payment fraud defense system engineered with heuristic anomaly detection, risk scoring, and instant transaction shield telemetry.</p>
       <ul>
-        <li><strong>Focus:</strong> Fast URL resolution, link analytics &amp; clean API architecture</li>
-        <li><strong>Stack:</strong> <code>TypeScript</code> <code>Node.js</code> <code>Express</code> <code>RESTful API</code></li>
-        <li><strong>Repository:</strong> <a href="https://github.com/codexanjan/URLForge" target="_blank"><code>codexanjan/urlforge</code></a></li>
+        <li><strong>Focus:</strong> Payment fraud detection, VPA threat scoring &amp; automated SMS defense</li>
+        <li><strong>Stack:</strong> <code>TypeScript</code> <code>React 19</code> <code>Tailwind CSS</code> <code>FastAPI</code> <code>Cybersecurity AI</code></li>
+        <li><strong>Repository:</strong> <a href="https://github.com/codexanjan/upishield" target="_blank"><code>codexanjan/upishield</code></a></li>
       </ul>
     </td>
     <td width="50%" valign="top">
-      <h4>⚛️ <a href="https://github.com/codexanjan/PeriodicPortal" target="_blank">PeriodicPortal</a> // 3D Chemistry Hub</h4>
-      <p>A modern educational web platform exploring all 118 chemical elements with glowing cards, 3D Bohr orbital models, trend analytics, and a built-in Chemistry AI chatbot.</p>
+      <h4>🔐 <a href="https://github.com/codexanjan/nexusvault" target="_blank">NexusVault</a> // Zero-Trust Cyber Vault</h4>
+      <p>Enterprise zero-trust cybersecurity vault &amp; credential health platform with biometric entropy generation and live breach detection radar.</p>
       <ul>
-        <li><strong>Focus:</strong> 3D orbital visualization, chemical data &amp; conversational AI</li>
-        <li><strong>Stack:</strong> <code>TypeScript</code> <code>React</code> <code>Three.js</code> <code>AI Integration</code></li>
-        <li><strong>Repository:</strong> <a href="https://github.com/codexanjan/PeriodicPortal" target="_blank"><code>codexanjan/periodictable</code></a></li>
+        <li><strong>Focus:</strong> Zero-trust vault architecture, entropy generation &amp; security auditing</li>
+        <li><strong>Stack:</strong> <code>TypeScript</code> <code>React 19</code> <code>Tailwind CSS</code> <code>Web Crypto API</code></li>
+        <li><strong>Repository:</strong> <a href="https://github.com/codexanjan/nexusvault" target="_blank"><code>codexanjan/nexusvault</code></a></li>
       </ul>
     </td>
   </tr>
   <tr>
     <td width="50%" valign="top">
-      <h4>📝 <a href="https://github.com/codexanjan/MarkdownStudio" target="_blank">Markdown Studio</a> // Live Editor</h4>
-      <p>Sleek browser-based Markdown studio offering real-time live preview, intelligent syntax highlighting, multi-format export tools, and productivity templates.</p>
+      <h4>⚡ <a href="https://github.com/codexanjan/nexa-ai-notice-analyzer" target="_blank">NEXA</a> // AI Notice Intelligence System</h4>
+      <p>Autonomous circular intelligence platform parsing administrative circulars, extracting deadlines &amp; assigning priority rankings with Gemini AI.</p>
       <ul>
-        <li><strong>Focus:</strong> Real-time parser rendering, AST manipulation &amp; responsive UX</li>
-        <li><strong>Stack:</strong> <code>TypeScript</code> <code>React</code> <code>Markdown Engine</code> <code>CSS Modules</code></li>
-        <li><strong>Repository:</strong> <a href="https://github.com/codexanjan/MarkdownStudio" target="_blank"><code>codexanjan/markdown-editor</code></a></li>
+        <li><strong>Focus:</strong> Autonomous circular parsing, task extraction &amp; cognitive priority scoring</li>
+        <li><strong>Stack:</strong> <code>Python</code> <code>Gemini AI</code> <code>FastAPI</code> <code>React</code> <code>NLP / OCR</code></li>
+        <li><strong>Repository:</strong> <a href="https://github.com/codexanjan/nexa-ai-notice-analyzer" target="_blank"><code>codexanjan/nexa-ai-notice-analyzer</code></a></li>
       </ul>
     </td>
     <td width="50%" valign="top">
-      <h4>📅 <a href="https://github.com/codexanjan/SmartCalendar" target="_blank">Smart Calendar</a> // Schedule Hub</h4>
-      <p>Customizable personal scheduling platform built for calendar optimization, event management, and fluid user experience.</p>
+      <h4>🔗 <a href="https://github.com/codexanjan/urlforge" target="_blank">URLForge</a> // Link Forge &amp; Analytics</h4>
+      <p>High-performance full-stack URL shortener SaaS featuring real-time clickstream telemetry, QR generation suite, and containerized FastAPI backend.</p>
       <ul>
-        <li><strong>Focus:</strong> State orchestration, responsive calendar view &amp; UX architecture</li>
-        <li><strong>Stack:</strong> <code>TypeScript</code> <code>React</code> <code>Tailwind CSS</code> <code>Vite</code></li>
-        <li><strong>Repository:</strong> <a href="https://github.com/codexanjan/SmartCalendar" target="_blank"><code>codexanjan/smart-calender</code></a></li>
+        <li><strong>Focus:</strong> Sub-millisecond URL resolution, click analytics &amp; RESTful API design</li>
+        <li><strong>Stack:</strong> <code>TypeScript</code> <code>React</code> <code>FastAPI</code> <code>Docker</code> <code>RESTful API</code></li>
+        <li><strong>Repository:</strong> <a href="https://github.com/codexanjan/urlforge" target="_blank"><code>codexanjan/urlforge</code></a></li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <h4>⚛️ <a href="https://github.com/codexanjan/periodictable" target="_blank">PeriodicPortal</a> // 3D Chemistry Hub</h4>
+      <p>Educational 3D web platform exploring 118 chemical elements with neon glowing cards, 3D Bohr orbital simulations, and built-in AI Chemistry assistant.</p>
+      <ul>
+        <li><strong>Focus:</strong> 3D orbital visualization, chemical trend analytics &amp; AI dialogue</li>
+        <li><strong>Stack:</strong> <code>TypeScript</code> <code>React</code> <code>Three.js</code> <code>WebGL</code> <code>Chemistry AI</code></li>
+        <li><strong>Repository:</strong> <a href="https://github.com/codexanjan/periodictable" target="_blank"><code>codexanjan/periodictable</code></a></li>
+      </ul>
+    </td>
+    <td width="50%" valign="top">
+      <h4>⚡ <a href="https://github.com/codexanjan/Zenitsu" target="_blank">Zenitsu Agatsuma</a> // Cinematic Thunder Hub</h4>
+      <p>Cinematic interactive anime portfolio with real-time Web Audio API frequency analysis, procedural lightning canvas, and 3D spatial soundscapes.</p>
+      <ul>
+        <li><strong>Focus:</strong> Procedural lightning canvas, Web Audio frequency analyzer &amp; combat VFX</li>
+        <li><strong>Stack:</strong> <code>JavaScript</code> <code>HTML5 Canvas</code> <code>Web Audio API</code> <code>CSS Animations</code></li>
+        <li><strong>Repository:</strong> <a href="https://github.com/codexanjan/Zenitsu" target="_blank"><code>codexanjan/Zenitsu</code></a></li>
       </ul>
     </td>
   </tr>
@@ -212,7 +242,11 @@
 
 <br/><br/>
 
-<img src="./assets/contribution-grid.svg" width="100%" alt="Shadow Fight 52-Week Contribution Matrix" />
+<img src="./assets/contribution-grid.svg" width="100%" alt="Shadow Fight 52-Week Contribution Matrix - Real GitHub Cadence Arena" />
+
+<br/><br/>
+
+<img src="./assets/shadow-fight-roster.svg" width="100%" alt="Shadow Fight Combat Roster - 8 Demon Bosses &amp; Technical Disciplines" />
 
 <br/><br/>
 

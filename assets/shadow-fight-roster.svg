@@ -1,0 +1,298 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 295" width="100%" height="100%" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <linearGradient id="rosterBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#07090E" />
+      <stop offset="50%" stop-color="#050608" />
+      <stop offset="100%" stop-color="#0B0D14" />
+    </linearGradient>
+
+    <linearGradient id="rosterSlash" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FF3038" stop-opacity="0" />
+      <stop offset="50%" stop-color="#FF4500" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#FF3038" stop-opacity="0" />
+    </linearGradient>
+
+    <style>
+      @keyframes rosterSlashMotion {
+        0% { stroke-dashoffset: 960; }
+        50% { stroke-dashoffset: 0; }
+        100% { stroke-dashoffset: -960; }
+      }
+      .roster-slash {
+        stroke-dasharray: 220 740;
+        animation: rosterSlashMotion 5s linear infinite;
+      }
+    </style>
+  </defs>
+
+  <rect width="960" height="295" rx="10" fill="url(#rosterBg)" stroke="#161B25" stroke-width="1.6" />
+
+  <!-- Header Section -->
+  <g transform="translate(30, 32)" font-family="'Courier New', Consolas, monospace">
+    <polygon points="0,0 8,0 4,8" fill="#FF4500" />
+    <text x="16" y="6" font-size="11" font-weight="900" fill="#FF4500" letter-spacing="2">影の武闘録 // SHADOW FIGHT COMBAT ROSTER // DEMON BOSSES &amp; MASTERS</text>
+    <text x="900" y="6" text-anchor="end" font-size="8.5" font-weight="800" fill="#55E6FF" letter-spacing="1">8/8 WARRIORS UNLOCKED // ARCHIVE 2026</text>
+    <line x1="0" y1="18" x2="900" y2="18" stroke="#1A202C" stroke-width="1.2" />
+  </g>
+
+  <!-- 8 Character Cards (4x2 Matrix) -->
+    <!-- Card 1: SHADOW -->
+    <g transform="translate(30, 82)">
+      <rect width="216" height="92" rx="6" fill="#09121E" stroke="#1E2838" stroke-width="1.2" />
+      <rect width="216" height="92" rx="6" fill="none" stroke="#55E6FF" stroke-width="0.8" opacity="0.4" />
+      <polygon points="6,6 18,6 6,18" fill="#55E6FF" />
+
+      <!-- Tag -->
+      <rect x="142" y="6" width="68" height="14" rx="2" fill="#0C1018" stroke="#55E6FF" stroke-width="0.6" />
+      <text x="176" y="16.5" text-anchor="middle" font-family="'Courier New', Consolas, monospace" font-size="7" font-weight="800" fill="#55E6FF">PROTAGONIST</text>
+
+      <!-- Kanji & Name -->
+      <text x="12" y="24" font-family="system-ui, -apple-system, sans-serif" font-size="12.5" font-weight="900" fill="#FFF" letter-spacing="1">⚔️ SHADOW</text>
+      <text x="132" y="24" text-anchor="end" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="900" fill="#55E6FF" opacity="0.85">影</text>
+
+      <!-- Title -->
+      <text x="12" y="38" font-family="'Courier New', Consolas, monospace" font-size="7.5" font-weight="700" fill="#8892B0" letter-spacing="0.5">UNVANQUISHED RONIN</text>
+
+      <!-- Divider line -->
+      <line x1="12" y1="46" x2="204" y2="46" stroke="#1E2838" stroke-width="0.8" />
+
+      <!-- Weapon -->
+      <text x="12" y="58" font-family="'Courier New', Consolas, monospace" font-size="7" fill="#6A7280">WEAPON:</text>
+      <text x="56" y="58" font-family="'Courier New', Consolas, monospace" font-size="7.2" font-weight="700" fill="#E2E8F0">Blood Reaper • Katana</text>
+
+      <!-- Dev Mastery -->
+      <text x="12" y="72" font-family="'Courier New', Consolas, monospace" font-size="7" fill="#6A7280">MASTERY:</text>
+      <text x="56" y="72" font-family="'Courier New', Consolas, monospace" font-size="7.2" font-weight="800" fill="#55E6FF">Full Stack • Architecture</text>
+
+      <!-- Energy dot -->
+      <circle cx="12" cy="83" r="2.5" fill="#55E6FF" />
+      <text x="20" y="85" font-family="'Courier New', Consolas, monospace" font-size="6.5" font-weight="700" fill="#8892B0">SHADOW ENERGY: SYNCHRONIZED</text>
+    </g>
+    <!-- Card 2: LYNX -->
+    <g transform="translate(258, 82)">
+      <rect width="216" height="92" rx="6" fill="#1A0A0E" stroke="#1E2838" stroke-width="1.2" />
+      <rect width="216" height="92" rx="6" fill="none" stroke="#FF3038" stroke-width="0.8" opacity="0.4" />
+      <polygon points="6,6 18,6 6,18" fill="#FF3038" />
+
+      <!-- Tag -->
+      <rect x="142" y="6" width="68" height="14" rx="2" fill="#0C1018" stroke="#FF3038" stroke-width="0.6" />
+      <text x="176" y="16.5" text-anchor="middle" font-family="'Courier New', Consolas, monospace" font-size="7" font-weight="800" fill="#FF3038">ACT I BOSS</text>
+
+      <!-- Kanji & Name -->
+      <text x="12" y="24" font-family="system-ui, -apple-system, sans-serif" font-size="12.5" font-weight="900" fill="#FFF" letter-spacing="1">🐾 LYNX</text>
+      <text x="132" y="24" text-anchor="end" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="900" fill="#FF3038" opacity="0.85">山猫</text>
+
+      <!-- Title -->
+      <text x="12" y="38" font-family="'Courier New', Consolas, monospace" font-size="7.5" font-weight="700" fill="#8892B0" letter-spacing="0.5">ORDER OF ASSASSINS</text>
+
+      <!-- Divider line -->
+      <line x1="12" y1="46" x2="204" y2="46" stroke="#1E2838" stroke-width="0.8" />
+
+      <!-- Weapon -->
+      <text x="12" y="58" font-family="'Courier New', Consolas, monospace" font-size="7" fill="#6A7280">WEAPON:</text>
+      <text x="56" y="58" font-family="'Courier New', Consolas, monospace" font-size="7.2" font-weight="700" fill="#E2E8F0">Razor Claws • Smoke Bomb</text>
+
+      <!-- Dev Mastery -->
+      <text x="12" y="72" font-family="'Courier New', Consolas, monospace" font-size="7" fill="#6A7280">MASTERY:</text>
+      <text x="56" y="72" font-family="'Courier New', Consolas, monospace" font-size="7.2" font-weight="800" fill="#FF3038">TypeScript • Express API</text>
+
+      <!-- Energy dot -->
+      <circle cx="12" cy="83" r="2.5" fill="#FF3038" />
+      <text x="20" y="85" font-family="'Courier New', Consolas, monospace" font-size="6.5" font-weight="700" fill="#8892B0">SHADOW ENERGY: SYNCHRONIZED</text>
+    </g>
+    <!-- Card 3: HERMIT -->
+    <g transform="translate(486, 82)">
+      <rect width="216" height="92" rx="6" fill="#1A1708" stroke="#1E2838" stroke-width="1.2" />
+      <rect width="216" height="92" rx="6" fill="none" stroke="#FACC15" stroke-width="0.8" opacity="0.4" />
+      <polygon points="6,6 18,6 6,18" fill="#FACC15" />
+
+      <!-- Tag -->
+      <rect x="142" y="6" width="68" height="14" rx="2" fill="#0C1018" stroke="#FACC15" stroke-width="0.6" />
+      <text x="176" y="16.5" text-anchor="middle" font-family="'Courier New', Consolas, monospace" font-size="7" font-weight="800" fill="#FACC15">ACT II BOSS</text>
+
+      <!-- Kanji & Name -->
+      <text x="12" y="24" font-family="system-ui, -apple-system, sans-serif" font-size="12.5" font-weight="900" fill="#FFF" letter-spacing="1">⚡ HERMIT</text>
+      <text x="132" y="24" text-anchor="end" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="900" fill="#FACC15" opacity="0.85">隠者</text>
+
+      <!-- Title -->
+      <text x="12" y="38" font-family="'Courier New', Consolas, monospace" font-size="7.5" font-weight="700" fill="#8892B0" letter-spacing="0.5">SAGE OF LIGHTNING</text>
+
+      <!-- Divider line -->
+      <line x1="12" y1="46" x2="204" y2="46" stroke="#1E2838" stroke-width="0.8" />
+
+      <!-- Weapon -->
+      <text x="12" y="58" font-family="'Courier New', Consolas, monospace" font-size="7" fill="#6A7280">WEAPON:</text>
+      <text x="56" y="58" font-family="'Courier New', Consolas, monospace" font-size="7.2" font-weight="700" fill="#E2E8F0">Dual Dao • Thunder Spells</text>
+
+      <!-- Dev Mastery -->
+      <text x="12" y="72" font-family="'Courier New', Consolas, monospace" font-size="7" fill="#6A7280">MASTERY:</text>
+      <text x="56" y="72" font-family="'Courier New', Consolas, monospace" font-size="7.2" font-weight="800" fill="#FACC15">AI Systems • Neural Core</text>
+
+      <!-- Energy dot -->
+      <circle cx="12" cy="83" r="2.5" fill="#FACC15" />
+      <text x="20" y="85" font-family="'Courier New', Consolas, monospace" font-size="6.5" font-weight="700" fill="#8892B0">SHADOW ENERGY: SYNCHRONIZED</text>
+    </g>
+    <!-- Card 4: BUTCHER -->
+    <g transform="translate(714, 82)">
+      <rect width="216" height="92" rx="6" fill="#180F08" stroke="#1E2838" stroke-width="1.2" />
+      <rect width="216" height="92" rx="6" fill="none" stroke="#FB923C" stroke-width="0.8" opacity="0.4" />
+      <polygon points="6,6 18,6 6,18" fill="#FB923C" />
+
+      <!-- Tag -->
+      <rect x="142" y="6" width="68" height="14" rx="2" fill="#0C1018" stroke="#FB923C" stroke-width="0.6" />
+      <text x="176" y="16.5" text-anchor="middle" font-family="'Courier New', Consolas, monospace" font-size="7" font-weight="800" fill="#FB923C">ACT III BOSS</text>
+
+      <!-- Kanji & Name -->
+      <text x="12" y="24" font-family="system-ui, -apple-system, sans-serif" font-size="12.5" font-weight="900" fill="#FFF" letter-spacing="1">🪓 BUTCHER</text>
+      <text x="132" y="24" text-anchor="end" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="900" fill="#FB923C" opacity="0.85">肉屋</text>
+
+      <!-- Title -->
+      <text x="12" y="38" font-family="'Courier New', Consolas, monospace" font-size="7.5" font-weight="700" fill="#8892B0" letter-spacing="0.5">DEMOLITION BRUISER</text>
+
+      <!-- Divider line -->
+      <line x1="12" y1="46" x2="204" y2="46" stroke="#1E2838" stroke-width="0.8" />
+
+      <!-- Weapon -->
+      <text x="12" y="58" font-family="'Courier New', Consolas, monospace" font-size="7" fill="#6A7280">WEAPON:</text>
+      <text x="56" y="58" font-family="'Courier New', Consolas, monospace" font-size="7.2" font-weight="700" fill="#E2E8F0">Twin Cleavers • Tremor</text>
+
+      <!-- Dev Mastery -->
+      <text x="12" y="72" font-family="'Courier New', Consolas, monospace" font-size="7" fill="#6A7280">MASTERY:</text>
+      <text x="56" y="72" font-family="'Courier New', Consolas, monospace" font-size="7.2" font-weight="800" fill="#FB923C">DevOps • Docker Infrastructure</text>
+
+      <!-- Energy dot -->
+      <circle cx="12" cy="83" r="2.5" fill="#FB923C" />
+      <text x="20" y="85" font-family="'Courier New', Consolas, monospace" font-size="6.5" font-weight="700" fill="#8892B0">SHADOW ENERGY: SYNCHRONIZED</text>
+    </g>
+    <!-- Card 5: WASP -->
+    <g transform="translate(30, 186)">
+      <rect width="216" height="92" rx="6" fill="#081610" stroke="#1E2838" stroke-width="1.2" />
+      <rect width="216" height="92" rx="6" fill="none" stroke="#34D399" stroke-width="0.8" opacity="0.4" />
+      <polygon points="6,6 18,6 6,18" fill="#34D399" />
+
+      <!-- Tag -->
+      <rect x="142" y="6" width="68" height="14" rx="2" fill="#0C1018" stroke="#34D399" stroke-width="0.6" />
+      <text x="176" y="16.5" text-anchor="middle" font-family="'Courier New', Consolas, monospace" font-size="7" font-weight="800" fill="#34D399">ACT IV BOSS</text>
+
+      <!-- Kanji & Name -->
+      <text x="12" y="24" font-family="system-ui, -apple-system, sans-serif" font-size="12.5" font-weight="900" fill="#FFF" letter-spacing="1">🗡️ WASP</text>
+      <text x="132" y="24" text-anchor="end" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="900" fill="#34D399" opacity="0.85">雀蜂</text>
+
+      <!-- Title -->
+      <text x="12" y="38" font-family="'Courier New', Consolas, monospace" font-size="7.5" font-weight="700" fill="#8892B0" letter-spacing="0.5">PIRATE EMPRESS</text>
+
+      <!-- Divider line -->
+      <line x1="12" y1="46" x2="204" y2="46" stroke="#1E2838" stroke-width="0.8" />
+
+      <!-- Weapon -->
+      <text x="12" y="58" font-family="'Courier New', Consolas, monospace" font-size="7" fill="#6A7280">WEAPON:</text>
+      <text x="56" y="58" font-family="'Courier New', Consolas, monospace" font-size="7.2" font-weight="700" fill="#E2E8F0">Naginata • Wall Flight</text>
+
+      <!-- Dev Mastery -->
+      <text x="12" y="72" font-family="'Courier New', Consolas, monospace" font-size="7" fill="#6A7280">MASTERY:</text>
+      <text x="56" y="72" font-family="'Courier New', Consolas, monospace" font-size="7.2" font-weight="800" fill="#34D399">React 19 • Three.js 3D</text>
+
+      <!-- Energy dot -->
+      <circle cx="12" cy="83" r="2.5" fill="#34D399" />
+      <text x="20" y="85" font-family="'Courier New', Consolas, monospace" font-size="6.5" font-weight="700" fill="#8892B0">SHADOW ENERGY: SYNCHRONIZED</text>
+    </g>
+    <!-- Card 6: WIDOW -->
+    <g transform="translate(258, 186)">
+      <rect width="216" height="92" rx="6" fill="#140A1A" stroke="#1E2838" stroke-width="1.2" />
+      <rect width="216" height="92" rx="6" fill="none" stroke="#C084FC" stroke-width="0.8" opacity="0.4" />
+      <polygon points="6,6 18,6 6,18" fill="#C084FC" />
+
+      <!-- Tag -->
+      <rect x="142" y="6" width="68" height="14" rx="2" fill="#0C1018" stroke="#C084FC" stroke-width="0.6" />
+      <text x="176" y="16.5" text-anchor="middle" font-family="'Courier New', Consolas, monospace" font-size="7" font-weight="800" fill="#C084FC">ACT V BOSS</text>
+
+      <!-- Kanji & Name -->
+      <text x="12" y="24" font-family="system-ui, -apple-system, sans-serif" font-size="12.5" font-weight="900" fill="#FFF" letter-spacing="1">🪭 WIDOW</text>
+      <text x="132" y="24" text-anchor="end" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="900" fill="#C084FC" opacity="0.85">未亡人</text>
+
+      <!-- Title -->
+      <text x="12" y="38" font-family="'Courier New', Consolas, monospace" font-size="7.5" font-weight="700" fill="#8892B0" letter-spacing="0.5">MISTRESS OF SHADOWS</text>
+
+      <!-- Divider line -->
+      <line x1="12" y1="46" x2="204" y2="46" stroke="#1E2838" stroke-width="0.8" />
+
+      <!-- Weapon -->
+      <text x="12" y="58" font-family="'Courier New', Consolas, monospace" font-size="7" fill="#6A7280">WEAPON:</text>
+      <text x="56" y="58" font-family="'Courier New', Consolas, monospace" font-size="7.2" font-weight="700" fill="#E2E8F0">Steel Fans • Teleportation</text>
+
+      <!-- Dev Mastery -->
+      <text x="12" y="72" font-family="'Courier New', Consolas, monospace" font-size="7" fill="#6A7280">MASTERY:</text>
+      <text x="56" y="72" font-family="'Courier New', Consolas, monospace" font-size="7.2" font-weight="800" fill="#C084FC">Zero-Trust Cybersecurity</text>
+
+      <!-- Energy dot -->
+      <circle cx="12" cy="83" r="2.5" fill="#C084FC" />
+      <text x="20" y="85" font-family="'Courier New', Consolas, monospace" font-size="6.5" font-weight="700" fill="#8892B0">SHADOW ENERGY: SYNCHRONIZED</text>
+    </g>
+    <!-- Card 7: SHOGUN -->
+    <g transform="translate(486, 186)">
+      <rect width="216" height="92" rx="6" fill="#180A0E" stroke="#1E2838" stroke-width="1.2" />
+      <rect width="216" height="92" rx="6" fill="none" stroke="#F43F5E" stroke-width="0.8" opacity="0.4" />
+      <polygon points="6,6 18,6 6,18" fill="#F43F5E" />
+
+      <!-- Tag -->
+      <rect x="142" y="6" width="68" height="14" rx="2" fill="#0C1018" stroke="#F43F5E" stroke-width="0.6" />
+      <text x="176" y="16.5" text-anchor="middle" font-family="'Courier New', Consolas, monospace" font-size="7" font-weight="800" fill="#F43F5E">ACT VI BOSS</text>
+
+      <!-- Kanji & Name -->
+      <text x="12" y="24" font-family="system-ui, -apple-system, sans-serif" font-size="12.5" font-weight="900" fill="#FFF" letter-spacing="1">🛡️ SHOGUN</text>
+      <text x="132" y="24" text-anchor="end" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="900" fill="#F43F5E" opacity="0.85">将軍</text>
+
+      <!-- Title -->
+      <text x="12" y="38" font-family="'Courier New', Consolas, monospace" font-size="7.5" font-weight="700" fill="#8892B0" letter-spacing="0.5">WARLORD OF THE FORTRESS</text>
+
+      <!-- Divider line -->
+      <line x1="12" y1="46" x2="204" y2="46" stroke="#1E2838" stroke-width="0.8" />
+
+      <!-- Weapon -->
+      <text x="12" y="58" font-family="'Courier New', Consolas, monospace" font-size="7" fill="#6A7280">WEAPON:</text>
+      <text x="56" y="58" font-family="'Courier New', Consolas, monospace" font-size="7.2" font-weight="700" fill="#E2E8F0">Daisho Katanas • Overdrive</text>
+
+      <!-- Dev Mastery -->
+      <text x="12" y="72" font-family="'Courier New', Consolas, monospace" font-size="7" fill="#6A7280">MASTERY:</text>
+      <text x="56" y="72" font-family="'Courier New', Consolas, monospace" font-size="7.2" font-weight="800" fill="#F43F5E">Distributed Algorithms</text>
+
+      <!-- Energy dot -->
+      <circle cx="12" cy="83" r="2.5" fill="#F43F5E" />
+      <text x="20" y="85" font-family="'Courier New', Consolas, monospace" font-size="6.5" font-weight="700" fill="#8892B0">SHADOW ENERGY: SYNCHRONIZED</text>
+    </g>
+    <!-- Card 8: TITAN -->
+    <g transform="translate(714, 186)">
+      <rect width="216" height="92" rx="6" fill="#1A0906" stroke="#1E2838" stroke-width="1.2" />
+      <rect width="216" height="92" rx="6" fill="none" stroke="#FF5722" stroke-width="0.8" opacity="0.4" />
+      <polygon points="6,6 18,6 6,18" fill="#FF5722" />
+
+      <!-- Tag -->
+      <rect x="142" y="6" width="68" height="14" rx="2" fill="#0C1018" stroke="#FF5722" stroke-width="0.6" />
+      <text x="176" y="16.5" text-anchor="middle" font-family="'Courier New', Consolas, monospace" font-size="7" font-weight="800" fill="#FF5722">FINAL OVERLORD</text>
+
+      <!-- Kanji & Name -->
+      <text x="12" y="24" font-family="system-ui, -apple-system, sans-serif" font-size="12.5" font-weight="900" fill="#FFF" letter-spacing="1">👑 TITAN</text>
+      <text x="132" y="24" text-anchor="end" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="900" fill="#FF5722" opacity="0.85">巨神</text>
+
+      <!-- Title -->
+      <text x="12" y="38" font-family="'Courier New', Consolas, monospace" font-size="7.5" font-weight="700" fill="#8892B0" letter-spacing="0.5">COSMIC CONQUEROR</text>
+
+      <!-- Divider line -->
+      <line x1="12" y1="46" x2="204" y2="46" stroke="#1E2838" stroke-width="0.8" />
+
+      <!-- Weapon -->
+      <text x="12" y="58" font-family="'Courier New', Consolas, monospace" font-size="7" fill="#6A7280">WEAPON:</text>
+      <text x="56" y="58" font-family="'Courier New', Consolas, monospace" font-size="7.2" font-weight="700" fill="#E2E8F0">Desolator • Mind Steal</text>
+
+      <!-- Dev Mastery -->
+      <text x="12" y="72" font-family="'Courier New', Consolas, monospace" font-size="7" fill="#6A7280">MASTERY:</text>
+      <text x="56" y="72" font-family="'Courier New', Consolas, monospace" font-size="7.2" font-weight="800" fill="#FF5722">Production SaaS Deployment</text>
+
+      <!-- Energy dot -->
+      <circle cx="12" cy="83" r="2.5" fill="#FF5722" />
+      <text x="20" y="85" font-family="'Courier New', Consolas, monospace" font-size="6.5" font-weight="700" fill="#8892B0">SHADOW ENERGY: SYNCHRONIZED</text>
+    </g>
+
+
+  <line x1="0" y1="294" x2="960" y2="294" stroke="url(#rosterSlash)" stroke-width="2" class="roster-slash" />
+</svg>
