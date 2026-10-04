@@ -3,7 +3,9 @@
   "version": "2.0.0",
   "description": "Tech Samurai // Digital Ronin GitHub Profile Command Center for Anjan Shetty (@codexanjan)",
   "scripts": {
-    "validate": "node -e 'console.log(\"All assets validated.\")'"
+    "test": "node scripts/validate-assets.js",
+    "sync": "node scripts/sync-github-stats.js",
+    "validate": "node scripts/validate-assets.js"
   },
   "author": "Anjan Shetty (@codexanjan)",
   "license": "MIT"

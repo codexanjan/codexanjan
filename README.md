@@ -27,15 +27,7 @@
 
 <p align="center">
   <a href="https://github.com/codexanjan">
-    <img src="https://api.visitorbadge.io/api/visitors?path=codexanjan&amp;label=LIVE%20VISITORS&amp;labelColor=%230c0e14&amp;countColor=%23ff3038&amp;style=flat-square" alt="Live Profile Views" />
-  </a>
-  &nbsp;&nbsp;
-  <a href="https://github.com/codexanjan">
-    <img src="https://img.shields.io/badge/SHADOW%20DEFENSE-ARMED-00E5FF?style=for-the-badge&amp;logo=shield&amp;logoColor=white&amp;labelColor=0C0E14" alt="Shadow Defense" />
-  </a>
-  &nbsp;&nbsp;
-  <a href="https://github.com/codexanjan">
-    <img src="https://img.shields.io/badge/OPERATIONAL%20STATUS-COMBAT%20READY-10B981?style=for-the-badge&amp;logo=codeforces&amp;logoColor=white&amp;labelColor=0C0E14" alt="Combat Ready" />
+    <img src="https://komarev.com/ghpvc/?username=codexanjan&amp;label=VISITORS&amp;color=ff3038&amp;style=for-the-badge" alt="Profile Visitors" />
   </a>
 </p>
 
