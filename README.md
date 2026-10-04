@@ -27,7 +27,7 @@
 
 <p align="center">
   <a href="https://github.com/codexanjan">
-    <img src="https://komarev.com/ghpvc/?username=codexanjan&amp;label=VISITORS&amp;color=ff3038&amp;style=for-the-badge" alt="Profile Visitors" />
+    <img src="https://api.visitorbadge.io/api/visitors?path=codexanjan&amp;label=VISITORS&amp;labelColor=%230c0e14&amp;countColor=%23ff3038&amp;style=for-the-badge" alt="Profile Visitors" />
   </a>
 </p>
 
