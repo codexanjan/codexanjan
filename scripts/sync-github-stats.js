@@ -148,34 +148,25 @@ function generateContributionGridSvg(calendarData) {
       let fill = "#101520";
       let stroke = "#1A2232";
       let filter = "";
-      let cls = "";
 
       if (lvl === 1) {
         fill = "#7C1A22";
         stroke = "#B91C1C";
-        cls = 'class="cell-ember"';
-        emberPoints.push({ x: (parseFloat(x) + 4.6).toFixed(1), y: (parseFloat(y) + 4.6).toFixed(1), color: "#FF4500" });
       } else if (lvl === 2) {
         fill = "#B91C1C";
         stroke = "#EF4444";
         filter = 'filter="url(#shdEmberGlow)"';
-        cls = 'class="cell-ember"';
-        emberPoints.push({ x: (parseFloat(x) + 4.6).toFixed(1), y: (parseFloat(y) + 4.6).toFixed(1), color: "#FF6D00" });
       } else if (lvl === 3) {
         fill = "#EA580C";
         stroke = "#FB923C";
         filter = 'filter="url(#shdEmberGlow)"';
-        cls = 'class="cell-overdrive"';
-        emberPoints.push({ x: (parseFloat(x) + 4.6).toFixed(1), y: (parseFloat(y) + 4.6).toFixed(1), color: "#FFA500" });
       } else if (lvl >= 4) {
         fill = "#F59E0B";
         stroke = "#FDE047";
         filter = 'filter="url(#shdSolarGlow)"';
-        cls = 'class="cell-overdrive"';
-        emberPoints.push({ x: (parseFloat(x) + 4.6).toFixed(1), y: (parseFloat(y) + 4.6).toFixed(1), color: "#FFE082" });
       }
 
-      tilesXml += `    <rect x="${x}" y="${y}" width="${tileW}" height="${tileH}" rx="2" fill="${fill}" stroke="${stroke}" stroke-width="0.85" ${filter} ${cls} />\n`;
+      tilesXml += `    <rect x="${x}" y="${y}" width="${tileW}" height="${tileH}" rx="2" fill="${fill}" stroke="${stroke}" stroke-width="0.85" ${filter} />\n`;
     }
   }
 
@@ -188,14 +179,6 @@ function generateContributionGridSvg(calendarData) {
     monthsXml += `    <text x="${mx}" y="${gridStartY - 12}" font-size="8.5" font-weight="800" fill="#8892B0" font-family="'Courier New', Consolas, monospace" letter-spacing="1">${monthNames[i]}</text>\n`;
   }
 
-  // Ember circles XML
-  let embersXml = "";
-  const sampledEmbers = emberPoints.slice(0, 36);
-  sampledEmbers.forEach((pt, idx) => {
-    const animClass = `ember-p${(idx % 3) + 1}`;
-    embersXml += `    <circle cx="${pt.x}" cy="${pt.y}" r="${idx % 4 === 0 ? 2.5 : 1.6}" class="${animClass}" fill="${pt.color}" opacity="0.9" filter="url(#shdEmberGlow)" />\n`;
-  });
-
   return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 420" width="100%" height="100%" preserveAspectRatio="xMidYMid meet">
   <defs>
     <!-- Background Gradient: Obsidian Carbon with Crimson Depth -->
@@ -204,15 +187,6 @@ function generateContributionGridSvg(calendarData) {
       <stop offset="35%" stop-color="#040507" />
       <stop offset="70%" stop-color="#0B0609" />
       <stop offset="100%" stop-color="#0A0C12" />
-    </linearGradient>
-
-    <!-- Glowing Katana Energy Slash Gradient -->
-    <linearGradient id="shdSlashLaser" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#FF3038" stop-opacity="0" />
-      <stop offset="25%" stop-color="#FF4500" stop-opacity="0.85" />
-      <stop offset="50%" stop-color="#FFF" stop-opacity="1" />
-      <stop offset="75%" stop-color="#55E6FF" stop-opacity="0.95" />
-      <stop offset="100%" stop-color="#FF3038" stop-opacity="0" />
     </linearGradient>
 
     <!-- Center Radiant Combat Aura -->
@@ -289,11 +263,6 @@ function generateContributionGridSvg(calendarData) {
       <feComposite in="SourceGraphic" in2="blur" operator="over" />
     </filter>
 
-    <filter id="laserBeamGlow" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="3.2" result="blur" />
-      <feComposite in="SourceGraphic" in2="blur" operator="over" />
-    </filter>
-
     <filter id="cyanHeroGlow" x="-30%" y="-30%" width="160%" height="160%">
       <feGaussianBlur stdDeviation="3.5" result="blur" />
       <feComposite in="SourceGraphic" in2="blur" operator="over" />
@@ -305,33 +274,12 @@ function generateContributionGridSvg(calendarData) {
     </filter>
 
     <filter id="vsProminentGlow" x="-30%" y="-30%" width="160%" height="160%">
-      <feGaussianBlur stdDeviation="5.0" result="blur" />
+      <feGaussianBlur stdDeviation="4.0" result="blur" />
       <feComposite in="SourceGraphic" in2="blur" operator="over" />
     </filter>
 
-    <!-- Keyframe Animations -->
+    <!-- Keyframe Animations: Character Highlighting and Perimeter Only -->
     <style>
-      @keyframes slashLaserMove {
-        0% { transform: translateX(-960px); opacity: 0; }
-        15% { opacity: 1; }
-        85% { opacity: 1; }
-        100% { transform: translateX(960px); opacity: 0; }
-      }
-      @keyframes emberFloat1 {
-        0% { transform: translateY(0px) scale(1); opacity: 0.8; }
-        50% { transform: translateY(-7px) scale(1.3); opacity: 1; }
-        100% { transform: translateY(-14px) scale(0.6); opacity: 0; }
-      }
-      @keyframes emberFloat2 {
-        0% { transform: translateY(0px) scale(0.9); opacity: 0.7; }
-        50% { transform: translateY(-9px) scale(1.4); opacity: 1; }
-        100% { transform: translateY(-18px) scale(0.5); opacity: 0; }
-      }
-      @keyframes emberFloat3 {
-        0% { transform: translateY(0px) scale(1); opacity: 0.9; }
-        50% { transform: translateY(-8px) scale(1.2); opacity: 1; }
-        100% { transform: translateY(-16px) scale(0.7); opacity: 0; }
-      }
       @keyframes katanaPulse {
         0%, 100% { filter: drop-shadow(0 0 3px #00F5D4); opacity: 0.95; }
         50% { filter: drop-shadow(0 0 8px #55E6FF) drop-shadow(0 0 14px #00F5D4); opacity: 1; }
@@ -339,14 +287,6 @@ function generateContributionGridSvg(calendarData) {
       @keyframes titanAuraPulse {
         0%, 100% { opacity: 0.85; filter: drop-shadow(0 0 4px #FF3038); }
         50% { opacity: 1; filter: drop-shadow(0 0 10px #FF5722) drop-shadow(0 0 18px #FF003C); }
-      }
-      @keyframes cellGlowPulse {
-        0%, 100% { opacity: 0.88; }
-        50% { opacity: 1; filter: drop-shadow(0 0 5px #F59E0B); }
-      }
-      @keyframes bgVsPulseProminent {
-        0%, 100% { opacity: 0.78; transform: scale(1); }
-        50% { opacity: 0.95; transform: scale(1.035); }
       }
       @keyframes outerLaserPerimeter {
         0% { stroke-dashoffset: 2760; }
@@ -365,26 +305,11 @@ function generateContributionGridSvg(calendarData) {
         50% { opacity: 1; }
       }
 
-      .slash-laser-line {
-        animation: slashLaserMove 3.8s cubic-bezier(0.4, 0, 0.2, 1) infinite;
-      }
-      .ember-p1 {
-        animation: emberFloat1 2.2s ease-in infinite;
-      }
-      .ember-p2 {
-        animation: emberFloat2 2.7s ease-in infinite 0.7s;
-      }
-      .ember-p3 {
-        animation: emberFloat3 2.5s ease-in infinite 1.3s;
-      }
       .hero-shadow-highlight {
         animation: katanaPulse 2.8s ease-in-out infinite;
       }
       .boss-titan-highlight {
         animation: titanAuraPulse 3.2s ease-in-out infinite;
-      }
-      .cell-overdrive {
-        animation: cellGlowPulse 2.6s ease-in-out infinite;
       }
       .shd-outer-laser {
         stroke-dasharray: 120 400;
@@ -399,9 +324,9 @@ function generateContributionGridSvg(calendarData) {
       .desolator-shine {
         animation: desolatorShine 2.5s ease-in-out infinite 0.6s;
       }
-      .center-bg-vs-prominent {
-        transform-origin: 480px 212px;
-        animation: bgVsPulseProminent 3.5s ease-in-out infinite;
+      /* VS Logo Behind Grid: STATIC, NO ANIMATION - JUST KEPT THERE */
+      .center-bg-vs-static {
+        opacity: 0.82;
       }
     </style>
   </defs>
@@ -422,9 +347,9 @@ function generateContributionGridSvg(calendarData) {
   <ellipse cx="480" cy="212" rx="340" ry="120" fill="url(#shdCenterCombatAura)" />
 
   <!-- ======================================================== -->
-  <!-- BOLD, PROMINENT GLOWING "VS" LOGO BEHIND MIDDLE GRID     -->
+  <!-- BOLD STATIC "VS" LOGO BEHIND MIDDLE GRID (NO ANIMATION)   -->
   <!-- ======================================================== -->
-  <g class="center-bg-vs-prominent" filter="url(#vsProminentGlow)">
+  <g class="center-bg-vs-static" filter="url(#vsProminentGlow)">
     <!-- Radiant Combat Emblem Rings -->
     <circle cx="480" cy="212" r="120" fill="#0C0E16" fill-opacity="0.4" stroke="#FF3038" stroke-width="2.5" stroke-dasharray="8 6" />
     <circle cx="480" cy="212" r="92" fill="none" stroke="#FF5722" stroke-width="2" />
@@ -436,7 +361,7 @@ function generateContributionGridSvg(calendarData) {
     <line x1="600" y1="102" x2="360" y2="322" stroke="#FF4500" stroke-width="4.5" stroke-linecap="round" />
     <line x1="600" y1="102" x2="360" y2="322" stroke="#FFF" stroke-width="1.8" stroke-linecap="round" />
 
-    <!-- PROMINENT BOLD "VS" LOGO (Clearly visible through & around the grid!) -->
+    <!-- PROMINENT BOLD "VS" LOGO (Static, Crisp, Clear) -->
     <text x="480" y="254" text-anchor="middle" font-family="system-ui, -apple-system, 'Impact', sans-serif" font-size="120" font-weight="900" fill="url(#vsTextGrad)" stroke="#FF003C" stroke-width="2.5" letter-spacing="4">VS</text>
     <text x="480" y="142" text-anchor="middle" font-family="'Courier New', Consolas, monospace" font-size="11.5" font-weight="900" fill="#FFD700" letter-spacing="2">影の戦い // SHADOW FIGHT</text>
     <text x="480" y="292" text-anchor="middle" font-family="'Courier New', Consolas, monospace" font-size="9.5" font-weight="800" fill="#00F5D4" letter-spacing="1.5">ANNUAL CADENCE DUEL</text>
@@ -680,15 +605,6 @@ ${monthsXml}  </g>
   <!-- Real Contribution Tile Matrix (53 Columns x 7 Rows) -->
   <g id="realContributionTiles">
 ${tilesXml}  </g>
-
-  <!-- Animated Katana Slash Line Traversing the Grid -->
-  <g opacity="0.85">
-    <line x1="0" y1="212" x2="960" y2="212" stroke="url(#shdSlashLaser)" stroke-width="2.2" class="slash-laser-line" filter="url(#laserBeamGlow)" />
-  </g>
-
-  <!-- Floating Embers From Real Active & Overdrive Strike Cells -->
-  <g>
-${embersXml}  </g>
 
   <!-- ======================================================== -->
   <!-- 06 // BOTTOM TACTICAL WEAPON ARSENAL & MARTIAL LEGEND     -->

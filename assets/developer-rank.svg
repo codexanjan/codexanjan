@@ -1,317 +1,462 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 450" width="100%" height="100%" preserveAspectRatio="xMidYMid meet">
   <defs>
-    <linearGradient id="topBg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#080A0E" />
-      <stop offset="50%" stop-color="#050608" />
-      <stop offset="100%" stop-color="#0E1118" />
+    <!-- Background Gradient: Deep Cyber Obsidian with Crimson Depth -->
+    <linearGradient id="rankBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#05070B" />
+      <stop offset="40%" stop-color="#040508" />
+      <stop offset="75%" stop-color="#0A060A" />
+      <stop offset="100%" stop-color="#080B12" />
     </linearGradient>
 
-    <linearGradient id="bladeSteel" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#141820" />
-      <stop offset="40%" stop-color="#A8ADB7" />
+    <!-- Tactical Grid Pattern -->
+    <pattern id="tacGrid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M 24 0 L 0 0 0 24" fill="none" stroke="#121824" stroke-width="0.7" opacity="0.4" />
+      <circle cx="24" cy="24" r="0.8" fill="#1E2838" opacity="0.6" />
+    </pattern>
+
+    <!-- Katana Steel Gradients -->
+    <linearGradient id="bladeSteelMaster" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0A0E16" />
+      <stop offset="25%" stop-color="#3A4252" />
       <stop offset="50%" stop-color="#FFFFFF" />
-      <stop offset="60%" stop-color="#A8ADB7" />
-      <stop offset="100%" stop-color="#141820" />
+      <stop offset="75%" stop-color="#606B7D" />
+      <stop offset="100%" stop-color="#0A0E16" />
     </linearGradient>
 
-    <linearGradient id="bladeEdgeGlow" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#FF3038" stop-opacity="0.1" />
-      <stop offset="50%" stop-color="#FF3038" stop-opacity="0.9" />
-      <stop offset="100%" stop-color="#FFF" stop-opacity="1" />
-    </linearGradient>
-
-    <radialGradient id="topCenterAura" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#FF3038" stop-opacity="0.3" />
-      <stop offset="60%" stop-color="#FF3038" stop-opacity="0.08" />
+    <linearGradient id="katanaSlashRed" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FF3038" stop-opacity="0" />
+      <stop offset="30%" stop-color="#FF4500" stop-opacity="0.8" />
+      <stop offset="60%" stop-color="#FFFFFF" stop-opacity="1" />
+      <stop offset="90%" stop-color="#FF003C" stop-opacity="0.9" />
       <stop offset="100%" stop-color="#FF3038" stop-opacity="0" />
+    </linearGradient>
+
+    <linearGradient id="katanaSlashCyan" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00F5D4" stop-opacity="0" />
+      <stop offset="30%" stop-color="#00BBF9" stop-opacity="0.8" />
+      <stop offset="60%" stop-color="#FFFFFF" stop-opacity="1" />
+      <stop offset="90%" stop-color="#55E6FF" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#00F5D4" stop-opacity="0" />
+    </linearGradient>
+
+    <!-- Radar Web Fill Gradient -->
+    <radialGradient id="radarWebGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FF3038" stop-opacity="0.45" />
+      <stop offset="55%" stop-color="#9A0028" stop-opacity="0.22" />
+      <stop offset="85%" stop-color="#00F5D4" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0" />
     </radialGradient>
 
-    <linearGradient id="topRadarSweep" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#FF3038" stop-opacity="0.5" />
+    <!-- Sweeping Radar Cone Gradient -->
+    <linearGradient id="radarSweepCone" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF3038" stop-opacity="0.55" />
+      <stop offset="40%" stop-color="#FF5722" stop-opacity="0.25" />
       <stop offset="100%" stop-color="#FF3038" stop-opacity="0" />
     </linearGradient>
 
-    <filter id="topRedGlow" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="3" result="blur" />
-      <feComposite in="SourceGraphic" in2="blur" operator="over" />
-    </filter>
-    <filter id="cyanGlow" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="3" result="blur" />
+    <!-- Glow Filters -->
+    <filter id="neonRed" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="3.2" result="blur" />
       <feComposite in="SourceGraphic" in2="blur" operator="over" />
     </filter>
 
+    <filter id="neonCyan" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="3.2" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <filter id="neonGold" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="3.0" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <filter id="coreAura" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="6.0" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <!-- Animations -->
     <style>
-      @keyframes spinSweep {
+      @keyframes radarSweepSpin {
         0% { transform: rotate(0deg); }
         100% { transform: rotate(360deg); }
       }
-      @keyframes spinReverse {
+      @keyframes gyroSpinClockwise {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+      @keyframes gyroSpinCounter {
         0% { transform: rotate(360deg); }
         100% { transform: rotate(0deg); }
       }
-      @keyframes polyBreathe {
-        0%, 100% { transform: scale(1); filter: drop-shadow(0 0 4px #FF3038); }
-        50% { transform: scale(1.025); filter: drop-shadow(0 0 14px #FF3038); }
+      @keyframes webBreathePulse {
+        0%, 100% { transform: scale(1); filter: drop-shadow(0 0 5px #FF3038); }
+        50% { transform: scale(1.02); filter: drop-shadow(0 0 16px #FF3038) drop-shadow(0 0 24px #FF003C); }
       }
-      @keyframes pulseNodeWhite {
-        0%, 100% { r: 5; filter: drop-shadow(0 0 3px #FFF); }
-        50% { r: 7; filter: drop-shadow(0 0 10px #55E6FF); }
+      @keyframes bladePulseRed {
+        0%, 100% { opacity: 0.85; filter: drop-shadow(0 0 4px #FF3038); }
+        50% { opacity: 1; filter: drop-shadow(0 0 14px #FF3038) drop-shadow(0 0 22px #FF5722); }
       }
-      @keyframes pulseBladeSlash {
-        0%, 100% { opacity: 0.6; }
-        50% { opacity: 1; filter: drop-shadow(0 0 8px #FF3038); }
+      @keyframes bladePulseCyan {
+        0%, 100% { opacity: 0.85; filter: drop-shadow(0 0 4px #00F5D4); }
+        50% { opacity: 1; filter: drop-shadow(0 0 14px #55E6FF) drop-shadow(0 0 22px #00F5D4); }
       }
-      @keyframes axisLaser {
+      @keyframes nodeGlowPulse {
+        0%, 100% { r: 5; filter: drop-shadow(0 0 3px #FFFFFF); }
+        50% { r: 6.8; filter: drop-shadow(0 0 10px #55E6FF) drop-shadow(0 0 16px #00F5D4); }
+      }
+      @keyframes perimeterLaserTrace {
+        0% { stroke-dashoffset: 2700; }
+        100% { stroke-dashoffset: 0; }
+      }
+      @keyframes statusBlink {
+        0%, 100% { opacity: 0.35; }
+        50% { opacity: 1; }
+      }
+      @keyframes axisLaserMove {
         0% { stroke-dashoffset: 140; }
         100% { stroke-dashoffset: 0; }
       }
 
-      .radar-sweep-blade {
-        transform-origin: 450px 240px;
-        animation: spinSweep 7s linear infinite;
+      .radar-sweep-beam {
+        transform-origin: 450px 238px;
+        animation: radarSweepSpin 6.5s linear infinite;
       }
-      .mon-ring-rotate {
-        transform-origin: 450px 240px;
-        animation: spinReverse 24s linear infinite;
+      .gyro-ring-cw {
+        transform-origin: 450px 238px;
+        animation: gyroSpinClockwise 26s linear infinite;
       }
-      .active-web-poly {
-        transform-origin: 450px 240px;
-        animation: polyBreathe 4s ease-in-out infinite;
+      .gyro-ring-ccw {
+        transform-origin: 450px 238px;
+        animation: gyroSpinCounter 18s linear infinite;
       }
-      @keyframes cardEdgeLaserRank {
-        0% { stroke-dashoffset: 2700; }
-        100% { stroke-dashoffset: 0; }
+      .active-radar-web {
+        transform-origin: 450px 238px;
+        animation: webBreathePulse 3.8s ease-in-out infinite;
       }
-      @keyframes plasmaPulseSlash {
-        0%, 100% { opacity: 0.75; filter: drop-shadow(0 0 6px #FF3038); }
-        50% { opacity: 1; filter: drop-shadow(0 0 16px #FF3038); }
+      .blade-plasma-red {
+        animation: bladePulseRed 3.2s ease-in-out infinite;
       }
-      @keyframes plasmaPulseCyan {
-        0%, 100% { opacity: 0.75; filter: drop-shadow(0 0 6px #55E6FF); }
-        50% { opacity: 1; filter: drop-shadow(0 0 16px #55E6FF); }
+      .blade-plasma-cyan {
+        animation: bladePulseCyan 3.2s ease-in-out infinite;
       }
-      .blade-slash-line {
-        animation: pulseBladeSlash 3s ease-in-out infinite;
+      .mastery-node {
+        animation: nodeGlowPulse 2.4s ease-in-out infinite;
       }
-      .node-pulse-white {
-        animation: pulseNodeWhite 2.5s ease-in-out infinite;
+      .edge-laser-rank {
+        stroke-dasharray: 180 2520;
+        animation: perimeterLaserTrace 7s linear infinite;
       }
-      .laser-axis {
-        stroke-dasharray: 20 120;
-        animation: axisLaser 3s linear infinite;
+      .beacon-online {
+        animation: statusBlink 1.4s ease-in-out infinite;
       }
-      .rank-edge-laser {
-        stroke-dasharray: 200 2500;
-        animation: cardEdgeLaserRank 6s linear infinite;
-      }
-      .plasma-slash-red {
-        animation: plasmaPulseSlash 3.5s ease-in-out infinite;
-      }
-      .plasma-slash-cyan {
-        animation: plasmaPulseCyan 3.5s ease-in-out infinite;
+      .axis-pulse-laser {
+        stroke-dasharray: 18 110;
+        animation: axisLaserMove 3s linear infinite;
       }
     </style>
   </defs>
 
-  <!-- Card Background -->
-  <rect width="900" height="450" rx="8" fill="url(#topBg)" stroke="#1C222E" stroke-width="1.5" />
-  <!-- Animated Perimeter Edge Laser -->
-  <rect width="900" height="450" rx="8" fill="none" stroke="#FF3038" stroke-width="2" class="rank-edge-laser" opacity="0.9" />
+  <!-- Container Base Plate -->
+  <rect width="900" height="450" rx="10" fill="url(#rankBg)" stroke="#161B26" stroke-width="1.6" />
+  
+  <!-- Subtle Tactical Dot Grid Overlay -->
+  <rect width="900" height="450" rx="10" fill="url(#tacGrid)" />
 
-  <!-- Tactical Corner Brackets -->
+  <!-- Animated Edge Laser Trace -->
+  <rect width="900" height="450" rx="10" fill="none" stroke="#FF3038" stroke-width="2" class="edge-laser-rank" opacity="0.95" />
+
+  <!-- Tactical Corner Cyber Brackets -->
   <polygon points="12,12 36,12 12,36" fill="#FF3038" />
   <polygon points="888,12 864,12 888,36" fill="#FF3038" />
   <polygon points="12,438 36,438 12,414" fill="#FF3038" />
   <polygon points="888,438 864,438 888,414" fill="#FF3038" />
 
-  <!-- Top Header Telemetry -->
-  <g transform="translate(35, 36)" font-family="'Courier New', Consolas, monospace">
-    <polygon points="0,0 8,0 4,8" fill="#FF3038" />
-    <text x="14" y="6" font-size="12" font-weight="900" fill="#FF3038" letter-spacing="2">CAPABILITY TOPOLOGY // BUSHIDO OF CODE</text>
-    <text x="590" y="6" font-size="10" font-weight="700" fill="#55E6FF" letter-spacing="1.5">MASTERY // 6 TACTICAL DISCIPLINES</text>
-    <line x1="0" y1="16" x2="830" y2="16" stroke="#171C25" stroke-width="1" />
+  <!-- Tactical Corner Inner Accents -->
+  <line x1="16" y1="42" x2="42" y2="16" stroke="#00F5D4" stroke-width="1.2" opacity="0.8" />
+  <line x1="884" y1="42" x2="858" y2="16" stroke="#00F5D4" stroke-width="1.2" opacity="0.8" />
+  <line x1="16" y1="408" x2="42" y2="434" stroke="#00F5D4" stroke-width="1.2" opacity="0.8" />
+  <line x1="884" y1="408" x2="858" y2="434" stroke="#00F5D4" stroke-width="1.2" opacity="0.8" />
+
+  <!-- ======================================================== -->
+  <!-- 01 // TOP TELEMETRY PROTOCOL HEADER                       -->
+  <!-- ======================================================== -->
+  <g transform="translate(36, 28)" font-family="'Courier New', Consolas, monospace">
+    <polygon points="0,-4 8,-4 4,4" fill="#FF3038" />
+    <text x="14" y="2" font-size="11.5" font-weight="900" fill="#FF3038" letter-spacing="1.8">CAPABILITY TOPOLOGY // BUSHIDO OF CODE</text>
+    
+    <!-- Central HUD Status Badges -->
+    <text x="495" y="2" font-size="9.5" font-weight="800" fill="#FFD700" letter-spacing="1.2">RANK: S-TIER GRANDMASTER</text>
+    <circle cx="705" cy="-1" r="3.5" fill="#00F5D4" class="beacon-online" />
+    <text x="716" y="2" font-size="9" font-weight="800" fill="#00F5D4" letter-spacing="1">SYNC: 99.4% [LOCKED]</text>
+
+    <line x1="0" y1="12" x2="828" y2="12" stroke="#1A2230" stroke-width="1.2" />
   </g>
 
   <!-- ======================================================== -->
-  <!-- DUAL CROSSED KATANA BLADES (X SYMBOL IN KATANA)          -->
+  <!-- 02 // DUAL CROSSED HIGH-VOLTAGE KATANA BLADES (X-SYMBOL) -->
   <!-- ======================================================== -->
-  <g transform="translate(450, 240)">
-    <!-- SWORD 1: Top-Left to Bottom-Right (Red Plasma Katana) -->
-    <g transform="rotate(32)" class="plasma-slash-red">
-      <!-- Full Steel Blade: runs through (0,0) to +280 -->
-      <path d="M -170 -2.5 L 280 -2.5 L 298 0 L 280 2.5 L -170 2.5 Z" fill="url(#bladeSteel)" />
-      <!-- Hamon & Razor Edge -->
-      <line x1="-170" y1="-2" x2="280" y2="-2" stroke="#FFFFFF" stroke-width="1.2" opacity="0.95" />
-      <line x1="-170" y1="2" x2="280" y2="2" stroke="#FF3038" stroke-width="2.5" filter="url(#topRedGlow)" />
+  <g transform="translate(450, 238)">
+    <!-- SWORD 1: Top-Left to Bottom-Right (Crimson Radiant Plasma Katana) -->
+    <g transform="rotate(32)" class="blade-plasma-red">
+      <!-- Full Steel Blade Geometry: -180 to +300 -->
+      <path d="M -180 -3 L 290 -3 L 312 0 L 290 3 L -180 3 Z" fill="url(#bladeSteelMaster)" />
+      <!-- Razor-Sharp Hamon Line -->
+      <line x1="-180" y1="-2" x2="290" y2="-2" stroke="#FFFFFF" stroke-width="1.4" opacity="0.95" />
+      <line x1="-180" y1="2" x2="290" y2="2" stroke="#FF3038" stroke-width="3" filter="url(#neonRed)" />
+      <line x1="-180" y1="0" x2="290" y2="0" stroke="url(#katanaSlashRed)" stroke-width="1.8" />
+      
       <!-- Habaki (Gold Blade Collar) -->
-      <rect x="-178" y="-4" width="9" height="8" rx="1" fill="#FACC15" stroke="#9A3412" stroke-width="0.8" />
-      <!-- Tsuba (Samurai Guard) -->
-      <ellipse cx="-180" cy="0" rx="5" ry="18" fill="#141820" stroke="#FF3038" stroke-width="2.2" filter="url(#topRedGlow)" />
-      <circle cx="-180" cy="0" r="3" fill="#FACC15" />
-      <!-- Tsuka (Handle with Diamond Wrap) -->
-      <rect x="-275" y="-4" width="95" height="8" rx="2" fill="#0C0E14" stroke="#222834" stroke-width="1.2" />
-      <line x1="-275" y1="0" x2="-180" y2="0" stroke="#FF3038" stroke-width="5" stroke-dasharray="5 7" />
+      <rect x="-188" y="-5" width="10" height="10" rx="1.5" fill="#FACC15" stroke="#9A3412" stroke-width="1" />
+      <!-- Ornate Tsuba (Samurai Guard with Crimson Aura) -->
+      <ellipse cx="-190" cy="0" rx="6" ry="21" fill="#0A0D14" stroke="#FF3038" stroke-width="2.2" filter="url(#neonRed)" />
+      <ellipse cx="-190" cy="0" rx="3.5" ry="12" fill="none" stroke="#FACC15" stroke-width="1" />
+      <circle cx="-190" cy="0" r="3.2" fill="#FACC15" />
+      <!-- Tsuka (Handle with Traditional Diamond Hilt Wrap) -->
+      <rect x="-295" y="-5" width="105" height="10" rx="2.5" fill="#0A0C12" stroke="#1E2636" stroke-width="1.4" />
+      <line x1="-295" y1="0" x2="-190" y2="0" stroke="#FF3038" stroke-width="6" stroke-dasharray="6 8" />
       <!-- Kashira (Gold Pommel Cap) -->
-      <rect x="-282" y="-5" width="8" height="10" rx="2" fill="#FACC15" stroke="#9A3412" stroke-width="1" />
-      <!-- Kissaki (Sharp Tip Accent) -->
-      <polygon points="280,-2.5 300,0 280,2.5" fill="#FFFFFF" filter="url(#topRedGlow)" />
+      <rect x="-302" y="-6" width="9" height="12" rx="2" fill="#FACC15" stroke="#9A3412" stroke-width="1.2" />
+      <!-- Kissaki (Razor Diamond Tip Flare) -->
+      <polygon points="290,-3 314,0 290,3" fill="#FFFFFF" filter="url(#neonRed)" />
+      <circle cx="314" cy="0" r="3" fill="#FFD700" filter="url(#neonGold)" />
     </g>
 
-    <!-- SWORD 2: Bottom-Left to Top-Right (Cyan Plasma Katana) -->
-    <g transform="rotate(-32)" class="plasma-slash-cyan">
-      <!-- Full Steel Blade: runs through (0,0) to +280 -->
-      <path d="M -170 -2.5 L 280 -2.5 L 298 0 L 280 2.5 L -170 2.5 Z" fill="url(#bladeSteel)" />
-      <!-- Hamon & Razor Edge -->
-      <line x1="-170" y1="-2" x2="280" y2="-2" stroke="#FFFFFF" stroke-width="1.2" opacity="0.95" />
-      <line x1="-170" y1="2" x2="280" y2="2" stroke="#55E6FF" stroke-width="2.5" filter="url(#cyanGlow)" />
+    <!-- SWORD 2: Bottom-Left to Top-Right (Cyan Radiant Plasma Katana) -->
+    <g transform="rotate(-32)" class="blade-plasma-cyan">
+      <!-- Full Steel Blade Geometry: -180 to +300 -->
+      <path d="M -180 -3 L 290 -3 L 312 0 L 290 3 L -180 3 Z" fill="url(#bladeSteelMaster)" />
+      <!-- Razor-Sharp Hamon Line -->
+      <line x1="-180" y1="-2" x2="290" y2="-2" stroke="#FFFFFF" stroke-width="1.4" opacity="0.95" />
+      <line x1="-180" y1="2" x2="290" y2="2" stroke="#00F5D4" stroke-width="3" filter="url(#neonCyan)" />
+      <line x1="-180" y1="0" x2="290" y2="0" stroke="url(#katanaSlashCyan)" stroke-width="1.8" />
+      
       <!-- Habaki (Gold Blade Collar) -->
-      <rect x="-178" y="-4" width="9" height="8" rx="1" fill="#FACC15" stroke="#00B4D8" stroke-width="0.8" />
-      <!-- Tsuba (Samurai Guard) -->
-      <ellipse cx="-180" cy="0" rx="5" ry="18" fill="#141820" stroke="#55E6FF" stroke-width="2.2" filter="url(#cyanGlow)" />
-      <circle cx="-180" cy="0" r="3" fill="#FACC15" />
-      <!-- Tsuka (Handle with Diamond Wrap) -->
-      <rect x="-275" y="-4" width="95" height="8" rx="2" fill="#0C0E14" stroke="#222834" stroke-width="1.2" />
-      <line x1="-275" y1="0" x2="-180" y2="0" stroke="#55E6FF" stroke-width="5" stroke-dasharray="5 7" />
+      <rect x="-188" y="-5" width="10" height="10" rx="1.5" fill="#FACC15" stroke="#007799" stroke-width="1" />
+      <!-- Ornate Tsuba (Samurai Guard with Cyan Aura) -->
+      <ellipse cx="-190" cy="0" rx="6" ry="21" fill="#0A0D14" stroke="#00F5D4" stroke-width="2.2" filter="url(#neonCyan)" />
+      <ellipse cx="-190" cy="0" rx="3.5" ry="12" fill="none" stroke="#FACC15" stroke-width="1" />
+      <circle cx="-190" cy="0" r="3.2" fill="#FACC15" />
+      <!-- Tsuka (Handle with Traditional Diamond Hilt Wrap) -->
+      <rect x="-295" y="-5" width="105" height="10" rx="2.5" fill="#0A0C12" stroke="#1E2636" stroke-width="1.4" />
+      <line x1="-295" y1="0" x2="-190" y2="0" stroke="#00F5D4" stroke-width="6" stroke-dasharray="6 8" />
       <!-- Kashira (Gold Pommel Cap) -->
-      <rect x="-282" y="-5" width="8" height="10" rx="2" fill="#FACC15" stroke="#00B4D8" stroke-width="1" />
-      <!-- Kissaki (Sharp Tip Accent) -->
-      <polygon points="280,-2.5 300,0 280,2.5" fill="#FFFFFF" filter="url(#cyanGlow)" />
+      <rect x="-302" y="-6" width="9" height="12" rx="2" fill="#FACC15" stroke="#007799" stroke-width="1.2" />
+      <!-- Kissaki (Razor Diamond Tip Flare) -->
+      <polygon points="290,-3 314,0 290,3" fill="#FFFFFF" filter="url(#neonCyan)" />
+      <circle cx="314" cy="0" r="3" fill="#55E6FF" filter="url(#neonCyan)" />
     </g>
   </g>
 
   <!-- ======================================================== -->
-  <!-- CONNECTING CIRCUIT TRACES (Radar Vertices to Tactical Pods) -->
+  <!-- 03 // RADAR TOPOLOGY CENTER & HOLOGRAPHIC WEB            -->
+  <!-- ======================================================== -->
+  <g transform="translate(450, 238)">
+    <!-- Ambient Center Radiant Glow Core -->
+    <circle cx="0" cy="0" r="145" fill="url(#radarWebGrad)" filter="url(#coreAura)" />
+
+    <!-- Circular Holographic Reticle Rings with Degree Markings -->
+    <circle cx="0" cy="0" r="138" fill="none" stroke="#1A2232" stroke-width="1" stroke-dasharray="3 5" />
+    <circle cx="0" cy="0" r="148" fill="none" stroke="#253248" stroke-width="1.2" opacity="0.75" />
+    <circle cx="0" cy="0" r="150" fill="none" stroke="#FF3038" stroke-width="1.4" stroke-dasharray="8 52" opacity="0.65" />
+    
+    <!-- Reticle Degree Indicators -->
+    <g font-family="'Courier New', Consolas, monospace" font-size="7" font-weight="700" fill="#6A7A94">
+      <text x="0" y="-154" text-anchor="middle">000° [KENJUTSU]</text>
+      <text x="142" y="-76" text-anchor="start">060°</text>
+      <text x="142" y="86" text-anchor="start">120°</text>
+      <text x="0" y="164" text-anchor="middle">180° [TAIJUTSU]</text>
+      <text x="-142" y="86" text-anchor="end">240°</text>
+      <text x="-142" y="-76" text-anchor="end">300°</text>
+    </g>
+
+    <!-- Concentric Hexagonal Capacity Grids -->
+    <!-- 100% Boundary (r=132) -->
+    <polygon points="0,-132 114.3,-66 114.3,66 0,132 -114.3,66 -114.3,-66" fill="#0A0E16" fill-opacity="0.3" stroke="#222C3E" stroke-width="1.4" />
+    <!-- 75% Capacity (r=99) -->
+    <polygon points="0,-99 85.7,-49.5 85.7,49.5 0,99 -85.7,49.5 -85.7,-49.5" fill="none" stroke="#1A2332" stroke-width="1" stroke-dasharray="4 4" />
+    <!-- 50% Capacity (r=66) -->
+    <polygon points="0,-66 57.2,-33 57.2,33 0,66 -57.2,33 -57.2,-33" fill="none" stroke="#151C28" stroke-width="1" stroke-dasharray="3 4" />
+    <!-- 25% Capacity (r=33) -->
+    <polygon points="0,-33 28.6,-16.5 28.6,16.5 0,33 -28.6,16.5 -28.6,-16.5" fill="none" stroke="#101620" stroke-width="0.8" />
+
+    <!-- 6 Hexagonal Radial Axes with Ticks -->
+    <g stroke="#1E2838" stroke-width="1.2">
+      <line x1="0" y1="0" x2="0" y2="-132" />
+      <line x1="0" y1="0" x2="114.3" y2="-66" />
+      <line x1="0" y1="0" x2="114.3" y2="66" />
+      <line x1="0" y1="0" x2="0" y2="132" />
+      <line x1="0" y1="0" x2="-114.3" y2="66" />
+      <line x1="0" y1="0" x2="-114.3" y2="-66" />
+    </g>
+
+    <!-- Traveling Laser Pulses Along Axes -->
+    <g stroke="#FF3038" stroke-width="2.2" class="axis-pulse-laser" opacity="0.85">
+      <line x1="0" y1="0" x2="0" y2="-132" />
+      <line x1="0" y1="0" x2="114.3" y2="-66" />
+      <line x1="0" y1="0" x2="114.3" y2="66" />
+      <line x1="0" y1="0" x2="0" y2="132" />
+      <line x1="0" y1="0" x2="-114.3" y2="66" />
+      <line x1="0" y1="0" x2="-114.3" y2="-66" />
+    </g>
+
+    <!-- ACTIVE MASTERY POLYGON WEB (96%, 94%, 92%, 95%, 90%, 88%) -->
+    <!-- Vertices:
+         Top (Frontend): 96% -> (0, -126.7)
+         Top-Right (AI/ML): 94% -> (107.4, -62.0)
+         Bottom-Right (System Design): 92% -> (105.2, 60.7)
+         Bottom (Backend): 95% -> (0, 125.4)
+         Bottom-Left (Database): 90% -> (-102.9, 59.4)
+         Top-Left (Cloud): 88% -> (-100.6, -58.1)
+    -->
+    <polygon points="0,-126.7 107.4,-62.0 105.2,60.7 0,125.4 -102.9,59.4 -100.6,-58.1" 
+             fill="url(#radarWebGrad)" stroke="#FF3038" stroke-width="2.6" class="active-radar-web" filter="url(#neonRed)" />
+    
+    <!-- Secondary Precision White Wireframe Accent -->
+    <polygon points="0,-126.7 107.4,-62.0 105.2,60.7 0,125.4 -102.9,59.4 -100.6,-58.1" 
+             fill="none" stroke="#FFFFFF" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" opacity="0.9" />
+
+    <!-- Sweeping Radar Beam (Conic Scanner with White Leading Edge) -->
+    <g class="radar-sweep-beam">
+      <line x1="0" y1="0" x2="0" y2="-132" stroke="#FFFFFF" stroke-width="1.8" filter="url(#neonRed)" />
+      <path d="M 0 0 L 0 -132 A 132 132 0 0 1 50 -122 Z" fill="url(#radarSweepCone)" />
+    </g>
+
+    <!-- Center Samurai Gyro-Mon Reactor -->
+    <!-- Rotating Outer Glyphic Ring -->
+    <g class="gyro-ring-cw">
+      <circle cx="0" cy="0" r="24" fill="none" stroke="#FF3038" stroke-width="1.6" stroke-dasharray="6 4 12 4" opacity="0.8" />
+      <circle cx="0" cy="0" r="27" fill="none" stroke="#00F5D4" stroke-width="0.8" stroke-dasharray="3 7" opacity="0.7" />
+    </g>
+    <!-- Counter-Rotating Inner Ring -->
+    <g class="gyro-ring-ccw">
+      <circle cx="0" cy="0" r="18" fill="none" stroke="#FACC15" stroke-width="1.2" stroke-dasharray="8 6" opacity="0.9" />
+    </g>
+
+    <!-- Solid Core Reactor Mon -->
+    <circle cx="0" cy="0" r="14" fill="#0A0D14" stroke="#FF3038" stroke-width="2" filter="url(#neonRed)" />
+    <!-- Samurai Katana Clan Crest (Three Tomoe blades) -->
+    <polygon points="0,-7 6,-2 7,4 0,8 -7,4 -6,-2" fill="#141926" stroke="#FFF" stroke-width="1" />
+    <circle cx="0" cy="0" r="4" fill="#FF3038" filter="url(#neonRed)" />
+    <circle cx="0" cy="0" r="2" fill="#FFFFFF" />
+
+    <!-- 6 Vertex Mastery Glowing Nodes -->
+    <circle cx="0" cy="-126.7" r="5" fill="#FFFFFF" stroke="#FF3038" stroke-width="2.4" class="mastery-node" />
+    <circle cx="107.4" cy="-62.0" r="5" fill="#FFFFFF" stroke="#00F5D4" stroke-width="2.4" class="mastery-node" />
+    <circle cx="105.2" cy="60.7" r="5" fill="#FFFFFF" stroke="#FACC15" stroke-width="2.4" class="mastery-node" />
+    <circle cx="0" cy="125.4" r="5" fill="#FFFFFF" stroke="#FF3038" stroke-width="2.4" class="mastery-node" />
+    <circle cx="-102.9" cy="59.4" r="5" fill="#FFFFFF" stroke="#00F5D4" stroke-width="2.4" class="mastery-node" />
+    <circle cx="-100.6" cy="-58.1" r="5" fill="#FFFFFF" stroke="#FF3038" stroke-width="2.4" class="mastery-node" />
+  </g>
+
+  <!-- ======================================================== -->
+  <!-- 04 // CONNECTING CIRCUIT TRACES TO TACTICAL PODS         -->
   <!-- ======================================================== -->
   <g>
-    <!-- 01: Top (Vertex 450,115 to Pod 450,86) -->
-    <line x1="450" y1="115" x2="450" y2="86" stroke="#FF3038" stroke-width="1.5" stroke-dasharray="3 3" />
-    <circle cx="450" cy="86" r="3" fill="#FF3038" />
+    <!-- Top: (450, 111.3) to (450, 84) -->
+    <line x1="450" y1="111.3" x2="450" y2="84" stroke="#FF3038" stroke-width="1.6" stroke-dasharray="3 3" />
+    <circle cx="450" cy="84" r="3" fill="#FF3038" />
 
-    <!-- 02: Top-Right (Vertex 555,179 to Pod 670,160) -->
-    <polyline points="555,179 610,160 670,160" fill="none" stroke="#55E6FF" stroke-width="1.5" stroke-dasharray="4 3" />
-    <circle cx="670" cy="160" r="3" fill="#55E6FF" />
+    <!-- Top-Right: (557.4, 176) to (670, 156) -->
+    <polyline points="557.4,176 612,156 670,156" fill="none" stroke="#00F5D4" stroke-width="1.6" stroke-dasharray="4 3" />
+    <circle cx="670" cy="156" r="3" fill="#00F5D4" />
 
-    <!-- 03: Bottom-Right (Vertex 553,300 to Pod 670,320) -->
-    <polyline points="553,300 610,320 670,320" fill="none" stroke="#A8ADB7" stroke-width="1.5" stroke-dasharray="4 3" />
-    <circle cx="670" cy="320" r="3" fill="#A8ADB7" />
+    <!-- Bottom-Right: (555.2, 298.7) to (670, 318) -->
+    <polyline points="555.2,298.7 612,318 670,318" fill="none" stroke="#FACC15" stroke-width="1.6" stroke-dasharray="4 3" />
+    <circle cx="670" cy="318" r="3" fill="#FACC15" />
 
-    <!-- 04: Bottom (Vertex 450,363 to Pod 450,394) -->
-    <line x1="450" y1="363" x2="450" y2="394" stroke="#FF3038" stroke-width="1.5" stroke-dasharray="3 3" />
-    <circle cx="450" cy="394" r="3" fill="#FF3038" />
+    <!-- Bottom: (450, 363.4) to (450, 390) -->
+    <line x1="450" y1="363.4" x2="450" y2="390" stroke="#FF3038" stroke-width="1.6" stroke-dasharray="3 3" />
+    <circle cx="450" cy="390" r="3" fill="#FF3038" />
 
-    <!-- 05: Bottom-Left (Vertex 349,298 to Pod 230,320) -->
-    <polyline points="349,298 290,320 230,320" fill="none" stroke="#A8ADB7" stroke-width="1.5" stroke-dasharray="4 3" />
-    <circle cx="230" cy="320" r="3" fill="#A8ADB7" />
+    <!-- Bottom-Left: (347.1, 297.4) to (230, 318) -->
+    <polyline points="347.1,297.4 288,318 230,318" fill="none" stroke="#00F5D4" stroke-width="1.6" stroke-dasharray="4 3" />
+    <circle cx="230" cy="318" r="3" fill="#00F5D4" />
 
-    <!-- 06: Top-Left (Vertex 352,183 to Pod 230,160) -->
-    <polyline points="352,183 290,160 230,160" fill="none" stroke="#55E6FF" stroke-width="1.5" stroke-dasharray="4 3" />
-    <circle cx="230" cy="160" r="3" fill="#55E6FF" />
+    <!-- Top-Left: (349.4, 179.9) to (230, 156) -->
+    <polyline points="349.4,179.9 288,156 230,156" fill="none" stroke="#FF3038" stroke-width="1.6" stroke-dasharray="4 3" />
+    <circle cx="230" cy="156" r="3" fill="#FF3038" />
   </g>
 
   <!-- ======================================================== -->
-  <!-- TOPOLOGY RADAR GRAPH CENTER (450, 240) - MINIMAL & CRISP -->
+  <!-- 05 // 6 ULTRA-COOL HOLOGRAPHIC TACTICAL PODS             -->
   <!-- ======================================================== -->
-  <g transform="translate(450, 240)">
-    <!-- Ambient Center Radiant Glow -->
-    <circle cx="0" cy="0" r="140" fill="url(#topCenterAura)" />
 
-    <!-- Minimal Concentric Hexagons -->
-    <!-- Outer Hexagon (r=130, 100% capacity) -->
-    <polygon points="0,-130 112,-65 112,65 0,130 -112,65 -112,-65" fill="#0C0F15" fill-opacity="0.25" stroke="#1D2432" stroke-width="1.2" />
-    <!-- Mid Hexagon (r=65, 50% capacity) -->
-    <polygon points="0,-65 56,-32.5 56,32.5 0,65 -56,32.5 -56,-32.5" fill="none" stroke="#161C27" stroke-width="1" stroke-dasharray="3 4" />
-
-    <!-- 6 Hexagonal Radial Axes -->
-    <g stroke="#1F2736" stroke-width="1.2">
-      <line x1="0" y1="0" x2="0" y2="-130" />
-      <line x1="0" y1="0" x2="112" y2="-65" />
-      <line x1="0" y1="0" x2="112" y2="65" />
-      <line x1="0" y1="0" x2="0" y2="130" />
-      <line x1="0" y1="0" x2="-112" y2="65" />
-      <line x1="0" y1="0" x2="-112" y2="-65" />
-    </g>
-
-    <!-- Traveling Laser Pulses along Axes -->
-    <g stroke="#FF3038" stroke-width="2" class="laser-axis">
-      <line x1="0" y1="0" x2="0" y2="-130" />
-      <line x1="0" y1="0" x2="112" y2="-65" />
-      <line x1="0" y1="0" x2="112" y2="65" />
-      <line x1="0" y1="0" x2="0" y2="130" />
-      <line x1="0" y1="0" x2="-112" y2="65" />
-      <line x1="0" y1="0" x2="-112" y2="-65" />
-    </g>
-
-    <!-- Active High-Discipline Polygon Web (96%, 94%, 92%, 95%, 90%, 88%) -->
-    <polygon points="0,-125 105,-61 103,60 0,123 -101,58 -98,-57" 
-             fill="#FF3038" fill-opacity="0.18" stroke="#FF3038" stroke-width="2.2" class="active-web-poly" filter="url(#topRedGlow)" />
-    
-    <!-- Secondary Precision Wireframe -->
-    <polygon points="0,-125 105,-61 103,60 0,123 -101,58 -98,-57" 
-             fill="none" stroke="#FFFFFF" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" opacity="0.8" />
-
-    <!-- Minimal Radar Sweep Beam -->
-    <g class="radar-sweep-blade">
-      <line x1="0" y1="0" x2="0" y2="-130" stroke="#FF3038" stroke-width="1.5" opacity="0.8" />
-      <path d="M 0 0 L 0 -130 A 130 130 0 0 1 45 -122 Z" fill="url(#topRadarSweep)" />
-    </g>
-
-    <!-- Center Samurai Crest Minimal Mon -->
-    <circle cx="0" cy="0" r="22" fill="#0A0D12" stroke="#FF3038" stroke-width="2" />
-    <polygon points="0,-9 7,-3 8,5 0,10 -8,5 -7,-3" fill="#141822" stroke="#FFF" stroke-width="1.2" />
-    <path d="M -3 -3 L 0 2 L 3 -3" fill="none" stroke="#FF3038" stroke-width="1.5" />
-    <circle cx="0" cy="4" r="1.5" fill="#55E6FF" />
-
-    <!-- 6 Vertex Mastery Nodes -->
-    <circle cx="0" cy="-125" r="4.5" fill="#FFF" stroke="#FF3038" stroke-width="2" class="node-pulse-white" />
-    <circle cx="105" cy="-61" r="4.5" fill="#FFF" stroke="#FF3038" stroke-width="2" class="node-pulse-white" />
-    <circle cx="103" cy="60" r="4.5" fill="#FFF" stroke="#FF3038" stroke-width="2" class="node-pulse-white" />
-    <circle cx="0" cy="123" r="4.5" fill="#FFF" stroke="#FF3038" stroke-width="2" class="node-pulse-white" />
-    <circle cx="-101" cy="58" r="4.5" fill="#FFF" stroke="#FF3038" stroke-width="2" class="node-pulse-white" />
-    <circle cx="-98" cy="-57" r="4.5" fill="#FFF" stroke="#FF3038" stroke-width="2" class="node-pulse-white" />
+  <!-- POD 01: Top Center - FRONTEND ARCHITECTURE (96%) -->
+  <g transform="translate(450, 68)" text-anchor="middle">
+    <!-- Chamfered High-Tech Card Frame -->
+    <polygon points="-105,-18 95,-18 105,-8 105,18 -95,18 -105,8" fill="#080C14" stroke="#FF3038" stroke-width="1.4" filter="url(#neonRed)" />
+    <!-- Title & Kanji Discipline -->
+    <text x="0" y="-3" font-family="'Orbitron', -apple-system, sans-serif" font-size="10.5" font-weight="900" fill="#FFFFFF" letter-spacing="1">FRONTEND // KENJUTSU 剣術</text>
+    <!-- Progress Bar Container -->
+    <rect x="-80" y="4" width="160" height="4" rx="2" fill="#141B26" />
+    <rect x="-80" y="4" width="153.6" height="4" rx="2" fill="#FF3038" />
+    <!-- Stack & Stat Telemetry -->
+    <text x="0" y="24" font-family="'Courier New', Consolas, monospace" font-size="8.5" font-weight="800" fill="#FF5722" letter-spacing="1">REACT • NEXT.JS • TS • 96%</text>
   </g>
 
-  <!-- ======================================================== -->
-  <!-- 6 DISCIPLINE LABELS & TACTICAL PODS                     -->
-  <!-- ======================================================== -->
-  <!-- 01: Top Center - FRONTEND ARCHITECTURE -->
-  <g transform="translate(450, 72)" text-anchor="middle">
-    <rect x="-95" y="-14" width="190" height="28" rx="4" fill="#0C0E14" stroke="#FF3038" stroke-width="1.2" />
-    <text x="0" y="4" font-family="'Orbitron', sans-serif" font-size="10.5" font-weight="900" fill="#FFF" letter-spacing="1">FRONTEND // KENJUTSU</text>
-    <text x="0" y="24" font-family="'Courier New', monospace" font-size="9" font-weight="700" fill="#FF3038">REACT • NEXT.JS • 96%</text>
+  <!-- POD 02: Top Right - AI / ML ARCHITECTURE (94%) -->
+  <g transform="translate(680, 156)" text-anchor="start">
+    <!-- Chamfered Frame -->
+    <polygon points="-10,-18 185,-18 195,-8 195,18 0,18 -10,8" fill="#080C14" stroke="#00F5D4" stroke-width="1.4" filter="url(#neonCyan)" />
+    <!-- Title & Kanji Discipline -->
+    <text x="8" y="-3" font-family="'Orbitron', -apple-system, sans-serif" font-size="10.5" font-weight="900" fill="#FFFFFF" letter-spacing="1">AI / ML // KAKUSHIN 革新</text>
+    <!-- Progress Bar -->
+    <rect x="8" y="4" width="160" height="4" rx="2" fill="#141B26" />
+    <rect x="8" y="4" width="150.4" height="4" rx="2" fill="#00F5D4" />
+    <!-- Stack & Stat Telemetry -->
+    <text x="8" y="24" font-family="'Courier New', Consolas, monospace" font-size="8.5" font-weight="800" fill="#55E6FF" letter-spacing="1">AGENTIC AI • LLMS • 94%</text>
   </g>
 
-  <!-- 02: Top Right - AI / ML INTELLECT -->
-  <g transform="translate(680, 160)" text-anchor="start">
-    <rect x="-10" y="-14" width="185" height="28" rx="4" fill="#0C0E14" stroke="#55E6FF" stroke-width="1.2" />
-    <text x="5" y="4" font-family="'Orbitron', sans-serif" font-size="10.5" font-weight="900" fill="#FFF" letter-spacing="1">AI / ML // KAKUSHIN</text>
-    <text x="5" y="24" font-family="'Courier New', monospace" font-size="9" font-weight="700" fill="#55E6FF">AGENTIC AI • LLMS • 94%</text>
+  <!-- POD 03: Bottom Right - SYSTEM DESIGN (92%) -->
+  <g transform="translate(680, 318)" text-anchor="start">
+    <!-- Chamfered Frame -->
+    <polygon points="-10,-18 185,-18 195,-8 195,18 0,18 -10,8" fill="#080C14" stroke="#FACC15" stroke-width="1.4" filter="url(#neonGold)" />
+    <!-- Title & Kanji Discipline -->
+    <text x="8" y="-3" font-family="'Orbitron', -apple-system, sans-serif" font-size="10.5" font-weight="900" fill="#FFFFFF" letter-spacing="1">SYSTEM DESIGN // KOUZOU 構造</text>
+    <!-- Progress Bar -->
+    <rect x="8" y="4" width="160" height="4" rx="2" fill="#141B26" />
+    <rect x="8" y="4" width="147.2" height="4" rx="2" fill="#FACC15" />
+    <!-- Stack & Stat Telemetry -->
+    <text x="8" y="24" font-family="'Courier New', Consolas, monospace" font-size="8.5" font-weight="800" fill="#FDE047" letter-spacing="1">SCALABILITY • ARCH • 92%</text>
   </g>
 
-  <!-- 03: Bottom Right - SYSTEM DESIGN -->
-  <g transform="translate(680, 320)" text-anchor="start">
-    <rect x="-10" y="-14" width="185" height="28" rx="4" fill="#0C0E14" stroke="#222834" stroke-width="1.2" />
-    <text x="5" y="4" font-family="'Orbitron', sans-serif" font-size="10.5" font-weight="900" fill="#FFF" letter-spacing="1">SYSTEM DESIGN</text>
-    <text x="5" y="24" font-family="'Courier New', monospace" font-size="9" font-weight="700" fill="#A8ADB7">SCALABILITY • 92%</text>
+  <!-- POD 04: Bottom Center - BACKEND ENGINES (95%) -->
+  <g transform="translate(450, 404)" text-anchor="middle">
+    <!-- Chamfered Frame -->
+    <polygon points="-105,-18 95,-18 105,-8 105,18 -95,18 -105,8" fill="#080C14" stroke="#FF3038" stroke-width="1.4" filter="url(#neonRed)" />
+    <!-- Title & Kanji Discipline -->
+    <text x="0" y="-3" font-family="'Orbitron', -apple-system, sans-serif" font-size="10.5" font-weight="900" fill="#FFFFFF" letter-spacing="1">BACKEND // TAIJUTSU 体術</text>
+    <!-- Progress Bar -->
+    <rect x="-80" y="4" width="160" height="4" rx="2" fill="#141B26" />
+    <rect x="-80" y="4" width="152.0" height="4" rx="2" fill="#FF3038" />
+    <!-- Stack & Stat Telemetry -->
+    <text x="0" y="24" font-family="'Courier New', Consolas, monospace" font-size="8.5" font-weight="800" fill="#FF5722" letter-spacing="1">NODE • EXPRESS • FASTAPI • 95%</text>
   </g>
 
-  <!-- 04: Bottom Center - BACKEND ENGINES -->
-  <g transform="translate(450, 408)" text-anchor="middle">
-    <rect x="-95" y="-14" width="190" height="28" rx="4" fill="#0C0E14" stroke="#FF3038" stroke-width="1.2" />
-    <text x="0" y="4" font-family="'Orbitron', sans-serif" font-size="10.5" font-weight="900" fill="#FFF" letter-spacing="1">BACKEND // TAIJUTSU</text>
-    <text x="0" y="24" font-family="'Courier New', monospace" font-size="9" font-weight="700" fill="#FF3038">NODE • EXPRESS • 95%</text>
+  <!-- POD 05: Bottom Left - DATABASE SYSTEMS (90%) -->
+  <g transform="translate(220, 318)" text-anchor="end">
+    <!-- Chamfered Frame -->
+    <polygon points="-195,-18 0,-18 10,-8 10,18 -185,18 -195,8" fill="#080C14" stroke="#00F5D4" stroke-width="1.4" filter="url(#neonCyan)" />
+    <!-- Title & Kanji Discipline -->
+    <text x="-8" y="-3" font-family="'Orbitron', -apple-system, sans-serif" font-size="10.5" font-weight="900" fill="#FFFFFF" letter-spacing="1">DATABASE ENGINE // SHIRYOU 資料</text>
+    <!-- Progress Bar -->
+    <rect x="-168" y="4" width="160" height="4" rx="2" fill="#141B26" />
+    <rect x="-168" y="4" width="144.0" height="4" rx="2" fill="#00F5D4" />
+    <!-- Stack & Stat Telemetry -->
+    <text x="-8" y="24" font-family="'Courier New', Consolas, monospace" font-size="8.5" font-weight="800" fill="#55E6FF" letter-spacing="1">POSTGRES • MONGO • REDIS • 90%</text>
   </g>
 
-  <!-- 05: Bottom Left - DATABASE SYSTEMS -->
-  <g transform="translate(220, 320)" text-anchor="end">
-    <rect x="-175" y="-14" width="185" height="28" rx="4" fill="#0C0E14" stroke="#222834" stroke-width="1.2" />
-    <text x="-5" y="4" font-family="'Orbitron', sans-serif" font-size="10.5" font-weight="900" fill="#FFF" letter-spacing="1">DATABASE ENGINE</text>
-    <text x="-5" y="24" font-family="'Courier New', monospace" font-size="9" font-weight="700" fill="#A8ADB7">POSTGRES • MONGO • 90%</text>
-  </g>
-
-  <!-- 06: Top Left - DEVOPS & CLOUD -->
-  <g transform="translate(220, 160)" text-anchor="end">
-    <rect x="-175" y="-14" width="185" height="28" rx="4" fill="#0C0E14" stroke="#55E6FF" stroke-width="1.2" />
-    <text x="-5" y="4" font-family="'Orbitron', sans-serif" font-size="10.5" font-weight="900" fill="#FFF" letter-spacing="1">CLOUD // YOROI</text>
-    <text x="-5" y="24" font-family="'Courier New', monospace" font-size="9" font-weight="700" fill="#55E6FF">DOCKER • CI/CD • 88%</text>
+  <!-- POD 06: Top Left - DEVOPS & CLOUD YOROI (88%) -->
+  <g transform="translate(220, 156)" text-anchor="end">
+    <!-- Chamfered Frame -->
+    <polygon points="-195,-18 0,-18 10,-8 10,18 -185,18 -195,8" fill="#080C14" stroke="#FF3038" stroke-width="1.4" filter="url(#neonRed)" />
+    <!-- Title & Kanji Discipline -->
+    <text x="-8" y="-3" font-family="'Orbitron', -apple-system, sans-serif" font-size="10.5" font-weight="900" fill="#FFFFFF" letter-spacing="1">CLOUD // YOROI 鎧</text>
+    <!-- Progress Bar -->
+    <rect x="-168" y="4" width="160" height="4" rx="2" fill="#141B26" />
+    <rect x="-168" y="4" width="140.8" height="4" rx="2" fill="#FF3038" />
+    <!-- Stack & Stat Telemetry -->
+    <text x="-8" y="24" font-family="'Courier New', Consolas, monospace" font-size="8.5" font-weight="800" fill="#FF5722" letter-spacing="1">DOCKER • CI/CD • K8S • 88%</text>
   </g>
 </svg>

@@ -42,7 +42,8 @@ function validateProfile() {
   if (!contribSvg.includes("234 CONFIRMED LETHAL STRIKES") && !contribSvg.includes("CONFIRMED LETHAL STRIKES")) {
     throw new Error("contribution-grid.svg missing lethal strikes telemetry");
   }
-  if (!contribSvg.includes("cell-ember") && !contribSvg.includes("cell-overdrive")) {
+  const hasActiveCells = ["#7C1A22", "#B91C1C", "#EA580C", "#F59E0B"].some(color => contribSvg.includes(color));
+  if (!hasActiveCells) {
     throw new Error("contribution-grid.svg has no active contribution cells rendered!");
   }
   if (!contribSvg.includes("VS")) {
