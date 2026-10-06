@@ -21,6 +21,9 @@ function validateProfile() {
     "samurai-status-badges.svg",
     "operative-dossier-v2.svg",
     "developer-rank.svg",
+    "samurai-credentials.svg",
+    "badge-cisco-cybersecurity.png",
+    "badge-isc2-candidate.png",
     "katana-divider.svg",
     "katana-divider-reverse.svg"
   ];

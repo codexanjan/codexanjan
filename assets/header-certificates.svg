@@ -40,9 +40,9 @@
   <rect width="900" height="85" rx="4" fill="none" stroke="#171B21" stroke-width="1" />
 
   <g transform="translate(20, 20)">
-    <rect x="0" y="0" width="70" height="30" rx="3" fill="#141820" stroke="#FF3038" stroke-width="1.2" />
-    <path d="M 0 0 L 8 0 L 0 8 Z" fill="#FF3038" />
-    <text x="35" y="20" text-anchor="middle" font-family="'Courier New', Consolas, monospace" font-size="16" font-weight="900" fill="#FF3038">07</text>
+    <rect x="0" y="0" width="70" height="30" rx="3" fill="#141820" stroke="#00F5D4" stroke-width="1.2" />
+    <path d="M 0 0 L 8 0 L 0 8 Z" fill="#00F5D4" />
+    <text x="35" y="20" text-anchor="middle" font-family="'Courier New', Consolas, monospace" font-size="13" font-weight="900" fill="#00F5D4">CRED</text>
   </g>
 
   <g transform="translate(105, 30)">

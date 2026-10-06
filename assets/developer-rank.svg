@@ -263,11 +263,11 @@
     <!-- Reticle Degree Indicators -->
     <g font-family="'Courier New', Consolas, monospace" font-size="7" font-weight="700" fill="#6A7A94">
       <text x="0" y="-154" text-anchor="middle">000° [KENJUTSU]</text>
-      <text x="142" y="-76" text-anchor="start">060°</text>
-      <text x="142" y="86" text-anchor="start">120°</text>
+      <text x="144" y="-62" text-anchor="start">060°</text>
+      <text x="144" y="98" text-anchor="start">120°</text>
       <text x="0" y="164" text-anchor="middle">180° [TAIJUTSU]</text>
-      <text x="-142" y="86" text-anchor="end">240°</text>
-      <text x="-142" y="-76" text-anchor="end">300°</text>
+      <text x="-144" y="98" text-anchor="end">240°</text>
+      <text x="-144" y="-62" text-anchor="end">300°</text>
     </g>
 
     <!-- Concentric Hexagonal Capacity Grids -->
@@ -439,7 +439,7 @@
     <!-- Chamfered Frame -->
     <polygon points="-195,-18 0,-18 10,-8 10,18 -185,18 -195,8" fill="#080C14" stroke="#00F5D4" stroke-width="1.4" filter="url(#neonCyan)" />
     <!-- Title & Kanji Discipline -->
-    <text x="-8" y="-3" font-family="'Orbitron', -apple-system, sans-serif" font-size="10.5" font-weight="900" fill="#FFFFFF" letter-spacing="1">DATABASE ENGINE // SHIRYOU 資料</text>
+    <text x="-8" y="-3" font-family="'Orbitron', -apple-system, sans-serif" font-size="10" font-weight="900" fill="#FFFFFF" letter-spacing="0.8">DATABASE // SHIRYOU 資料</text>
     <!-- Progress Bar -->
     <rect x="-168" y="4" width="160" height="4" rx="2" fill="#141B26" />
     <rect x="-168" y="4" width="144.0" height="4" rx="2" fill="#00F5D4" />

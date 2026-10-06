@@ -304,6 +304,52 @@
 <br/><br/>
 
 <!-- ======================================================== -->
+<!-- VERIFIED CREDENTIALS // CERTIFIED ACHIEVEMENTS           -->
+<!-- ======================================================== -->
+
+<img src="./assets/header-certificates.svg" width="100%" alt="Verified Credentials &amp; Achievements - Records of Mastery" />
+
+<br/><br/>
+
+<img src="./assets/samurai-credentials.svg" width="100%" alt="Verified Credly Badges - Cisco Introduction to Cybersecurity &amp; ISC2 Candidate" />
+
+<br/><br/>
+
+<p align="center">
+  <a href="https://www.credly.com/badges/2022e5b4-0a46-4159-a280-f7d5291e451c" target="_blank" title="Verify Cisco Introduction to Cybersecurity on Credly">
+    <img src="./assets/badge-cisco-cybersecurity.png" width="135" alt="Cisco Introduction to Cybersecurity - Credly Verified" />
+  </a>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="https://www.credly.com/badges/b47e4d7c-d934-4f65-aadb-e2347286810c" target="_blank" title="Verify ISC2 Candidate on Credly">
+    <img src="./assets/badge-isc2-candidate.png" width="135" alt="ISC2 Candidate - Credly Verified" />
+  </a>
+</p>
+
+<p align="center">
+  <a href="https://www.credly.com/badges/2022e5b4-0a46-4159-a280-f7d5291e451c" target="_blank">
+    <img src="https://img.shields.io/badge/Cisco-Cybersecurity%20Verified-1BAA73?style=for-the-badge&amp;logo=cisco&amp;logoColor=white&amp;labelColor=0D1512" alt="Cisco Cybersecurity Credential" />
+  </a>
+  &nbsp;&nbsp;
+  <a href="https://www.credly.com/badges/b47e4d7c-d934-4f65-aadb-e2347286810c" target="_blank">
+    <img src="https://img.shields.io/badge/ISC2-Candidate%20Verified-00F5D4?style=for-the-badge&amp;logo=credly&amp;logoColor=black&amp;labelColor=091218" alt="ISC2 Candidate Credential" />
+  </a>
+  &nbsp;&nbsp;
+  <a href="https://www.credly.com/users/anjan-shetty.e7f2814c" target="_blank">
+    <img src="https://img.shields.io/badge/Credly-Digital%20Transcript-FF6B00?style=for-the-badge&amp;logo=credly&amp;logoColor=white&amp;labelColor=1A0D00" alt="Credly Profile Transcript" />
+  </a>
+</p>
+
+<br/><br/>
+
+<!-- ======================================================== -->
+<!-- KATANA DIVIDER 08                                        -->
+<!-- ======================================================== -->
+
+<img src="./assets/katana-divider-reverse.svg" width="100%" alt="Katana Blade Divider" />
+
+<br/><br/>
+
+<!-- ======================================================== -->
 <!-- 08 // RONIN TELEMETRY // MAINFRAME METRICS               -->
 <!-- ======================================================== -->
 
