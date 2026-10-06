@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 85" width="100%" height="100%" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <linearGradient id="hBgBadges" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0E1218" />
+      <stop offset="50%" stop-color="#080A0D" />
+      <stop offset="100%" stop-color="#050608" />
+    </linearGradient>
+    <linearGradient id="hSlashBadges" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00A3C4" />
+      <stop offset="40%" stop-color="#00F5D4" />
+      <stop offset="70%" stop-color="#FFF" />
+      <stop offset="100%" stop-color="#FF3038" />
+    </linearGradient>
+    <filter id="hGlowBadges" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur stdDeviation="2.5" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <style>
+      @keyframes slashMotionBadges {
+        0% { stroke-dashoffset: 900; }
+        50% { stroke-dashoffset: 0; }
+        100% { stroke-dashoffset: -900; }
+      }
+      @keyframes pulseCrestBadges {
+        0%, 100% { opacity: 0.7; }
+        50% { opacity: 1; filter: drop-shadow(0 0 5px #00F5D4); }
+      }
+      .slash-line-badges {
+        stroke-dasharray: 250 650;
+        animation: slashMotionBadges 4s linear infinite;
+      }
+      .crest-pulse-badges {
+        animation: pulseCrestBadges 3.5s ease-in-out infinite;
+      }
+    </style>
+  </defs>
+
+  <rect width="900" height="85" rx="4" fill="url(#hBgBadges)" />
+  <rect width="900" height="85" rx="4" fill="none" stroke="#171B21" stroke-width="1" />
+
+  <g transform="translate(20, 20)">
+    <rect x="0" y="0" width="80" height="30" rx="3" fill="#141820" stroke="#00F5D4" stroke-width="1.2" />
+    <path d="M 0 0 L 8 0 L 0 8 Z" fill="#00F5D4" />
+    <text x="40" y="20" text-anchor="middle" font-family="'Courier New', Consolas, monospace" font-size="12" font-weight="900" fill="#00F5D4" letter-spacing="1">BADGES</text>
+  </g>
+
+  <g transform="translate(115, 30)">
+    <text x="0" y="0" font-family="'Courier New', Consolas, monospace" font-size="11" font-weight="700" fill="#787F89" letter-spacing="2">VERIFIED CREDENTIALS // OFFICIAL CERTIFICATIONS</text>
+    <text x="0" y="24" font-family="system-ui, -apple-system, sans-serif" font-size="22" font-weight="900" fill="#F4F4F2" letter-spacing="3">ACHIEVEMENTS BADGES</text>
+  </g>
+
+  <g transform="translate(845, 34)" class="crest-pulse-badges">
+    <circle cx="0" cy="0" r="22" fill="#0C0E14" stroke="#1E2A38" stroke-width="1.5" />
+    <polygon points="0,-12 10,-5 12,6 0,12 -12,6 -10,-5" fill="none" stroke="#00F5D4" stroke-width="1.2" />
+    <path d="M -5 -5 L -8 0 L -5 5" fill="none" stroke="#FFF" stroke-width="1.5" />
+    <path d="M 5 -5 L 8 0 L 5 5" fill="none" stroke="#FFF" stroke-width="1.5" />
+    <line x1="-8" y1="8" x2="8" y2="-8" stroke="#00F5D4" stroke-width="1.5" />
+    <circle cx="0" cy="0" r="2.5" fill="#FF3038" />
+  </g>
+
+  <line x1="20" y1="74" x2="880" y2="74" stroke="#171B21" stroke-width="2" />
+  <line x1="20" y1="74" x2="880" y2="74" stroke="url(#hSlashBadges)" stroke-width="2.5" stroke-linecap="round" class="slash-line-badges" filter="url(#hGlowBadges)" />
+  <polygon points="20,72 26,74 20,76" fill="#00F5D4" />
+  <polygon points="880,72 874,74 880,76" fill="#FF3038" />
+</svg>
