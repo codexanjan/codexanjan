@@ -33,13 +33,7 @@
 
 <br/><br/>
 
-<!-- ======================================================== -->
-<!-- CYBER TELEMETRY DIVIDER 01                                        -->
-<!-- ======================================================== -->
-
-<img src="./assets/katana-divider.svg" width="100%" alt="Cyber Telemetry Divider - Plasma Surge Left to Right" />
-
-<br/><br/>
+<br/>
 
 <!-- ======================================================== -->
 <!-- 01 // WARRIOR PROFILE                                    -->
@@ -61,13 +55,7 @@
 
 <div align="center">
 
-<!-- ======================================================== -->
-<!-- CYBER TELEMETRY DIVIDER 02                                        -->
-<!-- ======================================================== -->
-
-<img src="./assets/katana-divider-reverse.svg" width="100%" alt="Cyber Telemetry Divider - Reverse Plasma Surge" />
-
-<br/><br/>
+<br/>
 
 <!-- ======================================================== -->
 <!-- 02 // TECH ARSENAL                                       -->
@@ -113,13 +101,7 @@
 
 <br/><br/>
 
-<!-- ======================================================== -->
-<!-- CYBER PULSE TRANSITION                                         -->
-<!-- ======================================================== -->
-
-<img src="./assets/blade-transition.svg" width="100%" alt="Kinetic Cyber Pulse Energy Transition" />
-
-<br/><br/>
+<br/>
 
 <!-- ======================================================== -->
 <!-- 03 // PROJECT DATABASE // RONIN ARCHIVES                 -->
@@ -198,13 +180,7 @@
 
 <div align="center">
 
-<!-- ======================================================== -->
-<!-- CYBER TELEMETRY DIVIDER 03                                        -->
-<!-- ======================================================== -->
-
-<img src="./assets/katana-divider.svg" width="100%" alt="Cyber Telemetry Divider" />
-
-<br/><br/>
+<br/>
 
 <!-- ======================================================== -->
 <!-- 04 // COMMIT RADAR // CODE CADENCE                       -->
@@ -218,13 +194,7 @@
 
 <br/><br/>
 
-<!-- ======================================================== -->
-<!-- CYBER TELEMETRY DIVIDER 04                                        -->
-<!-- ======================================================== -->
-
-<img src="./assets/katana-divider-reverse.svg" width="100%" alt="Cyber Telemetry Divider" />
-
-<br/><br/>
+<br/>
 
 <!-- ======================================================== -->
 <!-- 05 // CONTRIBUTION PATROL // RONIN CADENCE               -->
@@ -242,13 +212,7 @@
 
 <br/><br/>
 
-<!-- ======================================================== -->
-<!-- CYBER TELEMETRY DIVIDER 05                                        -->
-<!-- ======================================================== -->
-
-<img src="./assets/katana-divider.svg" width="100%" alt="Cyber Telemetry Divider" />
-
-<br/><br/>
+<br/>
 
 <!-- ======================================================== -->
 <!-- 06 // 2026 MISSION DIRECTIVES // ROADMAP                 -->
@@ -275,13 +239,7 @@
 
 <br/>
 
-<!-- ======================================================== -->
-<!-- CYBER TELEMETRY DIVIDER 06                                        -->
-<!-- ======================================================== -->
-
-<img src="./assets/katana-divider-reverse.svg" width="100%" alt="Cyber Telemetry Divider" />
-
-<br/><br/>
+<br/>
 
 <!-- ======================================================== -->
 <!-- 07 // TROPHY ROOM // SAMURAI ACCOLADES                   -->
@@ -295,13 +253,7 @@
 
 <br/><br/>
 
-<!-- ======================================================== -->
-<!-- CYBER TELEMETRY DIVIDER 07                                        -->
-<!-- ======================================================== -->
-
-<img src="./assets/katana-divider.svg" width="100%" alt="Cyber Telemetry Divider" />
-
-<br/><br/>
+<br/>
 
 <!-- ======================================================== -->
 <!-- ACHIEVEMENTS BADGES // CREDLY VERIFIED                   -->
@@ -337,13 +289,7 @@
 
 <br/><br/>
 
-<!-- ======================================================== -->
-<!-- CYBER TELEMETRY DIVIDER 08                                        -->
-<!-- ======================================================== -->
-
-<img src="./assets/katana-divider-reverse.svg" width="100%" alt="Cyber Telemetry Divider" />
-
-<br/><br/>
+<br/>
 
 <!-- ======================================================== -->
 <!-- 08 // RONIN TELEMETRY // MAINFRAME METRICS               -->
@@ -383,13 +329,7 @@
 
 <br/><br/>
 
-<!-- ======================================================== -->
-<!-- CYBER TELEMETRY DIVIDER 08                                        -->
-<!-- ======================================================== -->
-
-<img src="./assets/katana-divider-reverse.svg" width="100%" alt="Cyber Telemetry Divider" />
-
-<br/><br/>
+<br/>
 
 <!-- ======================================================== -->
 <!-- 09 // RONIN COMMS // SECURE CHANNELS                     -->
