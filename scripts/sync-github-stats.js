@@ -355,7 +355,7 @@ function generateContributionGridSvg(calendarData) {
     <circle cx="480" cy="212" r="92" fill="none" stroke="#FF5722" stroke-width="2" />
     <polygon points="480,95 585,155 585,269 480,329 375,269 375,155" fill="none" stroke="#FF3038" stroke-width="2" opacity="0.7" />
 
-    <!-- Dual Crossed Katana Energy Blades (Prominent!) -->
+    <!-- Dual Crossed Cyber Energy Beams (Prominent!) -->
     <line x1="360" y1="102" x2="600" y2="322" stroke="#FF4500" stroke-width="4.5" stroke-linecap="round" />
     <line x1="360" y1="102" x2="600" y2="322" stroke="#FFF" stroke-width="1.8" stroke-linecap="round" />
     <line x1="600" y1="102" x2="360" y2="322" stroke="#FF4500" stroke-width="4.5" stroke-linecap="round" />
@@ -458,13 +458,13 @@ function generateContributionGridSvg(calendarData) {
     <rect x="73" y="222" width="22" height="7" rx="1.5" fill="#FF3038" stroke="#FF5722" stroke-width="0.8" />
     <path d="M 81,229 L 78,252 L 85,252 L 87,229 Z" fill="#FF3038" />
 
-    <!-- Left Arm & Katana Grip (Two-Handed Kenjutsu Stance) -->
+    <!-- Left Arm & Plasma Grip (Two-Handed Combat Stance) -->
     <!-- Rear Arm -->
     <path d="M 70,178 L 54,196 L 62,204 L 74,188 Z" fill="#03070B" stroke="#00F5D4" stroke-width="1.2" />
     <!-- Forearm extending to hilt -->
     <path d="M 54,196 L 78,206 L 82,198 L 60,190 Z" fill="#040A12" stroke="#00F5D4" stroke-width="1.2" />
 
-    <!-- Front Arm (Driving Blade) -->
+    <!-- Front Arm (Driving Beam) -->
     <path d="M 96,178 L 118,194 L 112,202 L 92,188 Z" fill="#03070B" stroke="#00F5D4" stroke-width="1.2" />
     <path d="M 118,194 L 128,204 L 122,210 L 110,200 Z" fill="#040A12" stroke="#00F5D4" stroke-width="1.2" />
     
@@ -472,11 +472,11 @@ function generateContributionGridSvg(calendarData) {
     <circle cx="80" cy="204" r="3.8" fill="#00F5D4" filter="url(#cyanHeroGlow)" />
     <circle cx="125" cy="206" r="4.2" fill="#00F5D4" filter="url(#cyanHeroGlow)" />
 
-    <!-- Tsuba & Grip -->
+    <!-- Grip Node -->
     <circle cx="127" cy="205" r="4.5" fill="#081018" stroke="#00F5D4" stroke-width="1.2" />
     <line x1="124" y1="200" x2="130" y2="210" stroke="#FF3038" stroke-width="2.2" />
 
-    <!-- RADIANT KATANA BLADE (Bright White-Cyan Plasma Beam) -->
+    <!-- RADIANT CYBER PLASMA BEAM (Bright White-Cyan Plasma Beam) -->
     <polygon points="128,204 184,174 187,177 130,207" fill="url(#katanaBladeGlow)" class="katana-shine" />
     <line x1="128" y1="203" x2="188" y2="173" stroke="#FFF" stroke-width="2.4" class="katana-shine" />
     <!-- Tip Spark & Energy Arc -->

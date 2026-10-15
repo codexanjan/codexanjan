@@ -69,6 +69,6 @@
     <circle cx="0" cy="0" r="2" fill="#55E6FF" />
   </g>
 
-  <!-- Kinetic Katana Slash Line -->
+  <!-- Kinetic Cyber Slash Line -->
   <line x1="0" y1="84" x2="900" y2="84" stroke="url(#hSlashDb)" stroke-width="2" class="slash-line-db" />
 </svg>

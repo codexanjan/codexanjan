@@ -1,4 +1,4 @@
-<div align="center">
+﻿<div align="center">
 
 <!-- ======================================================== -->
 <!-- 00 // HERO BANNER & IDENTITY                              -->
@@ -34,10 +34,10 @@
 <br/><br/>
 
 <!-- ======================================================== -->
-<!-- KATANA DIVIDER 01                                        -->
+<!-- CYBER TELEMETRY DIVIDER 01                                        -->
 <!-- ======================================================== -->
 
-<img src="./assets/katana-divider.svg" width="100%" alt="Katana Blade Divider - Plasma Surge Left to Right" />
+<img src="./assets/katana-divider.svg" width="100%" alt="Cyber Telemetry Divider - Plasma Surge Left to Right" />
 
 <br/><br/>
 
@@ -62,10 +62,10 @@
 <div align="center">
 
 <!-- ======================================================== -->
-<!-- KATANA DIVIDER 02                                        -->
+<!-- CYBER TELEMETRY DIVIDER 02                                        -->
 <!-- ======================================================== -->
 
-<img src="./assets/katana-divider-reverse.svg" width="100%" alt="Katana Blade Divider - Reverse Plasma Surge" />
+<img src="./assets/katana-divider-reverse.svg" width="100%" alt="Cyber Telemetry Divider - Reverse Plasma Surge" />
 
 <br/><br/>
 
@@ -114,10 +114,10 @@
 <br/><br/>
 
 <!-- ======================================================== -->
-<!-- BLADE TRANSITION                                         -->
+<!-- CYBER PULSE TRANSITION                                         -->
 <!-- ======================================================== -->
 
-<img src="./assets/blade-transition.svg" width="100%" alt="Kinetic Blade Slash Energy Transition" />
+<img src="./assets/blade-transition.svg" width="100%" alt="Kinetic Cyber Pulse Energy Transition" />
 
 <br/><br/>
 
@@ -199,10 +199,10 @@
 <div align="center">
 
 <!-- ======================================================== -->
-<!-- KATANA DIVIDER 03                                        -->
+<!-- CYBER TELEMETRY DIVIDER 03                                        -->
 <!-- ======================================================== -->
 
-<img src="./assets/katana-divider.svg" width="100%" alt="Katana Blade Divider" />
+<img src="./assets/katana-divider.svg" width="100%" alt="Cyber Telemetry Divider" />
 
 <br/><br/>
 
@@ -219,10 +219,10 @@
 <br/><br/>
 
 <!-- ======================================================== -->
-<!-- KATANA DIVIDER 04                                        -->
+<!-- CYBER TELEMETRY DIVIDER 04                                        -->
 <!-- ======================================================== -->
 
-<img src="./assets/katana-divider-reverse.svg" width="100%" alt="Katana Blade Divider" />
+<img src="./assets/katana-divider-reverse.svg" width="100%" alt="Cyber Telemetry Divider" />
 
 <br/><br/>
 
@@ -243,10 +243,10 @@
 <br/><br/>
 
 <!-- ======================================================== -->
-<!-- KATANA DIVIDER 05                                        -->
+<!-- CYBER TELEMETRY DIVIDER 05                                        -->
 <!-- ======================================================== -->
 
-<img src="./assets/katana-divider.svg" width="100%" alt="Katana Blade Divider" />
+<img src="./assets/katana-divider.svg" width="100%" alt="Cyber Telemetry Divider" />
 
 <br/><br/>
 
@@ -276,10 +276,10 @@
 <br/>
 
 <!-- ======================================================== -->
-<!-- KATANA DIVIDER 06                                        -->
+<!-- CYBER TELEMETRY DIVIDER 06                                        -->
 <!-- ======================================================== -->
 
-<img src="./assets/katana-divider-reverse.svg" width="100%" alt="Katana Blade Divider" />
+<img src="./assets/katana-divider-reverse.svg" width="100%" alt="Cyber Telemetry Divider" />
 
 <br/><br/>
 
@@ -296,10 +296,10 @@
 <br/><br/>
 
 <!-- ======================================================== -->
-<!-- KATANA DIVIDER 07                                        -->
+<!-- CYBER TELEMETRY DIVIDER 07                                        -->
 <!-- ======================================================== -->
 
-<img src="./assets/katana-divider.svg" width="100%" alt="Katana Blade Divider" />
+<img src="./assets/katana-divider.svg" width="100%" alt="Cyber Telemetry Divider" />
 
 <br/><br/>
 
@@ -338,10 +338,10 @@
 <br/><br/>
 
 <!-- ======================================================== -->
-<!-- KATANA DIVIDER 08                                        -->
+<!-- CYBER TELEMETRY DIVIDER 08                                        -->
 <!-- ======================================================== -->
 
-<img src="./assets/katana-divider-reverse.svg" width="100%" alt="Katana Blade Divider" />
+<img src="./assets/katana-divider-reverse.svg" width="100%" alt="Cyber Telemetry Divider" />
 
 <br/><br/>
 
@@ -384,10 +384,10 @@
 <br/><br/>
 
 <!-- ======================================================== -->
-<!-- KATANA DIVIDER 08                                        -->
+<!-- CYBER TELEMETRY DIVIDER 08                                        -->
 <!-- ======================================================== -->
 
-<img src="./assets/katana-divider-reverse.svg" width="100%" alt="Katana Blade Divider" />
+<img src="./assets/katana-divider-reverse.svg" width="100%" alt="Cyber Telemetry Divider" />
 
 <br/><br/>
 
@@ -468,7 +468,7 @@
 <!-- ======================================================== -->
 
 <a href="https://github.com/codexanjan">
-  <img src="https://readme-typing-svg.demolab.com?font=Orbitron&amp;size=24&amp;pause=1000&amp;color=FF3038&amp;center=true&amp;vCenter=true&amp;width=880&amp;lines=BUILDING+IN+THE+DARK.+SHIPPING+INTO+THE+LIGHT.;DISCIPLINE+IN+DESIGN.+PRECISION+IN+CODE.;SHARPEN+THE+BLADE.+SHIP+WITHOUT+FEAR.;CODEXANJAN+%2F%2F+STANDBY" alt="Operative Creed Dynamic Telemetry" />
+  <img src="https://readme-typing-svg.demolab.com?font=Orbitron&amp;size=24&amp;pause=1000&amp;color=FF3038&amp;center=true&amp;vCenter=true&amp;width=880&amp;lines=BUILDING+IN+THE+DARK.+SHIPPING+INTO+THE+LIGHT.;DISCIPLINE+IN+DESIGN.+PRECISION+IN+CODE.;ENGINEER+WITH+PRECISION.+SHIP+WITHOUT+FEAR.;CODEXANJAN+%2F%2F+STANDBY" alt="Operative Creed Dynamic Telemetry" />
 </a>
 
 <br/><br/>
@@ -477,7 +477,7 @@
 <!-- MONOLITHIC RONIN FOOTER                                  -->
 <!-- ======================================================== -->
 
-<img src="./assets/ronin-footer.svg" width="100%" alt="Anjan Shetty Codexanjan Monolithic Tech Samurai Blade Signature Footer" />
+<img src="./assets/ronin-footer.svg" width="100%" alt="Anjan Shetty Codexanjan Monolithic Tech Samurai Signature Footer" />
 
 <br/><br/>
 

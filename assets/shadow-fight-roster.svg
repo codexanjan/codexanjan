@@ -58,7 +58,7 @@
 
       <!-- Weapon -->
       <text x="12" y="58" font-family="'Courier New', Consolas, monospace" font-size="7" fill="#6A7280">WEAPON:</text>
-      <text x="56" y="58" font-family="'Courier New', Consolas, monospace" font-size="7.2" font-weight="700" fill="#E2E8F0">Blood Reaper • Katana</text>
+      <text x="56" y="58" font-family="'Courier New', Consolas, monospace" font-size="7.2" font-weight="700" fill="#E2E8F0">Blood Reaper • Plasma Scythe</text>
 
       <!-- Dev Mastery -->
       <text x="12" y="72" font-family="'Courier New', Consolas, monospace" font-size="7" fill="#6A7280">MASTERY:</text>
@@ -250,7 +250,7 @@
 
       <!-- Weapon -->
       <text x="12" y="58" font-family="'Courier New', Consolas, monospace" font-size="7" fill="#6A7280">WEAPON:</text>
-      <text x="56" y="58" font-family="'Courier New', Consolas, monospace" font-size="7.2" font-weight="700" fill="#E2E8F0">Daisho Katanas • Overdrive</text>
+      <text x="56" y="58" font-family="'Courier New', Consolas, monospace" font-size="7.2" font-weight="700" fill="#E2E8F0">Dual Daisho • Overdrive</text>
 
       <!-- Dev Mastery -->
       <text x="12" y="72" font-family="'Courier New', Consolas, monospace" font-size="7" fill="#6A7280">MASTERY:</text>
